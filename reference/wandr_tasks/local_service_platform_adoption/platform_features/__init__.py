@@ -1,0 +1,1 @@
+"""Platform feature qualification subtask."""

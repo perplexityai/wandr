@@ -1,0 +1,1 @@
+"""Per molecule, 3+ named authors of the molecule's discovery / disclosure / synthesis paper, with the paper as source URL. Co-authorship register: any byline position on the discovery paper counts (the chemistry literature is irreducibly multi-author and singular discoverer-credit is often inapplicable)."""

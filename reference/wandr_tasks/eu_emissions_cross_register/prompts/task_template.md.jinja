@@ -1,0 +1,27 @@
+For each of the {= country =} citable country splits listed below, supply official cross-register industrial-emissions release evidence for {= facility =}+ facilities and {= release_event =}+ 2022 pollutant-release events per facility. For each release event, cover every source-layer record listed below, with {= url =}+ URL per source-layer record.
+
+The work is neutral source provenance: a submitted release event is the same facility, pollutant, release medium, and reporting year 2022 as seen in an official EU row source and official national-register facility/release sources.
+
+Reporting-year and EU-vintage pin: {= eu_vintage =}.
+
+Citable country split:
+{=% for code, note in countries.items() =%}
+- `{= code =}` - {= note =}
+{=% endfor =%}
+
+Source-layer records:
+{=% for layer, note in source_layers.items() =%}
+- `{= layer =}` - {= note =}
+{=% endfor =%}
+
+The `eu_layer` URL must be an official EEA Discodata SQL JSON query that exposes the release row value from `[IED].[latest].[PollutantRelease]` joined to the facility-report and facility tables. The `national_register_facility` URL must identify the national-register facility/site/reporting unit, with country, location, or source-visible identifier in fetch-visible text. The `national_register_release` URL must expose the national-register release row as fetch-visible text: 2022, pollutant, direct medium, quantity, unit, and the national facility identifier or URL path that pairs with the `national_register_facility` record. For FR, use official Georisques IREP JSON detail evidence for `national_register_facility` and official Georisques IREP JSON emission evidence for `national_register_release`; do not treat the emission endpoint alone as facility-name evidence. Generic dataset landing pages, metadata pages, Tableau/JS shells, article summaries, binary ZIP/download-only archives, and explanatory pages do not count as release-event evidence when they do not expose the required facility or release row text for the submitted source-layer record.
+
+Use only facility/site/industrial-complex/reporting-unit release rows. Do not use national totals, sector totals, maps without row values, company sustainability pages, news/NGO summaries, ranking pages, health-risk/cost/damage material, compliance commentary, enforcement pages, investment/policy advice, or dashboard/alert product framing.
+
+Blank cells, missing pollutant rows, absent quantities, and absent source rows are not zero-emission claims. A numeric zero, below-threshold state, confidential/withheld state, non-reportable state, or absent-source condition counts only when the cited source explicitly states that bounded condition for the submitted facility, pollutant, medium, and year.
+
+Requirements:
+- For `eu_layer`, the cited source must expose the joined EU row: facility identity, reporting year 2022, pollutant, direct medium, quantity, unit or kg context, and EEA/IED source context.
+- For `national_register_facility`, the cited source must identify the submitted facility together with a country, location discriminator, or source-visible identifier sufficient to distinguish the facility/site/reporting unit.
+- For `national_register_release`, the cited source must expose the source-stated year 2022, pollutant name/code or unambiguous alias, direct release medium, quantity, and unit, with a national facility identifier or URL path that pairs it to the corresponding facility-identity record.
+- The cited source or URL context must identify the relevant official source layer and row/vintage context for the submitted source.

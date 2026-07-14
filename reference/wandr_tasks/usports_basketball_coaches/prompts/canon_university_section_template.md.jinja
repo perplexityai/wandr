@@ -1,0 +1,17 @@
+Canonicalize each university value to exactly one of the canonical 2025-26 U SPORTS men's
+basketball universities below. Treat school nicknames, athletic-brand names, abbreviations,
+French/English variants, and listed former names as aliases when they clearly refer to the
+same Canadian U SPORTS member institution.
+
+Return {{ CANONICAL_INVALID }} if the value is not one of these universities, is a lookalike
+non-U SPORTS institution, or is too ambiguous to map safely. In particular, do not map
+Carleton College to Carleton University, Trinity College/Trinity University to Trinity
+Western University, unrelated "Western" schools such as Western Michigan to Western
+University, or York College to York University. "University of Western Ontario" and "Western
+Ontario Mustangs" are explicit aliases for Western University.
+
+Canonical set:
+
+{=% for canonical, aliases in universities.items() =%}
+- {= canonical =}: {= aliases | join(", ") =}
+{=% endfor =%}

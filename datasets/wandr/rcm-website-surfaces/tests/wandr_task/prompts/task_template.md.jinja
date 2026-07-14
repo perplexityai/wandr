@@ -1,0 +1,37 @@
+For {= company =}+ companies in the healthcare revenue cycle / healthcare financial workflow ecosystem, find {= company_proof_object =}+ named public proof objects per company. For each company / proof object, supply public evidence in {= evidence_role =}+ different source roles, with {= url =}+ URL for each role.
+
+The unit of work is a specific public proof object, not a common website page. A valid record says, in effect: this RCM-adjacent company has this named proof datum, and this public page identifies the company, the proof object, and the submitted source role. Do not fill a fixed proof-kind matrix for every company; choose proof objects that public evidence actually supports. Across the whole answer, represent at least four of the proof kinds below and all three source roles when support exists. Use additional effort for more companies rather than harvesting extra proof objects from one large vendor.
+
+Eligible company scope: revenue cycle management, healthcare payments, revenue integrity, patient financial engagement, clearinghouse, medical billing, coding, denials / appeals, payment integrity, patient access, or adjacent healthcare financial workflow software or services. Provider health systems, payers, generic trade associations, generic software vendors, and article publishers are not the submitted company, though they may appear as customers or independent sources for a proof object.
+
+Use one of these controlled `proof_kind` values in the answer:
+- `named_customer_outcome`: a named customer, provider, payer, or care-organization outcome, deployment, case study, testimonial, or metric.
+- `independent_accreditation_or_certification`: a named accreditation, certification, attestation, or comparable named status from an accreditor, certification body, or public trust / security source.
+- `platform_or_partner_directory_listing`: a named app, integration, platform, marketplace, partner, payer, clearinghouse, or directory listing.
+- `association_peer_review_or_award`: a named peer review, award, analyst/evaluator recognition, industry association review, or comparable public recognition.
+- `named_workflow_deployment`: a named product, integration, workflow deployment, implementation, or metric tied to a concrete RCM workflow.
+
+Use one of these controlled `evidence_role` values as the key:
+- `claimant_or_vendor_surface`: the cited page is primary for the vendor's or claimant's own claim about the proof object.
+- `customer_or_independent_surface`: the cited page is primary for a customer, provider, independent evaluator, analyst, association, media, or comparable non-vendor account of the proof object.
+- `directory_or_platform_surface`: the cited page is primary for a directory, marketplace, platform, accreditor, certification body, peer-review list, partner list, or comparable listing / status surface.
+
+The same proof object should not be a generic page category such as "trust center," "case study page," "product page," "login page," or "RCM services." It should be a named public datum: a named customer, named accreditation or certification, named platform listing, named award or peer review, named workflow deployment, named integration, named metric, named standard, or a similarly specific proof object. Deduplicate proof objects by company plus named proof object, even when multiple URLs repeat it.
+
+Sources should be public pages that are primary for the asserted source role. Generic product pages, homepages, contact / demo pages, login shells, search results, rankings/listicles, generic "trusted by" language, generic "secure/compliant" language, and broad RCM capability claims fail unless the page itself carries the named proof object and the submitted source role. Gated reports, private portals, forms that require submission, authenticated content, paywalled pages, and broken pages do not count as the public evidence URL.
+
+For each record, the answer must include:
+- `proof_kind`: one controlled proof-kind value from the list above.
+- `date_checked`: the date you checked the public page.
+- `date_or_status`: the proof object's visible date, status, publication date, certification/listing status, or `not visible` if the page does not show one.
+- `named_customer_or_standard`: the named customer, standard, certification, platform, directory, award, workflow, integration, or comparable named object anchor.
+- `metric_or_scope`: the visible metric, workflow scope, listing scope, deployment scope, or `not visible` if the page has no metric.
+- `caveat`: a concise caveat about staleness, access boundary, acquisition / aliasing, gated artifacts, role limits, or `no caveat visible`.
+
+Do not rank vendors, recommend procurement decisions, collect contact details, test workflows behind authentication, infer PHI handling, or state that a company is secure, compliant, currently certified, or suitable for use beyond what the cited public page directly says. Do not treat missing public evidence as a successful record.
+
+Requirements:
+- The page must identify the submitted company, public brand, acquired brand, or claimant surface and tie it to the healthcare revenue cycle / healthcare financial workflow ecosystem.
+- The page must identify the submitted proof object as a named and specific public datum, not just a broad capability or page type.
+- The page must be primary for the submitted `evidence_role`.
+- The page must substantively support the answer's `proof_kind`, date/status, named anchor, metric/scope, and caveat fields without stretching the public evidence into a ranking, recommendation, contact lead, or security / compliance adequacy conclusion.

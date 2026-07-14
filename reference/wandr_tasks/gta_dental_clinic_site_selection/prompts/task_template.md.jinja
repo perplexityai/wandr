@@ -1,0 +1,23 @@
+For all the {= submarket =} submarkets listed below, build a feasibility evidence pack for a Greater Toronto Area cosmetic-and-implant dentistry clinic opening targeted for {= target_opening_period =} by covering each of the {= site_selection_domain =} site-selection domains with at least {= site_selection_signal =} meaningfully distinct submarket-specific signals per domain, each backed by a source (i.e. {= url =}+ URL per signal), then synthesize the evidence into a ranked site-selection recommendation.
+
+The aim is a market-research comparison base that can separate demand quality, competitive saturation, lease economics, and practical street-level site fit for a new specialty dental clinic.
+
+Target submarkets (canonical name — accepted aliases):
+{=% for canonical, aliases in submarkets.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Site-selection domains:
+- `demographic_demand`: census or official statistical evidence on household income, population density, age profile, and population growth over {= growth_reference_period =} for the relevant geography
+- `competitive_supply`: nearby dental, implant dentistry, cosmetic dentistry, oral-surgery, orthodontic, or med-aesthetic provider evidence that helps characterize saturation and service gaps
+- `lease_supply`: current commercial unit evidence for clinic-suitable space, including address, unit size, asking rent / rate when shown, and listing-source context
+- `access_visibility`: location evidence on transit, highway / arterial access, parking, frontage / signage, medical-retail co-tenancy, pedestrian activity, or other visibility and accessibility factors
+
+Use the evidence pack to produce a scored ranking table across demographics, competition, visibility, accessibility, growth, and lease cost; name the top 3 submarkets; shortlist 5 specific lease properties; and give one final property recommendation. The synthesis draws each numerical figure from a cited source, with unconfirmed figures shown as `unknown`.
+
+Requirements:
+- The page must clearly tie the signal to the named submarket, either through the named municipality / neighbourhood or through a specific address, provider, listing, transit node, or statistical geography located there.
+- The page must make its site-selection-domain source role visible. For `demographic_demand`, use an official census / statistical profile, municipal profile, planning profile, or another quantitative geography source; a page that reproduces a census / statistical figure for a stated geography and reporting period carries this role regardless of who hosts it, while a page that only characterizes the area in qualitative terms does not. For `competitive_supply`, use a map or business-profile surface, clinic-owned page, provider directory, or similar provider-identification page. For `lease_supply`, use an active commercial listing, brokerage flyer, landlord listing, or comparable lease-marketing page. For `access_visibility`, use a property/location page, transit or transportation page, map/location profile, planning document, or any source that directly speaks to access or visibility.
+- The page must expose a focused signal scoped to the site-selection domain. For `demographic_demand`, the signal must be a single quantified data point tied to a stated geography and reporting period, not a qualitative characterization of the area. For `competitive_supply`, it must identify named relevant providers, provider counts / clusters, specialty service lines, review-volume / rating signals, or an observable market gap. For `lease_supply`, it must identify a specific currently marketed unit or property with address and size, plus asking rate / rent when available. For `access_visibility`, it must show a concrete accessibility or visibility factor such as station proximity, highway / arterial frontage, parking, signage, retail anchor, medical co-tenancy, or pedestrian corridor.
+- The page must support any numerical value or status claimed for the signal, including the relevant geography, measurement period, listing status, provider name, address, square footage, or asking rate when those are part of the claim.
+- Current-market signals must have current relevance on the page: an active listing state, present-tense provider / location profile, current transit or access description, current map / directory context, or a publication / update date appropriate to the claim. Closed clinics, stale unavailable listings, and obsolete access claims do NOT count.

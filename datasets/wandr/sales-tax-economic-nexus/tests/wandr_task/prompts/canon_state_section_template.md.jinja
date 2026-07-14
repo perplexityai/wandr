@@ -1,0 +1,15 @@
+Canonical state names in scope. The exact canonical set is the 45 US states with statewide sales tax:
+
+{=% for canonical, aliases in states.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the agent's submitted state name to its canonical full state name. Accept postal abbreviations and common punctuation / spacing variants when they unambiguously point to one of the 45 states above.
+
+The jurisdictions below are outside this task's state universe - emit `{{ CANONICAL_INVALID }}` for submissions naming any of them:
+
+{=% for canonical, aliases in out_of_scope_jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Submissions naming the District of Columbia, a no-statewide-sales-tax state, a US territory, the United States as a whole, a region, a local jurisdiction, a county, a city, a foreign jurisdiction, or a fabricated state emit `{{ CANONICAL_INVALID }}`.

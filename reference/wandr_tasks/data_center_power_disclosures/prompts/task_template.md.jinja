@@ -1,0 +1,28 @@
+Identify {= operator =}+ operators as public reporting or public-company-equivalent operators / developers of data-center, colocation, HPC, AI-infrastructure, powered-campus, or similar infrastructure assets; for each operator, cover each of the {= disclosure_facet =} disclosure facets listed below and each `evidence_side` listed below, and provide {= operator_power_signal =}+ meaningfully distinct public power-delivery signal per operator-facet-side, each backed by a source (i.e. {= url =}+ URL). The cited source, filing, or event should visibly fall within {= target_period =}.
+
+Data-center growth is often constrained less by land than by energization, interconnection, equipment lead times, and customer-delivery timing; this task is about what public company and official-source materials actually say on those points.
+
+Disclosure facets:
+- `capacity_or_energization`: public signals about capacity, MW, critical IT load, energization, power coming online, operational data-center capacity, or construction reaching powered service.
+- `power_access_or_interconnection`: public signals about secured power, utility access, grid connection, interconnection, load study, large-load service, power sourcing, or power availability for data-center assets.
+- `long_lead_electrical_equipment_or_supply_chain`: public signals about named electrical equipment classes, supplier capacity, switchgear, transformers, UPS, generators, power skids, substations, cooling/power infrastructure, or supply-chain timing for data-center delivery.
+- `customer_delivery_or_backlog_timing`: public signals about lease, booking, backlog, contracted capacity, commencement, phased delivery, ready-for-service timing, or customer handoff for data-center/HPC/AI-infrastructure capacity.
+- `mitigation_or_power_strategy`: public signals about concrete actions or strategy for power constraints, supply-chain resilience, energy sourcing, renewable/clean-power coverage, demand response, behind-the-meter power, battery/storage, grid flexibility, or comparable mitigation.
+
+Evidence sides:
+{=% for evidence_side, description in evidence_sides.items() =%}
+- `{= evidence_side =}`: {= description =}
+{=% endfor =%}
+
+The operator ought to be a reporting company or public-company-equivalent infrastructure operator / developer. A pure software or cloud-services company does not count merely because a filing mentions third-party hosting services, virtual data centers, office operations, or generic business-continuity risk.
+
+The sources should be public disclosure or official-source surfaces: SEC filings, annual or quarterly reports, official investor materials, company releases, identifiable earnings or conference transcripts, official supplier/operator releases, sustainability or power strategy reports, or official utility/regulatory/commission/tariff/docket pages that state relevant source-visible facts. Utility and regulatory pages count only for the facts they state; tariff burden, legality, customer-cost fairness, buyer guidance, or rate-impact conclusions are outside this task.
+
+Signals under the same operator, disclosure facet, and evidence side should be meaningfully different public evidence points, not paraphrases of the same statement, the same paragraph, the same generic risk factor, or a source/date/source-type label recast as a finding. A valid `power_signal` is a concrete source-backed claim, normally including the named project, customer/counterparty, MW/capacity amount, equipment class, date/status, lease/backlog/delivery milestone, or named strategy/action visible on the page. Generic facet labels such as "public signal of capacity", "public signal of power access", or "public signal of mitigation strategy" do not count. The two evidence sides should normally come from different source roles: an operator-side disclosure and a non-operator delivery-ecosystem anchor such as a utility, regulatory, supplier, customer, public-authority, or comparable official/source surface.
+
+Requirements:
+- The page should communicate that it is a public disclosure or official-source surface fit for the claimed `evidence_side`: operator-controlled disclosure for `operator_disclosure`, or a materially distinct non-operator utility, regulatory, docket, supplier, customer, counterparty, public-authority, or comparable delivery-ecosystem source for `delivery_ecosystem_anchor`. An operator-controlled page, operator investor release, operator filing, or operator sustainability report fails the `delivery_ecosystem_anchor` side even when it names a utility, supplier, customer, or power strategy.
+- The page must visibly place the source, filing, event, transcript, release, or source-stated signal within {= target_period =}.
+- The page must identify the operator or a clearly tied project, campus, facility, lease, customer delivery, supplier agreement, or official service context for that operator.
+- The page must tie the statement to data-center, colocation, HPC, AI-infrastructure, powered-campus, hyperscale, or similar infrastructure assets, not generic corporate operations.
+- The page must state a concrete signal scoped to `disclosure_facet`: capacity, MW, critical IT load, energization timing, power/interconnection/service context, named long-lead equipment or supplier capacity, lease/backlog/customer-delivery timing, or a concrete mitigation / power strategy. The record's `power_signal` must name that concrete signal rather than restating the facet. Generic risk-factor language is not enough unless it contains operator-specific data-center infrastructure substance.

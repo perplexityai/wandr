@@ -1,0 +1,21 @@
+For {= vendor =}+ vendors that sell programmable business messaging or notification services through at least one regulated messaging channel, supply source-stated public fee, compliance, and developer-channel evidence for every listed evidence kind, with {= evidence_kind =}+ distinct evidence-kind rows per vendor and {= url =}+ URL per vendor/evidence-kind row. Do not count a vendor unless you can support both the `carrier_or_network_fee` row and the `registration_or_compliance_fee` row with vendor-tied public evidence.
+
+The useful work is the public evidence anatomy around regulated messaging costs and compliance: headline usage prices, named carrier or network pass-throughs, sender assets, registration/compliance fee or process surfaces, and API/channel claims often live on different pages. Preserve the source's wording and time context; do not calculate total cost, rank vendors, recommend vendors, estimate engineering effort, or give legal/procurement advice.
+
+The evidence kinds of interest, reported as `evidence_kind`, are:
+{=% for evidence_kind, description in evidence_kinds.items() =%}
+- `{= evidence_kind =}`: {= description =}.
+{=% endfor =%}
+
+Eligible channels include SMS, MMS, RCS, WhatsApp Business, toll-free SMS, short codes, 10DLC, sender IDs, local phone numbers, and comparable regulated sender assets. Pure push, email, web, or in-app notification sources do not count unless the page also gives relevant regulated messaging evidence.
+
+Vendor-owned pricing pages, support/help-center articles, developer docs, compliance guides, product pages, terms pages, vendor blogs, and public changelogs are the normal source base for vendor-specific claims. For `carrier_or_network_fee`, the page must expose a carrier/network/pass-through/surcharge/regime fee component, rule, table, named carrier/regime, amount, unit, or source-stated at-cost/not-itemized state; a generic pricing-page footnote that fees may apply is not enough by itself. For `registration_or_compliance_fee`, the page must expose a named registration, verification, approval, campaign, toll-free verification, sender-registration, penalty, managed-compliance workflow, or fee/public-state tied to the vendor's regulated messaging service. Carrier, registry, or industry-body pages can count only when the page itself ties the fee or rule to the vendor/service being recorded. Reputable communications-platform articles can support dated public-source contrast, but they should not replace a current vendor/source statement for vendor-specific pricing or API claims.
+
+For each row, record the source-stated product/service, channel, fee or claim component, public amount or public state, unit/frequency, volume tier or threshold when stated, compliance regime/program when stated, source class, visible source/effective date when present, checked date, confidence, and brief notes for contact-sales, at-cost pass-through, not-itemized, no-visible-date, name-conflict, or price-not-public states.
+
+Requirements:
+- The page must tie the vendor or cited service to a regulated business messaging channel, not merely push, email, in-app messaging, or generic notification tooling.
+- The page must fit the declared `evidence_kind`.
+- The page must state the public amount, unit, frequency, tier, source-stated public-price state, named fee/pass-through component, compliance process/fee/claim, or developer/API/channel claim being recorded; inferred absence, TCO math, rankings, recommendations, and advice do not count.
+- A broad pricing page can support multiple evidence kinds only when the submitted excerpts isolate the specific section, table, fee component, or process text for the declared evidence kind. A generic API/developer page can pass `developer_channel_claim`; it does not pass pricing, carrier/network, sender/number, or registration/compliance evidence unless the relevant fee/process claim is actually visible on that page.
+- The row must preserve enough public time context for the source claim: a visible source date, update/effective date, current pricing-page state, or a no-visible-date state recorded with the checked date.

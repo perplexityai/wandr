@@ -1,0 +1,7 @@
+{
+  "name": "onsite-power-deployments",
+  "wandr_task": "onsite_power_deployments",
+  "task_names": [
+    "onsite_power_deployments"
+  ]
+}

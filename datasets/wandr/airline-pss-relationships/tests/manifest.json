@@ -1,0 +1,8 @@
+{
+  "name": "airline-pss-relationships",
+  "wandr_task": "airline_pss_relationships",
+  "task_names": [
+    "airline_pss_relationships",
+    "airline_pss_relationships.independent_confirmation"
+  ]
+}

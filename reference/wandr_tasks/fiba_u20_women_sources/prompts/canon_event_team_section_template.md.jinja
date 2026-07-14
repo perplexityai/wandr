@@ -1,0 +1,6 @@
+Canonical event teams in scope:
+{=% for canonical, aliases in event_team_aliases.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted event team to one canonical form listed here. Division is part of the event-team identity, but a country-only submission is acceptable when that country appears in only one listed division.

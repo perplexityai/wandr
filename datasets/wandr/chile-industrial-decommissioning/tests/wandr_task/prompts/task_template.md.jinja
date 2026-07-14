@@ -1,0 +1,21 @@
+For {= region_asset =}+ Chilean industrial assets affecting {= target_window =}, cover {= opportunity_aspect =}+ different opportunity aspects per asset, supplying a source ({= url =}+ URL under each asset-aspect leg) substantiating each opportunity. Each supplied asset is in scope as one of the three Chilean industrial asset classes below, with the supplied source also substantiating that the asset is a discrete physical site, unit, plant, mine, smelter, refinery, terminal, fuel facility, or comparable industrial installation. Each asset is consistently identified, using its Chilean region and name.
+
+Think of this as a market-entry asset roster a specialist industrial-decommissioning firm would build before pursuing Chilean opportunities — discrete sites with their own closure, remediation, rehabilitation, or conversion lifecycle, not company-wide decarbonization narratives or generic national policy timelines.
+
+Asset classes:
+{=% for slug, asset_class in asset_classes.items() =%}
+- `{= slug =}` ({= asset_class.human_name =}): {= asset_class.description =}.
+{=% endfor =%}
+
+Opportunity aspects:
+{=% for slug, desc in opportunity_aspects.items() =%}
+- `{= slug =}`: {= desc =}.
+{=% endfor =%}
+
+Requirements:
+
+- The page must communicate its own public relationship to the asset strongly enough to stand as independent evidence, not merely list, summarize, or market around the fact from afar.
+- The page must name the Chilean asset, or an asset-specific unit/site within it, and tie it to the claimed Chilean region.
+- The page must substantiate the asset's industrial character and its membership in the claimed asset class.
+- The page must support closure, decommissioning, remediation, rehabilitation, dismantling, or conversion activity affecting {= target_window =}.
+- The page must support the chosen opportunity aspect for the asset.

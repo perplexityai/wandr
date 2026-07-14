@@ -1,0 +1,9 @@
+{
+  "name": "microgrid-controller-deployments",
+  "wandr_task": "microgrid_controller_deployments",
+  "task_names": [
+    "microgrid_controller_deployments",
+    "microgrid_controller_deployments.control_layer",
+    "microgrid_controller_deployments.benefit_status"
+  ]
+}

@@ -1,0 +1,5 @@
+Map the candidate segment to one of the closed segment labels below. Return {{ CANONICAL_INVALID }} if the candidate value is outside this set.
+
+{=% for canonical, aliases in segment_aliases.items() =%}
+- `{= canonical =}` aliases: {= aliases | join(", ") =}
+{=% endfor =%}

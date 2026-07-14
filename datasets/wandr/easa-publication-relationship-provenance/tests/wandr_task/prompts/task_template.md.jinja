@@ -1,0 +1,22 @@
+For each of the {= relationship_class =} relationship classes listed below, document {= publication_relationship =}+ source-stated relationships per class between an EASA Safety Publication and a related official publication or source record. For each relationship and each of the {= evidence_side =} evidence sides, supply {= url =}+ official URL.
+
+The work is a provenance map of publication relationships, not a table of maintenance actions. A relationship must be stated by an official source; do not infer it from matching aircraft, approval holder, subject, date, ATA chapter, or product scope alone.
+
+Relationship classes:
+{=% for class_name, description in relationship_class_descriptions.items() =%}
+- `{= class_name =}`: {= description =}.
+{=% endfor =%}
+
+Evidence sides:
+{=% for side_name, description in evidence_side_descriptions.items() =%}
+- `{= side_name =}`: {= description =}.
+{=% endfor =%}
+
+For each relationship, preserve the EASA publication number, EASA type/status, issuer, issue date, effective date or no-effective-date state, subject, approval holder/type/model or broad category, relationship class, exact source-stated relationship language, related authority, related number/title/date, and attachment/PDF/ZIP locator where present. Keep SIBs and foreign advisory records at the category depth their official source gives; do not force them into AD/model-level fields.
+
+The relationship map is descriptive publication provenance, not maintenance instructions, compliance advice, legal interpretation, applicability decisions, airworthiness verdicts, aircraft selection, fleet risk scoring, contact enrichment, or alerting.
+
+Requirements:
+- The page must be an official source for the claimed evidence side. EASA list pages, search result pages, and biweekly reports can help discovery, but they are not enough as the final source for a relationship edge unless the URL is a detail record or official attachment carrying the claimed evidence.
+- The page must identify the publication on the claimed evidence side and provide side-appropriate provenance metadata: number/title, authority or issuer, issue or effective/no-effective-date state, subject, publication type/status, product/category scope, and attachment/PDF/ZIP locator where present.
+- The page must support the side-specific relationship evidence. For `easa_record`, the EASA source must explicitly state the relationship to the related record. For `related_record`, the source must be the official related publication or attachment identified by the relationship, and any relationship language present on that source must be preserved rather than replaced by inference.

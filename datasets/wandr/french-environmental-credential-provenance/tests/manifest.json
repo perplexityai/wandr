@@ -1,0 +1,8 @@
+{
+  "name": "french-environmental-credential-provenance",
+  "wandr_task": "french_environmental_credential_provenance",
+  "task_names": [
+    "french_environmental_credential_provenance",
+    "french_environmental_credential_provenance.credential_verification"
+  ]
+}

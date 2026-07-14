@@ -1,0 +1,8 @@
+{
+  "name": "lentropiste-retail-provenance",
+  "wandr_task": "lentropiste_retail_provenance",
+  "task_names": [
+    "lentropiste_retail_provenance",
+    "lentropiste_retail_provenance.retailer_context"
+  ]
+}

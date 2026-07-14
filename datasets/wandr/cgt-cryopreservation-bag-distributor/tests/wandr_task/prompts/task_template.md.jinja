@@ -1,0 +1,17 @@
+For at least {= market =}+ country or territory markets, name at least {= market_channel =}+ public local channel surfaces per market that carry cell-and-gene-therapy-relevant cryopreservation or freezing bag products, and cover the {= evidence_facet =} evidence facets listed below for each market/channel pair with a source (i.e. {= url =}+ URL under each facet).
+
+Evidence facets:
+{=% for evidence_facet in evidence_facets =%}
+- `{= evidence_facet =}`
+{=% endfor =%}
+
+`channel_product_fit` is for public evidence that the submitted channel, channel catalog, reseller surface, marketplace/local supplier page, or public institutional supplier source is tied to a named cryopreservation or freezing bag product or product family.
+
+`local_market_channel_signal` is for public evidence that the submitted channel is tied to the submitted market and to a local route role: distributor, reseller, importer, local catalog/storefront, marketplace supplier, public institutional supplier, or clearly labeled manufacturer-direct/local affiliate.
+
+Rows are neutral public source evidence only. They should not rank vendors, recommend a purchase route, guarantee availability, extract prices or contact details, provide outreach targets, or give clinical or lab-protocol guidance. Current public pages and exact source-dated pages both count; a missing publication date is not itself a failure.
+
+Requirements:
+- The page must identify the submitted channel or a channel-owned/listing context for that channel.
+- The page must make its facet-appropriate source role visible. For `channel_product_fit`, the source role must be a channel-specific product page, channel catalog/storefront, reseller or marketplace supplier listing, public institutional supplier page, or a manufacturer/locator page that publicly names the submitted channel or market route; a generic manufacturer product page is not enough by itself. For `local_market_channel_signal`, the source role must visibly tie the submitted channel to the submitted market and a public route role.
+- The page must expose the facet-specific evidence. For `channel_product_fit`, it must name a qualifying flexible cryopreservation/freezing bag or bag set, not just cryovials, rigid cryocases, cryogenic boxes/racks, freezing media or DMSO, tanks/freezers, bag-freezing presses, cassettes, general cell-culture/bioprocess bags, transfer bags, collection-only bags, or broad equipment categories. For `local_market_channel_signal`, it must show the submitted market and route role for the submitted channel without relying only on a contact form, phone/email listing, broad market report, or unsupported availability claim.

@@ -1,0 +1,12 @@
+For each of the {= company =} European pharmaceutical and biotech companies listed below, supply {= company_person =}+ (company, person) pairs (i.e. {= url =}+ URLs per pair) identifying the person who held the top research-and-development leadership role — Head of R&D, EVP / SVP of R&D, Chief Scientific Officer, President of Research, Global Head of Research / Drug Discovery, or the equivalent group- or division-wide research-leadership post — immediately before the person who currently holds it at that company, with each URL on a page whose content shows that the named person held that research-leadership role at the named company and that they have since left it.
+
+Companies in scope (canonical name — accepted aliases):
+{=% for canonical, aliases in companies.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Favor the person who was the immediate predecessor of the current holder; a holder two or more transitions back, with a different person between them and the current incumbent, is a weaker fit. This predecessor-of-the-current-holder framing — and any naming of the successor or description of the handover — is a property of the pair taken as a whole, not a requirement each cited page must satisfy: an individual page need only show that the named person held the research-leadership role at the company and has since left it. Back each pair with two URLs on genuinely different sources — the company's own site (governance, newsroom, leadership-history, or appointment / departure announcement) and an independent source (news coverage, the person's later employer or board bio, a professional profile); two pages from the same domain do not corroborate each other.
+
+Requirements:
+- The page must name the person and tie them to a top research-and-development leadership role at the named company — a unit-level, divisional, or group-wide R&D / research / science head such as Head of R&D, EVP / SVP R&D, Chief Scientific Officer, President of Research, or Global Head of Research / Drug Discovery — a non-leadership research scientist, a therapeutic-area or single-project lead, or a purely commercial / manufacturing / medical-affairs / regulatory role does NOT count.
+- The page must establish that the person no longer holds that role at the named company — through departure / retirement / succession framing, a stated end date, a "formerly" / "previously" designation, or a subsequent role elsewhere that post-dates the company tenure — a page presenting them as the current incumbent does NOT count.

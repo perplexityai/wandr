@@ -1,0 +1,20 @@
+For each of the {= capability =} reading/study capability classes below, cover {= app_capability =}+ product-and-developer app capability identities; for each app capability, supply each of the {= source_role =} source roles listed below, with {= url =}+ URL for each role.
+
+The goal is factual public provenance for reading, study, annotation, flashcard, summarization, and multi-source reading apps. Keep the evidence source-bound: no rankings, app recommendations, procurement advice, personalized education advice, medical or learning-disability advice, or unsupported claims that a product improves learning outcomes.
+
+Capability classes:
+{=% for capability, description in capabilities.items() =%}
+- `{= capability =}`: {= description =}
+{=% endfor =%}
+
+Source roles:
+{=% for source_role, description in source_roles.items() =%}
+- `{= source_role =}`: {= description =}
+{=% endfor =%}
+
+Product identity should stay precise. The same product may appear under multiple capabilities, but each `(capability, product, developer)` identity should refer to a real publicly available app/product and should not blur rebrands, major version splits, ecosystem companions, unofficial clones, or similarly named apps from different developers.
+
+Requirements:
+- The page must identify the submitted product/app and tie it to the submitted developer, publisher, official ecosystem, package ID, store identity, or otherwise clear app identity.
+- The page must make the submitted source role visible. `official_capability_claim` must come from a product/developer-controlled official source such as a product site, help center, docs/manual, support article, official blog, pricing page, or official product page; app-store listings, generic review blogs, recommendation posts, Reddit threads, and SEO comparison pages do not satisfy this role. `distribution_or_storefront_context` must come from a public distribution or availability surface such as Apple App Store, Google Play, Microsoft Store, Chrome Web Store, official download pages, GitHub/project distribution pages for open-source tools, or comparable app/package/download surfaces; generic review blogs, recommendation posts, Reddit threads, and SEO comparison pages do not satisfy this role.
+- The page must carry the source-role payload. For `official_capability_claim`, it must explicitly describe the selected capability for the product; vague claims like "AI-powered learning" are not enough without saying what the AI does or generates. For `distribution_or_storefront_context`, it must expose concrete distribution/storefront context for the same product, such as platform, app/package ID, developer/publisher, rating or review count, update date, price/IAP/free/open-source signal, supported distribution channel, or similar checked-at-source facts.

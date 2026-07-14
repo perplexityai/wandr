@@ -1,0 +1,8 @@
+{
+  "name": "canada-bottle-packaging",
+  "wandr_task": "canada_bottle_packaging",
+  "task_names": [
+    "canada_bottle_packaging",
+    "canada_bottle_packaging.canada_service"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "agricultural-supplier-sources",
+  "wandr_task": "agricultural_supplier_sources",
+  "task_names": [
+    "agricultural_supplier_sources",
+    "agricultural_supplier_sources.country_commodity_context"
+  ]
+}

@@ -1,0 +1,6 @@
+Canonical recruitment-status buckets:
+{=% for canonical, aliases in recruitment_status_aliases.items() =%}
+- **{= canonical =}**{= " (aliases / source variants: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted recruitment-status value to exactly one canonical bucket above. Accept capitalization variants, `Complete` / `completed`, and bilingual jRCT rows where either the Japanese status or the English side of the row clearly maps to the bucket. Return {{ CANONICAL_INVALID }} for values outside this closed jRCT recruitment-status set or for clinical-trial result states that are not recruitment/progress status labels.

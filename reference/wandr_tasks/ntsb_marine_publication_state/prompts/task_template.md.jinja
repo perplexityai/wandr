@@ -1,0 +1,10 @@
+For {= investigation =}+ NTSB marine investigations with accident dates from {= accident_start =} through {= accident_end =}, supply {= url =}+ official NTSB investigation detail URL per investigation that states the investigation identity and current public lifecycle status.
+
+Use `investigation` as the NTSB investigation number plus a concise event title, such as `DCA25FM012 — Collision between Towing Vessel Patrick J Studdert and Bulk Carrier Clara B`. In the answer, name the source-stated status, event date, location or waterway, and any report/docket links shown on the page that help explain the public-record state.
+
+This task is about the NTSB public record lifecycle, not a vessel casualty table. CAROL search/API/export pages are fine for discovery, but they do not satisfy this root record by themselves; the scored URL must be the official per-investigation NTSB page. Do not add causal analysis, legal fault, blame, safety advice, casualty-field inference, or report/docket absence inferred from search failure.
+
+Requirements:
+- The page must identify the claimed NTSB investigation as a marine investigation, including the investigation number and enough event title, vessel, location, or waterway context to anchor the item.
+- The page must state an event/accident date within {= accident_start =} through {= accident_end =}.
+- The page must state the current source-stated public lifecycle status for the investigation, such as `Ongoing`, `Completed`, probable-cause text already posted, report links already posted, or page-present language that the investigation remains underway.

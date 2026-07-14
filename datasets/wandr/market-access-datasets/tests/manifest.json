@@ -1,0 +1,9 @@
+{
+  "name": "market-access-datasets",
+  "wandr_task": "market_access_datasets",
+  "task_names": [
+    "market_access_datasets",
+    "market_access_datasets.dataset_size",
+    "market_access_datasets.dataset_relevance"
+  ]
+}

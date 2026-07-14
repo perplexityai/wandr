@@ -1,0 +1,8 @@
+{
+  "name": "math-conjectures-resolved",
+  "wandr_task": "math_conjectures_resolved",
+  "task_names": [
+    "math_conjectures_resolved",
+    "math_conjectures_resolved.pop_science_coverage"
+  ]
+}

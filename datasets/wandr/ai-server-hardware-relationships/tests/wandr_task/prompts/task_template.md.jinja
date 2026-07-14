@@ -1,0 +1,21 @@
+For each of the {= supply_chain_layer =} AI server hardware supply-chain layers listed below, name {= relationship_edge =}+ source-backed relationships per layer between an upstream company and a downstream company; for each relationship, supply both of the {= evidence_role =} evidence roles below with {= url =}+ URL per role.
+
+This is a public provenance ledger for AI server hardware relationships, not a dependency scorecard. Each row must tie the company pair to a concrete named hardware artifact, process, platform, deployment, facility, manufacturing node/package, or infrastructure design. Inferred customer identities, rankings, market-share estimates, procurement guidance, investment framing, outreach leads, and aggregated exposure conclusions are out of scope.
+
+A relationship edge is scoped by `supply_chain_layer`, `upstream_company`, and `downstream_company`. The same two companies can appear in more than one layer only when the cited page supports the distinct layer-specific relationship.
+
+Supply-chain layers:
+{=% for layer, description in supply_chain_layers.items() =%}
+- `{= layer =}`: {= description =}
+{=% endfor =%}
+
+Evidence roles:
+{=% for role, description in evidence_roles.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page must match `evidence_role`: `primary_or_counterparty_source` needs a source controlled by, issued by, or officially filed by one of the relationship parties; `independent_public_context` needs a reputable public source independent of both relationship parties.
+- The page must explicitly bind both named companies to the relationship. Anonymous customer labels, broad category references, and relationship claims inferred only from market position do not count.
+- The page must support the claimed supply-chain layer through source-stated AI server hardware context, such as a product, component, process, platform, filing disclosure, co-development, supply, customer, integration, or infrastructure relationship. Claimed product, component, process, date, period, or exposure details must be source-stated.
+- The page must identify the concrete relationship artifact/process/platform/deployment/facility/node/package/design for this exact company pair. Generic partner lists, comma-separated rosters, broad ecosystem pages, market maps, compatibility catalogues, and pages that merely say both companies participate in a layer do not count unless they source-state a specific named hardware context for the submitted pair.

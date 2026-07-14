@@ -1,0 +1,9 @@
+{
+  "name": "south-africa-ict-integrators",
+  "wandr_task": "south_africa_ict_integrators",
+  "task_names": [
+    "south_africa_ict_integrators",
+    "south_africa_ict_integrators.public_credentials",
+    "south_africa_ict_integrators.hard_public_evidence"
+  ]
+}

@@ -1,0 +1,16 @@
+For {= provider =}+ providers that publicly present transparent LED display products, name {= display_product =}+ transparent LED product or series per provider, and supply {= url =}+ public URL for each of the {= evidence_facet =} evidence roles listed below.
+
+The task is a public provenance dossier: it is about tying source-stated technical and public-use claims to named transparent LED products, not deciding which provider is best or which setup someone should buy. Product series are fine when the cited sources structure specs by series, variant, module, cabinet, or panel family. The provider should be the manufacturer, brand owner, or product provider responsible for the submitted product; rental houses, distributors, marketplaces, and media outlets do not become the provider just by listing someone else's product. Transparent OLED, transparent LCD, transparent TVs, generic LED walls with no transparency claim, supplier-ranking entries, buying guides, contact pages, and private quote pages do not count as transparent LED display products for this task.
+
+Evidence roles:
+{=% for evidence_facet, description in evidence_facets.items() =%}
+- `{= evidence_facet =}`: {= description =}
+{=% endfor =%}
+
+Public prices, source dates, and 3D / immersive capability count only when the cited source itself states them; their absence does not invalidate an otherwise eligible record.
+
+Requirements:
+- The page must clearly identify the submitted provider and product or series.
+- The page must support that the submitted product or series is a transparent LED display, screen, panel, mesh, film, or comparable LED-based transparent display technology.
+- The page must make its evidence-role fit visible. For `official_spec`, it must be provider-controlled and specification-bearing. For `application_trace`, it must tie the product or series to a named customer, venue, event, installation, production, public project, or rental-fleet acquisition/holding. For `editorial_notice`, it must be outside the provider's control and have editorial, trade, news, award, or exhibition context, not a seller, rental, distributor, marketplace, catalog, directory, ranking, listicle, buying guide, or provider press-release page.
+- The page must contribute the evidence detail expected for its role. For `official_spec`, it must state at least one optical or pixel datum and at least one physical or configuration datum. For `application_trace`, it must describe the named use context and the product's role in it. For `editorial_notice`, it must carry a concrete product fact, launch fact, award/showing fact, or application fact about the product or series.

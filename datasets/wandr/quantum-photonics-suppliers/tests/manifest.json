@@ -1,0 +1,9 @@
+{
+  "name": "quantum-photonics-suppliers",
+  "wandr_task": "quantum_photonics_suppliers",
+  "task_names": [
+    "quantum_photonics_suppliers",
+    "quantum_photonics_suppliers.atom_ion_supplier_role",
+    "quantum_photonics_suppliers.window_signal"
+  ]
+}

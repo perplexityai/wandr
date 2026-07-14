@@ -1,0 +1,25 @@
+For {= carrier_company =}+ operating U.S.-focused final-mile, courier, same-day, expedited, or specialty delivery carrier companies, supply evidence for each of the {= evidence_type =} evidence types, with source URL coverage for each type (minimum {= url =} per type). ECA can be a useful discovery surface, but the company universe is open and valid carriers do not need to appear in ECA.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, include the canonical company name, legal name or DBA when the source reveals one, official company URL when known, primary geography or service area, carrier service lane, capability or legitimacy signal, independent source type when relevant, public regulatory ID or credential when relevant, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful service lanes include:
+{=% for service_lane in service_lanes =%}
+- `{= service_lane =}`
+{=% endfor =%}
+
+Independent source type should be factual, not promotional. Useful independent source types include:
+{=% for source_type in independent_source_types =%}
+- `{= source_type =}`
+{=% endfor =%}
+
+Public sources can include company service pages, carrier association directories, FMCSA/SAFER or other registries, state or regional courier/trucking associations, credential or certification surfaces, industry directories, trade publications, venue or conference pages, and public airport or cargo ecosystem pages. Private lead-enrichment databases, quote-request funnels, rankings, customer reviews without carrier facts, generic SEO pages, procurement advice, and delivery recommendations are out of scope. ECA or other association pages may support independent legitimacy when they identify a carrier/provider, but mixed vendor/sponsor pages do not make a company a carrier by themselves.
+
+Requirements:
+- The page must identify the claimed company, or bridge the submitted trade name to a legal/DBA name, with enough public context to distinguish it from unrelated same-name entities.
+- The page must fit the claimed `evidence_type`: `company_capability` evidence should be company-controlled service/geography evidence, while `independent_legitimacy` evidence should come from a non-company public source showing identity, authority, membership, credential, registry status, directory presence, industry listing, venue listing, or comparable legitimacy.
+- The page must support concrete carrier substance at the claimed evidence type. For `company_capability`, it should show a final-mile, courier, same-day, expedited, specialty delivery, or carrier-adjacent operating capability and a public geography or service area. For `independent_legitimacy`, it should show a concrete public legitimacy signal for the same company, such as current carrier authority, active directory or association presence, public credential, registry status, industry listing, venue listing, or equivalent non-company corroboration.

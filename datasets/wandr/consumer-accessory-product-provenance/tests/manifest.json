@@ -1,0 +1,9 @@
+{
+  "name": "consumer-accessory-product-provenance",
+  "wandr_task": "consumer_accessory_product_provenance",
+  "task_names": [
+    "consumer_accessory_product_provenance",
+    "consumer_accessory_product_provenance.retail_prices",
+    "consumer_accessory_product_provenance.dated_signals"
+  ]
+}

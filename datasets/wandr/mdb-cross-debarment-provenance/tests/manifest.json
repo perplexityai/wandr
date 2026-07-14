@@ -1,0 +1,7 @@
+{
+  "name": "mdb-cross-debarment-provenance",
+  "wandr_task": "mdb_cross_debarment_provenance",
+  "task_names": [
+    "mdb_cross_debarment_provenance"
+  ]
+}

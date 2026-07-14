@@ -1,0 +1,20 @@
+For each of the {= country =} in-scope countries ({= country_scope =}), name {= country_provider =}+ last-mile postal or parcel delivery providers per country. For each provider, supply all {= evidence_type =} evidence types listed below — with a source ({= url =}+ URL per (country, provider, evidence-type)).
+
+The in-scope countries are:
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Each named provider must be an actual operating entity that accepts, transports, or delivers letters or parcels — not a service category, page heading, or descriptive label.
+
+The evidence types are:
+{=% for evidence_type, evidence_desc in evidence_types.items() =%}
+- **{= evidence_type =}** — {= evidence_desc =}
+{=% endfor =%}
+
+Use source pages whose authorial standing fits the evidence type: national regulator or licensee registers, UPU country profiles, ministry / universal-service pages, provider-controlled service pages, provider developer portals, or comparable official surfaces. Generic courier directories, shipping-rate comparison pages, and third-party tracking aggregators can help discovery, but they do not count as evidence sources for this task.
+
+Requirements:
+- The page must communicate (possibly via URL among other things) a source class appropriate to the claimed evidence type.
+- The page must tie the named provider to postal, parcel, express, locker, PUDO, or courier delivery operations in the named country.
+- The page must substantively support the evidence-type fact: operator type for **operator_status**, service area or final-mile network for **service_area**, or a concrete tracking / integration / service-class capability for **tracking_integration_service**.

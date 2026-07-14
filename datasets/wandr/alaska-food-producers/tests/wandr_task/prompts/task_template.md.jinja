@@ -1,0 +1,25 @@
+For each of the {= source_family =} source families listed below, cover {= producer =}+ named Alaska food producers or Alaska food product businesses; for every (`source_family`, `producer`) pair, supply {= url =}+ public URL whose page independently supports that producer/source-family provenance claim.
+
+The target is provenance evidence, not a consumer directory or lead list. Useful evidence names a business or producer and shows that it grows, raises, harvests, catches, makes, processes, or otherwise produces food in Alaska.
+
+Source family labels:
+{=% for family, description in source_family_descriptions.items() =%}
+- `{= family =}`: {= description =}.
+{=% endfor =%}
+
+Report the community/city, region when source-stated or defensibly inferred, food product category, provenance type, currentness state, and a concise evidence note. If the cited source supports an Alaska tie but no specific community or reliable region, say so instead of inventing one; use `no_region` when the region is not source-stated or defensibly inferable. Provenance type should use one or more of: {= provenance_types | join(", ") =}.
+
+Currentness is source-local: label what the cited source itself shows, not whether no other current proof exists elsewhere.
+{=% for state, description in currentness_state_descriptions.items() =%}
+- `{= state =}`: {= description =}.
+{=% endfor =%}
+
+Producers ought to be actual Alaska food producers or Alaska food product businesses. Restaurants, grocers, distributors, gift shops, chambers, caterers, and resellers do not count unless the cited page supports their own Alaska-made food product. Non-food farms/products, flowers, fiber, nursery starts, hay/feed, crafts, farm tourism, and services do not count unless separate food-product evidence is present.
+
+Sources should be public pages with producer/product/provenance content. Do not use review sites, "best of" listicles, affiliate pages, lead-generation company databases, social-only surfaces, food-safety or nutrition pages, contact-only seafood supplier lists, buyer notes, price lists, wholesale-capacity pages, shipping terms, outreach notes, or procurement guidance as primary evidence.
+
+Requirements:
+- The page must visibly fit the claimed `source_family`.
+- The page must clearly name the claimed producer or food product business.
+- The page must support a food product or food-product category for that producer.
+- The page must support both an Alaska location or operating tie and the claimed production provenance type for that food product.

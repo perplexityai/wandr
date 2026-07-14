@@ -1,0 +1,8 @@
+{
+  "name": "legal-ai-publications",
+  "wandr_task": "legal_ai_publications",
+  "task_names": [
+    "legal_ai_publications",
+    "legal_ai_publications.legal_ai_pieces"
+  ]
+}

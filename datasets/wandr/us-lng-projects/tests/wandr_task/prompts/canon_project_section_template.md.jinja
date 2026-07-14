@@ -1,0 +1,9 @@
+Canonical names of US LNG projects in scope at project-phase granularity. The canonical set with known aliases is:
+
+{=% for canonical, aliases in projects.items() =%}
+- **{= canonical =}**{=% if aliases =%} (aliases: {= aliases | join(", ") =}){=% endif =%}
+{=% endfor =%}
+
+Map the agent's submitted project name to its canonical form. Handle phase / train / stage variant naming (e.g. "Sabine Pass LNG Trains 1-5" → "Sabine Pass Phase 1"; "Cheniere Sabine Pass" → resolve to a specific phase per surrounding context, or `{{ CANONICAL_INVALID }}` if ambiguous), operator-prefix variants (e.g. "Cheniere Sabine Pass Phase 1" → "Sabine Pass Phase 1"; "Venture Global Plaquemines Phase 1" → "Plaquemines Phase 1"), regional / project-name variants (e.g. "CCL Stage 1" → "Corpus Christi Stage 1"), case differences, and minor spelling / spacing / punctuation variants.
+
+Submissions naming an LNG project that is NOT on the canonical list above (non-US projects, non-LNG infrastructure, fabricated names, projects at different granularity than the canonical phase units) are out of scope — emit `{{ CANONICAL_INVALID }}`. When the agent's name is ambiguous between two canonical entries (e.g. "Sabine Pass" without a phase qualifier could resolve to Phase 1 / Train 6 / Stage 5), emit `{{ CANONICAL_INVALID }}` rather than guessing a specific phase.

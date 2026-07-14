@@ -1,0 +1,29 @@
+For each target jurisdiction listed below and each anchor family, provide {= probe_name =}+ searched or as-filed name variants across official state lobbying/disclosure portals for PBM Accountability Project and America's Agenda. Each probe variant should have one of the listed page-local statuses and at least {= url =} official URL supporting what that official page shows.
+
+The slice preserves positive, stale, negative, and limited official evidence. A status is page-local: the cited official URL must support the reported status without needing a secondary source or a second official comparison page. Secondary sources can motivate a probe but do not satisfy the source bar.
+
+Do not submit generic portal homepages for `no_visible_official_result` unless the visible page text, URL, title, or preserved query state shows the searched name and the no-result/empty-result outcome. A solver-only note that a search was performed, or an excerpt that is not visible on the cited official page, is invalid. For all statuses, every excerpt must be faithful page-local evidence for the submitted name, status, and jurisdiction.
+
+Target jurisdictions:
+{=% for jurisdiction_name in jurisdictions =%}
+- **{= jurisdiction_name =}**
+{=% endfor =%}
+
+Anchor families:
+{=% for anchor_family, description in anchor_families.items() =%}
+- `{= anchor_family =}`: {= description =}
+{=% endfor =%}
+
+Probe statuses:
+{=% for probe_status, description in probe_statuses.items() =%}
+- `{= probe_status =}`: {= description =}
+{=% endfor =%}
+
+Optional audit notes may include a checked date and sibling variants tried, but those notes are not a substitute for visible official page evidence. Keep the row to public record inventory only: filed names, public lobbyist or firm names as filed, search terms, periods, record identifiers, source type, and official limitations. Do not add emails, phone numbers, addresses, outreach targets, biographies, campaign-finance/PAC/contribution records, strategy, policy advice, or legal/compliance advice.
+
+Requirements:
+- The page must communicate that it is an official state lobbying/disclosure portal, official search-result page, direct official filing/PDF, or official open-data/bulk source for the jurisdiction.
+- For `official_record` and `stale_official_record`, the page must show the submitted `probe_name` as an official filed name or variant. For `no_visible_official_result`, the page, title, or URL must preserve the submitted searched name/query. For `portal_limited` and `withheld_or_blocked`, the page must support the official limitation or block; it need not preserve a query when the official source itself cannot expose one.
+- The page must support the claimed `probe_status`: a target-period official record, an older stale official record, a visible no-result or empty official result set, a portal limitation, or a withheld/blocked official-record condition.
+- For `no_visible_official_result`, `portal_limited`, and `withheld_or_blocked`, the official page, URL, title, or excerpts must provide judgeable audit evidence of the searched query/result state or the official limitation/block. A solver-only note that a search was performed is not enough.
+- For `official_record` and `stale_official_record` rows that claim PBM issue linkage, the issue or bill connection must come from official record text. For negative or limited statuses, the page must support the limitation or absence outcome rather than a positive lobbying claim.

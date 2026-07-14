@@ -1,0 +1,24 @@
+For {= manufacturer =}+ manufacturers of industrial or commercial storage tanks serving the U.S. or North American market, name {= manufacturer_product =}+ specific tank products, tank types, branded systems, or product families per manufacturer. For each manufacturer-product pair, supply {= source_role =}+ different `source_role` groups from the closed set below, and within each source role supply {= claim_facet =}+ different `claim_facet` evidence records, each supported by a public URL ({= url =}+ per evidence record).
+
+Industrial tank sources often blur manufacturer literature, public project specifications, third-party listings, capability language, and facility context. Keep each record limited to what the cited page supports for the named manufacturer and tank product or family; do not turn the evidence into manufacturer ranking, procurement advice, engineering design, code-compliance verdicts, installation guidance, or compatibility guarantees.
+
+The `source_role` values are:
+{=% for role in source_role_values =%}
+- `{= role =}`
+{=% endfor =%}
+
+The `claim_facet` values are:
+{=% for facet in claim_facet_values =%}
+- `{= facet =}`
+{=% endfor =%}
+
+Eligible `official_product_literature` sources are manufacturer-controlled product pages, tank-type pages, catalogs, brochures, product literature PDFs, drawings, data sheets, or manufacturer case studies. Eligible `public_project_or_owner_spec` sources are public owner, public agency, utility, project-manual, bid, procurement, or specification pages that identify the submitted manufacturer-product as a project requirement, approved product, basis of design, installed system, or comparable project-scoped tank choice. Eligible `independent_listing_or_program` sources are non-manufacturer certification, listing, license, approval, testing, or association technology-program pages that identify the submitted manufacturer-product scope.
+
+Non-manufacturer sources count only when the cited source itself ties the claim to a manufacturer, product family, tank type, trade designation, listing ID, license, approval, project/specification, named technology program, facility, or similarly concrete manufacturer-product scope. A manufacturer-controlled source cannot satisfy the public-project or independent-listing roles just because it mentions a project, standard, or certificate.
+
+Top-10 rankings, SEO directories, supplier directories, broad market reports, distributor pages without manufacturer-product identity, generic standards pages, and broad listicles do not count. A generic AWWA, NFPA, API, UL, STI, FM, NSF, or owner-specification explainer is not product evidence unless it identifies the submitted manufacturer-product scope. Manufacturer-wide standards language should not be projected onto every product family unless the cited source itself scopes the language that way.
+
+Requirements:
+- The page must clearly tie `manufacturer` to `tank_product_family` as a manufacturer-scoped tank product, tank type, branded tank system, or product/application family.
+- The page must match the submitted `source_role` and preserve that source's scope for the submitted manufacturer-product.
+- The page must support the submitted `claim_facet`: numerical capacity, size, or dimensional evidence for `capacity_or_dimensions`; tank type, material, containment, or construction method for `construction_or_tank_type`; named application, use case, or stored medium for `application_or_stored_medium`; exact standards, certification, listing, approval, license, QA-program, or similar wording for `standards_or_certification`; or a concrete project, facility, owner, site, installation, or public-specification context for `project_or_facility_context`.

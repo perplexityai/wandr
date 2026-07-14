@@ -1,0 +1,11 @@
+Canonical Saudi Exchange Banks-sector issuers in scope, pinned on {= canon_checked_date =}:
+{=% for canonical, aliases in banks.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted bank name to one of the canonical forms above. Accept Saudi Exchange symbols, common ticker abbreviations, spelling/capitalization variants, and the listed aliases when they refer to the same current listed issuer.
+
+Important scope choices:
+- Non-bank Tadawul financial-services companies, insurers, finance companies, asset managers, foreign banks, and private Saudi banking entities outside the Saudi Exchange Banks sector do not map to this canon.
+- Predecessor or merger-history names count only when the cited source ties them to the current listed issuer. A standalone historical Alawwal Bank, Samba, or NCB source that is not connected to the current SAB or SNB issuer should not be canonified as current-bank evidence.
+- If the value names a parent group, product, subsidiary, investment arm, committee, or branch rather than the listed bank issuer, return {{ CANONICAL_INVALID }}.

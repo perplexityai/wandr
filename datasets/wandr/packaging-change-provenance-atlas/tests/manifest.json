@@ -1,0 +1,7 @@
+{
+  "name": "packaging-change-provenance-atlas",
+  "wandr_task": "packaging_change_provenance_atlas",
+  "task_names": [
+    "packaging_change_provenance_atlas"
+  ]
+}

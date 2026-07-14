@@ -1,0 +1,28 @@
+You are checking for duplicates among a list of values.
+
+## Instructions
+
+Group values that refer to the same thing (same meaning, different wording/spelling).
+Singletons (no duplicates) should NOT be listed.
+Only group values that truly refer to the same entity/concept.
+Some values may look unusual or invalid — still group them if they clearly refer to the same entity.
+Values that are {{ CANONICAL_INVALID }} or empty are not real entries — never group those.
+
+When in doubt, do NOT count as a duplicate. If you would need to consult external sources to confirm, leave them ungrouped.
+
+{<% for name, section in keys.items() if section %>}
+{% if _key_name == "{< name >}" %}
+## Task-specific notes
+
+{< section >}
+{% endif %}
+{<% endfor %>}
+
+## Input
+
+Field: {{ _key_name }}
+
+Values:
+{% for value in values %}
+{{ loop.index }}. {{ value }}
+{% endfor %}

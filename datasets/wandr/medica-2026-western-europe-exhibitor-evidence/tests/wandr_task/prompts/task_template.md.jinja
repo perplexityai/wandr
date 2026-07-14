@@ -1,0 +1,21 @@
+Identify {= company =}+ companies as Western-Europe-based organizations publicly tied to {= target_event =}; for each company, cover each of the {= evidence_facet =} evidence facets below with a source whose page-local content fits that facet (i.e. {= url =}+ URL per facet).
+
+The goal is a multi-surface exhibitor evidence panel: the useful work is separating event, home-identity, product, and external-activity evidence for the same company.
+
+Eligible Western European home countries:
+{=% for country in western_europe_countries =%}
+- **{= country =}**
+{=% endfor =%}
+
+Evidence facets:
+- `event_presence`: public evidence that the company is tied to {= target_event =}.
+- `home_market_identity`: public evidence of the company's home-market identity in an eligible Western European country.
+- `product_evidence`: company-controlled evidence of a concrete healthcare, medtech, diagnostics, digital health, device, supplier, distribution, or healthcare-service offering.
+- `external_activity_profile`: non-company, non-MEDICA-event evidence of the company's healthcare or medtech activity, sector role, registry/activity posture, or public business footprint.
+
+`company` ought to be a real operating organization in the healthcare / medtech ecosystem and based in one of the eligible countries. MEDICA, COMPAMED, event organizers, event pages, individual people, products, product categories, booth numbers, attendee-list publishers, and attendee databases are not company identities for this purpose. MEDICA or COMPAMED organizer pages are event surfaces only: an event-side country tag is not home-market identity evidence, and an event-side category tag is not product evidence or external-activity evidence.
+
+Requirements:
+- The page must clearly identify the named company or a visible legal / trading identity for that same company.
+- The page should make its facet-appropriate source role visible through page-local anchors. For `event_presence`, the page should read as a {= target_event =} event-presence surface, such as an official MEDICA profile/API/meta page, a company-controlled event page, or a trade-press event announcement. For `home_market_identity`, the page should read as company identity evidence, such as an imprint, legal notice, registry record, registered-office page, official about page, or comparable identity surface carrying an eligible country. For `product_evidence`, the page should be controlled by the company and read as a product, service, catalogue, datasheet, case, or offering surface. For `external_activity_profile`, the page should be outside the company's own control and outside MEDICA/COMPAMED event-organizer surfaces, with enough profile, registry, sector, trade-press, standards, or public business context to be about the company's activity rather than merely repeating event-attendance metadata.
+- The page should expose a focused finding for the selected facet. For `event_presence`, it should show {= target_event =} participation or event association for the company. For `home_market_identity`, it should tie the company to one eligible country through registered office, legal identity, official identity, registry, or comparable home-market evidence. For `product_evidence`, it should show a concrete healthcare / medtech offering, product family, service, technology, or distribution/supplier capability. For `external_activity_profile`, it should substantively describe the company's healthcare / medtech activity, sector role, registry/activity posture, or public business footprint beyond an attendee-list mention.

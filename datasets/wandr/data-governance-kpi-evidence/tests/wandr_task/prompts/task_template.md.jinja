@@ -1,0 +1,23 @@
+For {= vendor_platform =}+ vendors or platforms in data governance, data catalog, MDM/reference data, data quality, data observability, data stewardship, data operations, or closely adjacent data-management dashboarding, cover each of the {= evidence_facet =} evidence facets below by supplying at least {= url =} public source URL for each platform and facet.
+
+This is a public provenance atlas, not a vendor comparison. The useful work is finding what public sources state about each platform's governance visibility, metrics, workflows, integrations, pricing posture, and deployment or trust posture.
+
+Evidence facets and source roles:
+{=% for facet, details in evidence_facet_details.items() =%}
+- `{= facet =}`: {= details.description =}
+  Source role: {= details.source_role =}
+  Source-stated evidence: {= details.claim_bar =}
+{=% endfor =%}
+
+Generic BI, KPI-dashboard, marketing-analytics, or operations-dashboard products only count when the cited source specifically ties the platform to data governance, data quality, data observability, metadata, MDM/reference data, stewardship, lineage, policy, or a similar data-management use. A generic business dashboard alone is not enough.
+
+Use public, usable sources. Official vendor docs, product pages, support docs, developer/API pages, pricing/contact-sales pages, trust/security pages, release notes, public demos, and architecture pages are the normal authority for vendor-authored capability claims. Marketplace, procurement, cloud-marketplace, or public-contract pages can support pricing, deployment, or public-availability evidence when labeled by the finding. Analyst articles, comparison pages, blogs, and listicles can help with discovery or identity conflicts, but they should not override official sources for capability, pricing, API, or deployment claims.
+
+Treat source date and target fit as provenance context. Dated, versioned, archived, or procurement sources can speak more clearly to the {= target_date =} target state; current undated pages should be framed as current public evidence rather than proof of that historical date.
+
+Keep the submission as source-backed provenance only: no vendor ranking, product recommendation, procurement advice, implementation architecture, compliance assurance, ROI analysis, pricing negotiation, dashboard-building instructions, scraping or deployment instructions, outreach/contact behavior, or lead scoring.
+
+Requirements:
+- The page must clearly identify the submitted vendor, product, or platform.
+- The page must make the source role appropriate to `evidence_facet` visible.
+- The page must source-state the facet claim, caveat, or bounded missing/conflict state. DCR, workflow, compliance trend, real-time, pricing, deployment architecture, API availability, trust evidence, and missing/gated/quote-required/name-conflict/product-boundary states must not be inferred from generic wording or public-source silence.

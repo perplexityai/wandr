@@ -1,0 +1,24 @@
+For {= issuer =}+ HKEX-listed AI-value-chain issuers, pair listing-document claims with officially filed or posted issuer documents available through {= checked_date =}. For each issuer, cover the {= disclosure_facet =} disclosure facets below. For each issuer/facet, name {= issuer_facet_claim =}+ concrete listing-document claim, then supply {= url =}+ URL for each of the {= source_role =} source roles.
+
+Each issuer must be tied by its listing materials to AI, large models, AI software or applications, AI compute or infrastructure, robotics, autonomy, or a similar AI-value-chain business. News branding alone does not count.
+
+Disclosure facets:
+{=% for facet, description in disclosure_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Source roles:
+{=% for role, description in source_roles.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Keep the comparison factual. `claim_summary` must identify a specific listing-document metric, statement, product or model capability, R&D or compute investment, proceeds/listing/share-capital action, or similarly concrete claim. Broad source-role or facet summaries do not count. Report the filing/publication date, a page/section/table or announcement locator visible in the cited source, the source-role statement, and a factual relationship status when the source role is `post_listing_followup`. When the cited record exposes the issuer's listing date, report it and keep the timing comparison factual. Do not provide investment advice, legal opinion, valuation, stock-performance interpretation, market-performance judgment, or claims about company quality.
+
+Requirements:
+- The page must identify the same issuer as the submitted stock code and issuer name.
+- The page must fit the submitted source role as an official HKEX or issuer document, not news, market data, analyst commentary, or stock-price material.
+- The page must provide a document filing, publication, prospectus, announcement, or reporting date. For `post_listing_followup`, that date must be on or before {= checked_date =}; when the cited page also exposes the issuer's listing date, the document date must be after that listing date.
+- The page must belong to the submitted disclosure facet.
+- The cited source and excerpts must visibly localize the claim to a reasonably specific page, section, table, note, heading, announcement title, or equivalent document passage.
+- The page must supply the source-role side of a concrete `claim_summary`: for `listing_baseline`, the listing document must state the specific baseline metric, statement, product/model capability, R&D/compute investment, proceeds/listing/share-capital action, or similar claim; for `post_listing_followup`, the later official document must state a metric, statement, corporate action, or explicit non-comparable field/status in the same factual lineage. A generic facet or source-role template is not enough.
+- The factual relationship status must be supported at the source-role bar. A global no-follow-up claim does not count unless the cited official document itself supports no comparable field or a comparable non-disclosure status.

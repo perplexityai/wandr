@@ -1,0 +1,8 @@
+{
+  "name": "merchant-kyb-onboarding-source-provenance",
+  "wandr_task": "merchant_kyb_onboarding_source_provenance",
+  "task_names": [
+    "merchant_kyb_onboarding_source_provenance",
+    "merchant_kyb_onboarding_source_provenance.admission_gate"
+  ]
+}

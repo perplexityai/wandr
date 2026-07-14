@@ -1,0 +1,8 @@
+{
+  "name": "au-letterbox-product-presence",
+  "wandr_task": "au_letterbox_product_presence",
+  "task_names": [
+    "au_letterbox_product_presence",
+    "au_letterbox_product_presence.brand_public_trace"
+  ]
+}

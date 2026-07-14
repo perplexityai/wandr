@@ -1,0 +1,7 @@
+{
+  "name": "ofcom-transfer-lineage",
+  "wandr_task": "ofcom_transfer_lineage",
+  "task_names": [
+    "ofcom_transfer_lineage"
+  ]
+}

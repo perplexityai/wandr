@@ -1,0 +1,8 @@
+{
+  "name": "rental-property-bookkeeping-provider-evidence",
+  "wandr_task": "rental_property_bookkeeping_provider_evidence",
+  "task_names": [
+    "rental_property_bookkeeping_provider_evidence",
+    "rental_property_bookkeeping_provider_evidence.provider_commitments"
+  ]
+}

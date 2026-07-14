@@ -1,0 +1,15 @@
+For at least {= provider_plan =}+ private medical insurance provider-plan tiers relevant to Singapore expat or PR families, and for each of the {= facet =} comparison facets, supply a corroborating source (i.e. {= url =}+ URL) substantively evidencing the claimed facet for the named plan.
+
+This mirrors the work of replacing employer group medical cover with individually purchased cover: plan names are not enough, and neither are generic brand pages. Each cell should point to an insurer-controlled plan-specific page, benefit schedule, policy document, brochure, or customer guide carrying the plan fact.
+
+The facets are:
+{=% for facet_name, facet_surfaces in facets.items() =%}
+- `{= facet_name =}`: {= facet_surfaces.terse =}
+{=% endfor =%}
+
+Each claimed provider-plan ought to be a real named medical insurance plan tier or rider bundle marketed to Singapore residents, PRs, foreigners, or expats for individual/family purchase.
+
+Requirements:
+- The page must substantively evidence the claimed facet for the claimed provider-plan, per the per-facet bar.
+- The page's facet content must be attributed to the claimed provider-plan rather than only to a provider brand, a multi-plan roundup, an unrelated rider, or a different plan tier.
+- The page must communicate, possibly via URL among other things, that it is on an admissible insurer-controlled plan-specific source class: insurer-controlled plan page or insurer PDF such as a brochure, benefit schedule, customer guide, or policy wording quoting plan-specific benefit or premium facts.

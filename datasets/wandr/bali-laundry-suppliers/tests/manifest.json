@@ -1,0 +1,9 @@
+{
+  "name": "bali-laundry-suppliers",
+  "wandr_task": "bali_laundry_suppliers",
+  "task_names": [
+    "bali_laundry_suppliers",
+    "bali_laundry_suppliers.supplier_product_range",
+    "bali_laundry_suppliers.supplier_price_signal"
+  ]
+}

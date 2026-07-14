@@ -1,0 +1,3 @@
+For an NTSB investigation key, return the canonical form as `<UPPERCASE NTSB investigation number>, <concise event title>`.
+
+The NTSB number is the strongest identity anchor. Keep it exactly if recognizable, normalize only letter case and punctuation around the title, and return {{ CANONICAL_INVALID }} if no recognizable NTSB investigation number is present.

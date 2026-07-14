@@ -1,0 +1,19 @@
+For each of the {= capability_family =} capability families listed below, cover {= platform =}+ hiring-ecosystem platforms per family and supply an official source for the platform/capability claim ({= url =}+ URL per platform/capability pair).
+
+The useful work is public provenance: a broad table of platform-owned or platform-authorized sources showing what job-board, ATS/recruiting-platform, staffing CRM, employment-marketplace, job-distribution, or relevant cloud/job API capability is publicly documented. Record source-stated access posture, credential or partner requirement, current/deprecated/conflict status, market or geography limit, source date/version, checked date, and pricing or fee presence when the source states those facts. Do not infer absence from silence.
+
+Capability families:
+{=% for family in capability_families =%}
+- `{= family.id =}`: {= family.description =}.
+{=% endfor =%}
+
+Acceptable evidence includes official developer documentation, API references, partner-program pages, official help-center pages, platform-owned GitHub or documentation repositories, official marketplace pages only when they directly state the capability, official pricing pages only when they directly state source-relevant pricing or fee facts, and reputable platform announcements for currentness, deprecation, withdrawal, or access-status evidence.
+
+Third-party aggregators, unified-API matrices, scraper API marketplaces, generic "top APIs" lists, pricing blogs, platform-ranking or procurement pages, and implementation how-to articles do not establish the platform's own capability. A generic docs homepage should not stand in for many capability records unless the page itself directly documents each claimed capability. A read/listing API page does not establish create, update, close, webhook, apply, or account-management capability unless the relevant operation is directly stated.
+
+Keep the submission to public source facts. Do not include app build advice, implementation code, credential acquisition or use instructions, account setup steps, scraping or bypass guidance, posting automation instructions, rankings, procurement recommendations, applicant-management advice, recruiter contact discovery, outreach, or contact enrichment.
+
+Requirements:
+- The page must communicate that it is a platform-owned, platform-controlled, or platform-authorized official surface for the claimed platform.
+- The page must directly document the claimed capability family for the claimed platform, with enough operation-level specificity to distinguish posting create/publish, update/upsert, close/delete/expire, status/read/list, applicant/apply/candidate ingestion, webhook/event delivery, and account/tenant/company management.
+- Access posture, credential or partner requirements, currentness/deprecation/conflict status, pricing or fee facts, source date/version, and market/geography limits must be reported only when they are stated or clearly signaled by the official source; otherwise mark the fact as unstated or no-source rather than guessing. The checked date is the date the source was inspected, not a fact the source needs to state.

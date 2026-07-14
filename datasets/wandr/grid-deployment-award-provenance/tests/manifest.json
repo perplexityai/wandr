@@ -1,0 +1,8 @@
+{
+  "name": "grid-deployment-award-provenance",
+  "wandr_task": "grid_deployment_award_provenance",
+  "task_names": [
+    "grid_deployment_award_provenance",
+    "grid_deployment_award_provenance.project_evidence_facets"
+  ]
+}

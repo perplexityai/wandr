@@ -1,0 +1,19 @@
+Build a public-source provenance map for {= entity =}+ entities tied to promotional-prize, prize-indemnity, contingency, over-redemption, weather-triggered promotion, prediction-contest, conditional-rebate, loyalty/reward-protection, contractual-bonus, or comparable incentive-risk insurance activity in {= target_markets =}. For each entity, cover at least {= source_role =} of the source roles below with {= url =}+ URL per role; more source roles are useful when public evidence exists.
+
+The point is to show what public sources actually establish about each entity's place in the promotional-risk chain, not to rank providers or infer private diligence facts. Insurance and carrier relationships should stay source-stated. Unknown or conflicting capacity, role, geography, parent, or date information should be marked as missing or conflicted rather than filled in from inference.
+
+Source roles:
+{=% for source_role, description in source_roles.items() =%}
+- `{= source_role =}`: {= description =}.
+{=% endfor =%}
+
+Sources can include official provider/product/program pages, regulator or enforcement records, public filings, carrier/partner pages, official market-role pages, reputable insurance trade coverage, and reputable event/case coverage. Directories, marketplace listings, market reports, Wikipedia-style pages, consumer explainers, law-firm blog explainers, and generic compliance summaries may help discovery but do not count by themselves as primary evidence for a row.
+
+Promotion agencies, administrators, and procurers can count when the source ties them to arranging, administering, procuring, or supporting promotional-risk insurance; they should not be mislabeled as insurers unless the source says so. Event examples can corroborate activity when public, but they do not need to identify a carrier unless the source itself does.
+
+Requirements:
+- The page must clearly identify the submitted entity.
+- The page must tie the entity to {= target_markets =}, either directly or through an explicitly global / worldwide promotional-risk offering that reaches those markets.
+- The page must connect the entity to promotional-risk insurance activity or a closely related incentive-risk product mechanic.
+- The page must make the declared `source_role` visible through source-class and content signals appropriate to that role.
+- The submitted provenance must stay within what the page states or directly communicates, including honest missing or conflict states for role, capacity, carrier, geography, parent, event identity, or date when the source does not settle them.

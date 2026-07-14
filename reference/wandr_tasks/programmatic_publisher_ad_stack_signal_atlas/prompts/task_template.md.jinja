@@ -1,0 +1,19 @@
+For {= publisher_domain =}+ publisher-domain pairs that are public news, magazine, broadcast, or digital-media publishers, cover each of the {= signal_type =} public ad-stack/ad-sales signal types listed below with a public source (i.e. {= url =}+ URL for each signal type).
+
+Treat `publisher_name` as the publication, brand, or publisher identity being studied, and `domain` as the publisher domain for that identity. Owner/operator aliases can appear in evidence, but separate publication brands under the same owner should remain separate publisher-domain pairs.
+
+Signal types:
+- `ads_txt_authorization`: the publisher domain's public `ads.txt` or a clear publisher/owner redirect shows authorized-seller, owner, manager, DIRECT/RESELLER, or comparable ads.txt authorization content tied to the publisher or owner.
+- `seller_identity_resolution`: a public `sellers.json` entry resolves a seller ID to the publisher, owner, or operator through seller name, seller domain, and seller type; direct publisher/operator resolutions count, while intermediary-only resolutions do not.
+- `runtime_ad_tag_signal`: public publisher page source or linked public JavaScript shows a concrete ad server, GPT, Prebid, APS/TAM, header-bidding, bidder, exchange, or equivalent ad-runtime signal.
+- `consent_or_privacy_signal`: public publisher page source or linked public JavaScript shows a concrete CMP, TCF, GPP, USPAPI, OneTrust/Cookielaw, Sourcepoint, privacy-manager, Quantcast, or comparable consent/privacy-framework signal.
+- `advertising_surface`: a publisher- or owner/operator-controlled advertising, media-kit, sales, sponsorship, specs, or ad-products surface identifies the publisher brand or portfolio and describes public advertising opportunities or products.
+
+For each source, report a `checked_on` absolute date, an `observed_signal` summarizing the exact public signal, and a `source_class` label from `ads_txt`, `sellers_json`, `publisher_page_source`, `linked_public_js`, or `advertising_media_kit`. For `seller_identity_resolution`, also report `ad_system_domain`, `seller_id`, `seller_name`, `seller_domain`, and `seller_type`.
+
+This is a factual public-evidence task only: no publisher ranking, revenue optimization, gap/opportunity analysis, auction-performance inference, bot-protection bypass, paywall bypass, private dashboard use, or protected diagnostic work.
+
+Requirements:
+- The source must tie the cited signal to the claimed publisher-domain pair, a clear owner/operator of that publisher, or the publisher's public portfolio.
+- The source should fit the selected `signal_type` and reported `source_class`; search snippets, challenge pages, blocked/error pages, unsupported broad source blobs, and wrong-axis URL reuse do not count as source fit.
+- The source must expose a concrete public signal for the selected `signal_type`. For seller rows, that means the exact seller ID plus seller name, seller domain, and seller type resolving directly to the publisher, owner, or operator; for runtime and consent/privacy rows, the same URL may be reused only when the observed strings and excerpts are distinct for the two signal types.

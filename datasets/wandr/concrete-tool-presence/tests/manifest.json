@@ -1,0 +1,7 @@
+{
+  "name": "concrete-tool-presence",
+  "wandr_task": "concrete_tool_presence",
+  "task_names": [
+    "concrete_tool_presence"
+  ]
+}

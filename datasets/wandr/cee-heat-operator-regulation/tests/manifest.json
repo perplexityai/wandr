@@ -1,0 +1,7 @@
+{
+  "name": "cee-heat-operator-regulation",
+  "wandr_task": "cee_heat_operator_regulation",
+  "task_names": [
+    "cee_heat_operator_regulation"
+  ]
+}

@@ -1,0 +1,15 @@
+Canonical names of EU member states in scope. The exact canonical set is the EU 27 member states:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the agent's submitted country name to its canonical form. Accept English / native-language / native-script / common-abbreviation variants pointing to the same EU member state (for example, `Germany` ↔ `Deutschland` ↔ `Bundesrepublik Deutschland`; `Czechia` ↔ `Czech Republic` ↔ `Česká republika` ↔ `Česko`; `Netherlands` ↔ `Nederland` ↔ `Holland` ↔ `Kingdom of the Netherlands`). Accept punctuation, diacritic, and minor spelling / spacing variants.
+
+The European jurisdictions below are outside this task's country universe — emit `{{ CANONICAL_INVALID }}` for submissions naming any of them:
+
+{=% for canonical, aliases in out_of_scope_european_jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Submissions naming a jurisdiction outside the canonical set above — including the European-but-out-of-scope jurisdictions listed above, EFTA / EEA states, microstates, accession states, non-European states, submissions of European Union / EU / EU-27 (the supranational level), and fabricated names — emit `{{ CANONICAL_INVALID }}`.

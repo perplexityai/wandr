@@ -1,0 +1,16 @@
+For {= distributor =}+ potential distributors of cell- and gene-therapy-relevant cryopreservation bag products, name the distributor, market, and region label, supplying a source ({= url =}+ URL per candidate). Each candidate is a named distributor, reseller, importer, catalog supplier, or local sales channel in a concrete market, not just a manufacturer's own product page.
+
+Use exactly one of these five canonical region labels for each candidate. The countries and markets listed under each label are concrete market examples that belong in that label, not alternate region names, subregions, or aliases:
+
+{=% for canonical, markets in regions.items() =%}
+- **{= canonical =}**{= " (example markets: " + (markets | join(", ")) + ")" if markets else "" =}
+{=% endfor =%}
+
+For each candidate, also name the represented manufacturer or product line, the product family, the channel role, and a concise rationale for prioritizing this distributor.
+
+The cited page must place the distributor's commercial channel in the submitted market and describe a cryopreservation/freezing bag product suitable for cells, HPCs, stem cells, blood components, or other CGT-adjacent material. A distributor's own product page on its own domain (`<distributor>.com`, `<distributor>.<cc-tld>`, country-specific storefront) or a directory-marketplace product page whose seller block names the distributor is the canonical evidence shape.
+
+Requirements:
+
+- The page communicates (possibly via URL among other things) that it is the named distributor's local commercial channel serving the submitted market. Market evidence on the page can take the form of a country TLD in the hostname, an explicit country/state/city/address mention in the title or body, a native-language body that matches the submitted market, or a market-specific business identifier or regulatory clearance. A distributor's generic `.com` storefront with no country, language, address, or regulatory signal anywhere on the page does not by itself evidence which market that distributor serves.
+- The page must show that the submitted product family is a cryopreservation, freezing, cryogenic storage, or closed single-use bag suitable for cell, blood-component, stem-cell, HPC, tissue, biologic, or similar CGT-adjacent material.

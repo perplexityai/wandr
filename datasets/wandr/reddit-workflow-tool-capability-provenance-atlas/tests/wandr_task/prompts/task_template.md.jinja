@@ -1,0 +1,21 @@
+For each of the {= product_category =} product categories below, identify {= product =}+ currently available public products, tools, or software-backed services with explicit Reddit-specific workflow support. For each product, cover each of the {= evidence_role =} evidence roles below with a role-appropriate public source (i.e. {= url =}+ URL under each role).
+
+The goal is public provenance for real, currently available Reddit workflow support, not a ranking, buying guide, procurement strategy, contact/prospecting output, or missingness inventory.
+
+Product categories in scope:
+{=% for category, description in product_categories.items() =%}
+- **{= category =}**: {= description =}
+{=% endfor =%}
+
+Evidence roles:
+- `reddit_workflow_claim`: public evidence that the product performs a Reddit-specific workflow.
+- `commercial_access_surface`: public evidence of an official access path for the same Reddit-capable product or product surface.
+- `integration_or_platform_evidence`: public evidence of a concrete Reddit platform, API, integration, connector, partner, or channel mechanism.
+
+Products should be real public software products, first-party Reddit business tools, official integration/product surfaces, or agency/service offerings with a visible software/tooling surface. Generic social-media claims, broad "all platforms" wording, pending roadmap requests, closed products, recommendation listicles, third-party price estimates, pure agencies without tooling, and lead-generation/outreach-only tools do not establish a product for this task.
+
+Requirements:
+- The page must support the product's fit to the claimed product category, specific enough to distinguish first-party Reddit tools, schedulers/publishers, monitoring/alerting tools, analytics/research tools, automation/API platforms, and social/customer-engagement suites.
+- The page must clearly identify the claimed product or organization-owned product surface.
+- The page must fit the claimed `evidence_role` source class. Product-owned, official marketplace/integration, official announcement, help/docs, or Reddit-owned sources can fit `reddit_workflow_claim`; official pricing, plans, free-tier, free-tool, trial, signup, app access, request-demo, contact-sales, custom-quote, or managed-service access pages can fit `commercial_access_surface`; official docs, help, API, integration, marketplace, Reddit partner/directory, product-technical, or announcement pages can fit `integration_or_platform_evidence`.
+- The page must support the claimed role's substance. For `reddit_workflow_claim`, it must explicitly state a product-owned Reddit workflow such as Reddit post scheduling, Reddit publishing, Reddit monitoring, Reddit alerts, Reddit listening, Reddit data/API access, Reddit engagement/inbox, subreddit/community research, Reddit analytics, or equivalent. For `commercial_access_surface`, it must expose an official access path for the same Reddit-capable product/surface, and generic company pricing fails when the page does not connect the access path to that product, connector, module, plan scope, or Reddit-branded surface. For `integration_or_platform_evidence`, it must show a concrete Reddit platform/API/channel/partner mechanism rather than only a logo or broad supported-platform list.

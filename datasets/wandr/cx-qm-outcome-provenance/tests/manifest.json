@@ -1,0 +1,8 @@
+{
+  "name": "cx-qm-outcome-provenance",
+  "wandr_task": "cx_qm_outcome_provenance",
+  "task_names": [
+    "cx_qm_outcome_provenance",
+    "cx_qm_outcome_provenance.partial_source_audit"
+  ]
+}

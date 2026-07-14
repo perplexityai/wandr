@@ -1,0 +1,29 @@
+For each of the {= part_category =} industrial part categories below, for {= distributor =}+ U.S.-serving industrial parts distributors per category, supply {= url =}+ public URL for each submitted distributor and each of the {= evidence_axis =} evidence axes listed below.
+
+The task is a neutral public-evidence table. It is not a supplier recommendation, federal-bid strategy, quote/RFQ workflow, pricing request, contact-enrichment task, ranking, or prediction about whether an entity will bid on future federal work. Absence or zero-award evidence is only a dated source state from the checked public source.
+
+Part categories:
+{= part_category_definitions =}
+
+Evidence axes:
+{= evidence_axis_definitions =}
+
+Briefly state the axis-specific finding for each submitted URL. For `line_card_or_authorization`, include a `source_strength` label from the source-strength states below. For `entity_identifier_state` and `federal_award_record_state`, include `checked_date`, `identifier_or_search_basis`, `source_state`, and any `ambiguity_note` needed to preserve facility, DBA, parent/child, owner-CAGE, acquired-brand, or legal-entity uncertainty.
+
+Line-card or authorization source-strength states:
+{= line_card_source_strengths =}
+
+Entity identifier states:
+{= entity_identifier_states =}
+
+Federal-award record states:
+{= federal_award_states =}
+
+Requirements:
+- The page must identify the submitted distributor, legal entity, facility, DBA, or recipient entity closely enough for the submitted evidence. Do not silently treat parent companies, sister companies, acquired brands, owner CAGEs, or similarly named recipients as the same distributor.
+- The page must fit the submitted `evidence_axis`. A product-category page is not automatically evidence of traceability; a homepage is not automatically line-card evidence; a CAGE page is not automatically award-history evidence.
+- For `product_scope`, the page must show that the distributor sells, stocks, sources, or catalogs products in the submitted `part_category`.
+- For `line_card_or_authorization`, the page must name a manufacturer, brand, product line, official distributor relationship, or category-relevant line-card entry. Generic logo walls and broad "authorized for thousands of manufacturers" claims are not enough unless the submitted named brand/product line is textually visible and the claim is specific enough.
+- For `traceability_quality`, the page must show distributor traceability, certificate-of-conformance, material-cert, lot/batch/heat/cure traceability, AS9120/AS9100/ISO, DFARS/ITAR/JCP/NIST, or comparable quality/compliance capability. Buyer-side quality clauses and generic industry articles do not count.
+- For `entity_identifier_state`, prefer official CAGE/SAM/UEI evidence when fetchable. Distributor-published identifiers and official-derived commercial pages can count only when the submitted finding labels the source state and preserves ambiguity.
+- For `federal_award_record_state`, prefer fetchable official USAspending GET recipient API URLs or other official FPDS/USAspending-derived GET pages that expose entity and award-state text. USAspending human pages that fetch only as JavaScript shells, human search-result pages, and POST-only search/count/autocomplete results do not count as ordinary evidence URLs. Official-derived commercial pages can count only as labeled fallback or ambiguity evidence.

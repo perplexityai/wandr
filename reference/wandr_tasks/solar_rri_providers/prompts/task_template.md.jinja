@@ -1,0 +1,30 @@
+For {= provider =}+ U.S. residential rooftop solar providers that publicly offer solar panel removal and reinstallation, detach/reset, or solar reroof R&R services, supply evidence for each of the {= evidence_type =} evidence types and at least {= url =}+ URL per type. Include providers from many states or metro markets; Philadelphia and the Delaware Valley are useful seed regions, but the provider universe is open.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, include the canonical provider name, legal name or DBA when the source reveals one, official company URL when known, home region or service regions, provider archetype, R&R scope or accountability signal, independent source type when relevant, public registration or credential ID when relevant, pricing or process detail if public, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful R&R service language includes:
+{=% for phrase in rri_service_phrases =%}
+- `{= phrase =}`
+{=% endfor =%}
+
+Useful provider archetypes include:
+{=% for archetype in provider_archetypes =%}
+- `{= archetype =}`
+{=% endfor =%}
+
+Independent source type should be factual, not promotional. Useful independent source types include:
+{=% for source_type in independent_source_types =%}
+- `{= source_type =}`
+{=% endfor =%}
+
+Public sources can include provider service pages, official provider profiles, state contractor registries, municipal license lookups, certification directories, public program rosters, utility or interconnection lists, public permit records, trade publications, industry association pages, and provider-specific public directory profiles. Directory, credential, recognition, and public-profile pages are useful only when they are provider-specific and public enough to identify the submitted company or organization. Generic solar installer lists, review-only pages, customer reviews, and search results can help discovery or secondary context, but they do not prove the R&R offering unless the page itself contains explicit, provider-specific R&R proof; they also do not prove public accountability unless the page carries a concrete provider-specific accountability fact. Private lead-enrichment databases, quote-request funnels that do not identify a real provider, procurement advice, rankings, and "best provider" recommendations are out of scope.
+
+Requirements:
+- The page must identify the claimed provider, or bridge the submitted trade name to a legal/DBA name, with enough public context to distinguish it from unrelated same-name companies.
+- The page must fulfill the claimed `evidence_type`: `rri_service` evidence should be a primary provider source for the R&R offering, while `public_accountability` evidence should come from a separate non-company public source for the submitted provider.
+- The page must support concrete provider substance at the claimed evidence type. For `rri_service`, it should explicitly show residential rooftop solar panel removal and reinstallation, detach/reset, or solar reroof R&R for roof repair, roof replacement, relocation, or comparable homeowner work. For `public_accountability`, it should show a concrete public accountability fact for the same provider, not just a name-only profile, generic installer listing, or customer-opinion page.

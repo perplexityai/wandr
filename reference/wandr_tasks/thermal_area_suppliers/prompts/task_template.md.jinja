@@ -1,0 +1,20 @@
+For each of the {= thermal_area =} automotive thermal-management areas listed below, name {= supplier =}+ suppliers per area; for every supplier-area pair, supply a source (i.e. {= url =}+ URL) for each of the {= evidence_role =} evidence roles.
+
+The aim is a public provenance panel for vehicle thermal-management supplier capability, not a supplier ranking, outreach list, sales deck, procurement recommendation, or technical design guide. The same supplier may appear in multiple thermal areas only when each area has its own source-backed evidence.
+
+Thermal areas:
+{=% for thermal_area, description in thermal_areas.items() =%}
+- `{= thermal_area =}`: {= description =}
+{=% endfor =%}
+
+Evidence roles:
+{=% for evidence_role, description in evidence_roles.items() =%}
+- `{= evidence_role =}`: {= description =}
+{=% endfor =%}
+
+Sources should be public, source-backed, and specific to the supplier and thermal area. Do not use contact-enrichment pages, lead lists, generic market reports, SEO supplier rankings, broad procurement databases, or sources that merely imply a named OEM/platform/customer relationship.
+
+Requirements:
+- The page must clearly tie the named supplier to the claimed thermal area and to an automotive, vehicle, EV, hybrid, ICE, battery-pack, powertrain, cabin-climate, or comparable vehicle-system context.
+- The page must make the claimed evidence role visible: supplier-owned technical/product/application evidence for `official_technical`, or non-own-domain/public footprint evidence for `external_presence`.
+- The page must expose concrete product, technology, application, program, patent/R&D, event, facility, filing, or comparable footprint detail for the supplier in the claimed thermal area. Named OEM, platform, customer, certification, standard, facility, or relationship details count only when source-stated.

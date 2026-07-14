@@ -1,0 +1,8 @@
+{
+  "name": "email-security-claim-corroboration",
+  "wandr_task": "email_security_claim_corroboration",
+  "task_names": [
+    "email_security_claim_corroboration",
+    "email_security_claim_corroboration.commercial_availability"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "australia-education-agents",
+  "wandr_task": "australia_education_agents",
+  "task_names": [
+    "australia_education_agents",
+    "australia_education_agents.education_agencies_eligibility"
+  ]
+}

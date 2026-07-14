@@ -1,0 +1,6 @@
+The closed set of in-scope EssilorLuxottica-owned or licensed eyewear brands for this task:
+{=% for canonical, aliases in brand_aliases.items() =%}
+- **{= canonical =}**{= " (also known as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map conventional aliases — alternate-script forms (Bvlgari ↔ Bulgari, "BVLGARI"), licensing-line variants (Polo Ralph Lauren ↔ Ralph Lauren ↔ Ralph by Ralph Lauren ↔ Ralph), legal-suffix variants (Tiffany ↔ "Tiffany & Co." ↔ "Tiffany and Co."), brand-line variants (Costa ↔ "Costa Del Mar", Vogue ↔ "Vogue Eyewear"), and case / spacing differences ("Ray Ban" ↔ "Ray-Ban") — to the canonical brand name. Brands outside this 16-brand EssilorLuxottica scope (Gucci, Cartier, Tom Ford, etc.) are NOT members of this closed set.

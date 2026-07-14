@@ -1,0 +1,17 @@
+For at least {= record_class =}+ CWA/NPDES `record_class` buckets, find at least {= npdes_permit =}+ Clean Water Act / NPDES permits in each bucket, name at least {= cwa_record =}+ source-stated CWA/NPDES public record for each permit-class pair, and supply at least {= url =}+ official EPA/ECHO URL for each permit-record row.
+
+Use one of these `record_class` values for every row: `permit_status_period`, `violation_noncompliance`, `inspection_evaluation`, `enforcement_action`, or `dmr_limit_value`. The `record_kind` must be a specific source-stated record inside that class, not just a restatement of the class label. Use the NPDES permit or official permit-tracking ID as the identity spine. Facility name, FRS/Registry ID, address, operator, and geography are useful answer context, but they do not replace the permit ID. Make each `cwa_record` specific enough to disambiguate the record class, record kind, date or reporting period, and source-stated status/action/value; for DMR or limit rows, include the pollutant/parameter, outfall, monitoring period, or comparable source row anchors when they are needed to identify the row.
+
+Use official EPA/ECHO or EPA CWA/NPDES human-readable pages or reports as row evidence. The cited URL's visible page/report text must expose the permit-specific row fact and its date, period, or as-of/vintage context. Do not use raw ECHO REST/API responses, JSON blobs, raw CSV/ZIP download rows, Swagger/spec payloads, or script-parsed structured data as row evidence. A data dictionary, download summary, search form, or top-level Detailed Facility Report summary can support context, but it is not enough by itself for a permit-record row if the claimed row facts live somewhere else.
+
+This is intended as current/as-of public-record provenance, not a historical annual-report transcription task. Historical permit periods or old actions can be valid when they are displayed on a current official EPA/ECHO page or report with a current page/report vintage. Legacy annual compliance/noncompliance appendices, archived annual reports, or old dense list PDFs whose own publication/reporting vintage is before 2020 do not satisfy row evidence by themselves. Do not submit rows whose only permit-specific fact is membership in an old annual appendix/list with one repeated status/action/value.
+
+The record fact should be specific to the permit and class rather than a generic source-page fact. Repeated identical triples of `record_kind`, `date_or_period`, and `source_stated_status_action_or_value` with only the permit ID changed are weak unless the cited page visibly supports each permit-specific row fact.
+
+Requirements:
+- The page must be an official EPA/ECHO or EPA CWA/NPDES human-readable page/report surface for the claimed row.
+- The page must identify the claimed NPDES permit ID and tie the record to CWA/NPDES context.
+- The claimed row must fit the submitted `record_class`.
+- The page must support the claimed record kind and source-stated status, action, violation, limit, DMR value, noncompliance status, inspection/evaluation fact, or comparable row fact.
+- The page must support the claimed date, monitoring period, reporting quarter, permit period, action date, inspection date, or explicit data vintage/as-of period for the row.
+- The cited source must not be a pre-2020 annual appendix/report-only row.

@@ -1,0 +1,10 @@
+{
+  "name": "fda-device-udi-510k-recall-public-crosswalk-table",
+  "wandr_task": "fda_device_udi_510k_recall_public_crosswalk_table",
+  "task_names": [
+    "fda_device_udi_510k_recall_public_crosswalk_table",
+    "fda_device_udi_510k_recall_public_crosswalk_table.udi_identity",
+    "fda_device_udi_510k_recall_public_crosswalk_table.pathway_record",
+    "fda_device_udi_510k_recall_public_crosswalk_table.identity_conflict_or_note"
+  ]
+}

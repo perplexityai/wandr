@@ -1,0 +1,15 @@
+For {= surface_provider =}+ distinct public consumer-facing provider sites that publish mortgage or home-loan calculator pages, name {= calculator_surface =}+ calculator surface per provider site. For every calculator surface, supply {= url =}+ URL for each of the {= evidence_axis =} evidence axes.
+
+The goal is to map consumer calculator pages that act as acquisition surfaces for lenders, brokers, marketplaces, real-estate portals, publishers, affiliate lead generators, or comparable commercial actors.
+
+Evidence axes:
+{=% for axis, description in evidence_axes.items() =%}
+- `{= axis =}`: {= description =}.
+{=% endfor =%}
+
+Each provider site should be a distinct public brand or web property presenting the calculator surface. Extra calculator pages from the same site do not replace breadth across different providers. For publisher, portal, affiliate, or marketplace pages, make the mortgage commercial role precise rather than treating generic site identity, a lender partner, and an advertiser relationship as interchangeable.
+
+Requirements:
+- The page must tie the evidence to the submitted provider site and calculator surface. For `calculator_action`, the cited URL must be the calculator page itself or a clearly equivalent normalized version. For `commercial_identity`, the cited URL must tie separate identity or disclosure evidence to the same provider site, the same calculator surface, or a named mortgage beneficiary behind that surface.
+- The page must communicate the source role for its evidence axis: for `calculator_action`, that it is the calculator page itself; for `commercial_identity`, that it is a distinct URL from the calculator page, such as a same-provider legal / licensing / about / disclosure page, a mortgage affiliate or advertising disclosure, or a recognized licensing / business registry page identifying the provider, beneficiary, or relationship.
+- The page must show the axis-specific evidence. For `calculator_action`, this means a mortgage, refinance, home-loan payment, or home-affordability calculator plus a visible commercial action such as compare rates, apply, prequalify, view rates, request a quote, contact a loan officer, or get an offer. The action only needs to be visible on the cited page; the destination after clicking does not need to be reachable. For `commercial_identity`, this means a concrete mortgage commercial identity or relationship signal such as NMLS / licensing information, FDIC / Equal Housing Lender language, direct-lender language, licensed broker or lead-generator language, mortgage affiliate / advertising compensation disclosure, mortgage marketplace or rate-shopping language, or a named lender / partner relationship.

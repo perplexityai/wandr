@@ -1,0 +1,15 @@
+Canonical names of US bar-admitting jurisdictions in scope (50 states + the District of Columbia):
+
+{=% for canonical, aliases in jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted jurisdiction name to its canonical form. Accept full state names, two-letter postal abbreviations, traditional citation-form abbreviations (e.g., `Mass.` for Massachusetts, `Penn.` for Pennsylvania), and minor punctuation / spacing variants. Accept `D.C.`, `DC`, `Washington DC`, `Washington, DC`, `Washington D.C.`, and `District of Columbia` for the District of Columbia.
+
+The US territories below are outside this task's jurisdiction universe (their bar-admission and attorney-discipline regimes are not the subject of this task):
+
+{=% for canonical, aliases in out_of_scope_us_territories.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Submissions naming a jurisdiction outside this 51-jurisdiction set — including the US territories listed here, federal-court systems, foreign-country bar systems, and fabricated names — emit `{{ CANONICAL_INVALID }}`.

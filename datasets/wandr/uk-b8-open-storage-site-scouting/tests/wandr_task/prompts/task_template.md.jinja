@@ -1,0 +1,20 @@
+You are scouting UK town and local-authority markets for a B8, container self-storage, or open-storage operator starting from AL8 7NW. As of {= as_of_date =}, treat the geography as the {= geography_note =}. For {= opportunity_area =}+ towns, cities, urban areas, or local-authority markets, cover each of the {= evidence_axis =} evidence labels below with {= area_axis_finding =}+ concise source-bounded finding per (area, axis) cell, supplying a source ({= url =}+ URL per finding).
+
+Use the task as a public-source screening panel, not a parcel acquisition mandate. Industrial estates, trade-counter districts, logistics parks, and business parks can provide evidence only under the town or local authority they sit in; they should not be submitted as separate outer areas. The demand row must make the 25,000+ population or comparable employment/logistics demand base visible from the source.
+
+Evidence labels:
+{=% for row in evidence_axis_prompt_rows =%}
+- `{= row.slug =}` -- **{= row.label =}**: {= row.description =}
+{=% endfor =%}
+
+Each sourced finding should use exactly one of those labels. The same page may support more than one label, but split the facts into separate findings when it does.
+
+Use public, item-level sources that a practitioner could revisit: ONS or council population pages, local plans, planning applications, property listings, estate or developer pages, operator/facility pages, trade/economic sources, or transport/logistics pages. Avoid final evidence that is only a search result, map pin, social post, generic directory, paywalled/private source, or broad marketing page with no area-specific fact.
+
+Keep claims source-bounded. Do not assert exact drive time from AL8 7NW, absence or undersupply of storage, live availability, planning permission, lawful container-storage use, or suitability for a specific operator unless the source directly supports that stronger claim.
+
+Requirements:
+- The page must focus on, or directly locate the evidence in, the submitted town, city, urban area, or local-authority market.
+- The page must support the submitted finding under the applicable evidence label above: 25,000+ population or equivalent demand base, storage supply, planning/use context, land/site availability, or road/logistics access.
+- The page must be an appropriate public source for that evidence label, such as an official statistics/planning source, operator or facility page, commercial property listing, landowner/developer page, transport/logistics source, or credible local economic/business source.
+- The submitted finding must stay within what the source supports, without overclaiming exact drive time, storage absence or undersupply, live availability, planning permission, lawful use, population threshold, or container-storage suitability.

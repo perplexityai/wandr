@@ -1,0 +1,27 @@
+For each of the {= comparison_surface_family =} comparison source families below, cover {= cve_id =}+ CVEs that appear in official CISA `ICSA-` industrial-control advisories from {= target_period =}. For each CVE, use {= cisa_advisory_id =}+ CISA advisory ID, {= provenance_axis =}+ provenance axis, {= comparison_source =}+ named comparison source, and both of the {= source_side =} source sides, with {= url =}+ source per side.
+
+The comparison source families are:
+{=% for family, description in comparison_surface_families.items() =%}
+- `{= family =}`: {= description =}
+{=% endfor =%}
+
+The provenance axes are:
+{=% for axis, description in provenance_axes.items() =%}
+- `{= axis =}`: {= description =}
+{=% endfor =%}
+
+The two source sides are:
+{=% for side, description in source_sides.items() =%}
+- `{= side =}`: {= description =}
+{=% endfor =%}
+
+The CISA advisory must be an `ICSA-` advisory, not an `ICSMA-` medical advisory. A CISA source can be the official advisory page or the official CISA CSAF JSON/raw JSON. Official machine-readable records explicitly named in this task count as public source documents when they are authority-controlled and fetchable. A comparison source must be controlled by the comparison authority named in the case; community datasets, dashboards, vulnerability marketing pages, news coverage, EPSS pages, and scanner summaries do not count as leaf evidence.
+
+For each row, note the source-side statement it is meant to prove and an absolute checked date. Preserve disagreement, absence, or unenriched states as source provenance. Do not decide which source is correct, and do not turn the row into mitigation instructions, exploit reproduction, operational recommendations, facility targeting, product ranking, severity adjudication, safety assurance, compliance assurance, or alert/dashboard deployment.
+
+Requirements:
+- The page should communicate that it is on the required source side: official CISA ICSA advisory/CSAF evidence for `advisory_source`, or an authority-controlled comparison source for `comparison_source`.
+- The page must align with the case. For `advisory_source`, it must identify the claimed `ICSA-` advisory and show the claimed CVE in that advisory. For `comparison_source`, it must identify the claimed CVE on the named comparison source.
+- The page must source-state the selected provenance-axis value, conflict-bearing value, explicit absence, or explicit unenriched state for the claimed CVE. Do not infer `not exploited` from KEV absence; absent KEV cases work only when an official source presents an exact-CVE no-result or similarly checkable official state.
+- The page must provide a relevant source date or source-state date, such as publication date, current release date, revision date, last modified date, KEV date added, or equivalent timestamp.
+- For `advisory_source`, the official CISA advisory/CSAF page must source-state a publication, current-release, revision, or republication date placing the claimed `ICSA-` advisory inside {= target_period =}. The advisory ID year by itself is not enough if no source date is visible.

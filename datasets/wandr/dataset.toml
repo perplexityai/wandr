@@ -1,0 +1,2010 @@
+[dataset]
+name = "pplx/wandr"
+description = "WANDR benchmark tasks."
+keywords = [ "wandr", "wide research", "deep research", "research", "search", "retrieval", "citation",]
+[[dataset.authors]]
+name = "Perplexity AI"
+
+[[tasks]]
+name = "wandr/abm-provider-commercial-provenance"
+digest = "sha256:d2b2cd0b03ed064be56b2dc35b5cc2f1bf81c6b75d74098c88735d10652c843f"
+
+[[tasks]]
+name = "wandr/accounting-ai-claims"
+digest = "sha256:3a21e2531cffe4681f6014cf3d4e517ea3bc4df4f2a068628cfbf5f5a5710466"
+
+[[tasks]]
+name = "wandr/acma-rrl-licensee-provenance"
+digest = "sha256:9cd8bfb8b2100cb582528d4ec0077283dc303d0e175d2ee71cf5a58de4347822"
+
+[[tasks]]
+name = "wandr/acnc-kmp-consistency"
+digest = "sha256:2aa4fcb32c28ccdddfdc4fbf074e2e1ad85d0455d6a01e22273ba4943f734d48"
+
+[[tasks]]
+name = "wandr/active-climate-hardtech-opportunities"
+digest = "sha256:4fc84c938164e4bd59efb5f9841cbe7f0c4155526323afcf024d99adb38c7c6e"
+
+[[tasks]]
+name = "wandr/acumatica-distribution-partner-evidence"
+digest = "sha256:33f3549ac7bd85e903f8a0b627abd75cb4a353c78fad8ed1e9e997969ba5902a"
+
+[[tasks]]
+name = "wandr/adult-guardianship-programs"
+digest = "sha256:ba1d73d9d60a149248ab928fd6a196874cc3e5eab6bc9cada36ef1c5b5c482d1"
+
+[[tasks]]
+name = "wandr/adventure-resort-hiring-provenance"
+digest = "sha256:83e53e6f2cfbc34859a95819727f8e5ee022595a33226ad4929879e0f1f2a1a7"
+
+[[tasks]]
+name = "wandr/aerospace-authorized-distribution-reciprocity"
+digest = "sha256:195bbed0196bd7716e23a11655265a7c55b39783e4973ffa8ec87513705893fb"
+
+[[tasks]]
+name = "wandr/africa-agribusiness-operators"
+digest = "sha256:93c484d789ebbefe574d14c7e5ae95f9783f03aa7789012e2f0ccbe1ae4d4a6f"
+
+[[tasks]]
+name = "wandr/africa-entrepreneur-support"
+digest = "sha256:400d4d91c8205702584e2e06faa1e84587c0461b4c773a84c986f3ad2af2d1a1"
+
+[[tasks]]
+name = "wandr/africa-fertilizer-associations"
+digest = "sha256:d2d8c022fbc1e22d1f47bd23ecb3f9168fbd2001334a25b3d971d5cfd58f65d2"
+
+[[tasks]]
+name = "wandr/africa-project-attrition"
+digest = "sha256:af13e3c8109b82fcff691a3475ecf9bdc54e0b0663b76b966af68c2d4c2e54dd"
+
+[[tasks]]
+name = "wandr/agency-platform-partnerships"
+digest = "sha256:1a32143cf983be04b4316a55d3736a4504c0070e7f23011db2a74a62539bc14f"
+
+[[tasks]]
+name = "wandr/agentic-ai-soc-vendor-public-capability-source-table"
+digest = "sha256:bca2082eeb459409126f6821ae92cf18bbad85893471d0b05381b713f78b5f61"
+
+[[tasks]]
+name = "wandr/agri-solar-channels"
+digest = "sha256:0ded40a45134657153e92e48f67669aca375075de6c6b7276df142f2f1fa7f0a"
+
+[[tasks]]
+name = "wandr/agricultural-supplier-sources"
+digest = "sha256:406a5878c33385e5bd8db590b2f2b930bb1af5fc50bda879c5869b69e574c7ea"
+
+[[tasks]]
+name = "wandr/ai-builder-vendor-evidence"
+digest = "sha256:66646e1d023fa87e491a0cce66bbc894b46f9fb9411704ab755fd6ee395a0767"
+
+[[tasks]]
+name = "wandr/ai-capacity-opportunities"
+digest = "sha256:8cbfb1d2e57ed97d80564f48481da7c6a44c8edcd2a482e3e6c71d82e83c194a"
+
+[[tasks]]
+name = "wandr/ai-collaboration-signals"
+digest = "sha256:e7ebf5c27903ac42860ba45dc0a74afae69bddaaf2408785938adcc61b89c6ea"
+
+[[tasks]]
+name = "wandr/ai-funding-announcements"
+digest = "sha256:7ce7923288674d74d2fcb47f6ea5a65363c0389d2206bc0e78f85197631a4d69"
+
+[[tasks]]
+name = "wandr/ai-governance-jobs"
+digest = "sha256:086ee9b31fc5f7da8442fa71d3cd36d0baf7c86d3547ebd75f368807c3bda2e5"
+
+[[tasks]]
+name = "wandr/ai-gtm-deployability-provenance"
+digest = "sha256:19ed29fe5bdd71776873703a0591d26c3805a292eca13040170c43da9bde0998"
+
+[[tasks]]
+name = "wandr/ai-home-operations-platforms"
+digest = "sha256:e201e97fe94c0b2b9c751976f04fbee2b588a42c5d8688fa082f61ebcee02804"
+
+[[tasks]]
+name = "wandr/ai-ml-deeptech-program-pathway-atlas"
+digest = "sha256:91b862eb824a502a1fe9e1be7d0b5922ad616be55a3524e27990f97f7a8c6080"
+
+[[tasks]]
+name = "wandr/ai-mlops-vendor-claims"
+digest = "sha256:1f21cd86bde1ed2ac8ede6ea4b12b06bc2dfdf92065a6c84f8501e96109a625d"
+
+[[tasks]]
+name = "wandr/ai-model-layer-company-public-capability-source-table"
+digest = "sha256:a4932ac9efbe9eabe9e8b60436af430f0ed08a97de5266da0ad36fdd428fe0e6"
+
+[[tasks]]
+name = "wandr/ai-paper-authors"
+digest = "sha256:3106e3a6680e899e107507c89170fc4d37fe24ae37e84180eee8fab104de5bde"
+
+[[tasks]]
+name = "wandr/ai-roleplay-ecosystem"
+digest = "sha256:db47f86d1d3c1ed29235d3ff6c2f096f4e7c1db067c5ef8108a7fb477e8ed9ba"
+
+[[tasks]]
+name = "wandr/ai-server-hardware-relationships"
+digest = "sha256:1bb1a59a159e69dc76b7fe02bb306914daa57a9ab30beff6a7bb4c5c00d5af5d"
+
+[[tasks]]
+name = "wandr/airline-pss-relationships"
+digest = "sha256:3b86f358c79b4ed83a8eb519206ba1d9492f25205622cb8d344b905220e6fa58"
+
+[[tasks]]
+name = "wandr/airport-biometric-border-gates"
+digest = "sha256:52fac8756a6779f8cf9dd237ec9e50661e6b63902824559e0b10ab4c8ef55426"
+
+[[tasks]]
+name = "wandr/alaska-food-producers"
+digest = "sha256:a79e31fba20b47c75fbb63a363f13400d48664a3ac6f6bb800d0bb44fea5b05f"
+
+[[tasks]]
+name = "wandr/algae-saf-efforts"
+digest = "sha256:7daaa92ce23bbd5c0aaddb130deeaba88860579728fadf46dbebde65005a36c0"
+
+[[tasks]]
+name = "wandr/alternative-protein-signals"
+digest = "sha256:0c993a485c30beabef8ebdf2fb89d5cbd12cd5414daa07e92d41d18fd3feaa38"
+
+[[tasks]]
+name = "wandr/amazon-business-punchout-capability-provenance"
+digest = "sha256:50f48b5dbb6b8a43837bb80946e14e09e2af3dd882040380a73f0c2efd9d6f5f"
+
+[[tasks]]
+name = "wandr/ambient-food-3pl"
+digest = "sha256:eade7bdaebad00aa372c1b4b7cc0fc74de98781e36dd361df8aa383a33847f66"
+
+[[tasks]]
+name = "wandr/annual-report-compliance-calendar"
+digest = "sha256:06d4f00e716b8b8b38dbdeb0299b72860785144f0f66f5de606301c50eba608c"
+
+[[tasks]]
+name = "wandr/aquilon-comic-universe-volumes"
+digest = "sha256:161797f74917c312e32564665f8135c1660314bc55d06ab0643d886116cc03a0"
+
+[[tasks]]
+name = "wandr/artisan-brand-visibility"
+digest = "sha256:58219f1a619afccca35890b56dc198de103f88c362c7b812caec494b157e57d3"
+
+[[tasks]]
+name = "wandr/assembly-equipment-channels"
+digest = "sha256:901ef313df9d0ff87b1df595fed742e483275299bbfabe17c225a25c7cbe34cb"
+
+[[tasks]]
+name = "wandr/atlantic-canada-tech-company-ecosystem-evidence"
+digest = "sha256:d74cb6bc8257585160943cf3e06ef36e787128a91351444fc007f351a265118c"
+
+[[tasks]]
+name = "wandr/au-letterbox-product-presence"
+digest = "sha256:20119cd12e9edead5a6ac2e179e2651d8a8718670799133bc23eae3b72b88b0d"
+
+[[tasks]]
+name = "wandr/au-member-state-policy-actions"
+digest = "sha256:96e61360b0c8669851b8e2e48f7b33e261ba8c00287a11b2c68f4c79ddc43eda"
+
+[[tasks]]
+name = "wandr/audio-gear"
+digest = "sha256:983a302b43d47dc0afa19609cb9c83f51c8d0315f3b62afe7bf34301cf0a6681"
+
+[[tasks]]
+name = "wandr/audio-gear-relaxed"
+digest = "sha256:0ae7ea0923af65b3fea8849aab040ca0aba92aa6796959ad052f83444923f786"
+
+[[tasks]]
+name = "wandr/australia-education-agents"
+digest = "sha256:60c5a20d7530b8d1e0b93a1c70a93c916077ac2114bf1c39f6bb7e11bcbf062a"
+
+[[tasks]]
+name = "wandr/australia-food-equipment"
+digest = "sha256:e51417c3a2cb24edc5fc792c76ebad37b739ad0b4eb2497a9b63219461fceb93"
+
+[[tasks]]
+name = "wandr/australia-philanthropic-giving-event-provenance"
+digest = "sha256:7e950f6865a617db69f6cd0fa68c02a0e349a52871dc974977944bceda8f6ee7"
+
+[[tasks]]
+name = "wandr/australian-potato-export-evidence"
+digest = "sha256:3e14263732fa60c89284696510f2aac4aceb7a2da199d117691440580a90cbeb"
+
+[[tasks]]
+name = "wandr/australian-universities"
+digest = "sha256:077599f6b9356c320bb9a60bf6e45d2fa9a920256a1aeb1c304606e5f7485d0c"
+
+[[tasks]]
+name = "wandr/australian-university-representation-architecture"
+digest = "sha256:0dde7ff8b2efb6152763f3358413f79a8e484eb7f529b2cd3d21465ae4b472da"
+
+[[tasks]]
+name = "wandr/australian-vrfb-atlas"
+digest = "sha256:fe001f916bcabe0b4628dbf9744d8156a716d4b17cf6664472f6110089f97f27"
+
+[[tasks]]
+name = "wandr/automotive-ai-sales-workflows"
+digest = "sha256:1419483f149a1f3846913111f8d20db1cdda5eb9a76b637ba4cf57b7f86ef94d"
+
+[[tasks]]
+name = "wandr/aviation-ad-sb-adoption"
+digest = "sha256:270d3a9159cd5b7212b7d4f5271e535f3fbbe90f583117f3e78f7b9f3569e287"
+
+[[tasks]]
+name = "wandr/aviation-provenance-programs"
+digest = "sha256:95085313589fb8e3d9e87294386341eb0d957de4b029c323729a4fef1414723e"
+
+[[tasks]]
+name = "wandr/azerbaijan-transport-climate"
+digest = "sha256:6d26a25033f401d2716fa1180aac190d03f37829831c964f96783bf1f46cd58b"
+
+[[tasks]]
+name = "wandr/b2b-integration-reciprocity"
+digest = "sha256:6589e3991f0299746b1c54d96aaf0a1340edffd543c62cc61bb616e012b6676a"
+
+[[tasks]]
+name = "wandr/bag-palletizer-suppliers"
+digest = "sha256:4bc306073800e3ae8f0068c32d8119de74762d1854ca0f7428dcce1a41143785"
+
+[[tasks]]
+name = "wandr/bali-laundry-suppliers"
+digest = "sha256:f35c0e6f69cb44ca7b3d1a958db86229956fd7288014d9ebc35c4fb420639440"
+
+[[tasks]]
+name = "wandr/bar-restaurant-ops-software-catalog-source-table"
+digest = "sha256:5fb194d41fe958f7d6b92f1b029b53454d1f0d29a397b93f4e6ccc553f182dbe"
+
+[[tasks]]
+name = "wandr/bc-mechanical-procurement"
+digest = "sha256:17ef92639443e621e37b1c18ba4d2c1909f6d9520ff404f16e36eebfdfbd45fb"
+
+[[tasks]]
+name = "wandr/benefits-policy-sources"
+digest = "sha256:75b9a86fa07666e2ed217407904e3cdd7d5477517342740fe8559fd98406e4f2"
+
+[[tasks]]
+name = "wandr/benelux-health-retailers"
+digest = "sha256:2c5ca6ee09edfdc4ded5093e348337a796beddcd7643f718cb1d71948c965c57"
+
+[[tasks]]
+name = "wandr/bergen-county-nonprofit-landscape"
+digest = "sha256:72d734e4f724edb39c1519096216a4074c6c27a74563df58ff2fd844186b33ce"
+
+[[tasks]]
+name = "wandr/bess-warranty-sources"
+digest = "sha256:ba68c6c58be2094b65e49741edfe8f6a97d8581630ef02007f4ca026e94118e0"
+
+[[tasks]]
+name = "wandr/beverage-expert-topic-provenance"
+digest = "sha256:34b315115548ef15a24f8e4263019feb6d03e26f86d5bd88d1b32da987877052"
+
+[[tasks]]
+name = "wandr/bi-analytics-ai-capability-provenance"
+digest = "sha256:569119c749ff85ced41d0e62128d7b9cdb5674db8964bbd28f8e2e9873446576"
+
+[[tasks]]
+name = "wandr/biglaw-ai-practice-public-signal-evidence-panel"
+digest = "sha256:cf3089d47ac2ea62389fa395f954b0174cfdfe71bd5345bf6dbb18f54a8efa93"
+
+[[tasks]]
+name = "wandr/biotech-china-decoupling"
+digest = "sha256:b4130ab6b90c137116a6bd92fd5f8e8a5cb97ca8d3f93875a489e469e7cb9cff"
+
+[[tasks]]
+name = "wandr/board-portal-governance-content-tool"
+digest = "sha256:dc7e1d5ef7da6268dd09a3e742c350ff0eee77ac94ddf1af5741ef355da64525"
+
+[[tasks]]
+name = "wandr/brazil-ev-claim-audit"
+digest = "sha256:24d2aedf83da98b525405d3f34993ec0206ad982f038e1a78fe99f2695eae4fc"
+
+[[tasks]]
+name = "wandr/bric-state-workflows"
+digest = "sha256:89f9e060c2a15a02a5d4db5b7289980a976d7c2def13bc57ef047e54f220adda"
+
+[[tasks]]
+name = "wandr/business-banking-products"
+digest = "sha256:9f51be67feb2a4b9236b91f7501c2095433b988137b291c771ae2e2006f14d3c"
+
+[[tasks]]
+name = "wandr/business-restraint-decision-event-provenance"
+digest = "sha256:94a614563c08d121a91915ac5553cabe6962ed9f22a6dd566cab3f49cc10508f"
+
+[[tasks]]
+name = "wandr/california-hydrogen-public-events"
+digest = "sha256:ad70bbdfc87aa66c0a39ba980896cd17091c9bb2358447d2b9d9c7ac1c2059a1"
+
+[[tasks]]
+name = "wandr/camera-module-sources"
+digest = "sha256:6f1938620204dd2a0fd09b1fd447422ee7ab29a95e500b589a0e6d87f9e6b3d4"
+
+[[tasks]]
+name = "wandr/campania-farm-capital-evidence"
+digest = "sha256:2c1706360219fb958542af16bf7e6245c559fc15f269cb9613f5e0a419e9e6d4"
+
+[[tasks]]
+name = "wandr/canada-bottle-packaging"
+digest = "sha256:4528daec0a40997fa60226b52bae30240d3bf900700755efc4abb9f577fde6b2"
+
+[[tasks]]
+name = "wandr/canada-competition-bureau-merger-dispositions"
+digest = "sha256:edbec3070bdd0f697009e283db209be17de6be41dd3264bd6f389a8bb5654eff"
+
+[[tasks]]
+name = "wandr/canada-copacker-capabilities"
+digest = "sha256:3b422de5b8b1d7ebaa37a569806c9cad715ad10526cae6b653aa0fa0a2685322"
+
+[[tasks]]
+name = "wandr/canberra-procurement-advisory-contracts"
+digest = "sha256:8001229c5d34680b40dfb98b10058c8edfebc11b203a5cad703a39f1c3075bd7"
+
+[[tasks]]
+name = "wandr/cee-heat-operator-regulation"
+digest = "sha256:bbe90cae02061cd731d419d4cdce276606bc3f777e8f2f4bb75e679778bc163b"
+
+[[tasks]]
+name = "wandr/ceo-cfo-appointments"
+digest = "sha256:75f9803d73cd5a1f8fe0e9a95a767815a055e72dd209b94788951fe344c69e8c"
+
+[[tasks]]
+name = "wandr/cgt-cryopreservation-bag-distributor"
+digest = "sha256:850ce3cf3f5553b0cc9c719fae0aa235437f561f7d02717d9f65a54cbd5d04e0"
+
+[[tasks]]
+name = "wandr/cgt-cryopreservation-bag-distributor-sales-map"
+digest = "sha256:228a5e03a6b7b31a228723b34af2e3634ac895e2b625d46d813a9953978ef878"
+
+[[tasks]]
+name = "wandr/chennai-trucking"
+digest = "sha256:07f1771baba43ed0d1f48495f45baa8b2b2c6803d14511aeafb27f7d07d1540f"
+
+[[tasks]]
+name = "wandr/chicago-turo-vehicle-unit-economics"
+digest = "sha256:bacf6f3aaae4bd7391bf503a151f39eb503a92746986fb1515e54176cab54f15"
+
+[[tasks]]
+name = "wandr/chile-industrial-decommissioning"
+digest = "sha256:d8c89db3528aeb4511361769bd11a6774604093110a267206fd643758749097d"
+
+[[tasks]]
+name = "wandr/china-satellite-industry"
+digest = "sha256:f4b8d2c2b1518947ff8bc109626a4e5ede464d21d3c3056f24a34444a04ed896"
+
+[[tasks]]
+name = "wandr/china-semiconductor-footprints"
+digest = "sha256:6603516be98da812157a0ba7942ee5ffe5a49044209017fc13c8448c4349869b"
+
+[[tasks]]
+name = "wandr/china-tech-self-reliance"
+digest = "sha256:2a721dee45b11d738777280938aaf446736b9217c37a2b3d8154d17dd863cd35"
+
+[[tasks]]
+name = "wandr/chips-funding-status"
+digest = "sha256:8eeb6bdd2ec6db724f491b5c1852450e5881d7a4d6cce28105d3985bb884d4a5"
+
+[[tasks]]
+name = "wandr/christian-radio-network-contacts"
+digest = "sha256:5719581aea76fa1361bda09473591a765cc0c2e0d71c05b5e54cd3d87ee41799"
+
+[[tasks]]
+name = "wandr/chrome-rod-disclosures"
+digest = "sha256:7d4d61c6c066b3bc695a0e9768f9ff7919563dddf80f8b15381836b9db248348"
+
+[[tasks]]
+name = "wandr/cisa-ics-cve-provenance-reconciliation"
+digest = "sha256:7602822ad30107e29ba2b9c5e1e397792a8d20d07cd980cc463a9036abb9a10b"
+
+[[tasks]]
+name = "wandr/claude-public-relationship-evidence-graph"
+digest = "sha256:84dc3a2dd5d83a643a1228e1cd646c6ffbd76d4e4d5f3719bbef476b25c82682"
+
+[[tasks]]
+name = "wandr/clearing-infrastructure-capabilities"
+digest = "sha256:b9722c5d18c2fc9b7a50a2601b51ef4e3eb6b0b1fc659a9e610a07d264d5558c"
+
+[[tasks]]
+name = "wandr/clm-offering-evidence"
+digest = "sha256:fd7a0098dca912b5ee86c3266cfcf1e59c1a1126221b1a083e53fc53fd349523"
+
+[[tasks]]
+name = "wandr/cloud-ai-service-launches"
+digest = "sha256:4fb04f9cade37237fcafbf37fc9ab34ef47694af1fa639e9d963cfa641fbd8f4"
+
+[[tasks]]
+name = "wandr/cloud-ai-service-launches-by-provider"
+digest = "sha256:d9fc9cc88a863e591c1ac37a23a4a166eb4b2a1ca0f9a3816f6139022988d70f"
+
+[[tasks]]
+name = "wandr/coding-agent-protocols"
+digest = "sha256:6b96d3c20f6752a02f3893e953001fabb9fa1e24af557d5879ce080949299753"
+
+[[tasks]]
+name = "wandr/commerce-integrator-evidence"
+digest = "sha256:3ee7ce6f13df5a8f3e7073794a2f0e2b248786402af7d5b2b4104b6281551ef7"
+
+[[tasks]]
+name = "wandr/community-association-software"
+digest = "sha256:5bd77a4dd78de7abb74641fa6bf62a7c2cecc305f18f846e4989c5e85f723032"
+
+[[tasks]]
+name = "wandr/community-cards"
+digest = "sha256:c0a99f2af245e9cd63a4a545ce2972b410a7d9340c21173235b151e4d3d9a015"
+
+[[tasks]]
+name = "wandr/compact-cea-systems"
+digest = "sha256:d9d22c9e301e97c2f101316a5f751007fcff1d764df52e9b4742dc6bf70cc438"
+
+[[tasks]]
+name = "wandr/concrete-tool-presence"
+digest = "sha256:cd3287e14d0b68e23b474c02d6c7eff4acb383eee129d060afaee72531e48ced"
+
+[[tasks]]
+name = "wandr/construction-3d-printing-deployments"
+digest = "sha256:5caa749bf6992c024a2e2cc0303efd49c03318af11a1470dbb7478b5fb5efb0e"
+
+[[tasks]]
+name = "wandr/construction-lifecycle-capabilities"
+digest = "sha256:24c2f2bf6bf31f83e5b19fec82988850a4f083d0c14796ad7098149145af6bae"
+
+[[tasks]]
+name = "wandr/construction-saas-public-evidence"
+digest = "sha256:503c262c97643b42d1097025d4451b308c5d538ed0a67d8b444065bdafa934c5"
+
+[[tasks]]
+name = "wandr/consumer-accessory-product-provenance"
+digest = "sha256:f1f2a20031042e8cd4c480fe939bc8dbace197e7d1649f76d9c225c115d65f68"
+
+[[tasks]]
+name = "wandr/container-shipping-providers"
+digest = "sha256:80d004e0938123c7bede5a75245cc01696673b3f6b1cbc991000ae20afc95a53"
+
+[[tasks]]
+name = "wandr/cookware-provenance"
+digest = "sha256:0c601cbb631366ea0f5d830a454f9949ba58e9957c5b49c752ae37490d1aed94"
+
+[[tasks]]
+name = "wandr/copper-induction-furnace-provenance"
+digest = "sha256:0e89235a02bf961e95cf225d3f644be6ef6758a6818f5efc3c62cfca1e127e3d"
+
+[[tasks]]
+name = "wandr/cornish-art-school-website-content-inventory"
+digest = "sha256:ad5083e00833c4769178d11f81ba90e6b94ac35a8dbe191d69aeb7078621e41d"
+
+[[tasks]]
+name = "wandr/cosmetic-manufacturers"
+digest = "sha256:63e2c56a16eb312d49f45379b7082ab1869f56c2840c79b370c8d22852f6e698"
+
+[[tasks]]
+name = "wandr/counter-uas-developments"
+digest = "sha256:a9fb765aa4b04e7254d38775bb0eedba17b61b1089d7549320089dfe1e1c076b"
+
+[[tasks]]
+name = "wandr/craft-breweries"
+digest = "sha256:cc590bf349f38d3291762e780b77b596b0fe095923bd2cc52cb30278450e3af9"
+
+[[tasks]]
+name = "wandr/cross-os-dma-evidence"
+digest = "sha256:d40f8997d83f4088d09d9b376e9af5329bb8efbfb85a2d4d61fea6a6849b88e3"
+
+[[tasks]]
+name = "wandr/cve-vendor-advisories"
+digest = "sha256:9081c7ab208654035337aef80de1352ab18dc25bbd6d74e7b92e449d97eeaf63"
+
+[[tasks]]
+name = "wandr/cx-qm-outcome-provenance"
+digest = "sha256:5824e7b6c4db3c01aa14f0b96ca7eda7e34a1310936d0fdf7885aef9a5adde5e"
+
+[[tasks]]
+name = "wandr/dach-ai-implementers"
+digest = "sha256:c7f64abeb8e32296aba2ff1f03eba78c58b36af8b4c95fd06770dca2fc22e904"
+
+[[tasks]]
+name = "wandr/dach-courier-provenance"
+digest = "sha256:7a351276efbeb79264a9e4bb57c91a24c972bbd6ea2a89998d88c3b259e0c873"
+
+[[tasks]]
+name = "wandr/data-center-cooling"
+digest = "sha256:bcf59baf94b67373045bb1a353bc2e23a259adc4b079c2f7d9fa3f9437dbff95"
+
+[[tasks]]
+name = "wandr/data-center-heat-offtake-relationships"
+digest = "sha256:926be41f7c682cd235e3dece7f1458b2e6f36f0d39dbc3585ff5652321f91ac4"
+
+[[tasks]]
+name = "wandr/data-center-moratoriums"
+digest = "sha256:760ce843649831f5979adde0d211f2d00bfa2343b860a4a298c7cac053538b21"
+
+[[tasks]]
+name = "wandr/data-center-power-advisors"
+digest = "sha256:fc2294da7abbd075288a059816cac777e2613c3d8c3789de2a2c9367518291e7"
+
+[[tasks]]
+name = "wandr/data-center-power-disclosures"
+digest = "sha256:a0a6caf6160ca31beb3f163dc9d596e168dc8ca36cf23f052d91349330fad07a"
+
+[[tasks]]
+name = "wandr/data-governance-kpi-evidence"
+digest = "sha256:2bd7ec3993119800b4e8b7ce53b92d298bafc56aaa646415099b98345881f699"
+
+[[tasks]]
+name = "wandr/detroit-michigan-specialty-contributor-public-credit-map"
+digest = "sha256:c415095efe658d34b0811800f04476131d59ca17050b1b79d7ae554c2ba9a9bc"
+
+[[tasks]]
+name = "wandr/devtool-promo-codes"
+digest = "sha256:e107618a4da0df514891495df566de121886559e0bc1e3389912cf9827069708"
+
+[[tasks]]
+name = "wandr/devtools-partnerships"
+digest = "sha256:e46a38316dc794194543011f1f811212c9e3588fad5c57a5d2a2889696cf18df"
+
+[[tasks]]
+name = "wandr/dfw-cabling-contractors"
+digest = "sha256:746b134a579c3021e44e3a95ac1d088deb34860dd55b8d2c608e90eb16b7b7d6"
+
+[[tasks]]
+name = "wandr/dfw-location-events"
+digest = "sha256:a61d437aaa16c5dcebea658360f73c5186cd5c7d539c0904f69b38979044d123"
+
+[[tasks]]
+name = "wandr/dib-nondilutive-pathways"
+digest = "sha256:abc8d4a43c8b32f7657aa6dfd93214cf4592eda3009af90ea0cfca98771ac282"
+
+[[tasks]]
+name = "wandr/digital-agency-terms"
+digest = "sha256:1322a80ec6c19a475da777a0d81e130f4b342f889c437a5125531505811dfb85"
+
+[[tasks]]
+name = "wandr/digital-health-revenue-ops-reciprocity"
+digest = "sha256:423223d26b9d3878d1256b6f3bb06cd189565704c7f33f1c988eb6f65e2ff2f4"
+
+[[tasks]]
+name = "wandr/diligence-workflow-profiles"
+digest = "sha256:49c522adb58cc8361025ba17179f5f7aad2cdd7d71a8083bb85968f8151973ed"
+
+[[tasks]]
+name = "wandr/distressed-power-user-site-acquisition"
+digest = "sha256:f0da4af6bf5fb8bca22375fcc8d0ee9ce62124d9620fac14371d1d45680d1c1e"
+
+[[tasks]]
+name = "wandr/document-ai-product-evidence-facets"
+digest = "sha256:64d74cee1d932bd3991b32e0c1053a1b3c572569625b492d879e8e35f2830f9d"
+
+[[tasks]]
+name = "wandr/doj-antitrust-document-provenance"
+digest = "sha256:69f460d729825471eaea5af880f215d035a76df061b9c72b968265228415fc24"
+
+[[tasks]]
+name = "wandr/domain-corporate-linkage-public-evidence"
+digest = "sha256:9a23cb6e504149fdfd506388635c8ee70edd5f543955ef4c29dac319ebb4bece"
+
+[[tasks]]
+name = "wandr/drill-tool-tubular-capabilities"
+digest = "sha256:c4b3b91faa3a26f3419e7a346c595dd8a48700813550419be07693fb742765c0"
+
+[[tasks]]
+name = "wandr/dubai-fitness-brand-competitors"
+digest = "sha256:1c652376eddf1728c945a5c9a0dc4c86e4133161298c8a5c41dc1e0ecc076a10"
+
+[[tasks]]
+name = "wandr/dutch-spiritual-influencers"
+digest = "sha256:786b7e4e1fca3c5778b086287705912fbe20b65fe5a46a966248b85bfe1cea1a"
+
+[[tasks]]
+name = "wandr/dw-persian-radio-archive-source-index"
+digest = "sha256:0a6a4703a2ac454d8e41d67e50dd930e445ce38f2701f8b2bd6ddb292eccc2ab"
+
+[[tasks]]
+name = "wandr/ea-public-register-document-states"
+digest = "sha256:f8790da235fadcddc9f980a35550a3ef3d21af889df9bb898095ff5569696707"
+
+[[tasks]]
+name = "wandr/earnings-qna-themes"
+digest = "sha256:3c28ae24ef0fab0a9826c00bc26734c9f99c04b1a80178fd7852b5ca1f5cd1a8"
+
+[[tasks]]
+name = "wandr/easa-publication-relationship-provenance"
+digest = "sha256:d24b3118b376f6a102e12cc8a51e5a06ba24d222f2e95a024e03b349ee7429f2"
+
+[[tasks]]
+name = "wandr/eia-generator-status-date-episodes"
+digest = "sha256:6fbc646df2e1e3bdeaa83230459ab0211f7085ca3554baecbe43ade620cdd102"
+
+[[tasks]]
+name = "wandr/email-security-claim-corroboration"
+digest = "sha256:b775f5db8c05b0550127191971c778b6a868a79cdea7e4b1a5247e0b6ce98534"
+
+[[tasks]]
+name = "wandr/embedded-finance-evidence"
+digest = "sha256:18ed33841e0184e69d2aee1086c44ff0349fd5fb4054ffa2966288b043b21b17"
+
+[[tasks]]
+name = "wandr/emilia-electrical-firms"
+digest = "sha256:43bd8678159ff78d5b3abd41bbd0c349630e0d6dc9160ce5544619fbb3804acb"
+
+[[tasks]]
+name = "wandr/energy-consultant-claims"
+digest = "sha256:5606f7b7b242ba930ad9bf3665c87774080afd69f357aab05c829cd32875d053"
+
+[[tasks]]
+name = "wandr/energy-tech-climate-announcements"
+digest = "sha256:6dddfef354277b0ea6e2a9e9fd820ad78e60970c857f011698cd56364c19e363"
+
+[[tasks]]
+name = "wandr/environmental-violations"
+digest = "sha256:3e116e137dbb5f429472d8823ea93c1c13149ccd84f3a87e2e6efc3e081eb9e6"
+
+[[tasks]]
+name = "wandr/eo-satellites-2000-2025"
+digest = "sha256:e9aa49ab9613f8437de658efa3e5465d35280b1baef99f9282eda987c4ceb602"
+
+[[tasks]]
+name = "wandr/equipment-dealer-dms"
+digest = "sha256:d0f4c6e8a1535e485ee68908d3f058a9cfa305cbcb42b192a6f168d38e06c68c"
+
+[[tasks]]
+name = "wandr/essilorluxottica-2026-frames"
+digest = "sha256:c47f832a050eed4553f13bd0d627c2a4621d369cb9fb271d76facfa2e8f718eb"
+
+[[tasks]]
+name = "wandr/estonia-ministry-lobby-disclosures"
+digest = "sha256:4d54ff8a1bd4960cb4a3db912a2b1d5f63d1ec9818094c4b3910ea175fb223c1"
+
+[[tasks]]
+name = "wandr/eu-ecall-psap-infrastructure"
+digest = "sha256:32378485a67701697a492549dbdb4b9b790b2d732203779f75406aaa147353b7"
+
+[[tasks]]
+name = "wandr/eu-emergency-communications-infrastructure"
+digest = "sha256:cce9ea4f147f13d74d8ee7773c63ef6a7fef370517d9b9da5afc57674f45a4ca"
+
+[[tasks]]
+name = "wandr/eu-emissions-cross-register"
+digest = "sha256:dda82e59bd641ee150e04824e77fe36877696734dd73f9ea4d34ff59bf81ee87"
+
+[[tasks]]
+name = "wandr/eu-ets-installation-emissions"
+digest = "sha256:96e0fe531dbeba7227ea2582bc6339e49a5acd3427ab26ca5ba671d95f5b2670"
+
+[[tasks]]
+name = "wandr/eu-ftl-trucking-carrier-landscape"
+digest = "sha256:f8e8d43fcc700b86475fc8bc1a272117b2bb920b6867678cc226f9013bc36b36"
+
+[[tasks]]
+name = "wandr/european-private-software-scale-metrics"
+digest = "sha256:a446b8fc865a8161437c6dd46f416e8829c8dc76786d466682658befea87cdc1"
+
+[[tasks]]
+name = "wandr/european-sovereign-cloud-relationships"
+digest = "sha256:84afcb37dcf6eb5a2b14e86e5c0c0fed1e3e8d7dbada931dcfbc2fe4ee272420"
+
+[[tasks]]
+name = "wandr/ev-charging-host-sites"
+digest = "sha256:ccdf2ce815e72a11a55ba01817f30048c4909991abe8786ace01650ba66684bd"
+
+[[tasks]]
+name = "wandr/exterior-cleaning-operator-video-presence"
+digest = "sha256:44ee6a64bf99bab58768884b87268b9db03976db43782fb9a1e07420e73bf194"
+
+[[tasks]]
+name = "wandr/faa-ad-document-provenance"
+digest = "sha256:6bae2a998a3aaa3c8339327e03b21abe6903a3dcded85438528de0a3d07b4b34"
+
+[[tasks]]
+name = "wandr/facade-platforms"
+digest = "sha256:4492a2eca3544e9756c7b7568b5e78e00c11edc7531a0ed442eaff552128dad8"
+
+[[tasks]]
+name = "wandr/fca-advisers"
+digest = "sha256:af080a84d7796da30d7e54686c15039b578391f65960efd67686241bd85e7d83"
+
+[[tasks]]
+name = "wandr/fda-device-udi-510k-recall-public-crosswalk-table"
+digest = "sha256:64df5c6f71bed799796efb33f340e77c5c190bc52f9d81d33486bc59a0e302a5"
+
+[[tasks]]
+name = "wandr/fda-drug-lineage"
+digest = "sha256:8d35ad396e0be14680a4c76f734b1b93975841161f239126e7e2d3b8942cd591"
+
+[[tasks]]
+name = "wandr/fda-drug-lineage-relaxed"
+digest = "sha256:160f46bd1e23f4c10529a262e35e84031c4163845b4fb658c049940c9d8a6f72"
+
+[[tasks]]
+name = "wandr/fed-it-primes"
+digest = "sha256:9e08838c20e04ff61b1a678f4fcda44b12b8680777e7e4462f66f700d0c2d99c"
+
+[[tasks]]
+name = "wandr/federal-parts-distributor-screen"
+digest = "sha256:8066686c8b7642eaac901a9336f061c3ab812b9dae2824fbed82ceb580ab36cd"
+
+[[tasks]]
+name = "wandr/fiba-u20-women-sources"
+digest = "sha256:16cd27b56f610d002d73ba12f77079ab098f108c68ab9377d5b2ab5d5dfa444e"
+
+[[tasks]]
+name = "wandr/film-festival-comedy-thriller-archive-map"
+digest = "sha256:3c8c3fa1fbaa25246f02060993dbe6b25778f989fbccef1edb939d7d90bd9924"
+
+[[tasks]]
+name = "wandr/final-mile-carriers"
+digest = "sha256:bafc8a5e83df3062154a24abd3cc686b3b11f605628e86ade751b407c301d815"
+
+[[tasks]]
+name = "wandr/financial-institution-ai-outcome-evidence"
+digest = "sha256:459f0d19f207f2b6d270295c4691189be8b386b51418497c7ee774ab48012fcf"
+
+[[tasks]]
+name = "wandr/financial-media-monetization"
+digest = "sha256:7090e5368f56839d27bb965d40b155b4134bb83dcb07fb4a855106e7c666ab56"
+
+[[tasks]]
+name = "wandr/first-responder-grants"
+digest = "sha256:061cdaf3307d63bd5e17ad4b25478a6fac2e995ae0cab54cc70f2e6fbc738693"
+
+[[tasks]]
+name = "wandr/fis-bank-product-public-evidence"
+digest = "sha256:59f9dfdfa5e95feb700be424f0ac57267dbc384fedb99ac203ebdafbd77dcffe"
+
+[[tasks]]
+name = "wandr/fleet-telematics-signals"
+digest = "sha256:6fd1099c5ca3b1db9f8a4d0aedc27384c793e7de1b5c59903d0cae5cbdf56a55"
+
+[[tasks]]
+name = "wandr/focal-brand-local-competitor-panels"
+digest = "sha256:6fba1d06c6b8834cae104064bb23c24ff7ed48d563a24636e359afb5d4269b11"
+
+[[tasks]]
+name = "wandr/food-distribution-facility-project-evidence"
+digest = "sha256:96ad77be5422adef27a62204b03e6fb22053e6b1e42956d63ea2ea4b9161d196"
+
+[[tasks]]
+name = "wandr/food-transport-ops"
+digest = "sha256:8b2154d7780c69727afe14ce00a52f672d8333413d1a02230b795d911b6b0e21"
+
+[[tasks]]
+name = "wandr/fractional-cfo-provenance"
+digest = "sha256:3e96725c7f4285aac08435922a5d97cd2524ec05df51ea79e93b5ffcb8f83c36"
+
+[[tasks]]
+name = "wandr/fractional-executive-services"
+digest = "sha256:f8b2deb14775c5494b8db45213bf25c828f5e6b613be719be35c67ae8182e4c9"
+
+[[tasks]]
+name = "wandr/free-trade-agreements-historical"
+digest = "sha256:1d57195fa33aeb52b969f00f73dc8ade81476b8ecaa6262f5556d9c878eaa4ca"
+
+[[tasks]]
+name = "wandr/freight-ai-vendors"
+digest = "sha256:1f9439eab2aaf5e6329199ccbe7841b3e0216319eb921ff69b2a96937439507c"
+
+[[tasks]]
+name = "wandr/french-environmental-credential-provenance"
+digest = "sha256:c47e8b50b6c83a1725bedd36e45d95bb420be2654b3965aa300b1495fd6e59fe"
+
+[[tasks]]
+name = "wandr/ftse-private-roles"
+digest = "sha256:f6d954727d2b28280e610937e7b8b82e820db70b33e7edcde1ddd2d3103a6b4c"
+
+[[tasks]]
+name = "wandr/fund-lifecycle-solutions"
+digest = "sha256:4062f223ee31281c956f7c9369c88a75bdbce046cf9e52d6573aa4bcda87de43"
+
+[[tasks]]
+name = "wandr/fund-vehicles"
+digest = "sha256:c45b466a283d09c68d212340383d9e8fe8283ec056c109619d85e9061dac517f"
+
+[[tasks]]
+name = "wandr/furniture-maker-object-attributions"
+digest = "sha256:e24c32fc99c5f8e3b3113114f14128aa5fd2cd591d2ebc768f08fa5b11424bda"
+
+[[tasks]]
+name = "wandr/g20-top-institutions"
+digest = "sha256:b6e169f5cf75e822a0b3669b4a1ccf2fac58cb19064d5e5035d74575625aaa7b"
+
+[[tasks]]
+name = "wandr/game-meat-exporter-provenance"
+digest = "sha256:a8493b17a70f4734468bce8f4f4a1d8a2e41bcc67fded21f8b0f04bd1a2652c0"
+
+[[tasks]]
+name = "wandr/generation-transactions"
+digest = "sha256:778e7f908fe78bf6db1b7f56b434bd5fc6a20e4a71670467783d5664ebdf345a"
+
+[[tasks]]
+name = "wandr/georgia-open-construction-notices"
+digest = "sha256:e6babe1a587de74b746276fbe161b73afd4fcfb63ecfa7a93ce087814327b6d2"
+
+[[tasks]]
+name = "wandr/german-medtech-services"
+digest = "sha256:ea8fcf43c3773c5ac4da8d5a9ab574a9267be9a28a9770c96db79d47847d0edf"
+
+[[tasks]]
+name = "wandr/germany-industrial-project-source-evidence"
+digest = "sha256:8f4fbfa39d066282ef1ced96bdf716d23946de8f8615a57045f5634e74c33747"
+
+[[tasks]]
+name = "wandr/ghana-beverage-manufacturer-firmographics"
+digest = "sha256:6c09e4ad8e05c4d8e160d8609f516e8f483d6827f5a57afa65085a892c9fdc4a"
+
+[[tasks]]
+name = "wandr/global-solar-pv-component-manufacturers"
+digest = "sha256:8723a4284cfca390ce8dfde937b675c2c7de8320a49650d97f4518388975fb0b"
+
+[[tasks]]
+name = "wandr/good-standing-certificates"
+digest = "sha256:0e25b70a616a8dbd4a5b998ae680a36e3b20e51069f458a209f53ce979c22236"
+
+[[tasks]]
+name = "wandr/gpu-benchmarks"
+digest = "sha256:6e3909e0d1f913629f144254bfdf0bf763bf58f23c37fb5d0564761cdd10f9bc"
+
+[[tasks]]
+name = "wandr/greece-bike-share-procurement-events"
+digest = "sha256:d1992aad1e658669c3dc3d01d56b0226f036a46c9ecf5efbfe6c622c456ffcc5"
+
+[[tasks]]
+name = "wandr/greece-ready-koufomata"
+digest = "sha256:b097ac17741d02ef634fd56b1cd243be2b44cffdd7e6ef28556e7b45507b8990"
+
+[[tasks]]
+name = "wandr/grid-deployment-award-provenance"
+digest = "sha256:0bdf61c24fe9b40169a443d7ea2018f6a91c2d42b60d359616b24877f1feb10e"
+
+[[tasks]]
+name = "wandr/growth-equity-portfolio-roles"
+digest = "sha256:7e6ef13d037f4fabbee62d0ad52fc515bbbed84a8df97f9aa3242fcd62613d83"
+
+[[tasks]]
+name = "wandr/gta-dental-clinic-site-selection"
+digest = "sha256:1a3e2dbceb761b65e811129a74a00a66ba8c33294c5fb3f9f1d40932f2ceba31"
+
+[[tasks]]
+name = "wandr/gta-recycling-facility-material-evidence-atlas"
+digest = "sha256:a552592cc42ca943a5ee0be80b56f1e40f1a68b1069428da5de57214ed768b59"
+
+[[tasks]]
+name = "wandr/handheld-game-benchmarks"
+digest = "sha256:6acfe512d88de18eb908b39a232fce72e535cc3cc874cefa91804d898d2dd50e"
+
+[[tasks]]
+name = "wandr/hbcu-proxy-directors"
+digest = "sha256:014be0c773f1ebd92449795f57d0a55f2be1b99a5c1a5878404936f49e3834fd"
+
+[[tasks]]
+name = "wandr/hcmc-sugarcane-providers"
+digest = "sha256:4441ed38731949286cbc83081c18ae118aa512bfaef4914d44a6fe618026143a"
+
+[[tasks]]
+name = "wandr/hdd-fiber-contractors"
+digest = "sha256:bd7c77fa9fc2729283a83939264df9cd20d546d115a514859d2a84474022bee0"
+
+[[tasks]]
+name = "wandr/healthcare-edi-api-developer-capability-evidence"
+digest = "sha256:a0d2eaae8dce6a4d8921f97cf40fb91bc38c9f5d7772b0f15f34d59bf9d1f535"
+
+[[tasks]]
+name = "wandr/healthy-building-firms"
+digest = "sha256:74734576953ee745d76428d2c5b08f038be114578947e95a4c6f55d99848e934"
+
+[[tasks]]
+name = "wandr/hearth-accessory-docs"
+digest = "sha256:6b8ce65fd5cf5ec9b7d41c72ac86ca55e5c46bfccf40a9b09a965804bf49210b"
+
+[[tasks]]
+name = "wandr/helmet-procurement-records"
+digest = "sha256:2e8614ac97ddd8494e858116eb2f3756716cb70378f7e1ea7bd0d096ea725b14"
+
+[[tasks]]
+name = "wandr/heritage-railways"
+digest = "sha256:015eb3035accebffa6e9b0765c2f343ce2450c65b03407215c2b54ca8df329fc"
+
+[[tasks]]
+name = "wandr/high-voltage-grid-equipment"
+digest = "sha256:fd6815aaa7296c25d869a20568ae5101b7e2e6a22109771d2163ba06a0c0c826"
+
+[[tasks]]
+name = "wandr/hk-international-schools"
+digest = "sha256:49c232facd92f0615936cf8b6bf370fbe39182e71c42f67a86723b202956ea9d"
+
+[[tasks]]
+name = "wandr/hkex-ai-disclosures"
+digest = "sha256:4218f4c753ca2e3cdb350f2354ef89d43d339593fabddf43557a8b7a30ae85d7"
+
+[[tasks]]
+name = "wandr/hkex-ipo-pipeline-market-map"
+digest = "sha256:1e58c63315a9f07836b91a7a36c417c333e1fcec06fcf4ca93c9631645b04722"
+
+[[tasks]]
+name = "wandr/hmgma-suppliers"
+digest = "sha256:ced28ae8fc64f00f77741e3377f25dd9e940d1fc6a53de48f5d22e8d3dc40c7d"
+
+[[tasks]]
+name = "wandr/home-depot-supplier-links"
+digest = "sha256:baabf76fd1e3bfd769d3f63ec367b559c0701f6e997c9e8615da4c7e99992be1"
+
+[[tasks]]
+name = "wandr/hospital-at-home-programs"
+digest = "sha256:a6ebd026267e2e4a84a5537bdfc4aa25fddd48f45be550f63389511f772172b2"
+
+[[tasks]]
+name = "wandr/housing-funding-awards"
+digest = "sha256:0d8c23cec83076d558fafca67dcd7b15f8d8525b251b29cf670b0ef9b5b2fe4c"
+
+[[tasks]]
+name = "wandr/humanoid-fiber-tendon-patents"
+digest = "sha256:42fd2d7844d53b0a4e39604980616051701c94cdf94c473ed7e96c76ed89b2fa"
+
+[[tasks]]
+name = "wandr/independent-pharmacy-ai-vendor-solution-evidence"
+digest = "sha256:057ac9a47127823c8558db5972f23d07cdde9b3157445aa6dd1f230acbf1ca7c"
+
+[[tasks]]
+name = "wandr/independent-sponsor-capital-criteria"
+digest = "sha256:0638e7602c03c4a3c7d80c29c88b6624024636d1fa9202384a5d700cca6a7237"
+
+[[tasks]]
+name = "wandr/india-cloud-telephony-provider-public-capability-source-table"
+digest = "sha256:9b6b5652b426b818be12ea1aa87f8f99910ac829ef49bfb6d62dd32a69fdedd5"
+
+[[tasks]]
+name = "wandr/india-marketplace-seller-terms"
+digest = "sha256:0e2bf127cb6569fc0e405762f761652f2516a90ba0adcfad97943ec9f154e054"
+
+[[tasks]]
+name = "wandr/indie-bookstore-imprints"
+digest = "sha256:59e2cc792fa6e6f90e0810e995e43d55b0cf8f90e124a5ef7fd1f41a3fb7cdcd"
+
+[[tasks]]
+name = "wandr/industrial-air-controls"
+digest = "sha256:ecb1242250400c8efe1cb3221773155d949145cba2886438db1ffa7241461826"
+
+[[tasks]]
+name = "wandr/industrial-automation-public-presence-evidence"
+digest = "sha256:a1463350689de5d96fad5e1b0306f91063ba56447dace54f74e78033c3d03fdd"
+
+[[tasks]]
+name = "wandr/industrial-dc-chargers"
+digest = "sha256:a009ad90ee04e8364d6974782cee1e29c7f6b3c2883f165c8da70d8430cd72b0"
+
+[[tasks]]
+name = "wandr/industrial-gas-consumption-plants"
+digest = "sha256:bedb22ab306bdf5d2eafb8bb8789518b0116ec5a54103bcddfd577b04f13bf75"
+
+[[tasks]]
+name = "wandr/industrial-parts-distributor-cage-award-traceability"
+digest = "sha256:60d5844ae8da5afe65fe2906738fdd042563b45c5f2fbbbd36b8a645d9e7076c"
+
+[[tasks]]
+name = "wandr/industrial-tanks"
+digest = "sha256:a14e427729bcf20b416df3df58b28d2fff1e7a652ea8b9fb7411c271fb036db1"
+
+[[tasks]]
+name = "wandr/infrastructure-sitework-bids"
+digest = "sha256:ccf08657b3dc09a30193713dd9826c34dbef23b88e82f348efcbc9527ab3ae6d"
+
+[[tasks]]
+name = "wandr/intumescent-claim-provenance-atlas"
+digest = "sha256:1b9768c0dbdb7fd6fa69fe0aa9af60a52acd8cb03373d3d0091f2580ddbeb405"
+
+[[tasks]]
+name = "wandr/iraq-ethiopia-hatching-provenance"
+digest = "sha256:958795002fb2df64566742366bd9009641131a0653dd183469ab4bb4d21d62a0"
+
+[[tasks]]
+name = "wandr/israeli-us-presence"
+digest = "sha256:30acf7797f4ff5abc52a6fc8edd48bbb903036f376e1dccb35b1adaf3887d80c"
+
+[[tasks]]
+name = "wandr/italian-dc-evidence"
+digest = "sha256:b0fc8b976be5e922432316660f1cb19be5732293b3d3838e2f8b2fb2bb2101cd"
+
+[[tasks]]
+name = "wandr/italpreziosi-relationships"
+digest = "sha256:512f87c7ebee1208668466cd2d3e6db13b697171d396ef61330b615669a52259"
+
+[[tasks]]
+name = "wandr/japan-telephony-provider-capabilities"
+digest = "sha256:e92477454c133852c521887af8787e4cb8d1bc42c53bca71b9d35a800a896bb4"
+
+[[tasks]]
+name = "wandr/job-board-api-access"
+digest = "sha256:b73e70f659e4d24ef0b97ee7b8c705fc88c7e2008b45611b3886f826ee7cacf0"
+
+[[tasks]]
+name = "wandr/jrct-registry-metadata"
+digest = "sha256:042d20a68b559583c586ef388a98b3079a2b28e28153278a1febdd257e72778e"
+
+[[tasks]]
+name = "wandr/knowledge-product-metric-disclosure-evidence"
+digest = "sha256:45182be26921df5043eb6109e9899b800a4d75d346d525816138035d0dae64ed"
+
+[[tasks]]
+name = "wandr/large-load-costs"
+digest = "sha256:253ad875d021db3986d7ec85126c95bce3dfc2844dbb778a0f73484e577e6f68"
+
+[[tasks]]
+name = "wandr/last-mile-parcel-providers"
+digest = "sha256:d06ad54fe9bffdfe96370c751ffe3bab77608a683a8083332ecd8b7bd0e5ab63"
+
+[[tasks]]
+name = "wandr/latam-fare-payment-programs"
+digest = "sha256:d6e97b51fbc2922cd642d5098858b289d49e921254cb1858f698cc67b3408937"
+
+[[tasks]]
+name = "wandr/latam-fiscal-workflows"
+digest = "sha256:7401421f27b42909abde24f8f8e30180a3cf0e4bd1f5c9ea7c373e1293fca7e8"
+
+[[tasks]]
+name = "wandr/lawa-systems-governance"
+digest = "sha256:007264747ae4be2d45f0d8cf9da48f0ce964c01487d53509ad6eed7a431a0332"
+
+[[tasks]]
+name = "wandr/legal-ai-platform-claim-provenance"
+digest = "sha256:082be0a1e187730d03987764f0ead06c4e0c8e6f63ef710ff121dd445a05075b"
+
+[[tasks]]
+name = "wandr/legal-ai-publications"
+digest = "sha256:e008be299b5df782cc6d7700337ec29ef6bc05b2637f0698a8c82e4b6e4884d4"
+
+[[tasks]]
+name = "wandr/legal-crm-role-sources"
+digest = "sha256:acd2670924e227b104fb3cf30df168af4d3820abefbe69d2065d9d0d6b865ee9"
+
+[[tasks]]
+name = "wandr/lenels2-milestone-integration-evidence"
+digest = "sha256:4da935cecae3ff8af207be9c3f9a548877ed262b762b1f7c7b2d8fb945f523f7"
+
+[[tasks]]
+name = "wandr/lentropiste-retail-provenance"
+digest = "sha256:6b847cf4538fdec70c8be905a336e4fef10ee09f64fda97905af71afbcacfd83"
+
+[[tasks]]
+name = "wandr/llm-presence"
+digest = "sha256:a6e73aad87beb3a7840430dfbe45324377a7b5bdefe42e1801910247466da5de"
+
+[[tasks]]
+name = "wandr/llmops-provenance"
+digest = "sha256:4e973da93edae37956be3135572cd9d4782fda8894df8551f4c18986898b2da8"
+
+[[tasks]]
+name = "wandr/local-ai-offers"
+digest = "sha256:43245a9c5aeb205357b1997c752850750670685e1b4618cdcd85adeba0fb56f9"
+
+[[tasks]]
+name = "wandr/local-search-integrity"
+digest = "sha256:99c8d562cc4fc0467f522db76b391ca0241af4cfe04d71b0a6d29732fff31a15"
+
+[[tasks]]
+name = "wandr/local-service-platform-adoption"
+digest = "sha256:cfaac36d408799e0d094ce16075385a69e91012bc0bd55fe77f7968edd14cc39"
+
+[[tasks]]
+name = "wandr/logistics-software-use"
+digest = "sha256:85a6e2d8ecc6db0fc2ce45c937d8e24b570af009c2b265d0b825d0529fd235bf"
+
+[[tasks]]
+name = "wandr/london-maritime-company-operator-fleet"
+digest = "sha256:5dd910e91a175f7a3979ee385862dd60288928b0b6d00da4c83e9b841c39a7da"
+
+[[tasks]]
+name = "wandr/lossless-compression-entity-provenance"
+digest = "sha256:93f9ff8823ec11173dbd30a94068e24591215e62133c5c294a01931a9fe871c7"
+
+[[tasks]]
+name = "wandr/lot-sales"
+digest = "sha256:7c93c2c15cb6c0a5a93826c63eef93eb68ce8a0ffe37e5ea7429f82c24db1eaf"
+
+[[tasks]]
+name = "wandr/low-code-workflow-company-public-source-locator-table"
+digest = "sha256:42e9ba18aed61e7c01f14e3ca8e658de4d28a5b7fe62980316553063c88fab41"
+
+[[tasks]]
+name = "wandr/lsv-product-evidence"
+digest = "sha256:5baa1b932d76f34c836f96c3c15d74527c05c42879ac64de152c6892af91301c"
+
+[[tasks]]
+name = "wandr/luxury-constructs"
+digest = "sha256:6567b2f3c98cf01c5d8cec04533b36765356b348f0f11c446ca05ba3449bf19a"
+
+[[tasks]]
+name = "wandr/macos-privilege-elevation-controls"
+digest = "sha256:6fd98bfd4f8369c657e103f13392b4f4c84327285169de334255585184ecbf3c"
+
+[[tasks]]
+name = "wandr/maritime-casualty-reports"
+digest = "sha256:f69da961789484e91c2d64dbbd7d157b3f2b9b9cd4b2c07738ac8d84dc69a6b2"
+
+[[tasks]]
+name = "wandr/maritime-casualty-reports-relaxed"
+digest = "sha256:3cbd7c75c54f930c6e97bd8f3340800dab7980ff51a5bc57477c3e9182b16aae"
+
+[[tasks]]
+name = "wandr/maritime-port-shore-power-deployments"
+digest = "sha256:4d7f2d337c5525d9195ddbb6bac0881e729d68766b2bb9fc3d0df0608c9952f3"
+
+[[tasks]]
+name = "wandr/market-access-datasets"
+digest = "sha256:52a9681c2b81282cf38d5a1d9c977d88e87a8ae54255a79cf4328dc444bef061"
+
+[[tasks]]
+name = "wandr/massachusetts-zoning-changes"
+digest = "sha256:757b1383a92e90bc0f1bc09c088fa6f86ea1e68413c22181f98b4d14eedd4245"
+
+[[tasks]]
+name = "wandr/math-conjectures-resolved"
+digest = "sha256:dfa911d04b4a6f4a852c45388b3c9e1e2906c21617576f2fdb524ba1165cb15a"
+
+[[tasks]]
+name = "wandr/mdb-cross-debarment-provenance"
+digest = "sha256:702219c1f4bae6eb50c1781a4a7062a2c0718e7720e280aab63e8f083bd443c3"
+
+[[tasks]]
+name = "wandr/media-indicator-lineage"
+digest = "sha256:734f9ca95da2db1b46a83101d99ed6ea467371d10b6d7c3c6d16158eabb14b48"
+
+[[tasks]]
+name = "wandr/medica-2026-western-europe-exhibitor-evidence"
+digest = "sha256:60983ae0edfc8f3d07c9f834f7ac0071ac5ef717bed0e99ec0205b885c13629a"
+
+[[tasks]]
+name = "wandr/member-portal-capabilities"
+digest = "sha256:f2387c1e9e3fb8a3fdd83fca9eb5ff8736aff930a6a2c13ecb97371d165e02a7"
+
+[[tasks]]
+name = "wandr/merchant-bank-platform-incubation-thesis"
+digest = "sha256:1e2f74d09ee958f0ed65f3ab6c7e4d70c9ed22d8c65f0ede04baca9b4e0b2cbb"
+
+[[tasks]]
+name = "wandr/merchant-kyb-onboarding-source-provenance"
+digest = "sha256:64aaed4acdb02ee6581b3effd105e4e88690d8b7b0ef7bcbbb234c6c6c5624cc"
+
+[[tasks]]
+name = "wandr/miami-dade-civil-judges"
+digest = "sha256:92397ed3c0740827df7e0dc13fbd554fbf61c4734974a46dea02788a20639927"
+
+[[tasks]]
+name = "wandr/michelin-demotions"
+digest = "sha256:61b3a50ea99d4a82c6de6cd77dcbe89ccb001942415b1fa918de14fc34b488bf"
+
+[[tasks]]
+name = "wandr/microgrid-controller-deployments"
+digest = "sha256:db95e8cc5f336a92b9ed97a36aaba6c1459d6a1eb4bfb2af6b17daa0e3412c98"
+
+[[tasks]]
+name = "wandr/mid-atlantic-data-center-service-provider-evidence"
+digest = "sha256:b20208fb6ce2ba5d2a149701de6d1b52b8cb3e8cde10ed7a21d8674f587fa1c4"
+
+[[tasks]]
+name = "wandr/mineral-partnership-events"
+digest = "sha256:3d81a95f02219a75b3af23626068660c52d64ede817d85dca74c0c376bf456e4"
+
+[[tasks]]
+name = "wandr/mineral-recycling-facilities"
+digest = "sha256:a2e4e25db566a8a490018520c8042379d11aea9abc96e8fd47187b69a0a8d998"
+
+[[tasks]]
+name = "wandr/misquotation-instances"
+digest = "sha256:caea3dfaee233acd3473314a05a625e08a3f3acbdfd2e948e9f0965f809ff830"
+
+[[tasks]]
+name = "wandr/mn-environmental-health-agencies"
+digest = "sha256:664d4438e535af77f78dc91101fd9e2acfd3110655005641e80cf5265d332ebf"
+
+[[tasks]]
+name = "wandr/mobile-provider-caps"
+digest = "sha256:4efa4511ab298709f3ccc3a032658effc749fcdaaa7d7d995cb32484a4d50c4d"
+
+[[tasks]]
+name = "wandr/montreal-metal-fabricators"
+digest = "sha256:1d11016d6861998c692808e87b6a38ac0701955d00a98cbfa4216bfa900d5dc1"
+
+[[tasks]]
+name = "wandr/mortgage-calculator-surfaces"
+digest = "sha256:4f741b24758f31635b45c29c1c34ea8377b4a8d6a4c04edb8d3e0ecb04713a70"
+
+[[tasks]]
+name = "wandr/mozambique-districts"
+digest = "sha256:af8144382e572c8168505c79d87f2d6cfc68a4da8dfa588fe5dc1bc9a34b7df8"
+
+[[tasks]]
+name = "wandr/muscat-engineering-consultancies"
+digest = "sha256:b0a2545aa9a71186b625053b26efabbe1a1677187a65711046480b2677b38e86"
+
+[[tasks]]
+name = "wandr/museum-repatriations"
+digest = "sha256:139821e6393f25b967b8d701d1c4ec0ef09c5b2dc5ad47c8a32d7a10b4080e74"
+
+[[tasks]]
+name = "wandr/music-management-roster-source-cleanup-map"
+digest = "sha256:df0f5867e621e557d0b3c3fe41e7251d10ed2e265aa9aa12b896d9e4a205624c"
+
+[[tasks]]
+name = "wandr/music-publishing-admin-cwr-provider-public-capability-source-table"
+digest = "sha256:7fbe1f5cf899c5f3e5ada171c47ae0fe62bad5fa095cf29048de7b312b0efb47"
+
+[[tasks]]
+name = "wandr/musk-supplier-relationships"
+digest = "sha256:f619fe4ac667f9c031f063d2cae0aa79d2882be7b286667b91049231261941b0"
+
+[[tasks]]
+name = "wandr/neo-compensation"
+digest = "sha256:78c62cd786c7ed29ac8b530f2f82234b2cac42bdb219d914b9c7e320561662b3"
+
+[[tasks]]
+name = "wandr/neurovascular-open-payments"
+digest = "sha256:b4e230092a069babbd92b1f5b13baeaf6501f8c2f903142c87a2d7552fa5de94"
+
+[[tasks]]
+name = "wandr/new-grad-rn-residencies"
+digest = "sha256:c065efc4dd2fdf702fe81ea50f58be7a3de2a89d9685cf3e3b6a865e4987a5fc"
+
+[[tasks]]
+name = "wandr/new-tech-company-emergences"
+digest = "sha256:e0307989456259aaed3828e7fc7a52072a0ec69a8a28cb7c6dc5995c118704eb"
+
+[[tasks]]
+name = "wandr/nm-immigration-enforcement"
+digest = "sha256:8fd77ea6b5f0bf21cce82f53d4f919803517495d804982ada1261ac0e453c089"
+
+[[tasks]]
+name = "wandr/nonfinancial-public-company-insurance-intermediation"
+digest = "sha256:8b10c320771f13e630402936fb08a521ef62fbbc88dc2381f74d2fe8d6241b71"
+
+[[tasks]]
+name = "wandr/norway-agm-board-remuneration"
+digest = "sha256:c4785d0f29b3f6ea3601d79c23f54e370a81acf939242cbcd1533ad2fa368729"
+
+[[tasks]]
+name = "wandr/npdes-cwa-records"
+digest = "sha256:46691973cfe672ce6d070523438371152098cb64791ac37c847fb7ff1a42a231"
+
+[[tasks]]
+name = "wandr/nsw-heavy-vehicle-access"
+digest = "sha256:55b1ef222bec16eb035009b70f8d6dc45b88d91d2b14703610162e5c9c324644"
+
+[[tasks]]
+name = "wandr/ntsb-marine-publication-state"
+digest = "sha256:dacab91afb3ac7831cafd4d855b7dc702941ea2ad09b273ce6417ab33e895791"
+
+[[tasks]]
+name = "wandr/nulogy-adjacent-capability-evidence"
+digest = "sha256:f6502c708e6104ee95e63994e77c09b6cca9256dd92e58eb5b999097058f4774"
+
+[[tasks]]
+name = "wandr/nurse-pathway-programs"
+digest = "sha256:16a419d2fe8356ad71bbfd8db3d10ade02335fb92aeabb9d3227f23205babdd0"
+
+[[tasks]]
+name = "wandr/nvidia-ai-infrastructure-attestation"
+digest = "sha256:b83907203538805db70741ba19d7d3dca054fd1a2919c1170c0a952e6c1d8f2d"
+
+[[tasks]]
+name = "wandr/ofcom-transfer-lineage"
+digest = "sha256:04c2e92a89426e157fe03cdf98e9dda0f35a953eedd0764e47d68c7666737a44"
+
+[[tasks]]
+name = "wandr/offshore-wind-om"
+digest = "sha256:8f98be47e06012faa146a319ec979a3a200f73332d6bd6c791e7c76471ee0253"
+
+[[tasks]]
+name = "wandr/olympic-medal-revocations"
+digest = "sha256:6783a200b3c26456d730bbdae5f75824430429f6f9d6ccce7381ff0c6b9ed211"
+
+[[tasks]]
+name = "wandr/onboarding-gamification"
+digest = "sha256:95307ee7adee130d3199d48982b93388791f9aecb64a9bad09649acbcec39bfb"
+
+[[tasks]]
+name = "wandr/online-houseplant-retailer-catalog"
+digest = "sha256:7da3ae847a843c9688962f314e990fb18eaee0e1f8a8ab10c9f48ef517c83924"
+
+[[tasks]]
+name = "wandr/onsite-power-deployments"
+digest = "sha256:69494e87b544053dd49e8a4846d215f2366d4b833e757179f8ea51543de249e8"
+
+[[tasks]]
+name = "wandr/open-source-firmware-service-providers"
+digest = "sha256:b64cbbbb63a6886a78b5b58a09dd687dc79ea0936987366821d82a568382de28"
+
+[[tasks]]
+name = "wandr/opto-stage-variant-provenance"
+digest = "sha256:f0f0a42101c7058bed267b96f9b8495892f1ffaba4798ade177802808e8cf1cc"
+
+[[tasks]]
+name = "wandr/packaging-change-provenance-atlas"
+digest = "sha256:2941876d4bb06db0c2349be39bbb732bf1ba0ae17eb06c614cdd62db391cbf4d"
+
+[[tasks]]
+name = "wandr/paper-retractions"
+digest = "sha256:cf8eda43c1fa0e0736dc0fc9fc162a08be45ec657971513192cfe53012c61adb"
+
+[[tasks]]
+name = "wandr/passive-speaker-specs"
+digest = "sha256:1fca5360bae03edffc4306169ca40d5a9b4f91bb190c7fa73f9ea8616d7bf09a"
+
+[[tasks]]
+name = "wandr/payment-integrity-service-lines"
+digest = "sha256:d6428010a5911a8b370df7e9507c8205cbde390579a31aad27c655f493ce34dc"
+
+[[tasks]]
+name = "wandr/pbm-lobbying"
+digest = "sha256:29d78c970f65267b2ebb8e1b44cbc382449c0b3f4de0538e1b90592142ff6823"
+
+[[tasks]]
+name = "wandr/pdac-multiomics-registry"
+digest = "sha256:262f140c6bf682da07b6738ead6432641e39dc906247470dadc78fe607c775b4"
+
+[[tasks]]
+name = "wandr/pediatric-philanthropy-disclosures"
+digest = "sha256:9883b871b70ba97751f3718e3089a76b2b48e588e0b83ae138927b3f08f002c1"
+
+[[tasks]]
+name = "wandr/pgh-cle-tech-company-provenance"
+digest = "sha256:29bc24392c4a1c840ae6b98ef31fab523b0489748fead5893b9691dba7505aba"
+
+[[tasks]]
+name = "wandr/pharma-former-rd-heads"
+digest = "sha256:3eb1f2e4170669ca950f1ed0a4677f3f77c06484b07bef8da10d536fc7447f0c"
+
+[[tasks]]
+name = "wandr/phoenix-wastewater-rehab-market-share"
+digest = "sha256:73f74a9ae514848828bab4ab3672d4ed0420b4370cd764dcef54f195b8fbdda7"
+
+[[tasks]]
+name = "wandr/photo-retail-event-workshops"
+digest = "sha256:479dd43350cf4e77c2fa648e41f3a59225433ff2d044697084a6d38469a20c20"
+
+[[tasks]]
+name = "wandr/pitch-deck-providers"
+digest = "sha256:8ce0b9877ea1ec46bb1ac3825a07cff0e0ef5ae639fabccf827822e7a6fc7e5d"
+
+[[tasks]]
+name = "wandr/pls-ri-competitor-capability-provenance-atlas"
+digest = "sha256:1cca3a6eaa5ba2073690f21f53f695e4d665fc8e27d3a7116ab7d932b54ee001"
+
+[[tasks]]
+name = "wandr/polish-energy-project-relationship-evidence"
+digest = "sha256:eaff34c17af47bb92493534de7b674306315d5bb691cdb87e6c73635889e5a1a"
+
+[[tasks]]
+name = "wandr/portugal-municipalities"
+digest = "sha256:c595ce7c223f7599b8f68bf7c1d81b1a9c3782c9a2e85a9a59354872eae3e05f"
+
+[[tasks]]
+name = "wandr/portugal-parishes"
+digest = "sha256:f393a8376101c5b77e3255f821211eb5095468405ad0d7a5cdbe7e57b7fb6a37"
+
+[[tasks]]
+name = "wandr/poster-printing-capabilities"
+digest = "sha256:2ede075933e8f31595a9aa36c68e3faadab82cff4eb93fe2d4ca7f4aced12788"
+
+[[tasks]]
+name = "wandr/powersports-finance-provenance"
+digest = "sha256:a8be0fe8839fd3fd7bfab3e4b57664c950a1965395d4269c5f33efca87bde59b"
+
+[[tasks]]
+name = "wandr/prd-packaging-suppliers"
+digest = "sha256:61e7969c1287a02f5642d6a6b14460444fe6de080b765fe8f55de9b49113f496"
+
+[[tasks]]
+name = "wandr/precast-decking-capability-provenance"
+digest = "sha256:124ffbd54d6ea0ab9f0eb21029f60a823e974d3c800c7e77ab5c0ec8a96802c6"
+
+[[tasks]]
+name = "wandr/prize-contingency-insurance"
+digest = "sha256:ac0a4263631e298f38d5ba1a17f1212bce21327068b81cc24ffbc9b44aa32d25"
+
+[[tasks]]
+name = "wandr/probate-distributed-properties"
+digest = "sha256:92a010747d2a3db91d1676118906c4f9fc0bc300efda8e49fb39302992ceb313"
+
+[[tasks]]
+name = "wandr/productivity-monitoring-product-capability-evidence"
+digest = "sha256:e6dd136da841c755f8806468187adbf3c459e91afcceb829d5927e32527dcb33"
+
+[[tasks]]
+name = "wandr/programmatic-publisher-ad-stack-signal-atlas"
+digest = "sha256:5c118d8eb16843ceb7cf284c6adf93c941e46292719ed7f06a8a7a07dd83e042"
+
+[[tasks]]
+name = "wandr/property-software-provenance"
+digest = "sha256:3bebffac28383c809fd0e04e96419c3043ce913ffdff6d2348828e4958803016"
+
+[[tasks]]
+name = "wandr/protein-cookie-labels"
+digest = "sha256:704ce76be1a74fe14946100e047ab14fe658a585bf8f6ef5e94502dd8f53aeb6"
+
+[[tasks]]
+name = "wandr/public-company-data-asset-provenance"
+digest = "sha256:e74fc126592c34ad289c0f81d137c2fad420b3c5866ab40c8847c23b980d5177"
+
+[[tasks]]
+name = "wandr/pulsed-capacitor-claims"
+digest = "sha256:1d3c75ecda702c938f87f5da56a973dc46dee7d1cdad5e197f49017d528db46b"
+
+[[tasks]]
+name = "wandr/pump-room-channels"
+digest = "sha256:9791a93012653bf68e5665956bc323d7ffe6044f822bc28c607efc76dfe3bc42"
+
+[[tasks]]
+name = "wandr/quantum-photonics-suppliers"
+digest = "sha256:a1b13eb0583c2782294843e92a3045f447c8fad00b239f68560504b4f44aa7a5"
+
+[[tasks]]
+name = "wandr/rcm-website-surfaces"
+digest = "sha256:295c03adaf5c88bd9b5400129f6767176c698d436f60d01aaa61781be74200d5"
+
+[[tasks]]
+name = "wandr/reading-app-capability-provenance"
+digest = "sha256:2ed764b326f202eb691c2220527f77a4a3a11aeaa988494088775f8148859b44"
+
+[[tasks]]
+name = "wandr/real-estate-feasibility-evidence"
+digest = "sha256:c2667c1af52553d1d609635ca2661256742ab17c1893b0b0c4b48b28a5a24e7c"
+
+[[tasks]]
+name = "wandr/recent-type-foundries"
+digest = "sha256:41ff538a92db8382f6987b61bbf92ffbda19fd874ca8a97d00542829d97a7b42"
+
+[[tasks]]
+name = "wandr/reddit-workflow-tool-capability-provenance-atlas"
+digest = "sha256:01c5ffbca22d82f5c0239acdc64b214d74cbfc783355ee02a7af2d0de3afc0a2"
+
+[[tasks]]
+name = "wandr/regulated-messaging-fees"
+digest = "sha256:e7f6a085f24b788f7ff551c042c95892c9599647a4972e457d955c7ad83330de"
+
+[[tasks]]
+name = "wandr/religion-nonfiction-publisher-imprint-provenance"
+digest = "sha256:c2a736a301af8dcbb9d7419991c7b3581d52dd272ba5342113772ebac122696d"
+
+[[tasks]]
+name = "wandr/rental-property-bookkeeping-provider-evidence"
+digest = "sha256:e5cc65431b60f09b202e1509f8b13034c39daf03d9752d12ef788096178c5f47"
+
+[[tasks]]
+name = "wandr/resilient-power-projects"
+digest = "sha256:e08c15ff3e3c3540b0d9eb0b155ab0f5fa5658b7b1259b9e86801c78137987c7"
+
+[[tasks]]
+name = "wandr/resolved-prediction-markets"
+digest = "sha256:6130f469069d5068124854043c8b52e1a4b9376119e1d87e39489727dace3893"
+
+[[tasks]]
+name = "wandr/restaurant-ingredient-prices"
+digest = "sha256:2cd2eeb5f5af9600f7cb442f278be95350551aa1cbd95073dbe48ed395287c88"
+
+[[tasks]]
+name = "wandr/restaurant-matting-product-roles"
+digest = "sha256:4ba45b0a80fe00135221660dec251381c32b2b414b4786eb3a22c68301cce860"
+
+[[tasks]]
+name = "wandr/restaurant-openings-nyc"
+digest = "sha256:9d6927165bd940747afd9d2b99df6a69b2cdc17c5b20764d316b2997cdf2c352"
+
+[[tasks]]
+name = "wandr/restaurant-uniforms"
+digest = "sha256:07c24b9684b80920aefbfe77f6b9af5678d8979a7e84c7d1f4595188faed99fc"
+
+[[tasks]]
+name = "wandr/restaurant-voice-ai-vendor-evidence-atlas"
+digest = "sha256:972e4d0130034dca4116668e09455a85cd7473bc2e366afe1b39a4c70d4efaaf"
+
+[[tasks]]
+name = "wandr/restaurant365-customer-workflow-evidence"
+digest = "sha256:67f6eff06888783b56f6e3d8900d5a63a079a9bb981fcbee951bf89a2399d479"
+
+[[tasks]]
+name = "wandr/restomod-builders"
+digest = "sha256:4a06fcb29fd692c80c1f5137be44013d7dd484a8f0db693145657a5578e26a6f"
+
+[[tasks]]
+name = "wandr/retracted-for-misconduct"
+digest = "sha256:65303475d37eea169fd0ec0127284e947b8d23ec0c4258156671b3e5857c6eb0"
+
+[[tasks]]
+name = "wandr/ria-signals"
+digest = "sha256:d5d2c0c329b287195e8a1ea78e8891f1aba4d7eb90b296314c3aa91c6dd18ffa"
+
+[[tasks]]
+name = "wandr/robot-offering-deployments"
+digest = "sha256:a6eb71a51e1de44124d79f68bcb03c00f495c5b5c95fe26c47252056ca50a7b0"
+
+[[tasks]]
+name = "wandr/robot-vision-deployments"
+digest = "sha256:6a387a388debfaa61489d033a631d29a4be30a83a5e84dd93f0f2e4405af5a61"
+
+[[tasks]]
+name = "wandr/roof-estimator-deployments"
+digest = "sha256:b670063f9f03e889c661afaf0027a561bc442f35181b6d8a3fccb3a7cfbde6e7"
+
+[[tasks]]
+name = "wandr/rosemary-antioxidant-product-provenance"
+digest = "sha256:66b3e14ee0829244db3891455e968b2d48e796cf408ee923535513841a110fa8"
+
+[[tasks]]
+name = "wandr/russia-production-case-evidence"
+digest = "sha256:a0cf2d5b5ad46940188c2efae53fe5e39d6a0cac72dbbacb395f73a65e5cf52a"
+
+[[tasks]]
+name = "wandr/sa-bakery-supplier-provenance"
+digest = "sha256:00df7b6a205aab7ee74d09094d387f501e1bf74fae574ca168fec67a838e3abd"
+
+[[tasks]]
+name = "wandr/saas-customer-partnerships"
+digest = "sha256:994ebd0497afec9ded922223dd37a3ba8271b638fe0b57cc2c969d639f76b3d0"
+
+[[tasks]]
+name = "wandr/sales-tax-economic-nexus"
+digest = "sha256:0a1fb50d76dd5be1788e14b9546b11f2ca8a223d71024c326e524e2286f33200"
+
+[[tasks]]
+name = "wandr/sap-data-integration-capability-evidence"
+digest = "sha256:7a395a85ed5960afe2ba0a49be41e6c8f9dbf8226d93ab1f06227ce1788763af"
+
+[[tasks]]
+name = "wandr/satellite-d2d"
+digest = "sha256:a4adb30dee7b855e2a707edcb6fea27cfdb258efe684c0583242604eb21a9232"
+
+[[tasks]]
+name = "wandr/saudi-bank-boards"
+digest = "sha256:4123ec9a5389b2f41f5d2dc28b5e5ace88de9743c22703763177fe316a1a94ee"
+
+[[tasks]]
+name = "wandr/sec-8k-material-events"
+digest = "sha256:090eadbdb399a486dde4fabfed082cd3069761207211694fe9cc594ad33b6b5b"
+
+[[tasks]]
+name = "wandr/sec-going-concern-filings"
+digest = "sha256:185ccc830951328c8d6ff4763c9c284b859b41fe0e3b7175612d0f4793d4d9a6"
+
+[[tasks]]
+name = "wandr/security-incident-disclosures"
+digest = "sha256:6d02c3dc242d5d64f3a2897b89debb456762551eacf18f5e31c6b7172f178b29"
+
+[[tasks]]
+name = "wandr/semiconductor-financial-deep-dive"
+digest = "sha256:85cc8ecee01bdd668fee1077de67d6da19d71abe68d253033fc7b9ec5d8fa04a"
+
+[[tasks]]
+name = "wandr/sff-book-creators"
+digest = "sha256:296b7b39a84e6717a31b3a57fde5297d27053077e78c3a9e8b3055300d401e81"
+
+[[tasks]]
+name = "wandr/siirt-hydropower"
+digest = "sha256:fc6c61eb3fe5dc1a1627e6a28a054d5304c750751ba27743881641cae38eab4b"
+
+[[tasks]]
+name = "wandr/singapore-event-venues"
+digest = "sha256:af6912ac690969769ab09753e9c40f3d2e942efd7bc4b5486538e6f66c425dc8"
+
+[[tasks]]
+name = "wandr/singapore-expat-insurance-plans"
+digest = "sha256:9145fabc4f97e776687e0d93696256961a58629b572d363c42142a62dd5901f0"
+
+[[tasks]]
+name = "wandr/singapore-minimart-outlet-provenance"
+digest = "sha256:d9ad83189e3f483a5c8fabe647ec50c6c75da947811a18f10181f93c479bdff2"
+
+[[tasks]]
+name = "wandr/sitecore-award-engagement-provenance"
+digest = "sha256:15980d8f11279ac1b32287510fd74d46ef75115609d1cd3d25dcaf9a5107d67f"
+
+[[tasks]]
+name = "wandr/small-water-utilities-wi-mi-up"
+digest = "sha256:a455ed6422b985295b6d52041bc1a7dadf176e98bb9a18c46511c05b201ad2d1"
+
+[[tasks]]
+name = "wandr/smoke"
+digest = "sha256:2fcf1ce5308784da1626e068fa820420e89c7c379f5e0da468338a05cb6b7350"
+
+[[tasks]]
+name = "wandr/social-api-vendor-evidence"
+digest = "sha256:6a7296d7d9c9f1169f8a8a7d2d104a1f11f34347a5ae1ad93d6c4934d5398c07"
+
+[[tasks]]
+name = "wandr/software-kpis"
+digest = "sha256:eabef79a7df83a2e2769cb9c109784bc21aa1b42594be4421afeacccd5517de9"
+
+[[tasks]]
+name = "wandr/solar-rri-providers"
+digest = "sha256:2c1995d1e4bec1200c858190c6657d609f9bfbdcfeb1742ccfad7007530b3dda"
+
+[[tasks]]
+name = "wandr/solar-storage-disclosures"
+digest = "sha256:7dbb31ee592166c7d78beb207cd0d8e42a5e5ea4eecb3fc7c42ebd5130928de3"
+
+[[tasks]]
+name = "wandr/solid-state-battery-patents"
+digest = "sha256:0a0ace5188390343218629baf21380484438b7b0f7e2775a66bb35f62957400b"
+
+[[tasks]]
+name = "wandr/sony-label-artist-affiliations"
+digest = "sha256:9d0c8ddaee9a624d093c610e15f8738ddaa9156ccae139dfd131f490a32953f7"
+
+[[tasks]]
+name = "wandr/south-africa-ict-integrators"
+digest = "sha256:f73e0c77b5bba841aeb3917f3bacc4dbc99bab86bd7658d35802d785e613edb3"
+
+[[tasks]]
+name = "wandr/southeast-asia-broadcast-media"
+digest = "sha256:bf846341c0317fcc3e0c7b3172566180eb9cde704b3f29541c64f72c179c02d9"
+
+[[tasks]]
+name = "wandr/southeast-geospatial-uav-lidar-service-evidence"
+digest = "sha256:50efa155963dd501016442e70eae4e8b91e3f5d32657d199a76c0cffd2bb2f99"
+
+[[tasks]]
+name = "wandr/southern-africa-helicopter-operators"
+digest = "sha256:80c7a41a559a7829c1fc492e9eec186e230dd11409f178fcba140389035e7509"
+
+[[tasks]]
+name = "wandr/space-competition-opportunity-matrix"
+digest = "sha256:ddae49b881da25adb8216c2d5364dfd903ead0dd5b84e214f911566e7a302c27"
+
+[[tasks]]
+name = "wandr/space-pv-suppliers"
+digest = "sha256:ee41099ad5c647abdede2f480c5b22145a4663b7184d8ee4614db63a8fa3114d"
+
+[[tasks]]
+name = "wandr/specialty-hardwood-offering-provenance"
+digest = "sha256:d9c7bb578e853d6c711ec9ad47e6275508f938d8cfbb69cd9f9edfe8eb6fa246"
+
+[[tasks]]
+name = "wandr/specialty-input-behavior-atlas"
+digest = "sha256:8bcbca8155636b10d156192ab631267510dbfa105102607f9613037193ae9d54"
+
+[[tasks]]
+name = "wandr/spokane-kootenai-projects"
+digest = "sha256:2cecfd0162cb90d8921d7e0c33ae4c46229f9993279a057a370ed4ec3499b902"
+
+[[tasks]]
+name = "wandr/starlink-eband-evidence"
+digest = "sha256:bc174a06b785e579ed17b53ddd92ec8dcc42749686ba6905e8338b2126c54cb3"
+
+[[tasks]]
+name = "wandr/startup-funding-party-provenance"
+digest = "sha256:b8d6e8a3e8dd02866e070dcc247f81c64f4719aeab6ef1de9cd0fc10794370c5"
+
+[[tasks]]
+name = "wandr/startup-support-program-public-profile-evidence"
+digest = "sha256:58deb42038ad48c44eb669f9c26907238742989bd86dda0207003107dd32e13f"
+
+[[tasks]]
+name = "wandr/steel-service-providers"
+digest = "sha256:c89178e64b153858857f038bc44f26bb6a2c7a6ab29ff0f489867b89d1098c55"
+
+[[tasks]]
+name = "wandr/steel-suppliers"
+digest = "sha256:2110de8b48a8784d206f2b64754643381b9b06c982083e748ea86609d3d5e4bc"
+
+[[tasks]]
+name = "wandr/strategic-hiring-demand"
+digest = "sha256:43acef89341944e53746c61bbed473b4a1252df7dec0bbc5d7b26b74aca7cf6d"
+
+[[tasks]]
+name = "wandr/student-logistics"
+digest = "sha256:7958e399c4233af94cfd219766602f7dd32d2e29801f974eb2ca0a1f779b6539"
+
+[[tasks]]
+name = "wandr/supply-chain-planning-vendors"
+digest = "sha256:40ef8b8a63582958413a8d499d6561ada445db17fb96b125ce19c915e551f114"
+
+[[tasks]]
+name = "wandr/supply-shortage-claims"
+digest = "sha256:4d01b20d38533b68bb495f9b7400670bcdb281f80c81b2a124a6760712addbdc"
+
+[[tasks]]
+name = "wandr/swedish-invoice-finance"
+digest = "sha256:443f651f30f1faa6507638f07a4d76b960320c1704bdb6f84871438a037cbdaf"
+
+[[tasks]]
+name = "wandr/taipei-car-detailing-shops"
+digest = "sha256:212f58111e03dd0dccd6903c56a473e0df7b82ce1293083a207d71af8dfb1706"
+
+[[tasks]]
+name = "wandr/texas-headcounts"
+digest = "sha256:d497177838a1723a182f19562ff714d9194dafd7e2c5cf28b65fdedce22f6e40"
+
+[[tasks]]
+name = "wandr/thailand-service-robot-channel-presence"
+digest = "sha256:18cc1594da4cba191a4ef08ba4d86eece6fea2d29f707033b28ea6c81d2abae1"
+
+[[tasks]]
+name = "wandr/thermal-area-suppliers"
+digest = "sha256:5eafd53aa9586203399fcff453e08b02538c8954b38ee571d47612c54d873eec"
+
+[[tasks]]
+name = "wandr/tic-lab-accreditation-authority-records"
+digest = "sha256:13a6518d97755d8995fb0069ca80c909104931c242abd6f76dc9c92e551c2a85"
+
+[[tasks]]
+name = "wandr/tiktok-shop-partner-api-evidence"
+digest = "sha256:0237989f3d83f7f6eef1cd220ba2a55eb8f2d5aaf891fe01aadd84f2dfa474c6"
+
+[[tasks]]
+name = "wandr/time-tracking-product-provenance"
+digest = "sha256:dfe14a2b6fe439de0449e258219084f41c60b6ada97d625b5eae5dbd5bcb70b3"
+
+[[tasks]]
+name = "wandr/tn-colleges"
+digest = "sha256:90ce4bc06582982313613732a5291ed52688f30ec5063e4acdf1fc80223567b5"
+
+[[tasks]]
+name = "wandr/tn-kl-100-bed-hospitals"
+digest = "sha256:1b314df25820ea8851ee0278f458600070f97faa4383377ddd0bec4bdf733a7e"
+
+[[tasks]]
+name = "wandr/trailer-component-supplier-provenance"
+digest = "sha256:e254cd02376e5b3b99199a3e0796bb2f284a389505fc0879c6d08af0a056baad"
+
+[[tasks]]
+name = "wandr/transduction-orgs"
+digest = "sha256:7a88e8af3c5b7b1472fa7af2b135661412f9f98f76bbc54c0edf298a9ede1df6"
+
+[[tasks]]
+name = "wandr/transit-procurement-items"
+digest = "sha256:47d8175794842e18e9cc03bf4be16ff06cf3a5dd4d422abb250de51d9c7efeaa"
+
+[[tasks]]
+name = "wandr/transparent-led-products"
+digest = "sha256:6a1b43d52ea522ef92dd51d1f93705a60317e2ddc581305faa9398bdfb69dd5a"
+
+[[tasks]]
+name = "wandr/trinidad-security-product-channels"
+digest = "sha256:2dff4e33c9f3d8011c920b0833aa7f4bf93a1578f6dcf2fc4e33c432972a96fe"
+
+[[tasks]]
+name = "wandr/uae-current-transformers"
+digest = "sha256:7b6a5f18905511112bb98dc5a27daf8b05074f990ad98cc2e07e4c9c6c3aa6c9"
+
+[[tasks]]
+name = "wandr/uconn-basketball-trading-cards"
+digest = "sha256:c31997d7d2b9e79f16906beb57cf66dde58ec616e0cfff0e323ff5817c49a575"
+
+[[tasks]]
+name = "wandr/uk-b8-open-storage-site-scouting"
+digest = "sha256:907a7cd839c7f45a7b5a984d267bd5c3e2b84c11c0cc22828eed960c74c8bf07"
+
+[[tasks]]
+name = "wandr/uk-farm-shop-retail-directory"
+digest = "sha256:57acbcb5fc8cd125d1ffc1f2f546c8a3801db65ae7778d22e9b0c5a74df906c1"
+
+[[tasks]]
+name = "wandr/uk-fca-regulated-adviser-profile-corroboration"
+digest = "sha256:d3606c9a4ab0ddd0f44d164fa95618626302c0be840e91f10d51d00749f1b773"
+
+[[tasks]]
+name = "wandr/uk-flexible-packaging-manufacturer"
+digest = "sha256:3a5d7accd39a1b076ebead37429d6b5967036a866766a0be534d532c9ad61e3d"
+
+[[tasks]]
+name = "wandr/uk-foam-company-provenance"
+digest = "sha256:1e794100b2db239ec2cda8a6c8fc14b7665ef3850ebd3f6c520e3388be91a732"
+
+[[tasks]]
+name = "wandr/uk-fragrance-house-capability-atlas"
+digest = "sha256:476244aa2702fd4d9a8c9ff7b6692d2e233e54057e92a42e0293b8984519893f"
+
+[[tasks]]
+name = "wandr/uk-leisure-projects"
+digest = "sha256:56e5e6977ecbdf2633cbf522e6880815a0af1bc528df2489f055aff0c4e4abce"
+
+[[tasks]]
+name = "wandr/uk-property-feeds"
+digest = "sha256:f0c77d8dddcfa69608fa7f8b5e1822c80cccb6e71483c4ca10df4847d48694d2"
+
+[[tasks]]
+name = "wandr/uk-tax-software-evidence"
+digest = "sha256:2359965cb5231e2915bfcc90e8f5e428bf19bbd7b73b43c6f1a843e1faca1099"
+
+[[tasks]]
+name = "wandr/uli-council-footprints"
+digest = "sha256:6aaf90f033c041b33c63d58db2f738129a8cf67c12e6749182a5c163fbf04723"
+
+[[tasks]]
+name = "wandr/university-application-fees"
+digest = "sha256:a3e7022cec4b8a0182597158dc65d55c19ff82ab4de522db5eaa3edd55fe881e"
+
+[[tasks]]
+name = "wandr/upc-offering-mechanics"
+digest = "sha256:5d4e62ada657ac44634ecb543f3ee4d64f85c650f4f9ac9c8b16e6d46d548981"
+
+[[tasks]]
+name = "wandr/us-bar-prior-discipline-rules"
+digest = "sha256:8c7bacddbf28b6fb970ca904376e9ad26c4656314bc036cc0da873ae446d8487"
+
+[[tasks]]
+name = "wandr/us-brand-leadership"
+digest = "sha256:5b12cf81ae76eaa25d74fd89013aac87dc6e31facd690c6e1f77945d5a43eea1"
+
+[[tasks]]
+name = "wandr/us-cardiac-surgery-signals"
+digest = "sha256:5de7fe2dcfe0450cca6bfb21a243a8121bc22d233648f57f65cc1548e0258ba7"
+
+[[tasks]]
+name = "wandr/us-government-grants"
+digest = "sha256:fcf9b371ce700225103ca08f8c119147fd0b9f1955a4a42f35ba750ca85e8b7d"
+
+[[tasks]]
+name = "wandr/us-lng-projects"
+digest = "sha256:9c01fa0c40fc18b8894e4acda1ed92c46096010ddb6f8f5cd5f66a579827b5e8"
+
+[[tasks]]
+name = "wandr/us-military-and-us-flagged-vessel-registry"
+digest = "sha256:4bdf6f3389947bb67109f6fc353a7570cbd28d05b3a6c5f93df3e2c64086e159"
+
+[[tasks]]
+name = "wandr/us-msp-mssp"
+digest = "sha256:4d4727b529600b5540e54e8578ba5aa22714df0ce4daffc74aff328de7dc2acf"
+
+[[tasks]]
+name = "wandr/us-outplacement-provider-public-capability-provenance"
+digest = "sha256:81a4498bbd33f490d136453d2dcdff9506e83e651f244075c199940b42a0a311"
+
+[[tasks]]
+name = "wandr/us-pfas-projects"
+digest = "sha256:4e470e48d117d7d3efb2d92fb2977b661a8e5fd2792b31a355ee2eaf1fd91dcf"
+
+[[tasks]]
+name = "wandr/us-robotics-ai-seed-funding"
+digest = "sha256:964ab9dbade8e4b2bfcec1c9e9d9b3021433ad0dbb0569af5f016c7be5704a51"
+
+[[tasks]]
+name = "wandr/us-solar-manufacturing"
+digest = "sha256:7356dff9d826efbd08ab0944c97dd7d3dd71358e8e5d0467750d3ecd0aa4f904"
+
+[[tasks]]
+name = "wandr/usports-basketball-coaches"
+digest = "sha256:19f3e3c30096a4a236193ed266717694171a100ab20efb5ea2442b05fc8656cc"
+
+[[tasks]]
+name = "wandr/uv-printer-offers"
+digest = "sha256:864255da4fbdb3516558a5a7c447ce73ad9d1f168767747ad353c19cc60dbc6e"
+
+[[tasks]]
+name = "wandr/va-provider-pricing"
+digest = "sha256:ad1ed38eb22e4f354a97d20e74a7fc2f395ffa14a1beee164f3d8a5ea82b393a"
+
+[[tasks]]
+name = "wandr/victorian-uni-acts"
+digest = "sha256:37ee3bdb1ebdda81aeaac81d2f2058247e467b22580add3ee4489f03f5f7ff1f"
+
+[[tasks]]
+name = "wandr/vietnam-tile-slabs"
+digest = "sha256:c681a5742fe142e3b5f373ecee57cbbabc114c6d342dfcf41b3cf7f8a6985ea6"
+
+[[tasks]]
+name = "wandr/virginia-k12-districts"
+digest = "sha256:8135beaef99cbb289f16163bbb6604ded56818a4fbfcfc1b4ae470ad1eb39fb7"
+
+[[tasks]]
+name = "wandr/voss-evanger-place-paths"
+digest = "sha256:c409e05caec1c777ae4f60414a35ddb4a9b222a69cd20eb8ff127898b5a0935f"
+
+[[tasks]]
+name = "wandr/wa-grocery-distributor-capability-provenance"
+digest = "sha256:6fab66759f8e3f8ae81c1b004a272391c80c4dd2f1d59056a4a74341525b3bf1"
+
+[[tasks]]
+name = "wandr/warehouse-automation-public-evidence"
+digest = "sha256:69a778a819cf6fe6e260c7080087c6bf40870ff84503d3a4520c8e46dd239de7"
+
+[[tasks]]
+name = "wandr/wartsila-engagements"
+digest = "sha256:4300b3482a21bba024fb37f3b6ad0cffb9b766dcd7ea5f26e72d71c7b52ad8e4"
+
+[[tasks]]
+name = "wandr/watchlist-eod-quotes"
+digest = "sha256:c2fc6f2f826bb608e455d8fb0ef4340e3ceef07738f13718b3b7b8ebe01eee00"
+
+[[tasks]]
+name = "wandr/wealthtech-platform-claims"
+digest = "sha256:ad5badafc9b77775e30cc234ff432e00c69da095cde5ff86b289ff7932809f2c"
+
+[[tasks]]
+name = "wandr/webai-platform-customer-sector-public-scout"
+digest = "sha256:258c2a5b3e50f61aaba103148c09a9120bbdc0267b2395619643335483e26355"
+
+[[tasks]]
+name = "wandr/window-tinting-laws-worldwide"
+digest = "sha256:156b286229466a6fe621e5e331cf793f28834bd3da6d266c80696cbd7a7243ce"
+
+[[tasks]]
+name = "wandr/work-visa-rule-changes"
+digest = "sha256:d6fa5b3500b35af4afb857b1adf4e2defe2e8b0a36387abe98fd28b71001c30f"
+
+[[tasks]]
+name = "wandr/wru-rugby-clubs-wales"
+digest = "sha256:1a0080759f5d49f78d5ef82da7ef5067934801fcd967d3f101f2067f1e6e2eed"
+
+[[tasks]]
+name = "wandr/xactimate-esx-public-tool-claim-provenance-atlas"
+digest = "sha256:12269ccfc50cb24bfb96430d88245617e7587360bfdfe0c67a760c942b342813"
+
+[[tasks]]
+name = "wandr/y-dna-haplogroup-clades"
+digest = "sha256:ecb93f46e53a9abc035362b65394de1c54dcb686a081dc9e0adbc6baf42aced5"
+
+[[tasks]]
+name = "wandr/ai-humanizer-public-claim-provenance"
+digest = "sha256:5243902112e1c4c77c10f385bf87ef87c9509d97b3ba9e32a7fd4d861594768c"
+
+[[tasks]]
+name = "wandr/airbnb-fullstack-perplexity-fit"
+digest = "sha256:8bcd8767c03fae49ec63f7a720d9a91b18a3fc1b927b30c41f709c3d0cac0aaf"
+
+[[tasks]]
+name = "wandr/au-qs-service-corroboration"
+digest = "sha256:83265d550a1e1e3921e0f1552c36e3b8ef30124d5a9ea2238826c077102ea21e"
+
+[[tasks]]
+name = "wandr/bachir-doha-brand-competitors"
+digest = "sha256:7904e94f50d2ed8710db0ed8a9127f5e34a32f2dc1699375750e26e2c379fd2a"
+
+[[tasks]]
+name = "wandr/content-agency-hiring"
+digest = "sha256:2b4b4e78203cf78691c040eda62bf90374e5e44921087419076e4e1f8fd94caa"
+
+[[tasks]]
+name = "wandr/data-import-vendor-public-evidence-atlas"
+digest = "sha256:9593f664d6e75c888d2f7151af23ca0a410ec783ddbbbe4acb9cca531dcc7670"
+
+[[tasks]]
+name = "wandr/forbes-250-claims"
+digest = "sha256:21ae109f726ea7944b128cb1040574baaca5fc4f43a68c037d9ab3ec799733fe"
+
+[[tasks]]
+name = "wandr/forbes-250-cross"
+digest = "sha256:8e9e6f93c137540626ff746e34429b9d7feb5f0efe3c0ce37c83f815b454d4d3"
+
+[[tasks]]
+name = "wandr/forbes-250-errors"
+digest = "sha256:08f0df455d66dfad104439d36b161d1ca02bd03f252d5ce7c11bdc2054483a51"
+
+[[tasks]]
+name = "wandr/former-us-solicitor-general-private-practice"
+digest = "sha256:2197f7d5dd587f02229cd8661d261bd24aee7f69abaf43761a1f45f2b9805221"
+
+[[tasks]]
+name = "wandr/former-yandex-now-meta"
+digest = "sha256:ec18d360f073f4c4d8026516e377ff4e4d9eb63b92744763cdd28c33b92337d9"
+
+[[tasks]]
+name = "wandr/google-london-inference"
+digest = "sha256:7d3c17b0a207495b7b6839c4a0a4762411f3ca4d35d8b79d13c9724ed37f5328"
+
+[[tasks]]
+name = "wandr/hong-kong-school-offices"
+digest = "sha256:f1211f21e568cd40664ba5ee31332706fddfde9f4a9cd67202fb3e11d683a1c5"
+
+[[tasks]]
+name = "wandr/japan-auto-tech-speaker-sales-leads"
+digest = "sha256:35b09340f6ee4f89b8f2403cac9455d90ae4cc7918a0c7c8d494d51be0af676f"
+
+[[tasks]]
+name = "wandr/mipt-ml-engineers"
+digest = "sha256:e5c17f169924b96d630fa9f62dcccf8cf94bed8509950c31d797ee294b3752b7"
+
+[[tasks]]
+name = "wandr/multinational-office-presence"
+digest = "sha256:11b08309bfb294ac05f9424af1edc55ad1a401229cc697a87c77f74383df5542"
+
+[[tasks]]
+name = "wandr/nj-hib-school-contacts"
+digest = "sha256:d7a56b281c0705a51503dc3e18e43edf3360f1e344d9bab908d3b62cd3fd973d"
+
+[[tasks]]
+name = "wandr/pediatric-daf-grant-foundations"
+digest = "sha256:a6ddfb18a6eaf8ddb17113b9bf47fe02f642ee4fd9c6ee7ebedb143929ea2a87"
+
+[[tasks]]
+name = "wandr/perplexity-elite-schools"
+digest = "sha256:30643165b1e9dc491dff162128649812aaffa4d2b630607db58b1bc784142a8d"
+
+[[tasks]]
+name = "wandr/us-brand-executive-role-evidence"
+digest = "sha256:732597b6a6c26febb014b5fb730b4b90568d9a5df134bf69c9fc5e03a1c37bc2"
+
+[[tasks]]
+name = "wandr/vp-marketing-saas"
+digest = "sha256:bddb046c581d1154a626fe68309ce0ccd3ad3b32f764ad4fac1db0d43d540ae7"
+
+[[tasks]]
+name = "wandr/vp-marketing-saas-historical"
+digest = "sha256:1ab537851f938560a86c8adff3bc815352c290e164d8a632ab176e095b98df7f"

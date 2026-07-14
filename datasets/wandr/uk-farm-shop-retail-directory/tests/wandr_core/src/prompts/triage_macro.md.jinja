@@ -1,0 +1,12 @@
+URL: {{ url }}
+Title: {{ title }}
+
+Content preview ({{ content[:TRIAGE_PREVIEW] | length }} chars):
+{{ content[:TRIAGE_PREVIEW] }}
+
+Does this look like a fetch that managed to get the meat of the page?
+
+Mark usable=True if the actual page content is present *in reasonable completeness* (even if alongside some garbage).
+Mark usable=False ONLY if: entirely a CAPTCHA/login wall, visibly truncated behind paywall, completely garbled, almost surely missing substantive pieces due to unrendered JS or similar page dynamism problems, etc.
+
+{<% if prompt_section_template %>}{< prompt_section_template >}{<% endif %>}

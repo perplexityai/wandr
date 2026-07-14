@@ -1,0 +1,7 @@
+Canonicalize the CWA/NPDES record as a compact compound string preserving these identity parts in order:
+
+`record class | NPDES permit ID | record kind | date or reporting period | source-stated status/action/value`
+
+Normalize obvious spacing, punctuation, and date-format variants, preserve the canonical record class, and uppercase the permit ID. Do not collapse distinct record classes, monitoring periods, reporting quarters, outfalls, parameters, limit types, inspection dates, enforcement action dates, or source-stated statuses/actions. Do not turn source-stated statuses into legal conclusions or risk labels.
+
+Return {{ CANONICAL_INVALID }} if the value lacks a recognizable record class, permit ID, record kind, date/period/vintage, or source-stated status/action/value.

@@ -1,0 +1,14 @@
+For {= management_company =}+ music-management or artist-representation companies, find {= artist =}+ artists per company whose public management relationship is acknowledged from both sides; for each such (`management_company`, `artist`) pair and each of the {= reference_type =} representation sides listed below, supply a relationship-substantiating source (i.e. {= url =}+ URL).
+
+A management roster mention by itself can be stale or one-sided; the useful object here is a public representation relationship that the management company claims and the artist side also acknowledges.
+
+The representation sides of interest, which we refer to as `reference_type`, are:
+- `roster_claim`: the management-company side claiming the artist as rostered, represented, managed, or a client.
+- `artist_acknowledgment`: the artist side acknowledging the same company, or a company-affiliated manager, as management or representation.
+
+`management_company` ought to be a real music-management or artist-representation company, and `artist` ought to be a real music artist, band, act, or recording project. Labels, booking-only agencies, venues, festivals, media outlets, fan pages, and other non-management/non-artist nodes are outside this relationship.
+
+Requirements:
+- The page should communicate that it is an officially-controlled channel for the party being cited: for `roster_claim`, that party is `management_company`; for `artist_acknowledgment`, that party is `artist`. Owned domains, verified public channels, official artist sites, official EPK / team / release pages, and visibly documented subdomain or account affiliation can carry this; third-party aggregators, contact-enrichment pages, press-wire mirrors, fan pages, and generic directories usually cannot.
+- The page must explicitly identify the opposite party: for `roster_claim`, `artist` should be clearly identifiable; for `artist_acknowledgment`, `management_company` should be clearly identifiable, either directly named or through a named manager whose affiliation with the claimed management company is visible on the page. A bare person name without a firm tie does not establish the company relationship.
+- The page should acknowledge the management relationship at the bar appropriate to `reference_type`: for `roster_claim`, roster, client, artist, management, or representation context from the management-company side can count; for `artist_acknowledgment`, the artist-side page must carry an actual management, team, representation, or manager-credit acknowledgment tied to the claimed management company, not merely booking, label, publishing, PR, fan/wiki, general thanks, or unrelated credits.

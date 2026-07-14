@@ -1,0 +1,1 @@
+"""AI paper authors task."""

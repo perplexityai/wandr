@@ -1,0 +1,8 @@
+{
+  "name": "southeast-geospatial-uav-lidar-service-evidence",
+  "wandr_task": "southeast_geospatial_uav_lidar_service_evidence",
+  "task_names": [
+    "southeast_geospatial_uav_lidar_service_evidence",
+    "southeast_geospatial_uav_lidar_service_evidence.southeast_firm_presence"
+  ]
+}

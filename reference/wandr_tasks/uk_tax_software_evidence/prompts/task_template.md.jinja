@@ -1,0 +1,13 @@
+For {= software_product =}+ named software products, apps, or product lines used for UK tax, Self Assessment, Making Tax Digital, freelancer bookkeeping, landlord accounting, or small-business accounting, cover at least {= evidence_facet =}+ of the evidence facets below for each product by supplying a public evidence source ({= url =}+ URL under each facet).
+
+The product universe is open: tax apps, self-assessment tools, MTD products, bookkeeping products, bridging tools, and larger-vendor product lines can all work when the page evidence is product-specific. Listicles and comparison pages can help discover products, but they do not satisfy the hard facets unless the facet's source bar below admits that source class.
+
+Evidence facets:
+{=% for facet, description in evidence_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page must clearly identify the claimed software product, app, or product line.
+- The page should fit the source role required by `evidence_facet`. `category_scope` and `pricing` need official vendor/product surfaces; `recognition_claim` needs a vendor-controlled surface; `recognition_registry` needs a GOV.UK or HMRC authority surface; `feature_or_customer_signal` needs official product/support/blog, app-store, or professional-directory evidence; `source_stated_provenance` needs a source-stated official, investor/crowdfunding, reputable press, Companies House, or labeled-database source.
+- The page must state a concrete fact or claim for the facet. For recognition evidence, preserve the exact regime the page supports or claims. For provenance, the source must state the fact positively; absence-inferred bootstrapping, ARR/MRR, valuation, and solver-derived headcount do not count.

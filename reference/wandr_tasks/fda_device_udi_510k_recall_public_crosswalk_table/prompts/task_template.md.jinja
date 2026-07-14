@@ -1,0 +1,15 @@
+For {= recalled_or_alerted_product =}+ affected medical-device products named in official FDA device recall or early-alert records with a posted, classified, report, or initiation date from 2023-01-01 through 2025-12-31, name the FDA record identity, affected product, and firm/labeler as the `recalled_or_alerted_product`; declare {= recall_or_alert_record_type =} record type per product (`classified_recall` or `early_alert`); and supply {= url =}+ official FDA recall or early-alert record URL.
+
+This is a regulatory-provenance crosswalk, not a safety, clinical, legal, procurement, or recall-response task. A recall or early-alert row is only an FDA record object with source-stated identity, date, status, and classification fields.
+
+Use official FDA medical-device recall database pages, FDA medical-device recall or early-alert pages, and official FDA/openFDA machine-readable recall/enforcement records. openFDA JSON is acceptable when direct FDA CFdocs pages are blocked, but rows still need source-specific record fields and affected-product identity evidence.
+
+Record type labels:
+- `classified_recall`: an FDA medical-device recall/enforcement record that FDA has classified or reported as a recall.
+- `early_alert`: an FDA medical-device early-alert page or record where FDA has not necessarily classified/confirmed the action as a recall. Do not rewrite it as a classified recall unless FDA itself says so.
+
+Requirements:
+- The page must expose the FDA recall or early-alert record identity, the declared record type, a source-stated classification/status or early-alert state, and a relevant date within 2023-01-01 through 2025-12-31.
+- The page must identify the claimed affected product through product description/name plus recalling firm, manufacturer, labeler, model, catalog, REF, DI/UDI/GTIN, code information, or comparable source-stated identity details.
+
+Do not count manufacturer marketing pages, distributor listings, recall-news aggregators, MAUDE/adverse-event pages, clinical advice pages, safety rankings, or pages used to tell users what action to take.

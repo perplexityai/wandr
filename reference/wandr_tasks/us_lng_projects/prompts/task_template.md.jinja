@@ -1,0 +1,21 @@
+For each of the {= project =} US LNG projects listed below, supply one URL per facet — one row per (project, facet) cell across the {= facet =} facets — on a project-specific page substantively evidencing the claimed facet, drawn from the operator's own domain (a project page or operator newsroom press release) or a regulator's project-specific surface for that project. Project-naming on aggregator, encyclopedic, or trade-press surfaces doesn't suffice.
+
+US LNG here means US-located liquefied-natural-gas facilities — export terminals, regasification (import) terminals, peak-shavers, small-scale liquefaction. Project-phase granularity: Sabine Pass Phase 1, Sabine Pass Train 6, and Sabine Pass Stage 5 are distinct entities (different status, different capacities, different timelines).
+
+Projects in scope:
+
+{=% for canonical, aliases in projects.items() =%}
+- **{= canonical =}**{=% if aliases =%} (also known as: {= aliases | join(", ") =}){=% endif =%}
+{=% endfor =%}
+
+Facets:
+
+{=% for facet_name, facet_desc in facets.items() =%}
+- **{= facet_name =}** — {= facet_desc =}
+{=% endfor =%}
+
+Requirements:
+
+- The page must be specifically about the claimed project. Project-phase aggregation on operator site-pages is acceptable (a single operator page covering multiple phases at one site is valid evidence for any phase at that site, provided the excerpt pins the specific phase). Operator-aggregate-across-projects pages (homepages covering several projects) and phase-confusion excerpts do not count.
+- The page must communicate (possibly via the URL host itself) that it is on the operator's own domain (project page or operator newsroom press release) or a regulator's project-specific surface for the project.
+- The page must substantively evidence the claimed facet for the project, per the facet definitions above. Brief tangential mentions of a facet on a page whose dominant content is a different facet do not count.

@@ -1,0 +1,8 @@
+{
+  "name": "dib-nondilutive-pathways",
+  "wandr_task": "dib_nondilutive_pathways",
+  "task_names": [
+    "dib_nondilutive_pathways",
+    "dib_nondilutive_pathways.posting_status"
+  ]
+}

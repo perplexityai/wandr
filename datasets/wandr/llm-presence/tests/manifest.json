@@ -1,0 +1,7 @@
+{
+  "name": "llm-presence",
+  "wandr_task": "llm_presence",
+  "task_names": [
+    "llm_presence"
+  ]
+}

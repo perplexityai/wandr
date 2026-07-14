@@ -1,0 +1,55 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `industrial_dc_chargers`
+
+For 60+ industrial or critical DC-power brands/products, build provenance and lineage evidence across 4+ `lineage_relation` values per brand/product and 1+ URL per relation. Each brand/product should include `product_anchor`, at least one hard non-anchor lineage leg, and at least two additional non-anchor lineage relations. Do not fill a brand/product group with only easy product pages and broad company-history pages.
+
+Lineage relations:
+- `product_anchor`: a product-bound anchor source that names the brand/product or named series, establishes an in-scope industrial/critical DC-power equipment class, and states the relevant DC voltage role as output, battery voltage, DC bus, or DC system class.
+- `current_owner`: source-stated current or as-of owner, parent, brand owner, or controlling corporate entity for the anchored brand/product or product business.
+- `origin_or_founding`: source-stated founding, origin, legacy brand, predecessor, or product-line origin fact tied to the anchored brand/product or product business.
+- `dated_acquisition_or_reorganization`: dated acquisition, divestiture, merger, insolvency, reorganization, name change, or comparable control event tied to the anchored brand/product or product business.
+- `rebadge_or_oem_platform`: source-stated rebadge, private-label, licensed-brand, shared OEM platform, true manufacturer, or inherited product-platform relationship.
+- `manufacturing_location`: source-stated manufacturing, production, assembly, factory, or country/site-of-origin fact for the anchored brand/product or product line.
+
+Hard lineage leg:
+- A hard leg is normally `rebadge_or_oem_platform` or `manufacturing_location`.
+- A `current_owner` or `dated_acquisition_or_reorganization` row can satisfy the hard-leg expectation only when it comes from independent registry, securities/regulator filing, court/insolvency record, dated transaction document, parent annual report, or comparable near-primary source that visibly binds the fact to the product business, legacy brand, or product platform.
+- Ordinary official "about us", corporate-history, product-page, or "part of group" pages do not satisfy the hard-leg expectation unless they state a manufacturing site, true OEM/platform relation, or dated transaction for the anchored product business.
+
+Product anchors may come from official manufacturer/OEM product pages, datasheets, manuals, configurators, live download pages, or visibly manufacturer-authored technical PDFs on established industrial catalog surfaces when direct official pages are unavailable. The anchor must be industrial or critical DC power equipment such as stationary battery chargers, rectifier-chargers, DC power systems, industrial DC UPS equipment, railway or auxiliary DC power systems, or comparable stationary auxiliary DC supply equipment. A 110 V, 115 V, 120 V, or similar AC/DC input range does not count unless the source also states the relevant voltage as a DC output, battery, DC bus, or DC system class.
+
+Lineage sources should be independent or authoritative for the relation: company registries, securities or regulator filings, dated acquisition/divestiture press, parent-company annual reports, official histories, insolvency or restructuring records, brand-license pages, manuals or certificates exposing true OEM identity, or comparable primary/near-primary records. Product pages can anchor identity but should not be the main proof for ownership, acquisition, origin, rebadge/OEM, or manufacturing-location facts unless they explicitly state that relation. For each brand/product, include at least one hard lineage leg as defined above; if a hard leg is genuinely unavailable, choose a different brand/product rather than submitting only easy official history rows.
+
+Do not use reseller, distributor, marketplace, tender, buyer, EPC, or listicle pages as manufacturer or lineage proof. Do not use Wikipedia or encyclopedic pages as sole proof. Do not treat undated "part of X group" marketing as a dated acquisition or current-owner record unless the source gives an as-of/date context or is otherwise authoritative for current control. Do not use stale snippets as current ownership. Do not cite corporate-history pages that never attach the history to a qualifying industrial DC-power product or product business.
+
+Requirements:
+- The page must preserve a product-bound anchor: for `product_anchor`, it must establish `anchor_product`, `equipment_class`, and `dc_voltage_role`; for non-anchor lineage rows, it must attach the relation to the same brand/product, product line, product business, or named legacy/OEM platform rather than floating as unrelated corporate history.
+- The page must state the submitted `lineage_relation` fact. For lineage roles, it must identify the relation type, the relation fact, and the owner, counterparty, predecessor, OEM, platform, or manufacturing location when applicable.
+- The page must provide event-date or as-of context when the relation needs it, especially for current owner, acquisition/reorganization, stale-vs-current ownership, and manufacturing-location claims. If an otherwise useful source lacks a date/as-of signal, mark that uncertainty explicitly rather than inventing one.
+- The source family and independence must fit the role: `product_anchor` can be an official product source; non-anchor lineage roles should use independent or authoritative lineage sources and should not be proved solely by distributor pages, marketplaces, undated marketing blurbs, or encyclopedic summaries.
+- At least one non-anchor row per brand/product must be hard-lineage evidence. Generic corporate histories, easy owner/about pages, and detached acquisitions should be marked with `ordinary_history_not_hard_lineage` or `corporate_history_detached_from_product` rather than presented as the hard leg.
+- Use the `answer` object to extract structured fields when source-stated: `anchor_product`, `equipment_class`, `dc_voltage_role`, `lineage_relation`, `relation_fact`, `event_date_or_as_of_date`, `owner_or_counterparty`, `source_family`, `source_independence`, `missing_uncertain_states`, and `conflicts`. Use explicit states such as `no_source_stated_event_date`, `no_as_of_context`, `owner_uncertain_or_conflicting`, `stale_or_superseded_owner_signal`, `distributor_only_manufacturer_claim`, `ac_input_only_voltage_signal`, `part_of_group_without_date`, or `corporate_history_detached_from_product` when applicable.
+
+Write one JSON object per line to `results_industrial_dc_chargers.jsonl`:
+{"item": { "brand_or_product": "<brand_or_product>", "lineage_relation": "<lineage_relation>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

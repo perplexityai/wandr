@@ -1,0 +1,7 @@
+{
+  "name": "faa-ad-document-provenance",
+  "wandr_task": "faa_ad_document_provenance",
+  "task_names": [
+    "faa_ad_document_provenance"
+  ]
+}

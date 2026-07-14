@@ -1,0 +1,20 @@
+For each of the {= segment =} French environmental technical-service segments below, cover {= firm_siren =}+ French firm/SIREN pairs per segment, and for each firm supply {= url =}+ source under each of the {= evidence_axis =} evidence roles.
+
+The work is an evidence-provenance dossier: operating brand, French legal entity, credential scope, and public scale often live on different public pages and sometimes disagree. The dossier is limited to descriptive public evidence provenance; supplier quality judgments, compliance conclusions, procurement rankings, valuations, investment or M&A advice, outreach targets, contacts, private addresses, and person data are outside the task payload.
+
+Segments:
+{=% for segment_id, description in segment_descriptions.items() =%}
+- `{= segment_id =}`: {= description =}
+{=% endfor =%}
+
+The evidence roles, which we refer to as `evidence_axis`, are:
+- `segment_profile`: firm-specific environmental technical-service activity in the selected segment.
+- `legal_identity`: operating identity matched to a French legal entity, SIREN, or SIRET.
+- `public_scale`: source-stated 2021-or-later scale or financial-publicness evidence for the same entity, such as turnover, effectif/headcount, size category, accounts-publicness, accounts-confidentiality, unavailable/stale accounts state, bounded scale, or an entity-conflict state.
+
+`firm_siren` identifies the operating firm and a nine-digit SIREN. SIRET-level evidence can be cited, but the claimed `siren` should be the SIREN unless the page itself is exposing a different-entity conflict.
+
+Requirements:
+- The page must fit the selected `evidence_axis` role. `segment_profile` sources should be firm-specific profile, expertise, project, sector, issuer, or comparable pages with substantive environmental technical-service content; `legal_identity` sources should be public company records, official registers, firm legal pages, certificate identity blocks, or comparable identity sources; `public_scale` sources should be company-record, accounts, filing, registry, or comparable pages that can state scale or financial-publicness evidence. Generic directory stubs, broad NAF rows, and pages that only mention "ingenierie, etudes techniques" are not enough for `segment_profile`.
+- The page must tie its evidence to the claimed firm/SIREN/SIRET, or clearly expose a relevant entity conflict such as parent, subsidiary, establishment, old entity, transferred establishment, or different-SIREN evidence. Segment-profile pages can tie through the operating name when the page does not itself state SIREN and does not contradict the claimed entity.
+- The page must state the axis-specific evidence: substantive firm-specific activity inside the selected segment for `segment_profile`; legal or operating identity with SIREN/SIRET or equivalent French company-register identity for `legal_identity`; and source-stated 2021-or-later turnover, effectif/headcount, size category, accounts-publication state, accounts-confidentiality state, unavailable/stale accounts state, bounded value, or comparable scale/publicness state for `public_scale`.

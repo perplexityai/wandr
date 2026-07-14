@@ -1,0 +1,8 @@
+{
+  "name": "german-medtech-services",
+  "wandr_task": "german_medtech_services",
+  "task_names": [
+    "german_medtech_services",
+    "german_medtech_services.germany_presence"
+  ]
+}

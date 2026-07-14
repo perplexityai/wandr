@@ -1,0 +1,23 @@
+For each of the {= country =} EU ETS participating countries listed below, name at least {= country_entity_year =}+ individual stationary-installation entity-year records for reporting year {= target_reporting_year =}, and supply {= url =}+ public source URL for each record showing the source-stated verified-emissions figure.
+
+The task is data provenance for regulated EU ETS records: installation/operator identity, country, reporting year, verified-emissions value, activity/scope cue, and source/report vintage stay tied to the cited source. Compliance verdicts, market/trading analysis, operator rankings, legal conclusions, procurement advice, offset strategy, and dashboard alerts are out of scope.
+
+Target countries:
+{=% for country in countries =%}
+- **{= country =}**
+{=% endfor =%}
+
+The country is the participating country, the entity is the source-stated installation/operator/entity name, the source-row identifier is the row's public installation, permit, account, registry, or other source-stated identifier when visible, such as `INSTALLATION_IDENTIFIER`, `PERMIT_IDENTIFIER`, `IDENTIFIER_IN_REG`, or an equivalent source row code, and `not_public` applies only when the cited row exposes no public row identifier. Emissions, activity, allocation, surrendered units, status, and source vintage are evidence fields rather than entity identity.
+
+Eligible source shapes include official European Commission / DG CLIMA / Union Registry reports or spreadsheet downloads, national administrator records, and official-derived per-installation pages that visibly tie the data to EUTL or Union Registry provenance. EEA aggregate viewer/Datahub pages can explain context or source vintage, but cannot by themselves satisfy an individual installation/operator row. Maritime-operator and aircraft-operator rows are out of scope for this first stationary-installation package.
+
+When using a spreadsheet/workbook download, the row-local workbook text must be visible in the rendered source: workbook filename or sheet/vintage cue, extraction or publication context, header cells that identify the reporting-year verified-emissions column, the exact entity row with source row identifier cells and the `VERIFIED_EMISSIONS_2024` value, and the activity/scope code or label cell. A synthesized or normalized table row is insufficient unless those exact cells are visible in the cited source text.
+
+Requirements:
+- The source must state or tabulate the submitted individual installation/operator entity, tie it to the submitted country through a country, registry code, permit/account identifier, address, or equivalent row-level cue, and support the submitted row identifier when one is public.
+- The source must tie that same entity row to reporting year {= target_reporting_year =}.
+- The source must state a concrete verified-emissions figure for that entity-year. Blank, null, `-1`, `Excluded`, or no-emissions-verified states are not positive rows.
+- The source must state a stationary-installation-compatible EU ETS activity or scope cue for the row, such as a main activity type code/label, installation/permit/account wording, or explicit non-aircraft/non-maritime operator flags.
+- The source must state the evidence source/report vintage or release/extraction context, such as Date of Extraction, report title/year, filename, publication date, updated-on field, or comparable source-stated metadata.
+
+Each URL evidence leaf stands on its own for the submitted entity-year.

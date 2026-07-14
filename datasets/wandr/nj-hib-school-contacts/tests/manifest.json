@@ -1,0 +1,8 @@
+{
+  "name": "nj-hib-school-contacts",
+  "wandr_task": "nj_hib_school_contacts",
+  "task_names": [
+    "nj_hib_school_contacts",
+    "nj_hib_school_contacts.district_hib_sources"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "ai-gtm-deployability-provenance",
+  "wandr_task": "ai_gtm_deployability_provenance",
+  "task_names": [
+    "ai_gtm_deployability_provenance",
+    "ai_gtm_deployability_provenance.pricing_packaging",
+    "ai_gtm_deployability_provenance.integration_provenance",
+    "ai_gtm_deployability_provenance.operational_provenance"
+  ]
+}

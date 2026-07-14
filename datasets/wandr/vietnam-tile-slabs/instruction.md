@@ -1,0 +1,44 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `vietnam_tile_slabs`
+
+For 40+ Vietnamese tile, slab, sintered-stone, ceramic, granite-tile, or closely related surface manufacturers or factory brands, name 2+ source-stated large-format capability claims per manufacturer and supply 1+ public URL for each manufacturer-capability claim.
+
+Submit one JSONL row per manufacturer-capability claim. Do not group a manufacturer's claims into a single object with `manufacturer_name`, `claim_count`, or `claims`; each line must use the required `item`, `url`, `excerpts`, and `answer` shape, with `item.manufacturer` and `item.capability` populated for that single claim.
+
+This is a public technical capability audit, not supplier sourcing. Contact details, supplier rankings, lead forms, pricing, negotiation advice, outreach suggestions, and recommendations are outside scope.
+
+A capability claim can be a source-stated large-format, slab, big-size, or "kho lon" product; a source-stated product size with at least one dimension 120 cm / 1200 mm; or a factory/line capability that specifically enables large-format tile, porcelain slab, sintered stone, ceramic/granite tile, or closely related architectural-surface production. Vietnamese manufacturing identity is required; generic importers, distributors, and foreign producers selling into Vietnam do not count.
+
+Public capability sources can include official product, specification, factory, catalog, PDF, or company pages; product pages; trade or equipment articles; registries; export or trade directories; and similar public sources when the page contains substantive manufacturer/capability evidence. A source-class label is not enough by itself.
+
+Optional operational details count only when source-stated. Missing capacity, equipment/line, OEM/private-label, export-market, certification, source-date, or factory-location facts are fine as unknown or not stated. For downstream use, also note the source class, source date when visible, and checked date; these labels do not replace the cited page evidence.
+
+Requirements:
+- The page must identify the named manufacturer or factory brand and connect it to Vietnam-based manufacturing or production of in-scope tile, slab, sintered-stone, ceramic/granite, or related surface products.
+- The page must state the claimed large-format, slab, size, or factory/line capability and the relevant product body or surface category.
+- The page must be a substantive public capability source rather than a contact-only, lead-generation, supplier-ranking, pricing, or sourcing-advice page.
+- Optional operational details such as location, capacity, equipment or line, OEM/private-label work, export markets, certifications, source class, and source date must be stated by the cited page when claimed from it.
+
+Write one JSON object per line to `results_vietnam_tile_slabs.jsonl`:
+{"item": { "manufacturer": "<manufacturer>", "capability": "<capability>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

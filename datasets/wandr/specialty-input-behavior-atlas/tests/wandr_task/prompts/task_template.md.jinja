@@ -1,0 +1,62 @@
+Build a factual public evidence atlas of documented user-visible behavior for
+specialty input/control components. For {= system_or_library =}+ systems or
+libraries, identify {= component_or_control =}+ specialty input/control
+components per system or library; for each system/control pair and each of the
+{= behavior_facet =} behavior facets listed below, supply {= behavior_finding =}+
+meaningfully distinct documented behavior findings, each backed by a public
+behavior-evidence source (i.e. {= url =}+ URL).
+
+This is an evidence atlas, not a recommendation list, implementation-code
+inventory, product-help spreadsheet, live-demo catalog, version-change tracker,
+or source-status audit. The evidence of interest is public page text that says
+how a reusable input/control behaves for users.
+
+Behavior facets:
+
+- `entry_parsing_or_formatting`: how user-entered values are parsed, masked,
+  segmented, formatted, normalized, constrained while typing, or represented in
+  the visible field.
+- `keyboard_focus_or_commit`: keyboard operation, focus movement, selection,
+  opening/closing, accepting, cancelling, committing, clearing, tabbing, or
+  related interaction semantics.
+- `validation_error_or_boundary`: validation states, invalid values, min/max or
+  boundary behavior, required/optional behavior, error messaging,
+  disabled/read-only constraints, rejected input, or equivalent user-visible
+  boundary behavior.
+
+The system/library ought to be a public reusable UI source family, such as a
+design system, component library, enterprise UI framework, UI kit, government or
+public-sector component system, Web Component library, accessibility pattern
+library, formatter, or masking library. The component/control ought to be a
+genuine user-facing specialty input/control. Examples include date pickers, date
+fields, time pickers, number fields, currency or formatted-number inputs, file
+inputs, uploads, comboboxes, autocomplete controls, selects, token or
+multi-value inputs, masked inputs, sliders, steppers, rating controls, and
+segmented inputs. A generic text input is in scope only when the page documents a
+concrete typed, constrained, masked, formatted, or otherwise specialty behavior
+mode. The URL should be public, non-login, non-paywalled, and usable as text
+evidence; broken pages, search-results pages, gated Storybooks,
+screenshot/video-only pages, and JavaScript-empty demo shells with no readable
+behavior text are outside the task.
+
+Requirements:
+
+- The page must identify the claimed system/library and the claimed
+  component/control, either directly in page text or through clear project,
+  title, URL, repository-path, or documentation context.
+- The page should make its reusable-control evidence role visible. Official or
+  maintainer/project-linked component docs, pattern/accessibility docs, docs
+  source markdown, product help pages, release or changelog notes, and public
+  project-linked issue/discussion pages can qualify when their text anchors them
+  to the claimed system/control and concrete user-visible behavior. Generic
+  marketing, random forum/listing pages, unrelated tutorials, package mirrors,
+  search-result pages, implementation-only code with no user-visible behavior,
+  and generic workflow help with no reusable-control behavior usually will not
+  contain enough source-role evidence.
+- The page must state the claimed behavior finding as concrete user-visible
+  behavior for the claimed component/control and selected behavior facet. Generic
+  claims such as "accessible", "customizable", "supports validation", broad
+  best-practice advice, property names alone, or API/code snippets alone do not
+  count unless the page ties them to an observable behavior of the control. Two
+  findings are distinct only when they state different observable behavior, not
+  paraphrases of the same sentence or broad component capability.

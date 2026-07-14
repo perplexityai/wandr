@@ -1,0 +1,14 @@
+For {= program =}+ public local/community stored-value programs tied to a city, downtown, chamber area, Main Street district, neighborhood, county, tourism district, campus, or comparable local area, cover {= merchant =}+ participating local merchants per program and each of the {= merchant_evidence_side =} evidence sides listed below by supplying a side-substantiating source (i.e. {= url =}+ URL per side).
+
+The purpose is public proof that program-listed merchants are real local consumer-facing places with independent local context.
+
+Merchant evidence sides:
+- `program_participation`: the page identifies the named program and the named merchant as participating, accepting, redeeming, or listed in that program.
+- `independent_merchant_local_presence`: the page identifies the same merchant and establishes its local geography and consumer category independently of the program participant listing.
+
+A valid `merchant` is a real consumer-facing local business or local organization in the claimed program area, not the platform provider, a merchant category, a form field, or a generic marketplace brand. The `merchant_evidence_side` value is exactly one of the two listed values. A program participant listing can support several `program_participation` records when each merchant is visibly present; that same participant-list context does not establish `independent_merchant_local_presence`.
+
+Requirements:
+- The page must clearly identify the named merchant.
+- The page must establish the evidence side in scope: for `program_participation`, the named program and named merchant as participating, accepting, redeeming, or listed in that program; for `independent_merchant_local_presence`, the same merchant's local geography and consumer category independent of the program participant listing.
+- The page must make the side-appropriate source context visible: for `program_participation`, a program, sponsor, or program-specific platform/listing context; for `independent_merchant_local_presence`, merchant-owned, official social, local directory, local article, venue page, or comparable context outside the program participant list.

@@ -1,0 +1,35 @@
+As of {= as_of =}, every EU member state shares the 112 and eCall legal baseline, but the public evidence for PSAP routing, NG112 migration, operator obligations, and language coverage remains scattered across national PSAP operators, telecom regulators, emergency-service authorities, and country-specific EENA reporting.
+
+For each of the {= country =} EU member states listed below and each of the {= infrastructure_axis =} eCall / PSAP infrastructure axes, name the country's specific operative finding for that axis ({= country_finding =}+ per cell), supplying a source ({= url =}+ URL per finding) on an axis-appropriate authoritative page that substantiates the country-specific finding and its current or as-of status.
+
+For each finding, also report the source-authority class, the currentness or as-of period supported by the page, and any technical standard, routing topology, network obligation, or language-coverage detail the page itself gives.
+
+The EU member states in scope are:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The European jurisdictions below are outside this task's country universe:
+
+{=% for canonical, aliases in out_of_scope_european_jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The infrastructure axes are:
+
+{=% for axis_name, axis_desc in axes.items() =%}
+- **{= axis_name =}** — {= axis_desc =}
+{=% endfor =%}
+
+Per-axis authoritative-source scope:
+
+{=% for axis_name, source_desc in source_classes_agent.items() =%}
+- **{= axis_name =}** — {= source_desc =}
+{=% endfor =%}
+
+Requirements:
+- The page must pin the row's specific finding for the row country and infrastructure axis, not only generic 112 availability, generic EU eCall legislation, or a different country's emergency-call arrangement.
+- The page must support the axis-specific infrastructure substance for the row: eCall PSAP handling, NG112 status, PSAP topology, MNO / network obligation, or language coverage, depending on the row's axis.
+- The page must communicate (possibly via URL among other things) an authoritative source class for that axis.
+- The page must provide an as-of signal, publication date, active-service framing, current legal force, or on-page status sufficient for the row's currentness claim.

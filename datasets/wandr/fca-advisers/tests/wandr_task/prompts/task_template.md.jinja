@@ -1,0 +1,13 @@
+For {= firm =}+ UK financial-advice, financial-planning, wealth-planning, mortgage-advice, or protection-advice firms and {= firm_adviser =}+ named client-facing advisers per firm, supply a public supporting source ({= url =}+ URL) for each of the {= evidence_side =} evidence sides listed below.
+
+Each adviser should have both a practice- or business-controlled profile and a separate independent or official regulatory or certification check for the same person-firm relationship.
+
+The evidence sides (`evidence_side`) are:
+{=% for evidence_side, description in evidence_side_descriptions.items() =%}
+- `{= evidence_side =}`: {= description =}.
+{=% endfor =%}
+
+Requirements:
+- The page must clearly identify the named adviser and tie that person to the named firm.
+- The page must communicate its `evidence_side` source role: a practice- or business-controlled profile or team listing for `practice_profile`; an independent or official regulatory, certification, authorisation, or checked-status surface for `regulatory_check`.
+- The page must support the side-specific adviser claim: for `practice_profile`, a client-facing financial-advice role at the firm; for `regulatory_check`, an FCA, SM&CR, certification, authorisation, or regulated-status signal for that adviser relationship.

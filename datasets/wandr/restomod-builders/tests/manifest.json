@@ -1,0 +1,7 @@
+{
+  "name": "restomod-builders",
+  "wandr_task": "restomod_builders",
+  "task_names": [
+    "restomod_builders"
+  ]
+}

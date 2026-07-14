@@ -1,0 +1,17 @@
+Build a public provenance bundle for at least {= operator_or_facility =}+ Canadian food, ingredient, packaging, co-packing, or contract-manufacturing operators/facilities relevant to broth, stock, soup-base, dry-mix, or single-serve powder manufacturing. For each submitted operator/facility, cover each of the {= evidence_axis =} evidence axes listed below with {= url =}+ URL per axis. Each row should be a public provenance citation for one source-stated axis, not a vendor recommendation.
+
+Evidence axes:
+{=% for axis, description in evidence_axes.items() =%}
+- `{= axis =}`: {= description =}
+{=% endfor =%}
+
+Each operator/facility should be named as a company plus a Canadian facility city/province, province, facility, or address. Prefer facility/province/address evidence. Do not use generic Canada-wide marketing context as the location leg unless the selected source is an official registration, inspection, certification, or government source that identifies the Canadian establishment context.
+
+Submit an operator/facility only when public evidence can support a real bundle across the axes. Do not fill one axis with unrelated operators that lack the rest of the bundle. Do not infer buyer suitability, bone-broth-powder readiness, legal compliance, or practical fit from separately sourced partial claims. Keep observations source-stated and restrained: no rankings, fit scoring, lead scoring, buyer suitability claims, contact collection, outreach, negotiation, MOQ/capacity advice, food-safety advice, or legal/compliance conclusions.
+
+Requirements:
+- The page must clearly identify the submitted operator or facility.
+- The page must tie that operator/facility to a Canadian city/province, province, facility, address, official establishment context, or equivalent specific Canadian operating context.
+- The page must make its public source role visible for the selected evidence axis. Axis-specific source roles matter: capability axes need operator/manufacturer pages or substantive entity-specific independent sources, not broad supplier-directory category tags alone; credential axes need official, certification, registry, or named-credential pages; `independent_bundle_crosscheck` must be non-operator-controlled and entity-specific.
+- The page must visibly state the selected evidence axis for the submitted operator/facility.
+- For `broth_stock_soup_base_relevance`, do not count generic meat products, meat alternatives, sauces, or prepared foods unless the page states broth, stock, bouillon, soup mix, soup base, gravy/base, or a comparable savory base/dry-mix category.

@@ -1,0 +1,37 @@
+For {= industrial_facility =}+ U.S. industrial manufacturing or processing facilities with material natural-gas load relevance, cover each of the {= evidence_axis =} evidence axes below. For every (facility, evidence axis) cell, report {= facility_signal =}+ concrete facility finding, supplying a source ({= url =}+ URL per (facility, evidence axis) cell).
+
+Treat the current date for page-date and operating-status interpretation as {= as_of_date =}.
+
+This is a practitioner roster for industrial-energy, gas-supply, procurement, and heavy-industry market mapping. The roster should favor named plant or complex pages and public records that let a reader identify the operator, physical facility, state, products/NAICS or supply-chain role, gas-load relevance, and permit/emissions/public-record footprint. The gas-load row needs a materiality proxy such as substantial production capacity, high reported emissions, major-source permitting, named gas-fired equipment, or reported source/process categories.
+
+Use the operator or owner named by the qualifying source, preferring the operator shown as current as of {= as_of_date =} when the page distinguishes ownership over time. Name the physical plant, complex, refinery, mill, or manufacturing site, the U.S. state, a compact industry category, and the concrete per-axis fact supported by the URL.
+
+Industry-category examples:
+
+{=% for category, desc in industry_category_guidance.items() =%}
+- **{= category =}** - {= desc =}
+{=% endfor =%}
+
+Evidence axes:
+
+{=% for axis, desc in evidence_axes.items() =%}
+- **{= axis =}** - {= desc =}
+{=% endfor =%}
+
+Use source pages whose standing fits the evidence axis:
+
+{=% for axis, desc in axis_source_classes.items() =%}
+- **{= axis =}** - {= desc =}
+{=% endfor =%}
+
+The following are outside the facility universe:
+
+{=% for cls, desc in out_of_scope_facility_classes.items() =%}
+- **{= cls =}** - {= desc =}
+{=% endfor =%}
+
+Requirements:
+- The page must tie the row operator, facility/site name, state, and industry category to the same physical U.S. industrial plant or complex.
+- The page source class must fit the row evidence axis.
+- The page must substantively support the row finding under the row evidence axis.
+- The page must anchor the facility as operating, reporting, permitted, constructed for operation, or otherwise active within {= operation_window =}.

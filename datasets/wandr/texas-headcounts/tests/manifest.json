@@ -1,0 +1,8 @@
+{
+  "name": "texas-headcounts",
+  "wandr_task": "texas_headcounts",
+  "task_names": [
+    "texas_headcounts",
+    "texas_headcounts.reconciliation_context"
+  ]
+}

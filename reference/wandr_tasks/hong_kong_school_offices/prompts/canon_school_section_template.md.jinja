@@ -1,0 +1,8 @@
+The input is a Hong Kong international school name (in any of: full institutional name, common abbreviation, ESF or operator prefix, campus or locale variant, or former name). Match it to the canonical set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical schools and their accepted aliases:
+{=% for canonical, aliases in schools.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Out-of-set institutions (any school not appearing as a canonical key or alias above) → {{ CANONICAL_INVALID }}. In particular, primary-only kindergartens and feeder campuses, local-curriculum government or aided schools, tutoring centres, and international schools in mainland China, Macau, or elsewhere that merely share a brand with one of our Hong Kong campuses are NOT in our set unless they appear as a canonical key or listed alias above. When a name could refer to either a Hong Kong campus in our set or a same-brand campus outside Hong Kong, treat it as the in-set Hong Kong campus only when the surrounding context places it in Hong Kong; otherwise return {{ CANONICAL_INVALID }}.

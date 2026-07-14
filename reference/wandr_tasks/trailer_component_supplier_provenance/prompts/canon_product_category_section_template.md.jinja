@@ -1,0 +1,6 @@
+Canonical product categories in scope:
+{=% for canonical, aliases in product_categories.items() =%}
+- `{= canonical =}`: {= aliases | join("; ") =}
+{=% endfor =%}
+
+Map the submitted product category to one of the canonical labels above. Accept natural phrasings that clearly refer to the same trailer-component family. Return {{ CANONICAL_INVALID }} for categories outside this list, overly broad labels like "trailer parts" or "general accessories", and narrow labels that cannot be placed in one canonical category.

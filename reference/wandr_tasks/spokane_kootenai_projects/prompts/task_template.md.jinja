@@ -1,0 +1,24 @@
+For each of the {= county =} counties listed below, cover {= county_lead_agency =}+ lead agencies or jurisdictions per county; for each lead agency, cover {= canonical_project =}+ canonical transportation or street-integrated public works capital projects; for each canonical project, cover {= source_claim_family =}+ distinct official source-claim families; for each source-claim family, supply {= url =}+ official public source-claim URL focused on the {= target_period =}.
+
+Target counties:
+{=% for county in counties =%}
+- **{= county =}**
+{=% endfor =%}
+
+A canonical project is the smallest official project, stage, package, or capital item with its own identifiable scope and at least one official budget, phase, schedule, project ID, PIN, key number, contract, award, or project page. Umbrella corridors, long-range initiatives, and broad programs can be parent context, but they should not be double-counted as standalone projects unless an official source treats the umbrella itself as the funded deliverable. Generic maintenance categories count only when the source gives project-level scope, location, schedule, budget, or identifier detail.
+
+Each source-claim family is a materially distinct official source role or surface for the canonical project, and each URL is one source claim inside that family. Public agency pages, adopted or draft programming documents, public budgets, public project pages, transit capital materials, official meeting or board records, official contract records, and similar public-source surfaces can all count when they make a project-level claim. News, trade, campaign, advocacy, vendor, plan-room, and private bid-intelligence pages may help discovery but do not carry the primary evidence here.
+
+Parent TIP, STIP/ITIP, call-for-projects, regional program, amendment, and master-program sources are useful, but they count as one parent-program source family for a canonical project. A strong source set for the same project should combine that family with meaningfully different official surfaces when available, such as a project-specific page, lead-agency budget or CIP page, board/council packet, contract or award record, construction update, transit capital page, state DOT project page, or comparable independent official source. Two rows, PDFs, amendments, or table views from the same parent program context are not two source-claim families for the same project.
+
+For downstream ledger usefulness, preserve source-specific names and fields rather than smoothing them away: source family, source status, source period, source date when visible, checked date, project name as written, costs and budget basis, phase/status, dates, funding, sponsor, identifiers, location limits, and missing/conflict flags. Checked date and confidence are auxiliary ledger metadata; source-specific project facts still need page evidence.
+
+This is factual public-source reconciliation only. Exclude investment prioritization, bid strategy, contractor targeting, procurement advice, policy advocacy, real-estate inference, or unsupported extrapolation from planning-only records.
+
+Requirements:
+- The page must communicate official public-source status for the cited project claim.
+- The page must identify the claimed capital project, stage, package, or project item and tie it to the submitted county and lead agency, sponsor, corridor, jurisdiction, or geography.
+- The page must represent the submitted source-claim family as a distinct official source role or surface for this project; parent program/list/table pages count only as that parent-program family, not as a separate project-specific, lead-agency, budget, board, contract, or construction source family.
+- The page must provide source-specific project-claim detail: the source's project name plus useful fields such as cost, budget basis, phase, dates, funding, sponsor, project ID/PIN/key number, scope, location limits, or contract/award fields.
+- The submitted source claim must distinguish lifecycle, source-period, source-status, and money/budget interpretation where the page makes those visible, including draft/adopted/amended status, plan-only/programmed/funded/construction/completed/unknown state, total cost versus phase/programmed-year/grant/local-match/source-period dollars, and explicit missing or unknown fields.
+- Contractor or award claims must come from an official award, contract, bid-tabulation, board-action, or equivalent agency record. Bid notices, solicitations, plan-room pages, and contractor outreach pages support only advertised/no-official-award/unknown states.

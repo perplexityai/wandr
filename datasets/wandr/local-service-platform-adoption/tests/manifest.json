@@ -1,0 +1,9 @@
+{
+  "name": "local-service-platform-adoption",
+  "wandr_task": "local_service_platform_adoption",
+  "task_names": [
+    "local_service_platform_adoption",
+    "local_service_platform_adoption.platform_features",
+    "local_service_platform_adoption.business_presence"
+  ]
+}

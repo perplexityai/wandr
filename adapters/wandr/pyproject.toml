@@ -1,0 +1,21 @@
+[project]
+name = "harbor-wandr-adapter"
+version = "0.1.0"
+description = "WANDR to Harbor task adapter"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = [
+    "jinja2",
+    "orjson",
+    "pydantic",
+]
+
+[project.scripts]
+wandr = "wandr.main:main"
+
+[build-system]
+requires = ["uv_build>=0.8.0,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "wandr"

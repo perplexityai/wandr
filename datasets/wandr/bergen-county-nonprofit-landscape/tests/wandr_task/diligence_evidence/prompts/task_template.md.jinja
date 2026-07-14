@@ -1,0 +1,15 @@
+For {= focus_org =}+ Bergen County nonprofit profiles, cover {= evidence_axis =}+ public due-diligence evidence axes below — supplying a source ({= url =}+ URL per (organization, axis) finding).
+
+The evidence axes are sparse by design: each organization does not need every axis, but a strong landscape should mix public registry, financial, funder, recent-activity, and accountability evidence rather than relying on one source family.
+
+Evidence axes:
+{=% for evidence_axis, axis in evidence_axes.items() =%}
+- **{= evidence_axis =}** -- {= axis.agent_desc =}.
+{=% endfor =%}
+
+Each cited page should be final public evidence for the selected organization-axis finding. Avoid private-contact scraping and do not use Candid / GuideStar / other nonprofit-profile pages when the needed metric is hidden behind sign-in or paywall.
+
+Requirements:
+- The page must be final public evidence for the selected due-diligence axis, not merely a search result, generic directory shell, private-contact page, AI summary, paywalled-only nonprofit profile, or discovery lead.
+- The page must tie the selected evidence to the same named organization as the Bergen nonprofit profile, without swapping in a national parent, unrelated affiliate, fiscal sponsor, or homonym.
+- The page must support the selected evidence axis defined above, not a different axis or a weaker adjacent fact.

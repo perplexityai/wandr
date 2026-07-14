@@ -1,0 +1,1 @@
+"""Dutch-speaking spiritual influencers — public-page compendium covering Dutch-speaking content creators whose work centers on spirituality, wellness, faith content, mindfulness, yoga, meditation, new-age practice, astrology, or adjacent topics."""

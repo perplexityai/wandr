@@ -1,0 +1,41 @@
+For {= resilient_power_project =}+ publicly funded or publicly recorded resilient-power deployment projects, supply evidence for each of the {= evidence_type =} evidence types, with at least {= url =}+ source URL per type. The project identity should be pinned by program or funder, recipient or host, location, and a project label or scope. Planned, funded, in-design, under-construction, and built projects can all count when the sources state the status honestly. This is public project provenance as of {= as_of_date =}, not procurement advice, vendor ranking, partner recommendation, contact discovery, contact enrichment, outreach, lead scoring, or private relationship inference.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include canonical project name, program or funder, recipient or host, community, project location, technology or project scope, source-stated status, source-stated participant roles, source class, source date or observed date, checked date, confidence, and conflict or missing-state notes. Use {= checked_date =} as the checked date unless the source was checked later. Roles count only when the source states or directly describes them; otherwise use `unknown` or omit the role note.
+
+Resilient-power deployment signals include:
+{=% for project_scope_signal in project_scope_signals =%}
+- `{= project_scope_signal =}`
+{=% endfor =%}
+
+Useful official-record surfaces include:
+{=% for official_record_surface in official_record_surfaces =%}
+- `{= official_record_surface =}`
+{=% endfor =%}
+
+Useful independent corroboration surfaces include:
+{=% for independent_corroboration_surface in independent_corroboration_surfaces =%}
+- `{= independent_corroboration_surface =}`
+{=% endfor =%}
+
+Useful source-stated status values include:
+{=% for project_status_value in project_status_values =%}
+- `{= project_status_value =}`
+{=% endfor =%}
+
+Boundary classes to keep out unless the page also proves a specific submitted project at the required evidence role:
+{=% for boundary_class in boundary_classes =%}
+- `{= boundary_class =}`
+{=% endfor =%}
+
+Use distinct sources for the two evidence roles. The same URL or the same source role should not be reused as both `official_award_record` and `independent_project_partner_corroboration`. Awarded or funded status and built or deployed status are different facts; do not infer deployment from an award unless a source says it.
+
+Requirements:
+- The page must tie the submitted project identity to the same specific project through a named recipient, host, community, location, project label, program, award, or project scope. Exact titles can differ when the source context clearly identifies the same deployment.
+- The submitted page itself must fulfill the claimed `evidence_type`: `official_award_record` evidence should be an official public award, grant, procurement, commission, regulatory, funder, agency, or program record; `independent_project_partner_corroboration` evidence should be a separate public source with a different source role from the official record.
+- The page must support resilient-power deployment substance: microgrid, standalone or remote power, off-grid or islandable service, battery-backed renewable power, critical-facility resilience, tribal or rural electrification, utility remote grid, or comparable deployment-oriented resilience power. Generic clean-energy funding without that substance is not enough.
+- The page must expose project-specific detail at the claimed evidence role. For `official_award_record`, it should name a specific recipient, host, community, project, location, award, scope, or public-record relationship. For `independent_project_partner_corroboration`, it should add a deployment, status, developer/EPC/integrator, utility, host, funder, recipient, partner, or source-stated participant-role fact for the same project.

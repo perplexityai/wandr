@@ -1,0 +1,8 @@
+{
+  "name": "canberra-procurement-advisory-contracts",
+  "wandr_task": "canberra_procurement_advisory_contracts",
+  "task_names": [
+    "canberra_procurement_advisory_contracts",
+    "canberra_procurement_advisory_contracts.supplier_profiles"
+  ]
+}

@@ -1,0 +1,72 @@
+{% macro workspace_file(file) -%}
+### {{ file.path }}
+```text
+{{ file.content }}{{ "\n" if not file.content.endswith("\n") else "" }}{% if file.truncated %}
+[truncated]
+{% endif -%}
+```
+{%- endmacro -%}
+{% macro delivery_generic(delivery) -%}
+{% if delivery.name == "sandbox" -%}
+Write final output files under `{{ output_path(delivery, "") }}` using their workspace-relative layout. For example, workspace file `results.jsonl` belongs at `{{ output_path(delivery, "results.jsonl") }}`, and `nested/out.txt` belongs at `{{ output_path(delivery, "nested/out.txt") }}`. Only files under that output root are collected.
+{% elif delivery.name == "share" -%}
+Write final output files under `{{ output_path(delivery, "") }}`, then share each final file exactly once through the endpoint file-share mechanism. Each shared file must carry a recoverable path below `{{ output_path(delivery, "") }}`; endpoint-specific details define the path identity format. Do not share scratch files or paste file contents.
+{% elif delivery.name == "stdout" -%}
+Write final output files under `{{ output_path(delivery, "") }}`, then emit each final file exactly once with a separate shell command whose entire command text is `cat <path>`. Do not combine that `cat` with writes, `cd`, pipes, redirects, shell operators, or any other command text. The cat path must point inside `{{ output_path(delivery, "") }}`; its path below that root is the workspace-relative output path.
+{% elif delivery.name == "output" -%}
+Emit each final file as a fenced block at the end of the final assistant message. Use `file:<relative-path>` for UTF-8 text and `file-base64:<relative-path>` for bytes. Put the file marker in the opening fence, not on a separate line. The fenced block body is the exact file content; do not JSON-escape it, summarize it, or replace it with preview text. Example:
+```file:results.jsonl
+{"ok": true}
+```
+{% endif -%}
+{%- endmacro -%}
+{% macro output_path(delivery, relative_path) -%}
+{% set root = delivery.output_root.as_posix() -%}
+{% if root == "/" -%}
+/{{ relative_path }}
+{%- elif relative_path -%}
+{{ root }}/{{ relative_path }}
+{%- else -%}
+{{ root }}/
+{%- endif -%}
+{%- endmacro -%}
+# Relay Workspace
+
+You are editing a projected workspace. Treat paths as relative to `{{ workspace.root }}` unless a delivery method says otherwise. Produce full file contents for every file you want created or overwritten.
+
+## Workspace File Tree
+
+{% if workspace.tree -%}
+{{ workspace.tree }}
+{% else -%}
+(no files currently visible)
+{% endif %}
+
+{% if workspace.files %}
+## Workspace File Contents
+
+{% for file in workspace.files %}
+{{ workspace_file(file) }}
+
+{% endfor %}
+{% endif -%}
+## File Delivery Contract
+
+Use the configured delivery method and endpoint-specific details exactly. Do not emit files through unrelated channels.
+
+**Method**: `{{ delivery.name }}`
+
+{{ delivery_generic(delivery) }}
+{% if delivery.details %}
+**Endpoint-specific details**: {{ delivery.details.rstrip() }}
+{% endif %}
+{% if extra_instruction %}
+
+## Additional Endpoint Instructions
+
+{{ extra_instruction.rstrip() }}
+{% endif %}
+
+# Task
+
+{{ instruction }}

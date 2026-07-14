@@ -1,0 +1,12 @@
+Canonical federal IT contract vehicles in scope:
+{=% for canonical, aliases in vehicles.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted vehicle name to one of the canonical forms above. Accept obvious punctuation, spacing, parenthetical, acronym, and agency-prefix variants, including the aliases listed next to each canonical value.
+
+Important scope choices:
+- The NITAAC entries are distinct. `NITAAC CIO-SP3`, `NITAAC CIO-SP3 Small Business`, and `NITAAC CIO-CS` are separate vehicles.
+- `GSA Polaris` includes the Polaris pools, such as HUBZone, SDVOSB, and WOSB, but does not include unrelated uses of the word Polaris.
+- `GSA MAS IT SIN 54151S` is the MAS Information Technology Professional Services SIN. Other MAS IT SINs, such as 54151HACS or 54151HEAL, do not canonify to it.
+- OASIS, OASIS+, NASA SEWP, FBI ITSSS-2, DLA JETS, USDA STRATUS, MDA SHIELD, and other vehicles outside the list above are out of scope for this task.

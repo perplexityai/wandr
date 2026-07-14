@@ -1,0 +1,9 @@
+{
+  "name": "handheld-game-benchmarks",
+  "wandr_task": "handheld_game_benchmarks",
+  "task_names": [
+    "handheld_game_benchmarks",
+    "handheld_game_benchmarks.handheld_prices",
+    "handheld_game_benchmarks.game_reviews"
+  ]
+}

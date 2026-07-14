@@ -1,0 +1,30 @@
+For {= advisor_org =}+ organizations that publicly advise on data-center grid-side power strategy, utility or load interconnection planning, power procurement, tariffs or rates, grid connection studies, transmission or substation energy infrastructure, power feasibility, utility timelines, or comparable grid-side power planning, supply evidence for each of the {= evidence_role =} evidence roles, with {= url =}+ source URL per role. This is public advisor provenance, not provider ranking, procurement recommendation, utility-negotiation advice, site-selection advice, private relationship inference, customer targeting, contact enrichment, outreach, or lead scoring.
+
+The evidence roles are:
+{=% for evidence_role, description in evidence_role_descriptions.items() =%}
+- `{= evidence_role =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include source-stated practice name, source-stated affiliated public person and title, source geography, public source class, grid-side power topic, source date or event date, checked date, and brief source notes. Use {= checked_date =} as the checked date unless the source was checked later. Do not include phone numbers, emails, contact forms, LinkedIn profiles, private relationship guesses, rankings, scores, recommendations, target customers, or outreach fields.
+
+Grid-side data-center power substance includes:
+{=% for signal in grid_side_power_signals =%}
+- {= signal =}.
+{=% endfor =%}
+
+Public engagement sources can include:
+{=% for surface in public_engagement_surfaces =%}
+- {= surface =}.
+{=% endfor =%}
+
+Law firms, product-vendor consulting arms, engineering firms, market advisors, and research or policy organizations count only when they satisfy the same data-center grid-side power advisory bars as any other organization. The qualifying organization remains the root entity even when the public engagement source names an affiliated person.
+
+Boundary classes to keep out unless the submitted evidence role is directly satisfied:
+{=% for boundary_class in boundary_classes =%}
+- {= boundary_class =}.
+{=% endfor =%}
+
+Requirements:
+- The page must identify the claimed advisor organization, or bridge the source-stated person, practice, subsidiary, parent, rebrand, or operating-brand name to that organization with enough context to distinguish unrelated same-name organizations.
+- The submitted page itself must fulfill the claimed `evidence_role`: `official_power_advisory_capability` evidence should be official or durable organization-controlled capability evidence, while `public_power_engagement` evidence should be a separate public engagement source rather than a duplicate generic service page.
+- The page must support role-specific grid-side data-center power substance. For `official_power_advisory_capability`, it must show public advisory capability for data-center power strategy, interconnection, procurement, tariffs/rates, grid studies, transmission/substation infrastructure, power feasibility, utility timelines, or comparable grid-side planning. For `public_power_engagement`, it must show the organization, or a source-stated affiliated person, publicly engaging on data-center power, interconnection, procurement, tariffs, grid constraints, time-to-power, or comparable grid-side issues.

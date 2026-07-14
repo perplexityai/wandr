@@ -1,0 +1,8 @@
+{
+  "name": "logistics-software-use",
+  "wandr_task": "logistics_software_use",
+  "task_names": [
+    "logistics_software_use",
+    "logistics_software_use.named_adoption"
+  ]
+}

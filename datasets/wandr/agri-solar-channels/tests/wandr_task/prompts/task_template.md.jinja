@@ -1,0 +1,45 @@
+For {= company =}+ solar companies or solar equipment trade-channel companies serving Great Britain, Northern Ireland, the Republic of Ireland, or cross-border/all-island markets, supply evidence for each of the {= evidence_type =} evidence types, with at least {= url =}+ source URL per type. Include installers, EPCs, installer-EPCs, and solar equipment distributors or wholesalers when the public sources tie them to agri, farm, rural commercial, ground/yard-mounted, non-domestic/C&I solar, or solar trade-channel work. This is a public provenance table as of {= as_of_date =}, not a prospect list, buyer guide, recommendation, contact-enrichment exercise, or outreach plan.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include canonical company name, legal or trading name when source-stated, operating regime, country/county/service geography, organization type only as source-stated, service or channel role, capability signal, source-stated project size when available, scheme/certification/channel corroboration when source-stated, source class, source date or observed date, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Operating regime should be factual and source-grounded. Useful values include:
+{=% for operating_regime in operating_regimes =%}
+- `{= operating_regime =}`
+{=% endfor =%}
+
+Useful capability signals include:
+{=% for capability_signal in capability_signals =%}
+- `{= capability_signal =}`
+{=% endfor =%}
+
+Useful capability-source surfaces include:
+{=% for capability_source_type in capability_source_types =%}
+- `{= capability_source_type =}`
+{=% endfor =%}
+
+Useful independent corroboration source types include:
+{=% for corroboration_source_type in corroboration_source_types =%}
+- `{= corroboration_source_type =}`
+{=% endfor =%}
+
+Source class should be factual, not promotional. Useful public source classes include:
+{=% for source_class in source_classes =%}
+- `{= source_class =}`
+{=% endfor =%}
+
+Boundary classes to keep out unless the page meets the submitted role's source and substance bars:
+{=% for boundary_class in boundary_classes =%}
+- `{= boundary_class =}`
+{=% endfor =%}
+
+Public sources are role-specific. For `capability_source`, use only the submitted company's official or company-controlled capability, project, sector, channel, brochure, PDF, video, or profile page. For `independent_corroboration`, use only a source not controlled by the submitted company, such as an official registry, scheme page, certification directory, public framework, association/member page, outside manufacturer or distributor page, trade/farming/project article, or entity-specific public directory or profile. A non-company article, directory, registry, framework, or manufacturer page cannot satisfy `capability_source`; a company-owned page cannot satisfy `independent_corroboration`. If the same URL is submitted under both labels, one of the two roles must fail because a page cannot belong to both source classes.
+
+Requirements:
+- The page must identify the claimed company, or bridge the submitted trade name to a legal/trading name, with enough public context to distinguish it from unrelated same-name businesses and tie it to Great Britain, Northern Ireland, the Republic of Ireland, or a cross-border/all-island solar market.
+- The submitted page itself must fulfill the claimed `evidence_type`: `capability_source` evidence must be an official company-owned, company-controlled, or otherwise official company capability/project/channel page for the submitted company, while `independent_corroboration` evidence must come from a separate non-company or high-authority public source for the submitted company.
+- The page must support role-specific solar channel substance. For `capability_source`, the official company page must show agri/farm/rural commercial/ground-mounted/yard-mounted/non-domestic/C&I solar PV capability, project evidence, EPC/installer work, or distributor/wholesale channel capability. For `independent_corroboration`, the non-company or high-authority source must show a concrete public accountability, scheme, certification, association, framework, outside manufacturer/distributor, trade/project, or entity-directory fact for the same company, not just a name-only mention.

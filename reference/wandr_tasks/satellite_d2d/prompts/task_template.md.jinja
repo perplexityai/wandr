@@ -1,0 +1,28 @@
+For {= organization_role =}+ public organization-role records in the satellite direct-to-device / direct-to-cell / NTN / MSS / handset satellite connectivity ecosystem as of {= as_of_date =}, cover {= evidence_facet =}+ distinct evidence facets per organization-role record and supply a source for each facet (i.e. {= url =}+ URL).
+
+The goal is public provenance: who appears in what ecosystem role, what the source actually says, and how source-class/date context limits the claim. This is not an operator ranking, market-size table, investment thesis, legal/regulatory advice, engineering feasibility analysis, spectrum plan, consumer support directory, or partnership-only graph.
+
+Use `organization` plus `role` as the identity. The role should be one of:
+{=% for role in role_labels =%}
+- `{= role =}`
+{=% endfor =%}
+
+The closed evidence facets are:
+{=% for facet in evidence_facets =%}
+- `{= facet =}`
+{=% endfor =%}
+
+Accepted `source_class` labels for the cited page are:
+{=% for source_class in source_classes =%}
+- `{= source_class =}`
+{=% endfor =%}
+
+Generic source hubs, trackers, partnership-count reports, and market-report landing pages can guide discovery, but they do not by themselves establish a submitted organization-role/facet record. IoT NTN records count only when the source explicitly ties the product, module, device, service, or standard to NTN, MSS, direct-to-device cellular/satellite connectivity, or a comparable satellite-to-device mode.
+
+For each record, state a compact finding with the source class, source date or observed date, source-stated capability/status where any is claimed, and source-stated geography, spectrum/standard, partner/customer, regulatory/filing signal, device/chipset detail, and caveats where those appear.
+
+Requirements:
+- The page must identify the organization and support the submitted role in this ecosystem, not merely mention a same-name organization or list a logo without role substance.
+- The page must substantively support the declared `evidence_facet`: source-stated capability/service state, named partner/customer relationship, regulatory/spectrum action, technical/device enablement, or filing/investor claim. The page must do more than repeat generic direct-to-device background.
+- The finding should report only source-stated detail. Do not inflate planned, enabled, trial, authorized, emergency-only, app-mediated, or marketing language into commercial/public service status unless the source states that status.
+- The evidence must be anchored to {= as_of_date =} or earlier by a source date, release date, filing date, page date, or restrained observed-by-cutoff framing. Later events may explain why the cutoff matters, but they do not upgrade the as-of status.

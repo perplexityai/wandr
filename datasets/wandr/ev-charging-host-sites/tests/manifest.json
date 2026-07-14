@@ -1,0 +1,8 @@
+{
+  "name": "ev-charging-host-sites",
+  "wandr_task": "ev_charging_host_sites",
+  "task_names": [
+    "ev_charging_host_sites",
+    "ev_charging_host_sites.site_corroboration"
+  ]
+}

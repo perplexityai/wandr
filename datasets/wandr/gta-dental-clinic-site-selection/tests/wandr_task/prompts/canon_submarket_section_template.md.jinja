@@ -1,0 +1,8 @@
+The input is a Greater Toronto Area clinic-site submarket name, neighbourhood name, municipality name, or locality/address context. Match it to the canonical submarket set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical submarkets and accepted aliases:
+{=% for canonical, aliases in submarkets.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Smaller neighbourhoods, business nodes, malls, intersections, or addresses inside a listed municipality-level submarket may map to that canonical submarket when the source context makes the locality clear. Out-of-set GTA localities and municipalities not appearing as a canonical key or accepted alias above → {{ CANONICAL_INVALID }}.

@@ -1,0 +1,8 @@
+The input is a European pharmaceutical or biotech company name (in any of: full legal name, common short name, ticker-style abbreviation, a named research division or institute, or a locale / language variant). Match it to the canonical set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical companies and their accepted aliases:
+{=% for canonical, aliases in companies.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+A named in-house research division, institute, or R&D unit maps to its parent company when that parent is a canonical key or listed alias above (e.g. a company's pharma research and early-development unit, biomedical-research institute, or innovative-medicines research arm resolves to the parent group). A subsidiary, spun-out, acquired, or jointly-held entity that is not itself a canonical key or alias does NOT map to a canonical company merely through a corporate relationship. Out-of-set companies (any pharmaceutical company not appearing as a canonical key or alias above, including US- and Japan-headquartered firms) → {{ CANONICAL_INVALID }}.

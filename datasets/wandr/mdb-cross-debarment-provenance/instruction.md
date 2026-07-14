@@ -1,0 +1,42 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `mdb_cross_debarment_provenance`
+
+For 100+ firm or individual clusters, supply official public development-bank sanctions list-entry provenance covering 3+ different multilateral or official development-bank institutions per cluster, and 1+ public URL, data/API record, downloadable-data surface, static table, or bank-hosted document for each institution's appearance.
+
+World Bank evidence is one eligible bank surface, not the canonical source for the task. Sources can also come from ADB, AfDB, IDB, EBRD, AIIB, or comparable official development-bank sanctions, debarment, suspension, ineligibility, notice, download, resource-view, or data/API locator pages. Discovery aggregators can point to candidates, but third-party aggregators, commercial screening pages, media articles, law-firm explainers, and unofficial mirrors must not be used as evidence.
+
+Each cited surface must visibly expose the claimed party entry itself. A broad register landing page, client-rendered search/filter page, or generic sanctions-system page counts only when that cited page text directly contains the party entry or entry-local record. If the entry is provided by an official API, data file, JavaScript data file, downloadable table, or separate notice, cite that entry-visible official surface rather than only the browser shell that loads it.
+
+Preserve the bank's own wording for the party name, firm/person type when visible, country/address when visible, sanction or ineligibility label/list type, grounds or prohibited-practice wording when visible, date-window or source-vintage basis when visible, originating-vs-honoring or cross-debarment state when visible, conditions/releases, caveats/notes, source locator, and explicit missing or conflict states. Do not infer dates, grounds, or origin/honoring state from another institution when the cited surface does not state them. The result is descriptive source provenance, not eligibility assurance, procurement recommendation, legal or compliance conclusion, risk ranking, contact enrichment, or misconduct expansion beyond source wording.
+
+Requirements:
+- The page must communicate that it is an official public surface controlled by `source_institution` or its official data infrastructure: bank register, public notice, sanctions/debarment/ineligibility download, official resource-view or data/API locator page, or bank-hosted document.
+- The cited surface must state or directly expose the source-stated party identity for `sanctioned_party` on the claimed `source_institution` surface; generic pages whose fetched text omits the entry are not enough.
+- The cited surface must state or directly expose the party's appearance or list status on that surface: sanctioned, debarred, suspended, ineligible, conditionally non-debarred, released, cross-debarred, honored/recognized, listed on an ineligibility/debarment register, or equivalent source wording in a development-bank integrity or procurement context.
+- The entry must be framed as a source-stated public list-entry appearance. Source-stated dates, update/vintage fields, permanent/indefinite/ongoing markers, release/expiry markers, and date-added fields should be preserved when visible, but an entry-visible official list entry may still qualify when the cited surface does not expose a per-entry date and the result does not invent one.
+- The entry must preserve any source-stated origin, direct-sanction, honoring, or cross-debarment state when the official surface makes it public. If the cited surface does not state that role, do not infer it from another bank.
+- The entry must include enough visible provenance to identify the official list entry: source-stated party name, source institution/list surface, appearance status or list type, URL/source locator, and any additional entry-local details reported from the source without embellishment.
+
+Write one JSON object per line to `results_mdb_cross_debarment_provenance.jsonl`:
+{"item": { "sanctioned_party": "<sanctioned_party>", "source_institution": "<source_institution>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

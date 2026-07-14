@@ -1,0 +1,44 @@
+[project]
+name = "relay"
+version = "0.1.0"
+description = "Remote endpoint-backed Harbor file relay agent."
+requires-python = ">=3.12"
+license = "Apache-2.0"
+dependencies = [
+  "jinja2>=3.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+remote = [
+  "anthropic>=0.102.0",
+  "httpx>=0.28.0",
+  "openai>=2.0",
+]
+
+[tool.setuptools]
+packages = [
+  "relay",
+  "relay.prompts",
+  "relay.providers",
+  "relay.providers.anthropic",
+  "relay.providers.exa",
+  "relay.providers.gemini",
+  "relay.providers.openai",
+  "relay.providers.parallel",
+  "relay.providers.perplexity",
+]
+
+[tool.setuptools.package-data]
+"relay.prompts" = ["*.md.jinja"]
+
+[tool.setuptools.package-dir]
+relay = "."
+"relay.prompts" = "prompts"
+"relay.providers" = "providers"
+"relay.providers.anthropic" = "providers/anthropic"
+"relay.providers.openai" = "providers/openai"
+"relay.providers.perplexity" = "providers/perplexity"

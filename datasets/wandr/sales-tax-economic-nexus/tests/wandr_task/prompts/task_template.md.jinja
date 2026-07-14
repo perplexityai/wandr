@@ -1,0 +1,23 @@
+For each of the {= state =}+ US states with a statewide sales tax, supply {= rule_facet =} concrete current-rule findings on the state's economic-nexus or remote-seller collection rule: {=% for k in rule_facets =%}one with `rule_facet={= k =}`{=% if not loop.last =%}, {=% endif =%}{=% endfor =%}. `rule_facet` must be exactly one of {=% for k in rule_facets =%}`{= k =}`{=% if not loop.last =%}, {=% endif =%}{=% endfor =%}, with the following meanings:
+
+{=% for k, desc in rule_facets.items() =%}
+- `{= k =}`: {= desc =}
+{=% endfor =%}
+
+The reported finding under each facet should be a concise current-rule proposition — for instance a specific dollar amount, the absence-or-presence of a transaction-count threshold along with its OR / AND stringency if dual, the lookback wording ("previous calendar year", "preceding twelve calendar months", "immediately preceding four sales-tax quarters", etc.), or the sales-basis wording ("retail sales", "taxable remote sales", "gross receipts", "gross revenue", "gross sales", and so on).
+
+Source evidence comes from the state's own tax authority — its Department of Revenue, Tax Department, Comptroller, Board of Equalization or equivalent — from its statute / regulation / administrative-code text, or from state-specific Streamlined Sales Tax Governing Board remote-seller materials. Aggregator matrices and tax-service-provider summaries, such as Avalara, Sovos, TaxJar, Sales Tax Institute, CPA / law-firm alerts, and similar, do not authoritatively source the rule.
+
+Each row supplies a source URL ({= url =}+ per finding) on a page authoritatively substantiating the state's economic-nexus or remote-seller collection rule.
+
+States in scope:
+
+{=% for canonical, aliases in states.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Requirements:
+- The page concerns the state's statewide sales/use tax economic nexus, remote-seller collection rule, or marketplace-facilitator economic-nexus rule — not adjacent classes such as physical-presence-only nexus, income / franchise tax nexus, sales-tax-rate pages, or local-only sales-tax content.
+- The page is on the state's own tax authority, in the state's statute / regulation / administrative-code text, or on state-specific Streamlined Sales Tax Governing Board remote-seller material.
+- The page substantively supports the concrete current-rule finding under the claimed facet. Similar-looking facets are not interchangeable: gross receipts are not retail sales, previous / current calendar year is not the immediately preceding four sales-tax quarters, and a marketplace-provider rule is not automatically the remote-seller rule.
+- The page presents the finding as the current rule as of {= as_of_date =}. Pre-Wayfair-era thresholds and superseded transaction-count thresholds presented as currently operative do not count.

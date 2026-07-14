@@ -1,0 +1,30 @@
+For {= builder =}+ classic-car restomod builders or clearly branded restomod programs, supply evidence for each of the {= evidence_type =} evidence types, with {= url =}+ source URL per type. The builder universe is open; the point is public verification beyond the famous listicle core, not a buyer guide or ranking.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include the canonical builder or program name, headquarters or primary public location when available, country or region, platform or specialization, modernization type, official builder URL when known, source type, checked date, evidence signal, and boundary notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful modernization signals include:
+{=% for modernization_signal in modernization_signals =%}
+- `{= modernization_signal =}`
+{=% endfor =%}
+
+Source type should be factual, not promotional. Useful public source types include:
+{=% for source_type in source_types =%}
+- `{= source_type =}`
+{=% endfor =%}
+
+Boundary classes to keep out unless the page also proves turnkey restomod-builder substance:
+{=% for boundary_class in boundary_classes =%}
+- `{= boundary_class =}`
+{=% endfor =%}
+
+Public sources can include official builder sites, model/program pages, detailed project galleries, show or award pages, auction or listing pages that name the builder, automotive magazine profiles or features, entity-specific specialist directory profiles, and high-signal public video or social pages where the builder and build are clearly identified. Broad directories, listicles, and generic "best restomod" articles are discovery surfaces; an entity-specific profile from a directory, magazine, or social/video page counts only when the submitted page itself supports the claimed evidence role and modernization substance. Private or gated material, quote-request funnels, rankings, procurement advice, broad marketplace category pages, customer reviews without builder/build facts, and generic SEO pages are out of scope.
+
+Requirements:
+- The page must identify the claimed builder or branded program with enough public context to distinguish it from unrelated same-name shops, vehicle models, project names, owners, dealers, directories, or media brands.
+- The submitted page itself must support the claimed `evidence_type`: `builder_identity` evidence should be builder-controlled or official/durable identity evidence for public restomod services or a branded program; `output_or_program` evidence should show a completed build, named project, active build/model program, show or award record, auction/listing attribution, media feature, or comparable public output/build-capability signal for the same builder.
+- The page must support substantive modernization of classic vehicles by the claimed builder or program. Literal "restomod" wording is not required, but restoration-only, repair-only, cosmetic-only, parts-only, kit/platform-only, dealer-only, replica-only, continuation-only, directory-only, and private one-off evidence does not establish the bar.

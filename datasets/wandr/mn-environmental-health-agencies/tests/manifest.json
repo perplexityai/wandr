@@ -1,0 +1,8 @@
+{
+  "name": "mn-environmental-health-agencies",
+  "wandr_task": "mn_environmental_health_agencies",
+  "task_names": [
+    "mn_environmental_health_agencies",
+    "mn_environmental_health_agencies.agency_authority"
+  ]
+}

@@ -1,0 +1,9 @@
+For {= recalled_or_alerted_product =}+ FDA recalled or early-alerted medical-device products in the 2023-01-01 through 2025-12-31 window, name {= udi_identity =}+ matching public UDI/GUDID identity per product using the DI/UDI and device name, and supply {= url =}+ official AccessGUDID/NLM or FDA UDI URL.
+
+The UDI row must resolve the same affected product named in the recall or early alert. Prefer AccessGUDID pages/API records; official openFDA UDI records are acceptable when they expose the same source-specific fields.
+
+Requirements:
+- The page must show a DI/UDI identity, brand/device name or description, labeler/company, and product code or premarket submission when the source states one.
+- The page must support a substantive match to the recalled or alerted product through DI/UDI/GTIN, model, catalog, REF, product code, brand/device description, labeler/firm, premarket number, or product-description overlap.
+
+Do not count package GTINs as primary DIs unless the official UDI/GUDID surface states that relationship. Name-only similarity between a recall product description and a UDI brand name is not enough.

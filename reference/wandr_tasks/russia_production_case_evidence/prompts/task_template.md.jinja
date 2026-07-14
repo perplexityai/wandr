@@ -1,0 +1,24 @@
+For each of the {= sector_band =} sector bands listed below, cover {= production_case =}+ Russian production cases and each of the {= evidence_facet =} evidence facets listed below. For every production case / evidence facet combination, supply {= url =}+ public URL that gives page-specific evidence for that case and facet.
+
+A production case is a named producer together with a concrete product, product line, facility project, material capability, or production project. The producer alone is too broad, and a product name without a producer is too ambiguous.
+
+Sector bands:
+{=% for sector_band, description in sector_bands.items() =%}
+- `{= sector_band =}`: {= description =}
+{=% endfor =%}
+
+Evidence facets:
+{=% for evidence_facet, description in evidence_facets.items() =%}
+- `{= evidence_facet =}`: {= description =}
+{=% endfor =%}
+
+Russian-language sources are welcome. Strong source surfaces include producer catalogs and production pages, technical sheets, official FRP/GISP/ministry/regional project pages, industry or trade-association pages, exhibition pages, registries used only as factual status evidence, credible manufacturing news, and case-specific retail or market pages when they identify the producer/product and the Russian market signal. Global market-report pages, generic light-industry policy pages, generic ecommerce listings, and broad program descriptions do not work unless the page names the submitted production case and carries the claimed facet-specific signal.
+
+This is a factual public-evidence task. Do not give funding, sanctions, procurement, legal, accounting, eligibility, or investment advice; registry, public-support, and market pages should be treated only as source evidence for what the page says.
+
+Requirements:
+- The page must identify the submitted producer and the submitted product, project, product line, facility project, or material capability as a connected production case.
+- The page must tie that case to the claimed sector band.
+- The page must situate the case in a Russian production or Russian-scope market context.
+- The page must make its facet-appropriate source role visible. For `product_boundary_and_use_case`, it should read as a product, catalog, technical, trade, exhibition, or descriptive source explaining what the case is used for. For `domestic_production_or_capacity`, it should read as a production, facility, manufacturer, capacity, volume, localization, expansion, or modernization source. For `support_import_substitution_or_market_signal`, it should read as a case-specific public-support, import-substitution, registry/status, financing, trade, exhibition, retail, or market-signal source.
+- The page must expose concrete evidence for the claimed facet and case, not just generic light-industry, policy, retail, or market background.

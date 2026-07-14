@@ -1,0 +1,17 @@
+For at least {= vehicle_model =}+ used passenger vehicle model/year-range entries that are plausible starter or fleet-expansion choices for Chicago Turo hosts as of {= snapshot_date =}, supply at least {= url =} source URL for each vehicle model/year range and each of the {= evidence_axis =} unit-economics axes below.
+
+Prefer common used sedans, compact and midsize SUVs, hybrids/EVs, minivans, and similar mainstream vehicles a Chicago host could realistically acquire and operate. Skip rare exotics, motorcycles, scooters, RVs, commercial-only vans/trucks, and one-off trims. The model-year range should be narrow enough that purchase price, operating cost, and depreciation remain comparable.
+
+The evidence axes are:
+{=% for axis_name, axis_surfaces in evidence_axes.items() =%}
+- **{= axis_name =}** - {= axis_surfaces.terse =}
+{=% endfor =%}
+
+Use source-bound findings that a host or auto-finance analyst could place into a comparison table; the task is the evidence panel underneath a ranking, not the final recommendation itself.
+
+Each source URL must satisfy the corresponding vehicle model/year range and evidence axis:
+
+- The page must substantively evidence the claimed evidence axis for the claimed vehicle with a concrete figure, table value, source-stated estimate, or clear directional signal.
+- The page must match the claimed make/model and materially overlap the model-year range or generation under analysis.
+- The page's source context must fit the axis: local or Turo-marketplace evidence for platform signals; Chicago/Illinois, regional, or explicit U.S. market evidence for acquisition price; and model-level owner-cost, EPA, insurance, depreciation, reliability, or use-case evidence for the operating-cost and resilience axes.
+- The finding must be economically comparable across vehicles, with enough unit, period, geography, trim/year scope, or interpretation to support side-by-side Chicago Turo host analysis.

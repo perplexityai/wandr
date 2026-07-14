@@ -1,0 +1,11 @@
+For {= paper =}+ academic papers retracted with the retraction notice published in {= target_period =}, gather the publisher's official retraction notice (at least {= url =} URL per paper) and name the original paper's title, journal, and original DOI alongside the retraction notice's publication date and notice DOI.
+
+Each URL must be the publisher's own retraction notice on the journal-publishing domain. Banner-on-retracted-article-page surfaces (the publisher's article page now showing a "RETRACTED" banner with the retraction notice linked) count as evidence on the same publisher's domain.
+
+Requirements:
+- The page must be unambiguously a Retraction notice in primary-subject position — not a different editorial-action class (correction, expression-of-concern, withdrawal, update-after-retraction, etc.).
+- The retraction notice must identify the claimed original paper — by paper title, by original DOI, or by both — within the notice body, banner, or page metadata.
+- The page must identify the journal where the original retracted paper was published, matching the claimed `journal` (masthead, citation footer, URL contents on a journal-publishing CDN, notice metadata, etc.).
+- The page must identify the retraction notice's own DOI, matching the claimed `notice_doi`. (The notice DOI is the DOI of the retraction notice itself, not the original paper's DOI.) The notice DOI may appear in URL contents, in the citation block, or in DOI metadata.
+- The page must communicate publisher-official source-class — via URL contents on a recognized journal-publishing CDN, on-page publisher / journal masthead, banner, or footer branding, or notice metadata identifying the publisher's primary domain.
+- The retraction notice's publication date must fall within {= target_period =}. This is the *retraction notice*'s publication date, NOT the original paper's publication date — an original paper from any year can be retracted within the window.

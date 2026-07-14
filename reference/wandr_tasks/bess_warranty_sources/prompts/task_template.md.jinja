@@ -1,0 +1,16 @@
+For {= company =}+ companies, identify {= company_product =}+ named stationary commercial, C&I, or utility BESS product or product family per company, and cover the {= evidence_facet =} public source-state facets below with a source (i.e. {= url =}+ URL) that keeps product, warranty/SoH/performance, and source-standing claims scoped to what the cited page actually shows.
+
+This is a public source-state task, not a warranty-generosity ranking, procurement recommendation, vendor firmographic table, or project pipeline list.
+
+Evidence facets:
+- `commercial_bess_product_identity`: official or vendor-controlled evidence that the named company markets the named stationary commercial/C&I/utility BESS product or product family.
+- `public_warranty_or_soh_state`: public evidence for the product or product family warranty, state of health, retained-capacity term, performance guarantee, cycle life, throughput life, warranty-scope period, operating-condition limit, or explicit contract/local-service deferral. Generic product pages without warranty, SoH, retained-capacity, cycle, throughput, guarantee, or deferral language do not satisfy this facet.
+- `source_applicability_and_standing`: evidence that the source host or issuer, document date/version, region/model/product scope, and source class are what the finding claims. This facet is about source applicability and provenance, not simply repeating a product or warranty fact.
+
+Companies should be actual vendors or company brands associated with stationary commercial/C&I/utility BESS systems. Products should be real cabinet, rack, container, modular, or product-family offerings tied to the company. Exclude residential-only storage, inverter-only products, EMS-only/software-only products, cells/modules without a system product, EPC/project-service-only pages, procurement/ranking/investment/safety/design advice, and generic distributor catalog entries without a source-state signal.
+
+Requirements:
+- The page must clearly identify the named company and named product or product family in a stationary commercial/C&I/utility BESS context.
+- The page must make source standing visible at the bar appropriate to `evidence_facet`: official/vendor-controlled for `commercial_bess_product_identity`; explicit source class for `public_warranty_or_soh_state` when using vendor pages, official-linked CDN assets, company-issued releases, distributor mirrors, or third-party guides; and host/issuer/date/version/region/model/source-class evidence for `source_applicability_and_standing`. A mirror can be useful only when represented as a mirror or distributor source, not as official vendor-hosted evidence.
+- The page must contribute a facet-specific public source-state signal for the submitted `evidence_facet`, not just a generic mention of batteries or a generic company profile.
+- The page must keep the claim scoped to the cited source's visible product/model, region, date/version, source class, warranty trigger, operating conditions, cycle/throughput limit, retained-capacity percentage, performance guarantee, or explicit deferral language when those limits are present. Source-local absence or deferral is not a global statement that the vendor has no warranty or SoH policy.

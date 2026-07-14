@@ -1,0 +1,87 @@
+job_name: wandr-smoke-all
+jobs_dir: jobs
+n_attempts: 1
+n_concurrent_trials: 6
+
+harborpatch:
+  n_concurrent_agent_phases: 6
+  n_concurrent_verifier_phases: 3
+  e2b_use_dockerfile: true
+  e2b_stream_output: true
+  e2b_share_template_by_hash: true
+  e2b_verifier_terminal_wait: 28800
+  nofile_soft_limit: 8192
+
+environment:
+  type: docker
+
+verifier:
+  override_timeout_sec: 28800
+  env:
+    WANDR_VERIFIER_PYTHON: /opt/wandr-venv/bin/python
+    UV_HTTP_TIMEOUT: "120"
+    UV_HTTP_RETRIES: "8"
+    UV_CONCURRENT_DOWNLOADS: "4"
+    WANDR_HEAL_RETRIES: "3"
+    WANDR_HEAL_MIN_COVERAGE: "1.0"
+    WANDR_BROWSER_FALLBACK: "0"
+    WANDR_BROWSER_JAVASCRIPT: "0"
+
+agents:
+  - import_path: relay.agent:RelayAgent
+    model_name: openai/gpt-5.5
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        reasoning_effort: low
+      endpoint:
+        delivery_channel: sandbox
+  - import_path: relay.agent:RelayAgent
+    model_name: anthropic/claude-opus-4-8
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        speed: standard
+      endpoint:
+        delivery_channel: sandbox
+  - import_path: relay.agent:RelayAgent
+    model_name: perplexity/gpt-5.5
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        reasoning_effort: low
+      endpoint:
+        delivery_channel: share
+  - import_path: relay.agent:RelayAgent
+    model_name: exa/agent
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        effort: low
+      endpoint:
+        delivery_channel: output
+  - import_path: relay.agent:RelayAgent
+    model_name: parallel/taskapi
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        processor: lite
+      endpoint:
+        delivery_channel: output
+  - import_path: relay.agent:RelayAgent
+    model_name: gemini/deep-research
+    override_timeout_sec: 14400
+    kwargs:
+      max_full_restarts: 1
+      request:
+        reasoning_effort: speed
+      endpoint:
+        delivery_channel: output
+
+tasks:
+  - path: datasets/wandr/smoke

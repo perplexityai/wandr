@@ -1,0 +1,23 @@
+For each of the {= recruitment_status =} jRCT recruitment-status buckets, supply official record-detail evidence for {= jrct_record =}+ distinct jRCT records with that source-stated status, covering each of the {= registry_facet =} registry facets below and supplying {= url =} URL per record-facet row. Facets require the specified current official detail surface and row-specific field evidence; do not satisfy multiple facets from generic repeated detail-page snippets.
+
+Recruitment-status buckets:
+{=% for canonical in recruitment_status_aliases =%}
+- `{= canonical =}`
+{=% endfor =%}
+
+Registry facets:
+{=% for facet, description in registry_facet_descriptions.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Sources should be current official jRCT/MHLW record-detail pages on `jrct.mhlw.go.jp`. Use the Japanese `https://jrct.mhlw.go.jp/latest-detail/<jRCT...>` page for `jp_status_date_update` and `jp_condition_intervention`. Use the English `https://jrct.mhlw.go.jp/en-latest-detail/<jRCT...>` page for `en_design_phase_model`. Use either current English or Japanese detail page for `result_publication_state`. Search pages are only useful for discovery. Old `jrct.niph.go.jp` URLs, CSV or download endpoints, bulk exports, scraped mirrors, sponsor or hospital pages, journal articles, press releases, ClinicalTrials.gov, ICTRP trial pages, UMIN, ChiCTR, CRIS, CTRI, aggregators, and trial-matching or recruitment sites do not count as record evidence.
+
+Keep the work to neutral public registry metadata provenance. Public sponsor, institution, investigator, or contact-like fields may appear on jRCT pages, but do not collect contact details, outreach details, rankings, or lead lists. Do not provide participation guidance, recruitment targeting, eligibility screening, treatment recommendations, clinical recommendations, safety or efficacy interpretation, adverse-event interpretation, medical/legal/compliance advice, investment framing, dashboards, alerts, or strategy advice.
+
+Requirements:
+- The page must directly show the submitted jRCT number and a source-stated recruitment/progress status matching the submitted recruitment-status bucket.
+- The page must directly show the source-stated registry field labels and values for the submitted registry facet.
+- For `jp_status_date_update`, the Japanese detail page must show `jRCT番号`, Japanese `進捗状況`, `初回公表日` or `登録日`, and `最終公表日` or a local blank/not-shown update-date cell. Preserve whether the final/update date is the same as, different from, or blank relative to the initial/registration date; do not infer currentness from a title, search result, or URL alone.
+- For `en_design_phase_model`, the English detail page must show `Study Type`, phase/classification when public or a local blank/N/A marker when reported, and at least two concrete `Study Design` model fields such as allocation, masking, control, assignment, purpose, observation model, or time perspective.
+- For `jp_condition_intervention`, the Japanese detail page must show `対象疾患名`, `介入の有無`, and `介入の内容 / Intervention(s)` or the local no-intervention marker.
+- For `result_publication_state`, the page must show completion date, observation-period end date, result-summary posting date/block, or an explicit blank/dash/no-public-result marker. Blank or no-public-result states only work when the page shows a local blank, dash, no-public-result marker, or captured result-publication block where that field is conventionally shown.

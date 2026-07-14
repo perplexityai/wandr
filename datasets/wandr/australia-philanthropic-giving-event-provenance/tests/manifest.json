@@ -1,0 +1,8 @@
+{
+  "name": "australia-philanthropic-giving-event-provenance",
+  "wandr_task": "australia_philanthropic_giving_event_provenance",
+  "task_names": [
+    "australia_philanthropic_giving_event_provenance",
+    "australia_philanthropic_giving_event_provenance.giving_vehicle_identity"
+  ]
+}

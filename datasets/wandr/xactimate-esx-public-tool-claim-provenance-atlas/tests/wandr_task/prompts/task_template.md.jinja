@@ -1,0 +1,43 @@
+Build an as-of {= as_of_date =} public-source provenance atlas for software products and productized public tools in the property claims, insurance repair, restoration estimating, measurement/sketch, and adjacent claims-workflow ecosystem.
+
+Find about {= target_products =} distinct products overall, with at least {= minimum_unique_products =} unique qualifying products and about {= target_records =} product/facet/source records. Each accepted record is one product, one closed `claim_facet`, and one supporting URL. The credited source pool should include at least {= minimum_records_per_facet =} records for each facet and at least {= minimum_unique_domains =} unique source domains.
+
+Do not rectangular-pad the table by reusing one homepage for every facet of a product. As a rule, do not use the same URL for more than {= max_same_url_facet_reuse_per_product =} facets for the same product, and never use one URL for all four facets. Same-URL reuse only qualifies when the cited excerpts point to distinct, facet-specific sections that independently satisfy each submitted facet.
+
+The product universe is open. CapOut, ClaimsFlow, EstimateHub, and similar PDF-to-ESX tools are seed anchors and traps, not a closed canon. Keep the scope broadened to adjacent public ESX/export/import/sketch/restoration/claims platforms when the source explicitly touches Xactimate, ESX, Verisk, XactRestore, XactNet, XactAnalysis, Symbility, FML, SKX, Cotality, or an equivalent property-claims estimating workflow.
+
+The closed `claim_facet` values are:
+{=% for facet, description in claim_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Missing facets are omissions. Do not submit `no_pricing_source`, `no_speed_source`, `no_accuracy_source`, `no_integration_source`, `no_date`, `name_conflict`, or similar missingness/conflict rows as positive evidence.
+
+Product kinds to use as metadata, not hierarchy axes:
+{=% for kind, description in product_kinds.items() =%}
+- `{= kind =}`: {= description =}
+{=% endfor =%}
+
+Source classes to use as metadata, not hierarchy axes:
+{=% for source_class, description in source_classes.items() =%}
+- `{= source_class =}`: {= description =}
+{=% endfor =%}
+
+Commercial access types to use as metadata when relevant, not hierarchy axes:
+{=% for access_type, description in commercial_access_types.items() =%}
+- `{= access_type =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The product must be public software or a productized public tool in the qualifying ecosystem. Exclude human-only conversion services, Fiverr/Freelancer gigs, individual estimating services, generic PDF/OCR/document editors, broad CRMs with no public Xactimate/ESX/Verisk/Symbility/Cotality workflow, social-only/beta leads with no official product surface, CapOut/CapCut or generic-ESX collisions, and Xactimate/Verisk/Cotality/Symbility themselves as ordinary competitor products.
+- Prefer owned product, help, docs, pricing, terms, trust, security, official blog, press, or demo pages. Marketplace listings, counterparty/platform pages, and reputable trade articles can qualify only when they directly name the product and concrete workflow; they cannot replace the vendor's own pricing, speed, accuracy, commercial-access, terms, trust, or limitation claim.
+- Vendor-authored comparison pages count only as the author's own claims. They never prove a competitor's pricing, speed, accuracy, capability, or workflow.
+- The page must visibly identify the submitted product and source-state the submitted facet. Do not infer price, speed, accuracy, integration depth, output format, or commercial availability from vague marketing or third-party summaries.
+- For every facet, the cited source must carry facet-specific text. A generic homepage, product overview, platform overview, or broad restoration-software page does not satisfy `commercial_access_posture` unless the cited section states pricing, trial, free credits, subscription, demo/quote/contact-sales, or similar access terms; it does not satisfy `terms_trust_or_limitation_posture` unless the cited section states terms, privacy/security/data handling, trust posture, warranty/refund, accuracy, turnaround, support, or limitation text relevant to the product's estimating/conversion workflow.
+- The `xactimate_esx_workflow_mechanism` facet needs an artifact, direction, setup path, partner/API route, XactNet/XactAnalysis/Request Data route, ESX/FML/SKX file, direct import/export/delivery path, or comparable mechanism. Generic "integrates with Xactimate" language by itself is not enough.
+- The `commercial_access_posture` facet may be a public dollar price, usage/credit/line-item/area term, subscription tier, free trial/free conversion/free credits, or explicit quote/demo/contact-sales path. Quote/demo/contact-sales is a valid public commercial posture when the source says it.
+- The `terms_trust_or_limitation_posture` facet should come from terms, trust, security, privacy, support, help, disclaimer, or limitation text that is relevant to the product's estimating/conversion workflow, not from generic footer boilerplate alone.
+- Keep the atlas as public claim provenance. Reject rankings, recommendations, best-fit flags, contractor buying advice, outreach, lead scoring, account-gated scraping, and procurement guidance.
+- Treat broad claims/restoration/estimation software as in scope only when the cited page itself states a concrete Xactimate, ESX, Verisk, XactRestore, XactNet, XactAnalysis, Symbility, FML, SKX, Cotality, import/export/delivery, or equivalent property-claims estimating workflow. General scope-of-work, restoration project management, photo documentation, PDF/OCR, CRM, or supplement drafting language is not enough by itself.
+
+For each accepted record, communicate a concise source-stated claim summary plus metadata such as source class, product kind, commercial access type when relevant, source date or observed date when visible, checked date, confidence, and any source-stated speed/accuracy/pricing only when the cited source itself states it.

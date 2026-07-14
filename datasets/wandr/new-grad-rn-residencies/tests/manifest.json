@@ -1,0 +1,9 @@
+{
+  "name": "new-grad-rn-residencies",
+  "wandr_task": "new_grad_rn_residencies",
+  "task_names": [
+    "new_grad_rn_residencies",
+    "new_grad_rn_residencies.magnet_status",
+    "new_grad_rn_residencies.trauma_status"
+  ]
+}

@@ -1,0 +1,20 @@
+For at least {= platform =}+ public fleet-telematics, ELD/compliance, vehicle-tracking, fleet-safety, or adjacent fleet-management platforms, cover {= signal_family =}+ of the operational-signal families listed below per platform. Within each platform-family pair, name {= operational_signal =}+ distinct source-backed UI signals and supply {= url =}+ public URL for each signal.
+
+The useful object is the operational meaning of a public UI cue: a status label, icon, badge, dot, banner, status column, dial, map/list marker, card, or similar signal that tells fleet users about an exception or important state change. Describe cues in words only; do not reproduce icons, screenshots, or other UI assets.
+
+Operational-signal families:
+{=% for family, description in signal_families.items() =%}
+- `{= family =}`: {= description =}
+{=% endfor =%}
+
+For each signal, state the platform/vendor, product or surface, family label, signal name, trigger or condition, UI cue description, lifecycle/status or recoverability detail, source name/type/date, checked date, official-vs-third-party stance, caveat state, and a short confidence rationale.
+
+Strong sources are official help/support/product pages, release notes, public manuals, and other public vendor-controlled documentation that names the signal or its meaning. Each URL should be appropriate as standalone evidence for the submitted signal. App-store listings, public product pages, public videos, and third-party screenshots can support surface visibility when their limits are explicit, but screenshot-only evidence without a public semantic definition should be low confidence. Public registries, directories, app catalogs, certification lists, and other source hubs can help discover or corroborate platforms, but they should not be used as the only evidence for a signal when they mainly repeat platform metadata, regulatory code lists, self-certification text, or generic feature semantics. A source-hub page can carry a signal row only when the cited page has distinct, platform-specific UI-signal semantics for that row, not a templated body of generic codes or capabilities reused across many platforms. Public pages that reference an in-product legend, expose only image labels, or are visibly stale can still be useful when the caveat is stated.
+
+Do not use private dashboards, logged-in customer screenshots, scraped asset files, vendor-review rating icons, procurement comparisons, price/contract commentary, maintenance advice, compliance advice, driver-management recommendations, or subjective design critique.
+
+Requirements:
+- The page must tie the submitted signal to the claimed platform or product surface and to an operational state, exception, or important status-change family.
+- The page must support the trigger, condition, threshold, or event that causes the signal or status to appear.
+- The page must describe, label, or visibly anchor how the operational state is surfaced in the UI through a cue such as an icon, badge, dot, banner, status label, status column, dial/clock, marker, card, or sub-icon.
+- The page must expose at least one lifecycle, status, source-quality, or recoverability detail for the signal, such as active/pending state, severity, review state, remaining time, stale/disconnected/current status, displayed duration, source date/staleness, screenshot-only cue, gated legend reference, or similar.

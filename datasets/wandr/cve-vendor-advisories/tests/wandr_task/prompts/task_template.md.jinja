@@ -1,0 +1,7 @@
+For {= cve =}+ qualifying CVEs (real CVE-YYYY-NNNNN identifiers published in {= target_period =} with CVSS base score 7.0 or higher), find the canonical vendor security advisory (i.e. {= url =}+ URL per CVE) and name the affected vendor product and the fix version the advisory cites.
+
+Requirements:
+- The page must explicitly name the claimed CVE ID, in the page's vendor-framed advisory body (vulnerability summary, fixed-issues list, security bulletin) — not as a stray reference in unrelated comments or imported boilerplate.
+- The page must explicitly name a software version, build number, or patch identifier (matching the claimed `fix_version`) as fixing the vulnerability, in a context that ties the version to this specific CVE.
+- The page must be published on the affected vendor's official security or support domain, with visible vendor branding or advisory format — not an aggregator, security-news outlet, or third-party advisory database. For open-source projects whose vendor IS their upstream repository, the project's own GitHub Security Advisory page counts; third-party GitHub advisories about that project do not.
+- The advisory page must indicate a high-severity rating for the CVE — explicit CVSS Base Score ≥ 7.0, or vendor severity rating Critical / High / Important.

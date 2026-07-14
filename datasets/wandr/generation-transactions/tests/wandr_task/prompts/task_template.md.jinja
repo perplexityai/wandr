@@ -1,0 +1,28 @@
+For at least {= generation_transaction_event =}+ U.S. electric-generation ownership-change events with a source-stated milestone from {= target_period_start =} through {= checked_date =}, identify at least {= affected_asset_or_entity =}+ affected asset, fleet, generation portfolio, or generation operating company per event, and supply at least {= url =}+ source URL for each of the {= evidence_role =} evidence roles. This is public transaction provenance for generation ownership/control, not investment advice, valuation, power-price forecasting, procurement guidance, ranking, lead scoring, contact enrichment, or legal advice.
+
+The submitted event can involve:
+{=% for milestone in event_milestones =%}
+- {= milestone =}.
+{=% endfor =%}
+
+The affected asset or entity can be a:
+{=% for affected_entity_type in affected_entity_types =%}
+- {= affected_entity_type =}.
+{=% endfor =%}
+
+The evidence roles are:
+{=% for evidence_role, description in evidence_role_descriptions.items() =%}
+- `{= evidence_role =}`: {= description =}.
+{=% endfor =%}
+
+Optional factual notes can include source-stated status/date, buyer/successor, seller/predecessor/target, plant or portfolio names, generation operating entity, capacity, fuel type, region, ISO/RTO, deal value, source class, source date, and checked date. Use {= checked_date =} as the checked date unless the source was checked later; include optional facts only when source-stated.
+
+Boundary classes to keep out unless the page also proves event-specific generation transaction lineage:
+{=% for source_boundary_class in source_boundary_classes =%}
+- {= source_boundary_class =}.
+{=% endfor =%}
+
+Requirements:
+- The page must tie the submitted event to a U.S. electric-generation ownership or control change involving a generation asset, plant, fleet, generation portfolio, generation operating company, or project/asset holding company, with source-stated parties or predecessor/successor context.
+- The page must fulfill the submitted `evidence_role`: `event_status_record` must identify the parties and a source-stated status or date; `authority_or_filing_record` must be an official, regulatory, filing, court, market-monitor, state commission, SEC, FERC, bankruptcy, or comparable authority record; `asset_lineage_detail` must identify at least one affected plant, fleet, generation portfolio, or generation operating entity and tie it to seller/predecessor/target and buyer/successor/post-event owner or control context.
+- The page must connect the submitted `affected_asset_or_entity` to the submitted event at the submitted granularity, or to the deal-level portfolio, target, generation operating entity, or successor/predecessor context that the submitted asset/entity names.

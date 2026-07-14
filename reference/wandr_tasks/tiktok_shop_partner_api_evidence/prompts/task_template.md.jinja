@@ -1,0 +1,40 @@
+For {= public_support_status =}+ public-support statuses in the official TikTok Shop Partner Center documentation, cover {= capability_area =}+ commerce capability areas per status, name {= capability_surface =}+ distinct capability surfaces per area, and supply {= evidence_facet =}+ facet-specific public sources per surface (i.e. {= url =}+ URL).
+
+This is a public documentation provenance atlas, not API implementation guidance. Each source should show what the official public Partner Center docs state, omit, gate, or version for the claimed commerce API capability, app/access workflow, sandbox workflow, or console/support boundary.
+
+Public-support statuses are:
+- `endpoint-reference`
+- `api-overview-only`
+- `changelog-or-release-only`
+- `authorization-or-access-doc`
+- `app-or-sandbox-guide`
+- `console-or-support-guide-only`
+- `permission-gated`
+- `no-public-field-source`
+- `no-public-endpoint-locator`
+- `version-unknown`
+
+The evidence facets are:
+- `locator`
+- `fields_or_objects`
+- `access_or_permission`
+- `version_or_change_status`
+
+Each citation should include a short checked-date note naming the page or locator and the facet-specific finding being claimed.
+
+Cover the facets that the public documentation can support for that surface. Endpoint pages often support locator and fields/object evidence; access guides, release notes, sandbox guides, and console/support pages may instead carry permission, status, version, or boundary evidence without exposing a public endpoint path.
+
+In-scope sources are official public TikTok Shop Partner Center documentation pages, normally `partner.tiktokshop.com/docv2/...` or legacy `partner.tiktokshop.com/doc/...` pages. Endpoint-reference pages, API overviews, release/changelog pages, authorization/access pages, app publication guides, sandbox/development-shop guides, and console/support guides can all count when they fit the claimed facet.
+
+Third-party SDKs, blogs, integration vendors, search snippets, TikTok Research API pages, TikTok Business/ads API pages, private account screens, credentialed-only material, hidden JSON endpoints, scraping/bypass methods, seller analytics, rankings, procurement recommendations, lead scoring, outreach, contact enrichment, and account-specific data extraction do not count.
+
+Missing, gated, and boundary statuses are valid only when anchored in an official public locator that states the capability or nearby workflow. Do not claim global absence from the whole internet; keep those records to what the public Partner Center page itself supports.
+
+Requirements:
+- The page must identify or locate the claimed capability surface in a TikTok Shop Partner Center commerce context.
+- The page must support the submitted public-support status from public documentation evidence rather than from assumptions about hidden or credentialed material.
+- For `locator`, the page must locate the claimed endpoint, API action, guide capability, app/sandbox workflow, or console/support module.
+- For `fields_or_objects`, the page must state public fields, objects, parameters, metrics, request/response elements, or an anchored no-public-field/permission-gated field status.
+- For `access_or_permission`, the page must state an authorization, access-scope, app review, signing, seller/creator/shop authorization, partner-type, market, sandbox, or credential caveat.
+- For `version_or_change_status`, the page must state a version slug, release/changelog/update/deprecation/status note, rollout marker, or anchored version-unknown status.
+- The page must support the submitted facet-specific detail without turning public documentation provenance into API-calling instructions, private seller data claims, or operational advice.

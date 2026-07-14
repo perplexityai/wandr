@@ -1,0 +1,7 @@
+{
+  "name": "payment-integrity-service-lines",
+  "wandr_task": "payment_integrity_service_lines",
+  "task_names": [
+    "payment_integrity_service_lines"
+  ]
+}

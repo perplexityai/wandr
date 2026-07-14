@@ -1,0 +1,22 @@
+For each of the {= series_tome =} numbered tomes of the Aquilon shared-fictional-universe imprint listed below — published during {= target_period =} by Soleil Productions across the seven concept-series of the imprint — supply a per-volume archival page. Each page must give the album's calendar release year and scénariste(s) and dessinateur(s) credits. One row per (series, tome) pair.
+
+Per-volume archival surfaces include community comic-database catalog entries, per-volume publisher-authoritative pages, and per-volume reviewer-of-record pages that surface the album's per-volume metadata as discrete fields.
+
+Tomes in scope:
+
+{=% for canonical in volumes =%}
+- **{= canonical =}**
+{=% endfor =%}
+
+Series-name surface variants — any of these forms refers to the same canonical concept-series, and a per-volume archival page that surfaces the album under any of them is admissible evidence:
+
+{=% for series, aliases in series_aliases.items() =%}
+- **{= series =}** (also known as: {= aliases | join(", ") =})
+{=% endfor =%}
+
+Requirements:
+
+- The page must state the album's calendar release year; a 4-digit year (or year + month) shown as an album-level publication / dépôt-légal value is enough.
+- The page must identify both the album's scénariste(s) and dessinateur(s), consistent with the claim.
+- The page must focus per-volume on the submitted (series, tome) album as a canonical numbered tome of its concept-series — not a multi-volume retrospective, universe-overview, or supplementary / bundled / special-edition entry.
+- The page must communicate (possibly via URL among other things) that it is on a community comic-database catalog surface, a publisher-authoritative surface, or a reviewer-of-record surface.

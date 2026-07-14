@@ -1,0 +1,16 @@
+Find residential lot sales (at least {= city_address =}+ per city, during {= target_period =}) in each of the following cities:
+
+{=% for city, area in cities.items() =%}
+- {= city =} ({= area =})
+{=% endfor =%}
+
+For each sale, name the address, lot size, sale price, and sale date and supply at least {= url =} source URL per sale whose page content supports the transaction details.
+
+Each URL must be a page that directly supports the transaction details for that specific lot sale — a property-specific record, not a generic neighborhood page or article about the housing market.
+
+Requirements:
+- The page must support the claimed street address — same street, same number or lot designator, same city. Formatting differences (abbreviations, punctuation) are fine.
+- The property must be a residential lot, vacant land, or unimproved land parcel — NOT a finished home, condo, townhouse, commercial parcel, or multi-parcel commercial assembly.
+- The page must show the claimed lot size — magnitude matching to within reasonable rounding. Unit-form variation is fine (acres ↔ square feet conversion).
+- The page must show a completed sale event (sold/closed status, with sale price and date) matching the claim — not an active listing, pending sale, or listing price without a closed sale.
+- The sale date must fall within {= target_period =}.

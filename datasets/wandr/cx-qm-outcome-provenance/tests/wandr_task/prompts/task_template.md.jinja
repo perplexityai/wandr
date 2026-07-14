@@ -1,0 +1,24 @@
+For {= vendor =}+ vendors offering CX quality management, QA automation, interaction analytics, conversation analytics, speech/text analytics, agent coaching analytics, or closely comparable contact-center analytics products, cover {= outcome_context =}+ public customer, study, deployment, or source-described use-case outcome contexts per vendor. For each context, include {= use_case_family =}+ scoped use-case family and at least {= outcome_metric =}+ source-stated quantitative customer/study/deployment outcome metric, with {= url =}+ public leaf URL for each metric.
+
+This is an as-of {= cutoff_date =} provenance table. It is not a vendor comparison, ranking, buyer guide, procurement recommendation, ROI projection, sales-targeting list, outreach list, lead-scoring table, or contact-enrichment dataset.
+
+Use one of these `named_state` labels for each affirmative outcome context:
+{=% for named_state in named_states =%}
+- `{= named_state =}`
+{=% endfor =%}
+
+Affirmative records are about outcome provenance, not product capability inventory. The source must anchor the metric to a named customer deployment, source-described anonymous deployment, composite or named study, or source-described industry/use-case deployment. Product pages, datasheets, generic capability claims, and "100% of interactions analyzed/scored" style product-capability numbers do not count in the main table unless the same page also ties the number to a customer, study, deployment, or use-case outcome. Capability-only sources belong in the partial-source diagnostic sidecar, not as padding in the affirmative rows.
+
+Affirmative metric records should preserve the product/module or suite, source role in free text, source authorship or hosting, source date or observed date, checked date, confidence, and a short scope note when those are known.
+
+The cited URL should be the leaf source that states the metric, not a search result, source hub, generic metric-definition page, market-size statistic, ranking/comparison/buyer-guide page, broad product page, ROI center, customer-story index, or gated teaser that does not itself state the claimed metric and context. A source published after {= cutoff_date =} does not count as affirmative evidence unless the page itself establishes that the same source was public by the cutoff date.
+
+Build breadth across vendors, customers/studies/deployments, use cases, outcome families, source domains, and leaf URLs. Do not let one vendor hub, one TEI study page/PDF, one ROI-center page, one customer-story index, one source domain, or one exact URL carry a large share of the answer. As a practical cap, use at most two affirmative rows from any exact URL, and only when the same leaf page directly states distinct metrics for the same source context. Extra rows mined from the same hub, landing page, study summary, or generic product page are padding.
+
+Requirements:
+- The page must identify the claimed vendor and product/module or clearly named product suite tied to the metric.
+- The page must tie the metric to a scoped QM, QA automation, interaction analytics, conversation analytics, speech/text analytics, agent coaching analytics, workforce-quality, or comparable contact-center analytics use case.
+- The page must anchor the metric to the claimed named customer, anonymous customer/deployment, composite or named study, or source-described industry/use-case deployment consistent with `named_state`.
+- The page itself must state the exact numeric value and unit for the claimed metric; do not infer or estimate numbers.
+- The page must be a fitting provenance source for the claimed metric by directly stating the metric, source scope, vendor/product tie, and customer/study/deployment attribution.
+- The cited URL must be specific enough to the submitted row rather than a shared hub, ROI center, story index, generic product page, gated teaser, or repeatedly reused study summary that only points toward the real evidence.

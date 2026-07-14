@@ -1,0 +1,19 @@
+For {= provider =}+ cloud providers or branded cloud offerings, supply {= relationship =}+ named public relationship records per provider (i.e. {= url =}+ URL for each relationship record). A relationship record names a distinct counterparty and uses one of the `relationship_type` labels listed below.
+
+Each record should use a public source that stated the relationship no later than {= as_of_date =}. In the answer, report the source side/class, source date or `no_date`, checked date, concise source-stated relationship, corroboration state, confidence, and any missing/conflict state. Keep the ledger descriptive: no provider rankings, recommendations, procurement advice, legal/security adequacy judgments, compliance assurances, lead scoring, outreach/contact enrichment, migration plans, or architecture guidance.
+
+Relationship types:
+{=% for label, description in relationship_types.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+Source sides/classes:
+{=% for label, description in source_sides.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page should be an eligible public source for the relationship. Provider-controlled, counterparty-controlled, public/procurement, reputable press/analyst, and relationship-specific marketplace or directory pages can count when the answer reflects the source's actual side and strength. Generic provider lists, ranking pages, SEO listicles, and contact/lead-generation pages do not count by themselves.
+- The page must clearly name or unambiguously identify both the provider and the named counterparty as the parties to the relationship.
+- The page must support the claimed `relationship_type`, not merely a broader association or a different kind of relationship.
+- The page must provide source-stated relationship substance: deployment or use-case detail, award scope, partner role, operator arrangement, integration content, marketplace/listing role, or comparable relationship-specific content.

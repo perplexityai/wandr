@@ -1,0 +1,28 @@
+In the EU 27, each member state implements 112 emergency-communications infrastructure under shared standards but with substantively different per-country choices on caller-location, public warning, accessibility channels, and PSAP architecture.
+
+For each of the {= country =} EU member states (listed below) and the {= axis =} emergency-communications infrastructure axes (listed below), name the country's specific operative finding for that (country, axis) cell ({= country_finding =}+ per cell that admits one), supplying a source ({= url =}+ URL per finding) on that country's own national regulator / PSAP-operator / civil-protection publication channel for that axis evidencing the finding as the country's specific operative state on that axis. A finding is a specific deployment-fact with a technology / coverage qualifier, a named program / instrument with regulator / operator anchor, a substantive deployment-fact text on a country that has not yet branded its own program by name, etc. — not every (country, axis) cell will admit one.
+
+The EU member states in scope are:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The four infrastructure axes are housed in different artifact families per country; the row's `axis` selects which of the four:
+
+{=% for axis_name, axis_desc in axes.items() =%}
+- **{= axis_name =}** — {= axis_desc =}
+{=% endfor =%}
+
+Per-axis authoritative-publication-channel scope — the row country's own institutional publication channel under its own authority for the row's axis:
+
+{=% for axis_name, source_desc in source_classes_agent.items() =%}
+- **{= axis_name =}** — {= source_desc =}
+{=% endfor =%}
+
+Requirements:
+- The page must pin the row's specific operative finding for the (country, axis) cell sufficient that a reader could uniquely locate the finding within the country's emergency-communications landscape on the row's axis.
+- The page's identified finding must be of the row's claimed axis-character per the axis scope above.
+- The page must substantively bind the operative finding to the row country — a national authority's surface communicating its country-of-origin, the row country named in the finding text, a country-specific regulator / agency / operator named as the finding's actor, etc.
+- The page must communicate (possibly via URL among other things) that it is on the row country's own national regulator / PSAP-operator / civil-protection publication channel for the row's axis.
+- The page must present the operative finding as currently in force.

@@ -1,0 +1,21 @@
+For at least {= hbcu_director =}+ director or director-nominee rows among the {= issuer_universe =} issuer/proxy candidates listed below, supply an official proxy source (i.e. {= url =}+ URL) where source-visible evidence places the cited DEF 14A / annual proxy filing within the {= filing_start =} through {= filing_end =} filing window and the director biography discloses earned education from one of the HBCU institutions listed below.
+
+The row identity is the HBCU institution, issuer, ticker when available, and director name. Treat director status as current to the cited filing, not as a claim about board status on {= filing_end =}. Search only within the supplied {= issuer_universe =} issuer/proxy candidate universe as of {= issuer_universe_as_of =}; do not submit rows for issuers outside that universe. In row details, include the earned credential or attendance text, filing date, SEC accession or issuer proxy identifier when available, biography/page/section locator, and checked date. Those details are audit aids: filing date, accession, locator text, and checked date do not establish the official proxy source or filing-window timing unless the same facts are visible in the cited URL/page, page title or header, proxy cover text, SEC archive path, or official filing metadata surface.
+
+The candidate list below is a discovery aid and an issuer-universe boundary, not evidence that an issuer has an HBCU-educated director. A submitted row still needs official proxy source-visible timing, director/nominee status, and earned HBCU education in or adjacent to the director biography. Prefer the listed primary DEF 14A document when present; if a listed row has no in-window DEF 14A candidate, do not submit a row for that issuer unless you find an official issuer-hosted annual proxy clearly matching the same filing window.
+
+{= issuer_universe =} issuer/proxy candidates:
+{=% for candidate in sp500_proxy_candidates =%}
+- {= candidate.ticker =} | {= candidate.issuer =} | CIK {= candidate.cik =} | DEF 14A filed {= candidate.def14a_filing_date if candidate.def14a_filing_date else "not found in window" =} | accession {= candidate.accession if candidate.accession else "n/a" =} | {= candidate.primary_document_url if candidate.primary_document_url else candidate.notes =}
+{=% endfor =%}
+
+HBCU institutions in scope:
+{=% for institution in hbcu_institutions =%}
+- **{= institution =}**
+{=% endfor =%}
+
+Requirements:
+- The page must be SEC EDGAR DEF 14A / annual proxy filing text, or an issuer-hosted annual proxy that is clearly the same official filing, with source-visible timing in the filing window.
+- The issuer/ticker must match one of the supplied {= issuer_universe =} issuer/proxy candidates as of {= issuer_universe_as_of =}; the candidate list is a universe boundary, not enough evidence by itself.
+- The page must identify the named person as a director or director nominee of the named issuer in that filing.
+- The director or nominee biography, director card, or immediately adjacent biography section must state an earned education relationship with the claimed HBCU institution, such as a degree, earned diploma, or explicit attendance / enrollment language. Honorary, service, employment, leadership, or corporate-relationship mentions are not earned education.

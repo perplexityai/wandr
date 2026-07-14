@@ -1,0 +1,32 @@
+For {= vendor =}+ organizations that publicly offer AI/MLOps platforms, agentic-orchestration products, AI governance or MLOps tooling, or AI implementation/delivery services, name discrete vendor claims (at least {= vendor_claim =}+ per claim family) in each of the {= claim_family =} claim families below and cover each of the {= evidence_side =} evidence sides for every claim with {= url =}+ URL per side.
+
+Most AI vendors can supply their own product pages, trust pages, and customer stories. The useful work is finding where the same specific claim is or is not corroborated by a non-vendor owner.
+
+Claim families:
+{=% for label, description in claim_families.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+Evidence sides:
+{=% for label, description in evidence_sides.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+The work is factual public-evidence research, not an RFI, shortlist, vendor ranking, procurement recommendation, implementation advice, regulatory/legal advice, pricing analysis, lead scoring, outreach, or contact enrichment.
+
+A valid `claim` is a discrete, checkable factual assertion tied to the vendor and the claim family. It must name the fact being corroborated; it cannot be a broad family umbrella that leaves the reader or judge to choose a narrower fact from the page. Invalid umbrella claims include:
+- "`<vendor>` publicly offers an AI, MLOps, model, data, automation, or agentic platform/service capability."
+- "`<vendor>` publicly presents security, compliance, responsible-AI, AI-governance, or model-risk controls for its AI-related offerings."
+- "`<vendor>` is tied in public evidence to a regulated financial-services customer, banking/insurance deployment, or financial-services AI/ML/automation use case."
+
+Family-specific claim requirements:
+- `ai_mlops_or_agentic_capability`: name a concrete product, service, platform, feature, or delivery capability plus a checkable function, such as deployment, monitoring, orchestration, evaluation, governance workflow, implementation service, or integration.
+- `security_compliance_or_ai_governance`: name a concrete certification, framework, control, trust posture, AI-governance mechanism, model-risk control, registry/listing/status, or similar specific posture.
+- `regulated_finance_customer_or_case`: name a concrete customer, counterparty, case, pilot, deployment, or sufficiently specific anonymized regulated-finance case.
+
+Vague adjectives such as "enterprise-grade", "trusted", "AI-ready", "built for banks", or "compliant by design" do not count unless the claim itself states a checkable fact.
+
+Requirements:
+- The page must clearly identify the vendor named.
+- The page must fit the claim family in scope: concrete AI/MLOps or agentic capability; named security/compliance or AI-governance posture; or concrete regulated-finance customer/case context.
+- The page must state or independently corroborate the same specific claim, not merely mention the vendor and the broad topic.

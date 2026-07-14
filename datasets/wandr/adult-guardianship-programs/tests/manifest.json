@@ -1,0 +1,8 @@
+{
+  "name": "adult-guardianship-programs",
+  "wandr_task": "adult_guardianship_programs",
+  "task_names": [
+    "adult_guardianship_programs",
+    "adult_guardianship_programs.adult_guardianship_legislation"
+  ]
+}

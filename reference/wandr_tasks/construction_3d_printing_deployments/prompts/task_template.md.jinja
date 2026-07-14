@@ -1,0 +1,34 @@
+For at least {= project_deployment =}+ named construction-scale 3D printing projects, deployments, public pilots, built components, commercial or public facilities, infrastructure components, or research demonstrators, supply a project-specific public URL (i.e. at least {= url =}+ URL for each one).
+
+Each submitted item is identified by `project_or_deployment`, `locality`, and `country`. Within the submitted set, include at least {= india_floor =} India-specific records; at least {= india_named_deployment_floor =} of those India records should be named projects, deployments, demonstrators, public pilots, or built components. India is a floor, not the whole task.
+
+Use project-specific public evidence. The cited page must itself prove the submitted project/deployment row; discovery pages or generic technology pages do not replace project-specific evidence.
+
+Status or date basis should be source-stated, using labels such as:
+{=% for status_label in status_labels =%}
+- `{= status_label =}`
+{=% endfor =%}
+
+Alongside the URL, include the source-stated status/date basis and actor roles. Source class, checked date, confidence, missing-state flags, and optional project details are useful review context; they do not replace page evidence. Optional details include:
+{=% for optional_field in optional_source_stated_fields =%}
+- {= optional_field =}
+{=% endfor =%}
+
+When an optional detail is not stated, leave it blank or use a missing-state note such as:
+{=% for missing_state_flag in missing_state_flags =%}
+- `{= missing_state_flag =}`
+{=% endfor =%}
+
+The source should not be any of these as row evidence:
+{=% for rejected_source_shape in rejected_source_shapes =%}
+- {= rejected_source_shape =}
+{=% endfor =%}
+
+This is not a company catalog, product-only printer/system table, patent map, country or global leadership ranking, technology recommendation, machinery purchase guide, material formulation guide, construction engineering advice, investment analysis, commercialization forecast, outreach list, lead-scoring task, market/top list, or cost-estimation exercise.
+
+Requirements:
+- The page must identify the named project/deployment and place it in the claimed locality and country.
+- The page must show that construction-scale 3D printing or additive manufacturing was used, planned, or demonstrated for that named project/deployment.
+- The page must state a project status or date basis; do not infer completion, occupancy, public use, machine model, material, cost, or capability from photos, reputation, or generic vendor relationships.
+- The page must tie at least one real actor to the project/deployment, such as a builder, operator, technology provider, client, authority, university, contractor, machine supplier, or material supplier.
+- Any machine/system, material/mix, material type, cost, build size, capability, print speed, execution time, or technology detail submitted for the row must be explicitly source-stated on the cited page; absent optional details are fine when marked missing or omitted.

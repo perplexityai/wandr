@@ -1,0 +1,14 @@
+For {= award_engagement =}+ public Sitecore Experience Awards winning client/project engagements announced on or before {= cutoff_date =}, provide one source for each of the {= evidence_type =} evidence types below, with {= url =}+ URL per evidence type.
+
+The evidence types are:
+{=% for key, desc in evidence_types.items() =%}
+- `{= key =}`: {= desc =}
+{=% endfor =%}
+
+Reputable public sources can include Sitecore award pages, Sitecore customer stories, partner or client case studies, client or partner news pages, reputable industry press, press-wire copy, or comparable public pages when the page itself satisfies the selected evidence type. Social-only posts, search snippets, directory cards, and shallow portfolio index cards are discovery leads rather than final evidence pages.
+
+Scope and validity bars: the engagement must be a public Sitecore Experience Awards winning client/project engagement. Out-of-scope programs such as Adobe Experience Maker Awards, Acquia Engage Awards, Optimizely awards, Kentico awards, Contentful awards, and similar non-Sitecore awards do not count. The client or project must be public and source-stated; partner-only awards, partner-tier recognition, MVP recognition, generic partner-of-the-year recognition, and awards without a named client/project engagement do not count.
+
+Requirements:
+- `award_confirmation` sources must be award/winner-confirmation sources that explicitly state a Sitecore Experience Awards win, category or award scope, and enough year, partner, and client/project identity to bind the engagement. A client, partner, or Sitecore implementation story that merely mentions an award is not an `award_confirmation` source unless its source role is clearly winner confirmation. Finalist, nomination, shortlist, honorable-mention, or "winner to be announced" pages do not count without a separate source proving winner status.
+- `implementation_case_study` sources must be about the same named client/project implementation and state concrete implementation substance: Sitecore products, migration details, search/content/commerce/personalization work, integrations, headless or composable architecture, project scope, or implementation outcomes/metrics. Winner lists, award announcements, finalist pages, and award-category summaries do not count as implementation evidence unless they contain source-stated implementation substance beyond award/category language, and no technical stack or architecture should be inferred from the award program, category name, or agency specialty.

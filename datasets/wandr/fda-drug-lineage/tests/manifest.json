@@ -1,0 +1,10 @@
+{
+  "name": "fda-drug-lineage",
+  "wandr_task": "fda_drug_lineage",
+  "task_names": [
+    "fda_drug_lineage",
+    "fda_drug_lineage.drug_molecules",
+    "fda_drug_lineage.drug_molecules.molecule_sole_discoverers",
+    "fda_drug_lineage.drug_molecules.molecule_sole_discoverers.scientist_phds"
+  ]
+}

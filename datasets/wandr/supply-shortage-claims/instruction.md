@@ -1,0 +1,47 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `supply_shortage_claims`
+
+For each of the 3 supply domains, identify 50+ public shortage or disruption claim cases dated within 2026-01-01 through 2026-07-04; for each claim case and each of the 2 evidence sides described below, supply a page-evidence source (i.e. 1+ URL).
+
+The aim is a two-sided reading of public shortage claims against measured supply-chain context, without turning the pair into a classification exercise.
+
+The supply domains are:
+- `food`: food, beverage, agricultural commodity, livestock, grocery, and food-input supply cases.
+- `energy`: fuel, power, petroleum, natural gas, electricity, grid, refinery, storage, and energy-route supply cases.
+- `retail_logistics`: consumer-facing retail supply chains and logistics flows, including imports, ports, container routes, parcel or freight capacity, inventory movement, apparel, consumer electronics, household goods, packaging, and other consumer-goods sourcing or distribution cases.
+
+The evidence sides of interest, which we refer to as `evidence_side`, are:
+- `public_claim`: the dated public assertion side from a discrete article, statement, filing, alert, incident note, or reporting surface focused on the specific shortage, disruption, event, good, route, or comparable supply condition.
+- `authority_metric_context`: the high-authority measured-context side for the same affected good, commodity, route, market, inventory condition, logistics flow, or production scope.
+
+`claim_case` ought to name a specific supply-chain case in the submitted domain, not a whole-sector worry, generic supply-risk theme, financial thesis, buying advice, stockpiling advice, policy advocacy, metric label, report section label, source issue/date variant, or conclusion about whether the public claim is true. The public-claim and measured-context sides are separate page-evidence roles for a case: recurring multi-commodity market updates, statistical releases, data dashboards, price indexes, operational logistics newsletters, rate reports, and measured-market reports count on the measured side only when they expose observed or historical readings at the needed granularity, and they are not the public-claim side merely because they narrate or enumerate their own measurements. The same broad measured-report page is not both sides of the same case by pairing its narrative as `public_claim` with its table, status line, or figure as `authority_metric_context`. The measured context may support, qualify, or cut against the public claim. Forecast or outlook pages fit the measured side only when the cited page itself exposes observed or historical readings, not just projections.
+
+Requirements:
+- The page must clearly match the submitted claim case: the affected scope and the submitted geography_or_route where relevant should be visible on the page.
+- The page must carry the date or period appropriate to `evidence_side`: for `public_claim`, a publication, filing, release, or page-level date within 2026-01-01 through 2026-07-04; for `authority_metric_context`, an observed or historical measured reading with its own stated date or period.
+- The page should communicate the source role appropriate to `evidence_side`: for `public_claim`, a discrete dated claim, article, statement, filing, alert, incident note, or reporting surface focused on the specific affected scope and asserted condition; for `authority_metric_context`, high-authority measurement standing visible through agency, statistical release, port-authority, trade-body, exchange, company-filing, official market-report, source-owned operational-data, or comparable measurement anchors. A page whose task-relevant role is a recurring multi-commodity market update, statistical release, data dashboard, price index, operational logistics newsletter, rate report, or measured-market report does not satisfy `public_claim` merely because it comments on its own readings. A public assertion page that only contains incidental figures or quoted statistics does not satisfy `authority_metric_context` unless it also exposes high-authority observed or historical measures at the case's granularity.
+- The page must expose the substance appropriate to `evidence_side`: for `public_claim`, the page's public-facing voice explicitly asserts an occurring or imminent shortage, disruption, tightness, outage, inventory constraint, production constraint, import/throughput disruption, logistics bottleneck, or comparable condition; for `authority_metric_context`, a concrete observed measure tied to the same affected scope at defensible granularity, such as stocks, inventories, production, throughput, storage, detections, import volume, port flow, official shortage-list entries, capacity, wait time, dwell time, freight movement, or comparable operational data.
+
+Write one JSON object per line to `results_supply_shortage_claims.jsonl`:
+{"item": { "supply_domain": "<supply_domain>", "affected_scope": "<affected_scope>", "geography_or_route": "<geography_or_route>", "asserted_condition": "<asserted_condition>", "evidence_side": "<evidence_side>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

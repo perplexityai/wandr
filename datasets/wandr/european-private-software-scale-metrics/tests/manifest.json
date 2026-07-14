@@ -1,0 +1,8 @@
+{
+  "name": "european-private-software-scale-metrics",
+  "wandr_task": "european_private_software_scale_metrics",
+  "task_names": [
+    "european_private_software_scale_metrics",
+    "european_private_software_scale_metrics.public_scale_metrics"
+  ]
+}

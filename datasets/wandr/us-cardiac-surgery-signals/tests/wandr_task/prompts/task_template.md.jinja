@@ -1,0 +1,17 @@
+For {= procedure_segment =}+ US cardiac-surgery procedure segments, supply dated public evidence signals. Procedure segments must be procedure families, procedure approaches, combined-operation categories, or source-scoped broad adult-cardiac-surgery totals. For each segment, cover {= evidence_signal =}+ evidence-signal labels and provide {= url =}+ source URL for each row.
+
+These rows are factual evidence inputs for understanding public market signals, not a market-size model, clinical recommendation, provider recommendation, investment thesis, or product strategy memo.
+
+Evidence-signal labels:
+{=% for signal in evidence_signals =%}
+- `{= signal =}`
+{=% endfor =%}
+
+For each row, report the source type, publication date or data year, metric or claim name, metric value/range when present, geography, procedure or patient population, denominator/scope, methodology note, and any caveat needed to keep the source from being overread. Robotic-specific evidence is valuable when directly supported, but a procedure segment does not need a robotic-specific source to count.
+
+Sources should be public and source-role appropriate: registry/statistical sources, CMS/AHRQ or other public utilization/payment data, peer-reviewed epidemiology/utilization/economics literature, FDA or official device documentation, public company filings or official product claims when labeled as company-authored, and hospital/health-system pages only for local program, local procedure, local volume/experience, or local robotic-availability claims. Proprietary market reports, analyst databases, forecast/TAM pages, investment or valuation commentary, medical advice, provider recommendations, generic robotic pages without cardiac procedure context, and broad cardiovascular product pages without a surgery/procedure link do not count.
+
+Requirements:
+- The page must connect the cited fact, metric, or caveat to the claimed cardiac-surgery procedure segment or to the directly treated disease/patient pool for that segment.
+- The page must support the claimed `evidence_signal` label at the row's scope.
+- The row must preserve the page's source role, date or data period, geography, population/procedure scope, denominator or methodology, metric value when present, and caveat without expanding what the source can support.

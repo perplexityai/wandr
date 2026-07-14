@@ -1,0 +1,1 @@
+"""NYC restaurant openings: per (restaurant_name, address), the restaurant's opening within the target year with cuisine, chef/owner, opening month, and neighborhood, corroborated across multiple URLs."""

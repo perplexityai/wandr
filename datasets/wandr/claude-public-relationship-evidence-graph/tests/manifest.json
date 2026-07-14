@@ -1,0 +1,7 @@
+{
+  "name": "claude-public-relationship-evidence-graph",
+  "wandr_task": "claude_public_relationship_evidence_graph",
+  "task_names": [
+    "claude_public_relationship_evidence_graph"
+  ]
+}

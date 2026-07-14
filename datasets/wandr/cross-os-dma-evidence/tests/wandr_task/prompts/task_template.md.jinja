@@ -1,0 +1,24 @@
+For each of the {= os =} operating systems and each of the {= scope_lens =} DMA scoping lenses, name {= scope_anchor =}+ distinct concrete scope anchors. Under each scope anchor, name {= dma_signal =}+ distinct scoped DMA signals. For every scoped signal, supply each of the {= evidence_role =} public-evidence roles with {= url =}+ public URL per role.
+
+This is a factual public-evidence comparison of DMA semantics. It is not a driver tutorial, exploit guide, performance-tuning guide, or proof that a cross-OS DMA abstraction is correct. Scope labels from the page, such as version, architecture, driver framework, bus, public-header status, or limited-support wording, should stay attached to the signal when they limit the claim.
+
+The operating systems are:
+{=% for os_name in oses =%}
+- `{= os_name =}`
+{=% endfor =%}
+
+The DMA scoping lenses are:
+{=% for scope_lens, description in scope_lens_descriptions.items() =%}
+- `{= scope_lens =}`: {= description =}
+{=% endfor =%}
+
+The public-evidence roles are:
+{=% for role, description in evidence_role_descriptions.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page must communicate source standing appropriate to `evidence_role`: official explanatory DMA documentation for `doc_semantics`, or official public declaration/source/header/sample/doc-source evidence exposing an interface or code-like construct for `public_interface_or_source`. Official narrative documentation can support `doc_semantics`; it supports `public_interface_or_source` only when it visibly exposes declaration-level public interface content. Community posts, third-party driver code, decompilations, blogs, forums, Q&A pages, and unofficial mirrors do not count as primary evidence here.
+- `scope_anchor` must preserve a concrete narrowing token from the page: a named release/API version, architecture, platform, bus, coherency/IOMMU/address-width condition, driver framework, kernel subsystem, source/header path, official sample family, or page-stated limitation/conflict/unsupported scope. Generic anchors such as "DMA API", "driver documentation", "public header", "architecture", "framework", or "limitation" do not count unless they include the concrete page-supported token that narrows the claim.
+- The page must tie its DMA content to the claimed operating system, `scope_lens`, and `scope_anchor`. The same `dma_signal` must preserve that anchor under both evidence roles; a documentation page and a source/interface page cannot be paired if they only share a generic DMA topic.
+- The page must directly support `dma_signal` as a concrete scoped DMA operation, policy, lifecycle rule, interface constraint, cache or coherency responsibility, segment/list behavior, addressability/translation limit, controller/channel setup rule, or documented absence/limited-scope statement. A generic "this OS has DMA docs" or "this page mentions DMA" signal does not count.

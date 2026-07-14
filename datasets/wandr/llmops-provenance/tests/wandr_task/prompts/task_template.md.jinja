@@ -1,0 +1,28 @@
+For {= platform =}+ public LLM/agent observability, evaluation, prompt-management, tracing, or AI-gateway products, cover each of the {= workflow_area =} workflow areas below; for every platform-area pair, cover {= source_surface =}+ distinct source-surface classes, and for each platform-area-surface cell supply {= dated_event =}+ dated capability or source-state event from {= event_start_date =} through {= event_end_date =}, backed by {= url =}+ first-party public source URL.
+
+This is a public provenance ledger for the observe/evaluate/improve loop, not a product ranking, recommendation, benchmark verdict, pricing recommendation, implementation guide, architecture guide, or Langfuse-only canon.
+
+The workflow areas of interest, which we refer to as `workflow_area`, are:
+- `observe`: tracing, spans, observations, sessions, logs, token or cost telemetry, AI-gateway request observability, agent trace / step metadata, monitoring, dashboards, alerts, or comparable runtime visibility.
+- `evaluate`: scores, evals, datasets, experiments, LLM-as-judge, human review, annotation queues, feedback workflows, dataset item curation, online or offline evaluation, or comparable quality-measurement workflows.
+- `improve_operate`: prompt versioning or labels, playgrounds, deployment or experiment workflows, SDK / instrumentation / standards support, self-hosting or deployment state, source/license/source-availability state, rebrands, acquisitions, shutdowns, deprecations, or comparable public operating state.
+
+The first-party source-surface classes, which we refer to as `source_surface`, are:
+- `release_or_changelog`: dated changelog entries, release-note entries, versioned release posts, GitHub releases/tags, or comparable official release streams. Prefer entry-specific or release-specific URLs when they exist; a broad changelog index qualifies only when excerpts localize the exact dated entry.
+- `docs_or_standard`: official docs, API/SDK/instrumentation/standards pages, repository docs/README/LICENSE pages, integration docs, or comparable source-state pages whose visible page or section itself carries the dated event/source-state. Broad undated docs overviews do not qualify.
+- `product_or_lifecycle`: first-party product or release blog posts, acquisition/rebrand/shutdown/deprecation posts, pricing/self-host/deployment/source-availability posts, or comparable lifecycle/source-state pages that directly carry the dated event.
+
+Platforms are open-set. Generic APM / observability vendors count only when the cited product or module explicitly targets LLM, GenAI, or agent observability/evaluation/prompt/gateway work. Generic model providers, vector databases, bare prompt playgrounds, and ordinary observability pages do not count without that LLM/agent-workflow evidence.
+
+The source should preserve the platform's current or canonical name, the source-stated feature / artifact / product term, the event or source-state claim, the chosen `source_surface`, the source's visible date or date bucket, the checked date, and confidence where those are not already obvious from excerpts. Use the source's actual date granularity: exact day, date range, month-only page, release timestamp, bundled release-list date, frozen/tombstone date, or similar.
+
+Accepted first-party sources include official docs, changelog / release notes, first-party product or release blog posts, GitHub releases or tags, repository docs / README / LICENSE when the cited source-state is visible, SDK / API / integration docs, standards or instrumentation docs, pricing / self-host / deployment pages, and first-party acquisition, rebrand, shutdown, or deprecation posts. Classify each row into the most specific `source_surface` above; do not use the same broad changelog or release-index URL as the only proof for both required source-surface cells of a platform-area pair.
+
+Third-party listicles, vendor "alternatives" pages, Reddit/community threads, news articles, and third-party developer blog posts can help find candidates, but they do not prove a platform's positive capability or source-state claim here. Vendor-authored competitive comparisons do not prove a rival's capability. Missing/no-source states do not count unless the cited first-party source itself directly demonstrates a public state such as sunset, removal, deprecation, rebrand, gated availability, or source/deployment status.
+
+Requirements:
+- The page must be a first-party public source for the claimed platform, project, or owning organization.
+- The page must visibly attach the claimed event or source-state to a source date or date bucket from {= event_start_date =} through {= event_end_date =}; after-window events are outside scope.
+- The page must substantiate a distinct shipped capability, release, documented current source-state, rebrand, acquisition, sunset, deprecation, standards/SDK/deployment/source state, or comparable public event for the claimed platform and `workflow_area`.
+- The page must expose source-stated terminology more specific than the normalized workflow area alone: a feature name, release title, version or tag, API / SDK / instrumentation label, source-state wording, product term, or comparable artifact anchor.
+- The page and excerpts must fit the claimed `source_surface`; a broad root changelog, release index, or docs index cannot satisfy a different source-surface class merely because it links to or summarizes material from that class.

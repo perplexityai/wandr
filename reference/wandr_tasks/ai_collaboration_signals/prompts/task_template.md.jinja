@@ -1,0 +1,15 @@
+For each of the {= ai_collaboration_signal =} AI collaboration signals listed below, cover {= company_product =}+ distinct company/product pairs and supply {= url =}+ public URL for each product-signal pair, each on a page that directly documents the submitted product's support for that signal.
+
+Products in scope are collaboration or team-workspace software products, suites, or productized AI layers tied to shared work artifacts or workflows: visual canvases, diagrams, design/prototyping spaces, docs/wikis, meeting workspaces, project/work-management tools, collaborative databases, and comparable team-work systems. Standalone chatbots, model APIs, generic writing tools, search engines, and feature names with no productized surface do not count unless the cited page ties them to a shared team-work product or productized AI layer.
+
+AI collaboration signals:
+{=% for signal, description in ai_collaboration_signals.items() =%}
+- `{= signal =}`: {= description =}
+{=% endfor =%}
+
+Use public official or official-controlled sources: product pages, help/docs pages, release notes, official blogs/newsroom posts, developer docs, official GitHub repositories, trust/security/privacy/admin pages, and official customer stories when they directly document the signal. Unofficial listicles, analyst pages, competitor comparisons, third-party media, and generic AI market summaries do not count for the product-signal record. A broad AI overview can count only when a concrete section on the page supports the submitted signal.
+
+Requirements:
+- The page must clearly identify the submitted product and its company, publisher, or official product-owner context.
+- The page must make an acceptable source role visible for the submitted signal: official product/help/docs/release/developer/trust/admin/GitHub/customer-story evidence rather than an unaffiliated summary or generic AI mention.
+- The page must directly evidence the submitted AI collaboration signal for that product under the signal definition above. The evidence must describe concrete AI behavior, connected-context use, workflow action, or AI-specific enterprise control; product strategy, roadmap speculation, ordinary integrations without AI use, generic "AI-powered" phrasing, and unsupported model-architecture claims are not enough.

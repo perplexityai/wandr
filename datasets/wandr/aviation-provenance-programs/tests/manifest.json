@@ -1,0 +1,8 @@
+{
+  "name": "aviation-provenance-programs",
+  "wandr_task": "aviation_provenance_programs",
+  "task_names": [
+    "aviation_provenance_programs",
+    "aviation_provenance_programs.independent_confirmation"
+  ]
+}

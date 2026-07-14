@@ -1,0 +1,7 @@
+{
+  "name": "watchlist-eod-quotes",
+  "wandr_task": "watchlist_eod_quotes",
+  "task_names": [
+    "watchlist_eod_quotes"
+  ]
+}

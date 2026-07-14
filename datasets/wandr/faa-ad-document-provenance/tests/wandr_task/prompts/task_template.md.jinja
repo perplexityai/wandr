@@ -1,0 +1,20 @@
+For each of the {= document_status =} FAA AD document statuses listed below, supply official-document provenance for {= ad_document =}+ airworthiness directive rulemaking documents published from {= publication_start =} through {= publication_end =}; for each document, cover each of the {= evidence_role =} evidence roles with {= url =}+ document-level source.
+
+This is a regulatory-document provenance task. Keep the submission to source-stated document metadata and source-stated subject or unsafe-condition summary, not compliance advice or operational guidance.
+
+Document statuses:
+- `final_rule`: FAA AD rule/final-rule documents, including corrections, revisions, and emergency final-rule/request-for-comments documents when the official publication status is a rule/final rule.
+- `proposed_rule`: FAA AD proposed-rule or NPRM documents, including proposed-rule corrections or revisions when the official publication status is proposed.
+
+Evidence roles:
+- `publication_identity`: official publication identity for the document.
+- `scope_dates_subject`: product scope, status-appropriate date fields, and source-stated subject or unsafe-condition summary for the document.
+
+Allowed evidence sources are document-level FederalRegister.gov pages, document-specific Federal Register API JSON endpoints, govinfo/GPO PDFs, and official FAA pages or PDFs when the fetched page contains substantive document text. Federal Register list/search API endpoints, search result pages, DRS Angular/search shells, inaccessible DRS deep links, third-party mirrors or summaries, law-firm pages, industry news, vendor/service-bulletin pages, random PDF mirrors, Regulations.gov enhanced-context material, advisory circulars, and compliance-help pages do not count.
+
+For final rules, `ad_identifier` should usually be the FAA AD number. For proposed rules that lack a final AD number, `ad_identifier` may be a docket, project, or proposed-rule identifier paired with the Federal Register document number. Keep final rules, proposed rules, corrections, revisions, and emergency final-rule/request-for-comments documents distinct when the Federal Register document number or status differs.
+
+Requirements:
+- The document-level source must identify the same official FAA AD rulemaking document as the submitted `ad_identifier` and `fr_document_number`.
+- For `publication_identity` records, the source must directly state FAA/DOT agency identity, final/proposed AD rulemaking status, Federal Register document number or citation, publication date in the target period, and the document's docket/project/amendment/AD identifiers when present.
+- For `scope_dates_subject` records, the source must directly state affected product/manufacturer/model or type-certificate-holder scope, the status-appropriate date field, and the source-stated unsafe-condition or subject summary. Final rules usually need the effective date; proposed rules usually need comment-due or proposed-action date context.

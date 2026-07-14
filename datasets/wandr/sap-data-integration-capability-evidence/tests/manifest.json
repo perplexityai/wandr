@@ -1,0 +1,8 @@
+{
+  "name": "sap-data-integration-capability-evidence",
+  "wandr_task": "sap_data_integration_capability_evidence",
+  "task_names": [
+    "sap_data_integration_capability_evidence",
+    "sap_data_integration_capability_evidence.cloud_targets"
+  ]
+}

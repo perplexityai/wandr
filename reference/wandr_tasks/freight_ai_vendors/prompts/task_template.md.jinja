@@ -1,0 +1,38 @@
+For {= vendor =}+ vendors or products that publicly offer AI-enabled or workflow automation software for freight broker, 3PL, freight-forwarder, or logistics-provider operations, supply evidence for each of the {= evidence_type =} evidence types, with {= url =}+ source URL per type. This is public vendor capability provenance, not vendor ranking, procurement recommendation, market-entry advice, competitive whitespace analysis, investment validation, customer targeting, outreach, lead scoring, contact enrichment, or contact discovery.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include canonical vendor or product name, legal or parent/subsidiary context when source-stated, freight customer segment when source-stated, workflow covered, integration or partner context when source-stated, public customer or deployment evidence, funding or acquisition signal, source class, source date or observed date, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later. Do not include contacts, leadership names, emails, phone numbers, customer targeting, lead scores, outreach priority, rankings, buyer recommendations, procurement advice, or investment conclusions.
+
+Concrete freight workflow examples include:
+{=% for workflow in workflow_examples =%}
+- `{= workflow =}`
+{=% endfor =%}
+
+Useful public corroboration source types include:
+{=% for source_type in public_corroboration_source_types =%}
+- `{= source_type =}`
+{=% endfor =%}
+
+Useful source classes include:
+{=% for source_class in source_classes =%}
+- `{= source_class =}`
+{=% endfor =%}
+
+Boundary classes to keep out unless the submitted page itself proves the freight broker, 3PL, freight-forwarder, or logistics-provider workflow automation role:
+{=% for boundary_class in boundary_classes =%}
+- `{= boundary_class =}`
+{=% endfor =%}
+
+Official workflow evidence must come from first-party sources controlled by the submitted vendor or product, such as official product pages, workflow-specific solution pages, documentation, vendor-owned blogs, newsrooms, or official press releases.
+Public corroboration can come from customer/deployment evidence, counterparty partner or integration pages, third-party marketplace or profile pages, app/integration marketplaces, trade press, public launches, acquisitions or partnerships, funding databases/profiles, and comparable public sources.
+Use a distinct URL and source role for each evidence type.
+Vendor-hosted customer stories count as `public_corroboration` only when they name a customer, partner, or deployment and carry concrete workflow detail; broad review categories, funding databases, listicles, and marketplace category pages are secondary discovery or corroboration surfaces, not capability truth.
+
+Requirements:
+- The page must identify the claimed vendor or product, or bridge the submitted product, legal name, acquired brand, subsidiary, parent, or operating brand to the same vendor with enough context to distinguish unrelated same-name entities.
+- The submitted page itself must fulfill the claimed `evidence_type`: `official_workflow_claim` evidence should be a first-party official source controlled by the vendor/product, while `public_corroboration` evidence should be a distinct public source for the same vendor/product showing real-world public evidence.
+- The page must support role-specific freight workflow substance. For `official_workflow_claim`, it must source-state a concrete AI-enabled or workflow-automation capability for freight broker, 3PL, freight-forwarder, or logistics-provider operations. For `public_corroboration`, it must show a concrete vendor-specific public corroboration signal in the freight or logistics ecosystem; vendor-hosted customer stories need named customer, partner, deployment, or workflow detail.

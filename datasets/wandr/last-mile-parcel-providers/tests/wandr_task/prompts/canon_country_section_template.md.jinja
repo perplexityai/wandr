@@ -1,0 +1,9 @@
+Canonical names of countries in scope for this task. The exact canonical set is:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the agent's submitted country name to its canonical form. Accept English names, common local-language names, diacritic variants, punctuation variants, and the aliases listed above.
+
+Submissions naming a country outside the canonical set above emit `{{ CANONICAL_INVALID }}`. Russia, Belarus, the United States, Canada, India, Israel, and other countries not listed above are outside this task even when they have UPU profiles or active parcel markets. When a submitted name is genuinely ambiguous between an in-scope country and an out-of-scope region or territory, emit `{{ CANONICAL_INVALID }}` rather than guessing.

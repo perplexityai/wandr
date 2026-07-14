@@ -1,0 +1,16 @@
+The value is a compound key in this order:
+
+`institution, issuer, ticker, director_name`
+
+Return the same four comma-separated components, with the institution component mapped to the exact canonical HBCU institution below. Keep issuer, ticker, and director name as clear canonical surface forms for the same row: issuer legal suffix variants and director middle-initial / suffix variants can be normalized, and ticker should be uppercased when present. Preserve an empty ticker component when no ticker was submitted.
+
+Canonical HBCU institutions from the U.S. Department of Education / White House Initiative rendered HBCU table:
+{=% for canonical, aliases in hbcu_institutions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Scope notes:
+- The two official `Lincoln University` rows are represented as **Lincoln University (Missouri)** and **Lincoln University (Pennsylvania)**. A bare `Lincoln University` value is not enough unless the submitted institution component itself disambiguates Missouri or Pennsylvania.
+- School-level variants can map to their parent HBCU when the named school is part of that HBCU, such as `Howard University School of Business` to **Howard University**.
+- Historical names map only when they clearly identify the HBCU lineage. `Atlanta University` can map to **Clark Atlanta University**. A bare `Clark College` value is not enough by itself, and `Lewis & Clark College` returns {{ CANONICAL_INVALID }}.
+- If the institution component does not map to one of the canonical HBCUs above, return {{ CANONICAL_INVALID }} for the entire compound value.

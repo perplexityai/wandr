@@ -1,0 +1,19 @@
+For {= offering_event =}+ post-IPO registered offering or prospectus events by companies that used an Up-C IPO structure, cover each of the {= evidence_facet =} evidence facets listed below for each event with {= url =}+ official filing URL per facet.
+
+Each offering event is identified by `company`, `event_date`, and `filing_accession_or_file_id`. Use `event_date` for the SEC/EDGAR filing date of the later registered-event document or event chain, not the IPO date, prospectus cover date, effectiveness date, pricing date, delivery date, or closing date. A final prospectus, prospectus supplement, or 424B page can show a prospectus cover date, pricing date, delivery date, closing date, or effectiveness date that differs from the SEC filing date; that difference is not by itself a mismatch when the filing identifier or SEC filing detail supports the submitted EDGAR filing date.
+
+Evidence facets:
+{=% for facet, description in evidence_facet_descriptions.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Sources must be SEC EDGAR filing documents, SEC filing-detail pages, SEC submissions JSON, or company investor-relations mirrors only when they reproduce exact SEC filing content or exact SEC filing PDFs. Legal primers, law-firm summaries, academic papers, press articles, snippets, and generic filing summaries do not count as evidence for this task.
+
+Registered events can be primary offerings, secondary or selling-stockholder offerings, resale registrations, synthetic-secondary transactions, or other registered prospectus events. A bare shelf registration with no concrete sale, resale, pricing, or distribution terms is not enough.
+
+Keep the claim descriptive and factual. Do not provide legal, tax, investment, or capital-markets advice.
+
+Requirements:
+- The page must clearly identify or bind to the submitted company or issuer.
+- The page must have the document role required for `evidence_facet`: for `ipo_up_c_structure`, an IPO registration statement or IPO prospectus for the company; for `filing_sequence_and_timing`, an official filing-history source or filing document that distinguishes the IPO document date from the later registered-event SEC/EDGAR filing date; for the other facets, the later registered-event filing or final prospectus/prospectus supplement tied to `event_date` and `filing_accession_or_file_id` through accession, file number, SEC filing detail, or filing metadata.
+- The page must support the evidence required for `evidence_facet`: Up-C IPO structure; filing sequence and timing; registered offering document role; offering character and proceeds mechanics; or underwriting/distribution terms.

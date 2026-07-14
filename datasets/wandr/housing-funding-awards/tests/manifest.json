@@ -1,0 +1,8 @@
+{
+  "name": "housing-funding-awards",
+  "wandr_task": "housing_funding_awards",
+  "task_names": [
+    "housing_funding_awards",
+    "housing_funding_awards.solicitation_terms"
+  ]
+}

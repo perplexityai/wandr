@@ -1,0 +1,21 @@
+As of {= as_of_date =}, find {= resolved_legal_entity =}+ resolved legal entities that publicly provide clearing, custody, correspondent clearing, prime brokerage, FCM/futures clearing, or embedded brokerage infrastructure to intermediaries, institutions, fintechs, broker-dealers, RIAs, futures introducing brokers, or comparable third-party clients. For each legal entity, identify {= provider_service_line =}+ source-backed provider service line and {= capability =}+ source-stated capabilities for that service line, with {= url =}+ source URL for each capability.
+
+This is a public provenance atlas, not a provider recommendation. Do not rank firms, recommend a provider, compare costs, infer private onboarding terms, give compliance or securities advice, develop outreach lists, enrich contacts, or score leads.
+
+In-scope regimes:
+{=% for regime in regimes =%}
+- `{= regime =}`
+{=% endfor =%}
+
+In-scope provider roles:
+{=% for role in provider_roles =%}
+- `{= role =}`
+{=% endfor =%}
+
+Requirements:
+- The source must show that the submitted provider service line is infrastructure for third-party or intermediary clients. A consumer brokerage homepage, a retail account feature page, or a self-clearing status claim without third-party infrastructure context is not enough.
+- The submitted `regime` and `provider_role` should be source-backed and should not collapse unlike regimes. Securities broker-dealer carrying/clearing, RIA custody, FCM/futures clearing, prime brokerage, embedded brokerage infrastructure, and SEC-registered clearing agencies are different populations.
+- Each capability must be directly source-stated for the submitted service line. Broad phrases such as "full service," "turnkey platform," "comprehensive solution," "global access," or "clearing solutions" do not by themselves prove specific capabilities such as options, fixed income, futures, margin, stock loan, mutual funds, managed accounts, international market access, API brokerage, or similar product-level support.
+- Capability evidence should come from an official provider page, regulator record, public legal disclosure, public agreement, financial-condition or regulatory-capital filing, issuer filing, or equivalent public source. Trade articles, rankings, and roster pages may help discovery or context, but they do not prove capability rows by themselves.
+- For otherwise valid capability records, record the observed source-stated capability claim, source class, source date or reporting period when visible, checked date, and any caution state such as `entity_unresolved`, `name_conflict`, `regime_ambiguous`, `relationship_source_only`, `provider_source_only`, `no_product_level_source`, `no_public_economics_source`, `redacted`, or `stale_source_suspected`. Missing-product-source, no-public-economics, redaction, and stale-source flags are provenance, economics-visibility, or status annotations only; they do not substitute for direct capability proof from an eligible source.
+- Public financial-condition or regulatory-capital evidence can support financial-condition provenance when source-stated. Do not convert regulatory net capital, financial statements, or balance-sheet facts into client onboarding minimums unless a source explicitly states an onboarding threshold.

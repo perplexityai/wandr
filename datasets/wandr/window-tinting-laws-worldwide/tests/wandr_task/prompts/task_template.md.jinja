@@ -1,0 +1,36 @@
+As of {= as_of =}, vehicle-window tinting compliance remains highly local: the same product can be legal for a rear passenger window, illegal on the driver's window, and exempt only through a medical or inspection process in another country.
+
+For each of the {= country =} countries listed below and each of the {= tinting_axis =} tinting-law axes, name the country's operative rule for that axis (at least {= country_tinting_rule =} per cell). Supply source URLs for each rule ({= url =}+ per rule), each on a page that substantiates the country-specific rule and its current or as-of legal force.
+
+The countries in scope are:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The jurisdictions below are outside this task's country universe:
+
+{=% for canonical, aliases in out_of_scope_subnational_or_territorial.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The tinting-law axes are:
+
+{=% for axis_name, axis_desc in tinting_axes.items() =%}
+- **{= axis_name =}** - {= axis_desc =}
+{=% endfor =%}
+
+Per-axis authoritative-source scope:
+
+{=% for axis_name, source_desc in source_classes_agent.items() =%}
+- **{= axis_name =}** - {= source_desc =}
+{=% endfor =%}
+
+Official traffic-code, transport / motor-vehicle authority, police, inspection, and government medical-driving pages are preferred. Trade-association, installer, distributor, or aftermarket-compliance pages can work only when they identify the governing jurisdiction-specific legal authority or clearly reproduce the operative legal threshold / process. Wikipedia, unsourced tint charts, generic global tables, and product pages that merely advertise a "legal" shade do not work as sole evidence.
+
+Requirements:
+- The page must pin the claimed specific tinting rule for the claimed (country, axis) cell, not only a generic international table, another country's rule, or a subnational rule submitted as national.
+- The page must support the claimed axis's required rule type: front-side VLT, rear-window VLT or no-rule statement, windshield threshold / strip rule, medical exception process, penalty schedule, enforcement mechanism, or aftermarket/OEM distinction. For federal or decentralized countries, an explicit national no-rule / subnational-rules-vary statement can satisfy the relevant axis when the page ties that statement to the claimed country and axis.
+- The page must support the claimed exact operative claim with enough precision for the relevant axis: threshold direction and percent basis, affected window position, vehicle class, process step, sanction, enforcement method, or film/glass/combined-VLT distinction.
+- The page must communicate (possibly via URL among other things) an accepted source class for that axis, with a jurisdiction-specific legal citation or reproduced legal rule when the page is not an official government / legal source.
+- The page must provide current legal force, active official guidance, inspection-current framing, publication / update date, or a clearly dated as-of status sufficient for the claim, with no on-page superseded / archived / proposed / pre-effective flag contradicting the claim.

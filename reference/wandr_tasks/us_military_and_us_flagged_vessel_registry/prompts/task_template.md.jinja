@@ -1,0 +1,17 @@
+For each of the {= registry_panel =} public U.S. vessel-registry panels below, name {= vessel =}+ individual vessels and supply at least {= vessel_fact =} stable public fact with {= url =} URL per vessel.
+
+This is a fleet-registry and maritime-market dataset, not a tracking task. Use stable public facts such as owner / service / operator, public homeport when a panel asks for it, class / type, and commissioning / delivery / built date or year. Do not use live AIS, current-position trackers, deployment tracking, readiness claims, exact present location, crew rosters, or private/security-sensitive details.
+
+Public vessel-registry panels:
+{=% for panel in registry_panels.values() =%}
+- **{= panel.display =}** -- {= panel.description =}
+{=% endfor =%}
+
+Strong sources are stable public vessel, registry, inventory, owner / operator, carrier, or shipyard pages that identify the same named vessel and directly state the requested panel fact. Third-party vessel trackers, current-position pages, generic class pages, search-result pages, and pages that do not directly prove the claimed vessel-level U.S. registry status or fact do not count as source URLs for this task.
+
+Requirements:
+- The page must identify the same individual vessel, not only a class, program, aircraft, shore unit, fleet command, or different sister ship.
+- The page must place the vessel in the claimed public registry panel.
+- The page must speak to the kind of public registry fact requested by that panel.
+- The page must support the specific fact without stronger claims than the source makes.
+- The source must be a stable public registry, fleet, vessel, operator, shipyard, or official page, not live tracking or current-position content.

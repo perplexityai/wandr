@@ -1,0 +1,7 @@
+{
+  "name": "supply-shortage-claims",
+  "wandr_task": "supply_shortage_claims",
+  "task_names": [
+    "supply_shortage_claims"
+  ]
+}

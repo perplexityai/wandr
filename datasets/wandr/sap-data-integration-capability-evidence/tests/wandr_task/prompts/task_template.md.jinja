@@ -1,0 +1,14 @@
+For {= tool =}+ distinct public SAP data-integration tools or services, provide at least {= sap_source_surface =}+ named SAP source-surface rows per tool, with one public evidence URL for each tool/source-surface row.
+
+A row qualifies when the page proves that the named tool/service can extract, replicate, sync, ingest, federate, share, expose, connect to, or otherwise make usable data from the claimed SAP source surface. Use one of these canonical source-surface families: {= sap_source_surface_labels =}.
+
+Use current public evidence. Do not reconstruct a strict historical web state or make SAP Note 3255746, SAP certification, pricing, customer adoption, procurement fit, migration strategy, or vendor ranking the controlling artifact.
+
+Good evidence sources include SAP Help/Architecture/Learning/product docs, vendor product/help/connector docs, hyperscaler or platform docs, concrete marketplace pages, and SAP-hosted partner/product pages that state the limited capability. Do not use generic "best SAP ETL tools" listicles, G2/Gartner/Domo/Integrate.io/SolutionsReview-style pages, Reddit/forum anecdotes, procurement or architecture advice, generic SAP partner badges, or SAP Store listings that only prove listing/status.
+
+Requirements:
+- Tool identity: the page must identify the named tool/service or an accepted same-product alias.
+- SAP source match: the page must identify the claimed SAP source surface, or specific SAP product/interface language that maps cleanly to that source-surface family.
+- Data-access capability: the page must state a source-bound data-access capability for that tool/source relation.
+
+In `answer`, include a concise `capability_summary` and any source-stated `source_date` if visible. Do not fabricate missing dates or exact pricing.

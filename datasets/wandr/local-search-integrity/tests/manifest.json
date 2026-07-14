@@ -1,0 +1,8 @@
+{
+  "name": "local-search-integrity",
+  "wandr_task": "local_search_integrity",
+  "task_names": [
+    "local_search_integrity",
+    "local_search_integrity.platform_context"
+  ]
+}

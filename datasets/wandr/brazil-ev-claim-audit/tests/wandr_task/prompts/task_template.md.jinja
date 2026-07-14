@@ -1,0 +1,23 @@
+For at least {= claim_family =}+ claim families about Brazil fuel prices, Brazil electrified-vehicle context, BYD Dolphin Mini sales / rankings, BYD Dolphin Mini product-economy inputs, or BYD / We "Custa Pouco Rodar Muito" campaign artifacts in the {= target_period =} window, name {= canonical_claim =}+ canonical public factual claims per family; for each canonical claim and each of the {= evidence_role =} evidence roles described below, supply {= url =}+ source URL.
+
+This is a factual source-verification audit. Public claims are the starting point: repeated articles using the same agency, company, or brand language should be grouped under one canonical claim and treated as propagators, not as independent corroboration. Routine official data tables, price bulletins, model catalogs, rankings, and source hubs are normally verification or definition-context sources, not factories for hundreds of standalone public claims. They can count as `public_claim` only when the submitted canonical claim is genuinely the page's own public assertion, release, headline, methodology statement, campaign artifact, or explicitly highlighted data point being audited, not an ordinary row or cell harvested from a bulk table.
+
+Claim families in scope:
+{=% for family, description in claim_families.items() =%}
+- `{= family =}`: {= description =}
+{=% endfor =%}
+
+Evidence roles:
+{=% for role, description in evidence_roles.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Strong verification sources often include official government or industry data, company-owned pages for company/product claims, dated technical PDFs, campaign trade press, general press, agency or brand-owned surfaces, and fragile public surfaces when their checked date and limitations are clear. Press can prove that a public claim was made or propagated; it should not be treated as independent primary evidence for a numeric fact when it is only repeating company or agency language.
+
+Definitions matter: preserve distinctions such as gasoline C retail vs gasoline A wholesale, retail vs total emplacamentos, BEV vs broader electrified vehicles, PBEV or other autonomy bases, national vs city/state geography, electricity tariff class/date, dynamic offer pages, and indexed rather than raw search-volume data.
+
+Requirements:
+- The page must anchor the submitted canonical claim for the submitted `evidence_role`: `public_claim` pages publicly state or propagate the claim as a claim surface, not merely expose a reusable table row or catalog cell; `verification_source` pages check, qualify, contradict, or status-label the same underlying factual claim rather than merely mention the topic.
+- The page must fit the submitted evidence role and support a defensible source-strength judgment, including whether it is official data, a company or agency claim, trade press, general press, social or dynamic evidence, repeated copy, estimate-only evidence, a no-primary-source finding, a conflict, or a stronger primary verification source. If the same URL or same source family is used across both evidence roles for a canonical claim, the `verification_source` role must add a meaningfully distinct check, qualification, contradiction, explicit status label, source-lineage label, or definition/methodology limitation; it must not simply mirror the public-claim basis.
+- The page must localize the claim with the relevant value, unit, date or window, geography or scope, and definition or methodology when those are available; when they are absent, dynamic, stale, or methodologically unclear, the source must support that limitation rather than silently converting it into an exact fact.
+- The submission must stay within factual audit evidence: no campaign-causality conclusion, ROI / AVE endorsement, investment advice, vehicle-buying advice, policy advice, creative-strategy recommendation, or unsupported campaign-effect claim.

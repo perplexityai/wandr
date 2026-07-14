@@ -1,0 +1,17 @@
+For {= heat_offtake_relationship =}+ public heat-offtake relationships, each identified by a compute/data-center/edge-compute/crypto-mining operator, a specific project or installation, and a named heat recipient or offtaker, supply each of the {= evidence_side =} evidence sides with a source (i.e. {= url =}+ URL per side).
+
+The relationship, not the company, is the unit of work: the project or installation should be specific enough to distinguish separate sites or deployments involving the same operator and heat recipient.
+
+Evidence sides:
+{=% for side, description in evidence_side_descriptions.items() =%}
+- `{= side =}`: {= description =}.
+{=% endfor =%}
+
+Operator, project, and recipient names are open-set. Use public evidence only. Each source can report source-stated location, status/date basis, deployment model, thermal metric, service metric, compute capacity, partner identity, or funding context when the page itself states it; leave these attributes missing rather than normalizing units, inferring capacity, or converting homes served / MWh / GWh / MW / temperature / percent-demand claims. Do not provide rankings, maturity scores, investment or procurement recommendations, feasibility conclusions, engineering advice, climate-impact estimates, lead scoring, outreach, or contact enrichment.
+
+Trade press, academic reviews, topic hubs, market roundups, listicles, and similar third-party pages can be useful discovery context, but they do not count for either evidence side unless the cited page itself is genuinely controlled by the source owner required for that side. A URL published by one side of a relationship does not count for the other side merely because it quotes or names that other party.
+
+Requirements:
+- The page must communicate a source owner or source role appropriate to the claimed evidence side.
+- The page must identify the submitted operator/project/site and named heat recipient, offtaker, host, utility, network, municipality, or public heat user closely enough to bind the relationship.
+- The page must state or clearly acknowledge useful delivery, sale, recovery, or reuse of waste/excess/server/compute/data-center/crypto-mining heat by that named recipient or network.

@@ -1,0 +1,26 @@
+For {= operator =}+ North American food, grocery, foodservice, convenience, natural/specialty, redistribution, or cold-chain distribution operators, cover {= operating_axis =}+ transportation operating-model axes per operator by supplying at least {= url =}+ public URL under each selected axis. KeHE is the seed anchor and should appear somewhere, but the table should move well beyond KeHE and the obvious national head group.
+
+The operating-model axes are:
+{=% for axis, description in operating_axis_descriptions.items() =%}
+- `{= axis =}`: {= description =}.
+{=% endfor =%}
+
+The obvious national head group is useful as a starting point, not the whole universe:
+{=% for operator_name in obvious_head_group =%}
+- {= operator_name =}
+{=% endfor =%}
+
+For each source, report the operator / parent or legal-entity relationship where relevant, distributor archetype, North American geography, operating fact or value, source class, source date or as-of date when visible, checked date, count definition or caveat, and confidence. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful public source classes include:
+{=% for source_class in source_classes =%}
+- {= source_class =}
+{=% endfor =%}
+
+These source classes are leads, not a closed menu. Direct official, regulatory, filing, or clearly attributed source pages are preferred for identity, network, fleet, and authority claims; vendor, trade, local-government, careers, association, routing, and partner pages are valid when they concretely name the operator and operating-model fact. Lead-generation, procurement advice, generic logistics explainers, rankings without operator-specific support, login-only portals, and gated documents do not count by themselves.
+
+Requirements:
+- The page must identify the named operator or a clearly connected parent, segment, legal carrier entity, facility, or logistics arm and tie it to North American food, grocery, foodservice, convenience, natural/specialty, redistribution, or cold-chain distribution.
+- The page must fit the submitted `operating_axis`; a source useful for one axis should not be stretched to another axis unless the page actually carries that operating evidence.
+- The page must state a concrete public operating-model fact, not merely generic "logistics", "supply chain", service-marketing, or company-about copy.
+- The record must preserve the source context: fleet and facility counts should keep their stated definition and date; vendor and trade claims should remain attributed; gated-guide pages should not be used for hidden details; missing public definition or date context should be labeled rather than invented.

@@ -1,0 +1,9 @@
+{
+  "name": "israeli-us-presence",
+  "wandr_task": "israeli_us_presence",
+  "task_names": [
+    "israeli_us_presence",
+    "israeli_us_presence.israeli_origin",
+    "israeli_us_presence.venture_backing"
+  ]
+}

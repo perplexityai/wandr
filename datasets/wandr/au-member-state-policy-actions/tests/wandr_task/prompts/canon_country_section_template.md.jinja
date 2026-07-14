@@ -1,0 +1,15 @@
+Canonical names of African Union member states in scope. The exact canonical set is the AU member states below with UPR review records:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the agent's submitted country name to its canonical form. Accept English / French / Portuguese / Arabic / native-language name variants pointing to the same state (e.g., `Côte d'Ivoire` ↔ `Cote d'Ivoire` ↔ `Ivory Coast`; `Cabo Verde` ↔ `Cape Verde`; `Eswatini` ↔ `Swaziland` for the renamed state; `Democratic Republic of the Congo` ↔ `DRC` ↔ `DR Congo` ↔ `Congo-Kinshasa` ↔ `RDC`; `Congo (Brazzaville)` ↔ `Republic of the Congo` ↔ `Congo-Brazzaville` distinct from DRC; `São Tomé and Príncipe` with or without diacritics). Accept punctuation, diacritic, transliteration, and minor spelling / spacing variants.
+
+The AU member state below is outside this task's country universe because it does not have UPR review records:
+
+{=% for canonical, aliases in upr_ineligible_au_members.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Submissions naming a state outside the canonical set above — including the UPR-ineligible AU member state listed above, Somaliland as a separate entity from Somalia, non-African states, and fabricated names — emit `{{ CANONICAL_INVALID }}`. When the agent's name is genuinely ambiguous between two canonical entries (e.g., `Congo` without a Brazzaville-or-Kinshasa qualifier), emit `{{ CANONICAL_INVALID }}` rather than guessing.

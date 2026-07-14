@@ -1,0 +1,1 @@
+"""Hong Kong international schools — per school, supply a URL substantiating school identity, explicit international-school class + stage, curriculum, year of establishment, district, sponsor body / operation mode, and a distinctive narrative fact."""

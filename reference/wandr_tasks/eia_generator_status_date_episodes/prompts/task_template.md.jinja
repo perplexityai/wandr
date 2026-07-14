@@ -1,0 +1,32 @@
+For all {= episode_family =} lifecycle episode families, use {= independent_source_family =}+ independent public source-family buckets per episode family. Under each source-family bucket, supply {= status_episode =}+ U.S. generator or unit status-date episodes tied to EIA generator identity, and for each episode supply each of the {= evidence_side =} evidence sides with {= url =}+ URL per side.
+
+A status-date episode is a source-grounded lifecycle claim about a specific generator/unit, or a clearly bounded plant-level episode when public evidence does not separate generator IDs. The episode identity should preserve EIA plant code, generator ID or documented generator-ID ambiguity, and a short episode name. This is a descriptive provenance atlas, not a current inventory table or a capacity forecast.
+
+The episode families are:
+{=% for family, description in episode_families.items() =%}
+- `{= family =}`: {= description =}.
+{=% endfor =%}
+
+The independent source-family bucket records what kind of public non-EIA source is paired with the episode. The paired `eia_baseline` row repeats this bucket only to keep the two sides in the same hierarchy branch; the EIA row is still judged as EIA evidence, not as an independent source.
+{=% for family, description in independent_source_families.items() =%}
+- `{= family =}`: {= description =}.
+{=% endfor =%}
+
+The evidence sides are:
+{=% for side, description in evidence_sides.items() =%}
+- `{= side =}`: {= description =}.
+{=% endfor =%}
+
+Comparison notes are useful atlas metadata, but they are not a substitute for the side-specific source evidence. When you include a comparison note, use one of these labels:
+{=% for verdict, description in verdict_labels.items() =%}
+- `{= verdict =}`: {= description =}.
+{=% endfor =%}
+
+The family/source buckets are binding, not a preference list. The scored unit below `independent_source_family` is source-family-bucketed status episode evidence: within the same `episode_family` + `independent_source_family` bucket, the required `status_episode` records must be distinct lifecycle status/date episodes. The same underlying episode may appear in another independent source-family bucket only when that branch is backed by a truthful independent source from that other bucket and its paired EIA row. A single catalog, workbook, queue, docket index, or recurring source family can fill only the source-family bucket it actually belongs to; do not relabel one NRC/FERC/ISO/company/trade catalog as several source families. Within a given episode family, the required independent source-family buckets should come from meaningfully different publisher families rather than one repeated catalog source.
+
+Requirements:
+- The submitted URL/source should communicate the evidence-side role. For `eia_baseline`, cite a direct official EIA-860M monthly workbook URL, EIA-860 annual or early-release ZIP/workbook URL, or an official EIA field-semantics document needed to interpret the cited status/date field; do not use only a generic EIA landing page when the claim depends on a hidden workbook row. For `independent_signal`, it should be a public non-EIA-derived source such as DOE/FERC records, state PUC filings, ISO/RTO materials, operator/company disclosures, SEC filings, or substantive trade press; EIA API-only current inventory, PUDL/crosswalk-only entries, EPA derivative maps, and EIA Today in Energy discovery articles do not by themselves count as independent signals.
+- The source-supported status/date claim must fit the submitted `episode_family`. For `independent_signal`, the source must also belong to the submitted `independent_source_family`; for `eia_baseline`, the submitted `independent_source_family` is pairing metadata for the episode's independent side.
+- The source evidence must tie the status/date claim to the claimed EIA identity: plant code and generator ID when the source supplies them, or a source-stated plant/unit-group event that covers the submitted EIA generator set. For `eia_baseline`, the structured official row-citation fields can supply this identity tie. When the source is coarser than generator level and does not cleanly identify the submitted generator IDs, the episode must honestly preserve that generator-ID boundary instead of over-claiming an exact unit match.
+- The source evidence must support a lifecycle status/date claim for the episode, such as operating start, operating/standby status on a stated EIA vintage, planned in-service date, planned retirement date, retired status, cancellation/postponement, delayed retirement, or comparable source-stated status/date shift.
+- The source and submitted evidence must carry enough provenance for the claimed side. EIA-side evidence should preserve release month or annual vintage, data month or annual year, official direct workbook/ZIP URL, workbook or ZIP file name, tab or internal file, row number or row-key identifier, plant-code field/value, generator-ID field/value, status/date field names, status/date field values, and a compact row excerpt or value bundle. If the official EIA URL is a workbook or ZIP rather than a rendered web page, put those row-citation details in structured `answer` fields such as `eia_official_url`, `eia_workbook_or_zip_file`, `eia_tab_or_internal_file`, `eia_row_identifier`, `eia_plant_code_field`, `eia_generator_id_field`, `eia_status_field`, `eia_date_field`, and `eia_row_excerpt`; those fields are the judgeable official row-citation convention for workbook/ZIP records. An EIA landing page that only links to a workbook is not enough unless the submitted URL or structured citation names the exact direct official workbook/ZIP and row-level fields. Independent-side evidence should preserve source date, source family, source-stated status/date language, and how it relates to the EIA generator/unit identity.

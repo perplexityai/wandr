@@ -1,0 +1,7 @@
+{
+  "name": "robot-offering-deployments",
+  "wandr_task": "robot_offering_deployments",
+  "task_names": [
+    "robot_offering_deployments"
+  ]
+}

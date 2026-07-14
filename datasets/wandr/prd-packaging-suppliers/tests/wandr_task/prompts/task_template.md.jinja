@@ -1,0 +1,26 @@
+Within each of the {= material_family =} packaging material families listed below, supply supplier-source evidence for {= supplier =}+ Pearl River Delta packaging-product/material suppliers per family and each of the {= source_role =} source roles, with at least {= url =} supplier-specific URL for each supplier/source-role combination.
+
+This is a public provenance task anchored to {= as_of_date =}: the useful work is supplier identity, PRD location, product family, capability, and source-class evidence from public pages, not buying advice.
+
+Target region: {= target_region =}.
+
+Material families:
+{=% for material_family, description in material_family_descriptions.items() =%}
+- `{= material_family =}`: {= description =}.
+{=% endfor =%}
+
+Source roles:
+{=% for source_role, description in source_roles.items() =%}
+- `{= source_role =}`: {= description =}.
+{=% endfor =%}
+
+For each supplier/source-role combination, make clear the source-stated supplier name, page-local source-class evidence, PRD location, product/category evidence, and manufacturing or capability evidence. Source-class evidence can come from the URL, title, branding, publisher context, or page text. Source-stated certification, export/market, source-date, missing-source, or name-conflict notes are useful when present, but do not infer them when the page does not state them.
+
+Do not extract contact people, email addresses, phone numbers, prices, MOQ, quote/RFQ mechanics, availability guarantees, rankings, recommendations, lead scores, or procurement advice.
+
+Requirements:
+- The page must be supplier-specific and match the submitted `source_role`: `supplier_published_surface` must visibly communicate that the supplier publishes or officially controls the surface, while `third_party_authority_surface` must visibly communicate a third-party publisher, event organizer, registry, certifier, testing/standards body, or independent industry-directory authority rather than a supplier-operated storefront/profile, marketplace product listing, search/category page, ranking, buying guide, contact-only page, or weakly identified product page.
+- The page must identify the submitted supplier, or a clear English/Chinese/legal/trade-name alias of that same supplier.
+- The page must state a Guangdong or Pearl River Delta location, address, factory, office, or company place for the supplier.
+- The page must state packaging products or materials matching the submitted `material_family`; machinery-only vendors and unrelated products do not count.
+- The page must state supplier capability or manufacturing/product evidence, such as manufacturer/factory identity, production lines, product catalog depth, custom manufacturing, R&D, quality/certification claims, or comparable capability detail.

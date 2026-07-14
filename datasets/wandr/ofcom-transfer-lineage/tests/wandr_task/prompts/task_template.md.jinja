@@ -1,0 +1,20 @@
+For {= licence_record =}+ current/as-of Ofcom Wireless Telegraphy Register licence records, cover both of the {= source_family =} source families below for each record and supply {= url =}+ official public URL under each family.
+
+Treat one licence record as the combination of an exact Ofcom licence number, the public licensee or source-stated holder name, and the licence product, class, or sector. The task is a public source table for Wireless Telegraphy Register provenance, not spectrum trading advice, RF engineering, compliance/legal advice, contact enrichment, licensee ranking, alerts, or deployment inference.
+
+Source families:
+- `current_wtr_row`: an official current Ofcom Wireless Telegraphy Register or Spectrum Information System source that row-localizes the exact keyed licence number and states the current/as-of WTR provenance.
+- `record_specific_official_context`: a separate official Ofcom licence PDF, licence document, award/variation/transfer notice, shared-access notice, licence-terms publication, or comparable Ofcom source that is specific to the individual licence record. It should identify the exact licence number; if the document omits the licence number, it must be a licence-record-specific publication or notice that uniquely identifies the same licensee or holder together with the same product, sector, service, spectrum band, or licence context.
+
+For each licence record, the `record_specific_official_context` URL must be distinct from the `current_wtr_row` URL. The record-specific context cannot be satisfied by repeating the WTR CSV/register URL, the TNR CSV/register URL, a generic Ofcom spectrum landing page, a broad frequency/band assignment table, a broad spectrum-assignment CSV/data table, or any other source whose only tie to the record is a table row in a broad band/service dataset. Use a licence-specific document, notice, or publication instead.
+
+Use official Ofcom sources only. WTR/SIS rows, Ofcom licence PDFs, Ofcom spectrum-trading or transfer notices, shared-access data or notices, award/variation publications, and product-specific licence context can count when they carry record-specific evidence. Do not use third-party WTR lookups, stale mirrors, data.gov.uk archives, geocoders, enriched contact/licence directories, broker pages, dashboards, or social pages as authoritative evidence.
+
+The target record content is official licence provenance only. Contact-person names, phone numbers, email addresses, postal/contact addresses, inferred site coordinates, inferred postcodes/cities, RF calculations, coverage predictions, interference conclusions, and trading/legal recommendations are not target facts. Public licensee and holder organization names are allowed.
+
+Requirements:
+- The page must satisfy the submitted source-family role: current-WTR row evidence for `current_wtr_row`, or a record-specific official context source for `record_specific_official_context`.
+- The page must identify the exact keyed licence number and tie it to the submitted licensee or holder for `current_wtr_row`; for `record_specific_official_context`, it must either identify the exact keyed licence number or be a licence-record-specific document/notice/publication that uniquely ties the same licensee or holder to the same product, sector, service, spectrum band, or licence context.
+- The page must state or clearly anchor the product, class, sector, licence type, spectrum band, service, or comparable licence scope for the record.
+- Current-WTR rows must state current status, licensee/holder, publishability/tradability, frequency, location/geographic state, or another source-stated current WTR field. Record-specific context rows must state licence issue, award, variation, transfer, shared-access, licence terms, licence-specific publication detail, or another source-stated official context fact for the same licence record.
+- The page must preserve source currency using source-stated issue date, publication date, update date, file vintage, or document/version date when visible.

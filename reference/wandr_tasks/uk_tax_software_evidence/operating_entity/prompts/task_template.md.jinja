@@ -1,0 +1,12 @@
+For {= software_product =}+ UK tax or accounting software products, resolve one operating legal entity per product (at least {= product_entity =} product/entity pair per product) and cover each of the {= entity_source_type =} legal-entity source types below by supplying a public source ({= url =}+ URL under each source type).
+
+Legal-entity source types:
+{=% for source_type, description in entity_source_types.items() =%}
+- `{= source_type =}`: {= description =}
+{=% endfor =%}
+
+Companies House name search alone is not enough for ambiguous product brands. The vendor-side source should tie the product, trading name, site, or company number to the legal entity; the Companies House source should then confirm that legal entity.
+
+Requirements:
+- The page should fit the source role required by `entity_source_type`: vendor-controlled legal disclosure for `vendor_legal_disclosure`, or an actual Companies House company record for `companies_house_record`.
+- The page must provide source-type-specific entity evidence. For `vendor_legal_disclosure`, it should connect the product, site, trading style, or company number to the claimed legal entity. For `companies_house_record`, it should confirm the claimed legal entity, company number, status, registered name, or incorporation details.

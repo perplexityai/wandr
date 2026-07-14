@@ -1,0 +1,8 @@
+{
+  "name": "indie-bookstore-imprints",
+  "wandr_task": "indie_bookstore_imprints",
+  "task_names": [
+    "indie_bookstore_imprints",
+    "indie_bookstore_imprints.imprint_titles"
+  ]
+}

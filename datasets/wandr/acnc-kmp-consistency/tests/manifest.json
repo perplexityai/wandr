@@ -1,0 +1,8 @@
+{
+  "name": "acnc-kmp-consistency",
+  "wandr_task": "acnc_kmp_consistency",
+  "task_names": [
+    "acnc_kmp_consistency",
+    "acnc_kmp_consistency.financial_report_kmp_note"
+  ]
+}

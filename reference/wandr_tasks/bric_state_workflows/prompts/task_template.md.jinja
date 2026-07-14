@@ -1,0 +1,25 @@
+For {= jurisdiction =}+ U.S. state, territory, or DC jurisdictions with official public guidance for the FY 2024/2025 FEMA Building Resilient Infrastructure and Communities (BRIC) funding round, cover each of the {= marker_kind =} marker kinds listed below. For every jurisdiction and marker kind, name one concrete state-specific `workflow_marker` and supply {= url =}+ official jurisdiction URLs that each independently support that same marker.
+
+This task is about the state and territory implementation layer below FEMA: local letters of interest, notices of intent, preapplications, state FEMA GO submission dates, state-to-FEMA submission timing, state review or ranking steps, local portal steps, technical-issue notice timing presented in a local application timeline, FY 2024 pending-subapplication migration/revision/withdrawal instructions, and local funding-methodology or eligibility/process rules.
+
+The marker kinds, reported exactly as `marker_kind`, are:
+{=% for marker_kind, description in marker_kind_descriptions.items() =%}
+- `{= marker_kind =}`: {= description =}.
+{=% endfor =%}
+
+Keep the key roles distinct: `jurisdiction` is the state, territory, or DC name; `marker_kind` is one of the category labels above; `workflow_marker` is the concrete marker text; and each supporting source remains the row URL with excerpts. Do not rename the marker text as `marker_label`, `label`, or `title`.
+
+The `workflow_marker` wording should be concrete and should fit the submitted `marker_kind`. Date-bearing markers should make clear what kind of date is being named. A bare federal close date, a state page that only repeats the federal close date, or a date label with no local workflow context is not enough. Non-date markers should make clear what local process, transition, funding, eligibility, applicant-scope, or procurement rule is being named.
+
+The two URLs under the same `workflow_marker` are corroboration, not split evidence: each URL must by itself support the jurisdiction, FY 2024/2025 BRIC cycle, marker kind, marker detail, and local workflow function. Use distinct official pages or documents rather than duplicate anchors, print views, mirrors, or a generic homepage paired with a detail source. Across a jurisdiction, avoid letting one BRIC homepage, timeline table, NOFO, or webinar deck carry all three marker kinds unless separate cited pages or self-contained document sections genuinely provide independent marker evidence.
+
+Official state, territory, or DC emergency-management, homeland-security, grant-office, governor, administrative-register, webinar deck, state NOFO, fact sheet, funding announcement, and comparable public-agency sources can count. Federal FEMA, Simpler.Grants.gov, Grants.gov, federal NOFO, and generic FEMA GO pages can orient the cycle, but they do not satisfy a state-specific marker by themselves. Private summaries, consultant pages, grant-writing portals, social posts, municipal mirrors, pages that only repeat the federal July 23, 2026 close date, generic application advice, and portal login/status pages do not count.
+
+The cited page or section should naturally fit the submitted marker kind. Intake rows need applicant-facing intake, NOI/LOI, preapplication, invited-materials, or portal-entry evidence. State-review rows need review, ranking, revision, selection, state FEMA GO handling, or state-to-FEMA submission evidence. Rules-or-transition rows need a real BRIC process rule, funding method, eligibility/applicant/procurement condition, technical-issue notice rule, or FY 2024 pending-subapplication transition instruction, not just another date from a timeline.
+
+Requirements:
+- The page must place the cited guidance in the FY 2024/2025 FEMA BRIC round. BRIC/FMA or HMA blended pages count only when the submitted marker is clearly BRIC-applicable.
+- The page must support the submitted `marker_kind` category for the named marker.
+- The page must support the specific deadline, portal/review step, transition instruction, funding methodology, or eligibility/process rule named in `workflow_marker`.
+- The page must give enough local process context to explain how the marker functions in the jurisdiction's BRIC process, such as the responsible state office, applicant class, workflow stage, review/submission path, funding method, eligibility condition, or transition handling.
+- The page must make the marker state-specific rather than only restating the federal close date or generic FEMA GO guidance.

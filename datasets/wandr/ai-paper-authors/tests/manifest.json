@@ -1,0 +1,8 @@
+{
+  "name": "ai-paper-authors",
+  "wandr_task": "ai_paper_authors",
+  "task_names": [
+    "ai_paper_authors",
+    "ai_paper_authors.latest_papers"
+  ]
+}

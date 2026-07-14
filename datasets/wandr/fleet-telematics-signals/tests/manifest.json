@@ -1,0 +1,7 @@
+{
+  "name": "fleet-telematics-signals",
+  "wandr_task": "fleet_telematics_signals",
+  "task_names": [
+    "fleet_telematics_signals"
+  ]
+}

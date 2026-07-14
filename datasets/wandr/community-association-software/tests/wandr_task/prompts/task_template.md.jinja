@@ -1,0 +1,17 @@
+For {= vendor_product =}+ commercial software products used for HOA, condo, COA, or community-association management, name the vendor and product and supply public evidence for {= evidence_facet =}+ closed evidence facets per vendor/product; the five labels listed below are all required. Supply {= url =}+ URL for each submitted facet.
+
+The work is about public provenance, not sales advice. Pricing absence, quote-only routing, and secondary-directory restatements are useful states when labeled as such; they are not invitations to estimate hidden fees or rank products.
+
+Evidence facets:
+{=% for facet, description in evidence_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+Property-management-first products count when the submitted page ties the product to association-specific use. Generic association or membership tools count only when the page ties them to HOA, condo, COA, community-association, resident/owner, board, LCAM, or association-management workflows.
+
+For each row, state a concise finding, the source role, the date you checked the source, and either the visible source date or `source_date_not_shown`. For pricing rows, state the pricing publication state. Treat exact prices and review counts as observed on the checked date.
+
+Requirements:
+- The page must identify the named vendor/product and tie it to community-association software use or an association-specific product module.
+- The page must fit the source role for `evidence_facet`: official vendor/order/terms surfaces for official pricing truth; official product/help/docs/workflow surfaces for capability mechanisms; official public help-center, support, training, implementation, release-note, or product-documentation pages for workflow documentation; official market or company surfaces for target segment; and product-specific review profiles, review pages, app-store listings, or equivalent product-specific review surfaces for review metadata. Broad category, list, search, best-of, or comparison directory pages do not satisfy `review_footprint` even when a product card on the page shows rating or review-count text. Secondary pricing pages can support only secondary-only or conflict state. Product, pricing, market, and directory pages do not satisfy `workflow_documentation` unless they are also a genuine public documentation/training/support artifact.
+- The page must expose a concrete facet finding. Pricing rows must preserve official price, quote-only, official no-public-price, or secondary-only/conflicting state; capability rows need mechanism-level workflow detail such as who acts, what is submitted, routed, tracked, paid, notified, approved, integrated, or recorded; workflow-documentation rows need operational setup, usage, training, troubleshooting, release, or administrator/user instruction detail from a public official documentation surface; target rows need source-stated segment language; review rows may use metadata only and need visible product-specific rating/review-count/source-date or review-window metadata. Source-stated company or traction facts may appear as extra answer detail when relevant, but they are not an `evidence_facet` and cannot replace any required facet.

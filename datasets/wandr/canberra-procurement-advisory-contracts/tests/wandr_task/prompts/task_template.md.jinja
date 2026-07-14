@@ -1,0 +1,14 @@
+For each of the {= service_line =} service lines below, cover {= supplier =}+ awarded suppliers and at least {= contract_award =}+ public Australian Commonwealth contract notices per supplier, all published or released in {= target_period =}; supply an official contract-data URL for each notice ({= url =}+ URL per supplier-notice pair). The supplier must be the awarded supplier, not the procuring entity or an agency contact/team, and the source must fetch to readable official contract-data text: a resolving rendered AusTender notice page, an official AusTender contract-notice export file, or comparable official Australian Government contract notice publication whose fetched text exposes the notice fields. Rendered AusTender notice URLs that use the notice UUID, including `Cn/Show/<uuid>` or `Cn/Show/?Id=<uuid>` forms, are in scope when they fetch to the notice text; a `Cn/Show/CN...` path, search shell, error page, or other URL that does not fetch to the notice fields is not evidence. Official JSON API response URLs are not evidence URLs for this task.
+
+The service lines are:
+- `procurement_advisory`: procurement advisory, procurement support, procurement function review, strategic procurement advice, strategic sourcing, or close official wording.
+- `probity_advisory_or_audit`: probity advisor, probity advisory, probity assurance, probity audit, probity advice, or close official wording.
+- `contract_vendor_or_commercial_management`: contract management, vendor management, tender management, commercial management, contract/commercial negotiation, or close official wording tied to supplier contracts or commercial outcomes.
+
+Report contract values only as public reported contract values or maximum values over the contract life. They are not supplier revenue, annual expenditure, market share, or recommendation evidence.
+
+Requirements:
+- The official source must identify the awarded supplier and include its ABN when the source provides one.
+- The official source must identify the claimed contract notice ID and show the procuring entity, contract description or title, publication/release date or contract period, and reported contract value.
+- The official contract text must support the selected service line.
+- Any value claim must be framed as a public reported contract value, not as supplier revenue, annual expenditure, or market evidence.

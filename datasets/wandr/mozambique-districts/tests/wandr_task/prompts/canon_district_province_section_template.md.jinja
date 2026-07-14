@@ -1,0 +1,9 @@
+The input is a Mozambique district-list entry in "district,province" format.
+Match it to the canonical list below. Return the exact canonical form as "district,province".
+
+Diacritics, Portuguese spelling variants, and well-known transliterations of district names match the canonical form when they refer to the same canonical entry. Match by district + province pair, with both fields tolerant to such variation.
+
+The canonical set is the Wikipedia-derived "Districts of Mozambique" authoritative list. Entries that appear below are in scope, including cidade / city names the list contains (e.g., Maputo under Maputo City, Xai-Xai under Gaza, Nampula under Nampula); cidades or other administrative names absent from the list are out of scope and return {{ CANONICAL_INVALID }}. Note "Maputo City" and "Maputo Province" are distinct provincial-level units in the artifact; same-stem province labels are not interchangeable.
+
+Canonical entries (by province-level unit):
+{= canonical_list =}

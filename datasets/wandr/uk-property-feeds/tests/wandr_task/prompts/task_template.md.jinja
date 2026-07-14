@@ -1,0 +1,33 @@
+For {= source_product_or_provider =}+ distinct public source products, providers, portal feed surfaces, feed programs, or source domains, supply UK-relevant property listing feed-in documentation and interoperability evidence. Under each source product/provider, cover {= destination =}+ property listing destinations it sends or supports listings into, cite {= integration_surface =}+ concrete public integration surface for that source-destination pair, and cover {= evidence_facet =}+ distinct source-stated evidence facets from the list below with {= url =}+ source URL.
+
+The destination set must include these anchor destinations:
+{=% for destination in anchor_destinations =%}
+- {= destination =}
+{=% endfor =%}
+
+After those anchors, the destination set is open: source-linked residential, lettings, new-homes, overseas, commercial, regional, or specialist property-listing destinations can count when the cited source ties them to UK-relevant listing syndication. Do not satisfy the source-product/provider floor by splitting one provider into page-title, destination, or minor branding variants; each source-product/provider value should be a distinct source-side product family, provider, portal-owned feed program, or source domain.
+
+The destinations are property portals or listing sites where estate agents, housebuilders, CRMs, websites, plugins, or feed brokers send listings to be displayed. A source product/provider value should name the source-side product, provider, feed program, or domain, not the destination itself. A portal-owned feed surface such as Rightmove ADF can count as a source product/provider when the page itself is the public source for sending listings into that portal.
+
+Valid integration surfaces include portal-owned developer/support/feed pages, vendor or CRM help-center pages, WordPress/plugin documentation, feed-broker pages, housebuilder implementation articles, and similar public sources. A source must state a substantive feed-in fact; a generic logo wall or "integrates with" list is not enough on its own.
+
+The evidence facets, referred to as `evidence_facet`, are:
+{=% for facet, description in evidence_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+`listing_content_policy` is a valid optional facet when the source states such facts, but field lists, material-information details, costs, rate/volume limits, BLM status, currentness, and public-spec/contact-support posture are not required for every destination or integration surface.
+
+Broad multi-destination source hubs count only when the cited page source-locally ties the claimed facet fact to the destination, or to a named destination group that includes it. Source-local means the destination or named group and the facet fact appear in the same sentence, bullet, table row, list entry, heading-scoped section, named package description, or equivalent local unit. A generic provider capability plus a separate logo wall, portal roster, or destination list elsewhere on the page is not enough.
+
+Useful provenance to report when visible: the destination, the source product/provider or portal surface, the source class, the feed direction, the source-stated detail being claimed for the facet, any current/legacy or support posture, and any source date or observed-date cue.
+
+Out of scope: consumer listing-search APIs, scraper/data-extraction APIs, generic real-estate API catalogs, lead-generation APIs, vendor recommendations or rankings, partner-contact discovery, outreach, sales strategy, contact enrichment, and legal-compliance advice. Material-information fields can be recorded only as source-stated feed/listing-field evidence, not as legal advice.
+
+Requirements:
+- The page must identify the claimed destination as the property listing recipient or listing destination.
+- The page must identify or embody the claimed source product, provider, portal feed surface, or source domain.
+- The page must identify or embody the claimed integration surface and tie it to that destination.
+- The page must state or clearly imply feed-in direction: listings or property data move from an agent, housebuilder, CRM, website, plugin, feed broker, or provider into the destination.
+- The page must state a facet-specific feed documentation or interoperability fact matching `evidence_facet`.
+- The facet-specific fact must be source-locally tied to the claimed destination or to a named destination group that includes it.

@@ -1,0 +1,1 @@
+"""Giving vehicle identity subtask."""

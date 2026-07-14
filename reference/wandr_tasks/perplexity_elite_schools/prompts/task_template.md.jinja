@@ -1,0 +1,10 @@
+For each of the {= school =} schools listed below, supply {= school_person =}+ (school, person) pairs (i.e. {= url =}+ URL per pair) with a personal page URL whose content shows the named person graduated from the school and currently works at Perplexity AI (profiles, personal academic pages, lab affiliation pages, self-hosted bio pages all count as long as both the graduation and the current Perplexity employment are explicit).
+
+Schools in scope (canonical name — accepted aliases):
+{=% for canonical, aliases in schools.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Requirements:
+- The page must show that the person graduated from the named school (degree designation, graduation year, or alumnus framing) — employment at the school without graduation does NOT count.
+- The page must show Perplexity (or "Perplexity AI") as the person's active primary current employment — not a permanent honorary designation when the actual primary role is elsewhere, not a non-employment program (fellowship / ambassador / affiliate / etc.), not an ended tenure.

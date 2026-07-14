@@ -1,0 +1,14 @@
+For {= firm =}+ firms, name {= adviser =}+ current advisers per firm; for each adviser-firm pair and each of the {= evidence_axis =} evidence checks below, supply an evidence source (i.e. {= url =}+ URL).
+
+The evidence checks of interest, which we refer to as `evidence_axis`, are:
+- `fca_current_status`: a direct FCA Register individual page for the adviser, using the canonical `https://register.fca.org.uk/s/individual?id=...` form or an equivalent official FCA individual record page that visibly renders the same person record.
+- `firm_profile_role`: a firm-owned or officially controlled person profile, adviser page, planner page, team page, or comparable firm surface for the same adviser.
+
+Firms should be UK financial advice, wealth planning, financial planning, or comparable advice practices. Current appointed-representative and principal-firm relationships count when the FCA source and the firm-owned source together bind the same adviser to the current advice role at the claimed firm or trading style. Use the stable direct FCA individual URL or a visible public FCA reference to disambiguate the adviser; person names alone are not enough. Current means current at the time the source is checked: history-only FCA records, no-current-role records, no-longer-authorised relationships, and stale firm profiles do not count unless current role evidence is separately visible. Search results, snippets, raw FCA shell pages, pages containing only `Loading` / `CSS Error` / `Refresh` shell text, commercial directories, review or matching marketplaces, LinkedIn, contact-only pages, and lead-generation pages are discovery leads only.
+
+Firm-owned pages may contain email, phone, review, rating, booking, awards, or marketing material, but the evidence of interest is only professional identity, firm relationship, and adviser/planner role. Contact details, contact forms, review scores, ratings, matching prompts, rankings, recommendation or suitability claims, and outreach hooks do not count as evidence.
+
+Requirements:
+- The page must identify the claimed adviser as the same person, with enough page context to distinguish same-name people.
+- The page must tie that adviser to the claimed firm, trading style, appointed representative, or principal-firm relationship.
+- The page must provide the evidence required by `evidence_axis`: current FCA Register/Directory status, role, approval, certification, assessment, or current roles-and-activities language for `fca_current_status`; current adviser, financial adviser, planner, financial planner, wealth planner, or comparable advice-role language for `firm_profile_role`.

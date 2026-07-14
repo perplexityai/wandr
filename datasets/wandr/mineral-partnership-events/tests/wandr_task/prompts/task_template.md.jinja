@@ -1,0 +1,21 @@
+For {= partnership_event =}+ public copper or copper-adjacent critical-minerals supply-growth partnership milestone events dated from {= start_date =} through {= end_date =}, supply sources for each of the {= source_side =} source sides (i.e. {= url =}+ URL per side).
+
+A partnership event is a source-stated dated milestone, not just a relationship mention. It must have concrete actors plus project, district, mine, asset, program, region, or comparable mineral-supply context, and it must advance or document copper or adjacent critical-minerals supply growth. Valid milestone types include announcement, signing, closing, effective date, binding offtake or funding step that creates or advances a partnership, joint-venture formation, acquisition-completion milestone, technology deployment, program partnership, or source-stated project/program update. Announcement and closing are different events when the sources present them as different milestones.
+
+The universe is open: major producers, developers, state entities, traders, offtakers, technology owners, strategic investors, and program operators can all appear. Do not count generic strategy pages, generic collaboration interest, loose investor-news lists, routine financing or investor updates without partnership substance, project profiles with no milestone, or continuing relationship mentions.
+
+The source sides of interest, which we refer to as `source_side`, are:
+{=% for source_side in source_sides =%}
+- `{= source_side =}`
+{=% endfor =%}
+
+`primary_disclosure` means an event actor's own public disclosure, a JV/project-controlled source, a stock-exchange or regulator filing, an official investor or technical release, or a comparable primary source. `independent_corroboration` means a separate public surface that corroborates the same event without being a same-release mirror or same-corporate-family republication: for example a counterparty-controlled source, separate filing, project/government/institutional page, or credible mining trade/news source.
+
+For each source, name the normalized source-stated actors, project/district/mine/asset/program/region or comparable setting, commodity, event type, source-stated status, event date, date type (`announced`, `signed`, `closed`, `effective`, `updated`, or `unclear`), and the source-stated finding. Keep the output to public evidence; do not provide investment advice, mineral-project recommendations, supplier/procurement rankings, deal sourcing, lead scoring, contact enrichment, legal conclusions, or compliance conclusions.
+
+Requirements:
+- The page must describe a specific source-stated partnership event or milestone, not merely a continuing relationship, broad company strategy, project profile, generic collaboration interest, loose investor-news list, routine financing or investor update without partnership substance, or recurring relationship mention.
+- The page must name the source-stated actors and tie the event to a project, district, mine, asset, program, region, or comparable mineral-supply setting with enough role/context detail to distinguish the event.
+- The page must support a dated event/status in the task window, including whether the date is an announcement, signing, closing, effective date, update, or unclear source-stated event date.
+- The page must tie the event to copper or adjacent critical-minerals supply growth such as exploration, development, production, processing, offtake, infrastructure, technology deployment, or asset/program funding that binds parties to the supply-growth milestone.
+- The page must fit the submitted `source_side`: primary-style disclosure for `primary_disclosure`, or separate corroborating public evidence for `independent_corroboration`.

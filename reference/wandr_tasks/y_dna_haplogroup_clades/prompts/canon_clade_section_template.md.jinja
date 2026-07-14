@@ -1,0 +1,14 @@
+The input is a Y-DNA haplogroup clade name. The canonical form is `<MacroHaplogroup>-<SNP_NAME>` — for example, *"R-M269"*, *"R-DF13"*, *"R-FT358544"*, *"I-M223"*, *"E-V13"*, *"J-M267"*. Canonify the input by normalizing surface variants and historical nomenclature, and return the canonical SNP-derived form.
+
+SNP-naming convention shifts:
+- The same clade can have MULTIPLE SNP names due to historical nomenclature changes. Examples:
+  - *R-M269* (modern SNP-derived) = *R1b1a1b* (ISOGG 2020 nested-tier) = *R1b1a1a2* (ISOGG 2011-2020) = *R1b1b2* (ISOGG 2008-2011) = *R1b1c* (ISOGG 2005-2008). All canonify to **R-M269**.
+  - *R-L21* = *R-S145* = *R-M529* (three SNPs all defining the same clade). Canonify to **R-L21** (most-commonly-cited SNP).
+  - *R-P312* = *R-S116* (two SNP names for the same clade). Canonify to **R-P312**.
+- When the input uses an older nested-tier name, recognize the terminal SNP marker that the nested-tier maps to and return the SNP-derived form.
+
+Surface-variant canonification:
+- Case: *"r-m269"*, *"R-m269"*, *"r-M269"* → **R-M269** (capital macro-haplogroup letter; uppercase SNP letters; original digit case preserved).
+- Whitespace / separator: *"R M269"*, *"R_M269"*, *"R/M269"* → **R-M269** (single hyphen).
+
+Inputs that don't canonify to a recognizable Y-DNA SNP-derived clade name return {{ CANONICAL_INVALID }} — e.g., mtDNA haplogroup names (*"H1a1"*, *"U5b2a1"* — mtDNA macrohaplogroups overlap letters with Y-DNA but are distinct lineages), archaeological-cultural / admixture-cluster labels (*"Yamnaya"*, *"Bell Beaker"*), or malformed strings missing the macro-haplogroup letter or SNP marker.

@@ -1,0 +1,27 @@
+For each of the {= university =} Australian public or statutory universities listed below, supply governing-body seat-allocation evidence for {= seat_type =}+ normalized seat classes per university. For each (`university`, `seat_type`) pair, include {= url =}+ source URLs for each of the {= evidence_side =} evidence sides.
+
+The goal is to compare each governing body's representation design as proportions and mechanisms, not just named-member counts. Local seat labels matter alongside the normalized class. Each record reports the class count or quota, governing-body denominator or denominator range, and class mechanics as supported by the cited page.
+
+Target universities:
+{=% for university in universities =%}
+- **{= university =}**
+{=% endfor =%}
+
+The Adelaide University entry means the current merged institution. Predecessor-only governance pages for The University of Adelaide or the University of South Australia / UniSA do not qualify unless the page itself is current Adelaide University governance evidence.
+
+Normalized seat classes:
+{=% for seat_type, description in seat_type_descriptions.items() =%}
+- **{= seat_type =}**: {= description =}
+{=% endfor =%}
+
+Evidence sides:
+- `current_roster`: official current evidence identifying occupants, office-holders, vacancies, or active reserved slots for the local seat class, with enough category context to count the class and current governing-body denominator.
+- `formal_rule`: formal legal or governance-instrument evidence for the local seat class's allocation, selection path, denominator basis, and term or eligibility limits.
+
+Primary governance sources fit this task: official university governance/member pages, official sector-governance member-university pages that publish a current governing-body roster for the named university, annual-report governance sections, current legislation, statutes, regulations, charters, governance handbooks, terms of reference, or comparable governance instruments. Legal or governance-instrument pages can support `current_roster` only when they identify an active current seat, vacancy, or reserved slot for the governing body. Sector-governance member-university pages support `current_roster` only; they do not support `formal_rule` merely by summarizing or linking to a legal or governance instrument. Third-party profiles, media articles, Wikipedia, LinkedIn, and standalone person biographies do not work as primary evidence here.
+
+Requirements:
+- The page ties the cited evidence to the named university's principal governing body: Council, Senate, Board of Governors, Board of Trustees, or its local equivalent.
+- The page supports the local seat-category label or role grouping and its mapping to the submitted normalized seat class.
+- The page supports the reported scale: for `current_roster`, occupied, vacant, or reserved seats in the submitted class and the current governing-body denominator; for `formal_rule`, a class count, quota, office count, composition formula, or equivalent allocation rule plus the governing-body denominator or denominator range.
+- The page supports the reported mechanics: for `current_roster`, at least one current occupant or office-holder, a current vacancy, or an active reserved slot for that class; for `formal_rule`, the selection, appointment, election, or office-holding mechanism plus a term, eligibility, constituency, term-limit, or comparable rule for that class.

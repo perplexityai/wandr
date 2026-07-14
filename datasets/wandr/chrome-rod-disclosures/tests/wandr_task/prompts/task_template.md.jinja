@@ -1,0 +1,17 @@
+For at least {= supplier =}+ distinct US-based or clearly US-facing suppliers of hard-chrome-plated hydraulic/cylinder rod, piston-rod stock, chrome-plated bar, or chrome-plated shafting, cover the {= disclosure_facet =} disclosure facets listed below by supplying {= url =}+ public source URL for each facet under each supplier.
+
+A supplier is an organization, distributor, manufacturer, or seller identity. Product lines, SKUs, diameters, stock rows, lengths, local branches, marketplace item IDs, and grade-family names can be useful evidence details, but they do not count as separate suppliers. Different chrome-plated rod lines from the same supplier still belong to the same supplier.
+
+Disclosure facets:
+{=% for facet, description in disclosure_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+This is a public disclosure task, not a procurement comparison. Do not include supplier ranking, lowest-landed-cost analysis, contact enrichment, outreach targets, compatibility guarantees, engineering suitability conclusions, installation advice, or purchasing recommendations.
+
+The sources should be public and usable supplier-owned or supplier-controlled product/spec/catalog pages, manufacturer pages, official distributor pages, fetchable supplier PDFs, or seller-controlled commercial-offer pages. A source should be specific to the named supplier's own chrome rod/bar/shafting offer. Seller-controlled marketplace listings can support `commercial_access_state`; they can support a technical facet only when the listing itself states the needed chrome-rod product and spec facts and makes the seller identity visible. Do not use supplier directories, multi-supplier roundups, generic search/result pages, generic blog guides, plating or rechroming service pages, finished hydraulic-cylinder pages where the rod appears only as a component, seal/gland/tube pages, bare TG&P or cold-finished shafting pages without chrome plating, nitrided-only alternative pages, or pages that only discuss design suitability without product/source-state disclosure.
+
+Requirements:
+- The page must identify the submitted supplier, seller, or controlled offer owner and tie that supplier to hard-chrome-plated hydraulic/cylinder rod, piston-rod stock, chrome-plated bar, chrome-plated shafting, IHCP/CPO/HCP, or a directly equivalent chrome-plated rod/bar stock product.
+- The page must visibly fit the source role for the submitted `disclosure_facet`: technical facets need product/spec/catalog evidence from a supplier, manufacturer, distributor, or seller-controlled offer that states the technical detail; `commercial_access_state` needs a product-tied commercial source state such as public price, stock, order, quote, cutting, lead-time, shipping, or freight language.
+- The page must expose a source-stated disclosure for the submitted `disclosure_facet`. For `rod_offer_and_size`, this means a supplier-tied chrome rod/bar/shafting product identity plus size or dimensional availability. For `material_mechanical_properties`, this means grade or mechanical-property disclosure. For `chrome_surface_spec`, this means chrome/plating/surface disclosure. For `commercial_access_state`, this means a positive public commercial state; silence or absence of a price/MOQ/lead-time field is not enough.

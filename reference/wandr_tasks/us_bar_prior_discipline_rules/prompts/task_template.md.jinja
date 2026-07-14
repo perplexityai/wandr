@@ -1,0 +1,34 @@
+For each of the {= jurisdiction =} in-scope US bar-admitting jurisdictions and each of the {= rule_class =} listed `rule_class` values, supply {= url =}+ URL for the (`jurisdiction`, `rule_class`) cell. Each URL must point to the jurisdiction's own court or bar-admission rules publication channel, or to a faithful mirror of those rules, and must carry the operative provision for the submitted `rule_class`.
+
+A jurisdiction's attorney-discipline and bar-admission rules span two distinct rule classes. The submitted `rule_class` selects which rule book to use:
+
+{=% for class_name, class_desc in rule_classes.items() =%}
+- `{= class_name =}`: {= class_desc =}
+{=% endfor =%}
+
+The {= jurisdiction =} US bar-admitting jurisdictions in scope:
+
+{=% for canonical, aliases in jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The US territories below are outside this task's jurisdiction universe; their bar-admission and attorney-discipline regimes are not in scope:
+
+{=% for canonical, aliases in out_of_scope_us_territories.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Federal-court attorney admission and state-bar attorney admission are distinct regimes. The claimed jurisdiction is always the state-bar (or DC-bar) regime, never any federal court.
+
+Authoritative source channels by `rule_class`:
+
+{=% for class_name, source_desc in source_classes.items() =%}
+- `{= class_name =}`: {= source_desc =}
+{=% endfor =%}
+
+Requirements:
+- The page must identify the named rule provision by section number, rule number, or other rule-numbering anchor sufficient that a reader could uniquely locate the provision within the jurisdiction's rules.
+- The operative provisions must substantively match the claimed rule class under the scope for the submitted `rule_class`.
+- The provision must reach outside-jurisdiction attorney discipline, disciplinary history, current disciplinary standing, certificates of good standing, or analogous professional-disciplinary status, using outside-the-jurisdiction framing such as another or foreign jurisdiction, every jurisdiction of admission, or equivalent wording.
+- The page must communicate, through its URL, title, publisher context, or page text, that it is on this jurisdiction's own court or bar-admission rule publication channel for the claimed rule class, or on a faithful mirror of those rules.
+- The page must present the provision as currently in force as of {= as_of_date =}. A current official rule publication, or a faithful mirror of that publication, satisfies this unless the page itself marks the provision as former, superseded, repealed, proposed, or not yet adopted. Amendment-history-only text does not satisfy the in-force requirement.

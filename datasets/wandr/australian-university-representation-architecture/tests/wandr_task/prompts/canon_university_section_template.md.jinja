@@ -1,0 +1,9 @@
+Canonical Australian public/statutory universities in scope:
+{=% for canonical, aliases in universities.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted university name to one of the canonical forms above. Accept listed abbreviations, leading "The" variants, and minor punctuation or spacing differences when the submitted value clearly names the same institution.
+
+Important scope choice:
+- **Adelaide University** means the current merged institution. Predecessor-only names such as **The University of Adelaide**, **University of South Australia**, and **UniSA** do not canonify to **Adelaide University** unless the submitted value itself clearly names the current merged institution.

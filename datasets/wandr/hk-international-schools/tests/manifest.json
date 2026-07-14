@@ -1,0 +1,9 @@
+{
+  "name": "hk-international-schools",
+  "wandr_task": "hk_international_schools",
+  "task_names": [
+    "hk_international_schools",
+    "hk_international_schools.school_notable_alumni",
+    "hk_international_schools.school_notable_alumni.alumni_professional_achievements"
+  ]
+}

@@ -1,0 +1,32 @@
+For each of the {= register_category =} Environment Agency public-register categories listed below, cover {= permission_record =}+ official permission or exemption records; for each record, supply the {= document_state_family =} document-state-family findings listed below, with {= url =}+ official URL for each finding.
+
+The purpose is a current public-register provenance table: what the official register exposes about record identity, permit/document availability, CAR availability, missing/request-only details, publication-window caveats, and link conflicts. It is not a task about whether a site is compliant, risky, well-run, polluted, enforceable, or worth contacting.
+
+Register categories:
+{=% for category, aliases in register_categories.items() =%}
+- `{= category =}`: {= aliases | join("; ") =}
+{=% endfor =%}
+
+Document-state families:
+{=% for family, aliases in document_state_families.items() =%}
+- `{= family =}`: {= aliases | join("; ") =}
+{=% endfor =%}
+
+The document-state families are exactly `primary_document_state` and `car_publication_state`. More specific availability labels are finding details, not separate document-state families.
+
+Each `primary_document_state` family finding should preserve the source-stated record labels needed to identify the record and identify the primary-document availability detail shown by the official record:
+{=% for detail, description in primary_document_detail_states.items() =%}
+- `{= detail =}`: {= description =}
+{=% endfor =%}
+
+Each `car_publication_state` family finding should preserve the source-stated record labels and CAR/publication evidence visible for that exact record and identify the CAR/publication availability detail shown by the official record:
+{=% for detail, description in car_publication_detail_states.items() =%}
+- `{= detail =}`: {= description =}
+{=% endfor =%}
+
+GOV.UK and EA support/FAQ pages are background for register scope, CAR publication windows, request semantics, and holding-period caveats. A cited URL still needs record-scoped official EA public-register evidence. Passing record-level evidence is normally a record-detail page, a record-level document table, an official document or CAR link tied to the exact record, or another official public-register page whose visible content is scoped to that one record. Generic complete-register downloads, search-all pages, broad search result pages, bulk endpoints, and API response blobs or endpoints do not count as record-level evidence.
+
+Requirements:
+- The page must be official Environment Agency public-register evidence scoped to the claimed category and exact record: a record-detail page, record-level document table, official public-register document or CAR link tied to that record, or another official public-register page whose visible content is scoped to that one record. Generic complete-register downloads, search-all pages, broad search results, bulk endpoints, API response blobs or endpoints, standalone guidance/FAQ pages, commercial products, operator websites, legal summaries, news/local commentary, and third-party aggregators do not count as record-level evidence.
+- The page must preserve the category-specific record identity: the official identifier label and value, plus holder/operator, site/activity/location, status, and date labels when those fields are public for that register family. Do not force missing category-specific fields into invented universal fields.
+- The page must support the claimed `document_state_family` for that exact record without interpreting document contents: `primary_document_state` findings need primary permit/registration document availability evidence, while `car_publication_state` findings need CAR availability, publication-scope, holding-period, request-only, or CAR-link evidence. The evidence must not summarize CAR breaches, scores, remedial actions, permit-condition meaning, or operator performance.

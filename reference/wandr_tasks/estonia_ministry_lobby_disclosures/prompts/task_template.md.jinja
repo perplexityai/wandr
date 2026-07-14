@@ -1,0 +1,20 @@
+For Estonia's ministry lobby-meeting disclosures, cover each of the {= quarter =} listed quarters individually for each of the {= ministry =} canonical ministries below, with {= url =}+ official URL per ministry-quarter.
+
+Use the ministry as the institution, not the minister's portfolio. Canonical ministries:
+{=% for canonical, aliases in ministries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Canonical quarters:
+{=% for quarter_name in quarters =%}
+- **{= quarter_name =}**
+{=% endfor =%}
+
+For each ministry-quarter, include a concise disclosure/source-state classification supported by the cited source. Useful states include published meeting entries, an explicit no-disclosable-meetings or no-meetings statement, download/archive-only disclosure, visible update/checked coverage, no visible update date on an otherwise quarter-carrying official source, or an official-source conflict.
+
+Each cited URL must be an official originating-ministry page, official originating-ministry download, or equivalent official ministry-owned archive carrying the claimed ministry's lobby or stakeholder meeting disclosure material in fetched/rendered text. Official originating-ministry downloads are usually the safest evidence. Official originating-ministry pages can also work, but only when the fetched page text itself exposes the claimed quarter's meeting entries, no-meeting statement, or source-state cue. If a ministry page mostly acts as an index, archive, link list, collapsed table, or current-quarter page, cite the direct official XLSX/PDF/download instead of quoting hidden or linked entries from the parent page. Government-wide rule pages, central statistics, and external context can explain the regime, but they should not replace the originating ministry's own runtime-visible disclosure page or download for a ministry-quarter record. Do not make unsupported no-public-portal claims; a negative state needs an official source that anchors it.
+
+Requirements:
+- The source must communicate that the disclosure surface or dataset belongs to the claimed ministry or its area of government for lobby/stakeholder meetings.
+- The evidence must tie the record to the claimed quarter using a quarter heading, date range, last-updated or checked-through date, file title, meeting dates, or comparable source-level cue.
+- The evidence must support the claimed disclosure/source state for that quarter. For published-meeting states, the source should show at least one meeting date in the quarter and enough entry detail to identify a meeting topic plus a lobbyist or represented organization or participating official. For no-meeting states, the official text must explicitly say there were no relevant or disclosable meetings for that quarter.

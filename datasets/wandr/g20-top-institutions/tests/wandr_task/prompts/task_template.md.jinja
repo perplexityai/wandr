@@ -1,0 +1,18 @@
+For each of the {= country =} G20 sovereign member states and each of the {= institution_type =} institution-types in scope below, name {= country_institution =}+ institutions per (country, institution-type) and supply a corroborating source per institution ({= url =}+ URL per institution) showcasing top-tier positioning during {= target_period =}.
+
+Member states in scope:
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Institution-types in scope:
+- `bank` — domestic commercial / deposit-taking banking institutions ranked on their country's primary domestic-banking ranking surfaces.
+- `insurer` — domestic insurance carriers ranked on their country's primary domestic-insurance ranking surfaces.
+- `law firm` — law firms ranked on their country's primary per-country legal-market tier-band ranking surfaces.
+
+Requirements:
+- The page must place the institution in the top tier explicitly — rank ≤3 for `bank` and `insurer` institutions, or the highest published tier / band for `law firm` institutions (no top-three cap inside the highest band). Statistical-disclosure tables in serial / registration order do not satisfy the bar even when the values themselves imply an ordering.
+- The ranking must be anchored by a named metric — an operating-scale commercial / deposit-taking banking measure for `bank`; a domestic-insurance size or market-position measure for `insurer`; for `law firm` the tier-band label itself is the anchor.
+- The ranking must be domestic for the claimed country.
+- The ranking source ought to be the per-institution-type authoritative domestic ranking surface for the institution's country.
+- The page must date the ranking — and the ranking must apply within the {= target_period =} window. Pure publication date alone does not suffice when the underlying-survey date is outside the window.

@@ -1,0 +1,8 @@
+{
+  "name": "perplexity-elite-schools",
+  "wandr_task": "perplexity_elite_schools",
+  "task_names": [
+    "perplexity_elite_schools",
+    "perplexity_elite_schools.school_authorized_affiliation"
+  ]
+}

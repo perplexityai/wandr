@@ -1,0 +1,103 @@
+job_name: wandr
+jobs_dir: jobs
+n_attempts: 1
+n_concurrent_trials: 24
+
+harborpatch:
+  n_concurrent_agent_phases: 24
+  n_concurrent_verifier_phases: 3
+  e2b_use_dockerfile: true
+  e2b_stream_output: true
+  e2b_share_template_by_hash: true
+  e2b_verifier_terminal_wait: 28800
+  nofile_soft_limit: 8192
+
+environment:
+  type: docker
+
+verifier:
+  override_timeout_sec: 28800
+  env:
+    WANDR_VERIFIER_PYTHON: /opt/wandr-venv/bin/python
+    UV_HTTP_TIMEOUT: "120"
+    UV_HTTP_RETRIES: "8"
+    UV_CONCURRENT_DOWNLOADS: "4"
+    WANDR_HEAL_RETRIES: "9"
+    WANDR_HEAL_MIN_COVERAGE: "0.90"
+    WANDR_SUBMISSION_CONCURRENCY: "8"
+    WANDR_DNS_CONCURRENCY: "16"
+    WANDR_FETCH_CONCURRENCY: "16"
+    WANDR_FETCH_BATCH_SIZE: "16"
+    WANDR_FETCH_CLIENT_LOAD: "16"
+    WANDR_TRIAGE_CONCURRENCY: "16"
+    WANDR_TRIAGE_CLIENT_LOAD: "8"
+    WANDR_BROWSER_FALLBACK: "0"
+    WANDR_BROWSER_CONCURRENCY: "2"
+    WANDR_BROWSER_JAVASCRIPT: "0"
+    WANDR_CANON_CONCURRENCY: "8"
+    WANDR_CANON_CLIENT_LOAD: "8"
+    WANDR_DEDUP_CONCURRENCY: "3"
+    WANDR_DEDUP_CLIENT_LOAD: "3"
+    WANDR_JUDGE_CONCURRENCY: "16"
+    WANDR_JUDGE_CLIENT_LOAD: "8"
+
+agents:
+  - import_path: relay.agent:RelayAgent
+    model_name: openai/gpt-5.5
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        reasoning_effort: high
+      endpoint:
+        delivery_channel: sandbox
+  - import_path: relay.agent:RelayAgent
+    model_name: anthropic/claude-opus-4-8
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        speed: standard
+      endpoint:
+        delivery_channel: sandbox
+  - import_path: relay.agent:RelayAgent
+    model_name: perplexity/gpt-5.5
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        reasoning_effort: high
+      endpoint:
+        delivery_channel: share
+  - import_path: relay.agent:RelayAgent
+    model_name: exa/agent
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        effort: high
+      endpoint:
+        delivery_channel: output
+  - import_path: relay.agent:RelayAgent
+    model_name: parallel/taskapi
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        processor: ultra4x
+      endpoint:
+        delivery_channel: output
+  - import_path: relay.agent:RelayAgent
+    model_name: gemini/deep-research
+    override_timeout_sec: 57600
+    kwargs:
+      max_full_restarts: 2
+      request:
+        reasoning_effort: max
+      endpoint:
+        delivery_channel: output
+
+datasets:
+  - path: datasets/wandr
+    exclude_task_names:
+      - smoke

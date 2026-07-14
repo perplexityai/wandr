@@ -1,0 +1,17 @@
+For {= supplier =}+ non-mainland-China-headquartered automotive or industrial semiconductor suppliers, supply public China-footprint evidence covering all {= footprint_function =}+ footprint functions per supplier. For each function, name {= footprint_signal =}+ concrete China footprint signal by site, office, center, facility, JV, distributor, partner, or comparable operational node plus city or region, with {= url =}+ URL substantiating that signal.
+
+The work is a public-evidence footprint table, not a customer list or strategy memo. Named counterparties count only when they are themselves part of the public footprint signal, such as a JV partner, foundry/OSAT partner, authorized distributor, or official local partner.
+
+Footprint functions:
+{=% for function, aliases in footprint_functions.items() =%}
+- `{= function =}`: {= aliases | join(", ") =}
+{=% endfor =%}
+
+Sources should be public pages that communicate concrete operational footprint evidence. Official company location pages, annual reports, filings, official press releases, local-government or economic-zone announcements, JV/facility pages, reputable semiconductor or automotive trade press, career/location pages, and supplier-specific authorized channel or local-partner pages can all work when they expose the claimed function. Legal-entity naming can help identify a source, but a registration, subsidiary name, WFOE, branch, or purchase-terms entity list is not enough unless the same citation also proves one of the four operational functions. Generic product catalogs, market-research summaries, customer rumors, broad distributor line cards without a China-facing supplier-specific tie, import/export databases, generic company-profile scrapes, contact-enrichment pages, and China-strategy commentary without a concrete site/office/center/facility/partner fact do not count. Do not collect personal contacts, phone numbers, email addresses, rankings, recommendations, procurement advice, legal/compliance claims, or inferred OEM/Tier-1 customers.
+
+Requirements:
+- The supplier must be headquartered outside mainland China while supplying automotive or industrial semiconductor products. Mainland-China-headquartered chipmakers, vehicle OEMs, and unrelated electronics companies are out of scope.
+- The page must clearly identify the named supplier or a supplier-controlled entity, JV, or official partner relationship.
+- The page must tie the footprint signal to mainland China, a specific mainland China city/province/region, or a source-stated Greater China operation with a concrete China signal.
+- The page must make its role as evidence for the claimed `footprint_function` visible.
+- The page must expose a concrete operational footprint fact for the named signal, not merely legal-entity existence, general China market interest, China strategy language, product availability, or unnamed customer demand.

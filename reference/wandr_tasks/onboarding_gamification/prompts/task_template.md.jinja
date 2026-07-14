@@ -1,0 +1,28 @@
+For each of the {= category =} product areas below, cover {= product =}+ products. For each product, cover {= evidence_facet =}+ distinct evidence facets from the closed facet list below; under each selected facet, supply {= product_evidence =}+ product-specific evidence item and {= url =}+ URL that substantiates an observable gamified onboarding, activation, product-learning, proficiency, or agent/admin-configuration mechanic.
+
+Product areas:
+{=% for category, description in categories.items() =%}
+- `{= category =}`: {= description =}.
+{=% endfor =%}
+
+Evidence facets:
+{=% for facet, description in evidence_facets.items() =%}
+- `{= facet =}`: {= description =}.
+{=% endfor =%}
+
+An evidence item can be a visible checklist/progress path, score/readiness meter, milestone gate, guided tour with completion state, points/badges/levels/streaks/leaderboard, credential or certificate reward, quiz or training result, agent-builder launch/publish milestone with visible feedback, public screenshot/flow/video capture, or reputable teardown that shows the mechanic. Preserve what the public evidence actually shows rather than forcing every product into the same pattern set.
+
+Do not submit a generic setup route, help-center setup article, academy catalog page, product docs page, or marketing page unless it visibly supports the submitted gamified feedback mechanic/state and the relevant onboarding/proficiency context. Rows that only claim no visible gamification, no public onboarding, no AI-agent configuration, gated/pro-library access, stale/screenshot-only provenance, or other source-local absence/provenance states are out of scope as positive evidence.
+
+For each row, make the observed mechanic and provenance explicit: the onboarding, activation, product-learning, proficiency, or configuration context; the declared evidence facet; the user-visible feedback mechanic; source type and directness; visible UI/screenshot/video availability; source date or staleness when relevant; and whether access is gated, third-party-only, screenshot-based, or historical.
+
+Eligible rows must use public sources with concrete product-specific evidence of the observable mechanic. Official docs/help centers/blogs, public demos or marketing pages with visible UI, public videos/transcripts, public screenshot or flow libraries, and reputable teardowns can all work when they contain concrete product evidence of the submitted mechanic. Generic onboarding advice, private or login-only scraped flows, unrelated listings, unavailable gated stubs, and pages whose usable content is only broad pattern taxonomy are out of scope.
+
+Keep rows factual: no UX strategy advice, implementation guidance, dark-pattern recommendation, product recommendation, competitive ranking, or unsourced conversion/uplift claim.
+
+Requirements:
+- The page must tie the evidence item to the named product rather than only to a generic onboarding pattern.
+- The page must fit the declared `evidence_facet`; a URL that only supports a different facet, a generic setup route, or a source-local missing/provenance state does not satisfy the declared facet.
+- The page must connect the evidence item to onboarding, activation, setup, first-run use, product learning, certification, agent/admin configuration, support automation configuration, or a comparable user-start/proficiency milestone.
+- The page must support an observed user-visible gamified feedback mechanic: progress/checklist/completion state, score, reward, badge, certificate, rank, level, streak, leaderboard, quest, quiz result, guided-tour state, milestone gate, publish/go-live gate, unlock, readiness/health feedback, public screenshot/video/teardown of such a state, or a comparable feedback loop. A page that merely documents setup steps, education content, or configuration without such a visible mechanic fails.
+- The source evidence must support the claimed source type, directness, and availability/provenance state, such as official vs. third-party, visible UI/screenshot/video/docs/blog/teardown, dated or stale when relevant, gated or screenshot-only when relevant, and the limits of third-party or historical evidence.

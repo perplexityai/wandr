@@ -1,0 +1,7 @@
+For at least {= company_filing_date_item_code =}+ distinct Form 8-K material event filings — each named by its registrant company, the EDGAR Filed date, and one of the Item codes the 8-K reports under (e.g. `5.02`, `1.05`, `2.01`) — supply at least {= url =} URL per event on SEC EDGAR (`sec.gov/Archives/edgar/data/...`), either the filing-index page (showing the Filing Date, Period of Report, and Items list) or the per-document page hosting the 8-K body.
+
+The hard part isn't finding *any* reference to the event; it's reaching past Yahoo Finance / Bloomberg / press-release aggregators to the affected company's own SEC archive page, where form type, registrant identity, filing date, and item code are all in their canonical structured form.
+
+Requirements:
+- The filing must be a Form 8-K filed by the named company on the named filing date.
+- The named Item code must appear in the filing's items list (the comma-separated Items the 8-K reports under).

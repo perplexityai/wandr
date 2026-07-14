@@ -1,0 +1,28 @@
+For each of the {= protocol =} protocols listed below, cover the {= protocol_role =} role lanes listed for that protocol. Within each role lane, cover {= implementation =}+ public implementations connected to AI coding agents, terminal or IDE coding clients, adapters, agent registries, SDKs, or coding-agent extension ecosystems; for each implementation, cover the {= evidence_facet =} evidence facets listed below by supplying an official source (i.e. {= url =}+ URL under each facet).
+
+This is a protocol-boundary interoperability study, not a tool recommendation table. The evidence should show how protocol support is implemented, configured, controlled, distributed, or governed.
+
+Protocols:
+- `mcp`: Model Context Protocol support in coding-agent or developer-agent workflows.
+- `acp`: Agent Client Protocol support for communication between coding agents and editor, IDE, client, adapter, or registry surfaces.
+
+Protocol role lanes:
+{=% for protocol, role_descriptions in protocol_roles.items() =%}
+- `{= protocol =}`:
+{=% for role, description in role_descriptions.items() =%}
+  - `{= role =}`: {= description =}
+{=% endfor =%}
+{=% endfor =%}
+
+Evidence facets:
+- `implementation_claim`: a role-appropriate primary source directly shows that the named project has the submitted role for the submitted protocol.
+- `configuration_or_transport_detail`: a technical setup, reference, README, schema, source, or configuration page gives concrete mechanics, such as command invocation, config files, JSON-RPC over stdio, HTTP or WebSocket transport, OAuth or bearer auth, MCP server setup, adapter invocation, registry installation, or equivalent protocol-specific mechanics.
+- `control_or_security_boundary_detail`: a security, configuration, permissions, auth, trust, sandboxing, storage, or delegation source shows concrete protocol-boundary controls, such as who owns authentication, tool permissions, approval decisions, sandbox/trust boundaries, token/config/log storage, allowlists, or client-to-agent delegation.
+- `distribution_or_provenance_detail`: a package, registry, marketplace, release, manifest, extension-listing, or provenance source shows concrete distribution evidence, such as owner or maintainer identity, package or extension identifier, version or update channel, install source, release artifact, registry verification, or published distribution metadata.
+
+Sources should be official or maintainer-controlled protocol docs, product docs, project repositories, release notes, security/configuration docs, official editor/client docs, official adapter repositories, package/marketplace pages, or official registry pages. The source role must match the submitted role and facet: native product, agent, adapter, and client roles need product-owned docs, maintainer-owned adapter repositories, official client docs, or comparable primary sources that directly establish that role. Registry pages and raw protocol-registry metadata count for registry/distribution-surface records, but registry presence alone does not establish native product/agent support or adapter/client behavior. Package registries, extension marketplaces, release pages, package manifests, plugin manifests, and similar metadata count for the submitted implementation's own distribution/provenance facet when they identify the implementation itself. A broad official overview page does not count for a technical, control, or distribution facet merely because it contains a protocol mention; the page or cited section should visibly be a setup/reference/configuration source, a security/control-boundary source, or a distribution/provenance source for the submitted implementation. Third-party comparisons, procurement roundups, Reddit/forum commentary, and pages that merely say "AI agent", "agentic", or "supports tools" without protocol-specific evidence do not count. Generic MCP servers unrelated to coding-agent or developer-agent workflows do not count unless the source ties them to a coding-agent, client, adapter, or developer-agent ecosystem. Visible source dates, version labels, beta/deprecation markers, and checked dates should be preserved when they affect the claim; undated current docs are fine.
+
+Requirements:
+- The page and URL must communicate the appropriate source role for the submitted protocol role and evidence facet: product/agent/client/adapter roles require primary sources for that implementation, registry/distribution roles may use registry or metadata authority, configuration facets require technical setup/reference/source shape, control facets require security/auth/permission/trust/sandbox/storage/delegation shape, and distribution facets require package/registry/marketplace/release/manifest/provenance shape.
+- The page must directly tie the named project or agent to the submitted protocol and role, preserving distinctions such as native support versus adapter-mediated support, agent implementation versus client hosting, registry distribution versus product implementation, and MCP client/consumer behavior versus MCP server/extension behavior.
+- The page must provide the evidence required by `evidence_facet` at the corresponding bar: protocol implementation/adoption claim, concrete configuration/transport mechanics, protocol-boundary control/security behavior, or package/registry/release/distribution provenance.

@@ -1,0 +1,8 @@
+{
+  "name": "va-provider-pricing",
+  "wandr_task": "va_provider_pricing",
+  "task_names": [
+    "va_provider_pricing",
+    "va_provider_pricing.provider_policy"
+  ]
+}

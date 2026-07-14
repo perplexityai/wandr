@@ -1,0 +1,22 @@
+For each of the {= school =} schools listed below, cover each of the {= office =} school-office types and supply a source (i.e. {= url =}+ URL) on the school's own website that names the office for that school and exposes a contact email address routed to that office, so the office can be reached directly.
+
+We are lining up outreach for a Global Impact Internship Programme (GIIP) that places high-school students in summer placements at a legal NGO, and we want to reach the right people at each school — the admissions front door, the team that runs activities, and the team that advises students on life after school — rather than a single general enquiries inbox.
+
+The office types, which we refer to as `office`, are:
+- `admissions`: the office handling enrolment, applications, prospective-family enquiries, and registration. Admissions / enrolment / registrar pages and "how to apply" / "contact admissions" pages count.
+- `activities`: the office or coordinator running the school's co-curricular life — extra-curricular activities (ECA), clubs, after-school programmes, service learning, or student activities. An activities / ECA / co-curricular / clubs page or a named activities-office contact counts.
+- `careers`: the office advising students on university applications and careers — university / college counselling, careers guidance, futures, or higher-education advising. A university-counselling / college-counselling / careers / futures page or a named counselling-office contact counts.
+
+Schools in scope (canonical name — accepted aliases):
+{=% for canonical, aliases in schools.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+The cited page should naturally belong to the office in scope and present the email as that office's own contact channel: an admissions / enrolment / registrar page or "contact admissions" panel for `admissions`; an activities / ECA / co-curricular / clubs / after-school page for `activities`; a university-counselling / college-counselling / careers / futures page for `careers`. A general "contact us" page counts only when it labels the listed email as belonging to the office in scope (e.g. an "Admissions" row with its own address) rather than offering a single catch-all enquiries inbox.
+
+The cited page should be fully public, accessible, and usable as a normal page (e.g. not paywall-guarded, login- or app-only shells, or broken pages).
+
+Requirements:
+- The page must be on the named school's own official website — its primary domain or a documented subdomain of it. Third-party school directories, listing aggregators, agent or relocation sites, and recruiter pages do NOT count even when they reproduce the email.
+- The page must identify the named school in scope — through site branding, page header, or institutional naming — and the office in scope must be the one the listed email is presented as serving, per the definitions above. A bare email with no office attribution does NOT count.
+- The page must expose a contact email address shown as the office's own channel — a mailto link or a written-out address tied to that office. A phone number, postal address, or web enquiry form without an email does NOT count, and a personal staff email surfaced only in a directory listing without office attribution does NOT count.

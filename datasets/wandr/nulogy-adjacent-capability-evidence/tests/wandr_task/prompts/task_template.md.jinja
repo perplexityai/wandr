@@ -1,0 +1,20 @@
+In each of the {= adjacency_cluster =} Nulogy-adjacency clusters, for {= company_product =}+ public software companies or branded product lines, supply public provenance for {= capability_family =}+ capability families per company/product, with {= url =}+ URL under each family. Use {= as_of_date =} as the reference date and keep the record public-source only: no private database extraction, competitor ranking, buyer guide, procurement recommendation, investment advice, sales targeting, outreach, or contact enrichment. Nulogy is the reference anchor, not a target row subject.
+
+Adjacency clusters:
+{=% for cluster in adjacency_clusters =%}
+- `{= cluster =}`
+{=% endfor =%}
+
+Capability families:
+{=% for family in capability_families =%}
+- `{= family =}`
+{=% endfor =%}
+
+Each record should state a concise capability finding plus source class, support state, source date or observed-date status, checked date, and confidence. Useful support states include `official_supported`, `secondary_only`, `capability_supported_category_missing`, `conflicting_labels`, `name_or_product_conflict`, and `no_visible_date`. These provenance labels must match the cited page's ownership, source posture, dating, and capability evidence.
+
+Source roles can include official company, product, feature, industry, integration, customer-story, partner-marketplace, public filing, press release, reputable software directory, analyst/review source, or trade article pages. Secondary, directory, analyst, and trade pages are useful as labeled context, but clean capability records should mostly cite official or product-specific pages. Ranking-only alternatives pages, private databases, generic vendor homepages, login-only pages, contact pages, and pages that merely mention a product name without capability evidence do not count.
+
+Requirements:
+- The page must clearly identify the named company and, when a product or suite is named, the specific product, suite, module, or branded product line.
+- The page must support the declared adjacency cluster: `near_core_packaging_manufacturing_operations` for contract packaging, co-packing, contract manufacturing, private-label, external manufacturing, manufacturer supplier-collaboration, or shop-floor operations context; `broader_adjacent_operations_software` for concrete adjacent manufacturing, supply-chain, quality, traceability, packaging, process-ERP, integration, or operations-workflow context.
+- The page must substantively support the claimed capability family through concrete software, module, workflow, feature, integration, or use-case content for the named company/product. Large suite vendors need product/module-specific evidence, not a generic corporate homepage.

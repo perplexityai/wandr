@@ -1,0 +1,20 @@
+For each source family listed below, supply at least {= source_channel =}+ distinct `source_channel` values. For each `source_channel`, supply at least {= pathway =}+ U.S. defense-industrial-base non-dilutive financing or procurement pathways, with an official or source-controlled authority / issuer source ({= url =}+ URL per pathway) that supports public provenance for the pathway as of {= checked_date =}.
+
+Use these `source_family` labels for the cited authority / issuer source surface:
+{= source_family_list =}
+
+A pathway can be a program, opportunity class, solicitation or open announcement, assistance listing, OTA or procurement vehicle, loan or loan-guarantee channel, purchase commitment, challenge / prize, or comparable funding / procurement route when the cited source frames it as a public defense-industrial-base pathway. The source must be controlled by an authorizing body, implementing agency, official opportunity or assistance system, statute / regulation publisher, or source-controlled consortium / OTA channel whose official role is source-stated. Third-party explainers, CRS reports, law-firm or client alerts, trade press, LinkedIn posts, commercial aggregators, and generic market guides do not count as the authority / issuer source.
+
+Treat `source_family` as the surface class of the cited source, not just the sponsor's organization. Treat `source_channel` as the specific official/source-controlled channel for the row: the issuer or source host plus the parent program, solicitation package, vehicle, assistance listing, SBIR/STTR cycle, opportunity surface, statute/regulation surface, or consortium channel. Examples: `xtech.army.mil / xTechSearch 9`, `DIBC / RPP-BES-26-01`, `DARPA / Open BAA HR0011-26-S-0001`, `SAM.gov / solicitation shell`, `Navy SBIR / 25.2 topic PDF`, or `U.S. Code / 10 U.S.C. 4022`.
+
+A source map should be balanced across the listed families and across distinct `source_channel` values inside each family. Many rows from one host, one parent solicitation package, one PDF, one SBIR/STTR cycle, one broad opportunity system, or one statute/regulation surface do not substitute for other source channels. Topic-level SBIR/STTR rows can be valid pathways when source-stated, but multiple topics inside one parent topic package or PDF still share one `source_channel`.
+
+Keep the claim to public, source-stated provenance. Do not turn it into bid advice, legal advice, eligibility determination, procurement recommendation, opportunity ranking, vendor matching, lead scoring, contact enrichment, export-control conclusion, or investment advice. Foreign-supplier posture is optional: include citizenship, ownership / control, domicile, domestic-source, country eligibility, foreign ownership, or foreign-government-control posture only when the cited page explicitly states it; page silence is only a bounded observation about that cited page.
+
+Requirements:
+- The `source_family` label must match the cited authority / issuer source surface.
+- The `source_channel` must identify a distinct official/source-controlled channel for the row: source host or issuer plus the parent program, package, vehicle, cycle, or opportunity surface. Do not fill a family with repeated rows from the same host, package, PDF, cycle, statutory surface, or broad system shell.
+- The page must identify the claimed pathway itself.
+- The page must identify the issuer or implementer for the pathway.
+- The page must state the instrument type or funded / procured activity.
+- The page must state an authorizing authority, authorizing section, statute, regulation, authority basis, or comparable official authorization language.

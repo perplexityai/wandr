@@ -1,0 +1,1 @@
+"""Michelin Guide star demotions in 2025-2026 cycles: per (restaurant, city), the star count decreased between consecutive guide cycles within the announcement window, with corroborating URLs from credible food-press / regional / trade-publication articles."""

@@ -1,0 +1,17 @@
+For each of the {= country =} countries below, identify {= country_agency =}+ country-agency entities as educational service providers publicly recruiting or advising students from the named country for Australian education, with {= source_side =} kinds of corroborating sources provided ({= url =}+ URL per kind) — to cover each side of the relation.
+
+Countries:
+{=% for country_name in countries =%}
+- **{= country_name =}**
+{=% endfor =%}
+
+Source kinds:
+- `origin`: tied to the origin country and the agency itself
+- `destination`: tied to Australia and the recipient institution(s)
+
+Target pages differ by source kind: for `origin`, the page should be anchored in the named country and tied to the agency — the agency's own origin-country site, an origin-country sector news / forum / accreditation profile, or an origin-country regulator / association listing — recognizable, for instance, through origin-country TLDs, origin-language content, origin-country addresses, or local accreditation marks; for `destination`, the page should be an agency-recognizing source signaling the Australian-counterpart / -overseer / -(equivalent) nature of it — an Australian university / provider find-an-agent page, a public-sector registered-agent listing such as Austrade or PIER, a state-government education directorate, an Australian embassy education page, relevant Australian-side sector-news article, etc. — similarly, could be recognizable among other things through TLDs, CRICOS codes, letterheads, and so on.
+
+Requirements:
+- The page must clearly identify the named agency and a concrete counterparty.
+- The page must clearly support the intended country-and-role binding for both parties: the counterparty as an Australia-based institution, the agency as an educational recruitment / advisory entity conducting to-institution student transfers.
+- The page should provide enough substantive content per the source kind: for `origin`, concretely named Australia-bound activity attached to the agency in the origin country (for instance, counselling, application processing, scholarship advisory, visa support, pre-departure programs, named partnerships with Australian institutions, ...); for `destination`, recipient-side recognition specifics for the named agency (for instance, classification or qualifying notes on a registered-agent listing); both in contrast to in-passing mentions, bulk-aggregator rosters, boilerplates naming the agency without exhibiting any involvement, and so on.

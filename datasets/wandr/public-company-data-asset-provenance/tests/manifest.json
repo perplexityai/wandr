@@ -1,0 +1,7 @@
+{
+  "name": "public-company-data-asset-provenance",
+  "wandr_task": "public_company_data_asset_provenance",
+  "task_names": [
+    "public_company_data_asset_provenance"
+  ]
+}

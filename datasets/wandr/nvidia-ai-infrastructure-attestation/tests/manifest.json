@@ -1,0 +1,7 @@
+{
+  "name": "nvidia-ai-infrastructure-attestation",
+  "wandr_task": "nvidia_ai_infrastructure_attestation",
+  "task_names": [
+    "nvidia_ai_infrastructure_attestation"
+  ]
+}

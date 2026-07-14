@@ -1,0 +1,40 @@
+For {= contractor =}+ U.S. contractors that publicly perform HDD, directional boring, trenchless underground construction, or comparable underground utility construction for fiber, telecom, broadband, communications conduit, FTTH, middle-mile, or outside-plant work, supply evidence for each of the {= evidence_type =} evidence types, with {= url =}+ source URL per type. This is public contractor capability provenance, not contractor ranking, buyer recommendation, outreach prioritization, contact enrichment, insurance strategy, lead scoring, or a prospecting list.
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, optional factual notes can include canonical contractor name, legal or DBA name when source-stated, parent/subsidiary or operating-brand context when source-stated, source-stated state or service geography, source class, HDD/fiber capability phrase, public corroboration context, bid/award/registry/project role when applicable, source date or observed date, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later. Do not include leadership names, phone numbers, emails, estimators, contact people, rankings, lead scores, outreach priority, buyer recommendations, or procurement advice.
+
+Useful HDD or underground construction terms include:
+{=% for term in hdd_capability_terms =%}
+- `{= term =}`
+{=% endfor =%}
+
+Useful fiber/telecom application terms include:
+{=% for term in fiber_application_terms =%}
+- `{= term =}`
+{=% endfor =%}
+
+Useful public corroboration source types include:
+{=% for source_type in public_corroboration_source_types =%}
+- `{= source_type =}`
+{=% endfor =%}
+
+Source class should be factual, not promotional. Useful public source classes include:
+{=% for source_class in source_classes =%}
+- `{= source_class =}`
+{=% endfor =%}
+
+Boundary classes to keep out unless the page also proves contractor-specific evidence at the submitted role:
+{=% for boundary_class in boundary_classes =%}
+- `{= boundary_class =}`
+{=% endfor =%}
+
+Public sources can include contractor capability pages, contractor project pages, official profiles, public bid/award/bid-tab records, municipal/traffic/utility/construction notices, permit or right-of-way notices, public utility procurement pages, registry/license/prequalification/vendor work-code records, trade association profiles, trade or project articles, manufacturer case studies, and provider-specific public directory profiles. Use a distinct source class for each evidence role; the same URL should not be reused as both `capability_source` and `public_corroboration`. Company-owned pages do not count as public corroboration for their own contractor, and non-company pages do not count as the contractor-controlled capability source unless the page is an official contractor-controlled profile.
+
+Requirements:
+- The page must identify the claimed contractor, or bridge the submitted trade name to a legal, DBA, subsidiary, parent, or operating-brand name, with enough public context to distinguish it from unrelated same-name contractors.
+- The submitted page itself must fulfill the claimed `evidence_type`: `capability_source` evidence should be an official contractor/company-controlled source, while `public_corroboration` evidence should be a separate non-company public source for the same contractor.
+- The page must support role-specific contractor substance. For `capability_source`, it must source-state both an HDD, directional-boring, trenchless, or underground utility construction capability and a fiber, telecom, broadband, communications conduit, FTTH, middle-mile, or OSP application. For `public_corroboration`, it must show a concrete provider-specific public accountability, project, registry, association, trade, or comparable corroboration fact for the same contractor.

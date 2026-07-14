@@ -1,0 +1,8 @@
+{
+  "name": "forbes-250-cross",
+  "wandr_task": "forbes_250_cross",
+  "task_names": [
+    "forbes_250_cross",
+    "forbes_250_cross.person_true_claims"
+  ]
+}

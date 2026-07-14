@@ -1,0 +1,12 @@
+Canonical jurisdictions in scope:
+{=% for canonical, aliases in jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted jurisdiction name to one of the canonical forms above. Accept common abbreviations, state postal codes, and minor punctuation / spacing variants listed next to each entry.
+
+Important scope choices:
+- The **District of Columbia** entry is the DC adult-guardianship framework. Statewide Virginia or Maryland material does not canonify to DC.
+- State-level entries (e.g. **Alaska**, **Maryland**, **California**, **New York**) carry the statewide adult-guardianship framework for that state.
+- County-level entries - **Maricopa County, Arizona**, **Ada County, Idaho**, **Los Angeles County, California**, **Cook County, Illinois**, **Multnomah County, Oregon**, **San Francisco County, California** - are county-scoped. Statewide material from the parent state can support statewide adult-guardianship rules that apply in the county, but county public-guardian / public-fiduciary arrangements need county-scoped evidence.
+- A statewide entry and a county entry within the same parent state are distinct canon members (e.g. **California** and **Los Angeles County, California** are separate; both can appear in the same panel). Statewide California material does not canonify to **Los Angeles County, California**.

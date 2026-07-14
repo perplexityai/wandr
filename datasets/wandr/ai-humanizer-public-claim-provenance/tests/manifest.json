@@ -1,0 +1,8 @@
+{
+  "name": "ai-humanizer-public-claim-provenance",
+  "wandr_task": "ai_humanizer_public_claim_provenance",
+  "task_names": [
+    "ai_humanizer_public_claim_provenance",
+    "ai_humanizer_public_claim_provenance.vendor_tool_qualification"
+  ]
+}

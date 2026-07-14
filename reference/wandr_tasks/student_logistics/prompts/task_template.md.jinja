@@ -1,0 +1,30 @@
+For {= service =}+ student-oriented belongings logistics services, supply evidence for each of the {= evidence_axis =} evidence axes and at least {= url =}+ URL per axis. Services can include official provider services or official campus programs that help students ship, store, forward, or deliver personal belongings for university, move-in, move-out, study-abroad, or term-break logistics.
+
+The evidence axes are:
+{=% for evidence_axis, description in evidence_axis_descriptions.items() =%}
+- `{= evidence_axis =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, include the canonical service name, operator or institution, service family, geography or route scope, student-service scope, price signal and price basis when relevant, capability / policy fact and facet when relevant, source type, checked date, confidence, and relationship or limitation notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful service families include:
+{=% for service_family in service_families =%}
+- `{= service_family =}`
+{=% endfor =%}
+
+Useful public price signals include:
+{=% for price_signal_type in price_signal_types =%}
+- `{= price_signal_type =}`
+{=% endfor =%}
+
+Useful capability and policy facets include:
+{=% for capability_facet in capability_facets =%}
+- `{= capability_facet =}`
+{=% endfor =%}
+
+Primary public sources should be provider-controlled or institution-controlled: official service pages, pricing pages, public booking pages with visible terms, FAQ / help-center pages, T&C or policy pages, public PDFs, official campus program pages, and official campus vendor / move-in pages. Aggregator listicles, affiliate blogs, coupon pages, ranking pages, customer reviews, generic carrier advice, generic self-storage pages, generic moving-company pages, and quote-request funnels are out of scope unless the cited row-specific content itself supplies official pricing or policy evidence for a student belongings logistics service.
+
+Requirements:
+- The page must identify the submitted service, provider, official campus program, or operator-controlled policy surface with enough context to distinguish it from unrelated same-name businesses, generic carriers, generic movers, ordinary mailrooms, lead generators, or broad advice pages.
+- The page must fit the submitted `evidence_axis`: `pricing_structure` evidence should state a public price signal, while each capability / policy row should state a concrete service term, limit, allowance, restriction, process, geography, route, delivery model, or comparable operational fact.
+- The page must preserve the fact's basis and scope. Pricing evidence should keep the source's amount, range, discount, fee, allowance, unit, route, region, item class, period, or overage condition; capability evidence should keep the source's concrete term, rule, amount, allowance, restriction, process, geography, route, or delivery model.

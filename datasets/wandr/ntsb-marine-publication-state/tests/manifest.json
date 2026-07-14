@@ -1,0 +1,9 @@
+{
+  "name": "ntsb-marine-publication-state",
+  "wandr_task": "ntsb_marine_publication_state",
+  "task_names": [
+    "ntsb_marine_publication_state",
+    "ntsb_marine_publication_state.docket_state",
+    "ntsb_marine_publication_state.report_release"
+  ]
+}

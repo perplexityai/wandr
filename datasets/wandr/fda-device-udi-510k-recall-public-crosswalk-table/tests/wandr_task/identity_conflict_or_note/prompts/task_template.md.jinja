@@ -1,0 +1,9 @@
+For {= recalled_or_alerted_product =}+ FDA recalled or early-alerted medical-device products in the 2023-01-01 through 2025-12-31 window, choose {= identity_note_type =} identity note type per product (`corroboration` or `substantive_conflict`), name {= identity_conflict_or_note =}+ concrete official-source identity bridge or conflict note, and supply {= url =}+ official FDA/NLM URL that corroborates or contradicts the product identity chain.
+
+This sidecar keeps identity discipline visible. Most rows can use `corroboration` for an official non-name-only bridge; use `substantive_conflict` only when official FDA/NLM surfaces substantively disagree on an identity field.
+
+Requirements:
+- The page must support the declared note through source-stated identifiers or entity fields such as DI/UDI/GTIN, model, catalog, REF, product code, brand/device name, labeler, applicant, recalling firm, K/PMA/De Novo number, or product description.
+- `corroboration` notes must use a non-name-only official bridge, and `substantive_conflict` notes must identify a substantive official-field disagreement rather than a cosmetic spelling, punctuation, abbreviation, or legal-suffix variant.
+
+Do not invent confidence scores. Do not count generic no-UDI, no-product-code, no-recall, or no-510(k) statements as identity notes.

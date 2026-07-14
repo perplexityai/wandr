@@ -1,0 +1,19 @@
+For each DACH country listed below, identify {= country_company =}+ company-country pairs that are public enterprise-AI implementers; for each pair cover each of the {= evidence_facet =} evidence roles listed below with a source, i.e. {= url =}+ URL per role, showing concrete enterprise-AI implementation capability.
+
+Countries in scope:
+{=% for country in countries =%}
+- **{= country =}**
+{=% endfor =%}
+
+The evidence roles of interest, which we refer to as `evidence_facet`, are:
+- `own_capability_artifact`: a first-party or officially controlled company surface showing a named enterprise-AI product, platform, artifact, service, documentation, repository, or technical implementation mechanism, such as RAG, agents, workflow automation, tool connectors, sovereign or on-prem architecture, or production GenAI integration.
+- `external_validation`: a non-company-owned or ecosystem-owned page validating the company's AI implementation standing, such as a cloud or model partner directory, marketplace offer, app exchange listing, vendor competency page, conference or industry page, or comparable third-party surface that is AI-specific and names the company, offering, competency, platform, or role.
+- `delivery_trace`: a case study, customer story, implementation description, customer quote, project page, partner or cloud case page, conference talk, release, or reputable article showing a concrete delivered AI use case or implemented workflow. A named customer is high signal; a sufficiently specific anonymized delivery can qualify when the sector, use case, and implementation detail are visible.
+
+The company must be a real company or productized implementation vendor, not a listicle category, buyer, model name, platform family, individual consultant, or internal project name. The task is public capability provenance only; it is not a request for rankings, scoring, acquisition screening, buyer lists, investment advice, contacts, email or phone collection, outreach, lead scoring, or enrichment.
+
+Requirements:
+- The page must clearly identify the submitted company.
+- The page must show concrete enterprise-AI implementation capability: a named product or platform, named technical mechanism, named deployment or use case, or similarly specific public implementation artifact. Generic AI consulting, AI strategy, digital transformation, AI readiness, or broad advisory positioning alone is not enough.
+- The page should make its `evidence_facet` source role visible: first-party or official controlled surface for `own_capability_artifact`; non-company-owned ecosystem, marketplace, partner, vendor, event, analyst, or publication surface for `external_validation`; delivered-project, customer, implementation, case, release, talk, or article surface for `delivery_trace`.
+- The page should expose facet-specific provenance: owned product/service/technical artifact for `own_capability_artifact`; AI-specific third-party validation that names the company, offering, competency, platform, or role for `external_validation`; concrete customer/project/use-case/workflow/implementation detail for `delivery_trace`.

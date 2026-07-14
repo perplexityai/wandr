@@ -1,0 +1,8 @@
+The input is a company name (in any of: full name, common abbreviation, locale variant, parent or subsidiary spelling). Match it to the canonical set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical companies and their accepted aliases:
+{=% for canonical, aliases in companies.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Out-of-set companies (any company not appearing as a canonical key or alias above) → {{ CANONICAL_INVALID }}. Note in particular that similarly-named-but-distinct companies are NOT in our set: "Elastic Path" is a different company from Elastic; "Kerry Elastic" / "Elastic Logistics" are different companies from Elastic; "Desert Sage Seminars" is a different company from Sage; etc. Match only when the agent's claim genuinely refers to one of the named SaaS companies.

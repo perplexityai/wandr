@@ -1,0 +1,24 @@
+For at least {= signal_event =}+ dated U.S. biotech-China decoupling signal events, classify each event under one of the closed source types listed below and supply a source URL for each event (i.e. {= url =}+ URL). The ledger should represent at least {= minimum_source_types =} distinct source types overall, but sparse source classes do not need the same number of events as source-rich classes. The evidence window is {= target_period =}; record the checked date as {= checked_date =}.
+
+This is a public-evidence ledger, not a legal, procurement, supplier-risk, geopolitical, or investment recommendation. Each signal should preserve the page's own date, issuer or source entity, source side, directly supported event or statement, signal/action status, any directly named Chinese counterparty, any directly supported U.S. company or public official, affected biotech/CDMO/data/manufacturing/supply-chain category when stated, stated rationale when stated, and a short raw excerpt.
+
+The closed `source_type` values are:
+{=% for label, description in source_types.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+The closed signal/action status labels are:
+{=% for label, description in signal_statuses.items() =%}
+- `{= label =}`: {= description =}
+{=% endfor =%}
+
+Do not use one source side to prove another side's action. A House committee page can prove committee framing and named targets, not a U.S. company supplier termination. A counterparty statement can prove the counterparty's response or action, not a customer exit unless it directly states that exit. Secondary reporting is secondary-only context unless backed by company-controlled evidence in a separate row.
+
+Positive source surfaces include official bill/law/status text, Federal Register or agency implementation notices, House Select Committee or NSCEB materials, BIO or comparable association statements, SEC filings, official company releases or investor materials, Chinese counterparty official statements or filings, and dated reputable secondary reporting used as context. Generic China policy, broad pharma reshoring commentary, vague risk boilerplate, law-firm client alerts substituting for official policy text, unnamed supplier language converted into named counterparties, and advice or risk scores do not count.
+
+Requirements:
+- The page must match the submitted source type by issuer, page class, and source side.
+- The page must directly support the dated event or statement being recorded.
+- The page must contain a concrete U.S. biotech-China decoupling tie, such as BIOSECURE, foreign-adversary biotech, Chinese CDMOs or suppliers, biological/genomic data, biomanufacturing, supply-chain reliance, named Chinese counterparties, or comparable separation pressure.
+- The page must directly support the submitted signal/action status without upgrading weaker evidence into a stronger company-action claim.
+- Any submitted Chinese counterparty, U.S. company, public official, source entity, supply-chain category, or rationale must be directly supported by this same page.

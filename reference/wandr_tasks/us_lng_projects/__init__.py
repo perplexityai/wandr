@@ -1,0 +1,1 @@
+"""Per (US LNG project, facet ∈ {capex, timeline, capacity, status}) cell, find a project-specific page on the operator's own domain or a regulator's project-specific surface substantively evidencing the claimed facet."""

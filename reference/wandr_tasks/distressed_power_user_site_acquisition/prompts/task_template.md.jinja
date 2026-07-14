@@ -1,0 +1,31 @@
+For {= site_opportunity =}+ distressed or available non-crypto heavy-industrial site opportunities in {= target_region =}, cover each of the {= evidence_axis =} evidence axes below. For every (site, evidence axis) cell, submit {= site_finding =}+ concrete site finding, supplying a source ({= url =}+ URL per finding).
+
+Treat {= snapshot_date =} as the status snapshot date. Distress and availability evidence is anchored to {= status_window =}; do not use relative timing such as "recently" unless the page itself provides an absolute date or a current status at the snapshot.
+
+This is an acquisition-screen and site-sourcing task, not a recommendation to build cryptocurrency mining. The site must not already be presented as a purpose-built cryptocurrency-mining, blockchain, hyperscale, or data-center campus. A completed sale only remains relevant when the cited page still presents tenant, parcel, lease, redevelopment, or reuse opportunity.
+
+Use the site, locality, region/state/province, and country fields to identify a specific physical mill, smelter, plant, complex, parcel, or redevelopment property. Use the finding string to name one concrete fact that the page substantively supports for the submitted evidence axis. Submit one fact per row. Multiple atomic facts that sit on the same page - say, an acreage fact, a cogeneration fact, a rail-access fact, and a heavy-zoning fact for a single infrastructure site - belong on separate rows, not stuffed into one enumeration string. The finding may carry a small amount of natural supporting context (a date attached to a status event, a process anchor attached to a steel-mill identification), but it should not stack five or six independent specifics that the page only loosely supports.
+
+Use only these evidence axes:
+
+{=% for evidence_axis in agent_evidence_axes =%}
+- **{= evidence_axis.name =}** - {= evidence_axis.short_desc =}: {= evidence_axis.content_bar =}
+{=% endfor =%}
+
+Expected source standing by evidence axis:
+
+{=% for evidence_axis in agent_evidence_axes =%}
+- **{= evidence_axis.name =}** - {= evidence_axis.source_bar =}
+{=% endfor =%}
+
+The following are outside the site-opportunity universe:
+
+{=% for cls, desc in out_of_scope_site_classes.items() =%}
+- **{= cls =}** - {= desc =}
+{=% endfor =%}
+
+Requirements:
+- The page must identify the same physical site at the submitted granularity.
+- The page source class must fit the selected evidence axis.
+- The page must substantively support the submitted finding for the selected evidence axis, and the excerpts must faithfully carry the load-bearing facts in the finding.
+- The finding should be one concrete page-supported fact for the selected evidence axis, not an enumeration of several. Use separate rows for separate atomic facts on the same page.

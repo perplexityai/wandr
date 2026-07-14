@@ -1,0 +1,28 @@
+For each of the {= country =} countries listed below and each of the {= haulage_type =} haulage types, name at least {= carrier =}+ road-freight carriers suitable for an FTL tender long-list. For each carrier, supply evidence for at least {= carrier_market_scope =}+ distinct market scopes, with at least {= url =} source URL per scope.
+
+Treat the current date for page interpretation as {= as_of_date =}.
+
+This is the kind of public market map a logistics procurement team would build before a multi-country road-freight tender. Public sources rarely expose private shipper accounts, so use public customer, sector, cargo, or specialist-service signals instead of guessing hidden relationships.
+
+The countries in scope are:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The haulage types are:
+
+{=% for haulage_type, haulage_desc in haulage_types.items() =%}
+- **{= haulage_type =}** - {= haulage_desc =}
+{=% endfor =%}
+
+Evidence comes from commercially credible pages. Strong evidence includes {= source_classes.strong =}. Weak discovery pages such as {= source_classes.weak =} do not count.
+
+Useful customer-overlap proxies include {= overlap_signals =}. Treat these as examples, not a closed list.
+
+Requirements:
+- The page must tie the carrier's FTL service to the selected country and submitted market scope — a regional operation, branch/base market, national service page, origin or destination, named corridor, or comparable concrete binding.
+- The page must support the submitted haulage type per the definitions above, as full-truckload or direct-load road service rather than a generic "road freight" or non-road mode.
+- The page must give a concrete fleet, network, capacity, route, terminal, branch, partner, daily-departure, control-tower, or similar operations signal for that carrier.
+- The page must provide a public customer-overlap proxy — a named shipper, named case-study customer, relevant sector, or relevant cargo class fit for pallet/FMCG/retail/industrial/healthcare/chemicals/food/high-value/temperature-controlled tendering.
+- The page must read as a commercially credible source class for carrier-market evidence.

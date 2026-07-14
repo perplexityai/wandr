@@ -1,0 +1,27 @@
+For each of {= employer_sector =}+ Texas employer sectors, find {= employer =}+ large or probably large employers operating in Texas and build public Texas workforce grounding evidence. Supply {= workforce_evidence =}+ distinct Texas workforce evidence axes per employer and {= url =}+ source URL per axis. This is a provenance and reconciliation task, not a ranked largest-employers list.
+
+Treat each URL as one Texas-scoped workforce claim line. Preserve the source name/class, raw workforce wording, source date or reporting period when supplied, number or range, geography scope, metric/unit, and currentness/status so the claim can be reconciled without flattening its scope.
+
+Use only page-local evidence that visibly appears in the cited page text. Do not invent, normalize, or combine headcount snippets from memory, search summaries, infoboxes, or another page. Wikipedia, Wikidata, generic encyclopedia pages, job/advice pages, prospecting databases, and pages that merely call an entity a "major employer" without a row-specific Texas workforce number are invalid for this grounding task.
+
+Employer sector is an exact dispatch key. Use each sector for employers whose main Texas workforce footprint fits that sector:
+{=% for sector, description in employer_sectors.items() =%}
+- `{= sector =}`: {= description =}
+{=% endfor =%}
+
+A Texas workforce evidence axis is one of:
+{=% for axis, description in workforce_evidence_axes.items() =%}
+- `{= axis =}`: {= description =}
+{=% endfor =%}
+
+Each employer can be a company, subsidiary, DBA, non-K-12 public agency, public authority, university system, local government, military installation, medical complex, campus, worksite, or bounded employer complex when the source's workforce boundary is clear and the employer fits the submitted `employer_sector`. Do not submit K-12 public school districts, individual K-12 schools, charter networks, or similar K-12 education systems as employers in any sector. Do not infer Texas workforce grounding from broader company totals, generic "major employer" list membership, broad regional prose without a row-specific number, FTE/contractor/project-impact numbers that are not labeled as such, planned/committed jobs, peak jobs, stale claims, or ranges that are not tied to an actual Texas workforce boundary.
+
+Requirements:
+- The submitted employer must fit the submitted `employer_sector`; sector labels are part of the claim, not loose source tags.
+- The page must communicate an admissible public headcount source: employer-controlled page/report, public-institution report, state/local economic-development or regional employer surface, official incentive/compliance material, credible news, or reputable third-party/ranking source used only as labeled evidence. Employer-quality rankings, job-search or hiring-advice pages, investment/vendor/prospecting pages, data-broker blurbs, and policy-advice pages do not work.
+- The page must name the employer or bounded employer complex and state a numeric or narrow-range workforce claim tied to it.
+- The page must tie the workforce claim to a Texas statewide, Texas-local, named Texas-site, or bounded Texas public-system geography for the submitted employer; broader-company, national, global, project/impact, and third-party conflict context does not satisfy this grounding task unless the page also gives the employer-specific Texas workforce boundary being claimed.
+- The page must make the claim's source date or reporting period, geography scope, metric/unit, and currentness/status determinable enough to preserve the claim without scope-flattening.
+- The page's claim must fit the submitted `workforce_evidence` label.
+- A single-locality public entity's total workforce claim, including a single city, county, K-12 school district, hospital, campus, installation, or site, is a local/site claim, not `statewide_or_system_current`. Only multi-region statewide employers, statewide agencies, or statewide university systems satisfy the statewide/system axis.
+- Every excerpt must be a faithful quote or tight page-local paraphrase of visible source text that supports the submitted number, employer boundary, Texas geography, and evidence label.

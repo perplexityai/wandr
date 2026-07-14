@@ -1,0 +1,20 @@
+For each of the {= credential_family =} credential families listed below, find {= firm_or_practice =}+ healthy-building, indoor-environmental-quality, mold/IAQ, EMF, green/wellness-building, building-biology, performance-testing, or comparable service firms or public practices per family; for each (`credential_family`, `firm_or_practice`) pair and each of the {= evidence_side =} evidence sides listed below, supply a public provenance source (i.e. {= url =}+ URL).
+
+The useful claim is public cross-source provenance for providers in a fragmented professional ecosystem, not a vendor ranking, hiring recommendation, contact list, health-efficacy claim, legal-compliance conclusion, or safety verdict.
+
+Credential families:
+{=% for credential_family, description in credential_families.items() =%}
+- `{= credential_family =}`: {= description =}
+{=% endfor =%}
+
+Evidence sides:
+{=% for evidence_side, description in evidence_sides.items() =%}
+- `{= evidence_side =}`: {= description =}
+{=% endfor =%}
+
+A valid `firm_or_practice` is a real firm, consultancy, public solo practice, or comparable service provider with public source-stated healthy-building, IEQ, building-biology, mold/IAQ, EMF, green/wellness-building, performance-testing, or adjacent service identity. Product-only monitor/device/platform vendors, pure directories, certifiers or standards owners without provider service work, generic construction firms without source-stated health/IEQ capability, medical clinics, blogs, marketplaces, lead-generation pages, ranking/listicle-only entities, and contact-enrichment surfaces do not count. A named individual credential can support a firm or practice only when the page visibly ties that person to the firm/practice; public solo practices count.
+
+Requirements:
+- The page must clearly identify the named firm/practice, or a named principal visibly tied to that firm/practice.
+- The page must make the `evidence_side` source role visible: for `authority_record`, it must communicate (possibly via URL among other things) an issuer, regulator, association, certification, membership, professional-directory, license-lookup, program-provider, or comparable authority/program context for the claimed `credential_family`; for `independent_service_surface`, it must read as a service, case, project, official practice, or focused trade/editorial context for the same provider, rather than an authority/program listing used only for the credential tie.
+- The page must state the side-appropriate provenance finding: for `authority_record`, a credential, license, membership, certification, directory/program participation, named-principal tie, or comparable authority-family tie; for `independent_service_surface`, a relevant healthy-building, IEQ, mold/IAQ, EMF, building-biology, green/wellness-building, performance-testing, or comparable service capability.

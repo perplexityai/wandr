@@ -1,0 +1,15 @@
+For each of the {= site_class =} public-benefit site classes below, supply a related sample of control-layer evidence for {= control_deployment =}+ implementation-stage microgrid deployments per class. Use the first applicable site class in the listed order so each deployment belongs under one class. Include at least {= url =}+ site-specific URL per control-disclosed deployment. Treat a control-disclosed deployment's identity as the site class, owner/operator, site, facility, or community, and location.
+
+The source should be site-specific and disclose the deployment's control layer. Eligible pages include controller/platform vendor pages, integrator or engineering pages, commissioning or technical reports, owner/utility technical documents, controls-focused credible reporting, public-agency project pages, and hybrid project/deployment pages when they carry control-layer evidence for the submitted deployment. Report `control_disclosure_class` as `named_controller` when the page names a controller, control platform, energy-management platform, or control software used for the submitted deployment; report it as `site_specific_control_behavior` when the page instead describes rich site-specific operating behavior. Do not infer a control layer from solar/battery assets, inverter names, a BMS, a generic SCADA label, an energy vendor, or an ordinary project blurb.
+
+Site classes:
+{=% for site_class, description in site_class_descriptions.items() =%}
+- `{= site_class =}`: {= description =}
+{=% endfor =%}
+
+`site_specific_control_behavior` needs enough site-specific behavior to make the operating/control layer visible: islanding or reconnection logic, resource or load dispatch, charge or energy management, local/remote activation, network-operations control, load shedding, or comparable behavior. A single generic grid-export, market-dispatch, or asset-taking-turns sentence does not count by itself.
+
+Requirements:
+- The page must anchor the submitted deployment: owner/operator, site, facility, or community, location, a site-specific microgrid or comparable distributed-energy system, and implementation-stage status.
+- The page must disclose the deployment's control layer: a named controller/platform/software or rich site-specific control behavior for the submitted deployment.
+- The page must support the reported `control_disclosure_class`.

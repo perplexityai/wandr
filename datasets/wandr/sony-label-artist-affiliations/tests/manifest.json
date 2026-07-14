@@ -1,0 +1,8 @@
+{
+  "name": "sony-label-artist-affiliations",
+  "wandr_task": "sony_label_artist_affiliations",
+  "task_names": [
+    "sony_label_artist_affiliations",
+    "sony_label_artist_affiliations.label_provenance"
+  ]
+}

@@ -1,0 +1,13 @@
+The input is a US-listed equity ticker. Match it to the canonical set below and return the exact canonical key. If no canonical key matches (the ticker is not in this watchlist's universe), return {{ CANONICAL_INVALID }}.
+
+Canonical tickers and their accepted aliases:
+{=% for canonical, aliases in tickers.items() =%}
+- **{= canonical =}**
+{=% if aliases =%}
+  (also accepted as: {= aliases | join(", ") =})
+{=% endif =%}
+{=% endfor =%}
+
+Class-share separator variants — "BRK.B" / "BRK-B" / "BRK/B" / "BRKB" — map to their canonical form when listed above. Whitespace, surrounding punctuation, and case are not load-bearing.
+
+Out-of-set tickers — ones not appearing as a canonical key or alias above — → {{ CANONICAL_INVALID }}. Tickers from the same exchange that happen to share a prefix or substring with a canonical ticker are NOT matches: "AAPLF" (foreign-listing variant) is distinct from "AAPL"; "BRKL" is distinct from "BRK.B"; etc. Match only when the agent's claim genuinely refers to one of the listed tickers.

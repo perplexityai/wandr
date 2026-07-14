@@ -1,0 +1,18 @@
+Map the input value to its canonical form.
+
+## Instructions
+
+Return the exact canonical form. For compound keys (e.g. "parish,municipality"), the canonical form should also be a compound of canonical strings in the same format. If a canonical set is provided or trivially well-known (e.g. months / solar system planets) but the provided value doesn't map onto any of them, return {{ CANONICAL_INVALID }}.
+
+{<% for name, section in keys.items() if section %>}
+{% if _key_name == "{< name >}" %}
+## Task-specific instructions
+
+{< section >}
+{% endif %}
+{<% endfor %>}
+
+## Input
+
+Field: {{ _key_name }}
+Value: {{ _key_value_raw }}

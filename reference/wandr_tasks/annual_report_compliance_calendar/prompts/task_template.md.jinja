@@ -1,0 +1,28 @@
+For the {= jurisdiction =} U.S. jurisdictions listed below, and for each of the {= entity_category =} entity categories in every jurisdiction, supply {= url =}+ official URL for each of the {= evidence_facet =} recurring compliance evidence facets.
+
+The atlas is for recurring business-entity maintenance filings that belong on a compliance calendar: annual reports, biennial statements, statements of information, franchise-tax annual-report hybrids, public-information reports, or official no-recurring-report / portal-only variants. It is not about certificates of status, good-standing certificate ordering, initial formation, or first-time foreign qualification packets.
+
+Use only official sources: Secretary of State / Division of Corporations / equivalent business registry pages, official business-registry portals, official fee schedules and forms, official statute or administrative-code sites, and official tax or franchise authorities only when they administer the recurring entity-maintenance report, tax/report hybrid, or return. Third-party registered-agent pages, compliance-vendor pages, certificate shelf-life tables, and legal-advice pages do not count.
+
+Entity categories:
+{=% for category, description in entity_category_descriptions.items() =%}
+- `{= category =}`: {= description =}
+{=% endfor =%}
+
+Evidence facets:
+- `cadence_due`: report or statement name, filing frequency, due date/window, or official no-recurring-maintenance-filing marker.
+- `base_fee`: base filing fee, tax, minimum tax, calculation method, no-fee marker, or official portal-only / entity-specific fee marker.
+- `penalty_status`: late fee, penalty, interest, reinstatement/status consequence, cure path, or official no-penalty/no-detail marker.
+- `filing_channel`: official filing portal, e-file service, form, mail, counter, or other filing channel; or official no-channel / not-applicable marker.
+
+Jurisdictions:
+{=% for jurisdiction in jurisdictions =%}
+- **{= jurisdiction =}**
+{=% endfor =%}
+
+Each citation should state the facet-specific value the source supports. Taken together, the four facets for a jurisdiction/category pair should cover the report or statement name, filing frequency, due date or window, base fee, late fee / penalty / interest / status consequence when officially stated, filing channel, and any explicit official absence marker, no-detail marker, not-applicable marker, portal-only marker, or entity-specific fee marker that the cited source supports.
+
+Requirements:
+- The page must tie the filing rule to the claimed jurisdiction and entity category. A page that explicitly applies the same rule to all relevant business entities, corporations, LLCs, or domestic/foreign entities can support multiple categories.
+- The page must anchor an existing-entity recurring maintenance obligation, official no-recurring-report position, or official portal-only maintenance filing context. Formation filings, first-time foreign registration, certificates of status, account-status certificates, federal beneficial-ownership notices, and generic tax registration pages are not enough.
+- The page must supply the evidence called for by `evidence_facet`. `cadence_due` needs the filing name plus cadence and due timing, or an official no-recurring-maintenance-filing marker. `base_fee` needs base fee / tax / minimum tax / calculation / no-fee / portal-only / entity-specific fee evidence. `penalty_status` needs late fee, penalty, interest, reinstatement/status consequence, cure path, or official no-penalty/no-detail evidence. `filing_channel` needs an official portal, e-file service, form, mail, counter, other filing channel, or official no-channel / not-applicable marker.

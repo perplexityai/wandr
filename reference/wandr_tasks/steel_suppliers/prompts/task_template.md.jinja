@@ -1,0 +1,15 @@
+For each of the {= product_family =} steel product families below, cover at least {= supplier =}+ Australian-operating suppliers per family; for every supplier-family pairing, supply at least {= url =}+ public URL on a page where the supplier publicly states the capability.
+
+Product families:
+{=% for canonical, meta in product_families.items() =%}
+- `{= canonical =}` — {= meta.label =}: {= meta.description =}
+{=% endfor =%}
+
+Each supplier must be a named business operating in Australia as a steel or metals stockist, distributor, manufacturer, supplier, or steel processing / fabrication provider. Product-family claims must be source-stated; broad "steel products" wording is not enough for a narrower family unless the page also names that family or clearly equivalent terms.
+
+For downstream analysis, optional notes can capture source-stated public access or fulfillment details visible on the cited page: minimum order or quote-required status, delivery or pickup geography, online ordering, customer portal, API/EDI, and page or catalog date. Leave these details absent rather than inferring. Supplier rankings, recommendations, procurement advice, partnership outreach, lead scores, contact names, phone numbers, email addresses, and contact-form harvesting are out of scope.
+
+Requirements:
+- The page must identify the supplier as an Australia-operating steel / metals supplier, distributor, stockist, manufacturer, or steel processing / fabrication provider.
+- The page must explicitly tie that supplier to the claimed `product_family` capability.
+- The page must be a public provenance source for the claim: supplier-controlled product / capability / catalog pages, public catalogs or PDFs, and supplier-specific industry / trade / registry pages can count; contact-only pages, generic search or listing stubs, ranking / recommendation pages, and pages requiring private login do not.

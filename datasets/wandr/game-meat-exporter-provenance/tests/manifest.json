@@ -1,0 +1,7 @@
+{
+  "name": "game-meat-exporter-provenance",
+  "wandr_task": "game_meat_exporter_provenance",
+  "task_names": [
+    "game_meat_exporter_provenance"
+  ]
+}

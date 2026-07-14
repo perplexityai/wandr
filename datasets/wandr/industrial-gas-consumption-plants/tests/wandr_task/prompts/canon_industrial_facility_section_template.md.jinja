@@ -1,0 +1,7 @@
+Return the canonical facility key as a four-part comma-separated value:
+
+`operator, facility, state, industry_category`
+
+Use the operator name supported by the cited source, preferring the operator shown as current as of {= as_of_date =} when the source distinguishes ownership over time, and use the facility's ordinary public name. Normalize obvious aliases for the same physical site, such as "Toledo DR Plant" and "Toledo Direct Reduction Plant", while preserving distinct colocated plants as separate canonical facilities.
+
+Return {{ CANONICAL_INVALID }} only when the value is plainly not a U.S. industrial manufacturing/processing facility requested by the task, such as a standalone power plant, LNG terminal, pipeline/compressor station, gas-processing field asset, corporate headquarters, wrong-state or wrong-facility submission, fictional facility, or non-U.S. plant.

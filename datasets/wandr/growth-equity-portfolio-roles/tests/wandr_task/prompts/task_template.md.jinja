@@ -1,0 +1,21 @@
+For each of the {= investment_firm =} investment firms listed below, identify {= firm_portfolio_role =}+ public sponsor-role relationships per firm, where each relationship ties a named firm person to a named portfolio company; for every such (`investment_firm`, `person`, `portfolio_company`) relationship and each of the {= evidence_side =} evidence sides listed below, supply a relationship-substantiating source (i.e. {= url =}+ URL).
+
+The work is public relationship provenance for software/growth-equity sponsor involvement, not contact sourcing, private biography, CRM enrichment, outreach targeting, email/phone collection, or LinkedIn harvesting.
+
+Investment firms in scope:
+{=% for canonical, aliases in investment_firms.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The evidence sides of interest, which we refer to as `evidence_side`, are:
+
+- `firm_role_side`: firm-authored or firm-controlled public evidence that ties `person` to `portfolio_company` or to a portfolio-company role.
+- `portfolio_company_acknowledgment`: portfolio-company-owned or visibly portfolio-company-issued evidence acknowledging the sponsor/company relationship, investment/backing, financing, acquisition, board representation, co-investor relationship, or the same named person when available.
+
+A valid role relationship is a public sponsor-side role, assignment, investment, board, observer, director, deal-team, operating/portfolio-support, works-with, serves-on, supports, or comparable wording tied to the named portfolio company. The portfolio-company side may prove the firm/company relationship even when it does not name the exact person. Public wording such as `board member`, `board observer`, `former`, `Level Team`, `operating partner`, `growth investment`, or `co-investor` remains meaningful as stated, rather than being converted into private contact or CRM categories. The cited page should be fully public and usable; contact-enrichment databases, stale org-chart/profile scrapers, generic business articles, and ordinary LinkedIn pages are not provenance substitutes for the side-specific source role.
+
+Requirements:
+
+- For `firm_role_side`, the URL must be a firm-owned, firm-authored, or firm-controlled source for `investment_firm`; for `portfolio_company_acknowledgment`, the URL must be owned by the portfolio company or visibly issued by the portfolio company.
+- For `firm_role_side`, the page must identify the named `person` and `portfolio_company` and connect them in the same public role relationship; for `portfolio_company_acknowledgment`, the page must identify the `investment_firm` and `portfolio_company`, while naming the exact `person` is helpful but not required.
+- For `firm_role_side`, a firm portfolio grid or company list without named person-role evidence is not enough; for `portfolio_company_acknowledgment`, a pure firm-owned page, generic news article, LinkedIn page, stale org chart, contact database, or generic aggregator is not enough.

@@ -1,0 +1,8 @@
+{
+  "name": "doj-antitrust-document-provenance",
+  "wandr_task": "doj_antitrust_document_provenance",
+  "task_names": [
+    "doj_antitrust_document_provenance",
+    "doj_antitrust_document_provenance.case_context"
+  ]
+}

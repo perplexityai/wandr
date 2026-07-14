@@ -1,0 +1,7 @@
+{
+  "name": "amazon-business-punchout-capability-provenance",
+  "wandr_task": "amazon_business_punchout_capability_provenance",
+  "task_names": [
+    "amazon_business_punchout_capability_provenance"
+  ]
+}

@@ -1,0 +1,24 @@
+For {= software_company =}+ companies from the closed company list below, cover all {= fiscal_period =} fiscal periods and at least {= metric_axis =}+ operational KPI axes per fiscal period, with {= url =}+ issuer-published or SEC-hosted source URL for each company-period-axis combination.
+
+The metric evidence is useful only when it can be traced to the issuer's own period language. Canonical `fyYYYY_qN` labels may represent the issuer's source-stated period label, including forms such as `Second Quarter 2024`, `Q2 2024`, or `second quarter ended June 30, 2025`, but a publication date alone is not enough. Calendar-quarter inference does not establish a fiscal label.
+
+Closed software-company list:
+{=% for canonical, aliases in software_companies.items() =%}
+- `{= canonical =}`: {= aliases | join(", ") =}
+{=% endfor =%}
+
+Fiscal-period labels:
+{=% for canonical, aliases in fiscal_periods.items() =%}
+- `{= canonical =}`: examples include {= aliases[:3] | join(", ") =}
+{=% endfor =%}
+
+Metric axes:
+{=% for canonical, description in metric_axis_descriptions.items() =%}
+- `{= canonical =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The source must be issuer-published or SEC-hosted primary material: shareholder letter, earnings release, annual or quarterly report, 10-K, 10-Q, 8-K exhibit, investor presentation, or issuer-hosted/SEC-hosted transcript. Market-data aggregators, analyst notes, trade press, third-party transcript sites, press-wire republications away from the issuer or SEC, and current careers pages do not count.
+- The page must identify the claimed issuer. BigCommerce, BIGC, and Commerce.com references can count for `commerce_com_bigcommerce` when the source itself establishes that issuer identity.
+- The page must state the claimed fiscal period label, quarter/year, or year-end fiscal label for a fourth-quarter employee/headcount record. A publication date or calendar quarter is not enough by itself.
+- The page must state a metric that belongs to the claimed axis and must state the exact KPI value, rate, threshold, count, backlog/RPO amount, or comparable figure being used. Calculated growth rates, retention rates, ARR thresholds, backlog, headcount, or normalized metrics do not count unless the source states that figure.

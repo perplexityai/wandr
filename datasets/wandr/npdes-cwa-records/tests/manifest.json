@@ -1,0 +1,7 @@
+{
+  "name": "npdes-cwa-records",
+  "wandr_task": "npdes_cwa_records",
+  "task_names": [
+    "npdes_cwa_records"
+  ]
+}

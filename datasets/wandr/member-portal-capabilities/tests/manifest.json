@@ -1,0 +1,8 @@
+{
+  "name": "member-portal-capabilities",
+  "wandr_task": "member_portal_capabilities",
+  "task_names": [
+    "member_portal_capabilities",
+    "member_portal_capabilities.member_portal_deployments"
+  ]
+}

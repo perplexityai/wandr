@@ -1,0 +1,8 @@
+{
+  "name": "clearing-infrastructure-capabilities",
+  "wandr_task": "clearing_infrastructure_capabilities",
+  "task_names": [
+    "clearing_infrastructure_capabilities",
+    "clearing_infrastructure_capabilities.entity_anchors"
+  ]
+}

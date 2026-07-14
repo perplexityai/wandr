@@ -1,0 +1,17 @@
+For {= supplier =}+ public suppliers of photonics, laser/reference, optical-control, timing/control, trap/atom optics, integrated photonics, or related enabling subsystems used in atom/ion quantum platforms, cover {= capability_axis =}+ capability axes per supplier by supplying {= url =}+ page-specific URL per supplier-axis pair.
+
+Capability axes:
+{=% for axis, description in capability_axes.items() =%}
+- `{= axis =}`: {= description =}
+{=% endfor =%}
+
+Capability sources should be product pages, datasheets, application pages, technical project pages, official supplier pages, or comparable page-specific technical surfaces. Directories, marketplaces, buyer guides, market reports, rankings, broad quantum-overview pages, and vague supplier tags are discovery aids, not capability evidence.
+
+Keep the work to public factual evidence. Do not rank suppliers, recommend vendors, enrich contacts, infer prices, negotiate procurement, draw export-control conclusions, or give technical design advice.
+
+Requirements:
+- The page must identify the named supplier and attribute the cited capability, product, project, or technical surface to that supplier.
+- The page should be a page-specific capability surface for the claimed capability axis.
+- The page must support a concrete capability finding for the claimed capability axis.
+- The page must tie that capability to atom/ion, trapped-ion, neutral-atom, atomic-clock, cold-atom, optical-clock, ion-clock, or closely adjacent atom/ion quantum technology.
+- A company page that only describes the named organization's own quantum computer, QPU, cloud service, or full-system platform does not count by itself. It counts only when the cited page establishes a qualifying enabling subsystem/component capability supplied by that organization, such as laser/reference, timing/control, trap/atom-optics, integrated-photonics, packaging, or comparable subsystem technology.

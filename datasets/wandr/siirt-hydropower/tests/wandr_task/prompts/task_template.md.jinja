@@ -1,0 +1,17 @@
+For {= project =}+ named hydroelectric dam, regulator, or HES projects tied to Siirt province, cover {= evidence_role =}+ distinct evidence roles per project, which means all of the role values listed below. For each (`project`, `evidence_role`) pair, supply {= url =}+ project-specific public URL.
+
+Siirt HES records often appear as partial or conflicting traces: provincial ÇED notices, governorate or district pages, downloadable official files, operator pages, energy trade reports, directories, and local legal/context reporting can disagree on spelling, river name, capacity, operator, or lifecycle status.
+
+The `evidence_role` values are:
+{=% for role, description in evidence_role_descriptions.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Direct EPDK, central e-ÇED, DSİ, or Resmi Gazete records count when they are publicly reachable, but they are not mandatory if project-specific official provincial, company/operator, trade, or local-context sources carry the evidence.
+
+Project-specific energy directories can support discovery, capacity, generation, operator, or operating-state evidence, but province-level lists and directory-only evidence should not be treated as official administrative status by themselves. Official announcements, operator pages, trade/directory profiles, dated lifecycle records, and local/legal/context reporting are separate evidence surfaces. A broad annual report, provincial status PDF, source hub, or project table can count only for the role that its cited section independently supports; the same table row should not be recycled as official, operation, lifecycle, and local/context evidence. Local, legal, ecology, or recreation sources count only for what they directly say about the named project, river/place, event, proceeding, or context; they should not be turned into legal conclusions or unsupported environmental-impact claims.
+
+Requirements:
+- The page must clearly identify the named project and tie it to Siirt province through a district, river, village/place, facility location, or project area.
+- The page must show content-level cues for the declared role, not just a generic project mention: an administrative or planning action for `official_administrative_or_plan`; technical/operator/production fields for `operation_capacity_or_operator`; a dated action, decision, period, or milestone for `dated_status_or_lifecycle_event`; or local/legal/ecology/recreation/community narrative or proceeding for `local_legal_or_context`.
+- The page must expose a concrete project-specific finding for that role, with source type, source date, event date, aliases, status posture, capacity/generation units, operator, conflicts, affected places, or missing-state cues preserved when the page provides them. Generic table columns, province-level inventory text, publication dates, or place names should not be stretched into another role's finding.

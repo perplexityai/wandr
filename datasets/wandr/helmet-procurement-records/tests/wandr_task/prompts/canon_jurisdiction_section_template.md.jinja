@@ -1,0 +1,12 @@
+Canonical jurisdictions in scope:
+{=% for canonical, aliases in jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted jurisdiction name to one of the canonical forms above. Accept common country-name variants, abbreviations, punctuation variants, and source-language variants when the intended country is clear.
+
+Important scope choices:
+- The allowed set is ASEAN-10 plus India, China, Australia, and the United States. No other country canonifies into this task.
+- A subnational buyer, state, province, city, municipality, school, hospital, police unit, ministry, or public enterprise should canonify to the source-stated country jurisdiction when that country is in the allowed set.
+- For multilateral procurement notices, canonify to the beneficiary, delivery, or project country stated by the source, not automatically to the agency headquarters country.
+- A regional phrase such as "ASEAN" or "Asia-Pacific" is not itself a jurisdiction. Use a specific allowed country only when the source or submission makes one clear.

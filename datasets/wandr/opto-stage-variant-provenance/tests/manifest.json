@@ -1,0 +1,7 @@
+{
+  "name": "opto-stage-variant-provenance",
+  "wandr_task": "opto_stage_variant_provenance",
+  "task_names": [
+    "opto_stage_variant_provenance"
+  ]
+}

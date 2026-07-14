@@ -1,0 +1,9 @@
+{
+  "name": "starlink-eband-evidence",
+  "wandr_task": "starlink_eband_evidence",
+  "task_names": [
+    "starlink_eband_evidence",
+    "starlink_eband_evidence.named_external_hardware_supply",
+    "starlink_eband_evidence.internal_rf_hardware_capability"
+  ]
+}

@@ -1,0 +1,14 @@
+For {= program_cycle_floor =}+ distinct official housing or homelessness funding cycles dated within {= target_period =}, supply official solicitation or program-term sources for each of the {= terms_facet =} public terms facets per program cycle ({= url =}+ URL per facet). The {= program_cycle_floor =}-cycle parent count is binding for this subtask too: a complete solicitation_terms answer needs at least {= program_cycle_floor =} separate administered program cycles, each with all {= terms_facet =} public terms facets, not repeated facets or source artifacts from a smaller cycle set. A program_cycle is the administered funding competition, NOFA, opportunity, round, fiscal year, window, notice, or allocation cycle. Use one stable program_cycle label for the same agency/program/year/round cycle across all term facets and, when the same administered cycle appears in the root award task, use the same identity there; NOFA PDFs, guidelines filenames, grant-listing titles, amendment notices, award-list titles, geography or CoC slices, recipient rows, project rows, and source-page titles are aliases, not separate cycles.
+
+The terms_facet value must be one of:
+{=% for facet, description in terms_facets.items() =%}
+- **{= facet =}** - {= description =}
+{=% endfor =%}
+
+Official solicitation-term sources include HUD NOFO PDFs, Grants.gov or Simpler Grants official listings, HCD NOFAs, HCD program pages, official guidelines, timelines, amended NOFAs, and comparable public program documents. One official artifact may support multiple term facets when it states each claimed term, but the artifact, file name, grant-listing title, amendment notice, geography slice, or award-list heading never creates an additional program_cycle by itself. Third-party NOFO analyses, consultant/nonprofit/grant-writing/law-firm/advocacy summaries, generic program directories without the claimed term, sponsor press releases, news coverage, and gated portals without stable public term artifacts do not count.
+
+In the answer, briefly report the term or source phrase that supports the submitted facet.
+
+Requirements:
+- The page must tie the solicitation or program-term evidence to the claimed program cycle.
+- The page must state the specific public term claimed for the submitted terms_facet.

@@ -1,0 +1,7 @@
+{
+  "name": "eu-emissions-cross-register",
+  "wandr_task": "eu_emissions_cross_register",
+  "task_names": [
+    "eu_emissions_cross_register"
+  ]
+}

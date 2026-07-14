@@ -1,0 +1,21 @@
+For each of the {= focal_brand =} focal consumer brands below, cover {= brand =}+ consumer brands in that focal brand's local-market competitor set — the focal brand itself or any other brand a brand-strategy analyst would reasonably include in its same-vertical, same-local-market competitor panel — with {= evidence_axis =}+ distinct public evidence areas per covered brand, {= brand_axis_finding =}+ concise source-bounded audit finding per cell, and a source ({= url =}+ URL per finding). The focal subjects are:
+
+{=% for focal_brand, subj in focal_subjects.items() =%}
+- **{= focal_brand =}** in {= subj["focal_city"] =} (local market: {= subj["local_market_terms"] =})
+{=% endfor =%}
+
+Count brand-owned pages, public social profiles or posts, map/review pages, delivery or menu pages, local guide/editorial pages, venue/mall/tourism listings, and similarly visible public sources. App-only or login-only shells are not enough by themselves. The finding may use audit labels such as positioning class, engagement or social-quality signal, sentiment summary, common complaint, heritage framing, tourist/family appeal, or competitor context only when the cited page supports that wording.
+
+Evidence areas:
+
+{=% for axis_name, axis_desc in evidence_axis_descriptions.items() =%}
+- **{= axis_name =}**: {= axis_desc =}
+{=% endfor =%}
+
+Requirements:
+
+- The page must clearly identify or credibly profile the submitted brand and tie it to the local market of the row's focal subject.
+- The submitted brand must belong to a credible competitor panel for the row's focal brand by sharing the same consumer vertical: the focal brand itself or any brand a brand-strategy analyst would reasonably include in the focal brand's vertical-aligned competitor set.
+- The page must support the submitted finding for the row's evidence area.
+- The cited surface must fit the evidence area and expose brand-specific public evidence rather than generic directory, search-result, or category filler.
+- The submitted finding must stay within what the cited source publicly states, including any ratings/review counts, menu items, prices, currentness, sentiment, complaint, positioning, or competitor-comparison boundary.

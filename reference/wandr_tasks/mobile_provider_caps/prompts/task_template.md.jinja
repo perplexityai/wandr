@@ -1,0 +1,44 @@
+For {= provider_brand =}+ U.S.-serving consumer mobile service provider brands, supply evidence for each of the {= capability_area =} capability areas and at least {= url =}+ URL per area. The provider universe is open and can include MNOs, carrier-owned prepaid or flanker brands, independent MVNOs, cable or ISP wireless brands, regional wireless carriers, Lifeline or public-benefit mobile providers, app-first wireless lines, and hybrid consumer mobile providers when the public evidence supports the mobile phone-number service path.
+
+The capability areas are:
+{=% for capability_area, description in capability_area_descriptions.items() =%}
+- `{= capability_area =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, include the canonical provider brand, owner or legal/DBA name when public, provider type, service layer, number path, SIM/eSIM path, host network or network labels when public, hard policy topic when relevant, capability value, source class, documentation state, visible source date or as-of date, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Provider type should use these meanings when they fit:
+{=% for provider_type in provider_types =%}
+- `{= provider_type =}`
+{=% endfor =%}
+
+Service layer should be factual, not advisory:
+{=% for service_layer in service_layers =%}
+- `{= service_layer =}`
+{=% endfor =%}
+
+Number path should use these meanings when they fit:
+{=% for number_path in number_paths =%}
+- `{= number_path =}`
+{=% endfor =%}
+
+SIM/eSIM path should use these meanings when they fit:
+{=% for sim_esim_path in sim_esim_paths =%}
+- `{= sim_esim_path =}`
+{=% endfor =%}
+
+Source class and documentation state should use these meanings when they fit:
+{=% for source_class in source_classes =%}
+- `{= source_class =}`
+{=% endfor =%}
+{=% for documentation_state in documentation_states =%}
+- `{= documentation_state =}`
+{=% endfor =%}
+
+Public sources can include provider product pages, activation and checkout flows, help-center articles, support docs, policy or legal pages, official broadband labels or disclosures, platform carrier-support pages, public registries, comparison directories, and corroborated community sources. The two core capability areas, `phone_number_service` and `sim_esim_delivery`, should be proven from provider-controlled sources. Third-party directories, platform pages, app-store listings, comparison sites, and community pages can help discover and corroborate providers, but they are not a closed source menu and should not be the only proof that a provider qualifies as a phone-number-bearing mobile service.
+
+Requirements:
+- The page must identify the claimed provider brand, or bridge a trade name, legal name, app name, or owner/brand label to it, with enough public context to distinguish it from unrelated same-name entities, host networks, parent companies, plan-comparison sites, device makers, pure travel eSIMs, and VoIP-only number apps.
+- The page must fit the claimed `capability_area`: `phone_number_service` evidence should show phone-number, voice, SMS, talk/text, new-number, port-in, or equivalent mobile-line handling; `sim_esim_delivery` evidence should show SIM/eSIM activation, purchase, delivery, transfer, swap, compatibility, app installation, QR-code, or equivalent service setup; `network_identity` evidence should show current network/host/owner/legal identity, multi-network labels, or a visible public non-disclosure state; `lifecycle_policy` evidence should show a harder operational or policy mechanic, constraint, or source-backed public silence.
+- The page must support the claimed capability value at the submitted specificity, such as service layer, number path, SIM/eSIM path, host network or network labels, policy topic, device/platform constraint, activation mode, identity/KYC posture, port-out or transfer-PIN mechanic, or documented absence.
+- The record must preserve source posture and uncertainty: official versus third-party support, current/as-of state, negative documentation, ambiguity, conflicting network names, app-first or VoIP boundaries, travel/data-only exclusions, and `not publicly documented` states should be labeled rather than recast as clean positive facts.

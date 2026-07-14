@@ -1,0 +1,9 @@
+{
+  "name": "gpu-benchmarks",
+  "wandr_task": "gpu_benchmarks",
+  "task_names": [
+    "gpu_benchmarks",
+    "gpu_benchmarks.gpu_prices",
+    "gpu_benchmarks.game_reviews"
+  ]
+}

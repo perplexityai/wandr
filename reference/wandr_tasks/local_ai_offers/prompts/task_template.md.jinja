@@ -1,0 +1,24 @@
+For each of the {= offer_family =} AI automation offer families, name {= provider_package =}+ public provider/package offers per family; for each provider/package and each of the {= evidence_role =} evidence roles, supply {= url =}+ public URL from a page about that same offer.
+
+The `offer_family` labels are:
+- `review_reputation`: AI-assisted review generation, review monitoring, reputation management, review replies, testimonials, or related public reputation workflows.
+- `voice_receptionist`: AI receptionist, virtual receptionist, answering service, phone agent, call assistant, booking/screening, or after-hours voice automation.
+- `chatbot_lead_qualifier`: website/chat AI that captures, qualifies, routes, books, or follows up on leads.
+- `seo_geo_blog_writer`: AI or automation for SEO, GEO, local-search, blog, article, product, or location-page content used by SMBs, agencies, freelancers, or adjacent operators.
+- `invoice_chasing`: invoice chasing, accounts-receivable automation, payment reminders, collections workflow, debtor follow-up, or related billing follow-up automation.
+
+The `evidence_role` labels are:
+- `offer_feature`: the cited page shows a concrete AI or automation feature for the submitted offer family.
+- `pricing_packaging`: the cited page states the offer's commercial packaging: explicit price, starting price, usage unit, tier/bundle inclusion, marketplace/package price, agency package price, or a source-stated quote/custom/contact-sales state.
+
+Use `provider_package` for a concise provider + offer/package/service identity, such as a SaaS product, platform module, official service package, app-directory offer, marketplace package, white-label/reseller offer, agency package, or freelancer package. A provider-only name can be acceptable when the public offer is sold under the provider name rather than under a separate plan name.
+
+Eligible source surfaces include provider-controlled product/pricing/help/docs pages, public app-directory or integration-marketplace pages, public package listings, public agency/service pages, white-label/reseller platform pages, and freelancer/marketplace package pages that present the offer itself. Generic "best tools" roundups, opportunity rankings, scraped SaaS directories, press coverage, lead lists, contact enrichment pages, sales scripts, implementation how-tos, and private/login-only surfaces are not enough by themselves.
+
+Include a compact finding for each record: name the feature on `offer_feature` records or the price/package/quote/custom state on `pricing_packaging` records. Source-stated provider/package context, target customer, integration, source date, and checked date are helpful when visible, but they are auxiliary and should not be invented.
+
+Requirements:
+- The page must identify the same provider_package and bind it to the submitted offer_family rather than an unrelated product, generic category, or different service line.
+- The page should support local-business, trades, SMB, agency, freelancer, or adjacent SMB-operator use. This can be explicit target wording, or public self-serve pricing, app-marketplace, agency/white-label/reseller, local-search, invoice-workflow, customer-communication, or small-business workflow context. Do not use clearly enterprise-only, consumer-only, or internal-developer-only pages.
+- The page should have a source role appropriate to evidence_role: product/feature/help/docs/marketplace/app-directory/service/package pages for `offer_feature`; pricing/plans/billing/package/quote/custom/contact-sales/app-marketplace/agency/freelancer package pages for `pricing_packaging`.
+- The page must provide the role-specific evidence: for `offer_feature`, a concrete AI or automation feature for the submitted offer_family; for `pricing_packaging`, an explicit price, starting price, usage unit, tier/bundle inclusion, marketplace/package price, agency package price, or source-stated quote/custom/contact-sales state for the same provider_package.

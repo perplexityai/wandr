@@ -1,0 +1,22 @@
+For {= foundry =}+ type foundries or foundry-like public type ventures that became publicly visible during {= target_window =}, supply evidence for each of the {= evidence_kind =} evidence kinds and at least {= url =}+ URL per kind. The public venture can be an independent foundry, solo type practice, design-studio foundry arm, educational or student foundry, institutional foundry, marketplace-native foundry, or broader design practice with a public type catalog.
+
+The evidence kinds are:
+{=% for kind, description in evidence_kind_descriptions.items() =%}
+- `{= kind =}`: {= description =}.
+{=% endfor =%}
+
+For each source, report the foundry geography when public, entity type, official or durable identity URL, observed date or year where one is being claimed, date semantics, source type, source publication date or visible date, checked date, active-availability signal, confidence, and any missing / corroboration / conflict state. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Date semantics should use these meanings when they fit:
+{=% for date_semantic in date_semantics =%}
+- `{= date_semantic =}`
+{=% endfor =%}
+
+Source type should be factual, not promotional. Useful public sources include official foundry pages, dated launch posts, type or design publications, curated type databases, institutional news, distributor or marketplace pages, release feeds, and corroborated public social posts. Private or gated communities, contact enrichment, prospecting data, pricing / licensing advice, font-shopping recommendations, popularity rankings, visual quality judgments, and brand critique are out of scope. Editorial lists, year-founded indexes, roundup/news hubs, and directory list pages can be discovery surfaces, but the cited evidence still needs factual entity-specific identity or event support.
+
+Requirements:
+- The page must identify the claimed foundry or foundry-like entity and give enough public context to distinguish it from a typeface family, a distributor, a generic design studio with no public type offering, or a private portfolio fragment.
+- The page must fit the claimed `evidence_kind`: `identity_active` evidence should be a foundry-owned page, official marketplace / distributor profile, or entity-specific durable profile / catalog page that shows active catalog, public typeface availability, type services, or comparable public availability; `dated_event` evidence should show a dated event or date claim in the target window.
+- The page must make the event date semantics or active-public status clear enough to classify what the source date proves. A publication date, founded year, product release date, storefront launch date, distributor onboarding date, and rebrand date are different claims unless the source ties them together.
+- Broad year-founded pages, directory indexes, news roundups, search / category pages, and other multi-foundry hub pages cannot satisfy `identity_active` merely because they list a foundry, link to its site, or imply that listed foundries are active. Such pages can support `dated_event` only when the row-specific text for the submitted foundry actually supports the observed date or year and the submitted date semantics.
+- The record must preserve ambiguity and false-positive states: conflicting dates, social-only or marketplace-only leads, missing official dates, old foundries with recent platform events, first typefaces that predate a foundry launch, distributor joins mistaken for founding, and duplicate / rebrand / continuation cases should be labeled rather than recast as clean new foundings.

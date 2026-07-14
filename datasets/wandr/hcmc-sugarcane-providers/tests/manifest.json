@@ -1,0 +1,8 @@
+{
+  "name": "hcmc-sugarcane-providers",
+  "wandr_task": "hcmc_sugarcane_providers",
+  "task_names": [
+    "hcmc_sugarcane_providers",
+    "hcmc_sugarcane_providers.provider_capability"
+  ]
+}

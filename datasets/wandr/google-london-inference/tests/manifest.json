@@ -1,0 +1,7 @@
+{
+  "name": "google-london-inference",
+  "wandr_task": "google_london_inference",
+  "task_names": [
+    "google_london_inference"
+  ]
+}

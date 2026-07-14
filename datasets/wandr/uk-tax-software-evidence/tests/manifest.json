@@ -1,0 +1,8 @@
+{
+  "name": "uk-tax-software-evidence",
+  "wandr_task": "uk_tax_software_evidence",
+  "task_names": [
+    "uk_tax_software_evidence",
+    "uk_tax_software_evidence.operating_entity"
+  ]
+}

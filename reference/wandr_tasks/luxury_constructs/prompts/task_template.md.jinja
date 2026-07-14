@@ -1,0 +1,17 @@
+Find {= construct_alignment =}+ luxury construct alignments where the same construct topic and comparison focus can be evidenced from Kantar and from each of three adjacent public-source families. For each construct alignment, supply {= evidence_role =}+ source-role URLs, one for every evidence role listed below, with each URL independently supporting its role's side of the shared alignment.
+
+A construct alignment is not a document summary or a generic theme such as "luxury market." It names a specific luxury construct topic plus the basis for comparison: a definition or boundary, construct dimension, consumer segment, methodology/scope, market universe, or public access/methodology state that can be compared across the Kantar anchor and the adjacent evidence roles. Comparable does not mean identical wording, but each role's page should make the same construct topic and comparison focus visible without unsupported synthesis.
+
+Evidence roles:
+{=% for evidence_role, description in evidence_roles.items() =%}
+- `{= evidence_role =}`: {= description =}
+{=% endfor =%}
+
+Positive evidence needs exact luxury language from the source. Definition/boundary alignments need definition, qualification, inclusion, or exclusion language. Construct-dimension alignments need construct language such as exclusivity, craftsmanship, heritage, status, sustainability, experience, meaning, quality, selectivity, or similar. Consumer-segment alignments need buyer, cohort, attitudinal, spending, or luxury-customer language. Methodology/scope alignments need methods, sampling, measurement, valuation, survey, data-availability, market/category/geography, goods/services, ranking, company-universe, or industry-universe language tied to luxury analysis. Public access or methodology-absence alignments count only when the page is clearly luxury-relevant and the public surface itself supports a visible access state, absence of definition, absence of public methodology, stale/gated access, unclear scope, or conflicting scope.
+
+Requirements:
+- The page must communicate its source identity and fit the claimed evidence role. `kantar_anchor` must be a Kantar-owned or officially hosted Kantar public surface. The three comparator roles must be non-Kantar sources in the stated adjacent family.
+- The page must discuss luxury as a brand, category, consumer, market, measurement, or research construct. A page that merely mentions a luxury brand in unrelated news, SEO copy, or brand-promotion commentary does not count.
+- The page must state explicit luxury evidence matching the submitted construct topic and comparison focus. A market or ranking universe is not automatically a definition; generic BrandZ or brand-equity methodology is not a luxury methodology/scope alignment unless the page ties that methodology to luxury analysis; ordinary positive claim language is not a public access or methodology-absence state.
+- The page must support enough context to compare its evidence with the same construct alignment on the other source roles: date or publication state, market/geography/category scope where present, source/access/methodology state, and construct or boundary meaning without unsupported synthesis.
+- Do not reuse the same broad public report page under many construct alignments by relabeling thin market-universe or ranking mentions. Each alignment needs a distinct construct topic and comparison focus, and each role URL needs source text that actually bears that alignment.

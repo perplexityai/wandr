@@ -1,0 +1,6 @@
+Map document-state-family variants to one of these canonical key labels:
+{=% for family, aliases in document_state_families.items() =%}
+- `{= family =}`: {= aliases | join("; ") =}
+{=% endfor =%}
+
+Only these two family labels are valid for the `document_state_family` key. Detailed availability labels such as `permit_document_available`, `no_public_permit_document_shown`, `car_available`, `car_not_shown`, `outside_car_publication_scope`, `car_holding_period_possible`, `request_only_or_unclear_document`, and `conflict_or_link_issue` are finding details, not family labels; return {{ CANONICAL_INVALID }} if one of them is submitted as the family key.

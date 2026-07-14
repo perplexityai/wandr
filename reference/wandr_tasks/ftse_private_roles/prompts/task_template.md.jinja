@@ -1,0 +1,29 @@
+For {= company =}+ companies from the full FTSE Women Leaders private-company canon below, cover the {= role_kind =} role-kind slots below with positive public role evidence where official sources support them. For each submitted company-role pair, supply {= url =}+ role-evidence URLs naming the person and role.
+
+This is a public executive-role evidence task, not a complete CEO/CFO absence table. Current official leadership/report pages are preferred. Official dated appointment or transition pages also count when the row is framed as dated role evidence rather than unqualified current-role proof.
+
+FTSE private-company canon source: {= company_canon_source =}
+
+Canonical companies in scope:
+{=% for canonical, aliases in companies.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Role kinds:
+{=% for canonical, aliases in role_kind_aliases.items() =%}
+- **{= canonical =}**: {= aliases | join(", ") =}
+{=% endfor =%}
+
+Source modes to make clear in each row:
+{=% for mode, description in source_modes.items() =%}
+- **{= mode =}**: {= description =}
+{=% endfor =%}
+
+Role-evidence sources should be official company or firm pages, board / executive / governance / team pages, official media-centre announcements, official annual reports or accounts, results, investor or debt-reporting pages, or statutory filings whose text itself states the executive title. Companies House can support legal identity, company status, officer status, and appointment timing, but an ordinary officer list does not by itself prove a CEO, CFO, or finance-director title.
+
+LinkedIn snippets, people aggregators, org-chart products, contact-enrichment tools, scraped bio databases, generic company databases, and the FTSE report's role-marker column do not count as primary roleholder evidence. Reputable business press is useful only as secondary conflict context, not as the primary source for a row. Do not infer gender, collect contact details, rank executives, score governance, or provide investment or outreach analysis.
+
+Requirements:
+- The page must connect the role evidence to the submitted FTSE company, an accepted legal or trading alias, or the same official group/firm identity.
+- The page must name the person and state a role title that matches the submitted `role_kind`, with the role held for that FTSE company or official group/firm identity rather than merely for an unrelated entity, product line, local office, or business unit.
+- The page must support the submitted source mode: current-role framing for current rows, latest-report framing for report/accounts rows, or dated appointment / transition / effective-date framing for event rows.

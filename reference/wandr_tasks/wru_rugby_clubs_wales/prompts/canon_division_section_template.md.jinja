@@ -1,0 +1,14 @@
+Canonicalize each division value to exactly one of the current senior men's WRU league
+divisions below. Treat WRU/SRC naming variants, sponsorship variants, "League" vs
+"Division" wording, "National League Div." wording, and the listed aliases as equivalent
+when the intended division is clear.
+
+Return {{ CANONICAL_INVALID }} if the value is outside this closed set, ambiguous, a cup
+competition, a women's/youth/schools/regional competition, a district league, the WRU
+Men's Athletic Conference, an English/RFU competition, or a URC professional regional team.
+
+Canonical set:
+
+{=% for canonical, aliases in divisions.items() =%}
+- {= canonical =}: {= aliases | join(", ") =}
+{=% endfor =%}

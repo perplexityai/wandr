@@ -1,0 +1,16 @@
+For {= vendor =}+ public software vendors or products that mediate social-media publishing, scheduling, management, analytics, data extraction, listening, connector automation, SDK/repository access, or agent/MCP access, cover each of the {= evidence_facet =} evidence facets per vendor by supplying a public source (i.e. {= url =}+ URL under each facet).
+
+This is public provenance for a volatile API/vendor ecosystem, with {= target_date =} as the seed's as-of context. The cited public page checked at solve time is what matters. Do not turn the work into a vendor recommendation, ranking, procurement memo, cost-effectiveness comparison, implementation plan, outreach list, or contact-enrichment exercise.
+
+The evidence facets are:
+{=% for facet, description in evidence_facet_descriptions.items() =%}
+- `{= facet =}`: {= description =}.
+{=% endfor =%}
+
+Alongside each source, state a concise vendor class, surface type, operation direction, publicness state, and source-stated wording. Use source-grounded labels such as native unified social API, dashboard-first SMM API, open-source or self-hosted product, connector platform, read-only or social-data API, SDK/repository surface, official API docs, pricing or plan page, help or product page, limits page, changelog/status page, public repository, SDK/package page, marketplace/connector listing, official integration docs, labeled secondary locator, read, write, publish, schedule, analytics, comments/inbox, account or profile management, search/extract, trigger, workflow, custom API request, MCP/agent tool, public docs, public overview with gated details, paid-plan API access, connector-only, repo-backed, official-silent-on-rate-limit, secondary-conflict-lead, or name-conflict/rebrand.
+
+Requirements:
+- The page must identify the named vendor/product and show a relevant social media management, social publishing, social analytics, social data extraction, social listening/UGC, connector automation, SDK/repo, or agent/MCP capability. First-party social networks themselves do not count merely because they expose platform APIs.
+- The page must fit `evidence_facet` and publicly state the facet claim or a narrow gated/silent condition for that facet. Pricing, plan access, supported networks, brand/account/profile/source limits, quotas, and examples must be recorded only when source-stated. For `usage_limit_or_quota`, a generic page that merely omits limits is not enough; the source should state limits, quotas, credits, no-limit/fair-use/pass-through wording, or publicly state that details are gated.
+- The stated classifications should be grounded in the cited page without conflating surface types. A connector action or custom API request is connector evidence, not proof of a vendor-native social API; a read-only UGC or social-data API is read/extract/listen evidence, not publishing or scheduling evidence.
+- The source-stated wording should be a short claim or paraphrase tied to the cited page and framed as public provenance. Secondary/review/comparison pages can be labeled as locator or conflict-lead evidence, but should not override official sources for pricing, limits, API access, or network support.

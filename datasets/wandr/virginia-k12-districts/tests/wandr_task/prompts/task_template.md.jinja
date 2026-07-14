@@ -1,0 +1,18 @@
+For each of the {= district =} divisions listed below, cover each of the {= contact_facet =} contact facets listed below by supplying a source ({= url =} URL per facet) that exposes the facet's contact datum scoped to that division and carried on a page belonging to the division's own official web presence.
+
+The goal is a downloadable contact sheet for the larger Virginia public K-12 school divisions — the central web address, mailing/physical address, and main phone number for each.
+
+Divisions in scope:
+{=% for district in districts =%}
+- **{= district =}**
+{=% endfor =%}
+
+Contact facets:
+- `website`: the division's central/official website — its home page or a page on that domain that establishes the domain as the division's primary public web presence.
+- `mailing_address`: the street or mailing address of the division's central office / school board office (street or PO box, city or town, and ZIP).
+- `main_phone`: the general / main switchboard or central-office telephone number for the division (a published division-wide contact line, not a single school's or an individual staff member's direct line).
+
+Requirements:
+- The page must identify the named division as the entity the contact datum belongs to — division name, official logo, or domain identity tying the page to that division, not merely to one of its individual schools or to a county/city government department that is not the school division.
+- The page must be on the division's own official web presence — its primary domain or an officially-controlled subdomain or channel; a third-party directory, aggregator listing, ratings site, or news article does NOT count even when it reprints the contact datum.
+- The page should expose the facet's contact datum directly and unambiguously. For `website`, the page itself establishes the division's central web domain (the home page or a page whose chrome/navigation identifies the domain as the division's). For `mailing_address`, a complete street or mailing address (street or PO box, locality, and ZIP) for the central office / school board office is shown. For `main_phone`, a published division-level main / switchboard phone number is shown — a single school's number or one staff member's direct extension does NOT count.

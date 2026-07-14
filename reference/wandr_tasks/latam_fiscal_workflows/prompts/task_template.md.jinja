@@ -1,0 +1,44 @@
+For each of the {= jurisdiction =} jurisdictions listed below, cover {= regulator_program =}+ regulator-owned fiscal software/provider program, {= registry_legal_entity =}+ registry legal entities per program, {= commercial_identity =}+ commercial brand/product identity per legal entity, and {= registry_product_join =}+ regulator-to-product join per commercial identity. For each join, supply {= evidence_leg =}+ source-owner evidence legs and {= url =}+ URL per evidence leg.
+
+Jurisdictions:
+{=% for jurisdiction_name in jurisdictions =%}
+- {= jurisdiction_name =}
+{=% endfor =%}
+
+Regulator programs:
+{=% for program_name in regulator_programs =%}
+- `{= program_name =}`
+{=% endfor =%}
+
+This is an identity-resolution benchmark for public fiscal software/provider evidence. A useful record starts from, or is checked against, a regulator-owned registry/program surface that names a legal entity and identifying metadata. It then joins that legal entity to a public commercial brand, product, app, setup flow, API, or source-bounded negative state through official regulator, vendor, legal, platform, or developer artifacts.
+
+For a positive registry-product join, the URL for a positive evidence leg must expose a source-owned bridge object in the same bounded source context as the submitted legal/provider identity or regulator program. A source-owned bridge object can be a listed website, software name, product/service name, setup provider selection, app/developer identity, API/service object, certificate/document type, authorization object, or comparable fiscal-product object. A page that only lists a legal entity in a regulator registry, or only markets a vendor's fiscal product, is not enough for a positive join leg unless that same page also carries the other side of the join.
+
+Evidence legs:
+{=% for evidence_leg, description in evidence_leg_descriptions.items() =%}
+- `{= evidence_leg =}`: {= description =}
+{=% endfor =%}
+
+Bridge types:
+{=% for bridge_type, description in bridge_types.items() =%}
+- `{= bridge_type =}`: {= description =}
+{=% endfor =%}
+
+Join states:
+{=% for join_state, description in join_states.items() =%}
+- `{= join_state =}`: {= description =}
+{=% endfor =%}
+
+Positive regulator evidence must be regulator-owned and must name the exact legal entity plus a tax ID, registry identifier, resolution, authorization date, status, or comparable official metadata. To count as `regulator_registry_record` for a positive registry-product join, the regulator-owned URL must also expose the submitted commercial-facing object or bridge object, such as a listed website/domain, software/product name, app/platform reference, authorization object, or product/service object. A plain provider list with only legal name and tax ID is registry evidence, but it is not a positive registry-product join leg.
+
+Official commercial evidence must connect the same jurisdiction and commercial identity to the registry legal entity or to the claimed bridge state in one bounded source context. Acceptable bridges include legal footers, privacy/legal pages, registry-listed websites, vendor setup steps naming the provider company, vendor authorization claims that name the relevant program or provider identity, platform-owned listings that name the app/developer and fiscal integration, and developer/API artifacts that name the product or technical object. A brand such as Alegra, Siigo, NubeFact, Facturama, EDICOM, Alanube, or Gurusoft does not pass by reputation; the cited page must carry the submitted legal-entity/product join.
+
+Argentina/ARCA/AFIP technical pages can be useful context for a negative or technical-asymmetry finding, but they should not be treated as registry-positive peers unless the submitted source actually names a comparable regulator-owned provider registry entry. Broad ARCA/AFIP, DIAN, SUNAT, SAT, SII, DGI, or DGII regime pages do not by themselves establish a commercial product capability.
+
+Requirements:
+- The page must fit the submitted source owner and exact object: the regulator program, registry legal entity, commercial brand/product/app, technical object, or named negative surface claimed by the row.
+- The page must support the regulator/legal-entity basis for the row: a positive registry/program record with legal entity metadata, or a scoped official registry/platform/legal surface that shows what the named surface can or cannot prove.
+- The page must support the submitted commercial identity, bridge_type, and join_state for the legal-entity to brand/product relationship, including negative, stale, third-party-developer, legal-entity-only, or context-only states when those are claimed.
+- For every positive evidence leg, the page must expose at least two source-owned object classes in the same bounded context: the legal/provider/regulator side and the product/app/API/service/commercial side. Do not satisfy this by combining separate pages, brand familiarity, search snippets, homepage navigation, or a solver's inference.
+- The page must match the submitted evidence_leg with source-specific substance rather than generic regime, homepage, category, or third-party background text.
+- The finding must stay source-bounded: report registry status, vendor claims, bridge evidence, technical objects, platform/app status, or absence/staleness only to the level the cited page itself supports.

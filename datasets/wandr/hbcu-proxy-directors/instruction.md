@@ -1,0 +1,647 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `hbcu_proxy_directors`
+
+For at least 45+ director or director-nominee rows among the S&P 500 issuer/proxy candidates listed below, supply an official proxy source (i.e. 1+ URL) where source-visible evidence places the cited DEF 14A / annual proxy filing within the 2025-01-01 through 2026-06-26 filing window and the director biography discloses earned education from one of the HBCU institutions listed below.
+
+The row identity is the HBCU institution, issuer, ticker when available, and director name. Treat director status as current to the cited filing, not as a claim about board status on 2026-06-26. Search only within the supplied S&P 500 issuer/proxy candidate universe as of 2026-06-26; do not submit rows for issuers outside that universe. In row details, include the earned credential or attendance text, filing date, SEC accession or issuer proxy identifier when available, biography/page/section locator, and checked date. Those details are audit aids: filing date, accession, locator text, and checked date do not establish the official proxy source or filing-window timing unless the same facts are visible in the cited URL/page, page title or header, proxy cover text, SEC archive path, or official filing metadata surface.
+
+The candidate list below is a discovery aid and an issuer-universe boundary, not evidence that an issuer has an HBCU-educated director. A submitted row still needs official proxy source-visible timing, director/nominee status, and earned HBCU education in or adjacent to the director biography. Prefer the listed primary DEF 14A document when present; if a listed row has no in-window DEF 14A candidate, do not submit a row for that issuer unless you find an official issuer-hosted annual proxy clearly matching the same filing window.
+
+S&P 500 issuer/proxy candidates:
+- MMM | 3M | CIK 0000066740 | DEF 14A filed 2026-03-25 | accession 0000066740-26-000151 | https://www.sec.gov/Archives/edgar/data/66740/000006674026000151/mmm-20260324.htm
+- AOS | A. O. Smith | CIK 0000091142 | DEF 14A filed 2026-03-04 | accession 0001193125-26-089938 | https://www.sec.gov/Archives/edgar/data/91142/000119312526089938/d79196ddef14a.htm
+- ABT | Abbott Laboratories | CIK 0000001800 | DEF 14A filed 2026-03-13 | accession 0001308179-26-000064 | https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm
+- ABBV | AbbVie | CIK 0001551152 | DEF 14A filed 2026-03-23 | accession 0001104659-26-033387 | https://www.sec.gov/Archives/edgar/data/1551152/000110465926033387/abbv-20260508xdef14a.htm
+- ACN | Accenture | CIK 0001467373 | DEF 14A filed 2025-12-12 | accession 0001308179-25-000651 | https://www.sec.gov/Archives/edgar/data/1467373/000130817925000651/acn-20251210.htm
+- ADBE | Adobe Inc. | CIK 0000796343 | DEF 14A filed 2026-02-27 | accession 0000796343-26-000043 | https://www.sec.gov/Archives/edgar/data/796343/000079634326000043/adbe-20260227.htm
+- AMD | Advanced Micro Devices | CIK 0000002488 | DEF 14A filed 2026-03-27 | accession 0001193125-26-129057 | https://www.sec.gov/Archives/edgar/data/2488/000119312526129057/d85856ddef14a.htm
+- AES | AES Corporation | CIK 0000874761 | DEF 14A filed 2026-03-20 | accession 0000874761-26-000070 | https://www.sec.gov/Archives/edgar/data/874761/000087476126000070/aes-20260320.htm
+- AFL | Aflac | CIK 0000004977 | DEF 14A filed 2026-03-19 | accession 0001628280-26-019621 | https://www.sec.gov/Archives/edgar/data/4977/000162828026019621/afl-20260319.htm
+- A | Agilent Technologies | CIK 0001090872 | DEF 14A filed 2026-02-06 | accession 0001193125-26-040286 | https://www.sec.gov/Archives/edgar/data/1090872/000119312526040286/a-20260203.htm
+- APD | Air Products | CIK 0000002969 | DEF 14A filed 2025-12-11 | accession 0001308179-25-000643 | https://www.sec.gov/Archives/edgar/data/2969/000130817925000643/apd-20251210.htm
+- ABNB | Airbnb | CIK 0001559720 | DEF 14A filed 2026-04-24 | accession 0001193125-26-175062 | https://www.sec.gov/Archives/edgar/data/1559720/000119312526175062/d936646ddef14a.htm
+- AKAM | Akamai Technologies | CIK 0001086222 | DEF 14A filed 2026-03-31 | accession 0001086222-26-000042 | https://www.sec.gov/Archives/edgar/data/1086222/000108622226000042/akam-20260330.htm
+- ALB | Albemarle Corporation | CIK 0000915913 | DEF 14A filed 2026-03-24 | accession 0000915913-26-000050 | https://www.sec.gov/Archives/edgar/data/915913/000091591326000050/alb-20260323.htm
+- ARE | Alexandria Real Estate Equities | CIK 0001035443 | DEF 14A filed 2026-04-01 | accession 0001035443-26-000031 | https://www.sec.gov/Archives/edgar/data/1035443/000103544326000031/are-20260331.htm
+- ALGN | Align Technology | CIK 0001097149 | DEF 14A filed 2026-04-07 | accession 0001097149-26-000023 | https://www.sec.gov/Archives/edgar/data/1097149/000109714926000023/algn-20260407.htm
+- ALLE | Allegion | CIK 0001579241 | DEF 14A filed 2026-04-17 | accession 0001104659-26-044597 | https://www.sec.gov/Archives/edgar/data/1579241/000110465926044597/alle-20260604xdef14a.htm
+- LNT | Alliant Energy | CIK 0000352541 | DEF 14A filed 2026-03-31 | accession 0000352541-26-000025 | https://www.sec.gov/Archives/edgar/data/352541/000035254126000025/lnt-20260330.htm
+- ALL | Allstate | CIK 0000899051 | DEF 14A filed 2026-04-10 | accession 0000899051-26-000063 | https://www.sec.gov/Archives/edgar/data/899051/000089905126000063/all-20260410.htm
+- GOOGL | Alphabet Inc. (Class A) | CIK 0001652044 | DEF 14A filed 2026-04-24 | accession 0001308179-26-000342 | https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm
+- GOOG | Alphabet Inc. (Class C) | CIK 0001652044 | DEF 14A filed 2026-04-24 | accession 0001308179-26-000342 | https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm
+- MO | Altria | CIK 0000764180 | DEF 14A filed 2026-04-02 | accession 0001104659-26-038900 | https://www.sec.gov/Archives/edgar/data/764180/000110465926038900/tmb-20260514xdef14a.htm
+- AMZN | Amazon | CIK 0001018724 | DEF 14A filed 2026-04-09 | accession 0001104659-26-041026 | https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm
+- AMCR | Amcor | CIK 0001748790 | DEF 14A filed 2025-09-23 | accession 0001748790-25-000032 | https://www.sec.gov/Archives/edgar/data/1748790/000174879025000032/amcr-20250922.htm
+- AEE | Ameren | CIK 0001002910 | DEF 14A filed 2026-03-31 | accession 0001104659-26-037756 | https://www.sec.gov/Archives/edgar/data/1002910/000110465926037756/tm261401-1_def14a.htm
+- AEP | American Electric Power | CIK 0000004904 | DEF 14A filed 2026-03-18 | accession 0000004904-26-000022 | https://www.sec.gov/Archives/edgar/data/4904/000000490426000022/aep-20260318.htm
+- AXP | American Express | CIK 0000004962 | DEF 14A filed 2026-03-25 | accession 0001104659-26-034163 | https://www.sec.gov/Archives/edgar/data/4962/000110465926034163/tm2519434-8_def14a.htm
+- AIG | American International Group | CIK 0000005272 | DEF 14A filed 2026-03-31 | accession 0000005272-26-000039 | https://www.sec.gov/Archives/edgar/data/5272/000000527226000039/aig-20260331.htm
+- AMT | American Tower | CIK 0001053507 | DEF 14A filed 2026-04-08 | accession 0001053507-26-000088 | https://www.sec.gov/Archives/edgar/data/1053507/000105350726000088/amt-20260406.htm
+- AWK | American Water Works | CIK 0001410636 | DEF 14A filed 2026-03-24 | accession 0001193125-26-120668 | https://www.sec.gov/Archives/edgar/data/1410636/000119312526120668/d21438ddef14a.htm
+- AMP | Ameriprise Financial | CIK 0000820027 | DEF 14A filed 2026-03-20 | accession 0001104659-26-032725 | https://www.sec.gov/Archives/edgar/data/820027/000110465926032725/amp-20260429xdef14a.htm
+- AME | Ametek | CIK 0001037868 | DEF 14A filed 2026-03-11 | accession 0001037868-26-000062 | https://www.sec.gov/Archives/edgar/data/1037868/000103786826000062/ame-20260311.htm
+- AMGN | Amgen | CIK 0000318154 | DEF 14A filed 2026-04-07 | accession 0001193125-26-145588 | https://www.sec.gov/Archives/edgar/data/318154/000119312526145588/d13946ddef14a.htm
+- APH | Amphenol | CIK 0000820313 | DEF 14A filed 2026-04-08 | accession 0001104659-26-040688 | https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm
+- ADI | Analog Devices | CIK 0000006281 | DEF 14A filed 2026-01-23 | accession 0000006281-26-000010 | https://www.sec.gov/Archives/edgar/data/6281/000000628126000010/adi-20260122.htm
+- AON | Aon plc | CIK 0000315293 | DEF 14A filed 2026-04-28 | accession 0001193125-26-187428 | https://www.sec.gov/Archives/edgar/data/315293/000119312526187428/aon-20260428.htm
+- APA | APA Corporation | CIK 0001841666 | DEF 14A filed 2026-04-09 | accession 0001193125-26-149453 | https://www.sec.gov/Archives/edgar/data/1841666/000119312526149453/apa-20260409.htm
+- APO | Apollo Global Management | CIK 0001858681 | DEF 14A filed 2026-04-24 | accession 0001193125-26-177321 | https://www.sec.gov/Archives/edgar/data/1858681/000119312526177321/d948913ddef14a.htm
+- AAPL | Apple Inc. | CIK 0000320193 | DEF 14A filed 2026-01-08 | accession 0001308179-26-000008 | https://www.sec.gov/Archives/edgar/data/320193/000130817926000008/aapl014016-def14a.htm
+- AMAT | Applied Materials | CIK 0000006951 | DEF 14A filed 2026-01-28 | accession 0001193125-26-027307 | https://www.sec.gov/Archives/edgar/data/6951/000119312526027307/d71992ddef14a.htm
+- APP | AppLovin | CIK 0001751008 | DEF 14A filed 2026-04-21 | accession 0001751008-26-000028 | https://www.sec.gov/Archives/edgar/data/1751008/000175100826000028/app-20260420.htm
+- APTV | Aptiv | CIK 0001521332 | DEF 14A filed 2026-03-16 | accession 0001193125-26-108328 | https://www.sec.gov/Archives/edgar/data/1521332/000119312526108328/aptv-20260311.htm
+- ACGL | Arch Capital Group | CIK 0000947484 | DEF 14A filed 2026-03-24 | accession 0000947484-26-000038 | https://www.sec.gov/Archives/edgar/data/947484/000094748426000038/acgl-20260324.htm
+- ADM | Archer Daniels Midland | CIK 0000007084 | DEF 14A filed 2026-03-26 | accession 0001193125-26-126218 | https://www.sec.gov/Archives/edgar/data/7084/000119312526126218/d911479ddef14a.htm
+- ARES | Ares Management | CIK 0001176948 | DEF 14A filed 2026-04-21 | accession 0001628280-26-026286 | https://www.sec.gov/Archives/edgar/data/1176948/000162828026026286/ares-20260420.htm
+- ANET | Arista Networks | CIK 0001596532 | DEF 14A filed 2026-04-16 | accession 0001193125-26-158942 | https://www.sec.gov/Archives/edgar/data/1596532/000119312526158942/d66465ddef14a.htm
+- AJG | Arthur J. Gallagher & Co. | CIK 0000354190 | DEF 14A filed 2026-03-23 | accession 0000354190-26-000101 | https://www.sec.gov/Archives/edgar/data/354190/000035419026000101/ajg-20260323.htm
+- AIZ | Assurant | CIK 0001267238 | DEF 14A filed 2026-04-06 | accession 0001267238-26-000018 | https://www.sec.gov/Archives/edgar/data/1267238/000126723826000018/aiz-20260406.htm
+- T | AT&T | CIK 0000732717 | DEF 14A filed 2026-03-23 | accession 0001193125-26-119888 | https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm
+- ATO | Atmos Energy | CIK 0000731802 | DEF 14A filed 2025-12-19 | accession 0000731802-25-000076 | https://www.sec.gov/Archives/edgar/data/731802/000073180225000076/ato-20251218.htm
+- ADSK | Autodesk | CIK 0000769397 | DEF 14A filed 2026-05-06 | accession 0000769397-26-000030 | https://www.sec.gov/Archives/edgar/data/769397/000076939726000030/adsk-20260429.htm
+- ADP | Automatic Data Processing | CIK 0000008670 | DEF 14A filed 2025-09-25 | accession 0001308179-25-000607 | https://www.sec.gov/Archives/edgar/data/8670/000130817925000607/adp014341-def14a.htm
+- AZO | AutoZone | CIK 0000866787 | DEF 14A filed 2025-10-28 | accession 0001104659-25-103210 | https://www.sec.gov/Archives/edgar/data/866787/000110465925103210/azo-20251217xdef14a.htm
+- AVB | AvalonBay Communities | CIK 0000915912 | DEF 14A filed 2026-04-06 | accession 0001104659-26-039943 | https://www.sec.gov/Archives/edgar/data/915912/000110465926039943/avb-20250520xdef14a.htm
+- AVY | Avery Dennison | CIK 0000008818 | DEF 14A filed 2026-03-12 | accession 0001193125-26-102965 | https://www.sec.gov/Archives/edgar/data/8818/000119312526102965/d47885ddef14a.htm
+- AXON | Axon Enterprise | CIK 0001069183 | DEF 14A filed 2026-04-16 | accession 0001628280-26-025521 | https://www.sec.gov/Archives/edgar/data/1069183/000162828026025521/axon-20260416.htm
+- BKR | Baker Hughes | CIK 0001701605 | DEF 14A filed 2026-03-30 | accession 0001193125-26-130309 | https://www.sec.gov/Archives/edgar/data/1701605/000119312526130309/d939028ddef14a.htm
+- BALL | Ball Corporation | CIK 0000009389 | DEF 14A filed 2026-03-17 | accession 0001104659-26-029499 | https://www.sec.gov/Archives/edgar/data/9389/000110465926029499/tm2525516-2_def14a.htm
+- BAC | Bank of America | CIK 0000070858 | DEF 14A filed 2026-03-23 | accession 0001193125-26-118929 | https://www.sec.gov/Archives/edgar/data/70858/000119312526118929/d43888ddef14a.htm
+- BAX | Baxter International | CIK 0000010456 | DEF 14A filed 2026-03-23 | accession 0001628280-26-020330 | https://www.sec.gov/Archives/edgar/data/10456/000162828026020330/bax-20260320.htm
+- BDX | Becton Dickinson | CIK 0000010795 | DEF 14A filed 2025-12-18 | accession 0001628280-25-057846 | https://www.sec.gov/Archives/edgar/data/10795/000162828025057846/bdx-20251217.htm
+- BRK-B | Berkshire Hathaway | CIK 0001067983 | DEF 14A filed 2026-03-13 | accession 0001193125-26-106253 | https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm
+- BBY | Best Buy | CIK 0000764478 | DEF 14A filed 2026-04-30 | accession 0001140361-26-018265 | https://www.sec.gov/Archives/edgar/data/764478/000114036126018265/ny20063180x1_def14a.htm
+- TECH | Bio-Techne | CIK 0000842023 | DEF 14A filed 2025-09-19 | accession 0001308179-25-000599 | https://www.sec.gov/Archives/edgar/data/842023/000130817925000599/tech014339-def14a.htm
+- BIIB | Biogen | CIK 0000875045 | DEF 14A filed 2026-04-28 | accession 0001193125-26-187303 | https://www.sec.gov/Archives/edgar/data/875045/000119312526187303/d788083ddef14a.htm
+- BLK | BlackRock | CIK 0002012383 | DEF 14A filed 2026-04-10 | accession 0001308179-26-000262 | https://www.sec.gov/Archives/edgar/data/2012383/000130817926000262/ny-20260410.htm
+- BX | Blackstone Inc. | CIK 0001393818 | DEF 14A filed not found in window | accession n/a | No DEF 14A found in 2025-01-01..2026-06-26
+- XYZ | Block, Inc. | CIK 0001512673 | DEF 14A filed 2026-04-24 | accession 0001628280-26-027203 | https://www.sec.gov/Archives/edgar/data/1512673/000162828026027203/sq-20260423.htm
+- BNY | BNY Mellon | CIK 0001390777 | DEF 14A filed 2026-03-05 | accession 0001193125-26-092500 | https://www.sec.gov/Archives/edgar/data/1390777/000119312526092500/d52987ddef14a.htm
+- BA | Boeing | CIK 0000012927 | DEF 14A filed 2026-03-06 | accession 0001193125-26-096787 | https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm
+- BKNG | Booking Holdings | CIK 0001075531 | DEF 14A filed 2026-04-21 | accession 0001308179-26-000310 | https://www.sec.gov/Archives/edgar/data/1075531/000130817926000310/bkng-20260420.htm
+- BSX | Boston Scientific | CIK 0000885725 | DEF 14A filed 2026-03-18 | accession 0000885725-26-000025 | https://www.sec.gov/Archives/edgar/data/885725/000088572526000025/bsx-20260318.htm
+- BMY | Bristol Myers Squibb | CIK 0000014272 | DEF 14A filed 2026-03-25 | accession 0000014272-26-000006 | https://www.sec.gov/Archives/edgar/data/14272/000001427226000006/bmy-20260325.htm
+- AVGO | Broadcom | CIK 0001730168 | DEF 14A filed 2026-03-02 | accession 0001193125-26-085691 | https://www.sec.gov/Archives/edgar/data/1730168/000119312526085691/d49254ddef14a.htm
+- BR | Broadridge Financial Solutions | CIK 0001383312 | DEF 14A filed 2025-10-02 | accession 0001140361-25-037069 | https://www.sec.gov/Archives/edgar/data/1383312/000114036125037069/ny20050521x1_def14a.htm
+- BRO | Brown & Brown | CIK 0000079282 | DEF 14A filed 2026-03-24 | accession 0001193125-26-122172 | https://www.sec.gov/Archives/edgar/data/79282/000119312526122172/d30704ddef14a.htm
+- BF-B | Brown–Forman | CIK 0000014693 | DEF 14A filed 2026-06-18 | accession 0001193125-26-275853 | https://www.sec.gov/Archives/edgar/data/14693/000119312526275853/d39207ddef14a.htm
+- BLDR | Builders FirstSource | CIK 0001316835 | DEF 14A filed 2026-04-02 | accession 0001193125-26-140509 | https://www.sec.gov/Archives/edgar/data/1316835/000119312526140509/bldr-20260402.htm
+- BG | Bunge Global | CIK 0001996862 | DEF 14A filed 2026-04-10 | accession 0001628280-26-024588 | https://www.sec.gov/Archives/edgar/data/1996862/000162828026024588/bg-20260410.htm
+- BXP | BXP, Inc. | CIK 0001037540 | DEF 14A filed 2026-04-10 | accession 0001037540-26-000010 | https://www.sec.gov/Archives/edgar/data/1037540/000103754026000010/bxp-20260410.htm
+- CHRW | C.H. Robinson | CIK 0001043277 | DEF 14A filed 2026-03-24 | accession 0001043277-26-000011 | https://www.sec.gov/Archives/edgar/data/1043277/000104327726000011/chrw-20260323.htm
+- CDNS | Cadence Design Systems | CIK 0000813672 | DEF 14A filed 2026-03-25 | accession 0001193125-26-124264 | https://www.sec.gov/Archives/edgar/data/813672/000119312526124264/d932644ddef14a.htm
+- CPT | Camden Property Trust | CIK 0000906345 | DEF 14A filed 2026-03-27 | accession 0001628280-26-021581 | https://www.sec.gov/Archives/edgar/data/906345/000162828026021581/cpt-20260325.htm
+- COF | Capital One | CIK 0000927628 | DEF 14A filed 2026-03-25 | accession 0001193125-26-124131 | https://www.sec.gov/Archives/edgar/data/927628/000119312526124131/d701179ddef14a.htm
+- CAH | Cardinal Health | CIK 0000721371 | DEF 14A filed 2025-09-16 | accession 0000721371-25-000114 | https://www.sec.gov/Archives/edgar/data/721371/000072137125000114/cah-20250916.htm
+- CCL | Carnival Corporation | CIK 0000815097 | DEF 14A filed 2026-02-27 | accession 0001104659-26-021074 | https://www.sec.gov/Archives/edgar/data/815097/000110465926021074/tm2529359-1_def14a.htm
+- CARR | Carrier Global | CIK 0001783180 | DEF 14A filed 2026-03-03 | accession 0001783180-26-000016 | https://www.sec.gov/Archives/edgar/data/1783180/000178318026000016/carr-20260303.htm
+- CVNA | Carvana | CIK 0001690820 | DEF 14A filed 2026-03-25 | accession 0001690820-26-000024 | https://www.sec.gov/Archives/edgar/data/1690820/000169082026000024/cvna-20260325.htm
+- CASY | Casey's | CIK 0000726958 | DEF 14A filed 2025-07-23 | accession 0001140361-25-026947 | https://www.sec.gov/Archives/edgar/data/726958/000114036125026947/ny20048706x1_def14a.htm
+- CAT | Caterpillar Inc. | CIK 0000018230 | DEF 14A filed 2026-04-30 | accession 0001308179-26-000358 | https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm
+- CBOE | Cboe Global Markets | CIK 0001374310 | DEF 14A filed 2026-04-02 | accession 0001628280-26-022939 | https://www.sec.gov/Archives/edgar/data/1374310/000162828026022939/cboe-20260401.htm
+- CBRE | CBRE Group | CIK 0001138118 | DEF 14A filed 2026-04-03 | accession 0001193125-26-141285 | https://www.sec.gov/Archives/edgar/data/1138118/000119312526141285/cbre-20260402.htm
+- CDW | CDW Corporation | CIK 0001402057 | DEF 14A filed 2026-04-10 | accession 0001308179-26-000251 | https://www.sec.gov/Archives/edgar/data/1402057/000130817926000251/cdw014321-def14a.htm
+- COR | Cencora | CIK 0001140859 | DEF 14A filed 2026-01-22 | accession 0001628280-26-003061 | https://www.sec.gov/Archives/edgar/data/1140859/000162828026003061/cor-20260122.htm
+- CNC | Centene Corporation | CIK 0001071739 | DEF 14A filed 2026-03-26 | accession 0001071739-26-000077 | https://www.sec.gov/Archives/edgar/data/1071739/000107173926000077/cnc-20260326.htm
+- CNP | CenterPoint Energy | CIK 0001130310 | DEF 14A filed 2026-03-04 | accession 0001104659-26-023457 | https://www.sec.gov/Archives/edgar/data/1130310/000110465926023457/tm261341-3_def14a.htm
+- CF | CF Industries | CIK 0001324404 | DEF 14A filed 2026-03-17 | accession 0001104659-26-029482 | https://www.sec.gov/Archives/edgar/data/1324404/000110465926029482/tm261459-1_def14a.htm
+- CRL | Charles River Laboratories | CIK 0001100682 | DEF 14A filed 2026-03-31 | accession 0001104659-26-037367 | https://www.sec.gov/Archives/edgar/data/1100682/000110465926037367/tm261421-1_def14a.htm
+- SCHW | Charles Schwab Corporation | CIK 0000316709 | DEF 14A filed 2026-04-06 | accession 0001193125-26-142826 | https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm
+- CHTR | Charter Communications | CIK 0001091667 | DEF 14A filed 2026-03-12 | accession 0001140361-26-009220 | https://www.sec.gov/Archives/edgar/data/1091667/000114036126009220/ny20062718x1_def14a.htm
+- CVX | Chevron Corporation | CIK 0000093410 | DEF 14A filed 2026-04-07 | accession 0001193125-26-145617 | https://www.sec.gov/Archives/edgar/data/93410/000119312526145617/d77994ddef14a.htm
+- CMG | Chipotle Mexican Grill | CIK 0001058090 | DEF 14A filed 2026-04-28 | accession 0001140361-26-017294 | https://www.sec.gov/Archives/edgar/data/1058090/000114036126017294/ny20063214x1_def14a.htm
+- CB | Chubb Limited | CIK 0000896159 | DEF 14A filed 2026-04-03 | accession 0001104659-26-039513 | https://www.sec.gov/Archives/edgar/data/896159/000110465926039513/tm2527783-7_def14a.htm
+- CHD | Church & Dwight | CIK 0000313927 | DEF 14A filed 2026-03-19 | accession 0001193125-26-115994 | https://www.sec.gov/Archives/edgar/data/313927/000119312526115994/chd-20260319.htm
+- CIEN | Ciena | CIK 0000936395 | DEF 14A filed 2026-02-12 | accession 0001193125-26-047977 | https://www.sec.gov/Archives/edgar/data/936395/000119312526047977/cien-20260212.htm
+- CI | Cigna | CIK 0001739940 | DEF 14A filed 2026-03-13 | accession 0001739940-26-000023 | https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm
+- CINF | Cincinnati Financial | CIK 0000020286 | DEF 14A filed 2026-03-18 | accession 0000020286-26-000015 | https://www.sec.gov/Archives/edgar/data/20286/000002028626000015/cinf-20260316.htm
+- CTAS | Cintas | CIK 0000723254 | DEF 14A filed 2025-09-16 | accession 0000723254-25-000025 | https://www.sec.gov/Archives/edgar/data/723254/000072325425000025/ctas-20250915.htm
+- CSCO | Cisco | CIK 0000858877 | DEF 14A filed 2025-10-28 | accession 0000858877-25-000150 | https://www.sec.gov/Archives/edgar/data/858877/000085887725000150/csco-20251027.htm
+- C | Citigroup | CIK 0000831001 | DEF 14A filed 2026-04-02 | accession 0001206774-26-000185 | https://www.sec.gov/Archives/edgar/data/831001/000120677426000185/citi4583461-def14a.htm
+- CFG | Citizens Financial Group | CIK 0000759944 | DEF 14A filed 2026-03-09 | accession 0000759944-26-000064 | https://www.sec.gov/Archives/edgar/data/759944/000075994426000064/cfg-20260309.htm
+- CLX | Clorox | CIK 0000021076 | DEF 14A filed 2025-10-07 | accession 0001552781-25-000311 | https://www.sec.gov/Archives/edgar/data/21076/000155278125000311/e25287_clx-def14a.htm
+- CME | CME Group | CIK 0001156375 | DEF 14A filed 2026-03-23 | accession 0001628280-26-020500 | https://www.sec.gov/Archives/edgar/data/1156375/000162828026020500/cme-20260323.htm
+- CMS | CMS Energy | CIK 0000811156 | DEF 14A filed 2026-03-26 | accession 0000811156-26-000015 | https://www.sec.gov/Archives/edgar/data/811156/000081115626000015/cms-20260326.htm
+- KO | Coca-Cola Company (The) | CIK 0000021344 | DEF 14A filed 2026-03-16 | accession 0001104659-26-028215 | https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm
+- CTSH | Cognizant | CIK 0001058290 | DEF 14A filed 2026-04-17 | accession 0001308179-26-000290 | https://www.sec.gov/Archives/edgar/data/1058290/000130817926000290/ctsh014861-def14a.htm
+- COHR | Coherent Corp. | CIK 0000820318 | DEF 14A filed 2025-10-02 | accession 0001104659-25-096170 | https://www.sec.gov/Archives/edgar/data/820318/000110465925096170/tm2513374-4_def14a.htm
+- COIN | Coinbase | CIK 0001679788 | DEF 14A filed 2026-04-24 | accession 0001679788-26-000045 | https://www.sec.gov/Archives/edgar/data/1679788/000167978826000045/coin-20260424.htm
+- CL | Colgate-Palmolive | CIK 0000021665 | DEF 14A filed 2026-03-25 | accession 0001308179-26-000136 | https://www.sec.gov/Archives/edgar/data/21665/000130817926000136/cl015164-def14a.htm
+- CMCSA | Comcast | CIK 0001166691 | DEF 14A filed 2026-04-24 | accession 0001193125-26-177138 | https://www.sec.gov/Archives/edgar/data/1166691/000119312526177138/cmcsa-20260424.htm
+- FIX | Comfort Systems USA | CIK 0001035983 | DEF 14A filed 2026-04-09 | accession 0001308179-26-000245 | https://www.sec.gov/Archives/edgar/data/1035983/000130817926000245/fix014562-def14a.htm
+- CAG | Conagra Brands | CIK 0000023217 | DEF 14A filed 2025-08-06 | accession 0000023217-25-000054 | https://www.sec.gov/Archives/edgar/data/23217/000002321725000054/cag-20250917xdef14a.htm
+- COP | ConocoPhillips | CIK 0001163165 | DEF 14A filed 2026-03-30 | accession 0001104659-26-036366 | https://www.sec.gov/Archives/edgar/data/1163165/000110465926036366/tm2523177-3_def14a.htm
+- ED | Consolidated Edison | CIK 0001047862 | DEF 14A filed 2026-04-08 | accession 0001047862-26-000078 | https://www.sec.gov/Archives/edgar/data/1047862/000104786226000078/ed-20260408.htm
+- STZ | Constellation Brands | CIK 0000016918 | DEF 14A filed 2026-06-08 | accession 0000016918-26-000023 | https://www.sec.gov/Archives/edgar/data/16918/000001691826000023/stz-20260603.htm
+- CEG | Constellation Energy | CIK 0001868275 | DEF 14A filed 2026-03-19 | accession 0001552781-26-000140 | https://www.sec.gov/Archives/edgar/data/1868275/000155278126000140/e26004_ceg-def14a.htm
+- COO | Cooper Companies (The) | CIK 0000711404 | DEF 14A filed 2026-02-24 | accession 0001628280-26-011110 | https://www.sec.gov/Archives/edgar/data/711404/000162828026011110/coo-20260224.htm
+- CPRT | Copart | CIK 0000900075 | DEF 14A filed 2025-10-24 | accession 0001193125-25-249664 | https://www.sec.gov/Archives/edgar/data/900075/000119312525249664/d84887ddef14a.htm
+- GLW | Corning Inc. | CIK 0000024741 | DEF 14A filed 2026-03-20 | accession 0001206774-26-000148 | https://www.sec.gov/Archives/edgar/data/24741/000120677426000148/glw4500541-def14a.htm
+- CPAY | Corpay | CIK 0001175454 | DEF 14A filed 2026-04-10 | accession 0001175454-26-000022 | https://www.sec.gov/Archives/edgar/data/1175454/000117545426000022/cpay-20260410.htm
+- CTVA | Corteva | CIK 0001755672 | DEF 14A filed 2026-03-19 | accession 0001193125-26-116069 | https://www.sec.gov/Archives/edgar/data/1755672/000119312526116069/ctva-20260319.htm
+- CSGP | CoStar Group | CIK 0001057352 | DEF 14A filed 2026-04-30 | accession 0001193125-26-197205 | https://www.sec.gov/Archives/edgar/data/1057352/000119312526197205/d903159ddef14a.htm
+- COST | Costco | CIK 0000909832 | DEF 14A filed 2025-12-04 | accession 0000909832-25-000159 | https://www.sec.gov/Archives/edgar/data/909832/000090983225000159/cost-20251204.htm
+- CRH | CRH plc | CIK 0000849395 | DEF 14A filed 2026-03-27 | accession 0001628280-26-021560 | https://www.sec.gov/Archives/edgar/data/849395/000162828026021560/crh-20260326.htm
+- CRWD | CrowdStrike | CIK 0001535527 | DEF 14A filed 2026-05-05 | accession 0001104659-26-055599 | https://www.sec.gov/Archives/edgar/data/1535527/000110465926055599/tm2532333-4_def14a.htm
+- CCI | Crown Castle | CIK 0001051470 | DEF 14A filed 2026-04-06 | accession 0001051470-26-000039 | https://www.sec.gov/Archives/edgar/data/1051470/000105147026000039/cci-20260406.htm
+- CSX | CSX Corporation | CIK 0000277948 | DEF 14A filed 2026-03-30 | accession 0001628280-26-021944 | https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm
+- CMI | Cummins | CIK 0000026172 | DEF 14A filed 2026-04-02 | accession 0001104659-26-039158 | https://www.sec.gov/Archives/edgar/data/26172/000110465926039158/tm261336-2_def14a.htm
+- CVS | CVS Health | CIK 0000064803 | DEF 14A filed 2026-04-03 | accession 0001308179-26-000201 | https://www.sec.gov/Archives/edgar/data/64803/000130817926000201/cvs014969-def14a.htm
+- DHR | Danaher Corporation | CIK 0000313616 | DEF 14A filed 2026-03-25 | accession 0000313616-26-000101 | https://www.sec.gov/Archives/edgar/data/313616/000031361626000101/dhr-20260325.htm
+- DRI | Darden Restaurants | CIK 0000940944 | DEF 14A filed 2025-08-04 | accession 0000950170-25-101699 | https://www.sec.gov/Archives/edgar/data/940944/000095017025101699/dri-20250804.htm
+- DDOG | Datadog | CIK 0001561550 | DEF 14A filed 2026-04-29 | accession 0001628280-26-028118 | https://www.sec.gov/Archives/edgar/data/1561550/000162828026028118/ddog-20260429.htm
+- DVA | DaVita | CIK 0000927066 | DEF 14A filed 2026-04-22 | accession 0000927066-26-000053 | https://www.sec.gov/Archives/edgar/data/927066/000092706626000053/dva-20260422.htm
+- DECK | Deckers Brands | CIK 0000910521 | DEF 14A filed 2025-07-25 | accession 0000910521-25-000030 | https://www.sec.gov/Archives/edgar/data/910521/000091052125000030/deck-20250725.htm
+- DE | Deere & Company | CIK 0000315189 | DEF 14A filed 2026-01-14 | accession 0001104659-26-003618 | https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm
+- DELL | Dell Technologies | CIK 0001571996 | DEF 14A filed 2026-05-15 | accession 0001193125-26-226734 | https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm
+- DAL | Delta Air Lines | CIK 0000027904 | DEF 14A filed 2026-04-24 | accession 0001308179-26-000345 | https://www.sec.gov/Archives/edgar/data/27904/000130817926000345/dal014970-def14a.htm
+- DVN | Devon Energy | CIK 0001090012 | DEF 14A filed 2026-05-28 | accession 0001104659-26-067065 | https://www.sec.gov/Archives/edgar/data/1090012/000110465926067065/tm261373-2_def14a.htm
+- DXCM | Dexcom | CIK 0001093557 | DEF 14A filed 2026-04-15 | accession 0001093557-26-000061 | https://www.sec.gov/Archives/edgar/data/1093557/000109355726000061/dxcm-20260415.htm
+- FANG | Diamondback Energy | CIK 0001539838 | DEF 14A filed 2026-04-09 | accession 0001308179-26-000242 | https://www.sec.gov/Archives/edgar/data/1539838/000130817926000242/fang015366-def14a.htm
+- DLR | Digital Realty | CIK 0001297996 | DEF 14A filed 2026-04-17 | accession 0001308179-26-000296 | https://www.sec.gov/Archives/edgar/data/1297996/000130817926000296/dlr015307-def14a.htm
+- DG | Dollar General | CIK 0000029534 | DEF 14A filed 2026-04-07 | accession 0001104659-26-040394 | https://www.sec.gov/Archives/edgar/data/29534/000110465926040394/tm261322-1_def14a.htm
+- DLTR | Dollar Tree | CIK 0000935703 | DEF 14A filed 2026-05-01 | accession 0001104659-26-053500 | https://www.sec.gov/Archives/edgar/data/935703/000110465926053500/tm261374-1_def14a.htm
+- D | Dominion Energy | CIK 0000715957 | DEF 14A filed 2026-03-19 | accession 0001193125-26-115180 | https://www.sec.gov/Archives/edgar/data/715957/000119312526115180/d-20260319.htm
+- DPZ | Domino's | CIK 0001286681 | DEF 14A filed 2026-03-10 | accession 0001286681-26-000012 | https://www.sec.gov/Archives/edgar/data/1286681/000128668126000012/dpz-20260309.htm
+- DASH | DoorDash | CIK 0001792789 | DEF 14A filed 2026-04-20 | accession 0001792789-26-000018 | https://www.sec.gov/Archives/edgar/data/1792789/000179278926000018/dash-20260420.htm
+- DOV | Dover Corporation | CIK 0000029905 | DEF 14A filed 2026-03-24 | accession 0001193125-26-120708 | https://www.sec.gov/Archives/edgar/data/29905/000119312526120708/d935769ddef14a.htm
+- DOW | Dow Inc. | CIK 0001751788 | DEF 14A filed 2026-02-27 | accession 0001193125-26-082583 | https://www.sec.gov/Archives/edgar/data/1751788/000119312526082583/dow-20260227.htm
+- DHI | D. R. Horton | CIK 0000882184 | DEF 14A filed 2025-12-10 | accession 0000882184-25-000114 | https://www.sec.gov/Archives/edgar/data/882184/000088218425000114/dhi-20251210.htm
+- DTE | DTE Energy | CIK 0000936340 | DEF 14A filed 2026-03-12 | accession 0000936340-26-000062 | https://www.sec.gov/Archives/edgar/data/936340/000093634026000062/dte-20260312.htm
+- DUK | Duke Energy | CIK 0001326160 | DEF 14A filed 2026-03-20 | accession 0001104659-26-032443 | https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm
+- DD | DuPont | CIK 0001666700 | DEF 14A filed 2026-04-10 | accession 0001193125-26-151204 | https://www.sec.gov/Archives/edgar/data/1666700/000119312526151204/d11932ddef14a.htm
+- ETN | Eaton Corporation | CIK 0001551182 | DEF 14A filed 2026-03-13 | accession 0001193125-26-105117 | https://www.sec.gov/Archives/edgar/data/1551182/000119312526105117/etn-20260312.htm
+- EBAY | eBay Inc. | CIK 0001065088 | DEF 14A filed 2026-04-30 | accession 0001552781-26-000285 | https://www.sec.gov/Archives/edgar/data/1065088/000155278126000285/e26002_ebay-def14a.htm
+- ECHO | EchoStar | CIK 0001415404 | DEF 14A filed 2025-03-21 | accession 0001558370-25-003470 | https://www.sec.gov/Archives/edgar/data/1415404/000155837025003470/tmb-20250502xdef14a.htm
+- ECL | Ecolab | CIK 0000031462 | DEF 14A filed 2026-03-20 | accession 0001104659-26-032777 | https://www.sec.gov/Archives/edgar/data/31462/000110465926032777/tm2530816-3_def14a.htm
+- EIX | Edison International | CIK 0000827052 | DEF 14A filed 2026-03-13 | accession 0001104659-26-027655 | https://www.sec.gov/Archives/edgar/data/827052/000110465926027655/eix-20260423xdef14a.htm
+- EW | Edwards Lifesciences | CIK 0001099800 | DEF 14A filed 2026-03-26 | accession 0001099800-26-000015 | https://www.sec.gov/Archives/edgar/data/1099800/000109980026000015/ew-20260326.htm
+- EA | Electronic Arts | CIK 0000712515 | DEF 14A filed 2025-06-24 | accession 0001308179-25-000556 | https://www.sec.gov/Archives/edgar/data/712515/000130817925000556/ea014143-def14a.htm
+- ELV | Elevance Health | CIK 0001156039 | DEF 14A filed 2026-03-27 | accession 0001156039-26-000031 | https://www.sec.gov/Archives/edgar/data/1156039/000115603926000031/elv-20260326.htm
+- EME | Emcor | CIK 0000105634 | DEF 14A filed 2026-04-21 | accession 0001140361-26-015809 | https://www.sec.gov/Archives/edgar/data/105634/000114036126015809/ny20062562x1_def14a.htm
+- EMR | Emerson Electric | CIK 0000032604 | DEF 14A filed 2025-12-12 | accession 0000032604-25-000103 | https://www.sec.gov/Archives/edgar/data/32604/000003260425000103/emr-20251212.htm
+- ETR | Entergy | CIK 0000065984 | DEF 14A filed 2026-03-27 | accession 0000065984-26-000211 | https://www.sec.gov/Archives/edgar/data/65984/000006598426000211/etr-20260327.htm
+- EOG | EOG Resources | CIK 0000821189 | DEF 14A filed 2026-03-27 | accession 0001104659-26-036125 | https://www.sec.gov/Archives/edgar/data/821189/000110465926036125/eog-20260520xdef14a.htm
+- EQT | EQT Corporation | CIK 0000033213 | DEF 14A filed 2026-02-26 | accession 0001104659-26-020027 | https://www.sec.gov/Archives/edgar/data/33213/000110465926020027/tm261383-1_def14a.htm
+- EFX | Equifax | CIK 0000033185 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127556 | https://www.sec.gov/Archives/edgar/data/33185/000119312526127556/d947238ddef14a.htm
+- EQIX | Equinix | CIK 0001101239 | DEF 14A filed 2026-04-02 | accession 0001101239-26-000073 | https://www.sec.gov/Archives/edgar/data/1101239/000110123926000073/eqix-20260401.htm
+- EQR | Equity Residential | CIK 0000906107 | DEF 14A filed 2026-04-14 | accession 0001193125-26-155007 | https://www.sec.gov/Archives/edgar/data/906107/000119312526155007/eqr-20260410.htm
+- ERIE | Erie Indemnity | CIK 0000922621 | DEF 14A filed not found in window | accession n/a | No DEF 14A found in 2025-01-01..2026-06-26
+- ESS | Essex Property Trust | CIK 0000920522 | DEF 14A filed 2026-03-27 | accession 0000920522-26-000011 | https://www.sec.gov/Archives/edgar/data/920522/000092052226000011/ess-20260327.htm
+- EL | Estée Lauder Companies (The) | CIK 0001001250 | DEF 14A filed 2025-09-25 | accession 0001104659-25-093184 | https://www.sec.gov/Archives/edgar/data/1001250/000110465925093184/tm2523020-3_def14a.htm
+- EG | Everest Group | CIK 0001095073 | DEF 14A filed 2026-04-10 | accession 0001628280-26-024596 | https://www.sec.gov/Archives/edgar/data/1095073/000162828026024596/eg-20260406.htm
+- EVRG | Evergy | CIK 0001711269 | DEF 14A filed 2026-03-26 | accession 0001140361-26-011357 | https://www.sec.gov/Archives/edgar/data/1711269/000114036126011357/ny20059674x1_def14a.htm
+- ES | Eversource Energy | CIK 0000072741 | DEF 14A filed 2026-03-27 | accession 0001104659-26-036077 | https://www.sec.gov/Archives/edgar/data/72741/000110465926036077/tm261423-1_def14a.htm
+- EXC | Exelon | CIK 0001109357 | DEF 14A filed 2026-03-18 | accession 0001109357-26-000040 | https://www.sec.gov/Archives/edgar/data/1109357/000110935726000040/exc-20260318.htm
+- EXE | Expand Energy | CIK 0000895126 | DEF 14A filed 2026-04-24 | accession 0001104659-26-048155 | https://www.sec.gov/Archives/edgar/data/895126/000110465926048155/tm261495d1_def14a.htm
+- EXPE | Expedia Group | CIK 0001324424 | DEF 14A filed 2026-04-29 | accession 0001324424-26-000022 | https://www.sec.gov/Archives/edgar/data/1324424/000132442426000022/expe-20260429.htm
+- EXPD | Expeditors International | CIK 0000746515 | DEF 14A filed 2026-03-24 | accession 0001193125-26-121388 | https://www.sec.gov/Archives/edgar/data/746515/000119312526121388/expd-20260323.htm
+- EXR | Extra Space Storage | CIK 0001289490 | DEF 14A filed 2026-04-01 | accession 0001289490-26-000027 | https://www.sec.gov/Archives/edgar/data/1289490/000128949026000027/exr-20260330.htm
+- XOM | ExxonMobil | CIK 0000034088 | DEF 14A filed 2026-04-08 | accession 0001193125-26-147614 | https://www.sec.gov/Archives/edgar/data/34088/000119312526147614/d16317ddef14a.htm
+- FFIV | F5, Inc. | CIK 0001048695 | DEF 14A filed 2026-01-26 | accession 0001048695-26-000012 | https://www.sec.gov/Archives/edgar/data/1048695/000104869526000012/ffiv-20260126.htm
+- FDS | FactSet | CIK 0001013237 | DEF 14A filed 2025-10-27 | accession 0001628280-25-046442 | https://www.sec.gov/Archives/edgar/data/1013237/000162828025046442/fds-20251027.htm
+- FICO | Fair Isaac | CIK 0000814547 | DEF 14A filed 2026-01-27 | accession 0001193125-26-024403 | https://www.sec.gov/Archives/edgar/data/814547/000119312526024403/d27709ddef14a.htm
+- FAST | Fastenal | CIK 0000815556 | DEF 14A filed 2026-02-25 | accession 0000815556-26-000017 | https://www.sec.gov/Archives/edgar/data/815556/000081555626000017/fast-20260225.htm
+- FRT | Federal Realty Investment Trust | CIK 0000034903 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127642 | https://www.sec.gov/Archives/edgar/data/34903/000119312526127642/d33770ddef14a.htm
+- FDX | FedEx | CIK 0001048911 | DEF 14A filed 2025-08-18 | accession 0001104659-25-079800 | https://www.sec.gov/Archives/edgar/data/1048911/000110465925079800/tm2512613-2_def14a.htm
+- FDXF | FedEx Freight | CIK 0002082247 | DEF 14A filed not found in window | accession n/a | No DEF 14A found in 2025-01-01..2026-06-26
+- FIS | Fidelity National Information Services | CIK 0001136893 | DEF 14A filed 2026-04-28 | accession 0001136893-26-000026 | https://www.sec.gov/Archives/edgar/data/1136893/000113689326000026/fis-20260428.htm
+- FITB | Fifth Third Bancorp | CIK 0000035527 | DEF 14A filed 2026-03-09 | accession 0001193125-26-098679 | https://www.sec.gov/Archives/edgar/data/35527/000119312526098679/d47600ddef14a.htm
+- FSLR | First Solar | CIK 0001274494 | DEF 14A filed 2026-04-02 | accession 0001274494-26-000096 | https://www.sec.gov/Archives/edgar/data/1274494/000127449426000096/fslr-20260401.htm
+- FE | FirstEnergy | CIK 0001031296 | DEF 14A filed 2026-04-01 | accession 0001193125-26-138029 | https://www.sec.gov/Archives/edgar/data/1031296/000119312526138029/fe-20260401.htm
+- FISV | Fiserv | CIK 0000798354 | DEF 14A filed 2026-04-02 | accession 0001140361-26-013003 | https://www.sec.gov/Archives/edgar/data/798354/000114036126013003/ny20062579x1_def14a.htm
+- FLEX | Flex Ltd. | CIK 0000866374 | DEF 14A filed 2026-06-24 | accession 0001308179-26-000365 | https://www.sec.gov/Archives/edgar/data/866374/000130817926000365/flex015484-def14a.htm
+- F | Ford Motor Company | CIK 0000037996 | DEF 14A filed 2026-03-27 | accession 0001552781-26-000164 | https://www.sec.gov/Archives/edgar/data/37996/000155278126000164/e26003_f-def14a.htm
+- FTNT | Fortinet | CIK 0001262039 | DEF 14A filed 2026-04-29 | accession 0002077096-26-000106 | https://www.sec.gov/Archives/edgar/data/1262039/000207709626000106/ea0287420-01.htm
+- FTV | Fortive | CIK 0001659166 | DEF 14A filed 2026-04-29 | accession 0001193125-26-189078 | https://www.sec.gov/Archives/edgar/data/1659166/000119312526189078/ftv-20260427.htm
+- FOXA | Fox Corporation (Class A) | CIK 0001754301 | DEF 14A filed 2025-09-25 | accession 0001628280-25-042772 | https://www.sec.gov/Archives/edgar/data/1754301/000162828025042772/fox-20250925.htm
+- FOX | Fox Corporation (Class B) | CIK 0001754301 | DEF 14A filed 2025-09-25 | accession 0001628280-25-042772 | https://www.sec.gov/Archives/edgar/data/1754301/000162828025042772/fox-20250925.htm
+- BEN | Franklin Resources | CIK 0000038777 | DEF 14A filed 2025-12-22 | accession 0001140361-25-046314 | https://www.sec.gov/Archives/edgar/data/38777/000114036125046314/ny20055304x771_def14a.htm
+- FCX | Freeport-McMoRan | CIK 0000831259 | DEF 14A filed 2026-04-23 | accession 0001193125-26-173666 | https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm
+- GRMN | Garmin | CIK 0001121788 | DEF 14A filed 2026-04-22 | accession 0001308179-26-000318 | https://www.sec.gov/Archives/edgar/data/1121788/000130817926000318/grmn015328-def14a.htm
+- IT | Gartner | CIK 0000749251 | DEF 14A filed 2026-04-15 | accession 0000749251-26-000159 | https://www.sec.gov/Archives/edgar/data/749251/000074925126000159/it-20260415.htm
+- GE | GE Aerospace | CIK 0000040545 | DEF 14A filed 2026-03-12 | accession 0000040545-26-000018 | https://www.sec.gov/Archives/edgar/data/40545/000004054526000018/ge-20260312.htm
+- GEHC | GE HealthCare | CIK 0001932393 | DEF 14A filed 2026-03-19 | accession 0001932393-26-000021 | https://www.sec.gov/Archives/edgar/data/1932393/000193239326000021/gehc-20260318.htm
+- GEV | GE Vernova | CIK 0001996810 | DEF 14A filed 2026-04-03 | accession 0001996810-26-000049 | https://www.sec.gov/Archives/edgar/data/1996810/000199681026000049/gev-20260402.htm
+- GEN | Gen Digital | CIK 0000849399 | DEF 14A filed 2025-07-28 | accession 0001140361-25-027427 | https://www.sec.gov/Archives/edgar/data/849399/000114036125027427/ny20046335x1_def14a.htm
+- GNRC | Generac | CIK 0001474735 | DEF 14A filed 2026-04-29 | accession 0001104659-26-051499 | https://www.sec.gov/Archives/edgar/data/1474735/000110465926051499/tm261388-1_def14a.htm
+- GD | General Dynamics | CIK 0000040533 | DEF 14A filed 2026-03-27 | accession 0001308179-26-000168 | https://www.sec.gov/Archives/edgar/data/40533/000130817926000168/gd014595-def14a.htm
+- GIS | General Mills | CIK 0000040704 | DEF 14A filed 2025-08-11 | accession 0001308179-25-000581 | https://www.sec.gov/Archives/edgar/data/40704/000130817925000581/gis014519-def14a.htm
+- GM | General Motors | CIK 0001467858 | DEF 14A filed 2026-04-20 | accession 0001467858-26-000022 | https://www.sec.gov/Archives/edgar/data/1467858/000146785826000022/gm-20260420.htm
+- GPC | Genuine Parts Company | CIK 0000040987 | DEF 14A filed 2026-02-27 | accession 0000040987-26-000011 | https://www.sec.gov/Archives/edgar/data/40987/000004098726000011/gpc-20260226.htm
+- GILD | Gilead Sciences | CIK 0000882095 | DEF 14A filed 2026-03-20 | accession 0001308179-26-000106 | https://www.sec.gov/Archives/edgar/data/882095/000130817926000106/gild014721-def14a.htm
+- GPN | Global Payments | CIK 0001123360 | DEF 14A filed 2026-03-17 | accession 0001104659-26-029453 | https://www.sec.gov/Archives/edgar/data/1123360/000110465926029453/tm261348-1_def14a.htm
+- GL | Globe Life | CIK 0000320335 | DEF 14A filed 2026-03-19 | accession 0000320335-26-000135 | https://www.sec.gov/Archives/edgar/data/320335/000032033526000135/gl-20260318.htm
+- GDDY | GoDaddy | CIK 0001609711 | DEF 14A filed 2026-04-24 | accession 0001609711-26-000030 | https://www.sec.gov/Archives/edgar/data/1609711/000160971126000030/gddy-20260423.htm
+- GS | Goldman Sachs | CIK 0000886982 | DEF 14A filed 2026-03-20 | accession 0001193125-26-117433 | https://www.sec.gov/Archives/edgar/data/886982/000119312526117433/gs-20260319.htm
+- HAL | Halliburton | CIK 0000045012 | DEF 14A filed 2026-03-31 | accession 0000045012-26-000033 | https://www.sec.gov/Archives/edgar/data/45012/000004501226000033/hal-20260330.htm
+- HIG | Hartford (The) | CIK 0000874766 | DEF 14A filed 2026-04-09 | accession 0000874766-26-000025 | https://www.sec.gov/Archives/edgar/data/874766/000087476626000025/hig-20260409.htm
+- HAS | Hasbro | CIK 0000046080 | DEF 14A filed 2026-04-17 | accession 0001193125-26-160426 | https://www.sec.gov/Archives/edgar/data/46080/000119312526160426/d36474ddef14a.htm
+- HCA | HCA Healthcare | CIK 0000860730 | DEF 14A filed 2026-03-13 | accession 0001193125-26-106142 | https://www.sec.gov/Archives/edgar/data/860730/000119312526106142/d939252ddef14a.htm
+- DOC | Healthpeak Properties | CIK 0000765880 | DEF 14A filed 2026-03-12 | accession 0001104659-26-027086 | https://www.sec.gov/Archives/edgar/data/765880/000110465926027086/doc-20260430xdef14a.htm
+- HSIC | Henry Schein | CIK 0001000228 | DEF 14A filed 2026-04-08 | accession 0001193125-26-146317 | https://www.sec.gov/Archives/edgar/data/1000228/000119312526146317/d904292ddef14a.htm
+- HSY | Hershey Company (The) | CIK 0000047111 | DEF 14A filed 2026-03-25 | accession 0001628280-26-021065 | https://www.sec.gov/Archives/edgar/data/47111/000162828026021065/hsy-20260325.htm
+- HPE | Hewlett Packard Enterprise | CIK 0001645590 | DEF 14A filed 2026-02-11 | accession 0001645590-26-000019 | https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm
+- HLT | Hilton Worldwide | CIK 0001585689 | DEF 14A filed 2026-04-02 | accession 0001585689-26-000023 | https://www.sec.gov/Archives/edgar/data/1585689/000158568926000023/hlt-20260401.htm
+- HD | Home Depot (The) | CIK 0000354950 | DEF 14A filed 2026-04-07 | accession 0000354950-26-000090 | https://www.sec.gov/Archives/edgar/data/354950/000035495026000090/hd-20260406.htm
+- HON | Honeywell | CIK 0000773840 | DEF 14A filed 2026-04-10 | accession 0000773840-26-000029 | https://www.sec.gov/Archives/edgar/data/773840/000077384026000029/hon-20260409.htm
+- HRL | Hormel Foods | CIK 0000048465 | DEF 14A filed 2025-12-17 | accession 0000048465-25-000074 | https://www.sec.gov/Archives/edgar/data/48465/000004846525000074/hrl-20251216.htm
+- HST | Host Hotels & Resorts | CIK 0001070750 | DEF 14A filed 2026-04-08 | accession 0001070750-26-000062 | https://www.sec.gov/Archives/edgar/data/1070750/000107075026000062/hst-20260407.htm
+- HWM | Howmet Aerospace | CIK 0000004281 | DEF 14A filed 2026-04-06 | accession 0001104659-26-039940 | https://www.sec.gov/Archives/edgar/data/4281/000110465926039940/tm261330-1_def14a.htm
+- HPQ | HP Inc. | CIK 0000047217 | DEF 14A filed 2026-02-25 | accession 0000047217-26-000015 | https://www.sec.gov/Archives/edgar/data/47217/000004721726000015/hpq-20260225.htm
+- HUBB | Hubbell Incorporated | CIK 0000048898 | DEF 14A filed 2026-03-23 | accession 0001308179-26-000121 | https://www.sec.gov/Archives/edgar/data/48898/000130817926000121/hubb014454-def14a.htm
+- HUM | Humana | CIK 0000049071 | DEF 14A filed 2026-03-06 | accession 0001104659-26-024393 | https://www.sec.gov/Archives/edgar/data/49071/000110465926024393/tm2518709-2_def14a.htm
+- HBAN | Huntington Bancshares | CIK 0000049196 | DEF 14A filed 2026-03-12 | accession 0001193125-26-103196 | https://www.sec.gov/Archives/edgar/data/49196/000119312526103196/hban-20260312.htm
+- HII | Huntington Ingalls Industries | CIK 0001501585 | DEF 14A filed 2026-03-20 | accession 0001501585-26-000014 | https://www.sec.gov/Archives/edgar/data/1501585/000150158526000014/hii-20260320.htm
+- IBM | IBM | CIK 0000051143 | DEF 14A filed 2026-03-10 | accession 0000051143-26-000025 | https://www.sec.gov/Archives/edgar/data/51143/000005114326000025/ibm-20260306.htm
+- IEX | IDEX Corporation | CIK 0000832101 | DEF 14A filed 2026-03-26 | accession 0001193125-26-125451 | https://www.sec.gov/Archives/edgar/data/832101/000119312526125451/iex-20260325.htm
+- IDXX | Idexx Laboratories | CIK 0000874716 | DEF 14A filed 2026-03-27 | accession 0000874716-26-000064 | https://www.sec.gov/Archives/edgar/data/874716/000087471626000064/idxx-20260327.htm
+- ITW | Illinois Tool Works | CIK 0000049826 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127599 | https://www.sec.gov/Archives/edgar/data/49826/000119312526127599/itw-20260325.htm
+- INCY | Incyte | CIK 0000879169 | DEF 14A filed 2026-04-28 | accession 0000879169-26-000031 | https://www.sec.gov/Archives/edgar/data/879169/000087916926000031/incy-20260428.htm
+- IR | Ingersoll Rand | CIK 0001699150 | DEF 14A filed 2026-04-24 | accession 0001140361-26-016726 | https://www.sec.gov/Archives/edgar/data/1699150/000114036126016726/ny20063676x1_def14a.htm
+- PODD | Insulet Corporation | CIK 0001145197 | DEF 14A filed 2026-04-06 | accession 0001140361-26-013333 | https://www.sec.gov/Archives/edgar/data/1145197/000114036126013333/ny20060552x1_def14a.htm
+- INTC | Intel | CIK 0000050863 | DEF 14A filed 2026-03-23 | accession 0000050863-26-000061 | https://www.sec.gov/Archives/edgar/data/50863/000005086326000061/proxy2026.htm
+- IBKR | Interactive Brokers | CIK 0001381197 | DEF 14A filed 2026-03-11 | accession 0001381197-26-000066 | https://www.sec.gov/Archives/edgar/data/1381197/000138119726000066/ibkr-20260311.htm
+- ICE | Intercontinental Exchange | CIK 0001571949 | DEF 14A filed 2026-03-31 | accession 0001193125-26-134700 | https://www.sec.gov/Archives/edgar/data/1571949/000119312526134700/ice-20260330.htm
+- IFF | International Flavors & Fragrances | CIK 0000051253 | DEF 14A filed 2026-03-18 | accession 0001140361-26-009960 | https://www.sec.gov/Archives/edgar/data/51253/000114036126009960/ny20055514x1_def14a.htm
+- IP | International Paper | CIK 0000051434 | DEF 14A filed 2026-03-27 | accession 0001628280-26-021729 | https://www.sec.gov/Archives/edgar/data/51434/000162828026021729/ipc-20260327.htm
+- INTU | Intuit | CIK 0000896878 | DEF 14A filed 2025-11-26 | accession 0000896878-25-000057 | https://www.sec.gov/Archives/edgar/data/896878/000089687825000057/intu-20251126.htm
+- ISRG | Intuitive Surgical | CIK 0001035267 | DEF 14A filed 2026-03-13 | accession 0001035267-26-000023 | https://www.sec.gov/Archives/edgar/data/1035267/000103526726000023/isrg-20260313.htm
+- IVZ | Invesco | CIK 0000914208 | DEF 14A filed 2026-04-02 | accession 0001193125-26-140019 | https://www.sec.gov/Archives/edgar/data/914208/000119312526140019/d931607ddef14a.htm
+- INVH | Invitation Homes | CIK 0001687229 | DEF 14A filed 2026-03-26 | accession 0001193125-26-126310 | https://www.sec.gov/Archives/edgar/data/1687229/000119312526126310/d96989ddef14a.htm
+- IQV | IQVIA | CIK 0001478242 | DEF 14A filed 2026-02-27 | accession 0001628280-26-012892 | https://www.sec.gov/Archives/edgar/data/1478242/000162828026012892/iqv-20260227.htm
+- IRM | Iron Mountain | CIK 0001020569 | DEF 14A filed 2026-03-24 | accession 0001020569-26-000026 | https://www.sec.gov/Archives/edgar/data/1020569/000102056926000026/irm-20260323.htm
+- JBHT | J.B. Hunt | CIK 0000728535 | DEF 14A filed 2026-03-11 | accession 0001437749-26-007732 | https://www.sec.gov/Archives/edgar/data/728535/000143774926007732/jbht20260304_def14a.htm
+- JBL | Jabil | CIK 0000898293 | DEF 14A filed 2025-12-12 | accession 0001193125-25-316927 | https://www.sec.gov/Archives/edgar/data/898293/000119312525316927/d946966ddef14a.htm
+- JKHY | Jack Henry & Associates | CIK 0000779152 | DEF 14A filed 2025-10-02 | accession 0000779152-25-000079 | https://www.sec.gov/Archives/edgar/data/779152/000077915225000079/jkhy-20251001.htm
+- J | Jacobs Solutions | CIK 0000052988 | DEF 14A filed 2025-12-18 | accession 0001193125-25-325103 | https://www.sec.gov/Archives/edgar/data/52988/000119312525325103/d76905ddef14a.htm
+- JNJ | Johnson & Johnson | CIK 0000200406 | DEF 14A filed 2026-03-11 | accession 0000200406-26-000063 | https://www.sec.gov/Archives/edgar/data/200406/000020040626000063/jnj-20260309.htm
+- JCI | Johnson Controls | CIK 0000833444 | DEF 14A filed 2026-01-16 | accession 0001104659-26-004565 | https://www.sec.gov/Archives/edgar/data/833444/000110465926004565/tm2524665-5_def14a.htm
+- JPM | JPMorgan Chase | CIK 0000019617 | DEF 14A filed 2026-04-06 | accession 0000019617-26-000096 | https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm
+- KVUE | Kenvue | CIK 0001944048 | DEF 14A filed 2026-04-08 | accession 0001944048-26-000085 | https://www.sec.gov/Archives/edgar/data/1944048/000194404826000085/kvue-20260408.htm
+- KDP | Keurig Dr Pepper | CIK 0001418135 | DEF 14A filed 2026-04-24 | accession 0001193125-26-177266 | https://www.sec.gov/Archives/edgar/data/1418135/000119312526177266/d201572ddef14a.htm
+- KEY | KeyCorp | CIK 0000091576 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127600 | https://www.sec.gov/Archives/edgar/data/91576/000119312526127600/d944221ddef14a.htm
+- KEYS | Keysight Technologies | CIK 0001601046 | DEF 14A filed 2026-01-26 | accession 0001140361-26-002381 | https://www.sec.gov/Archives/edgar/data/1601046/000114036126002381/ny20058135x3_def14a.htm
+- KMB | Kimberly-Clark | CIK 0000055785 | DEF 14A filed 2026-03-23 | accession 0001628280-26-020404 | https://www.sec.gov/Archives/edgar/data/55785/000162828026020404/kmb-20260323.htm
+- KIM | Kimco Realty | CIK 0000879101 | DEF 14A filed 2026-04-08 | accession 0001206774-26-000197 | https://www.sec.gov/Archives/edgar/data/879101/000120677426000197/kim4498121-def14a.htm
+- KMI | Kinder Morgan | CIK 0001506307 | DEF 14A filed 2026-04-02 | accession 0001506307-26-000024 | https://www.sec.gov/Archives/edgar/data/1506307/000150630726000024/kmi-20260401.htm
+- KKR | KKR & Co. | CIK 0001404912 | DEF 14A filed 2026-02-27 | accession 0001140361-26-007164 | https://www.sec.gov/Archives/edgar/data/1404912/000114036126007164/ny20061501x2_def14a.htm
+- KLAC | KLA Corporation | CIK 0000319201 | DEF 14A filed 2025-09-23 | accession 0001193125-25-213294 | https://www.sec.gov/Archives/edgar/data/319201/000119312525213294/d913108ddef14a.htm
+- KHC | Kraft Heinz | CIK 0001637459 | DEF 14A filed 2026-04-03 | accession 0001193125-26-141397 | https://www.sec.gov/Archives/edgar/data/1637459/000119312526141397/khc-20260402.htm
+- KR | Kroger | CIK 0000056873 | DEF 14A filed 2026-05-13 | accession 0001104659-26-060250 | https://www.sec.gov/Archives/edgar/data/56873/000110465926060250/tm261573d1_def14a.htm
+- LHX | L3Harris | CIK 0000202058 | DEF 14A filed 2026-04-01 | accession 0001104659-26-038170 | https://www.sec.gov/Archives/edgar/data/202058/000110465926038170/tmb-20260511xdef14a.htm
+- LH | Labcorp | CIK 0000920148 | DEF 14A filed 2026-04-10 | accession 0001193125-26-150752 | https://www.sec.gov/Archives/edgar/data/920148/000119312526150752/lh-20260410.htm
+- LRCX | Lam Research | CIK 0000707549 | DEF 14A filed 2025-09-24 | accession 0001140361-25-036012 | https://www.sec.gov/Archives/edgar/data/707549/000114036125036012/ny20050572x2_def14a.htm
+- LVS | Las Vegas Sands | CIK 0001300514 | DEF 14A filed 2026-04-01 | accession 0001300514-26-000031 | https://www.sec.gov/Archives/edgar/data/1300514/000130051426000031/lvs-20260401.htm
+- LDOS | Leidos | CIK 0001336920 | DEF 14A filed 2026-03-19 | accession 0001336920-26-000138 | https://www.sec.gov/Archives/edgar/data/1336920/000133692026000138/ldos-20260319.htm
+- LEN | Lennar | CIK 0000920760 | DEF 14A filed 2026-02-26 | accession 0001193125-26-073504 | https://www.sec.gov/Archives/edgar/data/920760/000119312526073504/d940888ddef14a.htm
+- LII | Lennox International | CIK 0001069202 | DEF 14A filed 2026-04-08 | accession 0001069202-26-000046 | https://www.sec.gov/Archives/edgar/data/1069202/000106920226000046/lii-20260406.htm
+- LLY | Lilly (Eli) | CIK 0000059478 | DEF 14A filed 2026-03-20 | accession 0000059478-26-000029 | https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm
+- LIN | Linde plc | CIK 0001707925 | DEF 14A filed 2026-04-29 | accession 0001193125-26-192209 | https://www.sec.gov/Archives/edgar/data/1707925/000119312526192209/lin-20260429.htm
+- LYV | Live Nation Entertainment | CIK 0001335258 | DEF 14A filed 2026-04-24 | accession 0001193125-26-174146 | https://www.sec.gov/Archives/edgar/data/1335258/000119312526174146/d43878ddef14a.htm
+- LMT | Lockheed Martin | CIK 0000936468 | DEF 14A filed 2026-03-26 | accession 0000936468-26-000004 | https://www.sec.gov/Archives/edgar/data/936468/000093646826000004/lmt-20260326.htm
+- L | Loews Corporation | CIK 0000060086 | DEF 14A filed 2026-04-01 | accession 0000060086-26-000023 | https://www.sec.gov/Archives/edgar/data/60086/000006008626000023/l-20260331.htm
+- LOW | Lowe's | CIK 0000060667 | DEF 14A filed 2026-04-16 | accession 0000060667-26-000056 | https://www.sec.gov/Archives/edgar/data/60667/000006066726000056/low-20260415.htm
+- LULU | Lululemon Athletica | CIK 0001397187 | DEF 14A filed 2025-04-29 | accession 0001397187-25-000017 | https://www.sec.gov/Archives/edgar/data/1397187/000139718725000017/lulu-20250429.htm
+- LITE | Lumentum | CIK 0001633978 | DEF 14A filed 2025-10-07 | accession 0001308179-25-000615 | https://www.sec.gov/Archives/edgar/data/1633978/000130817925000615/lite014752-def14a.htm
+- LYB | LyondellBasell | CIK 0001489393 | DEF 14A filed 2026-04-10 | accession 0001308179-26-000250 | https://www.sec.gov/Archives/edgar/data/1489393/000130817926000250/lyb014791-def14a.htm
+- MTB | M&T Bank | CIK 0000036270 | DEF 14A filed 2026-03-10 | accession 0001193125-26-099298 | https://www.sec.gov/Archives/edgar/data/36270/000119312526099298/d74790ddef14a.htm
+- MPC | Marathon Petroleum | CIK 0001510295 | DEF 14A filed 2026-03-16 | accession 0001510295-26-000023 | https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm
+- MAR | Marriott International | CIK 0001048286 | DEF 14A filed 2026-03-27 | accession 0001140361-26-011590 | https://www.sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm
+- MRSH | Marsh McLennan | CIK 0000062709 | DEF 14A filed 2026-03-31 | accession 0001193125-26-133303 | https://www.sec.gov/Archives/edgar/data/62709/000119312526133303/d94896ddef14a.htm
+- MLM | Martin Marietta Materials | CIK 0000916076 | DEF 14A filed 2026-04-15 | accession 0001193125-26-157039 | https://www.sec.gov/Archives/edgar/data/916076/000119312526157039/d28378ddef14a.htm
+- MRVL | Marvell Technology | CIK 0001835632 | DEF 14A filed 2026-05-13 | accession 0001104659-26-060253 | https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm
+- MAS | Masco | CIK 0000062996 | DEF 14A filed 2026-04-10 | accession 0001193125-26-151241 | https://www.sec.gov/Archives/edgar/data/62996/000119312526151241/d44594ddef14a.htm
+- MA | Mastercard | CIK 0001141391 | DEF 14A filed 2026-04-27 | accession 0001141391-26-000021 | https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm
+- MKC | McCormick & Company | CIK 0000063754 | DEF 14A filed 2026-02-18 | accession 0000063754-26-000140 | https://www.sec.gov/Archives/edgar/data/63754/000006375426000140/mkc-20260217.htm
+- MCD | McDonald's | CIK 0000063908 | DEF 14A filed 2026-04-07 | accession 0001193125-26-145548 | https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm
+- MCK | McKesson Corporation | CIK 0000927653 | DEF 14A filed 2026-06-12 | accession 0000927653-26-000169 | https://www.sec.gov/Archives/edgar/data/927653/000092765326000169/mck-20260612.htm
+- MDT | Medtronic | CIK 0001613103 | DEF 14A filed 2025-08-25 | accession 0001613103-25-000151 | https://www.sec.gov/Archives/edgar/data/1613103/000161310325000151/mdt-20250825.htm
+- MRK | Merck & Co. | CIK 0000310158 | DEF 14A filed 2026-04-08 | accession 0001193125-26-147704 | https://www.sec.gov/Archives/edgar/data/310158/000119312526147704/d85708ddef14a.htm
+- META | Meta Platforms | CIK 0001326801 | DEF 14A filed 2026-04-16 | accession 0001628280-26-025532 | https://www.sec.gov/Archives/edgar/data/1326801/000162828026025532/meta-20260416.htm
+- MET | MetLife | CIK 0001099219 | DEF 14A filed 2026-04-29 | accession 0001099219-26-000026 | https://www.sec.gov/Archives/edgar/data/1099219/000109921926000026/met-20260429.htm
+- MTD | Mettler Toledo | CIK 0001037646 | DEF 14A filed 2026-03-18 | accession 0001174947-26-000389 | https://www.sec.gov/Archives/edgar/data/1037646/000117494726000389/mtol-def14a.htm
+- MGM | MGM Resorts | CIK 0000789570 | DEF 14A filed 2026-03-27 | accession 0001193125-26-129074 | https://www.sec.gov/Archives/edgar/data/789570/000119312526129074/d899213ddef14a.htm
+- MCHP | Microchip Technology | CIK 0000827054 | DEF 14A filed 2025-07-07 | accession 0000827054-25-000099 | https://www.sec.gov/Archives/edgar/data/827054/000082705425000099/mchp-20250702.htm
+- MU | Micron Technology | CIK 0000723125 | DEF 14A filed 2025-11-25 | accession 0000723125-25-000038 | https://www.sec.gov/Archives/edgar/data/723125/000072312525000038/mu-20251125.htm
+- MSFT | Microsoft | CIK 0000789019 | DEF 14A filed 2025-10-21 | accession 0001193125-25-245150 | https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm
+- MAA | Mid-America Apartment Communities | CIK 0000912595 | DEF 14A filed 2026-04-06 | accession 0001140361-26-013212 | https://www.sec.gov/Archives/edgar/data/912595/000114036126013212/ny20062832x1_def14a.htm
+- MRNA | Moderna | CIK 0001682852 | DEF 14A filed 2026-03-16 | accession 0001308179-26-000081 | https://www.sec.gov/Archives/edgar/data/1682852/000130817926000081/mrna-20260316.htm
+- TAP | Molson Coors Beverage Company | CIK 0000024545 | DEF 14A filed 2026-03-25 | accession 0001104659-26-034154 | https://www.sec.gov/Archives/edgar/data/24545/000110465926034154/tap-20260506xdef14a.htm
+- MDLZ | Mondelez International | CIK 0001103982 | DEF 14A filed 2026-04-03 | accession 0001628280-26-023640 | https://www.sec.gov/Archives/edgar/data/1103982/000162828026023640/mdlz-20260403.htm
+- MPWR | Monolithic Power Systems | CIK 0001280452 | DEF 14A filed 2026-04-30 | accession 0001437749-26-014084 | https://www.sec.gov/Archives/edgar/data/1280452/000143774926014084/mpwr20260403_def14a.htm
+- MNST | Monster Beverage | CIK 0000865752 | DEF 14A filed 2026-03-27 | accession 0001104659-26-035990 | https://www.sec.gov/Archives/edgar/data/865752/000110465926035990/tm261427d1_def14a.htm
+- MCO | Moody's Corporation | CIK 0001059556 | DEF 14A filed 2026-03-04 | accession 0001059556-26-000019 | https://www.sec.gov/Archives/edgar/data/1059556/000105955626000019/mco-20260304.htm
+- MS | Morgan Stanley | CIK 0000895421 | DEF 14A filed 2026-04-02 | accession 0001140361-26-012975 | https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm
+- MOS | Mosaic Company (The) | CIK 0001285785 | DEF 14A filed 2026-04-16 | accession 0001285785-26-000061 | https://www.sec.gov/Archives/edgar/data/1285785/000128578526000061/mos-20260415.htm
+- MSI | Motorola Solutions | CIK 0000068505 | DEF 14A filed 2026-04-02 | accession 0001193125-26-139004 | https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm
+- MSCI | MSCI Inc. | CIK 0001408198 | DEF 14A filed 2026-03-11 | accession 0001408198-26-000023 | https://www.sec.gov/Archives/edgar/data/1408198/000140819826000023/msci-20260310.htm
+- NDAQ | Nasdaq, Inc. | CIK 0001120193 | DEF 14A filed 2026-04-24 | accession 0001628280-26-027245 | https://www.sec.gov/Archives/edgar/data/1120193/000162828026027245/ndaq-20260424.htm
+- NTAP | NetApp | CIK 0001002047 | DEF 14A filed 2025-07-25 | accession 0000950170-25-098850 | https://www.sec.gov/Archives/edgar/data/1002047/000095017025098850/ntap-20250725.htm
+- NFLX | Netflix | CIK 0001065280 | DEF 14A filed 2026-04-16 | accession 0001193125-26-159286 | https://www.sec.gov/Archives/edgar/data/1065280/000119312526159286/d20613ddef14a.htm
+- NEM | Newmont | CIK 0001164727 | DEF 14A filed 2026-03-26 | accession 0001104659-26-035211 | https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm
+- NWSA | News Corp (Class A) | CIK 0001564708 | DEF 14A filed 2025-10-08 | accession 0001140361-25-037696 | https://www.sec.gov/Archives/edgar/data/1564708/000114036125037696/ny20055386x3_def14a.htm
+- NWS | News Corp (Class B) | CIK 0001564708 | DEF 14A filed 2025-10-08 | accession 0001140361-25-037696 | https://www.sec.gov/Archives/edgar/data/1564708/000114036125037696/ny20055386x3_def14a.htm
+- NEE | NextEra Energy | CIK 0000753308 | DEF 14A filed 2026-04-01 | accession 0001104659-26-038551 | https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm
+- NKE | Nike, Inc. | CIK 0000320187 | DEF 14A filed 2025-07-17 | accession 0000320187-25-000048 | https://www.sec.gov/Archives/edgar/data/320187/000032018725000048/nke-20250717.htm
+- NI | NiSource | CIK 0001111711 | DEF 14A filed 2026-03-30 | accession 0001140361-26-011851 | https://www.sec.gov/Archives/edgar/data/1111711/000114036126011851/ny20055306x771_def14a.htm
+- NDSN | Nordson Corporation | CIK 0000072331 | DEF 14A filed 2026-01-16 | accession 0001193125-26-014662 | https://www.sec.gov/Archives/edgar/data/72331/000119312526014662/d895414ddef14a.htm
+- NSC | Norfolk Southern | CIK 0000702165 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127620 | https://www.sec.gov/Archives/edgar/data/702165/000119312526127620/nsc-20260327.htm
+- NTRS | Northern Trust | CIK 0000073124 | DEF 14A filed 2026-03-11 | accession 0000073124-26-000022 | https://www.sec.gov/Archives/edgar/data/73124/000007312426000022/ntrs-20260311.htm
+- NOC | Northrop Grumman | CIK 0001133421 | DEF 14A filed 2026-04-03 | accession 0001133421-26-000007 | https://www.sec.gov/Archives/edgar/data/1133421/000113342126000007/noc-20260401.htm
+- NCLH | Norwegian Cruise Line Holdings | CIK 0001513761 | DEF 14A filed 2026-04-30 | accession 0001104659-26-052146 | https://www.sec.gov/Archives/edgar/data/1513761/000110465926052146/tm261503-1_def14a.htm
+- NRG | NRG Energy | CIK 0001013871 | DEF 14A filed 2026-03-18 | accession 0001104659-26-030844 | https://www.sec.gov/Archives/edgar/data/1013871/000110465926030844/tm261406-2_def14a.htm
+- NUE | Nucor | CIK 0000073309 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127739 | https://www.sec.gov/Archives/edgar/data/73309/000119312526127739/d21430ddef14a.htm
+- NVDA | Nvidia | CIK 0001045810 | DEF 14A filed 2026-05-12 | accession 0001045810-26-000036 | https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm
+- NVR | NVR, Inc. | CIK 0000906163 | DEF 14A filed 2026-03-17 | accession 0000906163-26-000029 | https://www.sec.gov/Archives/edgar/data/906163/000090616326000029/nvr-20260316.htm
+- NXPI | NXP Semiconductors | CIK 0001413447 | DEF 14A filed 2026-04-27 | accession 0001413447-26-000026 | https://www.sec.gov/Archives/edgar/data/1413447/000141344726000026/nxpi-20260427.htm
+- ORLY | O’Reilly Automotive | CIK 0000898173 | DEF 14A filed 2026-03-27 | accession 0000898173-26-000014 | https://www.sec.gov/Archives/edgar/data/898173/000089817326000014/orly-20251231xdef14a.htm
+- OXY | Occidental Petroleum | CIK 0000797468 | DEF 14A filed 2026-03-19 | accession 0001628280-26-019816 | https://www.sec.gov/Archives/edgar/data/797468/000162828026019816/oxy-20260319.htm
+- ODFL | Old Dominion | CIK 0000878927 | DEF 14A filed 2026-04-20 | accession 0000878927-26-000006 | https://www.sec.gov/Archives/edgar/data/878927/000087892726000006/odfl-20260417.htm
+- OMC | Omnicom Group | CIK 0000029989 | DEF 14A filed 2026-03-26 | accession 0001213900-26-034811 | https://www.sec.gov/Archives/edgar/data/29989/000121390026034811/ea0274271-02.htm
+- ON | ON Semiconductor | CIK 0001097864 | DEF 14A filed 2026-04-02 | accession 0001097864-26-000010 | https://www.sec.gov/Archives/edgar/data/1097864/000109786426000010/on-20260401.htm
+- OKE | Oneok | CIK 0001039684 | DEF 14A filed 2026-04-01 | accession 0001039684-26-000010 | https://www.sec.gov/Archives/edgar/data/1039684/000103968426000010/oke-20260331.htm
+- ORCL | Oracle Corporation | CIK 0001341439 | DEF 14A filed 2025-09-26 | accession 0001193125-25-220801 | https://www.sec.gov/Archives/edgar/data/1341439/000119312525220801/d72066ddef14a.htm
+- OTIS | Otis Worldwide | CIK 0001781335 | DEF 14A filed 2026-04-17 | accession 0001140361-26-015389 | https://www.sec.gov/Archives/edgar/data/1781335/000114036126015389/ny20061782x1_def14a.htm
+- PCAR | Paccar | CIK 0000075362 | DEF 14A filed 2026-03-18 | accession 0001193125-26-113876 | https://www.sec.gov/Archives/edgar/data/75362/000119312526113876/pcar-20260318.htm
+- PKG | Packaging Corporation of America | CIK 0000075677 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127602 | https://www.sec.gov/Archives/edgar/data/75677/000119312526127602/d176963ddef14a.htm
+- PLTR | Palantir Technologies | CIK 0001321655 | DEF 14A filed 2026-04-24 | accession 0001321655-26-000019 | https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm
+- PANW | Palo Alto Networks | CIK 0001327567 | DEF 14A filed 2025-11-07 | accession 0001308179-25-000624 | https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm
+- PSKY | Paramount Skydance Corporation | CIK 0002041610 | DEF 14A filed not found in window | accession n/a | No DEF 14A found in 2025-01-01..2026-06-26
+- PH | Parker Hannifin | CIK 0000076334 | DEF 14A filed 2025-09-19 | accession 0001308179-25-000603 | https://www.sec.gov/Archives/edgar/data/76334/000130817925000603/ph-20250919.htm
+- PAYX | Paychex | CIK 0000723531 | DEF 14A filed 2025-08-29 | accession 0001193125-25-191789 | https://www.sec.gov/Archives/edgar/data/723531/000119312525191789/d946290ddef14a.htm
+- PYPL | PayPal | CIK 0001633917 | DEF 14A filed 2026-04-07 | accession 0001193125-26-145721 | https://www.sec.gov/Archives/edgar/data/1633917/000119312526145721/d59508ddef14a.htm
+- PNR | Pentair | CIK 0000077360 | DEF 14A filed 2026-03-20 | accession 0000077360-26-000014 | https://www.sec.gov/Archives/edgar/data/77360/000007736026000014/pnr-20260317.htm
+- PEP | PepsiCo | CIK 0000077476 | DEF 14A filed 2026-03-27 | accession 0001308179-26-000169 | https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm
+- PFE | Pfizer | CIK 0000078003 | DEF 14A filed 2026-03-12 | accession 0000078003-26-000033 | https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm
+- PCG | PG&E Corporation | CIK 0001004980 | DEF 14A filed 2026-04-09 | accession 0001004980-26-000020 | https://www.sec.gov/Archives/edgar/data/1004980/000100498026000020/pcg-20260409.htm
+- PM | Philip Morris International | CIK 0001413329 | DEF 14A filed 2026-03-26 | accession 0001628280-26-021169 | https://www.sec.gov/Archives/edgar/data/1413329/000162828026021169/pmi-20260325.htm
+- PSX | Phillips 66 | CIK 0001534701 | DEF 14A filed 2026-04-02 | accession 0001534701-26-000010 | https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm
+- PNW | Pinnacle West Capital | CIK 0000764622 | DEF 14A filed 2026-04-03 | accession 0001628280-26-023516 | https://www.sec.gov/Archives/edgar/data/764622/000162828026023516/pnw-20260403.htm
+- PNC | PNC Financial Services | CIK 0000713676 | DEF 14A filed 2026-03-11 | accession 0001193125-26-102189 | https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm
+- PPG | PPG Industries | CIK 0000079879 | DEF 14A filed 2026-03-05 | accession 0000079879-26-000088 | https://www.sec.gov/Archives/edgar/data/79879/000007987926000088/ppg-20260304.htm
+- PPL | PPL Corporation | CIK 0000922224 | DEF 14A filed 2026-04-01 | accession 0001193125-26-135991 | https://www.sec.gov/Archives/edgar/data/922224/000119312526135991/ppl-20260331.htm
+- PFG | Principal Financial Group | CIK 0001126328 | DEF 14A filed 2026-04-06 | accession 0001104659-26-039920 | https://www.sec.gov/Archives/edgar/data/1126328/000110465926039920/tm2529976-1_def14a.htm
+- PG | Procter & Gamble | CIK 0000080424 | DEF 14A filed 2025-08-29 | accession 0001193125-25-191749 | https://www.sec.gov/Archives/edgar/data/80424/000119312525191749/d875382ddef14a.htm
+- PGR | Progressive Corporation | CIK 0000080661 | DEF 14A filed 2026-03-23 | accession 0000080661-26-000099 | https://www.sec.gov/Archives/edgar/data/80661/000008066126000099/pgr-20260318.htm
+- PLD | Prologis | CIK 0001045609 | DEF 14A filed 2026-03-19 | accession 0001193125-26-115132 | https://www.sec.gov/Archives/edgar/data/1045609/000119312526115132/d36709ddef14a.htm
+- PRU | Prudential Financial | CIK 0001137774 | DEF 14A filed 2026-03-26 | accession 0001104659-26-035162 | https://www.sec.gov/Archives/edgar/data/1137774/000110465926035162/tm2524217-6_def14a.htm
+- PEG | Public Service Enterprise Group | CIK 0000788784 | DEF 14A filed 2026-03-12 | accession 0001193125-26-104270 | https://www.sec.gov/Archives/edgar/data/788784/000119312526104270/peg-20260310.htm
+- PTC | PTC Inc. | CIK 0000857005 | DEF 14A filed 2025-12-23 | accession 0001104659-25-124170 | https://www.sec.gov/Archives/edgar/data/857005/000110465925124170/tm2526581-1_def14a.htm
+- PSA | Public Storage | CIK 0001393311 | DEF 14A filed 2026-03-27 | accession 0001193125-26-128991 | https://www.sec.gov/Archives/edgar/data/1393311/000119312526128991/psa-20260325.htm
+- PHM | PulteGroup | CIK 0000822416 | DEF 14A filed 2026-03-13 | accession 0000822416-26-000016 | https://www.sec.gov/Archives/edgar/data/822416/000082241626000016/phm-20260312.htm
+- PWR | Quanta Services | CIK 0001050915 | DEF 14A filed 2026-04-10 | accession 0001193125-26-150293 | https://www.sec.gov/Archives/edgar/data/1050915/000119312526150293/d118470ddef14a.htm
+- QCOM | Qualcomm | CIK 0000804328 | DEF 14A filed 2026-01-22 | accession 0001104659-26-005781 | https://www.sec.gov/Archives/edgar/data/804328/000110465926005781/tm2528704-1_def14a.htm
+- DGX | Quest Diagnostics | CIK 0001022079 | DEF 14A filed 2026-04-06 | accession 0001140361-26-013356 | https://www.sec.gov/Archives/edgar/data/1022079/000114036126013356/ny20064122x1_def14a.htm
+- Q | Qnity Electronics | CIK 0002058873 | DEF 14A filed 2026-04-08 | accession 0001628280-26-024259 | https://www.sec.gov/Archives/edgar/data/2058873/000162828026024259/q-20260408.htm
+- RL | Ralph Lauren Corporation | CIK 0001037038 | DEF 14A filed 2026-06-18 | accession 0001140361-26-025788 | https://www.sec.gov/Archives/edgar/data/1037038/000114036126025788/ny20071304x1_def14a.htm
+- RJF | Raymond James Financial | CIK 0000720005 | DEF 14A filed 2026-01-07 | accession 0000720005-26-000019 | https://www.sec.gov/Archives/edgar/data/720005/000072000526000019/rjf-20260106.htm
+- RTX | RTX Corporation | CIK 0000101829 | DEF 14A filed 2026-03-09 | accession 0001308179-26-000036 | https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm
+- O | Realty Income | CIK 0000726728 | DEF 14A filed 2026-03-25 | accession 0000726728-26-000021 | https://www.sec.gov/Archives/edgar/data/726728/000072672826000021/o-20260325.htm
+- REG | Regency Centers | CIK 0000910606 | DEF 14A filed 2026-03-25 | accession 0001193125-26-122880 | https://www.sec.gov/Archives/edgar/data/910606/000119312526122880/d939595ddef14a.htm
+- REGN | Regeneron Pharmaceuticals | CIK 0000872589 | DEF 14A filed 2026-04-24 | accession 0001308179-26-000340 | https://www.sec.gov/Archives/edgar/data/872589/000130817926000340/regn-20260424.htm
+- RF | Regions Financial Corporation | CIK 0001281761 | DEF 14A filed 2026-03-23 | accession 0001281761-26-000027 | https://www.sec.gov/Archives/edgar/data/1281761/000128176126000027/rf-20260323.htm
+- RSG | Republic Services | CIK 0001060391 | DEF 14A filed 2026-03-24 | accession 0001193125-26-121796 | https://www.sec.gov/Archives/edgar/data/1060391/000119312526121796/d896469ddef14a.htm
+- RMD | ResMed | CIK 0000943819 | DEF 14A filed 2025-10-02 | accession 0000943819-25-000079 | https://www.sec.gov/Archives/edgar/data/943819/000094381925000079/rmd-20251001.htm
+- RVTY | Revvity | CIK 0000031791 | DEF 14A filed 2026-03-16 | accession 0001193125-26-107266 | https://www.sec.gov/Archives/edgar/data/31791/000119312526107266/d21831ddef14a.htm
+- HOOD | Robinhood Markets | CIK 0001783879 | DEF 14A filed 2026-04-22 | accession 0001783879-26-000053 | https://www.sec.gov/Archives/edgar/data/1783879/000178387926000053/hood-20260422.htm
+- ROK | Rockwell Automation | CIK 0001024478 | DEF 14A filed 2025-12-22 | accession 0001308179-25-000665 | https://www.sec.gov/Archives/edgar/data/1024478/000130817925000665/rok014559-def14a.htm
+- ROL | Rollins, Inc. | CIK 0000084839 | DEF 14A filed 2026-03-17 | accession 0000084839-26-000014 | https://www.sec.gov/Archives/edgar/data/84839/000008483926000014/rol-20260317.htm
+- ROP | Roper Technologies | CIK 0000882835 | DEF 14A filed 2026-04-07 | accession 0001193125-26-145481 | https://www.sec.gov/Archives/edgar/data/882835/000119312526145481/d204543ddef14a.htm
+- ROST | Ross Stores | CIK 0000745732 | DEF 14A filed 2026-04-07 | accession 0000745732-26-000013 | https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm
+- RCL | Royal Caribbean Group | CIK 0000884887 | DEF 14A filed 2026-04-17 | accession 0000884887-26-000017 | https://www.sec.gov/Archives/edgar/data/884887/000088488726000017/rcl-20260417.htm
+- SPGI | S&P Global | CIK 0000064040 | DEF 14A filed 2026-03-31 | accession 0001104659-26-037380 | https://www.sec.gov/Archives/edgar/data/64040/000110465926037380/tm261443-1_def14a.htm
+- CRM | Salesforce | CIK 0001108524 | DEF 14A filed 2026-04-16 | accession 0001108524-26-000085 | https://www.sec.gov/Archives/edgar/data/1108524/000110852426000085/crm-20260416.htm
+- SNDK | Sandisk | CIK 0002023554 | DEF 14A filed 2025-10-07 | accession 0001628280-25-044481 | https://www.sec.gov/Archives/edgar/data/2023554/000162828025044481/sndk-20251006.htm
+- SBAC | SBA Communications | CIK 0001034054 | DEF 14A filed 2026-04-09 | accession 0001193125-26-149656 | https://www.sec.gov/Archives/edgar/data/1034054/000119312526149656/d98181ddef14a.htm
+- SLB | Schlumberger | CIK 0000087347 | DEF 14A filed 2026-02-26 | accession 0001308179-26-000024 | https://www.sec.gov/Archives/edgar/data/87347/000130817926000024/slb2026-def14a.htm
+- STX | Seagate Technology | CIK 0001137789 | DEF 14A filed 2025-09-09 | accession 0001137789-25-000211 | https://www.sec.gov/Archives/edgar/data/1137789/000113778925000211/stx-20250909.htm
+- SRE | Sempra | CIK 0001032208 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127603 | https://www.sec.gov/Archives/edgar/data/1032208/000119312526127603/d90144ddef14a.htm
+- NOW | ServiceNow | CIK 0001373715 | DEF 14A filed 2026-04-06 | accession 0001373715-26-000039 | https://www.sec.gov/Archives/edgar/data/1373715/000137371526000039/now-20260406.htm
+- SHW | Sherwin-Williams | CIK 0000089800 | DEF 14A filed 2026-03-11 | accession 0000089800-26-000025 | https://www.sec.gov/Archives/edgar/data/89800/000008980026000025/shw-20260310.htm
+- SPG | Simon Property Group | CIK 0001063761 | DEF 14A filed 2026-04-01 | accession 0001104659-26-038320 | https://www.sec.gov/Archives/edgar/data/1063761/000110465926038320/spg-20260513xdef14a.htm
+- SWKS | Skyworks Solutions | CIK 0000004127 | DEF 14A filed 2026-04-03 | accession 0001104659-26-039476 | https://www.sec.gov/Archives/edgar/data/4127/000110465926039476/tm261577-5_def14a.htm
+- SJM | J.M. Smucker Company (The) | CIK 0000091419 | DEF 14A filed 2026-06-26 | accession 0001193125-26-283858 | https://www.sec.gov/Archives/edgar/data/91419/000119312526283858/d227901ddef14a.htm
+- SW | Smurfit Westrock | CIK 0002005951 | DEF 14A filed 2026-03-11 | accession 0001104659-26-026094 | https://www.sec.gov/Archives/edgar/data/2005951/000110465926026094/sw-20260501xdef14a.htm
+- SNA | Snap-on | CIK 0000091440 | DEF 14A filed 2026-03-12 | accession 0000091440-26-000101 | https://www.sec.gov/Archives/edgar/data/91440/000009144026000101/sna-20260311.htm
+- SOLV | Solventum | CIK 0001964738 | DEF 14A filed 2026-03-27 | accession 0001964738-26-000017 | https://www.sec.gov/Archives/edgar/data/1964738/000196473826000017/solv-20260327.htm
+- SO | Southern Company | CIK 0000092122 | DEF 14A filed 2026-04-03 | accession 0000092122-26-000028 | https://www.sec.gov/Archives/edgar/data/92122/000009212226000028/so-20260402.htm
+- LUV | Southwest Airlines | CIK 0000092380 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127237 | https://www.sec.gov/Archives/edgar/data/92380/000119312526127237/d121727ddef14a.htm
+- SWK | Stanley Black & Decker | CIK 0000093556 | DEF 14A filed 2026-03-06 | accession 0001140361-26-008170 | https://www.sec.gov/Archives/edgar/data/93556/000114036126008170/ny20055502x771_def14a.htm
+- SBUX | Starbucks | CIK 0000829224 | DEF 14A filed 2026-01-26 | accession 0001213900-26-007780 | https://www.sec.gov/Archives/edgar/data/829224/000121390026007780/ea0270973-01.htm
+- STT | State Street Corporation | CIK 0000093751 | DEF 14A filed 2026-04-08 | accession 0001140361-26-013817 | https://www.sec.gov/Archives/edgar/data/93751/000114036126013817/ny20058931x1_def14a.htm
+- STLD | Steel Dynamics | CIK 0001022671 | DEF 14A filed 2026-03-27 | accession 0001104659-26-035826 | https://www.sec.gov/Archives/edgar/data/1022671/000110465926035826/stld-20260506xdef14a.htm
+- STE | Steris | CIK 0001757898 | DEF 14A filed 2026-06-11 | accession 0001193125-26-267599 | https://www.sec.gov/Archives/edgar/data/1757898/000119312526267599/d142920ddef14a.htm
+- SYK | Stryker Corporation | CIK 0000310764 | DEF 14A filed 2026-03-23 | accession 0000310764-26-000013 | https://www.sec.gov/Archives/edgar/data/310764/000031076426000013/syk-20260323.htm
+- SMCI | Supermicro | CIK 0001375365 | DEF 14A filed 2026-03-03 | accession 0001375365-26-000008 | https://www.sec.gov/Archives/edgar/data/1375365/000137536526000008/smci-20260303.htm
+- SYF | Synchrony Financial | CIK 0001601712 | DEF 14A filed 2026-04-29 | accession 0001601712-26-000017 | https://www.sec.gov/Archives/edgar/data/1601712/000160171226000017/synchronyfinancialproxy202.htm
+- SNPS | Synopsys | CIK 0000883241 | DEF 14A filed 2026-02-19 | accession 0000883241-26-000007 | https://www.sec.gov/Archives/edgar/data/883241/000088324126000007/snps-20260219.htm
+- SYY | Sysco | CIK 0000096021 | DEF 14A filed 2025-10-02 | accession 0000096021-25-000147 | https://www.sec.gov/Archives/edgar/data/96021/000009602125000147/syy-20251001.htm
+- TMUS | T-Mobile US | CIK 0001283699 | DEF 14A filed 2026-04-27 | accession 0001193125-26-181884 | https://www.sec.gov/Archives/edgar/data/1283699/000119312526181884/d11985ddef14a.htm
+- TROW | T. Rowe Price | CIK 0001113169 | DEF 14A filed 2026-03-17 | accession 0001104659-26-028876 | https://www.sec.gov/Archives/edgar/data/1113169/000110465926028876/tm268615d3_def14a.htm
+- TTWO | Take-Two Interactive | CIK 0000946581 | DEF 14A filed 2025-07-28 | accession 0001628280-25-036188 | https://www.sec.gov/Archives/edgar/data/946581/000162828025036188/ttwo-20250728.htm
+- TPR | Tapestry, Inc. | CIK 0001116132 | DEF 14A filed 2025-09-26 | accession 0001140361-25-036303 | https://www.sec.gov/Archives/edgar/data/1116132/000114036125036303/ny20053837x1_def14a.htm
+- TRGP | Targa Resources | CIK 0001389170 | DEF 14A filed 2026-03-26 | accession 0001193125-26-126280 | https://www.sec.gov/Archives/edgar/data/1389170/000119312526126280/trgp-20260326.htm
+- TGT | Target Corporation | CIK 0000027419 | DEF 14A filed 2026-04-27 | accession 0001628280-26-027508 | https://www.sec.gov/Archives/edgar/data/27419/000162828026027508/tgt-20260426.htm
+- TEL | TE Connectivity | CIK 0001385157 | DEF 14A filed 2026-01-15 | accession 0001104659-26-003934 | https://www.sec.gov/Archives/edgar/data/1385157/000110465926003934/tel-20260311xdef14a.htm
+- TDY | Teledyne Technologies | CIK 0001094285 | DEF 14A filed 2026-03-12 | accession 0001193125-26-104187 | https://www.sec.gov/Archives/edgar/data/1094285/000119312526104187/d70991ddef14a.htm
+- TER | Teradyne | CIK 0000097210 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127504 | https://www.sec.gov/Archives/edgar/data/97210/000119312526127504/ter-20260325.htm
+- TSLA | Tesla, Inc. | CIK 0001318605 | DEF 14A filed 2025-09-17 | accession 0001104659-25-090866 | https://www.sec.gov/Archives/edgar/data/1318605/000110465925090866/tm252289-12_def14a.htm
+- TXN | Texas Instruments | CIK 0000097476 | DEF 14A filed 2026-03-04 | accession 0000097476-26-000078 | https://www.sec.gov/Archives/edgar/data/97476/000009747626000078/txn-20260303.htm
+- TPL | Texas Pacific Land Corporation | CIK 0001811074 | DEF 14A filed 2025-09-26 | accession 0001104659-25-093848 | https://www.sec.gov/Archives/edgar/data/1811074/000110465925093848/tm2523293-1_def14a.htm
+- TXT | Textron | CIK 0000217346 | DEF 14A filed 2026-03-05 | accession 0001552781-26-000084 | https://www.sec.gov/Archives/edgar/data/217346/000155278126000084/e26011_txt-def14a.htm
+- TMO | Thermo Fisher Scientific | CIK 0000097745 | DEF 14A filed 2026-04-07 | accession 0001193125-26-144585 | https://www.sec.gov/Archives/edgar/data/97745/000119312526144585/d66426ddef14a.htm
+- TJX | TJX Companies | CIK 0000109198 | DEF 14A filed 2026-04-30 | accession 0000109198-26-000015 | https://www.sec.gov/Archives/edgar/data/109198/000010919826000015/tjx-20260430.htm
+- TKO | TKO Group Holdings | CIK 0001973266 | DEF 14A filed 2026-04-23 | accession 0001193125-26-173833 | https://www.sec.gov/Archives/edgar/data/1973266/000119312526173833/d913980ddef14a.htm
+- TTD | Trade Desk (The) | CIK 0001671933 | DEF 14A filed 2026-04-09 | accession 0001671933-26-000034 | https://www.sec.gov/Archives/edgar/data/1671933/000167193326000034/ttd-20260408.htm
+- TSCO | Tractor Supply | CIK 0000916365 | DEF 14A filed 2026-03-26 | accession 0001193125-26-126620 | https://www.sec.gov/Archives/edgar/data/916365/000119312526126620/d16327ddef14a.htm
+- TT | Trane Technologies | CIK 0001466258 | DEF 14A filed 2026-04-23 | accession 0001628280-26-026679 | https://www.sec.gov/Archives/edgar/data/1466258/000162828026026679/tt-20260421.htm
+- TDG | TransDigm Group | CIK 0001260221 | DEF 14A filed 2026-01-23 | accession 0001260221-26-000009 | https://www.sec.gov/Archives/edgar/data/1260221/000126022126000009/tdg-20260122.htm
+- TRV | Travelers Companies (The) | CIK 0000086312 | DEF 14A filed 2026-04-07 | accession 0000086312-26-000103 | https://www.sec.gov/Archives/edgar/data/86312/000008631226000103/trv-20260406.htm
+- TRMB | Trimble Inc. | CIK 0000864749 | DEF 14A filed 2026-04-09 | accession 0000864749-26-000042 | https://www.sec.gov/Archives/edgar/data/864749/000086474926000042/trmb-20260409.htm
+- TFC | Truist Financial | CIK 0000092230 | DEF 14A filed 2026-03-16 | accession 0001193125-26-107144 | https://www.sec.gov/Archives/edgar/data/92230/000119312526107144/d12240ddef14a.htm
+- TYL | Tyler Technologies | CIK 0000860731 | DEF 14A filed 2026-03-23 | accession 0000860731-26-000022 | https://www.sec.gov/Archives/edgar/data/860731/000086073126000022/tyl-20260323.htm
+- TSN | Tyson Foods | CIK 0000100493 | DEF 14A filed 2025-12-17 | accession 0000100493-25-000114 | https://www.sec.gov/Archives/edgar/data/100493/000010049325000114/tsn-20251217.htm
+- USB | U.S. Bancorp | CIK 0000036104 | DEF 14A filed 2026-03-10 | accession 0001104659-26-025844 | https://www.sec.gov/Archives/edgar/data/36104/000110465926025844/tm261379-1_def14a.htm
+- UBER | Uber | CIK 0001543151 | DEF 14A filed 2026-03-23 | accession 0001308179-26-000125 | https://www.sec.gov/Archives/edgar/data/1543151/000130817926000125/uber014597-def14a.htm
+- UDR | UDR, Inc. | CIK 0000074208 | DEF 14A filed 2026-04-02 | accession 0000074208-26-000037 | https://www.sec.gov/Archives/edgar/data/74208/000007420826000037/udr-20260521xdef14a.htm
+- ULTA | Ulta Beauty | CIK 0001403568 | DEF 14A filed 2026-04-22 | accession 0001104659-26-046308 | https://www.sec.gov/Archives/edgar/data/1403568/000110465926046308/tmb-20260609xdef14a.htm
+- UNP | Union Pacific Corporation | CIK 0000100885 | DEF 14A filed 2026-03-25 | accession 0000100885-26-000098 | https://www.sec.gov/Archives/edgar/data/100885/000010088526000098/unp-20260324.htm
+- UAL | United Airlines Holdings | CIK 0000100517 | DEF 14A filed 2026-04-07 | accession 0001104659-26-040467 | https://www.sec.gov/Archives/edgar/data/100517/000110465926040467/tmb-20260519xdef14a.htm
+- UPS | United Parcel Service | CIK 0001090727 | DEF 14A filed 2026-03-19 | accession 0001628280-26-019856 | https://www.sec.gov/Archives/edgar/data/1090727/000162828026019856/ups-20260319.htm
+- URI | United Rentals | CIK 0001067701 | DEF 14A filed 2026-03-25 | accession 0001193125-26-124113 | https://www.sec.gov/Archives/edgar/data/1067701/000119312526124113/uri-20260324.htm
+- UNH | UnitedHealth Group | CIK 0000731766 | DEF 14A filed 2026-04-21 | accession 0001104659-26-046125 | https://www.sec.gov/Archives/edgar/data/731766/000110465926046125/tm261387-6_def14a.htm
+- UHS | Universal Health Services | CIK 0000352915 | DEF 14A filed 2026-04-09 | accession 0001193125-26-148814 | https://www.sec.gov/Archives/edgar/data/352915/000119312526148814/uhs-20260403.htm
+- VLO | Valero Energy | CIK 0001035002 | DEF 14A filed 2026-03-19 | accession 0001628280-26-019806 | https://www.sec.gov/Archives/edgar/data/1035002/000162828026019806/vlo-20260318.htm
+- VEEV | Veeva Systems | CIK 0001393052 | DEF 14A filed 2026-05-04 | accession 0001140361-26-018796 | https://www.sec.gov/Archives/edgar/data/1393052/000114036126018796/ny20062821x1_def14a.htm
+- VTR | Ventas | CIK 0000740260 | DEF 14A filed 2026-04-01 | accession 0000740260-26-000010 | https://www.sec.gov/Archives/edgar/data/740260/000074026026000010/vtr-20260401.htm
+- VLTO | Veralto | CIK 0001967680 | DEF 14A filed 2026-03-27 | accession 0001967680-26-000016 | https://www.sec.gov/Archives/edgar/data/1967680/000196768026000016/vlto-20260326.htm
+- VRSN | Verisign | CIK 0001014473 | DEF 14A filed 2026-04-10 | accession 0001014473-26-000013 | https://www.sec.gov/Archives/edgar/data/1014473/000101447326000013/vrsn-20260409.htm
+- VRSK | Verisk Analytics | CIK 0001442145 | DEF 14A filed 2026-04-03 | accession 0001193125-26-141398 | https://www.sec.gov/Archives/edgar/data/1442145/000119312526141398/d23242ddef14a.htm
+- VZ | Verizon | CIK 0000732712 | DEF 14A filed 2026-04-06 | accession 0001308179-26-000210 | https://www.sec.gov/Archives/edgar/data/732712/000130817926000210/vz014688_def14a.htm
+- VRTX | Vertex Pharmaceuticals | CIK 0000875320 | DEF 14A filed 2026-04-02 | accession 0000875320-26-000153 | https://www.sec.gov/Archives/edgar/data/875320/000087532026000153/vrtx-20260402.htm
+- VRT | Vertiv | CIK 0001674101 | DEF 14A filed 2026-04-24 | accession 0001193125-26-174898 | https://www.sec.gov/Archives/edgar/data/1674101/000119312526174898/d18663ddef14a.htm
+- VTRS | Viatris | CIK 0001792044 | DEF 14A filed 2026-04-02 | accession 0001140361-26-013002 | https://www.sec.gov/Archives/edgar/data/1792044/000114036126013002/ny20062029x771_def14a.htm
+- VICI | Vici Properties | CIK 0001705696 | DEF 14A filed 2026-03-16 | accession 0001104659-26-028592 | https://www.sec.gov/Archives/edgar/data/1705696/000110465926028592/tm261334-1_def14a.htm
+- V | Visa Inc. | CIK 0001403161 | DEF 14A filed 2025-12-08 | accession 0001308179-25-000635 | https://www.sec.gov/Archives/edgar/data/1403161/000130817925000635/v-20251208.htm
+- VST | Vistra Corp. | CIK 0001692819 | DEF 14A filed 2026-03-18 | accession 0001628280-26-019029 | https://www.sec.gov/Archives/edgar/data/1692819/000162828026019029/vistra-20260318.htm
+- VMC | Vulcan Materials Company | CIK 0001396009 | DEF 14A filed 2026-03-24 | accession 0001628280-26-020812 | https://www.sec.gov/Archives/edgar/data/1396009/000162828026020812/vmc-20260324.htm
+- WRB | W. R. Berkley Corporation | CIK 0000011544 | DEF 14A filed 2026-04-22 | accession 0001193125-26-170583 | https://www.sec.gov/Archives/edgar/data/11544/000119312526170583/d82252ddef14a.htm
+- GWW | W. W. Grainger | CIK 0000277135 | DEF 14A filed 2026-03-10 | accession 0001104659-26-025575 | https://www.sec.gov/Archives/edgar/data/277135/000110465926025575/tm261342-1_def14a.htm
+- WAB | Wabtec | CIK 0000943452 | DEF 14A filed 2026-03-31 | accession 0001628280-26-022197 | https://www.sec.gov/Archives/edgar/data/943452/000162828026022197/wab-20260330.htm
+- WMT | Walmart | CIK 0000104169 | DEF 14A filed 2026-04-23 | accession 0001193125-26-173673 | https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm
+- DIS | Walt Disney Company (The) | CIK 0001744489 | DEF 14A filed 2026-01-22 | accession 0001744489-26-000013 | https://www.sec.gov/Archives/edgar/data/1744489/000174448926000013/dis-20260122.htm
+- WBD | Warner Bros. Discovery | CIK 0001437107 | DEF 14A filed 2026-04-30 | accession 0001437107-26-000046 | https://www.sec.gov/Archives/edgar/data/1437107/000143710726000046/wbd-20260429.htm
+- WM | Waste Management | CIK 0000823768 | DEF 14A filed 2026-03-31 | accession 0001104659-26-037381 | https://www.sec.gov/Archives/edgar/data/823768/000110465926037381/tm261369-1_def14a.htm
+- WAT | Waters Corporation | CIK 0001000697 | DEF 14A filed 2026-04-09 | accession 0001193125-26-149657 | https://www.sec.gov/Archives/edgar/data/1000697/000119312526149657/d71187ddef14a.htm
+- WEC | WEC Energy Group | CIK 0000783325 | DEF 14A filed 2026-03-26 | accession 0000783325-26-000035 | https://www.sec.gov/Archives/edgar/data/783325/000078332526000035/wec-20260324.htm
+- WFC | Wells Fargo | CIK 0000072971 | DEF 14A filed 2026-03-18 | accession 0000072971-26-000200 | https://www.sec.gov/Archives/edgar/data/72971/000007297126000200/wfc-20260318.htm
+- WELL | Welltower | CIK 0000766704 | DEF 14A filed 2026-04-10 | accession 0000766704-26-000014 | https://www.sec.gov/Archives/edgar/data/766704/000076670426000014/well-20260409.htm
+- WST | West Pharmaceutical Services | CIK 0000105770 | DEF 14A filed 2026-03-12 | accession 0001104659-26-026778 | https://www.sec.gov/Archives/edgar/data/105770/000110465926026778/wst-20260504xdef14a.htm
+- WDC | Western Digital | CIK 0000106040 | DEF 14A filed 2025-10-06 | accession 0001628280-25-044298 | https://www.sec.gov/Archives/edgar/data/106040/000162828025044298/wdc-20251006.htm
+- WY | Weyerhaeuser | CIK 0000106535 | DEF 14A filed 2026-04-01 | accession 0001140361-26-012453 | https://www.sec.gov/Archives/edgar/data/106535/000114036126012453/ny20063863x1_def14a.htm
+- WSM | Williams-Sonoma, Inc. | CIK 0000719955 | DEF 14A filed 2026-05-06 | accession 0000719955-26-000109 | https://www.sec.gov/Archives/edgar/data/719955/000071995526000109/wsm-20260506.htm
+- WMB | Williams Companies | CIK 0000107263 | DEF 14A filed 2026-03-18 | accession 0001193125-26-112643 | https://www.sec.gov/Archives/edgar/data/107263/000119312526112643/wmb-20260317.htm
+- WTW | Willis Towers Watson | CIK 0001140536 | DEF 14A filed 2026-03-27 | accession 0001193125-26-127613 | https://www.sec.gov/Archives/edgar/data/1140536/000119312526127613/wtw-20260327.htm
+- WDAY | Workday, Inc. | CIK 0001327811 | DEF 14A filed 2026-05-05 | accession 0001104659-26-055687 | https://www.sec.gov/Archives/edgar/data/1327811/000110465926055687/tm261347-2_def14a.htm
+- WYNN | Wynn Resorts | CIK 0001174922 | DEF 14A filed 2026-03-25 | accession 0001193125-26-124077 | https://www.sec.gov/Archives/edgar/data/1174922/000119312526124077/d26334ddef14a.htm
+- XEL | Xcel Energy | CIK 0000072903 | DEF 14A filed 2026-04-07 | accession 0000072903-26-000063 | https://www.sec.gov/Archives/edgar/data/72903/000007290326000063/xel-20260406.htm
+- XYL | Xylem Inc. | CIK 0001524472 | DEF 14A filed 2026-03-30 | accession 0001104659-26-036678 | https://www.sec.gov/Archives/edgar/data/1524472/000110465926036678/xyl-20260514xdef14a.htm
+- YUM | Yum! Brands | CIK 0001041061 | DEF 14A filed 2026-04-03 | accession 0001193125-26-142078 | https://www.sec.gov/Archives/edgar/data/1041061/000119312526142078/yum-20260402.htm
+- ZBRA | Zebra Technologies | CIK 0000877212 | DEF 14A filed 2026-04-03 | accession 0001104659-26-039488 | https://www.sec.gov/Archives/edgar/data/877212/000110465926039488/zbra-20260519xdef14a.htm
+- ZBH | Zimmer Biomet | CIK 0001136869 | DEF 14A filed 2026-04-01 | accession 0001193125-26-135661 | https://www.sec.gov/Archives/edgar/data/1136869/000119312526135661/zbh-20260331.htm
+- ZTS | Zoetis | CIK 0001555280 | DEF 14A filed 2026-04-08 | accession 0001555280-26-000015 | https://www.sec.gov/Archives/edgar/data/1555280/000155528026000015/zts-20260406.htm
+
+HBCU institutions in scope:
+- **Alabama A & M University**
+- **Alabama State University**
+- **Bishop State Community College**
+- **Gadsden State Community College**
+- **H Councill Trenholm State Community College**
+- **J. F. Drake State Community and Technical College**
+- **Lawson State Community College**
+- **Miles College**
+- **Oakwood University**
+- **Shelton State Community College**
+- **Stillman College**
+- **Talladega College**
+- **Tuskegee University**
+- **Arkansas Baptist College**
+- **Philander Smith College**
+- **Shorter College**
+- **University of Arkansas at Pine Bluff**
+- **Delaware State University**
+- **Howard University**
+- **University of the District of Columbia**
+- **University of the District of Columbia-David A Clarke School of Law**
+- **Bethune-Cookman University**
+- **Edward Waters College**
+- **Florida Agricultural and Mechanical University**
+- **Florida Memorial University**
+- **Albany State University**
+- **Clark Atlanta University**
+- **Fort Valley State University**
+- **Interdenominational Theological Center**
+- **Morehouse College**
+- **Morehouse School of Medicine**
+- **Paine College**
+- **Savannah State University**
+- **Spelman College**
+- **Kentucky State University**
+- **Simmons College of Kentucky**
+- **Dillard University**
+- **Grambling State University**
+- **Southern University and A & M College**
+- **Southern University at New Orleans**
+- **Southern University at Shreveport**
+- **Southern University Law Center**
+- **Xavier University of Louisiana**
+- **Bowie State University**
+- **Coppin State University**
+- **Morgan State University**
+- **University of Maryland Eastern Shore**
+- **Alcorn State University**
+- **Coahoma Community College**
+- **Jackson State University**
+- **Mississippi Valley State University**
+- **Rust College**
+- **Tougaloo College**
+- **Harris-Stowe State University**
+- **Lincoln University (Missouri)**
+- **Bennett College**
+- **Elizabeth City State University**
+- **Fayetteville State University**
+- **Johnson C Smith University**
+- **Livingstone College**
+- **North Carolina A & T State University**
+- **North Carolina Central University**
+- **Saint Augustine's University**
+- **Shaw University**
+- **Winston-Salem State University**
+- **Central State University**
+- **Wilberforce University**
+- **Langston University**
+- **Cheyney University of Pennsylvania**
+- **Lincoln University (Pennsylvania)**
+- **Allen University**
+- **Benedict College**
+- **Claflin University**
+- **Clinton College**
+- **Denmark Technical College**
+- **Morris College**
+- **South Carolina State University**
+- **Voorhees College**
+- **American Baptist College**
+- **Fisk University**
+- **Lane College**
+- **Le Moyne-Owen College**
+- **Meharry Medical College**
+- **Tennessee State University**
+- **Huston-Tillotson University**
+- **Jarvis Christian College**
+- **Paul Quinn College**
+- **Prairie View A & M University**
+- **Southwestern Christian College**
+- **St Philip's College**
+- **Texas College**
+- **Texas Southern University**
+- **Wiley College**
+- **University of the Virgin Islands**
+- **University of the Virgin Islands-Albert A. Sheen**
+- **Hampton University**
+- **Norfolk State University**
+- **Virginia State University**
+- **Virginia Union University**
+- **Virginia University of Lynchburg**
+- **Bluefield State College**
+- **West Virginia State University**
+
+Requirements:
+- The page must be SEC EDGAR DEF 14A / annual proxy filing text, or an issuer-hosted annual proxy that is clearly the same official filing, with source-visible timing in the filing window.
+- The issuer/ticker must match one of the supplied S&P 500 issuer/proxy candidates as of 2026-06-26; the candidate list is a universe boundary, not enough evidence by itself.
+- The page must identify the named person as a director or director nominee of the named issuer in that filing.
+- The director or nominee biography, director card, or immediately adjacent biography section must state an earned education relationship with the claimed HBCU institution, such as a degree, earned diploma, or explicit attendance / enrollment language. Honorary, service, employment, leadership, or corporate-relationship mentions are not earned education.
+
+Write one JSON object per line to `results_hbcu_proxy_directors.jsonl`:
+{"item": { "institution": "<institution>", "issuer": "<issuer>", "ticker": "<ticker>", "director_name": "<director_name>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

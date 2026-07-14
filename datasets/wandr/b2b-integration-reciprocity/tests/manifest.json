@@ -1,0 +1,8 @@
+{
+  "name": "b2b-integration-reciprocity",
+  "wandr_task": "b2b_integration_reciprocity",
+  "task_names": [
+    "b2b_integration_reciprocity",
+    "b2b_integration_reciprocity.provider_profiles"
+  ]
+}

@@ -1,0 +1,4 @@
+Map register-category variants to one of these canonical labels:
+{=% for category, aliases in register_categories.items() =%}
+- `{= category =}`: {= aliases | join("; ") =}
+{=% endfor =%}

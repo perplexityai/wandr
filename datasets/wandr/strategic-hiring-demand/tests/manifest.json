@@ -1,0 +1,8 @@
+{
+  "name": "strategic-hiring-demand",
+  "wandr_task": "strategic_hiring_demand",
+  "task_names": [
+    "strategic_hiring_demand",
+    "strategic_hiring_demand.current_openings"
+  ]
+}

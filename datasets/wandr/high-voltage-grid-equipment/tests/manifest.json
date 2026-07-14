@@ -1,0 +1,8 @@
+{
+  "name": "high-voltage-grid-equipment",
+  "wandr_task": "high_voltage_grid_equipment",
+  "task_names": [
+    "high_voltage_grid_equipment",
+    "high_voltage_grid_equipment.public_references"
+  ]
+}

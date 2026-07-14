@@ -1,0 +1,41 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `germany_industrial_project_source_evidence`
+
+Identify 150+ projects as German industrial, infrastructure, or technology project/site/deployment/facility/institute objects with a concrete location anchor; for each project, cover each of the 4 evidence sides listed below with a source (i.e. 1+ URL per evidence side). The project identity is the actual project actor (operator, developer, sponsor, owner, consortium, or controlling institution), the named project/site/deployment, and the German location. Do not put the source publisher, public registry, regulator, law/program label, catalog, or project-listing surface in the `operator` field unless that body actually operates, owns, sponsors, or controls the project. Broad company financing, generic sector overviews, procurement listings, investment theses, public project lists, regulatory catalogs, and broad company profiles are outside the project universe unless they identify a concrete German project object and the actual project actor.
+
+The evidence sides of interest, which we refer to as `evidence_side`, are:
+- `operator_project_anchor`: a project/site/deployment anchor from the actual operator, developer, sponsor, owner, controlling institution, or project consortium. A public authority, regulator, registry, law page, or official project-listing surface does not satisfy this side merely by listing the project; it must be the actor that operates, owns, sponsors, or controls the project.
+- `public_or_local_anchor`: a project/site/deployment anchor from a public authority, local government, planning or permitting process, economic-development body, institutional funder, or comparable official/local source.
+- `source_stated_stage_or_timing`: source-stated project stage, status, timing, milestone, or change wording for the project.
+- `scope_or_capacity_signal`: source-stated concrete project scope, such as capacity, investment, jobs, MW or IT load, wafer volume, GWh, footprint, funding, production use case, or deployment scale.
+
+A valid robotics project must still be a concrete German site, deployment, institute, investment, or project object rather than generic robotics-sector presence. The page should be public, accessible, and usable as a normal source page.
+
+Requirements:
+- The page must identify or strongly anchor the claimed actual project actor, project/site/deployment, and German location. A source-publisher label such as a regulator, registry, catalog, or official project-list page is not a valid actor identity unless the page itself shows that body operates, owns, sponsors, or controls the project.
+- The page should make its evidence-side-specific source role or statement posture visible: for `operator_project_anchor`, actual operator/developer/sponsor/owner/consortium/controlling-institution identity; for `public_or_local_anchor`, official public, local, planning, permitting, economic-development, or institutional-funder identity; for `source_stated_stage_or_timing`, source-stated project-specific stage/status/timing/change wording; for `scope_or_capacity_signal`, source-stated project-specific scope/capacity wording.
+- The page must contribute the evidence required by `evidence_side`: an actual project-actor-controlled project anchor for `operator_project_anchor`; an official/local project anchor for `public_or_local_anchor`; source-stated stage, status, timing, milestone, or change wording for `source_stated_stage_or_timing`; or a concrete capacity, investment, jobs, MW/IT-load, wafer-volume, GWh, footprint, funding, production-use-case, deployment-scale, or comparable project-specific scope signal for `scope_or_capacity_signal`.
+
+Write one JSON object per line to `results_germany_industrial_project_source_evidence.jsonl`:
+{"item": { "operator": "<operator>", "project_or_site": "<project_or_site>", "location": "<location>", "evidence_side": "<evidence_side>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

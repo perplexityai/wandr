@@ -1,0 +1,13 @@
+For {= company =}+ companies, and for each of the {= fiscal_year =} fiscal years {= target_fiscal_years =}, extract official Summary Compensation Table evidence for {= neo_person =}+ named executive officers per company fiscal year, with {= url =}+ official proxy source per executive-fiscal-year table row.
+
+This is factual filing extraction only: companies should be public issuers with official DEF 14A/proxy filings, and the executive should be a named individual NEO for that company and fiscal year. SEC EDGAR filings are preferred; issuer-hosted proxies count only when visibly the same filed proxy. Secondary mirrors, finance summaries, filing-news pages, MarketScreener/Yahoo/PublicNow/StockTitan/Quartr-style pages, 10-Ks, director compensation tables, pay-versus-performance tables, and proxy narrative without the Summary Compensation Table row do not count.
+
+Compensation advice, governance judgment, pay-fairness commentary, investment analysis, causal performance explanation, and executive profiling are out of scope.
+
+Requirements:
+- The page must communicate that the cited source is an official DEF 14A or proxy statement for the claimed company.
+- The page must bind the Summary Compensation Table evidence to the claimed fiscal year, not merely to the proxy filing year.
+- The page must show the Summary Compensation Table context and a usable table location.
+- The page must identify the submitted executive as the named executive officer table row, including role or principal position when the table provides it.
+- The page must show the exact compensation values in the submitted executive's Summary Compensation Table row: salary, bonus if present, stock awards, option awards, non-equity incentive plan compensation, all other compensation, total compensation, and any intermediate SCT columns the issuer includes.
+- The page must preserve row/component footnote markers and explicit no-value states (0, dash, N/A, blank, not applicable, or excluded/comparability notes) needed to read that executive's row.

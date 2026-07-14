@@ -1,0 +1,12 @@
+For at least {= provider =}+ sugarcane-machine providers, supply at least {= evidence_type =}+ public capability evidence types per provider from the list below, with at least {= url =}+ URLs for each evidence type. Each source must identify the provider and state a source-backed capability or public-source detail that fits the declared evidence type. Use source-stated details only; do not infer role, machine type, facility, warranty, delivery, repair, parts, or public-shop status from the provider name alone.
+
+Evidence types:
+{=% for evidence_type, description in capability_evidence_types.items() =%}
+- `{= evidence_type =}`: {= description =}
+{=% endfor =%}
+
+Sources should be public, substance-bearing pages such as official sites, product pages, directory entries, public shop/profile pages, marketplace listings, or article-style workshop pages. Contact-only pages, private or group-harvested surfaces, rankings, purchase advice, price-negotiation pages, outreach lists, and lead-scoring surfaces do not count. Do not extract phone numbers, Zalo IDs, hotlines, private contacts, rankings, recommendations, procurement advice, outreach targets, or lead scores.
+
+Requirements:
+- The page must clearly identify the claimed provider.
+- The page must state a provider-specific capability or public-source detail that fits the declared `evidence_type`.

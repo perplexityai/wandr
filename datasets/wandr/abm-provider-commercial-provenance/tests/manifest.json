@@ -1,0 +1,8 @@
+{
+  "name": "abm-provider-commercial-provenance",
+  "wandr_task": "abm_provider_commercial_provenance",
+  "task_names": [
+    "abm_provider_commercial_provenance",
+    "abm_provider_commercial_provenance.commercial_provenance"
+  ]
+}

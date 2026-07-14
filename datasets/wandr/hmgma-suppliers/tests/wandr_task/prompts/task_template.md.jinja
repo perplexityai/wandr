@@ -1,0 +1,19 @@
+For {= supplier_facility =}+ supplier facilities in Georgia publicly tied to Hyundai Motor Group Metaplant America, Hyundai Motor Group, Kia Georgia, or a mediated Metaplant supplier relationship, name the supplier and Georgia facility/project location or site and supply public-source evidence for each of the {= evidence_role =} required evidence roles per facility (i.e. {= url =}+ URLs for each role).
+
+The entity is the supplier plus the Georgia facility/project, not the supplier company in the abstract. Public source fragments often split the facility evidence: one source may carry announced jobs/investment, another may carry independent component/customer wording, and a later or site-specific source may carry opening, production, construction, address, regulatory, current, or conflict context.
+
+Required evidence roles:
+{=% for role, description in evidence_role_descriptions.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+The evidence load is intentionally independent across roles. Statewide Georgia Governor/GDEcD announcement pages and their Georgia.org mirrors can support `announcement_terms`, but they do not by themselves satisfy `relationship_component` or `site_status`. Aggregate HMGMA supplier-network pages, broad economic-development tables, and supplier lists can help discovery, but they do not replace facility-specific evidence for any role.
+
+Eligible scored source surfaces include facility-specific Georgia Department of Economic Development or Governor's Office announcements for announcement terms; county/city/economic-development authority pages; supplier/company project or press pages; HMGMA/Hyundai pages when they substantiate the submitted facility or role; reputable local/business coverage; and role-relevant regulatory, permit, property, engineering, or technical filings for site/status evidence. Industry PDFs/tables are discovery or secondary corroboration, not sole authority for facility identity, relationship/component evidence, or site/status evidence. Recruitment, job-fair, contact, social-only, vendor-ranking, procurement-advice, investment-thesis, incentive-opinion, generic supplier-homepage, and table-only surfaces do not count as primary facility-fact evidence unless the page itself substantively supports the submitted facility and role.
+
+Keep each answer source-scoped: preserve supplier aliases, Georgia city/county/site/address when public, component/product category, relationship class and wording, announced capital investment, announced jobs, source date, later/opening/current status, and conflict or missing states only when the cited page states or supports them. Do not call announced jobs or investment current or realized unless the cited page says so.
+
+Requirements:
+- The page must identify the named supplier and tie it to the submitted Georgia facility, project location, city/county, site, or address.
+- The page must contribute evidence for the declared `evidence_role`.
+- The answer must keep facts source-scoped, including temporal labels for announced/planned/current/opening language and any conflict or missing-state claim.

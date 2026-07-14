@@ -1,0 +1,8 @@
+{
+  "name": "ceo-cfo-appointments",
+  "wandr_task": "ceo_cfo_appointments",
+  "task_names": [
+    "ceo_cfo_appointments",
+    "ceo_cfo_appointments.company_listings"
+  ]
+}

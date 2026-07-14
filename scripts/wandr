@@ -1,0 +1,182 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+readonly ROOT
+
+usage() {
+  cat <<'EOF'
+Usage: scripts/wandr <command> [arguments]
+
+Commands:
+  check                  Run configuration, lint, and consistency checks.
+  preflight [local|e2b] [smoke|all]
+                         Check tools, keys, and the selected runtime.
+  smoke-local [args...]  Run the low-cost local Docker smoke config.
+  smoke-e2b [args...]    Run the low-cost smoke config on E2B.
+  validate [args...]     Run the standard two-task validation config locally.
+  run <harbor args...>   Forward arguments to `harbor run`.
+EOF
+}
+
+require_uv() {
+  if ! command -v uv >/dev/null 2>&1; then
+    printf 'error: uv is required: https://docs.astral.sh/uv/getting-started/installation/\n' >&2
+    exit 1
+  fi
+}
+
+load_env() {
+  if [[ "${_WANDR_ENV_LOADED:-}" == "1" ]]; then
+    unset _WANDR_ENV_LOADED
+    return
+  fi
+  if [[ -f "$ROOT/.env" ]]; then
+    exec uv --no-config run --project "$ROOT" --locked \
+      python "$ROOT/scripts/env_exec.py" "$ROOT/.env" "$ROOT/scripts/wandr" "$@"
+  fi
+}
+
+require_config() {
+  local config="$1"
+  if [[ ! -f "$ROOT/$config" ]]; then
+    printf 'error: missing config: %s\n' "$config" >&2
+    exit 1
+  fi
+}
+
+uv_run() {
+  uv --no-config run --project "$ROOT" --locked "$@"
+}
+
+missing_provider_keys() {
+  local profile="$1"
+  local key
+  local missing=0
+  local keys=()
+
+  case "$profile" in
+    smoke)
+      keys=(OPENAI_API_KEY PERPLEXITY_API_KEY)
+      ;;
+    all)
+      keys=(
+        OPENAI_API_KEY
+        ANTHROPIC_API_KEY
+        PERPLEXITY_API_KEY
+        EXA_API_KEY
+        PARALLEL_API_KEY
+        GEMINI_API_KEY
+      )
+      ;;
+    *)
+      printf 'error: preflight key profile must be smoke or all.\n' >&2
+      exit 2
+      ;;
+  esac
+
+  for key in "${keys[@]}"; do
+    if [[ "$key" == "GEMINI_API_KEY" && -n "${GOOGLE_API_KEY:-}" ]]; then
+      continue
+    fi
+    if [[ -z "${!key:-}" ]]; then
+      if [[ "$key" == "GEMINI_API_KEY" ]]; then
+        printf '  GEMINI_API_KEY (or GOOGLE_API_KEY)\n' >&2
+      else
+        printf '  %s\n' "$key" >&2
+      fi
+      missing=1
+    fi
+  done
+  return "$missing"
+}
+
+preflight() {
+  local runtime="${1:-local}"
+  local profile="${2:-smoke}"
+
+  case "$runtime" in
+    local)
+      require_config "configs/smoke.yaml"
+      if ! command -v docker >/dev/null 2>&1; then
+        printf 'error: Docker is required for local runs.\n' >&2
+        exit 1
+      fi
+      if ! docker info >/dev/null 2>&1; then
+        printf 'error: the Docker daemon is not available.\n' >&2
+        exit 1
+      fi
+      ;;
+    e2b)
+      require_config "configs/smoke.yaml"
+      if [[ -z "${E2B_API_KEY:-}" ]]; then
+        printf 'error: E2B_API_KEY is required for E2B runs.\n' >&2
+        exit 1
+      fi
+      ;;
+    *)
+      printf 'error: preflight runtime must be local or e2b.\n' >&2
+      exit 2
+      ;;
+  esac
+
+  if ! missing_provider_keys "$profile"; then
+    printf 'error: missing provider keys listed above; set them in .env or the environment.\n' >&2
+    exit 1
+  fi
+
+  (cd "$ROOT" && uv --no-config lock --check)
+  uv_run harbor --version >/dev/null
+  printf 'preflight OK (%s, %s keys)\n' "$runtime" "$profile"
+}
+
+require_uv
+load_env "$@"
+export PYTHONPATH="$ROOT/agents${PYTHONPATH:+:$PYTHONPATH}"
+cd "$ROOT"
+
+command="${1:-}"
+if [[ -n "$command" ]]; then
+  shift
+fi
+
+case "$command" in
+  check)
+    uv_run python scripts/validate_configs.py
+    uv_run ruff check agents/relay agents/sitecustomize.py adapters/wandr/src/wandr scripts
+    uv_run ruff format --check scripts
+    uv_run python adapters/wandr/src/wandr/utils/consistency.py
+    ;;
+  preflight)
+    preflight "${1:-local}" "${2:-smoke}"
+    ;;
+  smoke-local)
+    preflight local
+    uv_run harbor run -y -c configs/smoke.yaml "$@"
+    ;;
+  smoke-e2b)
+    preflight e2b
+    uv_run harbor run -y -c configs/smoke.yaml -e e2b "$@"
+    ;;
+  validate)
+    require_config "configs/validation.yaml"
+    preflight local all
+    uv_run harbor run -y -c configs/validation.yaml "$@"
+    ;;
+  run)
+    if [[ "$#" -eq 0 ]]; then
+      printf 'error: run requires arguments for `harbor run`.\n' >&2
+      usage >&2
+      exit 2
+    fi
+    uv_run harbor run "$@"
+    ;;
+  -h|--help|help|"")
+    usage
+    ;;
+  *)
+    printf 'error: unknown command: %s\n' "$command" >&2
+    usage >&2
+    exit 2
+    ;;
+esac

@@ -1,0 +1,15 @@
+Canonical countries in scope. The exact canonical set is the selected 30-country window-tinting panel:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Map the submitted country name to its canonical form. Accept English / local-language / common-abbreviation variants that clearly point to the same sovereign country in the canonical set. Accept punctuation, diacritic, and minor spelling / spacing variants.
+
+The subnational or territorial jurisdictions below are outside this task's country universe - emit `{{ CANONICAL_INVALID }}` for submissions naming any of them:
+
+{=% for canonical, aliases in out_of_scope_subnational_or_territorial.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Submissions naming a jurisdiction outside the canonical set above - including states, provinces, territories, cities, supranational regions, fabricated countries, or a country not in the selected 30-country set - emit `{{ CANONICAL_INVALID }}`. Do not map Hong Kong to China, Dubai to United Arab Emirates, Puerto Rico to United States, Ontario to Canada, New South Wales to Australia, or California to United States.

@@ -1,0 +1,16 @@
+For each of the {= ticker =}+ US-listed equity tickers listed below, name the regular-session OHLCV figures — opening price, day's high, day's low, closing price, and share volume — for the {= target_date =} trading session, and supply at least {= url =}+ URL per ticker on a page substantively carrying all five values for that session.
+
+Tickers in scope:
+{=% for canonical, aliases in tickers.items() =%}
+- {= canonical =}
+{=% if aliases =%}
+  (also accepted as: {= aliases | join(", ") =})
+{=% endif =%}
+{=% endfor =%}
+
+Requirements:
+- The page must report the ticker's regular-session opening price for {= target_date =}.
+- The page must report the regular-session day's high for the ticker on {= target_date =}.
+- The page must report the regular-session day's low for the ticker on {= target_date =}.
+- The page must report the regular-session closing price for the ticker on {= target_date =}.
+- The page must report the regular-session trading volume for the ticker on {= target_date =}.

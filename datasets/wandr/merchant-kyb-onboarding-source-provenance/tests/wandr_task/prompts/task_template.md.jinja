@@ -1,0 +1,19 @@
+For {= vendor_platform =}+ merchant/KYB onboarding or merchant-risk lifecycle vendors/platforms, cover {= source_class =}+ classes from the following source-class list per vendor and supply a public source for each class (i.e. {= url =}+ URL under each selected source class).
+
+The work is source provenance, not vendor comparison. Keep claims source-stated: pages should show what a public source can prove about a vendor's merchant onboarding, KYB/business onboarding, merchant underwriting, payfac/acquirer/marketplace onboarding, or ongoing merchant monitoring role.
+
+Source classes:
+{=% for source_class, description in source_class_descriptions.items() =%}
+- `{= source_class =}`: {= description =}
+{=% endfor =%}
+
+Broad fraud, AML, identity, chargeback, or transaction-monitoring sources do not count unless the page ties the vendor to the merchant/KYB/business onboarding or merchant monitoring lifecycle. Rankings, recommendation roundups, procurement grids, review aggregator profiles, lead-generation pages, login-walled pages, funding-only mentions, broad educational pages that do not name the vendor/platform as provider, and vendor-authored "best" listicles do not count.
+
+Do not rank vendors, recommend vendors, infer compliance adequacy, design risk systems, provide implementation advice, contact or enrich leads, or describe fraud-evasion tactics.
+
+Requirements:
+- The page must clearly identify the claimed vendor/platform.
+- The page must make the declared source class visible and substantive, with the class-specific source role described for that source class.
+- The page must explicitly tie the vendor/platform to merchant onboarding, KYB/business onboarding, merchant underwriting, payfac/acquirer/marketplace onboarding, or ongoing merchant monitoring.
+- The page must contribute a source-class-appropriate provenance detail: product positioning or use-case evidence for official product pages; mechanics such as workflow, API, fields, decisions, cases, rules, dashboards, integrations, or webhooks for docs/API/integration pages; named customer use for customer/case rows; dated feature/change evidence for release rows; dated substantive third-party coverage for independent editorial rows.
+- For dated release/change or dated independent editorial rows, the page must show an explicit source date.

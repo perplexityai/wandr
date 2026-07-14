@@ -1,0 +1,8 @@
+{
+  "name": "community-cards",
+  "wandr_task": "community_cards",
+  "task_names": [
+    "community_cards",
+    "community_cards.merchant_presence"
+  ]
+}

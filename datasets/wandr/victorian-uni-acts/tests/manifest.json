@@ -1,0 +1,8 @@
+{
+  "name": "victorian-uni-acts",
+  "wandr_task": "victorian_uni_acts",
+  "task_names": [
+    "victorian_uni_acts",
+    "victorian_uni_acts.current_register"
+  ]
+}

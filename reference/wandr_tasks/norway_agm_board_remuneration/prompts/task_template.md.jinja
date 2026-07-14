@@ -1,0 +1,19 @@
+For {= issuer =}+ issuers, cover {= fee_line =}+ concrete 2026 AGM-cycle non-executive board or governance-body remuneration fee lines per issuer with official source evidence (i.e. {= url =}+ URL per issuer/fee-line pair).
+
+An issuer counts when it is listed on Euronext Oslo Bors, Euronext Expand Oslo, Euronext Growth Oslo, or is otherwise clearly participating in the Oslo/Norway-market issuer disclosure ecosystem. Oslo-listed issuers count even when they are incorporated outside Norway if the cited source is part of that Oslo-market disclosure context.
+
+A fee line is a distinct fee-bearing role or governance-body category. In-scope examples include board chair, ordinary board member, deputy board member, employee-elected board member, board observer, audit/sustainability committee chair or member, compensation committee chair or member, corporate assembly chair or member, nomination committee chair or member, meeting allowance, travel allowance, or a comparable governance-body service category. Executive management pay, auditor fees, dividends, employee salaries, share incentive plans, consulting fees, and generic compensation commentary do not count.
+
+Use official public sources only: issuer investor-relations pages, issuer-hosted PDFs, official annual-general-meeting pages, nomination committee recommendations, AGM notices, minutes/protocols, regulated filings, NewsWeb/Oslo Bors attachments, and issuer-published wire attachments. Prefer fetch-stable final evidence URLs, such as issuer-hosted PDFs, Euronext/live attachment mirror URLs, or other direct official attachment URLs whose fetched content exposes readable AGM text. Raw `api3.oslo.oslobors.no/v1/newsreader/attachment` URLs can be useful discovery or intermediate URLs, but they are not preferred final evidence URLs; they count only if the evaluator fetches readable main text or PDF content without timeout. Plain NewsWeb/Oslo Bors message pages count only when the fetched page text itself contains the issuer, 2026 AGM-cycle context, fee line, amount, unit, and date or period needed for the fee-line claim; message pages that render only a JavaScript app shell are discovery or index surfaces, not standalone fee-line evidence. Third-party news summaries, compensation databases, benchmarking reports, and governance-score pages do not count.
+
+For each issuer/fee-line source, report the disclosed amount, currency, unit or frequency, period or AGM-cycle context, source date or AGM date when visible, proposal/approval/source-stage wording when visible, and a page/table/section locator when the source is a PDF or table. The monetary amount is a reported fact for the source, not part of the fee-line identity.
+
+Requirements:
+- The page must identify the same issuer.
+- The page must tie the fee line to the 2026 AGM cycle, a 2026 AGM proposal or resolution, or the period from the 2026 AGM to the next AGM.
+- The page must identify the submitted governance body and role or committee category.
+- The page must show a concrete amount, currency, and unit or frequency for that fee line.
+- The page must keep the role/body and the amount/currency/unit in a local row, paragraph, table, or section context that makes the binding traceable.
+- The page must expose a source date, publication date, AGM date, or explicit fee period.
+
+This is a factual public-disclosure task. Do not include compensation benchmarking, governance scoring, investment analysis, recruitment targeting, pay fairness commentary, third-party recommendations, or rankings.

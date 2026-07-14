@@ -1,0 +1,12 @@
+Map the given month value to YYYY-MM format.
+
+Examples:
+- "January 2025" → "2025-01"
+- "Jan 2025" → "2025-01"
+- "Jan '25" → "2025-01"
+- "1/2025" → "2025-01"
+- "2025-01" → "2025-01" (already canonical)
+- "2025-01-15" → "2025-01" (day is ignored)
+- "March 2024" → "2024-03"
+
+The valid range is {= end_month | month_sub(month - 1) =} through {= end_month =} ({= end_month | month_sub(month - 1) | month_human =} through {= end_month | month_human =}). Months outside this range, and values not recognizable as months at all (e.g., "Q1 2025", "2025", "last month", garbage text), return {{ CANONICAL_INVALID }}.

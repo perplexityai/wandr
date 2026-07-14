@@ -1,0 +1,48 @@
+[project]
+name = "wandr"
+version = "0.1.0"
+description = "WANDR research-agent benchmark and Harbor integration"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+dependencies = [
+  "harbor[e2b]==0.18.0",
+  "python-dotenv>=1.2,<2",
+  "relay[remote]",
+]
+
+[dependency-groups]
+dev = [
+  "camoufox>=0.4.11",
+  "jinja2>=3.1.0",
+  "openai>=1.90.0",
+  "orjson>=3.10.0",
+  "perplexityai>=0.40.0,<0.41",
+  "pydantic>=2.10.0",
+  "rapidfuzz>=3.9.0",
+  "ruff==0.15.21",
+  "tqdm>=4.66.0",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+relay = { workspace = true }
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
+
+[tool.uv.workspace]
+members = [
+  "adapters/wandr",
+  "agents/relay",
+]

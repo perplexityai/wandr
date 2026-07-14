@@ -1,0 +1,28 @@
+For each of the {= country =} in-scope African Union member states and each of the {= area =} policy areas listed below, supply {= country_area_action =}+ distinct major *well-identified* policy actions (each a discrete artifact identifiable by citation, number, official title, or treaty-body document number) per (country, area) cell. Each action's first-adoption, promulgation, or — for UPR documents — official submission, distribution, review-session, or Council-session date must fall within {= target_period =}; supply source URLs for each action (at least {= url =} per action).
+
+The {= country =} African Union member states in scope are those listed below with UPR review records:
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The AU member state below is outside this task's country universe because the UPR arm is limited to countries with UPR review records:
+
+{=% for canonical, aliases in upr_ineligible_au_members.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+The policy areas are:
+
+{=% for area_name, area_desc in areas.items() =%}
+- **{= area_name =}** — {= area_desc =}
+{=% endfor =%}
+
+UPR claims are limited to state-authored artifacts from the UN Human Rights Council's per-cycle review process, such as National Reports and state addenda / responses. Review materials authored by UN offices or stakeholders can help discover the cycle, but they are not the country-authored action requested here.
+
+Requirements:
+- The page must identify the action's specific identity by citation, number, official title, or treaty-body document number, sufficient that a reader could uniquely locate the action.
+- The page must evidence country-of-origin authorship for the claimed country.
+- The page must place the action substantively in the claimed policy area.
+- The page must pin the action's first-adoption, promulgation, or official UPR document date within {= target_window_start =} through {= target_window_end =}.
+- The page must communicate (possibly via URL among other things) that it is on a country-authoritative national-publication channel for the country's policy artifacts of that area, on a recognized legal archive carrying the official text for the country, or — when the action is the country's domestication of a pan-African instrument — on an institutional surface controlled by the issuing pan-African body. For UPR claims, the page must instead carry a state-authored UPR artifact for that country's review on a UN HRC per-cycle documentation channel or faithful document mirror.

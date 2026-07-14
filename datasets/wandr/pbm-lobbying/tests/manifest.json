@@ -1,0 +1,8 @@
+{
+  "name": "pbm-lobbying",
+  "wandr_task": "pbm_lobbying",
+  "task_names": [
+    "pbm_lobbying",
+    "pbm_lobbying.seed_actor_probes"
+  ]
+}

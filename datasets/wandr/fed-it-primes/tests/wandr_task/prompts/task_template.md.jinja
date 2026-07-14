@@ -1,0 +1,18 @@
+For each of the {= vehicle =} selected federal IT contract vehicles listed below, supply side-specific source evidence ({= url =}+ URL per side) for {= prime_awardee =}+ prime awardees per vehicle, identifying each awardee by legal name or UEI. Each (`vehicle`, `legal_name_or_uei`) pair needs evidence for each of the {= evidence_side =} evidence sides listed below.
+
+Selected federal IT contract vehicles:
+{=% for vehicle, aliases in vehicles.items() =%}
+- **{= vehicle =}**
+{=% endfor =%}
+
+The evidence sides, referred to as `evidence_side`, are:
+- `roster_placement`: an official U.S. government source showing that the submitted legal entity, joint venture, or UEI is a prime awardee, contract holder, schedule holder, or roster holder for the named vehicle.
+- `business_standing`: an official U.S. government source showing current or source-dated business standing for the submitted legal entity or UEI, such as business size, socioeconomic designation, pool/set-aside status, active entity status, recipient business type, or an explicit no-designation / other-than-small status.
+- `vendor_capability`: an awardee-controlled source showing concrete IT service capability relevant to federal work or to the named vehicle, such as cloud, cybersecurity, systems integration, software development, data/analytics, health IT, infrastructure, help desk, managed services, or comparable IT professional services.
+
+Use NITAAC contract-holder directory pages only for contract-holder facts such as contract holder name, contract number, PIID, contract type, SAM UEI, task areas, business size, business type, and contract URL. Do not use person-level details, direct outreach channels, or office-location blocks as evidence.
+
+Requirements:
+- The page must clearly identify the submitted awardee entity by legal name, recognizable awardee name, joint-venture name, UEI, or a first-party brand identity that is unambiguously tied to the submitted legal entity.
+- The page must have the source role required by `evidence_side`: official U.S. government roster or award-system evidence for `roster_placement`; official U.S. government entity, recipient, roster, award, schedule, or registration evidence for `business_standing`; awardee-controlled web evidence for `vendor_capability`.
+- The page must substantiate the side-specific attestation: for `roster_placement`, that the entity is a prime awardee / contract holder / roster holder for the named vehicle; for `business_standing`, the entity's current or source-dated official business standing; for `vendor_capability`, a concrete IT service capability relevant to federal work or the named vehicle.

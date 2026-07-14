@@ -1,0 +1,23 @@
+For each of the {= data_domain =} `data_domain` labels below, cover {= company =}+ US/Canada public companies per domain. For each company, name at least {= data_asset =}+ concrete data asset, product, corpus, database, or dataset, and provide one source for each of the {= evidence_axis =} evidence axes (i.e. {= url =}+ URL per axis).
+
+Use `ticker_exchange` to disambiguate the public company. The company should be publicly traded and headquartered or incorporated in the United States or Canada; foreign or private companies do not count.
+
+The `data_domain` labels are:
+- `financial_market_company_intelligence`: financial, market, issuer, company-intelligence, research, ratings, filings, or benchmark data.
+- `credit_risk_business_identity_records`: credit, risk, business identity, corporate-public-record, ownership, due-diligence, or entity-reference data.
+- `insurance_real_estate_property`: insurance, claims, catastrophe, real-estate, mortgage, building, rental, listing, or property data.
+- `scientific_medical_healthcare`: scientific, clinical, pharmaceutical, provider, patient, healthcare-market, or life-sciences data.
+- `geospatial_mobility_logistics_climate`: geospatial, mapping, mobility, fleet, logistics, weather, climate, satellite, or earth-observation data.
+- `consumer_marketing_sports_alternative`: consumer, marketing, advertising, audience, transaction, sports, media, web, or alternative data.
+
+The `evidence_axis` labels are:
+- `asset_provenance`: a company-controlled or regulatory source explicitly states that the named asset/product/corpus is proprietary, owned, curated, authoritative, unique, exclusive, internally assembled, first-party, or otherwise company-controlled. A broad product page that merely says the company offers a platform, data, insights, AI, or analytics is not enough.
+- `ai_search_analytics_linkage`: a company-controlled or regulatory source explicitly ties the same named asset/product/corpus to a named AI, search, analytics, question-answering, research, workflow-intelligence, decisioning, scoring, model, API, or analytical-product use. Generic statements that the company uses AI/analytics, offers dashboards, or provides data-driven insights are not enough unless the source ties that capability to the named asset/product/corpus.
+
+Eligible sources are high-specificity company-controlled or regulatory pages such as SEC/SEDAR filings, issuer annual reports, investor presentations, official product/data-asset pages, official data catalogs, API or customer documentation, and official press releases. Product pages, investor decks, and press releases pass only when they name the submitted asset and contain the axis-specific claim. Third-party articles, vendor rankings, investment pieces, generic RAG explainers, data-quality verdicts, implementation guides, contact or lead-enrichment pages, and marketplaces that mainly package third-party datasets do not establish a row by themselves.
+
+Requirements:
+- The page must identify the named asset/product/corpus and tie it to the claimed company and `data_domain`.
+- The page must support the claimed `evidence_axis` for that same named asset/product/corpus.
+- The `data_asset` should be the data-bearing asset itself. End-user dashboards, AI assistants, advertising tools, workflow suites, and generic platforms count only when the source makes the underlying named data asset/corpus/database visible for that same submitted name.
+- Reusing the same URL for both evidence axes can pass only if separate excerpts from that page independently satisfy each axis-specific bar for the exact same named asset/product/corpus.

@@ -1,0 +1,11 @@
+For each of the {= company =} companies listed below, find {= company_person =}+ people who held a senior marketing-leadership role at that company at any point during {= target_period =}, and supply a personal page URL (at least {= url =} per person) whose content shows the role.
+
+Companies in scope:
+{=% for canonical, aliases in companies.items() =%}
+- {= canonical =} — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Requirements:
+- The page must show the person holding a senior marketing-leadership role at the named company — VP- / Head-of- / CMO- / SVP-EVP-level marketing roles. Director-level and below or individual-contributor marketing roles don't count.
+- The page must identify the named company as the employer (or under a recognized alias).
+- The role at the named company must have a tenure window overlapping {= target_period =} — held at any point during the target period (e.g. start ≤ period_end AND end ≥ period_start, or the role is currently held).

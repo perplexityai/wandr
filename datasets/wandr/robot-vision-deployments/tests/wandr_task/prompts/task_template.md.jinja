@@ -1,0 +1,26 @@
+For each of the {= use_case =} use cases listed below, supply evidence for at least {= use_case_deployment_case =}+ fielded deployment cases per use case where perception guides robot or automation-cell action; for every deployment case, supply evidence for each of the {= evidence_role =} evidence roles listed below, with {= url =}+ URL for each role.
+
+This should be a use-case-first atlas of deployed systems, not a vendor, integrator, product, or logo-reference directory. Keep a provider- and customer-diverse set inside each use case when the public source ecology allows it; repeated customers or providers should represent materially distinct sites, tasks, or rollouts rather than thin variants of the same case.
+
+Use cases:
+- `warehouse_parcel_handling`: warehouse logistics deployments such as parcel, package, item, tote, or pallet handling; depalletizing or truck unloading; induction, fulfillment, or sortation.
+- `manufacturing_line_operations`: factory-line or production-cell deployments such as assembly, fastening, dispensing, de-racking, bin-picking, machine tending, robot-guided inspection/rework, surface treatment, or finishing.
+- `recycling_material_sorting`: recycling, waste, material-recovery, MRF, landfill-diversion, or secondary-material sorting deployments where AI/vision triggers robotic or otherwise actuated sorting.
+- `agri_food_field_operations`: field, greenhouse, farm, nursery, or food-production deployments such as harvesting, weeding, pruning, spraying, crop/fruit handling, or packing where perception triggers robot/mechanical action.
+
+Evidence roles:
+- `provider_stack_detail`: evidence from a provider, integrator, robot supplier, vision vendor, or automation partner connecting the deployment's robot or automation cell to camera, 3D vision, machine perception, or live sensor guidance that controls the robot/mechanical action. Perception AI counts only when tied to deployed vision or sensor inputs guiding the action; generic AI control or programming claims are not enough. Clearly provider-authored third-party wire releases can satisfy this role when they are deployment-specific.
+- `independent_deployment_confirmation`: customer/operator-hosted or independent editorial, trade, local-news, government, project, technical, or comparable evidence confirming the same bounded deployment and a concrete operational fact. Provider, integrator, robot-supplier, vision-vendor, automation-partner, sponsored vendor-channel, or provider-authored wire release pages do not satisfy this role.
+
+A `deployment_case` should identify one bounded fielded case, usually by customer/operator, site or bounded rollout, task/process, and provider/technology context. Real-facility, real-farm, or customer/operator operational pilots can count, but lab demos, trade-show demonstrations, pre-rollout tests, procurement-only announcements, and planned future installations do not. Anonymous customer cases can count only when the page gives enough contextual anchors to distinguish the case from other deployments.
+
+The two evidence roles require disjoint source classes, so the same URL should not appear under both roles for the same deployment case. Do not use generic product pages, logo walls, trade-show demos, lab-only prototypes, passive machine-vision QA dashboards, optical sorters without robot/mechanical actuation, or pages that merely say a vendor "can" automate a task.
+
+For each URL, include a concise `answer.finding` stating the concrete evidence the page supports for the requested role.
+
+Requirements:
+- The page must clearly tie to the named fielded deployment case, with enough customer/operator, site or bounded rollout, deployed task/process, and provider/technology context to distinguish the case from generic vendor claims.
+- The page must fit the submitted use-case bucket.
+- The page must connect the deployment to robot, automation-cell, autonomous-implement, or mechanical actuation; passive inspection/QA, dashboards, analytics-only monitoring, and non-actuated optical sorting do not count.
+- The page must satisfy the requested evidence role: deployment-specific robot/cell stack detail tying machine perception, vision, or live-sensor guidance to action for `provider_stack_detail`, or confirmation of the same bounded deployment and a concrete operational fact for `independent_deployment_confirmation`.
+- `answer.finding` must be page-grounded and role-specific, not a generic restatement of the deployment case name.

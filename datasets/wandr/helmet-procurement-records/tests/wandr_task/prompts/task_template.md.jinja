@@ -1,0 +1,21 @@
+For {= jurisdiction =}+ jurisdictions from the allowed set below, name {= procurement_record =}+ distinct public procurement records per jurisdiction and supply {= url =}+ URL for each record. A record counts when the cited source states a publication, closing, award, contract, update, status, creation, or other procurement-lifecycle date from {= target_period_start =} through {= target_period_end =}, and helmets are actual procured goods or line items.
+
+Allowed jurisdictions:
+{=% for jurisdiction, aliases in jurisdictions.items() =%}
+- **{= jurisdiction =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Valid evidence comes from official procurement portals, tender/RFQ/bid notices, award or contract notices, buyer procurement pages, gazettes, official tender or bid PDFs, and multilateral procurement notices when the beneficiary or delivery jurisdiction is source-stated and in the allowed set. Subnational buyers count under the source-stated country jurisdiction.
+
+Commercial tender aggregators, paywalled teaser listings, market reports, shopping or retail pages, supplier or manufacturer marketing pages, lead-generation pages, contact databases, generic standards pages not tied to a procurement record, and login-only attachments do not count as final evidence. Pages where "helmet" appears only as bidder PPE, site-visit gear, worker safety instructions, or attendance requirements do not count. Service-only maintenance or repair records do not count unless the source also states purchase or delivery of helmet goods.
+
+Source-stated status, quantity, value, budget, category, certification, specification, supplier, or awardee details can be reported when visible. If the cited page does not state one of those details, the row may only mark that the cited source does not state it; do not infer missing values or assert global absence. Standards and specifications should be recorded only as tender requirements stated by the source, without judging whether a helmet, supplier, standard, or tender requirement is safe, adequate, compliant, advisable, or strategically attractive.
+
+This is neutral public-record provenance. Police, tactical, ballistic, rescue, or other public-safety records can count only as procurement records; do not provide supplier ranking, purchase recommendations, bid strategy, outreach leads, contact enrichment, tactical assessment, threat modeling, export-control advice, or defense/security implications.
+
+Requirements:
+- The page must communicate official public procurement, buyer, gazette, award/contract, tender-document, or multilateral procurement authority.
+- The page must identify the buyer or issuing authority and the tender, notice, solicitation, RFQ, bid, award, contract title, or record reference.
+- The page must show helmets, hard hats, protective helmets, tactical/police/rescue/fire/motorcycle/bicycle/industrial helmets, or another source-stated helmet type as an actual procured good or line item.
+- The page must source-state at least one relevant publication, closing, award, contract, update, status, creation, or procurement-lifecycle date within {= target_period_start =} through {= target_period_end =}.
+- Every reported status, quantity, value, budget, helmet category, certification, specification text, awardee, supplier, or source-scoped missing annotation must be directly grounded in the cited page rather than inferred.

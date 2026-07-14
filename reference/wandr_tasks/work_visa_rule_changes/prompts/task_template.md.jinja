@@ -1,0 +1,23 @@
+Build a table covering {= jurisdiction =}+ immigration-rulemaking jurisdictions, with {= rule_change_event =}+ dated rule-change events per jurisdiction for employer, sponsored, skilled, temporary, or other work-authorisation routes. Each event needs an official announcement, publication, update, or effective-date signal inside {= target_period =}. For each event, assign a change-category label ({= change_category =}+ per event) from the list below and supply both {= source_role =} official source roles, with {= url =}+ URL for each role.
+
+This is an operations audit of official dated changes, not legal advice and not a table of current work-visa rules. For each row, report a concise before/after or current/new effect summary and `checked_date`, the official date signal inside the target period. `effective_date` is the operative, commencement, implementation, or future effective date for the rule change when the official source states or clearly implies one; if no operative date is stated or clearly implied, use `not stated` rather than reusing a publication or update date.
+
+Change-category labels:
+{=% for category, description in change_categories.items() =%}
+- `{= category =}`: {= description =}
+{=% endfor =%}
+
+Official source roles:
+{=% for role, description in source_roles.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Official sources only: government immigration, labour, home-affairs, foreign-affairs, ministry, official gazette, parliamentary, or regulator-controlled pages count. Third-party immigration firms, law firms, relocation vendors, news outlets, Wikipedia, uncontrolled social posts, and scraped aggregator pages do not count even when they accurately summarize an official change.
+
+Future-effective changes count when `checked_date` is inside {= target_period =} and the page states the future `effective_date`. A page that only states a current rule without a dated change, implementation date, update history, or transition framing does not count.
+
+Requirements:
+- The page must tie the record to the named jurisdiction, work program, and affected rule topic for an employer/work-authorisation route.
+- The page must fit the submitted `source_role`: `change_instrument` sources state the official change event itself; `implementation_guidance` sources show the resulting operative rule or transitional effect for applicants, workers, employers, or sponsors.
+- The page must expose an official announcement, publication, update, or effective-date signal usable as `checked_date` inside the target period and support the submitted `effective_date` as the rule's operative, commencement, implementation, or future effective date when the source states or clearly implies one.
+- The page must substantively support the submitted `change_category` and claimed rule effect, with enough detail to distinguish the rule movement from generic route background.

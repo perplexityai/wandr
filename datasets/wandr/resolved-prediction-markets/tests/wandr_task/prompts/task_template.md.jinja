@@ -1,0 +1,20 @@
+For at least {= platform_market =}+ resolved prediction markets — `(platform, market_question)` tuples on Polymarket or Kalshi that resolved within {= target_window =} — gather {= evidence_type =} evidence rows per market (at least {= url =} per row): one establishing the platform's resolution outcome (with date and criterion reference) and one establishing the actual real-world outcome the market was tracking (with the date the event occurred or was officially confirmed).
+
+For each market, provide one row with `evidence_type = "platform_resolution"` and one with `evidence_type = "real_world_outcome"`.
+
+- For `platform_resolution` rows: the URL must be the specific market's event page on the platform (polymarket.com or kalshi.com); the page must show the market as resolved with a clear outcome (Yes / No / specific bracket value), and surface either the resolution date or the criterion-text indicating the resolution. Help-center / FAQ / docs / dashboard / third-party-analytics-mirror pages do not qualify.
+- For `real_world_outcome` rows: the URL must be an external authoritative source describing the actual real-world event the market was tracking — major news outlets (e.g. NYT, Reuters, Bloomberg, AP, NPR, BBC, Politico, WaPo), specialist news (e.g. ESPN / NBA.com for sports, federalreserve.gov for Fed decisions, supremecourt.gov for SCOTUS rulings, official sports federations), Wikipedia / Britannica / official government records. For markets resolving on quantitative data sources (e.g. crypto closing prices), specialist financial-data-aggregator pages also qualify. Polymarket / Kalshi pages themselves do not qualify for this arm — the platform is the platform-side authority, not an independent verification of reality.
+
+Each `(platform, market_question)` tuple must reference a recognizable platform name (Polymarket or Kalshi) and a real, distinct market that actually resolved on that platform within {= target_window =}. Each row's `evidence_type` must be either `platform_resolution` or `real_world_outcome`.
+
+The temporal scope is bound: only markets whose resolution falls within {= target_window =} are in scope. Markets that are still active, were cancelled / voided / refunded, or resolved outside that window do not qualify.
+
+For each row, include in `answer`:
+- `outcome` (str) — for `platform_resolution`: the platform's resolution value (e.g. "Yes", "No", "$125,000+"). For `real_world_outcome`: a brief description of what actually happened (e.g. "Trump won the 2024 election", "no rate change at January 2025 FOMC").
+- `date` (str, YYYY-MM-DD where possible) — for `platform_resolution`: the resolution date. For `real_world_outcome`: the date the event occurred or was officially confirmed.
+- `brief_description` (str) — a one-sentence summary of what the page says, to anchor the evidence for downstream consumption.
+
+Requirements:
+- The page's source class must match the row's `evidence_type` — the platform's specific market page for `platform_resolution`, or an external authoritative source for `real_world_outcome`.
+- The page must document the outcome appropriate for the row's `evidence_type` — the platform's resolution value and closed status for `platform_resolution`, or the real-world event description for `real_world_outcome`.
+- The page must anchor a date appropriate for the row's `evidence_type` — the resolution date for `platform_resolution`, or the event-occurrence date for `real_world_outcome`. Year minimum, month strongly preferred.

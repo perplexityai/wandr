@@ -1,0 +1,27 @@
+For {= application =}+ HKEX IPO applicants whose application round remained pre-listing in the task snapshot as of {= as_of_date =}, name the applicant and application-round submission date. For each application, cover {= pipeline_axis =}+ pipeline axes with {= application_finding =}+ concrete facts and {= url =}+ substantiating URLs per axis.
+
+Treat an applicant application as the applicant company plus the application-round submission date. Later AP, OC, PHIP, status, or listed-parent notices for the same applicant belong to that same application round unless they show a genuine renewed or resubmitted round. Rounds submitted before {= active_window_start =} need renewal or current-status evidence showing that they remained non-listed as of {= as_of_date =}; an application-round submission date on or after {= active_window_start =} can carry the non-listed pipeline boundary unless the page itself shows a terminal outcome.
+
+The finding itself should carry the concrete fact. Auxiliary notes such as board / route or event date are helpful when visible, but they are not substitutes for applicant-specific evidence. Historical application-stage facts such as filing dates, OC appointments, Application Proof sector sections, or scale metrics can support a qualifying application fact, but pages that show the round already listed, lapsed, withdrawn, rejected, or returned do not qualify that application.
+
+Pipeline axes:
+{=% for axis, desc in pipeline_axes.items() =%}
+- **{= axis =}** -- {= desc =}
+{=% endfor =%}
+
+Target pages differ by pipeline axis:
+- `application_status`: applicant-specific Application Proofs, OC announcements, PHIPs, applicant or listed-parent spin-off announcements, or per-applicant HKEX status entries that explicitly report the round's current status.
+- `sponsor_adviser`: the applicant's OC announcement, the Application Proof page that names the sponsors and overall coordinators, a joint-sponsor / underwriter / counsel deal-team note, or applicant-focused capital-markets coverage that names the advisers.
+- `business_sector`: the Application Proof business / industry section or applicant-focused capital-markets coverage that characterizes the business model.
+- `deal_size_or_scale`: the Application Proof operating-scale / financial section, applicant-focused capital-markets coverage reporting valuation or proceeds, or a listed-parent disclosure giving the spin-off proceeds.
+- `timeline_milestone`: the applicant-specific announcement that carries the milestone itself, such as an OC announcement for an OC-appointment milestone, an AP / PHIP cover page for a filing milestone, a spin-off announcement for a board-resolution milestone, or applicant-focused coverage of the same event.
+
+Strong evidence usually names the applicant and proposed listing directly, such as HKEX Application Proofs, OC announcements, PHIPs, HKEX status records, applicant or listed-parent spin-off announcements, sponsor or law-firm deal notes, or reputable capital-markets and trade coverage focused on that applicant.
+
+Requirements:
+- The page must identify the same listing applicant you are naming. A listed parent, controlling shareholder, sponsor, or trade outlet counts only when it explicitly ties the text to that applicant's HKEX listing application, proposed spin-off, Application Proof, OC announcement, PHIP, or a similar application-stage event.
+- The page must be about the same HKEX application round and keep it eligible as a non-listed pipeline application: either an application-round submission date on or after {= active_window_start =}, or renewal / current-status evidence showing the round remained non-listed as of {= as_of_date =}. Nothing on the page can place that round into a later listed, lapsed, withdrawn, rejected, or returned outcome.
+- The page must actually speak to the kind of pipeline fact being claimed: status, sponsor / adviser, business sector, size / scale, or timeline.
+- The page must support the specific sponsor / adviser, status phrase, sector, size / scale, date, or milestone being claimed, without stronger claims than the page makes.
+- The source must be applicant-specific or transaction-specific.
+- The page must anchor the relevant date or status. Current non-listed status claims need a current status source or explicit as-of marker; dated AP / OC / PHIP / submission facts can support other angles only when the application-round date is inside the active window or the application also has renewal / current-status support.

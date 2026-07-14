@@ -1,0 +1,20 @@
+For each of the {= jurisdiction =} U.S. state and DC filing jurisdictions listed below, supply official home-jurisdiction evidence for each of the {= evidence_role =} evidence roles below, with {= url =}+ URL per jurisdiction and role. The evidence should document the jurisdiction's currently published business-entity certificate used to show good standing, status, existence, compliance, subsistence, authority, or the local equivalent.
+
+Official sources can be home-jurisdiction business-filing office pages, official state business portals, agency PDFs/forms/fee schedules, or official statute/regulation pages. Third-party certificate vendors, law-firm guides, cross-state comparison lists, and another jurisdiction's certificate-name table do not count.
+
+The same official URL can support multiple roles when the page really carries each role's evidence.
+
+Target jurisdictions:
+{=% for canonical, aliases in jurisdictions.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Evidence roles:
+{=% for role, description in evidence_roles.items() =%}
+- `{= role =}`: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page must communicate (possibly via URL among other things) that it is a home-jurisdiction official source for that jurisdiction's business-entity filing or certificate system.
+- The page must tie the cited certificate evidence to the claimed jurisdiction and to a business-entity certificate that evidences good standing, status, existence, compliance, subsistence, authority, or the jurisdiction's equivalent.
+- The page must satisfy the claimed `evidence_role`: for `document_identity`, identify the certificate name or official variant and the standing/status/existence/compliance/subsistence/authority meaning; for `fee_or_fee_schedule`, state the raw official amount, free status, or fee-table entry with enough surrounding scope to know what certificate/entity type/channel/portal fee it covers; for `request_or_access`, explain how the certificate is requested, ordered, checked, or accessed through official channels.

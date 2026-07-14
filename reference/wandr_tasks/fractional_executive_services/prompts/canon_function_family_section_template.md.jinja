@@ -1,0 +1,8 @@
+Map the submitted function_family value to one of the canonical fractional executive function-family slugs below:
+{=% for family, description in function_families.items() =%}
+- `{= family =}`: {= description =}
+{=% endfor =%}
+
+Return the exact slug when the value clearly refers to that family, including common title variants such as COO / VP Operations for `operations_leadership`, CMO / VP Marketing for `marketing_leadership`, CRO / VP Sales / revenue leader for `revenue_or_sales_leadership`, CHRO / CPO / VP People / HR leader for `people_or_hr_leadership`, Chief Compliance Officer / compliance or risk executive for `compliance_or_risk_leadership`, and VP Business Development / partnerships / alliances / channel / strategic deals for `business_development_or_partnerships_leadership`.
+
+Return {{ CANONICAL_INVALID }} for CFO, CTO, CISO, general counsel, legal-service, ordinary compliance consulting, lead-generation, SDR/outreach, job-ad, resume, generic consulting, or ambiguous values that do not clearly map to one selected family.

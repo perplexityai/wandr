@@ -1,0 +1,1 @@
+"""Luxury constructs task."""

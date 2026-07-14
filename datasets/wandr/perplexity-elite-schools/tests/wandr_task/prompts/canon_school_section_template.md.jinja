@@ -1,0 +1,8 @@
+The input is a school name (in any of: full institutional name, common abbreviation, sub-school name, locale variant). Match it to the canonical set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical schools and their accepted aliases:
+{=% for canonical, aliases in schools.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Out-of-set institutions (any school not appearing as a canonical key or alias above) → {{ CANONICAL_INVALID }}. Note in particular that Russian-locale schools sharing names with our set (e.g. Phystech-Lyceum, the Russian secondary school; or Russian MIPT colloquially called "Phystech") are NOT in our set unless they appear as a canonical key or listed alias above.

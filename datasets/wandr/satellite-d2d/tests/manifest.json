@@ -1,0 +1,7 @@
+{
+  "name": "satellite-d2d",
+  "wandr_task": "satellite_d2d",
+  "task_names": [
+    "satellite_d2d"
+  ]
+}

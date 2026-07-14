@@ -1,0 +1,7 @@
+Return the canonical facility-signal key as a six-part comma-separated value:
+
+`operator, facility, state, industry_category, evidence_axis, finding`
+
+Keep the evidence_axis exactly as one of the task's closed axis labels. Canonicalize only superficial wording variants of the same finding for the same facility and axis. Do not collapse different evidence axes, different years or quantities, different permits/records, or distinct product/gas-load facts into one signal.
+
+Return {{ CANONICAL_INVALID }} only when the value is plainly not a concrete facility-axis finding for this task.

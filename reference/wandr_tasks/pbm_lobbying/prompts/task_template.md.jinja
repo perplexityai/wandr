@@ -1,0 +1,25 @@
+For each of the {= jurisdiction =} positive-record jurisdictions listed below, provide {= actor =}+ filed actors per jurisdiction with official state lobbying registrations, disclosure reports, search-result rows, PDFs, or open-data records that directly tie the actor to PBM, pharmacy-benefit, prescription-drug-pricing, or closely related healthcare issue text during {= target_period =}. Each actor should be backed by at least {= url =} official URL.
+
+For each filed actor, report the best-fitting actor class from the labels below. Aim for a mix of actor classes within each jurisdiction where official records support it; the root task does not require every jurisdiction to produce every class.
+
+The tracker is about what the lobbying record itself says. Legislation trackers, advocacy pages, organizational pages, news, testimony, OpenSecrets, FollowTheMoney, ProPublica Represent, F Minus, OpenLobby, Lobbylinx, Cause IQ, InfluenceWatch, and similar secondary sources can suggest search terms, but they do not count as evidence for this task.
+
+Use only page-local official evidence that visibly appears in the cited page text, PDF text, search-result row, or open-data row. Do not infer a PBM issue from the actor identity, from a search summary, or from a different page. Every excerpt must faithfully support the filed actor, filing context, issue text, and URL submitted.
+
+Positive-record jurisdictions:
+{=% for jurisdiction_name in positive_jurisdictions =%}
+- **{= jurisdiction_name =}**
+{=% endfor =%}
+
+Actor classes:
+{=% for actor_class, description in actor_classes.items() =%}
+- `{= actor_class =}`: {= description =}
+{=% endfor =%}
+
+Only filed names, public registrant/client/principal/lobbyist/firm names, filing periods, filing IDs, bill/subject/activity text, and named firms or lobbyists as filed are in scope. Contact details, addresses, emails, phone numbers, outreach targets, biographies, campaign-finance/PAC/contribution records, lobbying strategy, lobbying-effectiveness analysis, opposition research, healthcare policy advice, and legal or compliance advice are outside the task.
+
+Requirements:
+- The page must communicate that it is an official state lobbying/disclosure source for the jurisdiction, such as a state ethics, secretary of state, campaign-finance board, lobbying commission, direct filing PDF, official search-result page, or official bulk/open-data record.
+- The page must identify the submitted actor as filed in a lobbying registrant, client, principal, beneficial client, lobbyist, lobbying firm, or comparable public-record role for that jurisdiction and target period.
+- The official record text must directly state a PBM, pharmacy-benefit, prescription-drug-pricing, or closely related healthcare issue connection through a subject field, bill field, activity description, bill/position table, lobbying-interest field, or similar official text. The issue connection cannot be inferred from actor identity, a PBM bill tracker, advocacy content, or the existence of PBM legislation in the jurisdiction.
+- The page must expose record-specific context such as filing/report period, session, filing ID, bill or position, subject or issue field, activity description, client/principal/lobbyist relationship, or comparable official-record detail.

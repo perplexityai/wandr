@@ -1,0 +1,21 @@
+For each of the {= country =} countries listed below, supply fragmented public-provenance evidence for {= courier_brand =}+ country-scoped courier, express, parcel, same-day, overnight, messenger, postal-parcel, or closely comparable delivery brands/operators; for each brand/operator, cover each of the {= provenance_facet =} provenance facets listed below with a source (i.e. {= url =}+ URL) that exposes a focused public-provenance finding for that facet.
+
+The task is neutral public brand/operator provenance. Procurement advice, supplier ranking, marketing strategy, outreach, contact enrichment, lead scoring, investment analysis, legal/compliance adequacy, safety adequacy, ratings-as-quality judgment, and similar evaluative conclusions are outside the task.
+
+Countries:
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}**{= " (also written as: " + (aliases | join(", ")) + ")" if aliases else "" =}
+{=% endfor =%}
+
+Provenance facets:
+{=% for facet, description in provenance_facets.items() =%}
+- `{= facet =}`: {= description =}
+{=% endfor =%}
+
+A `courier_brand` ought to be a real public brand, operator, or regional public asset tied to in-scope delivery service in the submitted country. Regional variants can count separately only when page evidence shows a distinct regional public asset, operator identity, domain, or service geography; the same brand can count separately across countries when the country-scoped presence is supported. Same-acronym or same-string entities outside DACH courier, parcel, express, same-day, overnight, messenger, postal-parcel, or closely comparable delivery scope do not count; generic freight, warehousing, letter-only mail, software/carrier-list, food-delivery-only, passenger-transport, and company-list entries need direct page evidence of the in-scope delivery role rather than only a name, category, or contact listing. Basic official presence and service scope help establish the entity, but they are not by themselves the provenance facets requested below.
+
+Requirements:
+- The page must clearly identify the named brand, operator, or regional public asset.
+- The page must tie that brand, operator, or public asset to the submitted country, a region within that country, the DACH market, or a country-scoped in-scope delivery service.
+- The page must make its facet-appropriate source role visible. For `operator_structure`, it should carry an explicit brand-to-operator, operator-to-public-asset, parent/group, licensee, franchise/station, predecessor/successor, regional-unit, publication-identity, or comparable structure/lineage context; a footer company name or contact address without a relationship anchor is not enough. For `public_standing_trace`, it should be a non-owned public standing context that records the brand/operator as a provider, member, participant, listed operator, or comparable logistics actor; private lead pages and bare contact cards do not carry this role. For `counterparty_network_trace`, it should be a relationship-specific page involving another named organization, network, platform, partner, customer, or cooperation connected to the brand/operator's delivery work. For `independent_profile_trace`, it should be a third-party editorial, trade, profile, history, acquisition, market, or comparable public profile context rather than the brand/operator's own service marketing.
+- The page must expose a concrete finding scoped to the selected facet. For `operator_structure`, this is the page-visible operating, legal, parent, licensee, regional, transition, or lineage relationship; for `public_standing_trace`, the provider/member/participant/listed-operator standing and the public body or organization carrying it; for `counterparty_network_trace`, the named counterparty or network relationship and its delivery-relevant role; for `independent_profile_trace`, an entity-specific public profile, history, editorial/trade, acquisition, market, or service-detail finding. Bare contact details, rating scores, rankings, lead prompts, prices, review sentiment, supplier recommendations, credit/finance facts, generic list placement, official homepage copy, or text that only repeats a name and service category do not carry the finding by themselves.

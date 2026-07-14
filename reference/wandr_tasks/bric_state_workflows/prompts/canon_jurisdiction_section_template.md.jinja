@@ -1,0 +1,7 @@
+Map the submitted value to the canonical full name of a U.S. state, the District of Columbia, or a U.S. territory/insular-area jurisdiction when the value clearly identifies one.
+
+Use standard full-name forms such as "Nevada", "North Carolina", "District of Columbia", "Puerto Rico", "Guam", "American Samoa", "Northern Mariana Islands", and "U.S. Virgin Islands". Common postal abbreviations, punctuation variants, and labels like "Washington State" should map to the corresponding canonical jurisdiction.
+
+Agency names may map to the jurisdiction only when the jurisdiction is unambiguous from the submitted value itself, such as "Nevada OEM" or "North Carolina DPS". Agency-only labels like "OEM", "DEMHS", "SHMO", "Region 9", or "FEMA" do not identify a jurisdiction.
+
+Return {{ CANONICAL_INVALID }} for federal agencies, counties, cities, regional offices, tribal governments as direct applicants, private organizations, generic labels such as "state", and any value that is not clearly one U.S. state, territory, or DC jurisdiction.

@@ -1,0 +1,18 @@
+The input is a claimed Chilean industrial asset, identified by its Chilean region, its asset name, and one of three closed industrial-class slugs (`coal_thermal_power`, `mining_metallurgy`, `oil_gas_fuel`). Return the canonical triple.
+
+Accept common Spanish/English aliases, unit names, legal-owner variants, power-station complex variants, and older/newer names when they clearly refer to the same physical asset or unit. Use the most specific asset name supported by the supplied claim: a unit-level asset such as Bocamina Unit I should not be collapsed into the whole Bocamina complex when the page is unit-specific. Sub-sites within a complex — ash deposits, tailings facilities, BESS retrofits, sub-substations, or other discrete physical sites with their own remediation, reuse, or decommissioning scope — are independent canonical assets distinct from both the parent complex and the unit-level peers when the page treats them as their own target rather than as a feature of another asset's lifecycle.
+
+The `asset_class` slot accepts only one of three values:
+
+- `coal_thermal_power` — thermal-power generation infrastructure (boilers, turbines, generation units, or whole power-station complexes fired by coal, gas, oil, diesel, or other thermal fuel).
+- `mining_metallurgy` — mining or metallurgical infrastructure (mines, smelters, refineries, tailings or slag facilities, processing plants, or mining-support industrial assets).
+- `oil_gas_fuel` — hydrocarbon fuel-handling infrastructure (onshore oil or gas production wells, fuel-storage tanks, fuel-distribution pipelines, refineries, LNG terminals, or other dedicated fuel-handling facilities).
+
+Return {{ CANONICAL_INVALID }} when the claim fails any of these rejection axes:
+
+- Non-asset abstractions — company-wide decarbonization plans, national policy initiatives, commodity themes, brand-level transition programs, and other labels that do not name a physical site, unit, plant, mine, smelter, refinery, terminal, fuel facility, or comparable installation.
+- Out-of-Chile assets — assets located outside Chile (Peruvian, Argentinian, Bolivian, or other non-Chilean industrial sites), and offshore-only exploration blocks lacking an onshore Chilean installation.
+- Out-of-scope activity claims — future greenfield projects with no underlying closure / decommissioning / remediation / rehabilitation / conversion asset to act on.
+- Out-of-set `asset_class` — any value not in the three slugs above.
+
+Do not reject an otherwise discrete Chilean asset merely because the asset label itself does not prove in-window closure, decommissioning, remediation, rehabilitation, dismantling, or conversion activity.

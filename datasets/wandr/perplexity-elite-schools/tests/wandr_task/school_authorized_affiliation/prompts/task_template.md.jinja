@@ -1,0 +1,10 @@
+For {= school_person =}+ (school, person) pairs from the schools listed below (i.e. {= url =}+ URL per pair), supply a URL pointing to a page that is officially affiliated with the named school AND substantively mentions the named person.
+
+Schools in scope (canonical name — accepted aliases):
+{=% for canonical, aliases in schools.items() =%}
+- **{= canonical =}** — {= aliases | join(", ") =}
+{=% endfor =%}
+
+Requirements:
+- The page must speak with the authority of the named school (incl. via being hosted on a recognizably official-school domain or on a sub-organization the school officially controls). Sub-school / department names listed as aliases above are accepted under their parent institution.
+- The named person must be substantively mentioned on the page — a profile, lab role, news subject, project credit, or similar — clearly signalling an eligible person-school relationship.

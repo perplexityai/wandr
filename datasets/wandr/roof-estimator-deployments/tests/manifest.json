@@ -1,0 +1,7 @@
+{
+  "name": "roof-estimator-deployments",
+  "wandr_task": "roof_estimator_deployments",
+  "task_names": [
+    "roof_estimator_deployments"
+  ]
+}

@@ -1,0 +1,9 @@
+Map the given city value to its canonical form from the following list:
+
+{=% for city, area in cities.items() =%}
+- {= city =} ({= area =})
+{=% endfor =%}
+
+The canonical form is just the city name (strip any area / region / state suffix if present, e.g. "Cary, NC" → "Cary"; "Cary (Raleigh, NC area)" → "Cary").
+
+If the value is not one of the listed cities, return {{ CANONICAL_INVALID }}.

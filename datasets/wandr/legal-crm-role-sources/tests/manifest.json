@@ -1,0 +1,8 @@
+{
+  "name": "legal-crm-role-sources",
+  "wandr_task": "legal_crm_role_sources",
+  "task_names": [
+    "legal_crm_role_sources",
+    "legal_crm_role_sources.crm_data_profile_sources"
+  ]
+}

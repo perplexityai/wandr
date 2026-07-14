@@ -1,0 +1,23 @@
+For each of the {= uli_region =} ULI regions listed below, name {= uli_council =}+ officially linked district, national, local, satellite, or comparable council-like ULI networks per region. For every council, supply {= evidence_type =}+ evidence-type records from the allowed evidence types, each backed by {= url =}+ public URL.
+
+The goal is a factual public provenance base for ULI council footprints: official identity, geography, activity, reports, tools, and source-access states. Do not rank councils, recommend strategy, infer market performance, advise on membership or fundraising, enrich contacts, or use private/member-only content.
+
+Target ULI regions:
+{=% for region in uli_regions =%}
+- **{= region =}**
+{=% endfor =%}
+
+Allowed evidence types:
+{=% for evidence_type, description in evidence_types.items() =%}
+- `{= evidence_type =}`: {= description =}
+{=% endfor =%}
+
+Suitable public sources include official ULI regional lists, council home/about pages and subdomains, annual or impact PDFs, event/program pages, TAP/research/resource pages, Navigator public metadata, dashboard/tool documentation, and public pages that demonstrate access failure or absence after a source family was checked. Regional lists and broad source-hub pages are normally identity/geography evidence. For `event_program_activity`, `annual_impact_report`, `tap_research_publication`, `dashboard_tool_resource`, or `access_missing_state`, do not cite a broad list or hub unless that page itself exposes council-specific, facet-specific substance or a precise checked access/missing observation. Member-only, sign-in-only, redirecting, JavaScript-only, or broken surfaces can support access-state evidence, but hidden content behind those surfaces does not count as factual evidence.
+
+Each evidence record should identify the official council name, useful label variants, geography served, official URL or subdomain when visible, source family, source title or page identity, source date or period when available, checked date, access state, confidence, and any missing/conflict note. Keep numeric scale claims factual and period-aware; do not treat self-reported membership, event, sponsorship, or attendance numbers as standardized comparative metrics.
+
+Requirements:
+- The page must tie the source to the named ULI council and claimed ULI region.
+- The page must support the selected evidence type with a factual council-footprint claim or a precise missing/access-state observation from a checked public source family.
+- For non-identity evidence from a regional list or broad source-hub page, the cited page must contain council-specific substance for the selected evidence type or a precise checked access/missing observation, not just the council's name in a regional directory.
+- The page must preserve enough source context for the claim: source family, source title or page identity, date or period when available, access state, and whether the evidence is positive, missing, gated, stale, redirecting, JavaScript-only, or conflicting.

@@ -1,0 +1,41 @@
+Solve the following task and write the results to the specified JSONL file.
+
+## Universal rules
+
+The following rules apply to every task below.
+
+**Identifier discipline.** Same entity → same string. Different entities → different strings. When you're unsure whether two names refer to the same thing (spelling variants, model editions, product versions), don't offload the ambiguity to the user — decide and commit. Don't hedge by splitting "just in case" or merging "probably close enough." Both failures cost credit.
+
+**More is (usually) better.** Whenever the task says "at least N" / "N+" / etc, going past N generally helps your score — treat those as soft floors, not exact targets.
+
+**No duplicate entities.** Do not, however increase volume via duplicate entities, all the entities must be meaningfully different, entity-duplicating rows will generally be penalized; in particular, do not supply multiple rows per entity to "supply the answer in chunks", which will also be treated as entity duplication.
+
+**Every `url` you submit must be fetchable.** Do not submit URLs you expect to be non-resolvable (DNS failure, dead host) as your `url`. Evidence should come from an available `url` (even if you wished to, say, provide evidence for some URL's unhealthiness).
+
+**Every row carries `excerpts`** — verbatim or near-verbatim quotes from the source page (whitespace, punctuation, ellipses to skip irrelevant clauses are fine) **with semantics preserved**. An excerpt is what the page literally says, in the meaning the page intends. Fabrication, paraphrase that shifts meaning, sentence-stitching across sections, or selective cropping that flips a hedge into confidence — all fail.
+
+The excerpts collectively make the answer evident. *Every* task-required claim / task-asked question / answer field / etc MUST have its support visible somewhere in the excerpt set — not just nearby on the page. The reader's test: imagine someone sees only your excerpts (with no access to the rest of the page); can they verify each piece of your answer? If a page genuinely doesn't carry what the task asks for, find a different page or skip the entity rather than fish for tangential excerpts. If you deem paraphrasing necessary / desirable for proper answer delivery, that's admirable and encouraged: paraphrase to your heart's desire within `answer` fields, make new `answer` fields and redistribute summaries among them as you see fit, but excerpts stay faithful and fully evidence-complete.
+
+**Page contents only.** This is a task about citing web pages for human consumers, and citations are expected to be human-usable — both in where they are sourced from and in how well they stand on their own, out of page context. Excerpts come from the web-page main text — what a human reader sees on the page. Excerpts should also look sensible by themselves, with their information-bearing intent clear. API response blobs, page metadata fields (timestamps, view counts, score numbers), structured-data payloads (`__NEXT_DATA__`, JSON-LD, OpenGraph), and other “robot-side” sources / page representations are out of scope. In a similar vein, be wary of citing image captions / on-hover alt text / infoboxes / specially rendered bibliography or reference units / UI or navigation elements / etc. (unless confident in both their visibility and critical utility for the task), and avoid citing image contents, hyperlink-encoded URLs, and similar evidence surfaces altogether: anything outside the straightforward “main body of text” risks reducing citation ergonomics to the point where it is considered unusable.
+
+**Signaling absence.** If you mean for a blank or sentinel `answer` field to assert "this required information isn't on the page" (vs. "I missed it"): first verify the task warrants such an option — many tasks treat blank-required as an invalid entity. When absence IS admitted, flag the intent explicitly in an appropriately-named `answer` field, and let your excerpts carry the strongest available evidence — direct proof-of-absence ("not listed", "n/a") if the page provides it; otherwise, try at least capturing the page segments where the missing info would plausibly have appeared if it existed, where applicable.
+
+## `hearth_accessory_docs`
+
+For 16+ public hearth, stove, fireplace, or insert accessory brands or manufacturers, identify 5+ public accessory SKU identities per brand; for each brand/SKU identity, cover each of the 2 documentation provenance facets below with a public source (i.e. 1+ URL) that identifies the accessory and exposes facet-appropriate documentation evidence.
+
+The useful map is public documentation provenance for accessory SKUs, not installation interpretation, safety advice, code-compliance advice, tax-credit guidance, pricing, inventory tracking, dealer contacts, or purchase recommendations.
+
+Documentation facets:
+- `official_document_or_manual`: an official public accessory-level document, manual, PDF, catalog section, or support/document page that identifies the document or section and ties it to the accessory SKU or accessory family
+- `secondary_public_listing_or_claim`: an independent public dealer, retailer, distributor, or listing page that identifies the SKU and exposes a page-stated compatibility, fitment, replacement/equivalent-part, related-product, or manufacturer/OEM cross-reference claim
+
+A valid `brand` is a public accessory brand or manufacturer, not a dealer, retailer, marketplace, product family, SKU, or broad category. Accessory SKUs should be public product, model, kit, or part codes for add-on hearth/stove/fireplace accessories such as hearth pads, faceplates, fresh-air kits, heat shields, doors, trim, venting accessories, or comparable parts; whole stoves, fireplaces, inserts, broad product categories, and private dealer-only codes are outside the intended entity set. Official document evidence should come from manufacturer, brand, or manufacturer-controlled public document/support channels rather than public mirrors of the same artifact. Broad catalogs, omnibus PDFs, whole-appliance manuals, and service-parts pages can qualify for `official_document_or_manual` only through SKU-, family-, or accessory-section-specific document/manual/catalog/support evidence; a cover page, generic accessory category, exploded-diagram row, replacement-parts table entry, or whole-appliance page that merely lists the SKU is not enough by itself. Secondary listing evidence records what the cited page states; it does not endorse the claim as true. Generic product-card facts such as dimensions, color, material, capacity, price, stock status, or add-to-cart availability are not secondary documentation datums by themselves.
+
+Requirements:
+- The page must clearly identify the named brand/manufacturer and SKU/model code, with enough context to treat the SKU as an accessory belonging to the named brand rather than a whole appliance, generic category, unrelated part, or sibling-brand product.
+- The page should make its documentation-facet source role visible: for `official_document_or_manual`, accessory-level official document, manual, PDF, catalog, or support-document framing from the manufacturer, brand, or manufacturer-controlled channel; for `secondary_public_listing_or_claim`, independent public dealer, retailer, distributor, or listing framing rather than manufacturer-owned provenance.
+- The page should expose a tangible documentation datum scoped to the facet: for `official_document_or_manual`, document or section title/code/date/version if visible, a visible manual/download/document entry, or a covered accessory SKU/model/family section; for `secondary_public_listing_or_claim`, a page-stated compatibility, fitment, replacement/equivalent-part, related-product, or manufacturer/OEM cross-reference claim that names or otherwise identifies the compatible appliance, product family, model, brand relationship, OEM part number, or equivalent part relationship.
+
+Write one JSON object per line to `results_hearth_accessory_docs.jsonl`:
+{"item": { "brand": "<brand>", "sku": "<sku>", "documentation_facet": "<documentation_facet>" }, "url": "<source_url>", "excerpts": ["<verbatim_excerpt_1>", "<verbatim_excerpt_2>", "..."], "answer": { <...whatever fields the task implies to ask for...> }}

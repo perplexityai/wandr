@@ -1,0 +1,13 @@
+For {= jurisdiction_action =}+ US municipal or county-level data-center construction-limit actions — pausing, banning, or materially limiting data-center construction, siting, permits, or zoning approvals — first proposed or adopted during {= target_period =}, cover the {= evidence_type =} evidence types listed below, supplying a source ({= url =}+ URL per (action, evidence-type) pair) substantiating that evidence type for the action.
+
+Evidence types:
+
+{=% for k, evidence_type in evidence_types.items() =%}
+- `{= k =}`: {= evidence_type.short_desc =}
+{=% endfor =%}
+
+Pure tax incentives, utility-rate cases without a local construction or approval limit, renewable-energy moratoria, and cryptocurrency-mining-only rules do not qualify.
+
+Requirements:
+- The page must communicate (possibly via URL among other things) that it is on a moratorium-tracker authority surface — a local-government platform host (`granicus.com`, `legistar.com`, `novusagenda.com`, `civicclerk.com`, `civicalerts.aspx`, `civicengage`, `iqm2.com`), a `.gov` TLD or municipal/county-domain host, an ordinance/resolution document carrying explicit numbering (e.g. "Ord. 2025-07", "Resolution No. 2024-118"), a council/commission/fiscal-court agenda item or meeting record, an official-seal-anchored public notice, a staff-report letterhead, or in the local-press case, datelined municipal-beat reporting that names the jurisdiction, action, and date or status — as opposed to generic national roundups, advocacy-only pages, aggregator-tracker tables, broad data-center news without a named local action, or tracker-summary regurgitation without independent local reporting.
+- The page must substantiate the claimed evidence-type finding at the bar appropriate to that arm, and in doing so must identify the named local action — jurisdiction (state, plus city or county), local body or legal instrument, and the data-center construction/siting/permit/zoning subject — clearly enough to bind the finding to the claimed action rather than to a different action or a generic policy discussion.

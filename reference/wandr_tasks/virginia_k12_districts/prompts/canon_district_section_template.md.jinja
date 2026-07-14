@@ -1,0 +1,15 @@
+The input is the name of a Virginia public school division (in any of: full official name, common abbreviation, locality-only short form, or a phrasing that drops or swaps the "Public Schools" / "School Division" suffix). Match it to the canonical set below and return the exact canonical key. If no canonical key matches, return {{ CANONICAL_INVALID }}.
+
+Canonical Virginia public school divisions in scope:
+{=% for district in districts =%}
+- **{= district =}**
+{=% endfor =%}
+
+Treat as the same division, mapping to its canonical key:
+- A name that adds, drops, or swaps the trailing organizational suffix — "Public Schools", "County Public Schools", "City Public Schools", "School Division", "Schools", or "School District" — over the same locality (e.g. "Fairfax County Schools", "Fairfax County School Division" → "Fairfax County Public Schools").
+- A common initialism or acronym for the same division (e.g. "FCPS" for Fairfax County Public Schools, "VBCPS" for Virginia Beach City Public Schools) when the intended division is unambiguous from context.
+- Punctuation, capitalization, spacing, or "County" / "City" word-order variants of the same locality's division.
+
+Keep distinct (do NOT merge):
+- A Virginia county division and the independent city division sharing the locality name (e.g. Roanoke County Public Schools vs. Roanoke City Public Schools; Franklin County Public Schools vs. Franklin City) — these are separate divisions.
+- Any division not appearing as a canonical key above, including smaller Virginia divisions and combined / regional governor's-school or special-purpose entities → {{ CANONICAL_INVALID }}.

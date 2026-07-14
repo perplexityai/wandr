@@ -1,0 +1,7 @@
+{
+  "name": "macos-privilege-elevation-controls",
+  "wandr_task": "macos_privilege_elevation_controls",
+  "task_names": [
+    "macos_privilege_elevation_controls"
+  ]
+}

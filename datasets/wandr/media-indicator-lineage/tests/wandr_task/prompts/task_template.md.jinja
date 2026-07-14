@@ -1,0 +1,13 @@
+Build an auditable calculation-lineage table for media-related public indicators. For {= country =}+ countries, cover {= source_family =}+ upstream source families or downstream data products per country; for each country/source family pair, reconstruct {= calculation_line =}+ calculation lines, and for each line provide each of the {= lineage_evidence =} evidence facets below with {= url =}+ URL.
+
+Source families can include public indicator producers, survey/data projects, and downstream products that republish or transform those indicators. The line is about reproducibility and source lineage, not whether a country's media system is good or bad. Calculation lines ought to name a component, question, variable, subindicator, or downstream transformation line, along with the source year, report year, dataset version, or release version that makes the value reproducible.
+
+The evidence facets, referred to as `lineage_evidence`, are:
+- `value_evidence`: an official data/report/download page carrying the country-level raw/source-native value or downstream value for the calculation line.
+- `method_evidence`: an official methodology, codebook, metadata, or report page carrying the line's source/product identity, definition, source-native scale direction, version/release context, and transformation, normalization, non-comparability, missingness, or non-reproducibility basis. Source-wide methodology pages can support this facet when the method claim is not country-specific.
+
+Requirements:
+- The page or direct official data-file body should communicate that it is controlled by the relevant upstream source family or downstream product. Downstream pages work for downstream republication/transformation lines; they do not prove an upstream source-native value unless the row is explicitly about the downstream product's lineage.
+- For `value_evidence`, the page must localize the same country, source family or downstream product, source/report/dataset year or version, and component metric or transformation line named in the row.
+- For `method_evidence`, the page must identify the same source family or downstream product, source/report/dataset year or version, and component metric or transformation line named in the row. It only needs to localize the country when the method, missingness, non-comparability, or transformation claim is itself country-specific.
+- The page must supply facet-appropriate lineage detail: for `value_evidence`, the country-specific raw/source-native value or downstream value being claimed; for `method_evidence`, the source-native scale direction plus methodology, release/version, transformation/normalization, non-comparability, missingness, or non-reproducibility basis relevant to that line.

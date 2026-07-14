@@ -1,0 +1,18 @@
+Build an as-of {= as_of_date =} public provenance set for {= supplier_role =}+ supplier-role entries in the spacecraft photovoltaic supply chain. A supplier-role is an organization plus a concise role it publicly performs, such as making space solar cells, supplying CIC/SCA assemblies, integrating solar panels or arrays, providing space-PV materials/components, or testing/qualifying space-PV hardware. For each supplier-role, cover each of the {= evidence_facet =} evidence facets below with a source (i.e. {= url =}+ URL per facet).
+
+The task is about public evidence, not vendor selection. Do not rank suppliers, recommend purchases, collect contacts, estimate prices or lead times, advise on export controls, or assert compliance/security adequacy beyond what the public source states.
+
+Evidence facets:
+{=% for name, spec in evidence_facets.items() =%}
+- `{= name =}`: {= spec.task =}
+{=% endfor =%}
+
+Eligible supplier roles should be directly tied to spacecraft, satellites, orbital or deep-space missions, AM0/orbit/radiation space environments, space-qualified PV, space solar cells, CICs/SCAs, spacecraft solar panels/arrays, or directly enabling space-PV materials/components. Generic terrestrial PV manufacturers, ordinary solar installers, spacecraft operators that only buy solar hardware, marketplaces, and unsupported "space-ready" marketing are out of scope.
+
+When source dates, page/source class, confidence qualifiers, missing states, or conflicts are visible, preserve that context in the record. Missing date information is a deficit to note, not automatic disqualification.
+
+Requirements:
+- The page must clearly identify the submitted supplier organization.
+- The page must show that the organization performs the submitted role in the spacecraft PV supply chain, with an explicit space, spacecraft, satellite, orbit, AM0, radiation, qualification, mission, or comparable space-PV tie.
+- The page should visibly fit the submitted evidence facet's source role.
+- The page should provide facet-specific evidence for the submitted supplier-role.

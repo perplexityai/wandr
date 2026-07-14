@@ -1,0 +1,27 @@
+For each of the {= claim_type =} data-center cooling claim types listed below, cover {= vendor =}+ vendors; for each vendor, name {= solution_claim =}+ public capability claims; for each claim, attach {= source_class =}+ labeled public source classes and {= url =}+ URL per source class that substantiates the claim.
+
+This is public thermal-infrastructure claim normalization, not vendor ranking, procurement advice, or a PUE/WUE comparison table. The vendor and solution universe is open: do not limit work to seed vendors, and treat acquired brands or aliases as the same vendor/solution when the public evidence makes that clear.
+
+Claim types:
+{=% for claim_type, description in claim_types.items() =%}
+- `{= claim_type =}`: {= description =}
+{=% endfor =%}
+
+Source classes:
+{=% for source_class, description in source_classes.items() =%}
+- `{= source_class =}`: {= description =}
+{=% endfor =%}
+
+The `vendor` should be the company or acquired brand that publicly owns, offers, supplies, or is credited with the cooling solution. The `solution` can be a product family, portfolio component, reference design, deployment/study context, or named cooling architecture when the source itself frames it that way. The `claim` should be a single source-specific capability claim, not a generic company blurb, product-category label, or broad AI-ready positioning statement.
+
+Official blogs and explainers count when the claim is framed as an engineering explainer, study, reference design, or modeled capability. They do not by themselves prove a named product's measured capability unless the page itself ties that product or solution to the submitted claim.
+
+Official vendor product pages, datasheets/downloads, press releases, case studies, operator/counterparty pages, engineering explainers, and reference designs can count when they directly support the submitted claim. Broad solution pages, portfolio overviews, and marketing pages do not count unless they visibly function as a named product or reference/design page and state the concrete submitted capability. Vendor-ranking pages, analyst listicles, market-size reports, SEO "top vendor" pages, reseller pages without vendor-backed documentation, social posts alone, generic news/trade coverage, and press-wire republications do not count.
+
+Requirements:
+- The page must tie the submitted vendor and solution to data-center cooling.
+- The page must provide content anchors characteristic of the submitted source class, not just a URL pattern, site section, or inferred page label: product/family capability detail for `product_page`, document-style technical detail for `datasheet_download`, dated announcement substance for `press_release`, customer/project context for `case_study` or `operator_counterparty_page`, technical explainer or study substance for `engineering_explainer`, and design/validation scope for `reference_design`.
+- The page must place the claim in a concrete evidence context: a named product/model family, named deployment or counterparty, validated reference design, standards collaboration, or official study/model.
+- The page must support a capability claim of the submitted claim type.
+- The page must explicitly state or directly substantiate the submitted capability claim; generic architecture/application language is insufficient.
+- Numeric claims must preserve the exact value, unit, metric type, and source qualifiers or conditions, such as ranges, "up to" language, per-rack/per-tank context, study/model assumptions, approach-temperature conditions, future/provisioning language, or named deployment/reference-design scope.

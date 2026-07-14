@@ -1,0 +1,36 @@
+For each of the {= geography_bucket =} geography buckets, cover {= operator =}+ distinct road-freight or goods-transport operators with a Chennai or Tamil Nadu link, and supply evidence for each of the {= evidence_type =} evidence types and at least {= url =}+ URL per type. Medavakkam is the seed locality, not the whole universe; the broader Chennai and Tamil Nadu freight ecosystem should provide the long tail.
+
+The geography buckets are:
+{=% for bucket, description in geography_bucket_descriptions.items() =%}
+- `{= bucket =}`: {= description =}.
+{=% endfor =%}
+
+The evidence types are:
+{=% for evidence_type, description in evidence_type_descriptions.items() =%}
+- `{= evidence_type =}`: {= description =}.
+{=% endfor =%}
+
+For downstream reading, include the canonical operator name, legal name or trade-name bridge when public, geography bucket, address / branch / route / service-area signal, road-freight service signal, vehicle or load class when public, identity or legitimacy signal, source family, registration or public ID when relevant, checked date, confidence, and source notes. Use {= checked_date =} as the checked date unless the source was checked later.
+
+Useful service signals include:
+{=% for service_signal in service_signals =%}
+- `{= service_signal =}`
+{=% endfor =%}
+
+Useful identity or legitimacy signals include:
+{=% for identity_signal in identity_signals =%}
+- `{= identity_signal =}`
+{=% endfor =%}
+
+Source family should be factual rather than promotional. Useful public sources include:
+{=% for source_family in source_families =%}
+- `{= source_family =}`
+{=% endfor =%}
+
+Directory pages, search result pages, quote funnels, review snippets, generic "transporters near me" pages, and SEO lead-generation pages can be useful discovery surfaces, but they do not carry the final bar by themselves. Pure passenger transport, courier-only services with no goods-fleet evidence, generic logistics marketing, freight brokers with no visible operating road-freight footprint, and relocation-only pages with no truck / lorry / load-vehicle / FTL / LTL / goods-transport capability are out of scope.
+
+Requirements:
+- The page must identify the claimed operator, or bridge the submitted trade name to a legal / DBA name, with enough public context to distinguish it from unrelated same-name entities.
+- The page must support the claimed `geography_bucket` through an address, operating location, branch, depot, route, pickup zone, service area, local profile, or other Chennai / Tamil Nadu operational link.
+- The page must fit the claimed `evidence_type`: `capability` evidence should show concrete road-freight or goods-transport capability, while `identity_legitimacy` evidence should show a public identity, locality, legal, registration, association, industry, registry, durable address, or comparable legitimacy signal.
+- The page must support concrete operator substance at the claimed evidence type. For `capability`, it should show real goods-transport service, vehicle / load class, route / corridor, fleet, facility, rate, or service-mode evidence. For `identity_legitimacy`, it should corroborate the same operator's identity or legitimacy beyond a generic category label or bare directory row.

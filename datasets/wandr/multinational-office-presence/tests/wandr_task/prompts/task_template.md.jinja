@@ -1,0 +1,23 @@
+Cross-border BD, corporate-development, and commercial-real-estate workflows often start by mapping the per-country granular face of a multinational corporation's operational footprint — not just whether the company has an office in country X, but who runs that country office and where exactly it is, on per-company authoritative surfaces rather than third-party aggregator estimates.
+
+For at least {= company =}+ genuinely multinational companies, for each of {= country =} countries in the company's office footprint, for each of {= info =} info aspects of the company's office in that country, supply at least {= url =} URL per (company, country, info) row from a current company-controlled page or authoritative corporate disclosure that substantively evidences the row's info aspect for the row's company in the row's country.
+
+The info aspects are:
+{=% for info_name, info_surfaces in info_values.items() =%}
+- **{= info_name =}** — {= info_surfaces.terse =}.
+{=% endfor =%}
+
+Use office, location, contact, careers-location, team, leadership, or per-person bio pages from the company itself, or corporate disclosures such as annual reports, 10-K Item 2 property listings, or investor real-estate / office-footprint disclosures. Third-party office directories, one-off job postings, historical opening announcements, generic market articles, scraped location databases, and social-media profiles do not count. A single (company, country) cell's two info-aspect URLs can be the same page when the page substantively carries both (an offices page that also names the country lead, for instance), or two different pages — both shapes are first-class.
+
+The country axis is closed-canon to the following 28-country roster (the realistic per-(company, country) universe top multinationals actually publish per-country office entries for):
+
+{=% for canonical, aliases in countries.items() =%}
+- **{= canonical =}** — also written as {= aliases | join(', ') =}.
+{=% endfor =%}
+
+Submissions naming a country outside this roster fail the country canon. Bare ambiguous strings (such as plain `Korea` for South Korea) also fail; use the canonical short name from the roster. Regional buckets (`EMEA`, `APAC`, `Latin America`, `MENA`) are not single-country jurisdictions and fail the canon — submit the specific country whose office is being communicated. Pages may surface the country via native-language naming (`Estados Unidos`, `Deutschland`, `中国`), ISO 3166 codes, or a city-only entry in a city unambiguously inside the country (`Tokyo` for Japan, `Frankfurt` for Germany); the row's `country` value must be the canonical short name from the roster.
+
+Requirements per row:
+- The page must identify the same company as the organization whose country-office head or country-office address is being communicated.
+- The page must tie the row's info content (the named country-office head, or the country-office street address) to the row's country — country-anchoring on the row's single country, not a regional rollup or a different country's content.
+- The page must substantively evidence the row's claimed info aspect for the row's (company, country) cell — a named individual with a country-leadership-role anchor on `local_head` rows, or a street-level physical address line on `local_office_address` rows.

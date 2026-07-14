@@ -1,0 +1,19 @@
+For each of the {= jurisdiction =} U.S. jurisdictions listed below and each of the {= assistance_program =} assistance-program categories, supply {= url =}+ source URLs per jurisdiction-program pair. A qualifying URL points to an official public page that communicates the current operative policy source, official program-status source, or official program-scope source for that category in that jurisdiction.
+
+Useful context for each source includes the source type, source status, and any visible version, revision, effective, update, or plan-year date. A source need not literally be called a manual: a delegated official policy system, live administrative-code surface, agency state plan, or official federal host carrying jurisdiction-specific official material can count when it is the public operative provision source. When no current public manual/source is publicly documented for a pair, or when the program is not operated, an official status page or program-specific exhaustive official jurisdiction list, statute, or rule can count only if it states that status, identifies the operative substitute, or makes the jurisdiction's omission from the operated-program scope clear.
+
+Target jurisdictions:
+{=% for jurisdiction in jurisdictions =%}
+- **{= jurisdiction =}**
+{=% endfor =%}
+
+Assistance-program categories:
+{=% for program, description in assistance_program_descriptions.items() =%}
+- **{= program =}**: {= description =}
+{=% endfor =%}
+
+Requirements:
+- The page must tie the source to the named jurisdiction and to the named assistance-program category. For official exhaustive program-scope sources, omission of the named jurisdiction can carry the jurisdiction tie when the page clearly defines the complete operated-program scope.
+- The page must communicate official authority for the source: a state, territory, or District agency; delegated official policy/manual system; official administrative-rule or code publisher; or a federal USDA/FNS, ACF, CMS, or comparable host carrying jurisdiction-specific official material.
+- The page must identify or contain operative eligibility, benefits, casework, administrative, state-plan, or rule provisions for the program; an official current-status statement for that program category; or a program-specific exhaustive official scope source establishing that the jurisdiction is outside the operated-program scope. Consumer application pages, outreach summaries, news releases, legal-aid mirrors, advocacy explainers, and commercial tool pages do not count by themselves.
+- The page must expose a current-source status signal: visible revision/effective/update date, current plan or manual year, current-through rule status, current policy-system framing, or explicit official framing that no current public manual/source exists, the program is not operated, the operative substitute is a rule, plan, or other public provision source, or the jurisdiction is outside the program's current official scope.

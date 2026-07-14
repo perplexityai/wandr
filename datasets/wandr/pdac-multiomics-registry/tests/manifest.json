@@ -1,0 +1,7 @@
+{
+  "name": "pdac-multiomics-registry",
+  "wandr_task": "pdac_multiomics_registry",
+  "task_names": [
+    "pdac_multiomics_registry"
+  ]
+}

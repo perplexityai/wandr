@@ -1,0 +1,21 @@
+Build an Azerbaijan climate-relevant transport source-provenance atlas. Cover {= source_family =}+ source families; for each source family, document {= source_record =}+ distinct source records, each with {= url =}+ cited source URL.
+
+A `source_record` is a distinct Azerbaijan-specific instrument, official claim, measure, implementation record, standard or fiscal item, market or registry interface, voluntary declaration, conflict lead, or no-evidence finding tied to climate-relevant transport. The record must be visibly anchored on the cited page by a record-specific title, section, table, project, declaration, registry/listing entry, search surface, status line, or checked conflict/absence target. The record should preserve the source's own wording for status, date, conditionality, version, adoption, effectiveness, implementation state, registry state, or absence/conflict state. Do not decide whether something is legally binding, enforceable, credit-eligible, investable, or strategically advisable.
+
+Source families:
+{=% for family, description in source_families.items() =%}
+- `{= family =}`: {= description =}
+{=% endfor =%}
+
+All listed source families are mandatory. Do not substitute an easier family for `market_registry`, `voluntary_declaration`, or `secondary_conflict_lead`; those harder surfaces must be documented in their own families.
+
+Article 6, PACM/CDM, host-party, registry, market-mechanism, and national authority market-interface records belong under `market_registry` even when the cited page is UNFCCC-controlled. Use `unfccc_reporting` for NDCs, national communications, BUR/BTR/transparency reports, UNFCCC party submission pages, and comparable climate reporting/transparency records.
+
+Official primary sources include authority-controlled UNFCCC pages/PDFs, Azerbaijan government/ministry/agency pages, president.az, e-qanun.az, CBAR, I-TRACK/Evident/I-REC, UNFCCC Article 6/PACM/CDM pages, COP29 official pages, and comparable authority records. Secondary sources are discovery, context, or conflict leads unless the row is in `secondary_conflict_lead` and is explicitly framed as secondary-only because official evidence is unavailable, absent, or contradicted. Azerbaijani originals and source-language excerpts count; English summaries do not replace an available official original.
+
+Requirements:
+- The page must communicate its source family and issuer/source authority: official primary-source character for all families except `secondary_conflict_lead`, and secondary-source character when that family is used.
+- The page must make the submitted `source_record` record-specific rather than a broad source-family bucket, generic sector topic, or repeated slice of the same hub page. A broad PDF, registry, declaration bundle, or authority website may support multiple records only when each row cites a visibly different instrument, section, measure, declaration, registry/status check, or checked absence/conflict target from that source.
+- The page must substantively connect the record to Azerbaijan and climate-relevant transport: road vehicles, public transport, rail/metro, aviation or maritime boundaries, fuel or vehicle standards, fiscal incentives, charging, electrification, transport emissions, implementation actions, reporting targets, market mechanisms, voluntary declarations, or an explicit checked absence/conflict around those topics.
+- The page must provide the source's own status/date/conditionality language where such language exists, such as document type, source language, adoption/effective/status date, target year/version, implementation timing, registry approval status, or comparable provenance wording.
+- The record's evidence state must match the cited page without advisory overclaiming: affirmative records state what the source says; conflict records identify the conflicting claim or source-language tension; no-evidence records cite the checked official surface or authority result and frame the result as absence of cited official evidence rather than a legal conclusion.

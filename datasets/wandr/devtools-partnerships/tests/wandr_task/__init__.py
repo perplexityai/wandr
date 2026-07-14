@@ -1,0 +1,1 @@
+"""Devtools partnerships task."""

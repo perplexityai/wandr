@@ -1,0 +1,70 @@
+schema_version = "1.1"
+
+[task]
+name = "wandr/solar-storage-disclosures"
+description = "WANDR solar-storage-disclosures task"
+authors = [{ name = "Perplexity AI" }]
+keywords = ["wandr", "research", "retrieval", "citation"]
+
+[metadata]
+required_file_paths = [
+    "results_solar_storage_disclosures.jsonl",
+]
+difficulty = 0.59027778
+difficulty-label = "medium"
+wandr_task = "solar_storage_disclosures"
+
+verticals = ["general", "events", "legal"]
+topology = "hierarchical"
+width = 467.65008015
+width-label = "large"
+depth = 0.50968735
+depth-label = "high"
+extraction = 0.38060507
+extraction-label = "low"
+dispersion = 0.52196891
+dispersion-label = "medium"
+
+[verifier]
+timeout_sec = 28800.0
+network_mode = "public"
+
+[agent]
+timeout_sec = 57600.0
+network_mode = "public"
+
+[environment]
+build_timeout_sec = 1200.0
+cpus = 2
+memory_mb = 8192
+storage_mb = 20480
+gpus = 0
+network_mode = "public"
+
+[verifier.env]
+OPENAI_API_KEY = "${OPENAI_API_KEY:-}"
+PERPLEXITY_API_KEY = "${PERPLEXITY_API_KEY:-}"
+WANDR_FETCH_BASE_URL = "${WANDR_FETCH_BASE_URL:-}"
+WANDR_FETCH_MODEL = "${WANDR_FETCH_MODEL:-google/gemini-3.1-flash-lite}"
+WANDR_FETCH_TIMEOUT_SEC = "${WANDR_FETCH_TIMEOUT_SEC:-540}"
+WANDR_FETCH_REQUEST_TIMEOUT_SEC = "${WANDR_FETCH_REQUEST_TIMEOUT_SEC:-30}"
+WANDR_FETCH_POLL_INTERVAL_SEC = "${WANDR_FETCH_POLL_INTERVAL_SEC:-2}"
+WANDR_FETCH_FILE_WAIT_SEC = "${WANDR_FETCH_FILE_WAIT_SEC:-10}"
+WANDR_FETCH_MAX_STEPS = "${WANDR_FETCH_MAX_STEPS:-5}"
+WANDR_FETCH_MAX_OUTPUT_TOKENS = "${WANDR_FETCH_MAX_OUTPUT_TOKENS:-4096}"
+WANDR_FETCH_HTTP_ATTEMPTS = "${WANDR_FETCH_HTTP_ATTEMPTS:-3}"
+WANDR_HEAL_RETRIES = "${WANDR_HEAL_RETRIES:-9}"
+WANDR_DNS_CONCURRENCY = "${WANDR_DNS_CONCURRENCY:-8}"
+WANDR_FETCH_CONCURRENCY = "${WANDR_FETCH_CONCURRENCY:-16}"
+WANDR_FETCH_BATCH_SIZE = "${WANDR_FETCH_BATCH_SIZE:-16}"
+WANDR_FETCH_CLIENT_LOAD = "${WANDR_FETCH_CLIENT_LOAD:-16}"
+WANDR_TRIAGE_CONCURRENCY = "${WANDR_TRIAGE_CONCURRENCY:-16}"
+WANDR_TRIAGE_CLIENT_LOAD = "${WANDR_TRIAGE_CLIENT_LOAD:-16}"
+WANDR_BROWSER_FALLBACK = "${WANDR_BROWSER_FALLBACK:-0}"
+WANDR_BROWSER_CONCURRENCY = "${WANDR_BROWSER_CONCURRENCY:-1}"
+WANDR_CANON_CONCURRENCY = "${WANDR_CANON_CONCURRENCY:-6}"
+WANDR_CANON_CLIENT_LOAD = "${WANDR_CANON_CLIENT_LOAD:-6}"
+WANDR_DEDUP_CONCURRENCY = "${WANDR_DEDUP_CONCURRENCY:-3}"
+WANDR_DEDUP_CLIENT_LOAD = "${WANDR_DEDUP_CLIENT_LOAD:-3}"
+WANDR_JUDGE_CONCURRENCY = "${WANDR_JUDGE_CONCURRENCY:-16}"
+WANDR_JUDGE_CLIENT_LOAD = "${WANDR_JUDGE_CLIENT_LOAD:-16}"

@@ -1,0 +1,9 @@
+{
+  "name": "airport-biometric-border-gates",
+  "wandr_task": "airport_biometric_border_gates",
+  "task_names": [
+    "airport_biometric_border_gates",
+    "airport_biometric_border_gates.passenger_flow_rules",
+    "airport_biometric_border_gates.biometric_governance"
+  ]
+}

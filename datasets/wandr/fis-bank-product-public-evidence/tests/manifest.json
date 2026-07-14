@@ -1,0 +1,8 @@
+{
+  "name": "fis-bank-product-public-evidence",
+  "wandr_task": "fis_bank_product_public_evidence",
+  "task_names": [
+    "fis_bank_product_public_evidence",
+    "fis_bank_product_public_evidence.regulated_institution_identity"
+  ]
+}
