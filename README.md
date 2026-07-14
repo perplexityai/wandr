@@ -1,8 +1,10 @@
 # WANDR
 
-WANDR is a benchmark for wide research: structured, high-volume information
-work that requires broad discovery, systematic extraction, and evidence-backed
-answers. Its implementation is split into four independently useful layers:
+WANDR is a benchmark for wide and deep research: structured, high-volume information
+work that requires broad discovery, extensive enrichment, systematic extraction,
+precise entity disambiguation, and evidence-backed answer synthesis.
+
+Its implementation is split into four independently useful layers:
 
 1. **WANDR source data.** `reference/wandr_tasks/` contains the editable task
    configs, schemas, prompts, and artifacts in WANDR's source format. The source
