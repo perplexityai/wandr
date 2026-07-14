@@ -21,9 +21,6 @@ Current implementation is split into four independent layers:
    endpoints to Harbor by collecting their output files and materializing them
    in the task workspace; it is not WANDR-specific.
 
-Harbor supplies the task environment and lifecycle. WANDR defines correctness
-and scoring; Relay defines how endpoint output becomes workspace files.
-
 ## Quick Start
 
 ### Requirements
