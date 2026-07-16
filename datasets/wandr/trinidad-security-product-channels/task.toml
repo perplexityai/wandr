@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_trinidad_security_product_channels.jsonl",
 ]
+wandr_task = "trinidad_security_product_channels"
+member_keys = ["supplier_product_line"]
+url-nonreuse = 0.21524608
+url-nonreuse-label = "low"
+domain-dispersion = 0.67036058
+domain-dispersion-label = "high"
+discovery = 0.29658120
+discovery-label = "medium"
+enrichment = 0.53965602
+enrichment-label = "medium"
+extraction = 0.62149776
+extraction-label = "high"
 difficulty = 0.38717949
 difficulty-label = "low"
-wandr_task = "trinidad_security_product_channels"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 208.79166197
-width-label = "medium"
-depth = 0.07388283
-depth-label = "low"
-extraction = 0.44758435
-extraction-label = "medium"
-dispersion = 0.67036058
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

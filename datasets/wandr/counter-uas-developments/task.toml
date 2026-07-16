@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_counter_uas_developments.jsonl",
 ]
+wandr_task = "counter_uas_developments"
+member_keys = ["development_case"]
+url-nonreuse = 0.33995925
+url-nonreuse-label = "low"
+domain-dispersion = 0.57239343
+domain-dispersion-label = "medium"
+discovery = 0.51047619
+discovery-label = "high"
+enrichment = 0.62144957
+enrichment-label = "medium"
+extraction = 0.38943461
+extraction-label = "low"
 difficulty = 0.61190476
 difficulty-label = "medium"
-wandr_task = "counter_uas_developments"
 
 verticals = ["general", "events", "legal"]
 topology = "flat"
-width = 127.18793888
-width-label = "small"
-depth = 0.74476189
-depth-label = "high"
-extraction = 0.33808771
-extraction-label = "low"
-dispersion = 0.57239343
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

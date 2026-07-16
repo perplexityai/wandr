@@ -11,20 +11,23 @@ required_file_paths = [
     "results_lenels2_milestone_integration_evidence.jsonl",
     "results_lenels2_milestone_integration_evidence.corroboration_context.jsonl",
 ]
+wandr_task = "lenels2_milestone_integration_evidence"
+member_keys = ["integration_edge"]
+url-nonreuse = 0.82743635
+url-nonreuse-label = "high"
+domain-dispersion = 0.53498752
+domain-dispersion-label = "medium"
+discovery = 0.01481481
+discovery-label = "low"
+enrichment = 0.88313758
+enrichment-label = "high"
+extraction = 0.60761905
+extraction-label = "medium"
 difficulty = 0.86666667
 difficulty-label = "high"
-wandr_task = "lenels2_milestone_integration_evidence"
 
 verticals = ["tech"]
 topology = "composite"
-width = 715.49079319
-width-label = "large"
-depth = 0.05122422
-depth-label = "low"
-extraction = 0.63440381
-extraction-label = "high"
-dispersion = 0.53498752
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

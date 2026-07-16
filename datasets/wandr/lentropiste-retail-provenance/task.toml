@@ -11,20 +11,23 @@ required_file_paths = [
     "results_lentropiste_retail_provenance.jsonl",
     "results_lentropiste_retail_provenance.retailer_context.jsonl",
 ]
-difficulty = 0.8275
-difficulty-label = "high"
 wandr_task = "lentropiste_retail_provenance"
+member_keys = ["retailer_surface"]
+url-nonreuse = 0.55166225
+url-nonreuse-label = "medium"
+domain-dispersion = 0.34023192
+domain-dispersion-label = "low"
+discovery = 0.44333333
+discovery-label = "high"
+enrichment = 0.81669608
+enrichment-label = "high"
+extraction = 0.84211211
+extraction-label = "high"
+difficulty = 0.82750000
+difficulty-label = "high"
 
 verticals = ["e-com"]
 topology = "composite"
-width = 215.97046173
-width-label = "medium"
-depth = 0.26193766
-depth-label = "medium"
-extraction = 0.78834085
-extraction-label = "high"
-dispersion = 0.34023192
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

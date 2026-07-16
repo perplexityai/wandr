@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_flexible_packaging_manufacturer.jsonl",
 ]
-difficulty = 0.259375
-difficulty-label = "low"
 wandr_task = "uk_flexible_packaging_manufacturer"
+member_keys = ["company"]
+url-nonreuse = 0.51749852
+url-nonreuse-label = "medium"
+domain-dispersion = 0.41751979
+domain-dispersion-label = "low"
+discovery = 0.51111111
+discovery-label = "high"
+enrichment = 0.24439931
+enrichment-label = "low"
+extraction = 0.38350294
+extraction-label = "low"
+difficulty = 0.25937500
+difficulty-label = "low"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 587.8645003
-width-label = "large"
-depth = 0.10611223
-depth-label = "medium"
-extraction = 0.36077938
-extraction-label = "low"
-dispersion = 0.41751979
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

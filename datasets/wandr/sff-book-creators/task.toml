@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_sff_book_creators.jsonl",
 ]
+wandr_task = "sff_book_creators"
+member_keys = ["creator"]
+url-nonreuse = 0.69041276
+url-nonreuse-label = "medium"
+domain-dispersion = 0.52570917
+domain-dispersion-label = "medium"
+discovery = 0.53437500
+discovery-label = "high"
+enrichment = 0.41685206
+enrichment-label = "low"
+extraction = 0.66063516
+extraction-label = "high"
 difficulty = 0.78333333
 difficulty-label = "high"
-wandr_task = "sff_book_creators"
 
 verticals = ["general", "social"]
 topology = "hierarchical"
-width = 561.52486799
-width-label = "large"
-depth = 0.82470388
-depth-label = "high"
-extraction = 0.54252786
-extraction-label = "high"
-dispersion = 0.52570917
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

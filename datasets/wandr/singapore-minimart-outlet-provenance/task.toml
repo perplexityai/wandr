@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_singapore_minimart_outlet_provenance.jsonl",
 ]
-difficulty = 0.875
-difficulty-label = "high"
 wandr_task = "singapore_minimart_outlet_provenance"
+member_keys = ["retailer_or_store"]
+url-nonreuse = 0.43556755
+url-nonreuse-label = "low"
+domain-dispersion = 0.71635820
+domain-dispersion-label = "high"
+discovery = 0.58111111
+discovery-label = "high"
+enrichment = 0.73808434
+enrichment-label = "high"
+extraction = 0.59395325
+extraction-label = "medium"
+difficulty = 0.87500000
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1061.05897899
-width-label = "xlarge"
-depth = 0.21819957
-depth-label = "medium"
-extraction = 0.43204244
-extraction-label = "medium"
-dispersion = 0.7163582
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

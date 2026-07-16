@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_tic_lab_accreditation_authority_records.jsonl",
 ]
+wandr_task = "tic_lab_accreditation_authority_records"
+member_keys = ["provider_brand"]
+url-nonreuse = 0.87080833
+url-nonreuse-label = "high"
+domain-dispersion = 0.67881787
+domain-dispersion-label = "high"
+discovery = 0.17380952
+discovery-label = "low"
+enrichment = 0.39141218
+enrichment-label = "low"
+extraction = 0.40403473
+extraction-label = "low"
 difficulty = 0.50714286
 difficulty-label = "medium"
-wandr_task = "tic_lab_accreditation_authority_records"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 417.83623703
-width-label = "medium"
-depth = 0.12594824
-depth-label = "medium"
-extraction = 0.38382204
-extraction-label = "low"
-dispersion = 0.67881787
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

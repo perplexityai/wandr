@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_hkex_ipo_pipeline_market_map.jsonl",
 ]
+wandr_task = "hkex_ipo_pipeline_market_map"
+member_keys = ["application"]
+url-nonreuse = 0.54289984
+url-nonreuse-label = "medium"
+domain-dispersion = 0.07081143
+domain-dispersion-label = "low"
+discovery = 0.68916667
+discovery-label = "high"
+enrichment = 0.48793360
+enrichment-label = "medium"
+extraction = 0.53306126
+extraction-label = "medium"
 difficulty = 0.31083333
 difficulty-label = "low"
-wandr_task = "hkex_ipo_pipeline_market_map"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 794.72173432
-width-label = "large"
-depth = 0.05332413
-depth-label = "low"
-extraction = 0.33188192
-extraction-label = "low"
-dispersion = 0.07081143
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

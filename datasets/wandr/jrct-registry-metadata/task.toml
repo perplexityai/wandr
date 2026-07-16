@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_jrct_registry_metadata.jsonl",
 ]
+wandr_task = "jrct_registry_metadata"
+member_keys = ["jrct_record"]
+url-nonreuse = 0.59256650
+url-nonreuse-label = "medium"
+domain-dispersion = 0.01119003
+domain-dispersion-label = "low"
+discovery = 0.33777778
+discovery-label = "medium"
+enrichment = 0.80196266
+enrichment-label = "high"
+extraction = 0.49619554
+extraction-label = "medium"
 difficulty = 0.53666667
 difficulty-label = "medium"
-wandr_task = "jrct_registry_metadata"
 
 verticals = ["health"]
 topology = "flat"
-width = 371.66658984
-width-label = "medium"
-depth = 0.05510834
-depth-label = "low"
-extraction = 0.24137862
-extraction-label = "low"
-dispersion = 0.01119003
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

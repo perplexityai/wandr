@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_russia_production_case_evidence.jsonl",
 ]
+wandr_task = "russia_production_case_evidence"
+member_keys = ["production_case"]
+url-nonreuse = 0.36059100
+url-nonreuse-label = "low"
+domain-dispersion = 0.54541252
+domain-dispersion-label = "medium"
+discovery = 0.34259259
+discovery-label = "medium"
+enrichment = 0.30822502
+enrichment-label = "low"
+extraction = 0.66781785
+extraction-label = "high"
 difficulty = 0.03009259
 difficulty-label = "low"
-wandr_task = "russia_production_case_evidence"
 
 verticals = ["general", "legal", "e-com"]
 topology = "hierarchical"
-width = 691.65629309
-width-label = "large"
-depth = 0.4782262
-depth-label = "high"
-extraction = 0.45008558
-extraction-label = "medium"
-dispersion = 0.54541252
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

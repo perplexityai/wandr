@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_india_cloud_telephony_provider_public_capability_source_table.jsonl",
 ]
+wandr_task = "india_cloud_telephony_provider_public_capability_source_table"
+member_keys = ["provider"]
+url-nonreuse = 0.87319718
+url-nonreuse-label = "high"
+domain-dispersion = 0.52642516
+domain-dispersion-label = "medium"
+discovery = 0.26111111
+discovery-label = "medium"
+enrichment = 0.50338753
+enrichment-label = "medium"
+extraction = 0.70048408
+extraction-label = "high"
 difficulty = 0.28981481
 difficulty-label = "low"
-wandr_task = "india_cloud_telephony_provider_public_capability_source_table"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 1619.81946897
-width-label = "xlarge"
-depth = 0.04193945
-depth-label = "low"
-extraction = 0.5680336
-extraction-label = "high"
-dispersion = 0.52642516
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

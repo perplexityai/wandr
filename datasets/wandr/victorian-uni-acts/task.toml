@@ -11,20 +11,23 @@ required_file_paths = [
     "results_victorian_uni_acts.jsonl",
     "results_victorian_uni_acts.current_register.jsonl",
 ]
+wandr_task = "victorian_uni_acts"
+member_keys = ["university"]
+url-nonreuse = 0.26845488
+url-nonreuse-label = "low"
+domain-dispersion = 0.33642182
+domain-dispersion-label = "low"
+discovery = 0.12500000
+discovery-label = "low"
+enrichment = 0.95617284
+enrichment-label = "high"
+extraction = 0.97777778
+extraction-label = "high"
 difficulty = 0.97453704
 difficulty-label = "high"
-wandr_task = "victorian_uni_acts"
 
 verticals = ["legal"]
 topology = "composite"
-width = 133.3247416
-width-label = "small"
-depth = 0.80940176
-depth-label = "high"
-extraction = 0.96846191
-extraction-label = "high"
-dispersion = 0.33642182
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

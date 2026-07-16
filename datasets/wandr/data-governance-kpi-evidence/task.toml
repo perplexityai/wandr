@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_governance_kpi_evidence.jsonl",
 ]
+wandr_task = "data_governance_kpi_evidence"
+member_keys = ["vendor_platform"]
+url-nonreuse = 0.79346351
+url-nonreuse-label = "high"
+domain-dispersion = 0.44412721
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.46148148
+enrichment-label = "low"
+extraction = 0.36027942
+extraction-label = "low"
 difficulty = 0.24259259
 difficulty-label = "low"
-wandr_task = "data_governance_kpi_evidence"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 2552.6135758
-width-label = "xlarge"
-depth = 0.03060111
-depth-label = "low"
-extraction = 0.30518517
-extraction-label = "low"
-dispersion = 0.44412721
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

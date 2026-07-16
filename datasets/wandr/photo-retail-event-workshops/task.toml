@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_photo_retail_event_workshops.jsonl",
 ]
+wandr_task = "photo_retail_event_workshops"
+member_keys = ["event"]
+url-nonreuse = 0.70786008
+url-nonreuse-label = "medium"
+domain-dispersion = 0.58755634
+domain-dispersion-label = "medium"
+discovery = 0.42916667
+discovery-label = "high"
+enrichment = 0.44897094
+enrichment-label = "low"
+extraction = 0.50793464
+extraction-label = "medium"
 difficulty = 0.44166667
 difficulty-label = "medium"
-wandr_task = "photo_retail_event_workshops"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 132.25547863
-width-label = "small"
-depth = 0.32472398
-depth-label = "medium"
-extraction = 0.48228971
-extraction-label = "medium"
-dispersion = 0.58755634
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

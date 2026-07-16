@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_vp_marketing_saas_historical.jsonl",
 ]
+wandr_task = "vp_marketing_saas_historical"
+member_keys = ["company_person"]
+url-nonreuse = 0.97807428
+url-nonreuse-label = "high"
+domain-dispersion = 0.19873350
+domain-dispersion-label = "low"
+discovery = 0.20777778
+discovery-label = "medium"
+enrichment = 0.42519486
+enrichment-label = "low"
+extraction = 0.57035349
+extraction-label = "medium"
 difficulty = 0.01333333
 difficulty-label = "low"
-wandr_task = "vp_marketing_saas_historical"
 
 verticals = ["people"]
 topology = "hierarchical"
-width = 92.77156816
-width-label = "small"
-depth = 0.13119221
-depth-label = "medium"
-extraction = 0.38885339
-extraction-label = "medium"
-dispersion = 0.1987335
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

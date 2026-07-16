@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_eu_ftl_trucking_carrier_landscape.jsonl",
 ]
+wandr_task = "eu_ftl_trucking_carrier_landscape"
+member_keys = ["carrier"]
+url-nonreuse = 0.32054596
+url-nonreuse-label = "low"
+domain-dispersion = 0.39106220
+domain-dispersion-label = "low"
+discovery = 0.36975309
+discovery-label = "medium"
+enrichment = 0.90315224
+enrichment-label = "high"
+extraction = 0.84590654
+extraction-label = "high"
 difficulty = 0.86944444
 difficulty-label = "high"
-wandr_task = "eu_ftl_trucking_carrier_landscape"
 
 verticals = ["general"]
 topology = "composite"
-width = 444.11559045
-width-label = "medium"
-depth = 0.22009993
-depth-label = "medium"
-extraction = 0.75279848
-extraction-label = "high"
-dispersion = 0.3910622
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

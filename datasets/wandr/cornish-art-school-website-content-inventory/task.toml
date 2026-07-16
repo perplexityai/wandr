@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_cornish_art_school_website_content_inventory.jsonl",
 ]
-difficulty = 0.289
-difficulty-label = "low"
 wandr_task = "cornish_art_school_website_content_inventory"
+member_keys = ["school"]
+url-nonreuse = 0.96723436
+url-nonreuse-label = "high"
+domain-dispersion = 0.50147226
+domain-dispersion-label = "medium"
+discovery = 0.37600000
+discovery-label = "medium"
+enrichment = 0.58671500
+enrichment-label = "medium"
+extraction = 0.54910883
+extraction-label = "medium"
+difficulty = 0.28900000
+difficulty-label = "low"
 
 verticals = ["general", "academic"]
 topology = "hierarchical"
-width = 328.12649741
-width-label = "medium"
-depth = 1.44967443
-depth-label = "xhigh"
-extraction = 0.40797379
-extraction-label = "medium"
-dispersion = 0.50147226
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

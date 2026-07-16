@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_china_semiconductor_footprints.jsonl",
 ]
+wandr_task = "china_semiconductor_footprints"
+member_keys = ["supplier"]
+url-nonreuse = 0.71398216
+url-nonreuse-label = "medium"
+domain-dispersion = 0.66600747
+domain-dispersion-label = "high"
+discovery = 0.24000000
+discovery-label = "medium"
+enrichment = 0.60486068
+enrichment-label = "medium"
+extraction = 0.26109679
+extraction-label = "low"
 difficulty = 0.58055556
 difficulty-label = "medium"
-wandr_task = "china_semiconductor_footprints"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 221.05149843
-width-label = "medium"
-depth = 0.13631472
-depth-label = "medium"
-extraction = 0.26187347
-extraction-label = "low"
-dispersion = 0.66600747
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

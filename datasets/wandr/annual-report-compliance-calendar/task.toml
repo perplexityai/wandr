@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_annual_report_compliance_calendar.jsonl",
 ]
+wandr_task = "annual_report_compliance_calendar"
+member_keys = ["jurisdiction"]
+url-nonreuse = 0.10159713
+url-nonreuse-label = "low"
+domain-dispersion = 0.81361193
+domain-dispersion-label = "high"
+discovery = 0.32941176
+discovery-label = "medium"
+enrichment = 0.39188831
+enrichment-label = "low"
+extraction = 0.64350585
+extraction-label = "high"
 difficulty = 0.54105392
 difficulty-label = "medium"
-wandr_task = "annual_report_compliance_calendar"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 237.58028514
-width-label = "medium"
-depth = 0.1906868
-depth-label = "medium"
-extraction = 0.64658991
-extraction-label = "high"
-dispersion = 0.81361193
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

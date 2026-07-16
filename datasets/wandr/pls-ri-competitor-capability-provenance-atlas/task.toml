@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_pls_ri_competitor_capability_provenance_atlas.jsonl",
 ]
+wandr_task = "pls_ri_competitor_capability_provenance_atlas"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.94308766
+url-nonreuse-label = "high"
+domain-dispersion = 0.46614014
+domain-dispersion-label = "medium"
+discovery = 0.27000000
+discovery-label = "medium"
+enrichment = 0.50489130
+enrichment-label = "medium"
+extraction = 0.49400764
+extraction-label = "medium"
 difficulty = 0.34333333
 difficulty-label = "low"
-wandr_task = "pls_ri_competitor_capability_provenance_atlas"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 477.12850956
-width-label = "large"
-depth = 0.10745043
-depth-label = "medium"
-extraction = 0.42692035
-extraction-label = "medium"
-dispersion = 0.46614014
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

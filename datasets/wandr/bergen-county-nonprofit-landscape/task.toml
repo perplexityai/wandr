@@ -11,20 +11,23 @@ required_file_paths = [
     "results_bergen_county_nonprofit_landscape.jsonl",
     "results_bergen_county_nonprofit_landscape.diligence_evidence.jsonl",
 ]
+wandr_task = "bergen_county_nonprofit_landscape"
+member_keys = ["focus_org"]
+url-nonreuse = 0.52301703
+url-nonreuse-label = "medium"
+domain-dispersion = 0.70739793
+domain-dispersion-label = "high"
+discovery = 0.01157407
+discovery-label = "low"
+enrichment = 0.59502850
+enrichment-label = "medium"
+extraction = 0.68147943
+extraction-label = "high"
 difficulty = 0.36458333
 difficulty-label = "low"
-wandr_task = "bergen_county_nonprofit_landscape"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 227.88100101
-width-label = "medium"
-depth = 0.32272434
-depth-label = "medium"
-extraction = 0.5121935
-extraction-label = "medium"
-dispersion = 0.70739793
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

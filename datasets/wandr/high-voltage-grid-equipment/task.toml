@@ -11,20 +11,23 @@ required_file_paths = [
     "results_high_voltage_grid_equipment.jsonl",
     "results_high_voltage_grid_equipment.public_references.jsonl",
 ]
-difficulty = 0.8225
-difficulty-label = "high"
 wandr_task = "high_voltage_grid_equipment"
+member_keys = ["equipment_family"]
+url-nonreuse = 0.57191101
+url-nonreuse-label = "medium"
+domain-dispersion = 0.59909288
+domain-dispersion-label = "medium"
+discovery = 0.55333333
+discovery-label = "high"
+enrichment = 0.70205026
+enrichment-label = "high"
+extraction = 0.64715654
+extraction-label = "high"
+difficulty = 0.82250000
+difficulty-label = "high"
 
 verticals = ["general", "e-com"]
 topology = "composite"
-width = 362.36691105
-width-label = "medium"
-depth = 0.24399974
-depth-label = "medium"
-extraction = 0.59375145
-extraction-label = "high"
-dispersion = 0.59909288
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

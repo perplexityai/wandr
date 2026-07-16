@@ -11,20 +11,23 @@ required_file_paths = [
     "results_fis_bank_product_public_evidence.jsonl",
     "results_fis_bank_product_public_evidence.regulated_institution_identity.jsonl",
 ]
+wandr_task = "fis_bank_product_public_evidence"
+member_keys = ["fis_product", "institution"]
+url-nonreuse = 0.82929298
+url-nonreuse-label = "high"
+domain-dispersion = 0.20194868
+domain-dispersion-label = "low"
+discovery = 0.58148148
+discovery-label = "high"
+enrichment = 0.64011731
+enrichment-label = "high"
+extraction = 0.73022959
+extraction-label = "high"
 difficulty = 0.66666667
 difficulty-label = "high"
-wandr_task = "fis_bank_product_public_evidence"
 
 verticals = ["legal", "finance"]
 topology = "composite"
-width = 200.44533878
-width-label = "medium"
-depth = 0.16217646
-depth-label = "medium"
-extraction = 0.58090037
-extraction-label = "high"
-dispersion = 0.20194868
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

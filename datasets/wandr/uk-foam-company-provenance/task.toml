@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_foam_company_provenance.jsonl",
 ]
-difficulty = 0.5015
-difficulty-label = "medium"
 wandr_task = "uk_foam_company_provenance"
+member_keys = ["company"]
+url-nonreuse = 0.47337165
+url-nonreuse-label = "low"
+domain-dispersion = 0.11829224
+domain-dispersion-label = "low"
+discovery = 0.43200000
+discovery-label = "high"
+enrichment = 0.53482831
+enrichment-label = "medium"
+extraction = 0.48728011
+extraction-label = "medium"
+difficulty = 0.50150000
+difficulty-label = "medium"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 1776.26427952
-width-label = "xlarge"
-depth = 0.0513212
-depth-label = "low"
-extraction = 0.44284083
-extraction-label = "medium"
-dispersion = 0.11829224
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

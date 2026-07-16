@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_singapore_expat_insurance_plans.jsonl",
 ]
+wandr_task = "singapore_expat_insurance_plans"
+member_keys = ["provider_plan"]
+url-nonreuse = 0.07490992
+url-nonreuse-label = "low"
+domain-dispersion = 0.60023799
+domain-dispersion-label = "medium"
+discovery = 0.08000000
+discovery-label = "low"
+enrichment = 0.69474255
+enrichment-label = "high"
+extraction = 0.81058955
+extraction-label = "high"
 difficulty = 0.61728395
 difficulty-label = "medium"
-wandr_task = "singapore_expat_insurance_plans"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 78.11551403
-width-label = "small"
-depth = 0.06763903
-depth-label = "low"
-extraction = 0.78465251
-extraction-label = "high"
-dispersion = 0.60023799
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

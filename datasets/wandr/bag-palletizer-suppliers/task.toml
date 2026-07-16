@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bag_palletizer_suppliers.jsonl",
 ]
+wandr_task = "bag_palletizer_suppliers"
+member_keys = ["supplier_or_brand"]
+url-nonreuse = 0.60396357
+url-nonreuse-label = "medium"
+domain-dispersion = 0.56813477
+domain-dispersion-label = "medium"
+discovery = 0.30277778
+discovery-label = "medium"
+enrichment = 0.36064813
+enrichment-label = "low"
+extraction = 0.50281967
+extraction-label = "medium"
 difficulty = 0.34166667
 difficulty-label = "low"
-wandr_task = "bag_palletizer_suppliers"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 532.09867379
-width-label = "large"
-depth = 0.05631605
-depth-label = "low"
-extraction = 0.4652926
-extraction-label = "medium"
-dispersion = 0.56813477
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

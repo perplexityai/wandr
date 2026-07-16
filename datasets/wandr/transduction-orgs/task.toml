@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_transduction_orgs.jsonl",
 ]
+wandr_task = "transduction_orgs"
+member_keys = ["organization"]
+url-nonreuse = 0.94931540
+url-nonreuse-label = "high"
+domain-dispersion = 0.57747510
+domain-dispersion-label = "medium"
+discovery = 0.26666667
+discovery-label = "medium"
+enrichment = 0.68740626
+enrichment-label = "high"
+extraction = 0.61012301
+extraction-label = "medium"
 difficulty = 0.69111111
 difficulty-label = "high"
-wandr_task = "transduction_orgs"
 
 verticals = ["general", "academic", "health"]
 topology = "hierarchical"
-width = 233.58064064
-width-label = "medium"
-depth = 0.37594843
-depth-label = "medium"
-extraction = 0.52056229
-extraction-label = "medium"
-dispersion = 0.5774751
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

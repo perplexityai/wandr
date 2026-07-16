@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_museum_repatriations.jsonl",
 ]
-difficulty = 0.57
-difficulty-label = "medium"
 wandr_task = "museum_repatriations"
+member_keys = ["artifact_institution"]
+url-nonreuse = 0.73971611
+url-nonreuse-label = "medium"
+domain-dispersion = 0.76842735
+domain-dispersion-label = "high"
+discovery = 0.04000000
+discovery-label = "low"
+enrichment = 0.67982456
+enrichment-label = "high"
+extraction = 0.40616922
+extraction-label = "low"
+difficulty = 0.57000000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "flat"
-width = 105.91404396
-width-label = "small"
-depth = 0.20918871
-depth-label = "medium"
-extraction = 0.33435833
-extraction-label = "low"
-dispersion = 0.76842735
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

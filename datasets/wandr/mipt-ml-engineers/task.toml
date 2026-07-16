@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mipt_ml_engineers.jsonl",
 ]
+wandr_task = "mipt_ml_engineers"
+member_keys = ["person_graduation_year"]
+url-nonreuse = 0.98737981
+url-nonreuse-label = "high"
+domain-dispersion = 0.06558315
+domain-dispersion-label = "low"
+discovery = 0.67200000
+discovery-label = "high"
+enrichment = 0.38453023
+enrichment-label = "low"
+extraction = 0.58712644
+extraction-label = "medium"
 difficulty = 0.08333333
 difficulty-label = "low"
-wandr_task = "mipt_ml_engineers"
 
 verticals = ["people"]
 topology = "flat"
-width = 201.41892501
-width-label = "medium"
-depth = 0.10810023
-depth-label = "medium"
-extraction = 0.33697001
-extraction-label = "low"
-dispersion = 0.06558315
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

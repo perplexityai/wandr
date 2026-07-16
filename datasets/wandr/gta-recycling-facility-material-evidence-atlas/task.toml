@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_gta_recycling_facility_material_evidence_atlas.jsonl",
 ]
+wandr_task = "gta_recycling_facility_material_evidence_atlas"
+member_keys = ["facility_or_operation"]
+url-nonreuse = 0.23767428
+url-nonreuse-label = "low"
+domain-dispersion = 0.27161364
+domain-dispersion-label = "low"
+discovery = 0.41454545
+discovery-label = "medium"
+enrichment = 0.33201335
+enrichment-label = "low"
+extraction = 0.61324314
+extraction-label = "medium"
 difficulty = 0.16363636
 difficulty-label = "low"
-wandr_task = "gta_recycling_facility_material_evidence_atlas"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 591.33306863
-width-label = "large"
-depth = 0.25601598
-depth-label = "medium"
-extraction = 0.42207486
-extraction-label = "medium"
-dispersion = 0.27161364
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

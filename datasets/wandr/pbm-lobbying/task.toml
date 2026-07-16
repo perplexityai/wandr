@@ -11,20 +11,23 @@ required_file_paths = [
     "results_pbm_lobbying.jsonl",
     "results_pbm_lobbying.seed_actor_probes.jsonl",
 ]
+wandr_task = "pbm_lobbying"
+member_keys = ["actor"]
+url-nonreuse = 0.70816327
+url-nonreuse-label = "medium"
+domain-dispersion = 0.19938126
+domain-dispersion-label = "low"
+discovery = 0.43809524
+discovery-label = "high"
+enrichment = 0.87045575
+enrichment-label = "high"
+extraction = 0.71666667
+extraction-label = "high"
 difficulty = 0.85119048
 difficulty-label = "high"
-wandr_task = "pbm_lobbying"
 
 verticals = ["legal"]
 topology = "composite"
-width = 65.97923539
-width-label = "small"
-depth = 1.90418617
-depth-label = "xhigh"
-extraction = 0.61930255
-extraction-label = "high"
-dispersion = 0.19938126
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

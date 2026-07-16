@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_industrial_dc_chargers.jsonl",
 ]
+wandr_task = "industrial_dc_chargers"
+member_keys = ["brand_or_product"]
+url-nonreuse = 0.47981397
+url-nonreuse-label = "low"
+domain-dispersion = 0.49974902
+domain-dispersion-label = "medium"
+discovery = 0.18666667
+discovery-label = "low"
+enrichment = 0.62924951
+enrichment-label = "medium"
+extraction = 0.56149518
+extraction-label = "medium"
 difficulty = 0.57708333
 difficulty-label = "medium"
-wandr_task = "industrial_dc_chargers"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 241.80721118
-width-label = "medium"
-depth = 1.03890394
-depth-label = "xhigh"
-extraction = 0.51459664
-extraction-label = "medium"
-dispersion = 0.49974902
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

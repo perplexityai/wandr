@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_center_power_advisors.jsonl",
 ]
-difficulty = 0.341
-difficulty-label = "low"
 wandr_task = "data_center_power_advisors"
+member_keys = ["advisor_org"]
+url-nonreuse = 0.95057464
+url-nonreuse-label = "high"
+domain-dispersion = 0.65821570
+domain-dispersion-label = "high"
+discovery = 0.41000000
+discovery-label = "medium"
+enrichment = 0.44810919
+enrichment-label = "low"
+extraction = 0.42506143
+extraction-label = "low"
+difficulty = 0.34100000
+difficulty-label = "low"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 939.27608406
-width-label = "large"
-depth = 0.33163604
-depth-label = "medium"
-extraction = 0.30026274
-extraction-label = "low"
-dispersion = 0.6582157
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

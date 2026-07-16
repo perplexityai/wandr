@@ -11,20 +11,23 @@ required_file_paths = [
     "results_indie_bookstore_imprints.jsonl",
     "results_indie_bookstore_imprints.imprint_titles.jsonl",
 ]
+wandr_task = "indie_bookstore_imprints"
+member_keys = ["bookstore_imprint"]
+url-nonreuse = 0.98127522
+url-nonreuse-label = "high"
+domain-dispersion = 0.43262654
+domain-dispersion-label = "medium"
+discovery = 0.10555556
+discovery-label = "low"
+enrichment = 0.94744572
+enrichment-label = "high"
+extraction = 0.85974026
+extraction-label = "high"
 difficulty = 0.92222222
 difficulty-label = "high"
-wandr_task = "indie_bookstore_imprints"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 85.48556264
-width-label = "small"
-depth = 1.68342132
-depth-label = "xhigh"
-extraction = 0.8172463
-extraction-label = "high"
-dispersion = 0.43262654
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

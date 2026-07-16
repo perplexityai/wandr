@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_robotics_ai_seed_funding.jsonl",
 ]
-difficulty = 0.7515625
-difficulty-label = "high"
 wandr_task = "us_robotics_ai_seed_funding"
+member_keys = ["company"]
+url-nonreuse = 0.96701423
+url-nonreuse-label = "high"
+domain-dispersion = 0.41334997
+domain-dispersion-label = "low"
+discovery = 0.49895833
+discovery-label = "high"
+enrichment = 0.66357643
+enrichment-label = "high"
+extraction = 0.70726651
+extraction-label = "high"
+difficulty = 0.75156250
+difficulty-label = "high"
 
 verticals = ["events"]
 topology = "hierarchical"
-width = 328.87356444
-width-label = "medium"
-depth = 0.21793873
-depth-label = "medium"
-extraction = 0.6221067
-extraction-label = "high"
-dispersion = 0.41334997
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

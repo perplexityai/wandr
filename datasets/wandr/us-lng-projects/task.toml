@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_lng_projects.jsonl",
 ]
+wandr_task = "us_lng_projects"
+member_keys = ["project"]
+url-nonreuse = 0.40100953
+url-nonreuse-label = "low"
+domain-dispersion = 0.50297172
+domain-dispersion-label = "medium"
+discovery = 0.09090909
+discovery-label = "low"
+enrichment = 0.60737646
+enrichment-label = "medium"
+extraction = 0.37827830
+extraction-label = "low"
 difficulty = 0.51363636
 difficulty-label = "medium"
-wandr_task = "us_lng_projects"
 
 verticals = ["general", "legal", "finance"]
 topology = "composite"
-width = 187.30661002
-width-label = "medium"
-depth = 0.08959071
-depth-label = "low"
-extraction = 0.34123661
-extraction-label = "low"
-dispersion = 0.50297172
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

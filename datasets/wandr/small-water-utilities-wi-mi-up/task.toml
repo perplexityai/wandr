@@ -11,20 +11,23 @@ required_file_paths = [
     "results_small_water_utilities_wi_mi_up.jsonl",
     "results_small_water_utilities_wi_mi_up.utility_narratives.jsonl",
 ]
-difficulty = 0.775
-difficulty-label = "high"
 wandr_task = "small_water_utilities_wi_mi_up"
+member_keys = ["utility_system"]
+url-nonreuse = 0.99259954
+url-nonreuse-label = "high"
+domain-dispersion = 0.33863219
+domain-dispersion-label = "low"
+discovery = 0.32500000
+discovery-label = "medium"
+enrichment = 0.71388889
+enrichment-label = "high"
+extraction = 0.45949580
+extraction-label = "low"
+difficulty = 0.77500000
+difficulty-label = "high"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 32.87664621
-width-label = "tiny"
-depth = 0.66201699
-depth-label = "high"
-extraction = 0.53564634
-extraction-label = "high"
-dispersion = 0.33863219
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

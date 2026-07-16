@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mdb_cross_debarment_provenance.jsonl",
 ]
+wandr_task = "mdb_cross_debarment_provenance"
+member_keys = ["sanctioned_party"]
+url-nonreuse = 0.07119652
+url-nonreuse-label = "low"
+domain-dispersion = 0.40565186
+domain-dispersion-label = "low"
+discovery = 0.07600000
+discovery-label = "low"
+enrichment = 0.79068817
+enrichment-label = "high"
+extraction = 0.46420799
+extraction-label = "low"
 difficulty = 0.49666667
 difficulty-label = "medium"
-wandr_task = "mdb_cross_debarment_provenance"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 52.25684129
-width-label = "small"
-depth = 0.10752793
-depth-label = "medium"
-extraction = 0.14872546
-extraction-label = "low"
-dispersion = 0.40565186
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_model_layer_company_public_capability_source_table.jsonl",
 ]
+wandr_task = "ai_model_layer_company_public_capability_source_table"
+member_keys = ["model"]
+url-nonreuse = 0.73173256
+url-nonreuse-label = "medium"
+domain-dispersion = 0.42893827
+domain-dispersion-label = "medium"
+discovery = 0.16285714
+discovery-label = "low"
+enrichment = 0.78148695
+enrichment-label = "high"
+extraction = 0.63689775
+extraction-label = "high"
 difficulty = 0.60535714
 difficulty-label = "medium"
-wandr_task = "ai_model_layer_company_public_capability_source_table"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 385.48511574
-width-label = "medium"
-depth = 0.66450496
-depth-label = "high"
-extraction = 0.60533059
-extraction-label = "high"
-dispersion = 0.42893827
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

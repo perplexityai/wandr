@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_offshore_wind_om.jsonl",
 ]
+wandr_task = "offshore_wind_om"
+member_keys = ["organization_capability"]
+url-nonreuse = 0.83039979
+url-nonreuse-label = "high"
+domain-dispersion = 0.70709068
+domain-dispersion-label = "high"
+discovery = 0.27809524
+discovery-label = "medium"
+enrichment = 0.53643791
+enrichment-label = "medium"
+extraction = 0.41316850
+extraction-label = "low"
 difficulty = 0.39761905
 difficulty-label = "low"
-wandr_task = "offshore_wind_om"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 648.2654401
-width-label = "large"
-depth = 0.08228249
-depth-label = "low"
-extraction = 0.38022231
-extraction-label = "low"
-dispersion = 0.70709068
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

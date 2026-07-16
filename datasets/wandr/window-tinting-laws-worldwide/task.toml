@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_window_tinting_laws_worldwide.jsonl",
 ]
+wandr_task = "window_tinting_laws_worldwide"
+member_keys = ["country"]
+url-nonreuse = 0.32466809
+url-nonreuse-label = "low"
+domain-dispersion = 0.88097835
+domain-dispersion-label = "high"
+discovery = 0.07333333
+discovery-label = "low"
+enrichment = 0.68901478
+enrichment-label = "high"
+extraction = 0.65511060
+extraction-label = "high"
 difficulty = 0.73571429
 difficulty-label = "high"
-wandr_task = "window_tinting_laws_worldwide"
 
 verticals = ["legal"]
 topology = "composite"
-width = 146.91409808
-width-label = "small"
-depth = 0.16362865
-depth-label = "medium"
-extraction = 0.61969963
-extraction-label = "high"
-dispersion = 0.88097835
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

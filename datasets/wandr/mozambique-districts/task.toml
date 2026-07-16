@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mozambique_districts.jsonl",
 ]
+wandr_task = "mozambique_districts"
+member_keys = ["district_province"]
+url-nonreuse = 1.00000000
+url-nonreuse-label = "high"
+domain-dispersion = 0.01788020
+domain-dispersion-label = "low"
+discovery = 0.51653944
+discovery-label = "high"
+enrichment = 0.17002692
+enrichment-label = "low"
+extraction = 0.13780718
+extraction-label = "low"
 difficulty = 0.51908397
 difficulty-label = "medium"
-wandr_task = "mozambique_districts"
 
 verticals = ["wikis"]
 topology = "flat"
-width = 0.00000006
-width-label = "tiny"
-depth = 0.14078679
-depth-label = "medium"
-extraction = 0.11677029
-extraction-label = "low"
-dispersion = 0.0178802
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_claude_public_relationship_evidence_graph.jsonl",
 ]
+wandr_task = "claude_public_relationship_evidence_graph"
+member_keys = ["family_counterparty"]
+url-nonreuse = 0.46825125
+url-nonreuse-label = "low"
+domain-dispersion = 0.56094319
+domain-dispersion-label = "medium"
+discovery = 0.14400000
+discovery-label = "low"
+enrichment = 0.45293268
+enrichment-label = "low"
+extraction = 0.41155509
+extraction-label = "low"
 difficulty = 0.27142857
 difficulty-label = "low"
-wandr_task = "claude_public_relationship_evidence_graph"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 372.37007549
-width-label = "medium"
-depth = 0.1037739
-depth-label = "medium"
-extraction = 0.31046333
-extraction-label = "low"
-dispersion = 0.56094319
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

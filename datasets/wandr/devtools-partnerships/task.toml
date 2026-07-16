@@ -10,20 +10,23 @@ keywords = ["wandr", "devtools", "partnerships", "company research", "retrieval"
 required_file_paths = [
     "results_devtools_partnerships.jsonl",
 ]
+wandr_task = "devtools_partnerships"
+member_keys = ["company", "other_company"]
+url-nonreuse = 0.92383342
+url-nonreuse-label = "high"
+domain-dispersion = 0.32287889
+domain-dispersion-label = "low"
+discovery = 0.71833333
+discovery-label = "high"
+enrichment = 0.27293987
+enrichment-label = "low"
+extraction = 0.45462729
+extraction-label = "low"
 difficulty = 0.55583333
 difficulty-label = "medium"
-wandr_task = "devtools_partnerships"
 
 verticals = ["e-com", "tech"]
 topology = "hierarchical"
-width = 925.30216565
-width-label = "large"
-depth = 0.22027554
-depth-label = "medium"
-extraction = 0.34585697
-extraction-label = "low"
-dispersion = 0.32287889
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

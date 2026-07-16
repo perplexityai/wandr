@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_biglaw_ai_practice_public_signal_evidence_panel.jsonl",
 ]
-difficulty = 0.5064
-difficulty-label = "medium"
 wandr_task = "biglaw_ai_practice_public_signal_evidence_panel"
+member_keys = ["law_firm"]
+url-nonreuse = 0.77244141
+url-nonreuse-label = "high"
+domain-dispersion = 0.48345149
+domain-dispersion-label = "medium"
+discovery = 0.32800000
+discovery-label = "medium"
+enrichment = 0.53570714
+enrichment-label = "medium"
+extraction = 0.35608212
+extraction-label = "low"
+difficulty = 0.50640000
+difficulty-label = "medium"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 1040.87260103
-width-label = "xlarge"
-depth = 0.08238343
-depth-label = "low"
-extraction = 0.22673212
-extraction-label = "low"
-dispersion = 0.48345149
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

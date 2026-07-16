@@ -13,20 +13,23 @@ required_file_paths = [
     "results_ai_gtm_deployability_provenance.integration_provenance.jsonl",
     "results_ai_gtm_deployability_provenance.operational_provenance.jsonl",
 ]
+wandr_task = "ai_gtm_deployability_provenance"
+member_keys = ["tool"]
+url-nonreuse = 0.96501800
+url-nonreuse-label = "high"
+domain-dispersion = 0.36288338
+domain-dispersion-label = "low"
+discovery = 0.14047619
+discovery-label = "low"
+enrichment = 0.83907430
+enrichment-label = "high"
+extraction = 0.87975583
+extraction-label = "high"
 difficulty = 0.51964286
 difficulty-label = "medium"
-wandr_task = "ai_gtm_deployability_provenance"
 
 verticals = ["tech"]
 topology = "composite"
-width = 484.62238967
-width-label = "large"
-depth = 0.22671857
-depth-label = "medium"
-extraction = 0.57621725
-extraction-label = "high"
-dispersion = 0.36288338
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

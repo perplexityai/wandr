@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_humanoid_fiber_tendon_patents.jsonl",
 ]
-difficulty = 0.155
-difficulty-label = "low"
 wandr_task = "humanoid_fiber_tendon_patents"
+member_keys = ["author_publication"]
+url-nonreuse = 0.99189835
+url-nonreuse-label = "high"
+domain-dispersion = 0.02069641
+domain-dispersion-label = "low"
+discovery = 0.05000000
+discovery-label = "low"
+enrichment = 0.44392079
+enrichment-label = "low"
+extraction = 0.54012668
+extraction-label = "medium"
+difficulty = 0.15500000
+difficulty-label = "low"
 
 verticals = ["patents"]
 topology = "flat"
-width = 25.56302211
-width-label = "tiny"
-depth = 0.12625014
-depth-label = "medium"
-extraction = 0.3671183
-extraction-label = "low"
-dispersion = 0.02069641
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

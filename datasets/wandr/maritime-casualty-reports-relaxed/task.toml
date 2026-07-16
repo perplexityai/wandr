@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_maritime_casualty_reports_relaxed.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "maritime_casualty_reports_relaxed"
+member_keys = ["vessel"]
+url-nonreuse = 0.93532709
+url-nonreuse-label = "high"
+domain-dispersion = 0.08060924
+domain-dispersion-label = "low"
+discovery = 0.20370370
+discovery-label = "medium"
+enrichment = 0.30037037
+enrichment-label = "low"
+extraction = 0.10553646
+extraction-label = "low"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["events"]
 topology = "flat"
-width = 319.78203295
-width-label = "medium"
-depth = 0.10340517
-depth-label = "medium"
-extraction = 0.15813839
-extraction-label = "low"
-dispersion = 0.08060924
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

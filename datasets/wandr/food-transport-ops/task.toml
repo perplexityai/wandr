@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_food_transport_ops.jsonl",
 ]
+wandr_task = "food_transport_ops"
+member_keys = ["operator"]
+url-nonreuse = 0.62162235
+url-nonreuse-label = "medium"
+domain-dispersion = 0.66113594
+domain-dispersion-label = "high"
+discovery = 0.31466667
+discovery-label = "medium"
+enrichment = 0.62332784
+enrichment-label = "medium"
+extraction = 0.64308544
+extraction-label = "high"
 difficulty = 0.60833333
 difficulty-label = "medium"
-wandr_task = "food_transport_ops"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 879.46588994
-width-label = "large"
-depth = 0.11570957
-depth-label = "medium"
-extraction = 0.4990721
-extraction-label = "medium"
-dispersion = 0.66113594
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

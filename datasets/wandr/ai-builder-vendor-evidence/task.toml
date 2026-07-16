@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_builder_vendor_evidence.jsonl",
 ]
+wandr_task = "ai_builder_vendor_evidence"
+member_keys = ["vendor"]
+url-nonreuse = 0.74763665
+url-nonreuse-label = "high"
+domain-dispersion = 0.40948818
+domain-dispersion-label = "low"
+discovery = 0.29166667
+discovery-label = "medium"
+enrichment = 0.31657748
+enrichment-label = "low"
+extraction = 0.64287107
+extraction-label = "high"
 difficulty = 0.18583333
 difficulty-label = "low"
-wandr_task = "ai_builder_vendor_evidence"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 3164.30910401
-width-label = "xlarge"
-depth = 0.07381051
-depth-label = "low"
-extraction = 0.49174788
-extraction-label = "medium"
-dispersion = 0.40948818
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

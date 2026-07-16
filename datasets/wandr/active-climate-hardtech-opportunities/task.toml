@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_active_climate_hardtech_opportunities.jsonl",
 ]
-difficulty = 0.925
-difficulty-label = "high"
 wandr_task = "active_climate_hardtech_opportunities"
+member_keys = ["opportunity"]
+url-nonreuse = 0.49839929
+url-nonreuse-label = "medium"
+domain-dispersion = 0.38320106
+domain-dispersion-label = "low"
+discovery = 0.56166667
+discovery-label = "high"
+enrichment = 0.57983772
+enrichment-label = "medium"
+extraction = 0.55415033
+extraction-label = "medium"
+difficulty = 0.92500000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 106.85851744
-width-label = "small"
-depth = 1.01362864
-depth-label = "xhigh"
-extraction = 0.5960309
-extraction-label = "high"
-dispersion = 0.38320106
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

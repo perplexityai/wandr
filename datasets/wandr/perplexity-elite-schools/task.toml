@@ -11,20 +11,23 @@ required_file_paths = [
     "results_perplexity_elite_schools.jsonl",
     "results_perplexity_elite_schools.school_authorized_affiliation.jsonl",
 ]
+wandr_task = "perplexity_elite_schools"
+member_keys = ["school_person"]
+url-nonreuse = 0.94155617
+url-nonreuse-label = "high"
+domain-dispersion = 0.57728932
+domain-dispersion-label = "medium"
+discovery = 0.52631579
+discovery-label = "high"
+enrichment = 0.42150673
+enrichment-label = "low"
+extraction = 0.38267677
+extraction-label = "low"
 difficulty = 0.48684211
 difficulty-label = "medium"
-wandr_task = "perplexity_elite_schools"
 
 verticals = ["people", "academic"]
 topology = "hierarchical"
-width = 52.64807154
-width-label = "small"
-depth = 0.35863255
-depth-label = "medium"
-extraction = 0.38594507
-extraction-label = "low"
-dispersion = 0.57728932
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

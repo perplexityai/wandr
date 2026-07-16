@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_dutch_spiritual_influencers.jsonl",
 ]
-difficulty = 0.68
-difficulty-label = "high"
 wandr_task = "dutch_spiritual_influencers"
+member_keys = ["person"]
+url-nonreuse = 0.79909555
+url-nonreuse-label = "high"
+domain-dispersion = 0.69082575
+domain-dispersion-label = "high"
+discovery = 0.00333333
+discovery-label = "low"
+enrichment = 0.79159864
+enrichment-label = "high"
+extraction = 0.73315737
+extraction-label = "high"
+difficulty = 0.68000000
+difficulty-label = "high"
 
 verticals = ["general", "social"]
 topology = "flat"
-width = 105.80710253
-width-label = "small"
-depth = 0.4444144
-depth-label = "high"
-extraction = 0.61246676
-extraction-label = "high"
-dispersion = 0.69082575
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fed_it_primes.jsonl",
 ]
+wandr_task = "fed_it_primes"
+member_keys = ["prime_awardee"]
+url-nonreuse = 0.52761551
+url-nonreuse-label = "medium"
+domain-dispersion = 0.54789594
+domain-dispersion-label = "medium"
+discovery = 0.38500000
+discovery-label = "medium"
+enrichment = 0.50312052
+enrichment-label = "medium"
+extraction = 0.52161923
+extraction-label = "medium"
 difficulty = 0.35729167
 difficulty-label = "low"
-wandr_task = "fed_it_primes"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 597.03654256
-width-label = "large"
-depth = 0.2294978
-depth-label = "medium"
-extraction = 0.42498003
-extraction-label = "medium"
-dispersion = 0.54789594
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

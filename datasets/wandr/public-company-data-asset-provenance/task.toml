@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_public_company_data_asset_provenance.jsonl",
 ]
-difficulty = 0.76875
-difficulty-label = "high"
 wandr_task = "public_company_data_asset_provenance"
+member_keys = ["data_asset"]
+url-nonreuse = 0.66022607
+url-nonreuse-label = "medium"
+domain-dispersion = 0.78885784
+domain-dispersion-label = "high"
+discovery = 0.71527778
+discovery-label = "high"
+enrichment = 0.50121667
+enrichment-label = "medium"
+extraction = 0.47204708
+extraction-label = "low"
+difficulty = 0.76875000
+difficulty-label = "high"
 
 verticals = ["general", "legal", "finance"]
 topology = "hierarchical"
-width = 303.70843136
-width-label = "medium"
-depth = 0.37365172
-depth-label = "medium"
-extraction = 0.49434625
-extraction-label = "medium"
-dispersion = 0.78885784
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

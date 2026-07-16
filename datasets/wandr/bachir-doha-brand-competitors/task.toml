@@ -10,20 +10,23 @@ keywords = ["wandr", "doha", "brand competitors", "market research", "retrieval"
 required_file_paths = [
     "results_bachir_doha_brand_competitors.jsonl",
 ]
-difficulty = 0.33375
-difficulty-label = "low"
 wandr_task = "bachir_doha_brand_competitors"
+member_keys = ["brand"]
+url-nonreuse = 0.32827186
+url-nonreuse-label = "low"
+domain-dispersion = 0.11685693
+domain-dispersion-label = "low"
+discovery = 0.15600000
+discovery-label = "low"
+enrichment = 0.48878444
+enrichment-label = "medium"
+extraction = 0.54132904
+extraction-label = "medium"
+difficulty = 0.33375000
+difficulty-label = "low"
 
 verticals = ["general", "e-com"]
 topology = "composite"
-width = 319.19407499
-width-label = "medium"
-depth = 0.0566232
-depth-label = "low"
-extraction = 0.43454712
-extraction-label = "medium"
-dispersion = 0.11685693
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_startup_funding_party_provenance.jsonl",
 ]
-difficulty = 0.815625
-difficulty-label = "high"
 wandr_task = "startup_funding_party_provenance"
+member_keys = ["round_participation"]
+url-nonreuse = 0.96137500
+url-nonreuse-label = "high"
+domain-dispersion = 0.57480908
+domain-dispersion-label = "medium"
+discovery = 0.72291667
+discovery-label = "high"
+enrichment = 0.35477912
+enrichment-label = "low"
+extraction = 0.53545296
+extraction-label = "medium"
+difficulty = 0.81562500
+difficulty-label = "high"
 
 verticals = ["general", "social"]
 topology = "hierarchical"
-width = 131.68906201
-width-label = "small"
-depth = 0.31153899
-depth-label = "medium"
-extraction = 0.54838566
-extraction-label = "high"
-dispersion = 0.57480908
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

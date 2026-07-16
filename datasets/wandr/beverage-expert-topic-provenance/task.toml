@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_beverage_expert_topic_provenance.jsonl",
 ]
+wandr_task = "beverage_expert_topic_provenance"
+member_keys = ["topic_expert"]
+url-nonreuse = 0.49977604
+url-nonreuse-label = "medium"
+domain-dispersion = 0.70833514
+domain-dispersion-label = "high"
+discovery = 0.51911765
+discovery-label = "high"
+enrichment = 0.47028778
+enrichment-label = "low"
+extraction = 0.41631862
+extraction-label = "low"
 difficulty = 0.60171569
 difficulty-label = "medium"
-wandr_task = "beverage_expert_topic_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 471.42601346
-width-label = "large"
-depth = 0.1021359
-depth-label = "medium"
-extraction = 0.36117382
-extraction-label = "low"
-dispersion = 0.70833514
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

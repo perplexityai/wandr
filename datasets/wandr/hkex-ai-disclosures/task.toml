@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_hkex_ai_disclosures.jsonl",
 ]
+wandr_task = "hkex_ai_disclosures"
+member_keys = ["issuer_facet_claim"]
+url-nonreuse = 0.28611173
+url-nonreuse-label = "low"
+domain-dispersion = 0.10547076
+domain-dispersion-label = "low"
+discovery = 0.14230769
+discovery-label = "low"
+enrichment = 0.62665873
+enrichment-label = "medium"
+extraction = 0.89605263
+extraction-label = "high"
 difficulty = 0.49038462
 difficulty-label = "medium"
-wandr_task = "hkex_ai_disclosures"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 55.83564917
-width-label = "small"
-depth = 0.24814621
-depth-label = "medium"
-extraction = 0.78140835
-extraction-label = "high"
-dispersion = 0.10547076
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

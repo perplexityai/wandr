@@ -11,20 +11,23 @@ required_file_paths = [
     "results_legal_ai_publications.jsonl",
     "results_legal_ai_publications.legal_ai_pieces.jsonl",
 ]
+wandr_task = "legal_ai_publications"
+member_keys = ["publication"]
+url-nonreuse = 0.92202588
+url-nonreuse-label = "high"
+domain-dispersion = 0.26370609
+domain-dispersion-label = "low"
+discovery = 0.43888889
+discovery-label = "high"
+enrichment = 0.76141903
+enrichment-label = "high"
+extraction = 0.84449199
+extraction-label = "high"
 difficulty = 0.79444444
 difficulty-label = "high"
-wandr_task = "legal_ai_publications"
 
 verticals = ["general", "events", "academic"]
 topology = "hierarchical"
-width = 383.72456685
-width-label = "medium"
-depth = 0.30574337
-depth-label = "medium"
-extraction = 0.74067523
-extraction-label = "high"
-dispersion = 0.26370609
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

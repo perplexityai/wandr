@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ambient_food_3pl.jsonl",
 ]
+wandr_task = "ambient_food_3pl"
+member_keys = ["provider"]
+url-nonreuse = 0.37934085
+url-nonreuse-label = "low"
+domain-dispersion = 0.93638683
+domain-dispersion-label = "high"
+discovery = 0.72761905
+discovery-label = "high"
+enrichment = 0.49850301
+enrichment-label = "medium"
+extraction = 0.76058942
+extraction-label = "high"
 difficulty = 0.85857143
 difficulty-label = "high"
-wandr_task = "ambient_food_3pl"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1689.62814473
-width-label = "xlarge"
-depth = 0.05055638
-depth-label = "low"
-extraction = 0.71897962
-extraction-label = "high"
-dispersion = 0.93638683
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

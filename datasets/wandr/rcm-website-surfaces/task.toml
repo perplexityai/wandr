@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_rcm_website_surfaces.jsonl",
 ]
+wandr_task = "rcm_website_surfaces"
+member_keys = ["company"]
+url-nonreuse = 0.73078803
+url-nonreuse-label = "medium"
+domain-dispersion = 0.56053805
+domain-dispersion-label = "medium"
+discovery = 0.10857143
+discovery-label = "low"
+enrichment = 0.90144946
+enrichment-label = "high"
+extraction = 0.84716272
+extraction-label = "high"
 difficulty = 0.83214286
 difficulty-label = "high"
-wandr_task = "rcm_website_surfaces"
 
 verticals = ["events", "e-com", "health"]
 topology = "hierarchical"
-width = 385.29576334
-width-label = "medium"
-depth = 1.95702046
-depth-label = "xhigh"
-extraction = 0.77779885
-extraction-label = "high"
-dispersion = 0.56053805
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

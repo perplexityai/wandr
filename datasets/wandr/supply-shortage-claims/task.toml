@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_supply_shortage_claims.jsonl",
 ]
+wandr_task = "supply_shortage_claims"
+member_keys = ["claim_case"]
+url-nonreuse = 0.49571172
+url-nonreuse-label = "medium"
+domain-dispersion = 0.49096069
+domain-dispersion-label = "medium"
+discovery = 0.57444444
+discovery-label = "high"
+enrichment = 0.57564478
+enrichment-label = "medium"
+extraction = 0.60637419
+extraction-label = "medium"
 difficulty = 0.71166667
 difficulty-label = "high"
-wandr_task = "supply_shortage_claims"
 
 verticals = ["events", "legal", "finance"]
 topology = "hierarchical"
-width = 324.59124505
-width-label = "medium"
-depth = 0.10498391
-depth-label = "medium"
-extraction = 0.58867276
-extraction-label = "high"
-dispersion = 0.49096069
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_time_tracking_product_provenance.jsonl",
 ]
+wandr_task = "time_tracking_product_provenance"
+member_keys = ["time_tracking_product"]
+url-nonreuse = 0.86660257
+url-nonreuse-label = "high"
+domain-dispersion = 0.45379588
+domain-dispersion-label = "medium"
+discovery = 0.40075758
+discovery-label = "medium"
+enrichment = 0.58564974
+enrichment-label = "medium"
+extraction = 0.65376106
+extraction-label = "high"
 difficulty = 0.38295455
 difficulty-label = "low"
-wandr_task = "time_tracking_product_provenance"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 1581.13057838
-width-label = "xlarge"
-depth = 0.09539394
-depth-label = "low"
-extraction = 0.45620803
-extraction-label = "medium"
-dispersion = 0.45379588
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

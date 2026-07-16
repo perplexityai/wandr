@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_musk_supplier_relationships.jsonl",
 ]
-difficulty = 0.7375
-difficulty-label = "high"
 wandr_task = "musk_supplier_relationships"
+member_keys = ["supplier_relationship"]
+url-nonreuse = 0.87067080
+url-nonreuse-label = "high"
+domain-dispersion = 0.88397460
+domain-dispersion-label = "high"
+discovery = 0.28333333
+discovery-label = "medium"
+enrichment = 0.57865826
+enrichment-label = "medium"
+extraction = 0.77074094
+extraction-label = "high"
+difficulty = 0.73750000
+difficulty-label = "high"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 127.25693105
-width-label = "small"
-depth = 0.28856435
-depth-label = "medium"
-extraction = 0.76982991
-extraction-label = "high"
-dispersion = 0.8839746
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_trailer_component_supplier_provenance.jsonl",
 ]
-difficulty = 0.5625
-difficulty-label = "medium"
 wandr_task = "trailer_component_supplier_provenance"
+member_keys = ["category_supplier"]
+url-nonreuse = 0.22312209
+url-nonreuse-label = "low"
+domain-dispersion = 0.55339023
+domain-dispersion-label = "medium"
+discovery = 0.33506944
+discovery-label = "medium"
+enrichment = 0.53073091
+enrichment-label = "medium"
+extraction = 0.56902585
+extraction-label = "medium"
+difficulty = 0.56250000
+difficulty-label = "medium"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 181.30153266
-width-label = "medium"
-depth = 0.05900522
-depth-label = "low"
-extraction = 0.52642423
-extraction-label = "medium"
-dispersion = 0.55339023
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

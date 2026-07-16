@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_concrete_tool_presence.jsonl",
 ]
-difficulty = 0.3046875
-difficulty-label = "low"
 wandr_task = "concrete_tool_presence"
+member_keys = ["manufacturer_sku_product"]
+url-nonreuse = 0.44760391
+url-nonreuse-label = "low"
+domain-dispersion = 0.47317056
+domain-dispersion-label = "medium"
+discovery = 0.23177083
+discovery-label = "medium"
+enrichment = 0.43395908
+enrichment-label = "low"
+extraction = 0.51751024
+extraction-label = "medium"
+difficulty = 0.30468750
+difficulty-label = "low"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 677.23640962
-width-label = "large"
-depth = 0.03919357
-depth-label = "low"
-extraction = 0.47088114
-extraction-label = "medium"
-dispersion = 0.47317056
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

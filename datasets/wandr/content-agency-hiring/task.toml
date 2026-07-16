@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_content_agency_hiring.jsonl",
 ]
-difficulty = 0.3
-difficulty-label = "low"
 wandr_task = "content_agency_hiring"
+member_keys = ["agency"]
+url-nonreuse = 0.54303916
+url-nonreuse-label = "medium"
+domain-dispersion = 0.43878115
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.43888889
+enrichment-label = "low"
+extraction = 0.42765336
+extraction-label = "low"
+difficulty = 0.30000000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "flat"
-width = 113.8367904
-width-label = "small"
-depth = 0.21344059
-depth-label = "medium"
-extraction = 0.39193385
-extraction-label = "medium"
-dispersion = 0.43878115
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

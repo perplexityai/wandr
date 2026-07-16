@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_community_association_software.jsonl",
 ]
+wandr_task = "community_association_software"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.78475225
+url-nonreuse-label = "high"
+domain-dispersion = 0.43944961
+domain-dispersion-label = "medium"
+discovery = 0.10000000
+discovery-label = "low"
+enrichment = 0.42104076
+enrichment-label = "low"
+extraction = 0.61046105
+extraction-label = "medium"
 difficulty = 0.32857143
 difficulty-label = "low"
-wandr_task = "community_association_software"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 427.70578794
-width-label = "medium"
-depth = 0.42474414
-depth-label = "high"
-extraction = 0.56917172
-extraction-label = "high"
-dispersion = 0.43944961
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

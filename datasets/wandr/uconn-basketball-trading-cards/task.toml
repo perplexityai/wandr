@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uconn_basketball_trading_cards.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "uconn_basketball_trading_cards"
+member_keys = ["player_card"]
+url-nonreuse = 0.52603984
+url-nonreuse-label = "medium"
+domain-dispersion = 0.04964538
+domain-dispersion-label = "low"
+discovery = 0.05777778
+discovery-label = "low"
+enrichment = 0.36375634
+enrichment-label = "low"
+extraction = 0.49587074
+extraction-label = "medium"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["e-com"]
 topology = "flat"
-width = 146.59935496
-width-label = "small"
-depth = 0.05743371
-depth-label = "low"
-extraction = 0.3540625
-extraction-label = "low"
-dispersion = 0.04964538
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

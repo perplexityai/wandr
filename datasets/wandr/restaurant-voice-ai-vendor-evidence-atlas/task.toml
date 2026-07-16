@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_restaurant_voice_ai_vendor_evidence_atlas.jsonl",
 ]
+wandr_task = "restaurant_voice_ai_vendor_evidence_atlas"
+member_keys = ["restaurant_voice_ai_company"]
+url-nonreuse = 0.68114218
+url-nonreuse-label = "medium"
+domain-dispersion = 0.55289770
+domain-dispersion-label = "medium"
+discovery = 0.28333333
+discovery-label = "medium"
+enrichment = 0.57852011
+enrichment-label = "medium"
+extraction = 0.42260682
+extraction-label = "low"
 difficulty = 0.40729167
 difficulty-label = "medium"
-wandr_task = "restaurant_voice_ai_vendor_evidence_atlas"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 715.25377373
-width-label = "large"
-depth = 0.54613432
-depth-label = "high"
-extraction = 0.32498356
-extraction-label = "low"
-dispersion = 0.5528977
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

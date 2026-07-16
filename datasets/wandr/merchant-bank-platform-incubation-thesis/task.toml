@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_merchant_bank_platform_incubation_thesis.jsonl",
 ]
+wandr_task = "merchant_bank_platform_incubation_thesis"
+member_keys = ["precedent_entity"]
+url-nonreuse = 0.40947148
+url-nonreuse-label = "low"
+domain-dispersion = 0.69963158
+domain-dispersion-label = "high"
+discovery = 0.15000000
+discovery-label = "low"
+enrichment = 0.24676871
+enrichment-label = "low"
+extraction = 0.60435935
+extraction-label = "medium"
 difficulty = 0.30803571
 difficulty-label = "low"
-wandr_task = "merchant_bank_platform_incubation_thesis"
 
 verticals = ["finance"]
 topology = "composite"
-width = 83.78659719
-width-label = "small"
-depth = 0.10124085
-depth-label = "medium"
-extraction = 0.59574748
-extraction-label = "high"
-dispersion = 0.69963158
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

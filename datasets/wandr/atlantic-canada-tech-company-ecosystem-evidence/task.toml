@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_atlantic_canada_tech_company_ecosystem_evidence.jsonl",
 ]
-difficulty = 0.2140625
-difficulty-label = "low"
 wandr_task = "atlantic_canada_tech_company_ecosystem_evidence"
+member_keys = ["company"]
+url-nonreuse = 0.64028656
+url-nonreuse-label = "medium"
+domain-dispersion = 0.46348331
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.58500000
+enrichment-label = "medium"
+extraction = 0.52576090
+extraction-label = "medium"
+difficulty = 0.21406250
+difficulty-label = "low"
 
 verticals = ["general", "events", "legal", "finance"]
 topology = "hierarchical"
-width = 1560.95740375
-width-label = "xlarge"
-depth = 0.10090331
-depth-label = "medium"
-extraction = 0.29737382
-extraction-label = "low"
-dispersion = 0.46348331
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

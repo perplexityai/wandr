@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_digital_health_revenue_ops_reciprocity.jsonl",
 ]
+wandr_task = "digital_health_revenue_ops_reciprocity"
+member_keys = ["platform_company", "revenue_ops_counterparty"]
+url-nonreuse = 0.41420103
+url-nonreuse-label = "low"
+domain-dispersion = 0.82367358
+domain-dispersion-label = "high"
+discovery = 0.51111111
+discovery-label = "high"
+enrichment = 0.48180572
+enrichment-label = "medium"
+extraction = 0.36532161
+extraction-label = "low"
 difficulty = 0.71041667
 difficulty-label = "high"
-wandr_task = "digital_health_revenue_ops_reciprocity"
 
 verticals = ["health"]
 topology = "hierarchical"
-width = 213.83091307
-width-label = "medium"
-depth = 0.26578363
-depth-label = "medium"
-extraction = 0.31006078
-extraction-label = "low"
-dispersion = 0.82367358
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_legal_ai_platform_claim_provenance.jsonl",
 ]
+wandr_task = "legal_ai_platform_claim_provenance"
+member_keys = ["legal_ai_platform"]
+url-nonreuse = 0.88563372
+url-nonreuse-label = "high"
+domain-dispersion = 0.47221559
+domain-dispersion-label = "medium"
+discovery = 0.37500000
+discovery-label = "medium"
+enrichment = 0.40774188
+enrichment-label = "low"
+extraction = 0.27827515
+extraction-label = "low"
 difficulty = 0.28229167
 difficulty-label = "low"
-wandr_task = "legal_ai_platform_claim_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 518.10298411
-width-label = "large"
-depth = 0.1899581
-depth-label = "medium"
-extraction = 0.20487166
-extraction-label = "low"
-dispersion = 0.47221559
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

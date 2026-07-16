@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bess_warranty_sources.jsonl",
 ]
+wandr_task = "bess_warranty_sources"
+member_keys = ["company_product"]
+url-nonreuse = 0.44075517
+url-nonreuse-label = "low"
+domain-dispersion = 0.87263003
+domain-dispersion-label = "high"
+discovery = 0.28666667
+discovery-label = "medium"
+enrichment = 0.47766399
+enrichment-label = "low"
+extraction = 0.63335364
+extraction-label = "high"
 difficulty = 0.46166667
 difficulty-label = "medium"
-wandr_task = "bess_warranty_sources"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 1495.44520835
-width-label = "xlarge"
-depth = 0.05500288
-depth-label = "low"
-extraction = 0.54352242
-extraction-label = "high"
-dispersion = 0.87263003
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

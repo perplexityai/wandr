@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_fragrance_house_capability_atlas.jsonl",
 ]
-difficulty = 0.79375
-difficulty-label = "high"
 wandr_task = "uk_fragrance_house_capability_atlas"
+member_keys = ["fragrance_house"]
+url-nonreuse = 0.40609377
+url-nonreuse-label = "low"
+domain-dispersion = 0.68859101
+domain-dispersion-label = "high"
+discovery = 0.71388889
+discovery-label = "high"
+enrichment = 0.42265391
+enrichment-label = "low"
+extraction = 0.39568778
+extraction-label = "low"
+difficulty = 0.79375000
+difficulty-label = "high"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 478.82936654
-width-label = "large"
-depth = 0.07232318
-depth-label = "low"
-extraction = 0.36410213
-extraction-label = "low"
-dispersion = 0.68859101
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

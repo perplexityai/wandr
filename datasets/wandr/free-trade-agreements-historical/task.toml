@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_free_trade_agreements_historical.jsonl",
 ]
-difficulty = 0.065
-difficulty-label = "low"
 wandr_task = "free_trade_agreements_historical"
+member_keys = ["trade_deal"]
+url-nonreuse = 0.71682884
+url-nonreuse-label = "medium"
+domain-dispersion = 0.35694678
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.48166667
+enrichment-label = "medium"
+extraction = 0.57996468
+extraction-label = "medium"
+difficulty = 0.06500000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "flat"
-width = 105.16748205
-width-label = "small"
-depth = 0.13548415
-depth-label = "medium"
-extraction = 0.32610552
-extraction-label = "low"
-dispersion = 0.35694678
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

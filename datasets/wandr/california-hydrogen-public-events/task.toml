@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_california_hydrogen_public_events.jsonl",
 ]
+wandr_task = "california_hydrogen_public_events"
+member_keys = ["public_event"]
+url-nonreuse = 0.60506113
+url-nonreuse-label = "medium"
+domain-dispersion = 0.25771437
+domain-dispersion-label = "low"
+discovery = 0.62857143
+discovery-label = "high"
+enrichment = 0.64444276
+enrichment-label = "high"
+extraction = 0.44473905
+extraction-label = "low"
 difficulty = 0.54714286
 difficulty-label = "medium"
-wandr_task = "california_hydrogen_public_events"
 
 verticals = ["legal"]
 topology = "flat"
-width = 128.73803807
-width-label = "small"
-depth = 0.51576147
-depth-label = "high"
-extraction = 0.3700317
-extraction-label = "low"
-dispersion = 0.25771437
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

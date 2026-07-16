@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_sales_tax_economic_nexus.jsonl",
 ]
+wandr_task = "sales_tax_economic_nexus"
+member_keys = ["state"]
+url-nonreuse = 0.19697845
+url-nonreuse-label = "low"
+domain-dispersion = 0.82739211
+domain-dispersion-label = "high"
+discovery = 0.00444444
+discovery-label = "low"
+enrichment = 0.38881313
+enrichment-label = "low"
+extraction = 0.35718686
+extraction-label = "low"
 difficulty = 0.20833333
 difficulty-label = "low"
-wandr_task = "sales_tax_economic_nexus"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 76.69137505
-width-label = "small"
-depth = 0.05050587
-depth-label = "low"
-extraction = 0.28121825
-extraction-label = "low"
-dispersion = 0.82739211
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

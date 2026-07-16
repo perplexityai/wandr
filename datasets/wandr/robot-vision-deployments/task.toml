@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_robot_vision_deployments.jsonl",
 ]
+wandr_task = "robot_vision_deployments"
+member_keys = ["use_case_deployment_case"]
+url-nonreuse = 0.85768087
+url-nonreuse-label = "high"
+domain-dispersion = 0.74272076
+domain-dispersion-label = "high"
+discovery = 0.41435185
+discovery-label = "medium"
+enrichment = 0.61768210
+enrichment-label = "medium"
+extraction = 0.54621849
+extraction-label = "medium"
 difficulty = 0.71180556
 difficulty-label = "high"
-wandr_task = "robot_vision_deployments"
 
 verticals = ["general"]
 topology = "composite"
-width = 164.54912094
-width-label = "medium"
-depth = 0.3938548
-depth-label = "medium"
-extraction = 0.52333075
-extraction-label = "medium"
-dispersion = 0.74272076
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

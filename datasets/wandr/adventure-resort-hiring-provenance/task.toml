@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_adventure_resort_hiring_provenance.jsonl",
 ]
+wandr_task = "adventure_resort_hiring_provenance"
+member_keys = ["operator"]
+url-nonreuse = 0.64509502
+url-nonreuse-label = "medium"
+domain-dispersion = 0.62162148
+domain-dispersion-label = "high"
+discovery = 0.40119048
+discovery-label = "medium"
+enrichment = 0.51334232
+enrichment-label = "medium"
+extraction = 0.51561696
+extraction-label = "medium"
 difficulty = 0.54166667
 difficulty-label = "medium"
-wandr_task = "adventure_resort_hiring_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 589.6370959
-width-label = "large"
-depth = 0.26978456
-depth-label = "medium"
-extraction = 0.44515356
-extraction-label = "medium"
-dispersion = 0.62162148
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

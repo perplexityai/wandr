@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_latam_fare_payment_programs.jsonl",
 ]
+wandr_task = "latam_fare_payment_programs"
+member_keys = ["fare_payment_program"]
+url-nonreuse = 0.43023659
+url-nonreuse-label = "low"
+domain-dispersion = 0.81439784
+domain-dispersion-label = "high"
+discovery = 0.16071429
+discovery-label = "low"
+enrichment = 0.74869947
+enrichment-label = "high"
+extraction = 0.80740392
+extraction-label = "high"
 difficulty = 0.70238095
 difficulty-label = "high"
-wandr_task = "latam_fare_payment_programs"
 
 verticals = ["general", "legal", "finance"]
 topology = "hierarchical"
-width = 143.51269726
-width-label = "small"
-depth = 0.73598504
-depth-label = "high"
-extraction = 0.77526024
-extraction-label = "high"
-dispersion = 0.81439784
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

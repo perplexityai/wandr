@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_good_standing_certificates.jsonl",
 ]
+wandr_task = "good_standing_certificates"
+member_keys = ["jurisdiction"]
+url-nonreuse = 0.54489550
+url-nonreuse-label = "medium"
+domain-dispersion = 0.83048582
+domain-dispersion-label = "high"
+discovery = 0.11764706
+discovery-label = "low"
+enrichment = 0.34869503
+enrichment-label = "low"
+extraction = 0.33174908
+extraction-label = "low"
 difficulty = 0.25163399
 difficulty-label = "low"
-wandr_task = "good_standing_certificates"
 
 verticals = ["legal"]
 topology = "flat"
-width = 154.14890913
-width-label = "medium"
-depth = 0.10641558
-depth-label = "medium"
-extraction = 0.30212661
-extraction-label = "low"
-dispersion = 0.83048582
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

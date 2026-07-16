@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_food_distribution_facility_project_evidence.jsonl",
 ]
+wandr_task = "food_distribution_facility_project_evidence"
+member_keys = ["facility_project"]
+url-nonreuse = 0.93901833
+url-nonreuse-label = "high"
+domain-dispersion = 0.63080578
+domain-dispersion-label = "high"
+discovery = 0.41388889
+discovery-label = "medium"
+enrichment = 0.40863165
+enrichment-label = "low"
+extraction = 0.61516255
+extraction-label = "medium"
 difficulty = 0.43958333
 difficulty-label = "medium"
-wandr_task = "food_distribution_facility_project_evidence"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 269.11091348
-width-label = "medium"
-depth = 0.4261917
-depth-label = "high"
-extraction = 0.52239337
-extraction-label = "medium"
-dispersion = 0.63080578
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

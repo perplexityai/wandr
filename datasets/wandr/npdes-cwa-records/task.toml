@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_npdes_cwa_records.jsonl",
 ]
-difficulty = 0.135
-difficulty-label = "low"
 wandr_task = "npdes_cwa_records"
+member_keys = ["npdes_permit"]
+url-nonreuse = 0.50879873
+url-nonreuse-label = "medium"
+domain-dispersion = 0.04773694
+domain-dispersion-label = "low"
+discovery = 0.07833333
+discovery-label = "low"
+enrichment = 0.62072068
+enrichment-label = "medium"
+extraction = 0.59349654
+extraction-label = "medium"
+difficulty = 0.13500000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 86.49640294
-width-label = "small"
-depth = 0.18345742
-depth-label = "medium"
-extraction = 0.50135677
-extraction-label = "medium"
-dispersion = 0.04773694
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

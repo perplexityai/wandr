@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_africa_entrepreneur_support.jsonl",
 ]
-difficulty = 0.316
-difficulty-label = "low"
 wandr_task = "africa_entrepreneur_support"
+member_keys = ["country_support_role_actor"]
+url-nonreuse = 0.64564418
+url-nonreuse-label = "medium"
+domain-dispersion = 0.87359942
+domain-dispersion-label = "high"
+discovery = 0.19360000
+discovery-label = "low"
+enrichment = 0.53860138
+enrichment-label = "medium"
+extraction = 0.60055684
+extraction-label = "medium"
+difficulty = 0.31600000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 315.11543424
-width-label = "medium"
-depth = 0.20851174
-depth-label = "medium"
-extraction = 0.50209677
-extraction-label = "medium"
-dispersion = 0.87359942
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

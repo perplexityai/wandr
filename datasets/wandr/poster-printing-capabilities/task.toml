@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_poster_printing_capabilities.jsonl",
 ]
+wandr_task = "poster_printing_capabilities"
+member_keys = ["poster_product"]
+url-nonreuse = 0.42508031
+url-nonreuse-label = "low"
+domain-dispersion = 0.35351023
+domain-dispersion-label = "low"
+discovery = 0.29398148
+discovery-label = "medium"
+enrichment = 0.63021126
+enrichment-label = "high"
+extraction = 0.58188287
+extraction-label = "medium"
 difficulty = 0.49537037
 difficulty-label = "medium"
-wandr_task = "poster_printing_capabilities"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 192.59093912
-width-label = "medium"
-depth = 0.53157661
-depth-label = "high"
-extraction = 0.49337209
-extraction-label = "medium"
-dispersion = 0.35351023
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

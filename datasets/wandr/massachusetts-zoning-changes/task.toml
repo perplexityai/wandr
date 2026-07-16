@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_massachusetts_zoning_changes.jsonl",
 ]
+wandr_task = "massachusetts_zoning_changes"
+member_keys = ["municipal_zoning_change"]
+url-nonreuse = 0.49772405
+url-nonreuse-label = "medium"
+domain-dispersion = 0.61227583
+domain-dispersion-label = "medium"
+discovery = 0.74000000
+discovery-label = "high"
+enrichment = 0.69174603
+enrichment-label = "high"
+extraction = 0.57097289
+extraction-label = "medium"
 difficulty = 0.92361111
 difficulty-label = "high"
-wandr_task = "massachusetts_zoning_changes"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 404.88379669
-width-label = "medium"
-depth = 3.68793915
-depth-label = "xhigh"
-extraction = 0.51685216
-extraction-label = "medium"
-dispersion = 0.61227583
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

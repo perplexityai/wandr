@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ria_signals.jsonl",
 ]
-difficulty = 0.38375
-difficulty-label = "low"
 wandr_task = "ria_signals"
+member_keys = ["firm"]
+url-nonreuse = 0.67565213
+url-nonreuse-label = "medium"
+domain-dispersion = 0.47186946
+domain-dispersion-label = "medium"
+discovery = 0.22000000
+discovery-label = "medium"
+enrichment = 0.54392857
+enrichment-label = "medium"
+extraction = 0.62466132
+extraction-label = "high"
+difficulty = 0.38375000
+difficulty-label = "low"
 
 verticals = ["general", "events", "finance"]
 topology = "hierarchical"
-width = 571.98159426
-width-label = "large"
-depth = 0.26330005
-depth-label = "medium"
-extraction = 0.50979957
-extraction-label = "medium"
-dispersion = 0.47186946
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

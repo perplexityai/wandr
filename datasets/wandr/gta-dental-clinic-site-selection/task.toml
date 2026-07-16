@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_gta_dental_clinic_site_selection.jsonl",
 ]
+wandr_task = "gta_dental_clinic_site_selection"
+member_keys = ["submarket"]
+url-nonreuse = 0.66444523
+url-nonreuse-label = "medium"
+domain-dispersion = 0.55370561
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.61378205
+enrichment-label = "medium"
+extraction = 0.41752682
+extraction-label = "low"
 difficulty = 0.34615385
 difficulty-label = "low"
-wandr_task = "gta_dental_clinic_site_selection"
 
 verticals = ["legal", "e-com", "health"]
 topology = "composite"
-width = 107.45868318
-width-label = "small"
-depth = 0.18608705
-depth-label = "medium"
-extraction = 0.37817756
-extraction-label = "low"
-dispersion = 0.55370561
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

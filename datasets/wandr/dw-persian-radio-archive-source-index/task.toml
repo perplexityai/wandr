@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_dw_persian_radio_archive_source_index.jsonl",
 ]
+wandr_task = "dw_persian_radio_archive_source_index"
+member_keys = ["archive_holding"]
+url-nonreuse = 0.43811030
+url-nonreuse-label = "low"
+domain-dispersion = 0.60572766
+domain-dispersion-label = "medium"
+discovery = 0.66800000
+discovery-label = "high"
+enrichment = 0.48122877
+enrichment-label = "medium"
+extraction = 0.70982872
+extraction-label = "high"
 difficulty = 0.85333333
 difficulty-label = "high"
-wandr_task = "dw_persian_radio_archive_source_index"
 
 verticals = ["academic"]
 topology = "hierarchical"
-width = 126.88976261
-width-label = "small"
-depth = 0.59564581
-depth-label = "high"
-extraction = 0.81579699
-extraction-label = "high"
-dispersion = 0.60572766
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

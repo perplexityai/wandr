@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_agri_solar_channels.jsonl",
 ]
+wandr_task = "agri_solar_channels"
+member_keys = ["company"]
+url-nonreuse = 0.95821449
+url-nonreuse-label = "high"
+domain-dispersion = 0.55164574
+domain-dispersion-label = "medium"
+discovery = 0.59733333
+discovery-label = "high"
+enrichment = 0.37035656
+enrichment-label = "low"
+extraction = 0.44557764
+extraction-label = "low"
 difficulty = 0.26333333
 difficulty-label = "low"
-wandr_task = "agri_solar_channels"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 1084.98269701
-width-label = "xlarge"
-depth = 0.1210827
-depth-label = "medium"
-extraction = 0.29924912
-extraction-label = "low"
-dispersion = 0.55164574
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

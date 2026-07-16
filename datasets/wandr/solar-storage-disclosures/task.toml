@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_solar_storage_disclosures.jsonl",
 ]
+wandr_task = "solar_storage_disclosures"
+member_keys = ["project_context"]
+url-nonreuse = 0.60146011
+url-nonreuse-label = "medium"
+domain-dispersion = 0.52196891
+domain-dispersion-label = "medium"
+discovery = 0.33500000
+discovery-label = "medium"
+enrichment = 0.49773794
+enrichment-label = "medium"
+extraction = 0.48093781
+extraction-label = "low"
 difficulty = 0.59027778
 difficulty-label = "medium"
-wandr_task = "solar_storage_disclosures"
 
 verticals = ["general", "events", "legal"]
 topology = "hierarchical"
-width = 467.65008015
-width-label = "large"
-depth = 0.50968735
-depth-label = "high"
-extraction = 0.38060507
-extraction-label = "low"
-dispersion = 0.52196891
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

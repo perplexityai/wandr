@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_game_meat_exporter_provenance.jsonl",
 ]
+wandr_task = "game_meat_exporter_provenance"
+member_keys = ["provenance_actor"]
+url-nonreuse = 0.21880687
+url-nonreuse-label = "low"
+domain-dispersion = 0.88648588
+domain-dispersion-label = "high"
+discovery = 0.05000000
+discovery-label = "low"
+enrichment = 0.64083333
+enrichment-label = "high"
+extraction = 0.48443475
+extraction-label = "low"
 difficulty = 0.55833333
 difficulty-label = "medium"
-wandr_task = "game_meat_exporter_provenance"
 
 verticals = ["general", "legal", "e-com"]
 topology = "hierarchical"
-width = 310.29821756
-width-label = "medium"
-depth = 0.07127338
-depth-label = "low"
-extraction = 0.4602573
-extraction-label = "medium"
-dispersion = 0.88648588
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

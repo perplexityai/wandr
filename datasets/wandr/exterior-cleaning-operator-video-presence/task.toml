@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_exterior_cleaning_operator_video_presence.jsonl",
 ]
-difficulty = 0.6775
-difficulty-label = "high"
 wandr_task = "exterior_cleaning_operator_video_presence"
+member_keys = ["operator"]
+url-nonreuse = 0.58671884
+url-nonreuse-label = "medium"
+domain-dispersion = 0.56152490
+domain-dispersion-label = "medium"
+discovery = 0.46200000
+discovery-label = "high"
+enrichment = 0.61381076
+enrichment-label = "medium"
+extraction = 0.43247681
+extraction-label = "low"
+difficulty = 0.67750000
+difficulty-label = "high"
 
 verticals = ["general", "social"]
 topology = "hierarchical"
-width = 324.98397312
-width-label = "medium"
-depth = 0.49821958
-depth-label = "high"
-extraction = 0.41149328
-extraction-label = "medium"
-dispersion = 0.5615249
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

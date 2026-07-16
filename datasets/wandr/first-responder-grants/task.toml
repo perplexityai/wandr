@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_first_responder_grants.jsonl",
 ]
-difficulty = 0.44375
-difficulty-label = "medium"
 wandr_task = "first_responder_grants"
+member_keys = ["program_cycle"]
+url-nonreuse = 0.83237254
+url-nonreuse-label = "high"
+domain-dispersion = 0.88053712
+domain-dispersion-label = "high"
+discovery = 0.61458333
+discovery-label = "high"
+enrichment = 0.26358202
+enrichment-label = "low"
+extraction = 0.52465835
+extraction-label = "medium"
+difficulty = 0.44375000
+difficulty-label = "medium"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 77.15560141
-width-label = "small"
-depth = 0.37976258
-depth-label = "medium"
-extraction = 0.45633272
-extraction-label = "medium"
-dispersion = 0.88053712
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

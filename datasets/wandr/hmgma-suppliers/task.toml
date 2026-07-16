@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_hmgma_suppliers.jsonl",
 ]
+wandr_task = "hmgma_suppliers"
+member_keys = ["supplier_facility"]
+url-nonreuse = 0.82098927
+url-nonreuse-label = "high"
+domain-dispersion = 0.53397927
+domain-dispersion-label = "medium"
+discovery = 0.09313725
+discovery-label = "low"
+enrichment = 0.48629630
+enrichment-label = "medium"
+extraction = 0.45363018
+extraction-label = "low"
 difficulty = 0.46078431
 difficulty-label = "medium"
-wandr_task = "hmgma_suppliers"
 
 verticals = ["general", "events", "legal"]
 topology = "hierarchical"
-width = 107.57657048
-width-label = "small"
-depth = 0.17610648
-depth-label = "medium"
-extraction = 0.44832794
-extraction-label = "medium"
-dispersion = 0.53397927
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

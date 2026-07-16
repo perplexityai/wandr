@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_chrome_rod_disclosures.jsonl",
 ]
-difficulty = 0.615
-difficulty-label = "medium"
 wandr_task = "chrome_rod_disclosures"
+member_keys = ["supplier"]
+url-nonreuse = 0.31050184
+url-nonreuse-label = "low"
+domain-dispersion = 0.90438212
+domain-dispersion-label = "high"
+discovery = 0.56800000
+discovery-label = "high"
+enrichment = 0.48742687
+enrichment-label = "medium"
+extraction = 0.50842282
+extraction-label = "medium"
+difficulty = 0.61500000
+difficulty-label = "medium"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 267.8914941
-width-label = "medium"
-depth = 0.06798756
-depth-label = "low"
-extraction = 0.55294286
-extraction-label = "high"
-dispersion = 0.90438212
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

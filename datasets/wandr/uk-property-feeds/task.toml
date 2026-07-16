@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_property_feeds.jsonl",
 ]
+wandr_task = "uk_property_feeds"
+member_keys = ["source_product_or_provider"]
+url-nonreuse = 0.32321002
+url-nonreuse-label = "low"
+domain-dispersion = 0.81535773
+domain-dispersion-label = "high"
+discovery = 0.01388889
+discovery-label = "low"
+enrichment = 0.43623737
+enrichment-label = "low"
+extraction = 0.44821456
+extraction-label = "low"
 difficulty = 0.19791667
 difficulty-label = "low"
-wandr_task = "uk_property_feeds"
 
 verticals = ["tech"]
 topology = "flat"
-width = 361.44270834
-width-label = "medium"
-depth = 0.01121952
-depth-label = "low"
-extraction = 0.31310822
-extraction-label = "low"
-dispersion = 0.81535773
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

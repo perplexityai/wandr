@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_artisan_brand_visibility.jsonl",
 ]
+wandr_task = "artisan_brand_visibility"
+member_keys = ["brand"]
+url-nonreuse = 0.95429782
+url-nonreuse-label = "high"
+domain-dispersion = 0.66949671
+domain-dispersion-label = "high"
+discovery = 0.12333333
+discovery-label = "low"
+enrichment = 0.61543103
+enrichment-label = "medium"
+extraction = 0.35820625
+extraction-label = "low"
 difficulty = 0.38333333
 difficulty-label = "low"
-wandr_task = "artisan_brand_visibility"
 
 verticals = ["events", "e-com", "social"]
 topology = "hierarchical"
-width = 246.90522288
-width-label = "medium"
-depth = 0.24388099
-depth-label = "medium"
-extraction = 0.29511992
-extraction-label = "low"
-dispersion = 0.66949671
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

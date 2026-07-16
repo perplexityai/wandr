@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_governance_jobs.jsonl",
 ]
-difficulty = 0.43125
-difficulty-label = "medium"
 wandr_task = "ai_governance_jobs"
+member_keys = ["company_title"]
+url-nonreuse = 0.93921106
+url-nonreuse-label = "high"
+domain-dispersion = 0.42399838
+domain-dispersion-label = "medium"
+discovery = 0.35000000
+discovery-label = "medium"
+enrichment = 0.69525381
+enrichment-label = "high"
+extraction = 0.60638889
+extraction-label = "medium"
+difficulty = 0.43125000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "flat"
-width = 57.71477716
-width-label = "small"
-depth = 0.42900368
-depth-label = "high"
-extraction = 0.40311593
-extraction-label = "medium"
-dispersion = 0.42399838
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

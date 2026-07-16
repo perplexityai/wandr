@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uae_current_transformers.jsonl",
 ]
-difficulty = 0.605
-difficulty-label = "medium"
 wandr_task = "uae_current_transformers"
+member_keys = ["entity"]
+url-nonreuse = 0.18145608
+url-nonreuse-label = "low"
+domain-dispersion = 0.54893302
+domain-dispersion-label = "medium"
+discovery = 0.70833333
+discovery-label = "high"
+enrichment = 0.41687113
+enrichment-label = "low"
+extraction = 0.55249953
+extraction-label = "medium"
+difficulty = 0.60500000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 293.09620242
-width-label = "medium"
-depth = 0.17464018
-depth-label = "medium"
-extraction = 0.56444193
-extraction-label = "high"
-dispersion = 0.54893302
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

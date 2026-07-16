@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_southeast_asia_broadcast_media.jsonl",
 ]
+wandr_task = "southeast_asia_broadcast_media"
+member_keys = ["country_media_entity"]
+url-nonreuse = 0.65187127
+url-nonreuse-label = "medium"
+domain-dispersion = 0.65422513
+domain-dispersion-label = "high"
+discovery = 0.55925926
+discovery-label = "high"
+enrichment = 0.49618056
+enrichment-label = "medium"
+extraction = 0.58111745
+extraction-label = "medium"
 difficulty = 0.57777778
 difficulty-label = "medium"
-wandr_task = "southeast_asia_broadcast_media"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 1126.80976904
-width-label = "xlarge"
-depth = 0.33335776
-depth-label = "medium"
-extraction = 0.50466017
-extraction-label = "medium"
-dispersion = 0.65422513
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

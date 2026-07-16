@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_chennai_trucking.jsonl",
 ]
+wandr_task = "chennai_trucking"
+member_keys = ["operator"]
+url-nonreuse = 0.50993413
+url-nonreuse-label = "medium"
+domain-dispersion = 0.15404884
+domain-dispersion-label = "low"
+discovery = 0.60250000
+discovery-label = "high"
+enrichment = 0.40716592
+enrichment-label = "low"
+extraction = 0.58084138
+extraction-label = "medium"
 difficulty = 0.14791667
 difficulty-label = "low"
-wandr_task = "chennai_trucking"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 755.6857253
-width-label = "large"
-depth = 0.06715726
-depth-label = "low"
-extraction = 0.3315345
-extraction-label = "low"
-dispersion = 0.15404884
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

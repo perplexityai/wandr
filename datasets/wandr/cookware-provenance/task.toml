@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_cookware_provenance.jsonl",
 ]
-difficulty = 0.624
-difficulty-label = "medium"
 wandr_task = "cookware_provenance"
+member_keys = ["company_or_brand"]
+url-nonreuse = 0.52002823
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60503951
+domain-dispersion-label = "medium"
+discovery = 0.25000000
+discovery-label = "medium"
+enrichment = 0.70028087
+enrichment-label = "high"
+extraction = 0.69688931
+extraction-label = "high"
+difficulty = 0.62400000
+difficulty-label = "medium"
 
 verticals = ["general", "legal", "e-com"]
 topology = "hierarchical"
-width = 619.35143934
-width-label = "large"
-depth = 0.20777267
-depth-label = "medium"
-extraction = 0.53856322
-extraction-label = "high"
-dispersion = 0.60503951
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

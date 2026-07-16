@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_chicago_turo_vehicle_unit_economics.jsonl",
 ]
-difficulty = 0.5
-difficulty-label = "medium"
 wandr_task = "chicago_turo_vehicle_unit_economics"
+member_keys = ["vehicle_model"]
+url-nonreuse = 0.63295817
+url-nonreuse-label = "medium"
+domain-dispersion = 0.08023168
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.66203704
+enrichment-label = "high"
+extraction = 0.64397016
+extraction-label = "high"
+difficulty = 0.50000000
+difficulty-label = "medium"
 
 verticals = ["finance", "e-com"]
 topology = "composite"
-width = 157.7935693
-width-label = "medium"
-depth = 0.09499361
-depth-label = "low"
-extraction = 0.50679907
-extraction-label = "medium"
-dispersion = 0.08023168
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

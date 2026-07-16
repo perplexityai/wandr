@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_upc_offering_mechanics.jsonl",
 ]
-difficulty = 0.16
-difficulty-label = "low"
 wandr_task = "upc_offering_mechanics"
+member_keys = ["offering_event"]
+url-nonreuse = 0.33704700
+url-nonreuse-label = "low"
+domain-dispersion = 0.02174518
+domain-dispersion-label = "low"
+discovery = 0.48000000
+discovery-label = "high"
+enrichment = 0.35744242
+enrichment-label = "low"
+extraction = 0.55899640
+extraction-label = "medium"
+difficulty = 0.16000000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 302.99565723
-width-label = "medium"
-depth = 0.24299065
-depth-label = "medium"
-extraction = 0.40090693
-extraction-label = "medium"
-dispersion = 0.02174518
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

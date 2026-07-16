@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_restaurant_matting_product_roles.jsonl",
 ]
+wandr_task = "restaurant_matting_product_roles"
+member_keys = ["supplier_offering"]
+url-nonreuse = 0.11478016
+url-nonreuse-label = "low"
+domain-dispersion = 0.41795041
+domain-dispersion-label = "low"
+discovery = 0.50231481
+discovery-label = "high"
+enrichment = 0.71039672
+enrichment-label = "high"
+extraction = 0.70707528
+extraction-label = "high"
 difficulty = 0.76909722
 difficulty-label = "high"
-wandr_task = "restaurant_matting_product_roles"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 397.86092298
-width-label = "medium"
-depth = 0.07208226
-depth-label = "low"
-extraction = 0.69589706
-extraction-label = "high"
-dispersion = 0.41795041
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

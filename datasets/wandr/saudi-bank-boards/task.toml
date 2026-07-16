@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_saudi_bank_boards.jsonl",
 ]
+wandr_task = "saudi_bank_boards"
+member_keys = ["board_member"]
+url-nonreuse = 0.14271201
+url-nonreuse-label = "low"
+domain-dispersion = 0.48814859
+domain-dispersion-label = "medium"
+discovery = 0.32000000
+discovery-label = "medium"
+enrichment = 0.49629587
+enrichment-label = "medium"
+extraction = 0.55674520
+extraction-label = "medium"
 difficulty = 0.51666667
 difficulty-label = "medium"
-wandr_task = "saudi_bank_boards"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 103.26355721
-width-label = "small"
-depth = 0.11019649
-depth-label = "medium"
-extraction = 0.48431807
-extraction-label = "medium"
-dispersion = 0.48814859
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

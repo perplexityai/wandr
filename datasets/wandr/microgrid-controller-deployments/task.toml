@@ -12,20 +12,23 @@ required_file_paths = [
     "results_microgrid_controller_deployments.control_layer.jsonl",
     "results_microgrid_controller_deployments.benefit_status.jsonl",
 ]
+wandr_task = "microgrid_controller_deployments"
+member_keys = ["deployment"]
+url-nonreuse = 0.47175014
+url-nonreuse-label = "low"
+domain-dispersion = 0.80091329
+domain-dispersion-label = "high"
+discovery = 0.14583333
+discovery-label = "low"
+enrichment = 0.43915919
+enrichment-label = "low"
+extraction = 0.73902300
+extraction-label = "high"
 difficulty = 0.13333333
 difficulty-label = "low"
-wandr_task = "microgrid_controller_deployments"
 
 verticals = ["general"]
 topology = "flat"
-width = 134.75853692
-width-label = "small"
-depth = 0.06043073
-depth-label = "low"
-extraction = 0.52404486
-extraction-label = "medium"
-dispersion = 0.80091329
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

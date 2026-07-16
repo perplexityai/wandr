@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_maritime_port_shore_power_deployments.jsonl",
 ]
-difficulty = 0.435
-difficulty-label = "medium"
 wandr_task = "maritime_port_shore_power_deployments"
+member_keys = ["shore_power_deployment"]
+url-nonreuse = 0.48621772
+url-nonreuse-label = "medium"
+domain-dispersion = 0.86174586
+domain-dispersion-label = "high"
+discovery = 0.39250000
+discovery-label = "medium"
+enrichment = 0.41355814
+enrichment-label = "low"
+extraction = 0.20615707
+extraction-label = "low"
+difficulty = 0.43500000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "flat"
-width = 83.58815832
-width-label = "small"
-depth = 0.48320025
-depth-label = "high"
-extraction = 0.24371857
-extraction-label = "low"
-dispersion = 0.86174586
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

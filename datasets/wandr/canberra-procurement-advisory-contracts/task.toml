@@ -11,20 +11,23 @@ required_file_paths = [
     "results_canberra_procurement_advisory_contracts.jsonl",
     "results_canberra_procurement_advisory_contracts.supplier_profiles.jsonl",
 ]
+wandr_task = "canberra_procurement_advisory_contracts"
+member_keys = ["contract_award"]
+url-nonreuse = 0.84911734
+url-nonreuse-label = "high"
+domain-dispersion = 0.18705520
+domain-dispersion-label = "low"
+discovery = 0.61342593
+discovery-label = "high"
+enrichment = 0.57121887
+enrichment-label = "medium"
+extraction = 0.78975690
+extraction-label = "high"
 difficulty = 0.31423611
 difficulty-label = "low"
-wandr_task = "canberra_procurement_advisory_contracts"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 667.87975885
-width-label = "large"
-depth = 0.10432439
-depth-label = "medium"
-extraction = 0.56709575
-extraction-label = "high"
-dispersion = 0.1870552
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

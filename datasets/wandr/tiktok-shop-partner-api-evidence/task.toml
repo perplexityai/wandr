@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_tiktok_shop_partner_api_evidence.jsonl",
 ]
+wandr_task = "tiktok_shop_partner_api_evidence"
+member_keys = ["capability_surface"]
+url-nonreuse = 0.28597117
+url-nonreuse-label = "low"
+domain-dispersion = 0.04342183
+domain-dispersion-label = "low"
+discovery = 0.03611111
+discovery-label = "low"
+enrichment = 0.43918884
+enrichment-label = "low"
+extraction = 0.51903778
+extraction-label = "medium"
 difficulty = 0.37916667
 difficulty-label = "low"
-wandr_task = "tiktok_shop_partner_api_evidence"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 504.72738376
-width-label = "large"
-depth = 0.01128761
-depth-label = "low"
-extraction = 0.45651326
-extraction-label = "medium"
-dispersion = 0.04342183
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

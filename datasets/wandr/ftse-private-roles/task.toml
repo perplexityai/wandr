@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ftse_private_roles.jsonl",
 ]
+wandr_task = "ftse_private_roles"
+member_keys = ["company"]
+url-nonreuse = 0.78089089
+url-nonreuse-label = "high"
+domain-dispersion = 0.78699662
+domain-dispersion-label = "high"
+discovery = 0.12500000
+discovery-label = "low"
+enrichment = 0.38416132
+enrichment-label = "low"
+extraction = 0.27649087
+extraction-label = "low"
 difficulty = 0.29166667
 difficulty-label = "low"
-wandr_task = "ftse_private_roles"
 
 verticals = ["general"]
 topology = "flat"
-width = 100.68639953
-width-label = "small"
-depth = 0.15472892
-depth-label = "medium"
-extraction = 0.26853364
-extraction-label = "low"
-dispersion = 0.78699662
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

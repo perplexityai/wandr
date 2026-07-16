@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_siirt_hydropower.jsonl",
 ]
-difficulty = 0.721875
-difficulty-label = "high"
 wandr_task = "siirt_hydropower"
+member_keys = ["project"]
+url-nonreuse = 0.41116079
+url-nonreuse-label = "low"
+domain-dispersion = 0.51063912
+domain-dispersion-label = "medium"
+discovery = 0.33750000
+discovery-label = "medium"
+enrichment = 0.58781793
+enrichment-label = "medium"
+extraction = 0.58267524
+extraction-label = "medium"
+difficulty = 0.72187500
+difficulty-label = "high"
 
 verticals = ["general", "events", "legal"]
 topology = "hierarchical"
-width = 130.17035225
-width-label = "small"
-depth = 0.12532355
-depth-label = "medium"
-extraction = 0.54710738
-extraction-label = "high"
-dispersion = 0.51063912
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_energy_consultant_claims.jsonl",
 ]
+wandr_task = "energy_consultant_claims"
+member_keys = ["firm"]
+url-nonreuse = 0.66096991
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60130516
+domain-dispersion-label = "medium"
+discovery = 0.10933333
+discovery-label = "low"
+enrichment = 0.53905882
+enrichment-label = "medium"
+extraction = 0.49446155
+extraction-label = "medium"
 difficulty = 0.24166667
 difficulty-label = "low"
-wandr_task = "energy_consultant_claims"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 398.88382957
-width-label = "medium"
-depth = 0.42244139
-depth-label = "high"
-extraction = 0.41845281
-extraction-label = "medium"
-dispersion = 0.60130516
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

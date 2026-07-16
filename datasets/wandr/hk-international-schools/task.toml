@@ -12,20 +12,23 @@ required_file_paths = [
     "results_hk_international_schools.school_notable_alumni.jsonl",
     "results_hk_international_schools.school_notable_alumni.alumni_professional_achievements.jsonl",
 ]
-difficulty = 0.54
-difficulty-label = "medium"
 wandr_task = "hk_international_schools"
+member_keys = ["school"]
+url-nonreuse = 0.47759443
+url-nonreuse-label = "low"
+domain-dispersion = 0.10245782
+domain-dispersion-label = "low"
+discovery = 0.16666667
+discovery-label = "low"
+enrichment = 0.75638889
+enrichment-label = "high"
+extraction = 0.46027149
+extraction-label = "low"
+difficulty = 0.54000000
+difficulty-label = "medium"
 
 verticals = ["wikis"]
 topology = "hierarchical"
-width = 108.74336169
-width-label = "small"
-depth = 0.20281437
-depth-label = "medium"
-extraction = 0.42783077
-extraction-label = "medium"
-dispersion = 0.10245782
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

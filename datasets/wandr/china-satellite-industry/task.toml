@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_china_satellite_industry.jsonl",
 ]
+wandr_task = "china_satellite_industry"
+member_keys = ["business_signal"]
+url-nonreuse = 0.67211378
+url-nonreuse-label = "medium"
+domain-dispersion = 0.76050040
+domain-dispersion-label = "high"
+discovery = 0.28273810
+discovery-label = "medium"
+enrichment = 0.61569162
+enrichment-label = "medium"
+extraction = 0.53552043
+extraction-label = "medium"
 difficulty = 0.69047619
 difficulty-label = "high"
-wandr_task = "china_satellite_industry"
 
 verticals = ["general", "events", "legal"]
 topology = "composite"
-width = 197.47112847
-width-label = "medium"
-depth = 0.50447277
-depth-label = "high"
-extraction = 0.52883626
-extraction-label = "medium"
-dispersion = 0.7605004
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

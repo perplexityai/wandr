@@ -13,20 +13,23 @@ required_file_paths = [
     "results_fda_drug_lineage.drug_molecules.molecule_sole_discoverers.jsonl",
     "results_fda_drug_lineage.drug_molecules.molecule_sole_discoverers.scientist_phds.jsonl",
 ]
-difficulty = 0.8
-difficulty-label = "high"
 wandr_task = "fda_drug_lineage"
+member_keys = ["drug"]
+url-nonreuse = 0.25805707
+url-nonreuse-label = "low"
+domain-dispersion = 0.85311318
+domain-dispersion-label = "high"
+discovery = 0.18333333
+discovery-label = "low"
+enrichment = 0.85555556
+enrichment-label = "high"
+extraction = 0.35714286
+extraction-label = "low"
+difficulty = 0.80000000
+difficulty-label = "high"
 
 verticals = ["health"]
 topology = "composite"
-width = 48.4162773
-width-label = "tiny"
-depth = 0.28478981
-depth-label = "medium"
-extraction = 0.23796996
-extraction-label = "low"
-dispersion = 0.85311318
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

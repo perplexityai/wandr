@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_transparent_led_products.jsonl",
 ]
+wandr_task = "transparent_led_products"
+member_keys = ["display_product"]
+url-nonreuse = 0.79550160
+url-nonreuse-label = "high"
+domain-dispersion = 0.68950150
+domain-dispersion-label = "high"
+discovery = 0.25238095
+discovery-label = "medium"
+enrichment = 0.60465712
+enrichment-label = "medium"
+extraction = 0.41529727
+extraction-label = "low"
 difficulty = 0.56190476
 difficulty-label = "medium"
-wandr_task = "transparent_led_products"
 
 verticals = ["events", "e-com", "social"]
 topology = "hierarchical"
-width = 156.41498081
-width-label = "medium"
-depth = 0.16370339
-depth-label = "medium"
-extraction = 0.39365543
-extraction-label = "medium"
-dispersion = 0.6895015
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

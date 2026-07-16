@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_wa_grocery_distributor_capability_provenance.jsonl",
 ]
+wandr_task = "wa_grocery_distributor_capability_provenance"
+member_keys = ["distributor"]
+url-nonreuse = 0.16889015
+url-nonreuse-label = "low"
+domain-dispersion = 0.61895921
+domain-dispersion-label = "medium"
+discovery = 0.52380952
+discovery-label = "high"
+enrichment = 0.31775221
+enrichment-label = "low"
+extraction = 0.61780016
+extraction-label = "high"
 difficulty = 0.52142857
 difficulty-label = "medium"
-wandr_task = "wa_grocery_distributor_capability_provenance"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 289.39182058
-width-label = "medium"
-depth = 0.03549892
-depth-label = "low"
-extraction = 0.53209424
-extraction-label = "high"
-dispersion = 0.61895921
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

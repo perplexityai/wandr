@@ -11,20 +11,23 @@ required_file_paths = [
     "results_b2b_integration_reciprocity.jsonl",
     "results_b2b_integration_reciprocity.provider_profiles.jsonl",
 ]
+wandr_task = "b2b_integration_reciprocity"
+member_keys = ["provider", "counterpart"]
+url-nonreuse = 0.89509532
+url-nonreuse-label = "high"
+domain-dispersion = 0.29333740
+domain-dispersion-label = "low"
+discovery = 0.64037037
+discovery-label = "high"
+enrichment = 0.29745370
+enrichment-label = "low"
+extraction = 0.84711303
+extraction-label = "high"
 difficulty = 0.51833333
 difficulty-label = "medium"
-wandr_task = "b2b_integration_reciprocity"
 
 verticals = ["tech"]
 topology = "composite"
-width = 1922.84787273
-width-label = "xlarge"
-depth = 0.06234332
-depth-label = "low"
-extraction = 0.83799556
-extraction-label = "high"
-dispersion = 0.2933374
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

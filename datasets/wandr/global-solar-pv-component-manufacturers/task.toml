@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_global_solar_pv_component_manufacturers.jsonl",
 ]
-difficulty = 0.34375
-difficulty-label = "low"
 wandr_task = "global_solar_pv_component_manufacturers"
+member_keys = ["tier_company"]
+url-nonreuse = 0.75631796
+url-nonreuse-label = "high"
+domain-dispersion = 0.74497810
+domain-dispersion-label = "high"
+discovery = 0.07222222
+discovery-label = "low"
+enrichment = 0.53027733
+enrichment-label = "medium"
+extraction = 0.47567050
+extraction-label = "low"
+difficulty = 0.34375000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 322.08215975
-width-label = "medium"
-depth = 0.22393766
-depth-label = "medium"
-extraction = 0.41055212
-extraction-label = "medium"
-dispersion = 0.7449781
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

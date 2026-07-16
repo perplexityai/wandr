@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_sec_8k_material_events.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "sec_8k_material_events"
+member_keys = ["company_filing_date_item_code"]
+url-nonreuse = 0.84064296
+url-nonreuse-label = "high"
+domain-dispersion = 0.00880541
+domain-dispersion-label = "low"
+discovery = 0.15529412
+discovery-label = "low"
+enrichment = 0.10000000
+enrichment-label = "low"
+extraction = 0.20000000
+extraction-label = "low"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "flat"
-width = 207.01305926
-width-label = "medium"
-depth = 0.04216548
-depth-label = "low"
-extraction = 0.02332262
-extraction-label = "low"
-dispersion = 0.00880541
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

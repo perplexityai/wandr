@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fund_vehicles.jsonl",
 ]
+wandr_task = "fund_vehicles"
+member_keys = ["fund_vehicle"]
+url-nonreuse = 0.49693441
+url-nonreuse-label = "medium"
+domain-dispersion = 0.16675946
+domain-dispersion-label = "low"
+discovery = 0.27625000
+discovery-label = "medium"
+enrichment = 0.56849359
+enrichment-label = "medium"
+extraction = 0.48552899
+extraction-label = "medium"
 difficulty = 0.28958333
 difficulty-label = "low"
-wandr_task = "fund_vehicles"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 568.80957246
-width-label = "large"
-depth = 0.15432635
-depth-label = "medium"
-extraction = 0.43022881
-extraction-label = "medium"
-dispersion = 0.16675946
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

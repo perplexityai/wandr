@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_cardiac_surgery_signals.jsonl",
 ]
+wandr_task = "us_cardiac_surgery_signals"
+member_keys = ["procedure_segment"]
+url-nonreuse = 0.45967657
+url-nonreuse-label = "low"
+domain-dispersion = 0.56388275
+domain-dispersion-label = "medium"
+discovery = 0.02777778
+discovery-label = "low"
+enrichment = 0.62878788
+enrichment-label = "medium"
+extraction = 0.83972558
+extraction-label = "high"
 difficulty = 0.55208333
 difficulty-label = "medium"
-wandr_task = "us_cardiac_surgery_signals"
 
 verticals = ["academic", "health"]
 topology = "hierarchical"
-width = 31.55938041
-width-label = "tiny"
-depth = 1.1593169
-depth-label = "xhigh"
-extraction = 0.8038884
-extraction-label = "high"
-dispersion = 0.56388275
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

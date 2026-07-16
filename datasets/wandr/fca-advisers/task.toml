@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fca_advisers.jsonl",
 ]
-difficulty = 0.90375
-difficulty-label = "high"
 wandr_task = "fca_advisers"
+member_keys = ["firm_adviser"]
+url-nonreuse = 0.64672855
+url-nonreuse-label = "medium"
+domain-dispersion = 0.17084997
+domain-dispersion-label = "low"
+discovery = 0.91875000
+discovery-label = "high"
+enrichment = 0.44343989
+enrichment-label = "low"
+extraction = 0.48600077
+extraction-label = "medium"
+difficulty = 0.90375000
+difficulty-label = "high"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 1269.00170863
-width-label = "xlarge"
-depth = 0.63752134
-depth-label = "high"
-extraction = 0.46734664
-extraction-label = "medium"
-dispersion = 0.17084997
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

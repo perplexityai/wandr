@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bc_mechanical_procurement.jsonl",
 ]
+wandr_task = "bc_mechanical_procurement"
+member_keys = ["authority_source_record"]
+url-nonreuse = 0.74503032
+url-nonreuse-label = "medium"
+domain-dispersion = 0.45380081
+domain-dispersion-label = "medium"
+discovery = 0.44259259
+discovery-label = "high"
+enrichment = 0.59892689
+enrichment-label = "medium"
+extraction = 0.64428904
+extraction-label = "high"
 difficulty = 0.66666667
 difficulty-label = "high"
-wandr_task = "bc_mechanical_procurement"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 92.4828807
-width-label = "small"
-depth = 0.43899553
-depth-label = "high"
-extraction = 0.65374571
-extraction-label = "high"
-dispersion = 0.45380081
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

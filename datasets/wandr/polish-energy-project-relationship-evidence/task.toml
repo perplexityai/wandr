@@ -11,20 +11,23 @@ required_file_paths = [
     "results_polish_energy_project_relationship_evidence.jsonl",
     "results_polish_energy_project_relationship_evidence.independent_project_relationship_evidence.jsonl",
 ]
-difficulty = 0.62
-difficulty-label = "medium"
 wandr_task = "polish_energy_project_relationship_evidence"
+member_keys = ["company_project"]
+url-nonreuse = 0.74555138
+url-nonreuse-label = "medium"
+domain-dispersion = 0.73792853
+domain-dispersion-label = "high"
+discovery = 0.48500000
+discovery-label = "high"
+enrichment = 0.57520879
+enrichment-label = "medium"
+extraction = 0.73424564
+extraction-label = "high"
+difficulty = 0.62000000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "composite"
-width = 255.73625506
-width-label = "medium"
-depth = 0.48866753
-depth-label = "high"
-extraction = 0.59132554
-extraction-label = "high"
-dispersion = 0.73792853
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

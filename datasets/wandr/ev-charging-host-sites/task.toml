@@ -11,20 +11,23 @@ required_file_paths = [
     "results_ev_charging_host_sites.jsonl",
     "results_ev_charging_host_sites.site_corroboration.jsonl",
 ]
-difficulty = 0.98
-difficulty-label = "high"
 wandr_task = "ev_charging_host_sites"
+member_keys = ["site_name_location_region"]
+url-nonreuse = 0.54905029
+url-nonreuse-label = "medium"
+domain-dispersion = 0.31173616
+domain-dispersion-label = "low"
+discovery = 0.44777778
+discovery-label = "high"
+enrichment = 0.92702739
+enrichment-label = "high"
+extraction = 0.65737132
+extraction-label = "high"
+difficulty = 0.98000000
+difficulty-label = "high"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 1801.39743869
-width-label = "xlarge"
-depth = 2.59783962
-depth-label = "xhigh"
-extraction = 0.60831637
-extraction-label = "high"
-dispersion = 0.31173616
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_accounting_ai_claims.jsonl",
 ]
+wandr_task = "accounting_ai_claims"
+member_keys = ["platform_claim"]
+url-nonreuse = 0.51006019
+url-nonreuse-label = "medium"
+domain-dispersion = 0.64496741
+domain-dispersion-label = "high"
+discovery = 0.09567901
+discovery-label = "low"
+enrichment = 0.57557737
+enrichment-label = "medium"
+extraction = 0.61023298
+extraction-label = "medium"
 difficulty = 0.63888889
 difficulty-label = "medium"
-wandr_task = "accounting_ai_claims"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 95.39315647
-width-label = "small"
-depth = 0.14761808
-depth-label = "medium"
-extraction = 0.59225936
-extraction-label = "high"
-dispersion = 0.64496741
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

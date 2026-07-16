@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_dubai_fitness_brand_competitors.jsonl",
 ]
+wandr_task = "dubai_fitness_brand_competitors"
+member_keys = ["brand"]
+url-nonreuse = 0.26498470
+url-nonreuse-label = "low"
+domain-dispersion = 0.29768700
+domain-dispersion-label = "low"
+discovery = 0.03333333
+discovery-label = "low"
+enrichment = 0.43679677
+enrichment-label = "low"
+extraction = 0.69218601
+extraction-label = "high"
 difficulty = 0.05833333
 difficulty-label = "low"
-wandr_task = "dubai_fitness_brand_competitors"
 
 verticals = ["e-com"]
 topology = "flat"
-width = 231.25886445
-width-label = "medium"
-depth = 0.04634175
-depth-label = "low"
-extraction = 0.51075177
-extraction-label = "medium"
-dispersion = 0.297687
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

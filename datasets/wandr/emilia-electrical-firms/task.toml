@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_emilia_electrical_firms.jsonl",
 ]
+wandr_task = "emilia_electrical_firms"
+member_keys = ["firm"]
+url-nonreuse = 0.60674874
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60592435
+domain-dispersion-label = "medium"
+discovery = 0.38833333
+discovery-label = "medium"
+enrichment = 0.41941077
+enrichment-label = "low"
+extraction = 0.51837723
+extraction-label = "medium"
 difficulty = 0.22833333
 difficulty-label = "low"
-wandr_task = "emilia_electrical_firms"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 377.78429288
-width-label = "medium"
-depth = 0.12208306
-depth-label = "medium"
-extraction = 0.3680126
-extraction-label = "low"
-dispersion = 0.60592435
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_roleplay_ecosystem.jsonl",
 ]
-difficulty = 0.5859375
-difficulty-label = "medium"
 wandr_task = "ai_roleplay_ecosystem"
+member_keys = ["product"]
+url-nonreuse = 0.84100154
+url-nonreuse-label = "high"
+domain-dispersion = 0.39909067
+domain-dispersion-label = "low"
+discovery = 0.40250000
+discovery-label = "medium"
+enrichment = 0.57001299
+enrichment-label = "medium"
+extraction = 0.53597549
+extraction-label = "medium"
+difficulty = 0.58593750
+difficulty-label = "medium"
 
 verticals = ["general", "community", "tech"]
 topology = "hierarchical"
-width = 461.54052618
-width-label = "large"
-depth = 0.93413775
-depth-label = "high"
-extraction = 0.43160978
-extraction-label = "medium"
-dispersion = 0.39909067
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

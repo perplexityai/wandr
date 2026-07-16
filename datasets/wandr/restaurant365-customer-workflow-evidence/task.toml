@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_restaurant365_customer_workflow_evidence.jsonl",
 ]
+wandr_task = "restaurant365_customer_workflow_evidence"
+member_keys = ["customer_operator"]
+url-nonreuse = 0.45232164
+url-nonreuse-label = "low"
+domain-dispersion = 0.10693189
+domain-dispersion-label = "low"
+discovery = 0.01090909
+discovery-label = "low"
+enrichment = 0.62583916
+enrichment-label = "medium"
+extraction = 0.90583127
+extraction-label = "high"
 difficulty = 0.51363636
 difficulty-label = "medium"
-wandr_task = "restaurant365_customer_workflow_evidence"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 184.86407644
-width-label = "medium"
-depth = 0.08050401
-depth-label = "low"
-extraction = 0.90525813
-extraction-label = "high"
-dispersion = 0.10693189
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_environmental_violations.jsonl",
 ]
+wandr_task = "environmental_violations"
+member_keys = ["company_violation"]
+url-nonreuse = 0.48272800
+url-nonreuse-label = "low"
+domain-dispersion = 0.42719156
+domain-dispersion-label = "medium"
+discovery = 0.17500000
+discovery-label = "low"
+enrichment = 0.76999834
+enrichment-label = "high"
+extraction = 0.56083280
+extraction-label = "medium"
 difficulty = 0.73333333
 difficulty-label = "high"
-wandr_task = "environmental_violations"
 
 verticals = ["legal"]
 topology = "flat"
-width = 104.2600381
-width-label = "small"
-depth = 0.52016844
-depth-label = "high"
-extraction = 0.37800976
-extraction-label = "low"
-dispersion = 0.42719156
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

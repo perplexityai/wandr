@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_alternative_protein_signals.jsonl",
 ]
-difficulty = 0.565
-difficulty-label = "medium"
 wandr_task = "alternative_protein_signals"
+member_keys = ["company"]
+url-nonreuse = 0.88454873
+url-nonreuse-label = "high"
+domain-dispersion = 0.49515178
+domain-dispersion-label = "medium"
+discovery = 0.10400000
+discovery-label = "low"
+enrichment = 0.75877778
+enrichment-label = "high"
+extraction = 0.52482420
+extraction-label = "medium"
+difficulty = 0.56500000
+difficulty-label = "medium"
 
 verticals = ["general", "events", "finance", "e-com"]
 topology = "hierarchical"
-width = 411.81441816
-width-label = "medium"
-depth = 0.27363795
-depth-label = "medium"
-extraction = 0.39856497
-extraction-label = "medium"
-dispersion = 0.49515178
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

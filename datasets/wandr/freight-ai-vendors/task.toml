@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_freight_ai_vendors.jsonl",
 ]
-difficulty = 0.48875
-difficulty-label = "medium"
 wandr_task = "freight_ai_vendors"
+member_keys = ["vendor"]
+url-nonreuse = 0.99002929
+url-nonreuse-label = "high"
+domain-dispersion = 0.60392598
+domain-dispersion-label = "medium"
+discovery = 0.70583333
+discovery-label = "high"
+enrichment = 0.31073134
+enrichment-label = "low"
+extraction = 0.52074110
+extraction-label = "medium"
+difficulty = 0.48875000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1322.00697694
-width-label = "xlarge"
-depth = 0.51176914
-depth-label = "high"
-extraction = 0.29291541
-extraction-label = "low"
-dispersion = 0.60392598
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

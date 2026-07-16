@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_recent_type_foundries.jsonl",
 ]
+wandr_task = "recent_type_foundries"
+member_keys = ["foundry"]
+url-nonreuse = 0.82076832
+url-nonreuse-label = "high"
+domain-dispersion = 0.29251926
+domain-dispersion-label = "low"
+discovery = 0.53866667
+discovery-label = "high"
+enrichment = 0.33720572
+enrichment-label = "low"
+extraction = 0.48762224
+extraction-label = "medium"
 difficulty = 0.20333333
 difficulty-label = "low"
-wandr_task = "recent_type_foundries"
 
 verticals = ["events"]
 topology = "hierarchical"
-width = 573.73417284
-width-label = "large"
-depth = 0.11398629
-depth-label = "medium"
-extraction = 0.4553409
-extraction-label = "medium"
-dispersion = 0.29251926
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

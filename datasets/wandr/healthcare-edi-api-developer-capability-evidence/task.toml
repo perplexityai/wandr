@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_healthcare_edi_api_developer_capability_evidence.jsonl",
 ]
+wandr_task = "healthcare_edi_api_developer_capability_evidence"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.58771776
+url-nonreuse-label = "medium"
+domain-dispersion = 0.45579943
+domain-dispersion-label = "medium"
+discovery = 0.49696970
+discovery-label = "high"
+enrichment = 0.49125750
+enrichment-label = "medium"
+extraction = 0.44130638
+extraction-label = "low"
 difficulty = 0.60151515
 difficulty-label = "medium"
-wandr_task = "healthcare_edi_api_developer_capability_evidence"
 
 verticals = ["health", "tech"]
 topology = "hierarchical"
-width = 414.442911
-width-label = "medium"
-depth = 0.17404424
-depth-label = "medium"
-extraction = 0.43978376
-extraction-label = "medium"
-dispersion = 0.45579943
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

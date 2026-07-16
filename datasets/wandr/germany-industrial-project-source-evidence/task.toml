@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_germany_industrial_project_source_evidence.jsonl",
 ]
+wandr_task = "germany_industrial_project_source_evidence"
+member_keys = ["project"]
+url-nonreuse = 0.38392133
+url-nonreuse-label = "low"
+domain-dispersion = 0.34832113
+domain-dispersion-label = "low"
+discovery = 0.33600000
+discovery-label = "medium"
+enrichment = 0.46802083
+enrichment-label = "low"
+extraction = 0.61388249
+extraction-label = "medium"
 difficulty = 0.15416667
 difficulty-label = "low"
-wandr_task = "germany_industrial_project_source_evidence"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 591.76729119
-width-label = "large"
-depth = 0.14510422
-depth-label = "medium"
-extraction = 0.44335135
-extraction-label = "medium"
-dispersion = 0.34832113
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

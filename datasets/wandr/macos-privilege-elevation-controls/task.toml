@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_macos_privilege_elevation_controls.jsonl",
 ]
-difficulty = 0.575
-difficulty-label = "medium"
 wandr_task = "macos_privilege_elevation_controls"
+member_keys = ["macos_elevation_offering"]
+url-nonreuse = 0.34167156
+url-nonreuse-label = "low"
+domain-dispersion = 0.71199055
+domain-dispersion-label = "high"
+discovery = 0.29444444
+discovery-label = "medium"
+enrichment = 0.52656476
+enrichment-label = "medium"
+extraction = 0.60051977
+extraction-label = "medium"
+difficulty = 0.57500000
+difficulty-label = "medium"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 235.52349628
-width-label = "medium"
-depth = 0.06408491
-depth-label = "low"
-extraction = 0.56768
-extraction-label = "high"
-dispersion = 0.71199055
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

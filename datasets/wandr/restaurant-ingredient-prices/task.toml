@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_restaurant_ingredient_prices.jsonl",
 ]
-difficulty = 0.9212963
-difficulty-label = "high"
 wandr_task = "restaurant_ingredient_prices"
+member_keys = ["ingredient_component"]
+url-nonreuse = 0.60443521
+url-nonreuse-label = "medium"
+domain-dispersion = 0.37368288
+domain-dispersion-label = "low"
+discovery = 0.78549383
+discovery-label = "high"
+enrichment = 0.59845134
+enrichment-label = "medium"
+extraction = 0.59728488
+extraction-label = "medium"
+difficulty = 0.92129630
+difficulty-label = "high"
 
 verticals = ["finance", "e-com"]
 topology = "hierarchical"
-width = 252.85492416
-width-label = "medium"
-depth = 0.4524637
-depth-label = "high"
-extraction = 0.51003246
-extraction-label = "medium"
-dispersion = 0.37368288
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

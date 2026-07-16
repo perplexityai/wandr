@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_generation_transactions.jsonl",
 ]
+wandr_task = "generation_transactions"
+member_keys = ["generation_transaction_event"]
+url-nonreuse = 0.50017528
+url-nonreuse-label = "medium"
+domain-dispersion = 0.18806190
+domain-dispersion-label = "low"
+discovery = 0.44622222
+discovery-label = "high"
+enrichment = 0.55801981
+enrichment-label = "medium"
+extraction = 0.56634241
+extraction-label = "medium"
 difficulty = 0.53555556
 difficulty-label = "medium"
-wandr_task = "generation_transactions"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 1194.72975066
-width-label = "xlarge"
-depth = 1.23733868
-depth-label = "xhigh"
-extraction = 0.30108335
-extraction-label = "low"
-dispersion = 0.1880619
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

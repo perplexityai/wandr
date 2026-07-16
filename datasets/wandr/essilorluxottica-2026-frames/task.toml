@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_essilorluxottica_2026_frames.jsonl",
 ]
+wandr_task = "essilorluxottica_2026_frames"
+member_keys = ["brand_frame"]
+url-nonreuse = 0.82811576
+url-nonreuse-label = "high"
+domain-dispersion = 0.07583148
+domain-dispersion-label = "low"
+discovery = 0.31640625
+discovery-label = "medium"
+enrichment = 0.90179325
+enrichment-label = "high"
+extraction = 0.65112613
+extraction-label = "high"
 difficulty = 0.88085938
 difficulty-label = "high"
-wandr_task = "essilorluxottica_2026_frames"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 350.48198188
-width-label = "medium"
-depth = 0.62874054
-depth-label = "high"
-extraction = 0.38997377
-extraction-label = "medium"
-dispersion = 0.07583148
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_assembly_equipment_channels.jsonl",
 ]
+wandr_task = "assembly_equipment_channels"
+member_keys = ["channel_relationship"]
+url-nonreuse = 0.61356290
+url-nonreuse-label = "medium"
+domain-dispersion = 0.62727690
+domain-dispersion-label = "high"
+discovery = 0.32800000
+discovery-label = "medium"
+enrichment = 0.59048308
+enrichment-label = "medium"
+extraction = 0.47473757
+extraction-label = "low"
 difficulty = 0.66666667
 difficulty-label = "high"
-wandr_task = "assembly_equipment_channels"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 162.95602927
-width-label = "medium"
-depth = 0.30160464
-depth-label = "medium"
-extraction = 0.36667256
-extraction-label = "low"
-dispersion = 0.6272769
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

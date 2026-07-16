@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_virginia_k12_districts.jsonl",
 ]
-difficulty = 0.3995098
-difficulty-label = "low"
 wandr_task = "virginia_k12_districts"
+member_keys = ["district"]
+url-nonreuse = 0.41779337
+url-nonreuse-label = "low"
+domain-dispersion = 0.82273804
+domain-dispersion-label = "high"
+discovery = 0.14215686
+discovery-label = "low"
+enrichment = 0.42441169
+enrichment-label = "low"
+extraction = 0.37858953
+extraction-label = "low"
+difficulty = 0.39950980
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "flat"
-width = 177.13733441
-width-label = "medium"
-depth = 0.08341855
-depth-label = "low"
-extraction = 0.36497082
-extraction-label = "low"
-dispersion = 0.82273804
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

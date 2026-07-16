@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_military_and_us_flagged_vessel_registry.jsonl",
 ]
+wandr_task = "us_military_and_us_flagged_vessel_registry"
+member_keys = ["vessel"]
+url-nonreuse = 0.06506018
+url-nonreuse-label = "low"
+domain-dispersion = 0.45719939
+domain-dispersion-label = "medium"
+discovery = 0.34500000
+discovery-label = "medium"
+enrichment = 0.36467075
+enrichment-label = "low"
+extraction = 0.29445997
+extraction-label = "low"
 difficulty = 0.50714286
 difficulty-label = "medium"
-wandr_task = "us_military_and_us_flagged_vessel_registry"
 
 verticals = ["legal"]
 topology = "composite"
-width = 128.27143748
-width-label = "small"
-depth = 0.08586046
-depth-label = "low"
-extraction = 0.29445748
-extraction-label = "low"
-dispersion = 0.45719939
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

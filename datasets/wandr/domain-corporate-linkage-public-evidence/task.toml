@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_domain_corporate_linkage_public_evidence.jsonl",
 ]
+wandr_task = "domain_corporate_linkage_public_evidence"
+member_keys = ["domain"]
+url-nonreuse = 0.63920445
+url-nonreuse-label = "medium"
+domain-dispersion = 0.58446496
+domain-dispersion-label = "medium"
+discovery = 0.21190476
+discovery-label = "medium"
+enrichment = 0.44047743
+enrichment-label = "low"
+extraction = 0.47784564
+extraction-label = "low"
 difficulty = 0.14880952
 difficulty-label = "low"
-wandr_task = "domain_corporate_linkage_public_evidence"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 586.15952764
-width-label = "large"
-depth = 0.04195568
-depth-label = "low"
-extraction = 0.39080604
-extraction-label = "medium"
-dispersion = 0.58446496
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

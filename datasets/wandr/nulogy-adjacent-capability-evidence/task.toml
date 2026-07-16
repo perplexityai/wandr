@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_nulogy_adjacent_capability_evidence.jsonl",
 ]
+wandr_task = "nulogy_adjacent_capability_evidence"
+member_keys = ["company_product"]
+url-nonreuse = 0.75023752
+url-nonreuse-label = "high"
+domain-dispersion = 0.69509343
+domain-dispersion-label = "high"
+discovery = 0.21714286
+discovery-label = "medium"
+enrichment = 0.48157740
+enrichment-label = "medium"
+extraction = 0.52917981
+extraction-label = "medium"
 difficulty = 0.33928571
 difficulty-label = "low"
-wandr_task = "nulogy_adjacent_capability_evidence"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1589.24892798
-width-label = "xlarge"
-depth = 0.01952084
-depth-label = "low"
-extraction = 0.42259622
-extraction-label = "medium"
-dispersion = 0.69509343
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

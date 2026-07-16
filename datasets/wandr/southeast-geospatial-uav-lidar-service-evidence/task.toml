@@ -11,20 +11,23 @@ required_file_paths = [
     "results_southeast_geospatial_uav_lidar_service_evidence.jsonl",
     "results_southeast_geospatial_uav_lidar_service_evidence.southeast_firm_presence.jsonl",
 ]
+wandr_task = "southeast_geospatial_uav_lidar_service_evidence"
+member_keys = ["firm"]
+url-nonreuse = 0.68538829
+url-nonreuse-label = "medium"
+domain-dispersion = 0.49778015
+domain-dispersion-label = "medium"
+discovery = 0.43833333
+discovery-label = "high"
+enrichment = 0.57472767
+enrichment-label = "medium"
+extraction = 0.56128070
+extraction-label = "medium"
 difficulty = 0.38833333
 difficulty-label = "low"
-wandr_task = "southeast_geospatial_uav_lidar_service_evidence"
 
 verticals = ["general", "people"]
 topology = "composite"
-width = 576.62327405
-width-label = "large"
-depth = 0.13855875
-depth-label = "medium"
-extraction = 0.41830479
-extraction-label = "medium"
-dispersion = 0.49778015
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

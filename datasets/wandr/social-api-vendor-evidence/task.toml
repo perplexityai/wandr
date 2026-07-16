@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_social_api_vendor_evidence.jsonl",
 ]
-difficulty = 0.555
-difficulty-label = "medium"
 wandr_task = "social_api_vendor_evidence"
+member_keys = ["vendor"]
+url-nonreuse = 0.57697168
+url-nonreuse-label = "medium"
+domain-dispersion = 0.53155010
+domain-dispersion-label = "medium"
+discovery = 0.00416667
+discovery-label = "low"
+enrichment = 0.61525641
+enrichment-label = "medium"
+extraction = 0.59133053
+extraction-label = "medium"
+difficulty = 0.55500000
+difficulty-label = "medium"
 
 verticals = ["e-com", "tech"]
 topology = "hierarchical"
-width = 1040.79221069
-width-label = "xlarge"
-depth = 0.04036321
-depth-label = "low"
-extraction = 0.56836683
-extraction-label = "high"
-dispersion = 0.5315501
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

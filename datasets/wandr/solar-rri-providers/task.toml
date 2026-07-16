@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_solar_rri_providers.jsonl",
 ]
-difficulty = 0.2785
-difficulty-label = "low"
 wandr_task = "solar_rri_providers"
+member_keys = ["provider"]
+url-nonreuse = 0.96020027
+url-nonreuse-label = "high"
+domain-dispersion = 0.61687204
+domain-dispersion-label = "medium"
+discovery = 0.74600000
+discovery-label = "high"
+enrichment = 0.30650940
+enrichment-label = "low"
+extraction = 0.44191620
+extraction-label = "low"
+difficulty = 0.27850000
+difficulty-label = "low"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 1546.55356385
-width-label = "xlarge"
-depth = 0.04987081
-depth-label = "low"
-extraction = 0.23778289
-extraction-label = "low"
-dispersion = 0.61687204
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

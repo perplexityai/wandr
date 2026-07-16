@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_christian_radio_network_contacts.jsonl",
 ]
+wandr_task = "christian_radio_network_contacts"
+member_keys = ["network"]
+url-nonreuse = 0.43053614
+url-nonreuse-label = "low"
+domain-dispersion = 0.93097376
+domain-dispersion-label = "high"
+discovery = 0.25333333
+discovery-label = "medium"
+enrichment = 0.55855829
+enrichment-label = "medium"
+extraction = 0.35964365
+extraction-label = "low"
 difficulty = 0.52666667
 difficulty-label = "medium"
-wandr_task = "christian_radio_network_contacts"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 125.06722772
-width-label = "small"
-depth = 0.14713031
-depth-label = "medium"
-extraction = 0.31046547
-extraction-label = "low"
-dispersion = 0.93097376
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

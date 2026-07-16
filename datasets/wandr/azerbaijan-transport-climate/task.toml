@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_azerbaijan_transport_climate.jsonl",
 ]
+wandr_task = "azerbaijan_transport_climate"
+member_keys = ["source_record"]
+url-nonreuse = 0.26763559
+url-nonreuse-label = "low"
+domain-dispersion = 0.55242959
+domain-dispersion-label = "medium"
+discovery = 0.68697917
+discovery-label = "high"
+enrichment = 0.42100349
+enrichment-label = "low"
+extraction = 0.32913139
+extraction-label = "low"
 difficulty = 0.67838542
 difficulty-label = "high"
-wandr_task = "azerbaijan_transport_climate"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 251.85322587
-width-label = "medium"
-depth = 0.15207731
-depth-label = "medium"
-extraction = 0.34046478
-extraction-label = "low"
-dispersion = 0.55242959
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

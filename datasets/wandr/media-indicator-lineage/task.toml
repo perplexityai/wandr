@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_media_indicator_lineage.jsonl",
 ]
-difficulty = 0.4453125
-difficulty-label = "medium"
 wandr_task = "media_indicator_lineage"
+member_keys = ["country", "source_family"]
+url-nonreuse = 0.11770312
+url-nonreuse-label = "low"
+domain-dispersion = 0.48866255
+domain-dispersion-label = "medium"
+discovery = 0.18750000
+discovery-label = "low"
+enrichment = 0.65404448
+enrichment-label = "high"
+extraction = 0.44527768
+extraction-label = "low"
+difficulty = 0.44531250
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 50.42903678
-width-label = "small"
-depth = 0.16816113
-depth-label = "medium"
-extraction = 0.28242949
-extraction-label = "low"
-dispersion = 0.48866255
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

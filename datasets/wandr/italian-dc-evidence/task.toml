@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_italian_dc_evidence.jsonl",
 ]
+wandr_task = "italian_dc_evidence"
+member_keys = ["provider_site"]
+url-nonreuse = 0.31420156
+url-nonreuse-label = "low"
+domain-dispersion = 0.49412132
+domain-dispersion-label = "medium"
+discovery = 0.39111111
+discovery-label = "medium"
+enrichment = 0.42909346
+enrichment-label = "low"
+extraction = 0.51185724
+extraction-label = "medium"
 difficulty = 0.59777778
 difficulty-label = "medium"
-wandr_task = "italian_dc_evidence"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 1020.80960557
-width-label = "xlarge"
-depth = 0.02038691
-depth-label = "low"
-extraction = 0.48823449
-extraction-label = "medium"
-dispersion = 0.49412132
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

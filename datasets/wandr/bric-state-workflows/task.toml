@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bric_state_workflows.jsonl",
 ]
+wandr_task = "bric_state_workflows"
+member_keys = ["jurisdiction"]
+url-nonreuse = 0.38958914
+url-nonreuse-label = "low"
+domain-dispersion = 0.60861902
+domain-dispersion-label = "medium"
+discovery = 0.43333333
+discovery-label = "high"
+enrichment = 0.61282104
+enrichment-label = "medium"
+extraction = 0.52121680
+extraction-label = "medium"
 difficulty = 0.72619048
 difficulty-label = "high"
-wandr_task = "bric_state_workflows"
 
 verticals = ["legal"]
 topology = "composite"
-width = 172.7264657
-width-label = "medium"
-depth = 0.4973733
-depth-label = "high"
-extraction = 0.50659205
-extraction-label = "medium"
-dispersion = 0.60861902
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

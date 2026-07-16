@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_energy_tech_climate_announcements.jsonl",
 ]
+wandr_task = "energy_tech_climate_announcements"
+member_keys = ["company"]
+url-nonreuse = 0.74827727
+url-nonreuse-label = "high"
+domain-dispersion = 0.69072336
+domain-dispersion-label = "high"
+discovery = 0.34047619
+discovery-label = "medium"
+enrichment = 0.59826135
+enrichment-label = "medium"
+extraction = 0.43729548
+extraction-label = "low"
 difficulty = 0.40714286
 difficulty-label = "medium"
-wandr_task = "energy_tech_climate_announcements"
 
 verticals = ["events"]
 topology = "flat"
-width = 66.52150691
-width-label = "small"
-depth = 0.30743854
-depth-label = "medium"
-extraction = 0.5938671
-extraction-label = "high"
-dispersion = 0.69072336
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

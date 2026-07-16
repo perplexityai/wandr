@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_student_logistics.jsonl",
 ]
+wandr_task = "student_logistics"
+member_keys = ["service"]
+url-nonreuse = 0.49953906
+url-nonreuse-label = "medium"
+domain-dispersion = 0.71586785
+domain-dispersion-label = "high"
+discovery = 0.67166667
+discovery-label = "high"
+enrichment = 0.47075075
+enrichment-label = "low"
+extraction = 0.34995345
+extraction-label = "low"
 difficulty = 0.37361111
 difficulty-label = "low"
-wandr_task = "student_logistics"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 529.27566287
-width-label = "large"
-depth = 0.10937977
-depth-label = "medium"
-extraction = 0.26821109
-extraction-label = "low"
-dispersion = 0.71586785
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_resilient_power_projects.jsonl",
 ]
+wandr_task = "resilient_power_projects"
+member_keys = ["resilient_power_project"]
+url-nonreuse = 0.51009173
+url-nonreuse-label = "medium"
+domain-dispersion = 0.42567162
+domain-dispersion-label = "medium"
+discovery = 0.66376812
+discovery-label = "high"
+enrichment = 0.53746414
+enrichment-label = "medium"
+extraction = 0.28991377
+extraction-label = "low"
 difficulty = 0.77282609
 difficulty-label = "high"
-wandr_task = "resilient_power_projects"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 552.5343803
-width-label = "large"
-depth = 0.22173365
-depth-label = "medium"
-extraction = 0.32686896
-extraction-label = "low"
-dispersion = 0.42567162
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

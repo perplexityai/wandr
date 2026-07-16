@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_security_incident_disclosures.jsonl",
 ]
+wandr_task = "security_incident_disclosures"
+member_keys = ["organization_event"]
+url-nonreuse = 0.55486178
+url-nonreuse-label = "medium"
+domain-dispersion = 0.19157889
+domain-dispersion-label = "low"
+discovery = 0.03466667
+discovery-label = "low"
+enrichment = 0.63852285
+enrichment-label = "high"
+extraction = 0.52665572
+extraction-label = "medium"
 difficulty = 0.55333333
 difficulty-label = "medium"
-wandr_task = "security_incident_disclosures"
 
 verticals = ["tech"]
 topology = "flat"
-width = 152.39629873
-width-label = "medium"
-depth = 0.07364665
-depth-label = "low"
-extraction = 0.68293898
-extraction-label = "high"
-dispersion = 0.19157889
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

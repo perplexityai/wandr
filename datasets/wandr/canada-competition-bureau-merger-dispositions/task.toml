@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_canada_competition_bureau_merger_dispositions.jsonl",
 ]
+wandr_task = "canada_competition_bureau_merger_dispositions"
+member_keys = ["merger_review"]
+url-nonreuse = 0.97032277
+url-nonreuse-label = "high"
+domain-dispersion = 0.12227577
+domain-dispersion-label = "low"
+discovery = 0.09444444
+discovery-label = "low"
+enrichment = 0.19797482
+enrichment-label = "low"
+extraction = 0.54340732
+extraction-label = "medium"
 difficulty = 0.33333333
 difficulty-label = "low"
-wandr_task = "canada_competition_bureau_merger_dispositions"
 
 verticals = ["legal"]
 topology = "flat"
-width = 8.04983507
-width-label = "tiny"
-depth = 0.24070255
-depth-label = "medium"
-extraction = 0.53258986
-extraction-label = "high"
-dispersion = 0.12227577
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_supply_chain_planning_vendors.jsonl",
 ]
-difficulty = 0.184
-difficulty-label = "low"
 wandr_task = "supply_chain_planning_vendors"
+member_keys = ["company"]
+url-nonreuse = 0.67255571
+url-nonreuse-label = "medium"
+domain-dispersion = 0.57249352
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.51120000
+enrichment-label = "medium"
+extraction = 0.63226562
+extraction-label = "high"
+difficulty = 0.18400000
+difficulty-label = "low"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 2196.82520439
-width-label = "xlarge"
-depth = 0.01427163
-depth-label = "low"
-extraction = 0.4293475
-extraction-label = "medium"
-dispersion = 0.57249352
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

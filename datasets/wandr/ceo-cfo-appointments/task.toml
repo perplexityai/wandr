@@ -11,20 +11,23 @@ required_file_paths = [
     "results_ceo_cfo_appointments.jsonl",
     "results_ceo_cfo_appointments.company_listings.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "ceo_cfo_appointments"
+member_keys = ["company_appointee"]
+url-nonreuse = 0.94061928
+url-nonreuse-label = "high"
+domain-dispersion = 0.11122863
+domain-dispersion-label = "low"
+discovery = 0.19761905
+discovery-label = "low"
+enrichment = 0.46281094
+enrichment-label = "low"
+extraction = 0.59235366
+extraction-label = "medium"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["legal", "finance"]
 topology = "composite"
-width = 127.61805821
-width-label = "small"
-depth = 0.26908826
-depth-label = "medium"
-extraction = 0.27710066
-extraction-label = "low"
-dispersion = 0.11122863
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

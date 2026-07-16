@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_server_hardware_relationships.jsonl",
 ]
-difficulty = 0.425
-difficulty-label = "medium"
 wandr_task = "ai_server_hardware_relationships"
+member_keys = ["relationship_edge"]
+url-nonreuse = 0.80749800
+url-nonreuse-label = "high"
+domain-dispersion = 0.68585987
+domain-dispersion-label = "high"
+discovery = 0.25250000
+discovery-label = "medium"
+enrichment = 0.45835041
+enrichment-label = "low"
+extraction = 0.47734613
+extraction-label = "low"
+difficulty = 0.42500000
+difficulty-label = "medium"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 194.11366776
-width-label = "medium"
-depth = 0.1657987
-depth-label = "medium"
-extraction = 0.43039045
-extraction-label = "medium"
-dispersion = 0.68585987
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

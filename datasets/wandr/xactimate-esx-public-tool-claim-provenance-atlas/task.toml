@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_xactimate_esx_public_tool_claim_provenance_atlas.jsonl",
 ]
-difficulty = 0.690625
-difficulty-label = "high"
 wandr_task = "xactimate_esx_public_tool_claim_provenance_atlas"
+member_keys = ["product"]
+url-nonreuse = 0.51770551
+url-nonreuse-label = "medium"
+domain-dispersion = 0.59883651
+domain-dispersion-label = "medium"
+discovery = 0.35833333
+discovery-label = "medium"
+enrichment = 0.57122904
+enrichment-label = "medium"
+extraction = 0.53269238
+extraction-label = "medium"
+difficulty = 0.69062500
+difficulty-label = "high"
 
 verticals = ["general", "e-com", "tech"]
 topology = "hierarchical"
-width = 705.39394588
-width-label = "large"
-depth = 0.04408335
-depth-label = "low"
-extraction = 0.50381725
-extraction-label = "medium"
-dispersion = 0.59883651
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_passive_speaker_specs.jsonl",
 ]
+wandr_task = "passive_speaker_specs"
+member_keys = ["brand_model"]
+url-nonreuse = 0.75098934
+url-nonreuse-label = "high"
+domain-dispersion = 0.19123727
+domain-dispersion-label = "low"
+discovery = 0.51011905
+discovery-label = "high"
+enrichment = 0.46222962
+enrichment-label = "low"
+extraction = 0.62096510
+extraction-label = "high"
 difficulty = 0.55535714
 difficulty-label = "medium"
-wandr_task = "passive_speaker_specs"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 903.14368332
-width-label = "large"
-depth = 0.3880353
-depth-label = "medium"
-extraction = 0.51146112
-extraction-label = "medium"
-dispersion = 0.19123727
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

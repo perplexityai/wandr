@@ -12,20 +12,23 @@ required_file_paths = [
     "results_ntsb_marine_publication_state.docket_state.jsonl",
     "results_ntsb_marine_publication_state.report_release.jsonl",
 ]
-difficulty = 0.4625
-difficulty-label = "medium"
 wandr_task = "ntsb_marine_publication_state"
+member_keys = ["investigation"]
+url-nonreuse = 0.92377617
+url-nonreuse-label = "high"
+domain-dispersion = 0.01406077
+domain-dispersion-label = "low"
+discovery = 0.03333333
+discovery-label = "low"
+enrichment = 0.82466216
+enrichment-label = "high"
+extraction = 0.82000000
+extraction-label = "high"
+difficulty = 0.46250000
+difficulty-label = "medium"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 111.55502382
-width-label = "small"
-depth = 0.06989913
-depth-label = "low"
-extraction = 0.49447356
-extraction-label = "medium"
-dispersion = 0.01406077
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

@@ -11,20 +11,23 @@ required_file_paths = [
     "results_va_provider_pricing.jsonl",
     "results_va_provider_pricing.provider_policy.jsonl",
 ]
-difficulty = 0.51375
-difficulty-label = "medium"
 wandr_task = "va_provider_pricing"
+member_keys = ["provider"]
+url-nonreuse = 0.65680187
+url-nonreuse-label = "medium"
+domain-dispersion = 0.26778447
+domain-dispersion-label = "low"
+discovery = 0.38000000
+discovery-label = "medium"
+enrichment = 0.69013703
+enrichment-label = "high"
+extraction = 0.77383773
+extraction-label = "high"
+difficulty = 0.51375000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "composite"
-width = 562.42128601
-width-label = "large"
-depth = 0.15965123
-depth-label = "medium"
-extraction = 0.63131402
-extraction-label = "high"
-dispersion = 0.26778447
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

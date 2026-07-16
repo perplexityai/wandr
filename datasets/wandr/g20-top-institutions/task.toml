@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_g20_top_institutions.jsonl",
 ]
+wandr_task = "g20_top_institutions"
+member_keys = ["country_institution"]
+url-nonreuse = 0.50585605
+url-nonreuse-label = "medium"
+domain-dispersion = 0.39101360
+domain-dispersion-label = "low"
+discovery = 0.14473684
+discovery-label = "low"
+enrichment = 0.80661632
+enrichment-label = "high"
+extraction = 0.43645944
+extraction-label = "low"
 difficulty = 0.65789474
 difficulty-label = "high"
-wandr_task = "g20_top_institutions"
 
 verticals = ["legal", "finance"]
 topology = "composite"
-width = 101.40270128
-width-label = "small"
-depth = 0.37611871
-depth-label = "medium"
-extraction = 0.37274625
-extraction-label = "low"
-dispersion = 0.3910136
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

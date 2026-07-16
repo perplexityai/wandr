@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_regulated_messaging_fees.jsonl",
 ]
+wandr_task = "regulated_messaging_fees"
+member_keys = ["vendor"]
+url-nonreuse = 0.56003247
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60412689
+domain-dispersion-label = "medium"
+discovery = 0.15238095
+discovery-label = "low"
+enrichment = 0.34230159
+enrichment-label = "low"
+extraction = 0.57656357
+extraction-label = "medium"
 difficulty = 0.23142857
 difficulty-label = "low"
-wandr_task = "regulated_messaging_fees"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 429.32366321
-width-label = "medium"
-depth = 0.46726687
-depth-label = "high"
-extraction = 0.51008542
-extraction-label = "medium"
-dispersion = 0.60412689
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

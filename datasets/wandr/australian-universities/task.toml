@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_australian_universities.jsonl",
 ]
+wandr_task = "australian_universities"
+member_keys = ["university"]
+url-nonreuse = 0.55245432
+url-nonreuse-label = "medium"
+domain-dispersion = 0.33528356
+domain-dispersion-label = "low"
+discovery = 0.01162791
+discovery-label = "low"
+enrichment = 0.40139535
+enrichment-label = "low"
+extraction = 0.37071853
+extraction-label = "low"
 difficulty = 0.18139535
 difficulty-label = "low"
-wandr_task = "australian_universities"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 236.10222978
-width-label = "medium"
-depth = 0.43963004
-depth-label = "high"
-extraction = 0.32383122
-extraction-label = "low"
-dispersion = 0.33528356
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

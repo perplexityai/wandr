@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_thailand_service_robot_channel_presence.jsonl",
 ]
+wandr_task = "thailand_service_robot_channel_presence"
+member_keys = ["company"]
+url-nonreuse = 0.44800625
+url-nonreuse-label = "low"
+domain-dispersion = 0.78702291
+domain-dispersion-label = "high"
+discovery = 0.76333333
+discovery-label = "high"
+enrichment = 0.51138280
+enrichment-label = "medium"
+extraction = 0.58499612
+extraction-label = "medium"
 difficulty = 0.86833333
 difficulty-label = "high"
-wandr_task = "thailand_service_robot_channel_presence"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 298.59662832
-width-label = "medium"
-depth = 0.29546621
-depth-label = "medium"
-extraction = 0.57213091
-extraction-label = "high"
-dispersion = 0.78702291
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

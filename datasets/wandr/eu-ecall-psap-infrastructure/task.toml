@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_eu_ecall_psap_infrastructure.jsonl",
 ]
+wandr_task = "eu_ecall_psap_infrastructure"
+member_keys = ["country"]
+url-nonreuse = 0.22282641
+url-nonreuse-label = "low"
+domain-dispersion = 0.84290267
+domain-dispersion-label = "high"
+discovery = 0.05555556
+discovery-label = "low"
+enrichment = 0.74259259
+enrichment-label = "high"
+extraction = 0.37358197
+extraction-label = "low"
 difficulty = 0.51851852
 difficulty-label = "medium"
-wandr_task = "eu_ecall_psap_infrastructure"
 
 verticals = ["legal"]
 topology = "composite"
-width = 60.91431413
-width-label = "small"
-depth = 0.16585312
-depth-label = "medium"
-extraction = 0.24943443
-extraction-label = "low"
-dispersion = 0.84290267
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

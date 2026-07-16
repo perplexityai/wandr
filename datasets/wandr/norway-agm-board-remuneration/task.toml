@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_norway_agm_board_remuneration.jsonl",
 ]
+wandr_task = "norway_agm_board_remuneration"
+member_keys = ["issuer"]
+url-nonreuse = 0.22300755
+url-nonreuse-label = "low"
+domain-dispersion = 0.18782246
+domain-dispersion-label = "low"
+discovery = 0.65733333
+discovery-label = "high"
+enrichment = 0.09751284
+enrichment-label = "low"
+extraction = 0.47093967
+extraction-label = "low"
 difficulty = 0.41444444
 difficulty-label = "medium"
-wandr_task = "norway_agm_board_remuneration"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 255.38631409
-width-label = "medium"
-depth = 0.10852835
-depth-label = "medium"
-extraction = 0.52477638
-extraction-label = "medium"
-dispersion = 0.18782246
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

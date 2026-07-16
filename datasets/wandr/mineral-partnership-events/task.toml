@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mineral_partnership_events.jsonl",
 ]
+wandr_task = "mineral_partnership_events"
+member_keys = ["partnership_event"]
+url-nonreuse = 0.91731285
+url-nonreuse-label = "high"
+domain-dispersion = 0.53872342
+domain-dispersion-label = "medium"
+discovery = 0.21944444
+discovery-label = "medium"
+enrichment = 0.52867408
+enrichment-label = "medium"
+extraction = 0.57580666
+extraction-label = "medium"
 difficulty = 0.44583333
 difficulty-label = "medium"
-wandr_task = "mineral_partnership_events"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 290.38458868
-width-label = "medium"
-depth = 0.40345499
-depth-label = "high"
-extraction = 0.51130152
-extraction-label = "medium"
-dispersion = 0.53872342
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

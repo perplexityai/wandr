@@ -12,20 +12,23 @@ required_file_paths = [
     "results_starlink_eband_evidence.named_external_hardware_supply.jsonl",
     "results_starlink_eband_evidence.internal_rf_hardware_capability.jsonl",
 ]
+wandr_task = "starlink_eband_evidence"
+member_keys = ["deployment_signal"]
+url-nonreuse = 0.86411642
+url-nonreuse-label = "high"
+domain-dispersion = 0.23928447
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.61395636
+enrichment-label = "medium"
+extraction = 0.51582371
+extraction-label = "medium"
 difficulty = 0.26723636
 difficulty-label = "low"
-wandr_task = "starlink_eband_evidence"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 420.17140428
-width-label = "medium"
-depth = 0.10683597
-depth-label = "medium"
-extraction = 0.54249346
-extraction-label = "high"
-dispersion = 0.23928447
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

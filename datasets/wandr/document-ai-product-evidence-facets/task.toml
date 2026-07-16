@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_document_ai_product_evidence_facets.jsonl",
 ]
+wandr_task = "document_ai_product_evidence_facets"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.35084312
+url-nonreuse-label = "low"
+domain-dispersion = 0.36732655
+domain-dispersion-label = "low"
+discovery = 0.71805556
+discovery-label = "high"
+enrichment = 0.50140781
+enrichment-label = "medium"
+extraction = 0.42038591
+extraction-label = "low"
 difficulty = 0.72416667
 difficulty-label = "high"
-wandr_task = "document_ai_product_evidence_facets"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 339.06587446
-width-label = "medium"
-depth = 0.23588931
-depth-label = "medium"
-extraction = 0.29815211
-extraction-label = "low"
-dispersion = 0.36732655
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

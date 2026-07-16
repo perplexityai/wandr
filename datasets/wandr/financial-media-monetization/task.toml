@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_financial_media_monetization.jsonl",
 ]
+wandr_task = "financial_media_monetization"
+member_keys = ["publisher"]
+url-nonreuse = 0.95028716
+url-nonreuse-label = "high"
+domain-dispersion = 0.46914090
+domain-dispersion-label = "medium"
+discovery = 0.19666667
+discovery-label = "low"
+enrichment = 0.50697740
+enrichment-label = "medium"
+extraction = 0.72796122
+extraction-label = "high"
 difficulty = 0.45555556
 difficulty-label = "medium"
-wandr_task = "financial_media_monetization"
 
 verticals = ["general", "finance"]
 topology = "hierarchical"
-width = 436.65534077
-width-label = "medium"
-depth = 0.18464426
-depth-label = "medium"
-extraction = 0.65637477
-extraction-label = "high"
-dispersion = 0.4691409
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

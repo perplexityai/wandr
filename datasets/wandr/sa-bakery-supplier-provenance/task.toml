@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_sa_bakery_supplier_provenance.jsonl",
 ]
+wandr_task = "sa_bakery_supplier_provenance"
+member_keys = ["supplier"]
+url-nonreuse = 0.73943459
+url-nonreuse-label = "medium"
+domain-dispersion = 0.80497420
+domain-dispersion-label = "high"
+discovery = 0.59188034
+discovery-label = "high"
+enrichment = 0.48763627
+enrichment-label = "medium"
+extraction = 0.53158149
+extraction-label = "medium"
 difficulty = 0.75213675
 difficulty-label = "high"
-wandr_task = "sa_bakery_supplier_provenance"
 
 verticals = ["general", "legal", "e-com"]
 topology = "hierarchical"
-width = 310.09982775
-width-label = "medium"
-depth = 0.16610371
-depth-label = "medium"
-extraction = 0.51076741
-extraction-label = "medium"
-dispersion = 0.8049742
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

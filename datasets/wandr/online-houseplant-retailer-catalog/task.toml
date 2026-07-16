@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_online_houseplant_retailer_catalog.jsonl",
 ]
-difficulty = 0.1575
-difficulty-label = "low"
 wandr_task = "online_houseplant_retailer_catalog"
+member_keys = ["retailer"]
+url-nonreuse = 0.86840143
+url-nonreuse-label = "high"
+domain-dispersion = 0.35968594
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.55000000
+enrichment-label = "medium"
+extraction = 0.53833040
+extraction-label = "medium"
+difficulty = 0.15750000
+difficulty-label = "low"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 249.48758831
-width-label = "medium"
-depth = 0.15669278
-depth-label = "medium"
-extraction = 0.37458044
-extraction-label = "low"
-dispersion = 0.35968594
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_australian_vrfb_atlas.jsonl",
 ]
+wandr_task = "australian_vrfb_atlas"
+member_keys = ["vrfb_asset"]
+url-nonreuse = 0.93231988
+url-nonreuse-label = "high"
+domain-dispersion = 0.60823066
+domain-dispersion-label = "medium"
+discovery = 0.00645161
+discovery-label = "low"
+enrichment = 0.73430108
+enrichment-label = "high"
+extraction = 0.77740535
+extraction-label = "high"
 difficulty = 0.71774194
 difficulty-label = "high"
-wandr_task = "australian_vrfb_atlas"
 
 verticals = ["general", "events", "legal"]
 topology = "flat"
-width = 133.15655703
-width-label = "small"
-depth = 0.29948259
-depth-label = "medium"
-extraction = 0.73656265
-extraction-label = "high"
-dispersion = 0.60823066
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

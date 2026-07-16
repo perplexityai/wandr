@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_reading_app_capability_provenance.jsonl",
 ]
-difficulty = 0.205
-difficulty-label = "low"
 wandr_task = "reading_app_capability_provenance"
+member_keys = ["app_capability"]
+url-nonreuse = 0.84579179
+url-nonreuse-label = "high"
+domain-dispersion = 0.56172770
+domain-dispersion-label = "medium"
+discovery = 0.41333333
+discovery-label = "medium"
+enrichment = 0.18323225
+enrichment-label = "low"
+extraction = 0.47160646
+extraction-label = "low"
+difficulty = 0.20500000
+difficulty-label = "low"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 2303.56062325
-width-label = "xlarge"
-depth = 0.85331573
-depth-label = "high"
-extraction = 0.41939273
-extraction-label = "medium"
-dispersion = 0.5617277
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

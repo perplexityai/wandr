@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_ml_deeptech_program_pathway_atlas.jsonl",
 ]
+wandr_task = "ai_ml_deeptech_program_pathway_atlas"
+member_keys = ["organization_program"]
+url-nonreuse = 0.38566235
+url-nonreuse-label = "low"
+domain-dispersion = 0.71718372
+domain-dispersion-label = "high"
+discovery = 0.59444444
+discovery-label = "high"
+enrichment = 0.52965535
+enrichment-label = "medium"
+extraction = 0.54098376
+extraction-label = "medium"
 difficulty = 0.77333333
 difficulty-label = "high"
-wandr_task = "ai_ml_deeptech_program_pathway_atlas"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 770.67195175
-width-label = "large"
-depth = 0.46932511
-depth-label = "high"
-extraction = 0.51314165
-extraction-label = "medium"
-dispersion = 0.71718372
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

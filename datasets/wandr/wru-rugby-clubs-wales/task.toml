@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_wru_rugby_clubs_wales.jsonl",
 ]
+wandr_task = "wru_rugby_clubs_wales"
+member_keys = ["club_division"]
+url-nonreuse = 0.05886556
+url-nonreuse-label = "low"
+domain-dispersion = 0.24319352
+domain-dispersion-label = "low"
+discovery = 0.23500000
+discovery-label = "medium"
+enrichment = 0.67338298
+enrichment-label = "high"
+extraction = 0.64905635
+extraction-label = "high"
 difficulty = 0.72708333
 difficulty-label = "high"
-wandr_task = "wru_rugby_clubs_wales"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 33.28185404
-width-label = "tiny"
-depth = 0.15840644
-depth-label = "medium"
-extraction = 0.4402671
-extraction-label = "medium"
-dispersion = 0.24319352
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

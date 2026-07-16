@@ -11,20 +11,23 @@ required_file_paths = [
     "results_productivity_monitoring_product_capability_evidence.jsonl",
     "results_productivity_monitoring_product_capability_evidence.outside_capability_evidence.jsonl",
 ]
+wandr_task = "productivity_monitoring_product_capability_evidence"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.94772581
+url-nonreuse-label = "high"
+domain-dispersion = 0.36427328
+domain-dispersion-label = "low"
+discovery = 0.25200000
+discovery-label = "medium"
+enrichment = 0.83073737
+enrichment-label = "high"
+extraction = 0.62019704
+extraction-label = "high"
 difficulty = 0.79583333
 difficulty-label = "high"
-wandr_task = "productivity_monitoring_product_capability_evidence"
 
 verticals = ["general", "tech"]
 topology = "composite"
-width = 426.39443508
-width-label = "medium"
-depth = 0.48141058
-depth-label = "high"
-extraction = 0.43339988
-extraction-label = "medium"
-dispersion = 0.36427328
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

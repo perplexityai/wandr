@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_australian_university_representation_architecture.jsonl",
 ]
-difficulty = 0.2337963
-difficulty-label = "low"
 wandr_task = "australian_university_representation_architecture"
+member_keys = ["university"]
+url-nonreuse = 0.15142937
+url-nonreuse-label = "low"
+domain-dispersion = 0.24722376
+domain-dispersion-label = "low"
+discovery = 0.25000000
+discovery-label = "medium"
+enrichment = 0.63900463
+enrichment-label = "high"
+extraction = 0.74094370
+extraction-label = "high"
+difficulty = 0.23379630
+difficulty-label = "low"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 167.81906915
-width-label = "medium"
-depth = 0.16862408
-depth-label = "medium"
-extraction = 0.45185918
-extraction-label = "medium"
-dispersion = 0.24722376
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

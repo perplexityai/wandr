@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_center_cooling.jsonl",
 ]
-difficulty = 0.6125
-difficulty-label = "medium"
 wandr_task = "data_center_cooling"
+member_keys = ["solution_claim"]
+url-nonreuse = 0.48632337
+url-nonreuse-label = "medium"
+domain-dispersion = 0.45611194
+domain-dispersion-label = "medium"
+discovery = 0.26250000
+discovery-label = "medium"
+enrichment = 0.63643062
+enrichment-label = "high"
+extraction = 0.55365931
+extraction-label = "medium"
+difficulty = 0.61250000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 149.40336707
-width-label = "small"
-depth = 0.14574811
-depth-label = "medium"
-extraction = 0.4942295
-extraction-label = "medium"
-dispersion = 0.45611194
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

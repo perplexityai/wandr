@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_hong_kong_school_offices.jsonl",
 ]
-difficulty = 0.64
-difficulty-label = "medium"
 wandr_task = "hong_kong_school_offices"
+member_keys = ["school"]
+url-nonreuse = 0.96730539
+url-nonreuse-label = "high"
+domain-dispersion = 0.79359675
+domain-dispersion-label = "high"
+discovery = 0.26666667
+discovery-label = "medium"
+enrichment = 0.64991948
+enrichment-label = "high"
+extraction = 0.28671929
+extraction-label = "low"
+difficulty = 0.64000000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 39.03678186
-width-label = "tiny"
-depth = 0.29136153
-depth-label = "medium"
-extraction = 0.25355722
-extraction-label = "low"
-dispersion = 0.79359675
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

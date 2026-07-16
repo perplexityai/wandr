@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_llmops_provenance.jsonl",
 ]
-difficulty = 0.44
-difficulty-label = "medium"
 wandr_task = "llmops_provenance"
+member_keys = ["platform"]
+url-nonreuse = 0.46830429
+url-nonreuse-label = "low"
+domain-dispersion = 0.51985858
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.59000000
+enrichment-label = "medium"
+extraction = 0.53590736
+extraction-label = "medium"
+difficulty = 0.44000000
+difficulty-label = "medium"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 133.97010017
-width-label = "small"
-depth = 0.25725765
-depth-label = "medium"
-extraction = 0.44193238
-extraction-label = "medium"
-dispersion = 0.51985858
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

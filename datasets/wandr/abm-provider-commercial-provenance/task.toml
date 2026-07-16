@@ -11,20 +11,23 @@ required_file_paths = [
     "results_abm_provider_commercial_provenance.jsonl",
     "results_abm_provider_commercial_provenance.commercial_provenance.jsonl",
 ]
+wandr_task = "abm_provider_commercial_provenance"
+member_keys = ["provider"]
+url-nonreuse = 0.72564012
+url-nonreuse-label = "medium"
+domain-dispersion = 0.49938950
+domain-dispersion-label = "medium"
+discovery = 0.52333333
+discovery-label = "high"
+enrichment = 0.65106457
+enrichment-label = "high"
+extraction = 0.65613103
+extraction-label = "high"
 difficulty = 0.70416667
 difficulty-label = "high"
-wandr_task = "abm_provider_commercial_provenance"
 
 verticals = ["e-com"]
 topology = "composite"
-width = 776.59638324
-width-label = "large"
-depth = 0.12542481
-depth-label = "medium"
-extraction = 0.53559159
-extraction-label = "high"
-dispersion = 0.4993895
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

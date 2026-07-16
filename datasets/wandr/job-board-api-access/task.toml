@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_job_board_api_access.jsonl",
 ]
+wandr_task = "job_board_api_access"
+member_keys = ["platform"]
+url-nonreuse = 0.51082971
+url-nonreuse-label = "medium"
+domain-dispersion = 0.48169973
+domain-dispersion-label = "medium"
+discovery = 0.17857143
+discovery-label = "low"
+enrichment = 0.84974566
+enrichment-label = "high"
+extraction = 0.99358974
+extraction-label = "high"
 difficulty = 0.89880952
 difficulty-label = "high"
-wandr_task = "job_board_api_access"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 164.77512737
-width-label = "medium"
-depth = 0.46038524
-depth-label = "high"
-extraction = 0.99185107
-extraction-label = "high"
-dispersion = 0.48169973
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

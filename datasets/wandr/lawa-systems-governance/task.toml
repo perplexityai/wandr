@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_lawa_systems_governance.jsonl",
 ]
+wandr_task = "lawa_systems_governance"
+member_keys = ["system_action"]
+url-nonreuse = 0.79977358
+url-nonreuse-label = "high"
+domain-dispersion = 0.02333346
+domain-dispersion-label = "low"
+discovery = 0.45727273
+discovery-label = "high"
+enrichment = 0.61690407
+enrichment-label = "medium"
+extraction = 0.56829304
+extraction-label = "medium"
 difficulty = 0.67272727
 difficulty-label = "high"
-wandr_task = "lawa_systems_governance"
 
 verticals = ["legal"]
 topology = "flat"
-width = 290.96759126
-width-label = "medium"
-depth = 0.33804774
-depth-label = "medium"
-extraction = 0.6309859
-extraction-label = "high"
-dispersion = 0.02333346
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

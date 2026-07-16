@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_funding_announcements.jsonl",
 ]
-difficulty = 0.2875
-difficulty-label = "low"
 wandr_task = "ai_funding_announcements"
+member_keys = ["company_event"]
+url-nonreuse = 0.60257546
+url-nonreuse-label = "medium"
+domain-dispersion = 0.50962486
+domain-dispersion-label = "medium"
+discovery = 0.28125000
+discovery-label = "medium"
+enrichment = 0.26833256
+enrichment-label = "low"
+extraction = 0.41847926
+extraction-label = "low"
+difficulty = 0.28750000
+difficulty-label = "low"
 
 verticals = ["events"]
 topology = "flat"
-width = 73.07041676
-width-label = "small"
-depth = 0.20774244
-depth-label = "medium"
-extraction = 0.43420524
-extraction-label = "medium"
-dispersion = 0.50962486
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

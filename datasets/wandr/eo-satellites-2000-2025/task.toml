@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_eo_satellites_2000_2025.jsonl",
 ]
-difficulty = 0.39
-difficulty-label = "low"
 wandr_task = "eo_satellites_2000_2025"
+member_keys = ["operator_satellite"]
+url-nonreuse = 0.90750584
+url-nonreuse-label = "high"
+domain-dispersion = 0.08895301
+domain-dispersion-label = "low"
+discovery = 0.13733333
+discovery-label = "low"
+enrichment = 0.63147126
+enrichment-label = "high"
+extraction = 0.69852975
+extraction-label = "high"
+difficulty = 0.39000000
+difficulty-label = "low"
 
 verticals = ["wikis"]
 topology = "flat"
-width = 159.59825106
-width-label = "medium"
-depth = 0.22434461
-depth-label = "medium"
-extraction = 0.54975409
-extraction-label = "high"
-dispersion = 0.08895301
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

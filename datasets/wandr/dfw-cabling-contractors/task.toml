@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_dfw_cabling_contractors.jsonl",
 ]
-difficulty = 0.45
-difficulty-label = "medium"
 wandr_task = "dfw_cabling_contractors"
+member_keys = ["contractor"]
+url-nonreuse = 0.28921344
+url-nonreuse-label = "low"
+domain-dispersion = 0.67318312
+domain-dispersion-label = "high"
+discovery = 0.29861111
+discovery-label = "medium"
+enrichment = 0.61107756
+enrichment-label = "medium"
+extraction = 0.54343316
+extraction-label = "medium"
+difficulty = 0.45000000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "composite"
-width = 787.02513374
-width-label = "large"
-depth = 0.43769001
-depth-label = "high"
-extraction = 0.38268168
-extraction-label = "low"
-dispersion = 0.67318312
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

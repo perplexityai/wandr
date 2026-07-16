@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_helmet_procurement_records.jsonl",
 ]
-difficulty = 0.8359375
-difficulty-label = "high"
 wandr_task = "helmet_procurement_records"
+member_keys = ["procurement_record"]
+url-nonreuse = 0.87179487
+url-nonreuse-label = "high"
+domain-dispersion = 0.43449456
+domain-dispersion-label = "medium"
+discovery = 0.68880208
+discovery-label = "high"
+enrichment = 0.73064156
+enrichment-label = "high"
+extraction = 0.69085044
+extraction-label = "high"
+difficulty = 0.83593750
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 138.46113081
-width-label = "small"
-depth = 0.4433053
-depth-label = "high"
-extraction = 0.59881697
-extraction-label = "high"
-dispersion = 0.43449456
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

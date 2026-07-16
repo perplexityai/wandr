@@ -11,20 +11,23 @@ required_file_paths = [
     "results_texas_headcounts.jsonl",
     "results_texas_headcounts.reconciliation_context.jsonl",
 ]
+wandr_task = "texas_headcounts"
+member_keys = ["employer"]
+url-nonreuse = 0.39962099
+url-nonreuse-label = "low"
+domain-dispersion = 0.88287248
+domain-dispersion-label = "high"
+discovery = 0.33888889
+discovery-label = "medium"
+enrichment = 0.80183488
+enrichment-label = "high"
+extraction = 0.78949580
+extraction-label = "high"
 difficulty = 0.79166667
 difficulty-label = "high"
-wandr_task = "texas_headcounts"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 155.49008909
-width-label = "medium"
-depth = 0.48268136
-depth-label = "high"
-extraction = 0.71405953
-extraction-label = "high"
-dispersion = 0.88287248
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

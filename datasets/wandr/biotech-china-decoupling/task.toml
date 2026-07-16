@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_biotech_china_decoupling.jsonl",
 ]
+wandr_task = "biotech_china_decoupling"
+member_keys = ["signal_event"]
+url-nonreuse = 0.86802727
+url-nonreuse-label = "high"
+domain-dispersion = 0.18594864
+domain-dispersion-label = "low"
+discovery = 0.39871795
+discovery-label = "medium"
+enrichment = 0.74696929
+enrichment-label = "high"
+extraction = 0.73639923
+extraction-label = "high"
 difficulty = 0.47115385
 difficulty-label = "medium"
-wandr_task = "biotech_china_decoupling"
 
 verticals = ["legal"]
 topology = "flat"
-width = 401.27543932
-width-label = "medium"
-depth = 0.19740105
-depth-label = "medium"
-extraction = 0.30809784
-extraction-label = "low"
-dispersion = 0.18594864
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

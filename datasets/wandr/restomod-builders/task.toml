@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_restomod_builders.jsonl",
 ]
-difficulty = 0.5890625
-difficulty-label = "medium"
 wandr_task = "restomod_builders"
+member_keys = ["builder"]
+url-nonreuse = 0.39625271
+url-nonreuse-label = "low"
+domain-dispersion = 0.95509028
+domain-dispersion-label = "high"
+discovery = 0.68583333
+discovery-label = "high"
+enrichment = 0.33124997
+enrichment-label = "low"
+extraction = 0.64265261
+extraction-label = "high"
+difficulty = 0.58906250
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1892.77209474
-width-label = "xlarge"
-depth = 0.08077736
-depth-label = "low"
-extraction = 0.4380767
-extraction-label = "medium"
-dispersion = 0.95509028
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

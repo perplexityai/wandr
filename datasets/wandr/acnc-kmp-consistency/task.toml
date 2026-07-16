@@ -11,20 +11,23 @@ required_file_paths = [
     "results_acnc_kmp_consistency.jsonl",
     "results_acnc_kmp_consistency.financial_report_kmp_note.jsonl",
 ]
+wandr_task = "acnc_kmp_consistency"
+member_keys = ["charity_year"]
+url-nonreuse = 0.85428232
+url-nonreuse-label = "high"
+domain-dispersion = 0.31436681
+domain-dispersion-label = "low"
+discovery = 0.38055556
+discovery-label = "medium"
+enrichment = 0.66132943
+enrichment-label = "high"
+extraction = 0.52513228
+extraction-label = "medium"
 difficulty = 0.29166667
 difficulty-label = "low"
-wandr_task = "acnc_kmp_consistency"
 
 verticals = ["legal"]
 topology = "composite"
-width = 531.43676489
-width-label = "large"
-depth = 0.16192849
-depth-label = "medium"
-extraction = 0.19889079
-extraction-label = "low"
-dispersion = 0.31436681
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

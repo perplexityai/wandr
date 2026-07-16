@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_final_mile_carriers.jsonl",
 ]
-difficulty = 0.458
-difficulty-label = "medium"
 wandr_task = "final_mile_carriers"
+member_keys = ["carrier_company"]
+url-nonreuse = 0.58322443
+url-nonreuse-label = "medium"
+domain-dispersion = 0.43908892
+domain-dispersion-label = "medium"
+discovery = 0.37733333
+discovery-label = "medium"
+enrichment = 0.50791451
+enrichment-label = "medium"
+extraction = 0.46044473
+extraction-label = "low"
+difficulty = 0.45800000
+difficulty-label = "medium"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 922.87699461
-width-label = "large"
-depth = 0.10696236
-depth-label = "medium"
-extraction = 0.28911408
-extraction-label = "low"
-dispersion = 0.43908892
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

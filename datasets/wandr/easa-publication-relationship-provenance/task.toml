@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_easa_publication_relationship_provenance.jsonl",
 ]
+wandr_task = "easa_publication_relationship_provenance"
+member_keys = ["publication_relationship"]
+url-nonreuse = 0.93799791
+url-nonreuse-label = "high"
+domain-dispersion = 0.03662897
+domain-dispersion-label = "low"
+discovery = 0.11111111
+discovery-label = "low"
+enrichment = 0.51873910
+enrichment-label = "medium"
+extraction = 0.57826340
+extraction-label = "medium"
 difficulty = 0.39583333
 difficulty-label = "low"
-wandr_task = "easa_publication_relationship_provenance"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 134.64959101
-width-label = "small"
-depth = 0.13575521
-depth-label = "medium"
-extraction = 0.43059414
-extraction-label = "medium"
-dispersion = 0.03662897
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

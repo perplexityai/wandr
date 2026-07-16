@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_clm_offering_evidence.jsonl",
 ]
+wandr_task = "clm_offering_evidence"
+member_keys = ["clm_offering"]
+url-nonreuse = 0.93577182
+url-nonreuse-label = "high"
+domain-dispersion = 0.39722271
+domain-dispersion-label = "low"
+discovery = 0.24285714
+discovery-label = "medium"
+enrichment = 0.69685543
+enrichment-label = "high"
+extraction = 0.61480265
+extraction-label = "medium"
 difficulty = 0.35357143
 difficulty-label = "low"
-wandr_task = "clm_offering_evidence"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 334.95752136
-width-label = "medium"
-depth = 0.28442869
-depth-label = "medium"
-extraction = 0.30362828
-extraction-label = "low"
-dispersion = 0.39722271
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

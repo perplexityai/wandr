@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ofcom_transfer_lineage.jsonl",
 ]
-difficulty = 0.795
-difficulty-label = "high"
 wandr_task = "ofcom_transfer_lineage"
+member_keys = ["licence_record"]
+url-nonreuse = 0.51748158
+url-nonreuse-label = "medium"
+domain-dispersion = 0.03819930
+domain-dispersion-label = "low"
+discovery = 0.53750000
+discovery-label = "high"
+enrichment = 0.82481061
+enrichment-label = "high"
+extraction = 0.70370370
+extraction-label = "high"
+difficulty = 0.79500000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 205.85634854
-width-label = "medium"
-depth = 1.73774417
-depth-label = "xhigh"
-extraction = 0.79472947
-extraction-label = "high"
-dispersion = 0.0381993
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

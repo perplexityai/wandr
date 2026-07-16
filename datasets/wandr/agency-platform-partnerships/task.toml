@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_agency_platform_partnerships.jsonl",
 ]
-difficulty = 0.250625
-difficulty-label = "low"
 wandr_task = "agency_platform_partnerships"
+member_keys = ["agency", "partner_program"]
+url-nonreuse = 0.50554649
+url-nonreuse-label = "medium"
+domain-dispersion = 0.72115193
+domain-dispersion-label = "high"
+discovery = 0.59833333
+discovery-label = "high"
+enrichment = 0.32112852
+enrichment-label = "low"
+extraction = 0.38053095
+extraction-label = "low"
+difficulty = 0.25062500
+difficulty-label = "low"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 1050.85400157
-width-label = "xlarge"
-depth = 0.04615409
-depth-label = "low"
-extraction = 0.25371474
-extraction-label = "low"
-dispersion = 0.72115193
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

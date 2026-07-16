@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_knowledge_product_metric_disclosure_evidence.jsonl",
 ]
+wandr_task = "knowledge_product_metric_disclosure_evidence"
+member_keys = ["organization_product"]
+url-nonreuse = 0.65173174
+url-nonreuse-label = "medium"
+domain-dispersion = 0.42224542
+domain-dispersion-label = "medium"
+discovery = 0.58533333
+discovery-label = "high"
+enrichment = 0.51354617
+enrichment-label = "medium"
+extraction = 0.39235955
+extraction-label = "low"
 difficulty = 0.69777778
 difficulty-label = "high"
-wandr_task = "knowledge_product_metric_disclosure_evidence"
 
 verticals = ["general", "academic", "tech"]
 topology = "hierarchical"
-width = 644.59523458
-width-label = "large"
-depth = 0.67435056
-depth-label = "high"
-extraction = 0.37955573
-extraction-label = "low"
-dispersion = 0.42224542
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

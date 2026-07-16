@@ -10,20 +10,23 @@ keywords = ["wandr", "llm", "public presence", "community sentiment", "retrieval
 required_file_paths = [
     "results_llm_presence.jsonl",
 ]
+wandr_task = "llm_presence"
+member_keys = ["company"]
+url-nonreuse = 0.78134492
+url-nonreuse-label = "high"
+domain-dispersion = 0.10547256
+domain-dispersion-label = "low"
+discovery = 0.06666667
+discovery-label = "low"
+enrichment = 0.93379630
+enrichment-label = "high"
+extraction = 0.58404558
+extraction-label = "medium"
 difficulty = 0.86944444
 difficulty-label = "high"
-wandr_task = "llm_presence"
 
 verticals = ["community"]
 topology = "composite"
-width = 1237.56144839
-width-label = "xlarge"
-depth = 0.52040971
-depth-label = "high"
-extraction = 0.60536081
-extraction-label = "high"
-dispersion = 0.10547256
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

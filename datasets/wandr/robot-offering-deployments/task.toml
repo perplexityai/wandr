@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_robot_offering_deployments.jsonl",
 ]
-difficulty = 0.405
-difficulty-label = "medium"
 wandr_task = "robot_offering_deployments"
+member_keys = ["company_robot_offering"]
+url-nonreuse = 0.99410644
+url-nonreuse-label = "high"
+domain-dispersion = 0.67269558
+domain-dispersion-label = "high"
+discovery = 0.20933333
+discovery-label = "medium"
+enrichment = 0.54960958
+enrichment-label = "medium"
+extraction = 0.53704093
+extraction-label = "medium"
+difficulty = 0.40500000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 131.87122785
-width-label = "small"
-depth = 0.20334069
-depth-label = "medium"
-extraction = 0.40195466
-extraction-label = "medium"
-dispersion = 0.67269558
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

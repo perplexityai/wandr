@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_acma_rrl_licensee_provenance.jsonl",
 ]
+wandr_task = "acma_rrl_licensee_provenance"
+member_keys = ["organisation_licensee"]
+url-nonreuse = 0.80497791
+url-nonreuse-label = "high"
+domain-dispersion = 0.35222506
+domain-dispersion-label = "low"
+discovery = 0.60648148
+discovery-label = "high"
+enrichment = 0.41914791
+enrichment-label = "low"
+extraction = 0.34342676
+extraction-label = "low"
 difficulty = 0.36574074
 difficulty-label = "low"
-wandr_task = "acma_rrl_licensee_provenance"
 
 verticals = ["legal"]
 topology = "flat"
-width = 284.23849709
-width-label = "medium"
-depth = 0.20203108
-depth-label = "medium"
-extraction = 0.3941563
-extraction-label = "medium"
-dispersion = 0.35222506
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

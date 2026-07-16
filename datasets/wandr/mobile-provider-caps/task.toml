@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mobile_provider_caps.jsonl",
 ]
-difficulty = 0.36375
-difficulty-label = "low"
 wandr_task = "mobile_provider_caps"
+member_keys = ["provider_brand"]
+url-nonreuse = 0.59097926
+url-nonreuse-label = "medium"
+domain-dispersion = 0.58575675
+domain-dispersion-label = "medium"
+discovery = 0.35200000
+discovery-label = "medium"
+enrichment = 0.59659729
+enrichment-label = "medium"
+extraction = 0.46620749
+extraction-label = "low"
+difficulty = 0.36375000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 523.95079873
-width-label = "large"
-depth = 0.16021554
-depth-label = "medium"
-extraction = 0.35968657
-extraction-label = "low"
-dispersion = 0.58575675
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

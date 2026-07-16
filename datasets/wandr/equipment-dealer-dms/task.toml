@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_equipment_dealer_dms.jsonl",
 ]
-difficulty = 0.5625
-difficulty-label = "medium"
 wandr_task = "equipment_dealer_dms"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.61194508
+url-nonreuse-label = "medium"
+domain-dispersion = 0.51157351
+domain-dispersion-label = "medium"
+discovery = 0.40250000
+discovery-label = "medium"
+enrichment = 0.37364302
+enrichment-label = "low"
+extraction = 0.60681019
+extraction-label = "medium"
+difficulty = 0.56250000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 410.74273323
-width-label = "medium"
-depth = 0.09333406
-depth-label = "low"
-extraction = 0.56725397
-extraction-label = "high"
-dispersion = 0.51157351
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

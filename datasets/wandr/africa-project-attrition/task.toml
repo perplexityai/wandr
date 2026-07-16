@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_africa_project_attrition.jsonl",
 ]
-difficulty = 0.11875
-difficulty-label = "low"
 wandr_task = "africa_project_attrition"
+member_keys = ["project_event"]
+url-nonreuse = 0.16777593
+url-nonreuse-label = "low"
+domain-dispersion = 0.16379082
+domain-dispersion-label = "low"
+discovery = 0.37083333
+discovery-label = "medium"
+enrichment = 0.47226399
+enrichment-label = "low"
+extraction = 0.65499909
+extraction-label = "high"
+difficulty = 0.11875000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 57.1138692
-width-label = "small"
-depth = 0.28534236
-depth-label = "medium"
-extraction = 0.39627341
-extraction-label = "medium"
-dispersion = 0.16379082
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

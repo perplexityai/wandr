@@ -11,20 +11,23 @@ required_file_paths = [
     "results_furniture_maker_object_attributions.jsonl",
     "results_furniture_maker_object_attributions.maker_documentation.jsonl",
 ]
+wandr_task = "furniture_maker_object_attributions"
+member_keys = ["maker_object"]
+url-nonreuse = 0.78407241
+url-nonreuse-label = "high"
+domain-dispersion = 0.09071433
+domain-dispersion-label = "low"
+discovery = 0.69166667
+discovery-label = "high"
+enrichment = 0.36314621
+enrichment-label = "low"
+extraction = 0.56612970
+extraction-label = "medium"
 difficulty = 0.49861111
 difficulty-label = "medium"
-wandr_task = "furniture_maker_object_attributions"
 
 verticals = ["general", "e-com"]
 topology = "composite"
-width = 702.8309909
-width-label = "large"
-depth = 0.20020128
-depth-label = "medium"
-extraction = 0.4166369
-extraction-label = "medium"
-dispersion = 0.09071433
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

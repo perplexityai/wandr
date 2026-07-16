@@ -11,20 +11,23 @@ required_file_paths = [
     "results_sap_data_integration_capability_evidence.jsonl",
     "results_sap_data_integration_capability_evidence.cloud_targets.jsonl",
 ]
+wandr_task = "sap_data_integration_capability_evidence"
+member_keys = ["tool"]
+url-nonreuse = 0.75009480
+url-nonreuse-label = "high"
+domain-dispersion = 0.38197733
+domain-dispersion-label = "low"
+discovery = 0.03888889
+discovery-label = "low"
+enrichment = 0.54529454
+enrichment-label = "medium"
+extraction = 0.54667482
+extraction-label = "medium"
 difficulty = 0.44166667
 difficulty-label = "medium"
-wandr_task = "sap_data_integration_capability_evidence"
 
 verticals = ["tech"]
 topology = "composite"
-width = 134.22517024
-width-label = "small"
-depth = 0.63030843
-depth-label = "high"
-extraction = 0.48773492
-extraction-label = "medium"
-dispersion = 0.38197733
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -12,20 +12,23 @@ required_file_paths = [
     "results_market_access_datasets.dataset_size.jsonl",
     "results_market_access_datasets.dataset_relevance.jsonl",
 ]
-difficulty = 0.65
-difficulty-label = "high"
 wandr_task = "market_access_datasets"
+member_keys = ["vendor_dataset"]
+url-nonreuse = 0.41255466
+url-nonreuse-label = "low"
+domain-dispersion = 0.83559919
+domain-dispersion-label = "high"
+discovery = 0.23809524
+discovery-label = "medium"
+enrichment = 0.79003410
+enrichment-label = "high"
+extraction = 0.77613636
+extraction-label = "high"
+difficulty = 0.65000000
+difficulty-label = "high"
 
 verticals = ["health"]
 topology = "composite"
-width = 181.4768262
-width-label = "medium"
-depth = 0.13536662
-depth-label = "medium"
-extraction = 0.6776773
-extraction-label = "high"
-dispersion = 0.83559919
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_lsv_product_evidence.jsonl",
 ]
-difficulty = 0.58125
-difficulty-label = "medium"
 wandr_task = "lsv_product_evidence"
+member_keys = ["brand_model"]
+url-nonreuse = 0.47460290
+url-nonreuse-label = "low"
+domain-dispersion = 0.57920278
+domain-dispersion-label = "medium"
+discovery = 0.41388889
+discovery-label = "medium"
+enrichment = 0.57000064
+enrichment-label = "medium"
+extraction = 0.53144666
+extraction-label = "medium"
+difficulty = 0.58125000
+difficulty-label = "medium"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 547.52793456
-width-label = "large"
-depth = 0.14850847
-depth-label = "medium"
-extraction = 0.42796454
-extraction-label = "medium"
-dispersion = 0.57920278
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

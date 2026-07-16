@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_business_banking_products.jsonl",
 ]
+wandr_task = "business_banking_products"
+member_keys = ["provider_product_plan"]
+url-nonreuse = 0.47408416
+url-nonreuse-label = "low"
+domain-dispersion = 0.46499404
+domain-dispersion-label = "medium"
+discovery = 0.01666667
+discovery-label = "low"
+enrichment = 0.58505747
+enrichment-label = "medium"
+extraction = 0.52825788
+extraction-label = "medium"
 difficulty = 0.41944444
 difficulty-label = "medium"
-wandr_task = "business_banking_products"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 275.88782356
-width-label = "medium"
-depth = 0.1448328
-depth-label = "medium"
-extraction = 0.46890017
-extraction-label = "medium"
-dispersion = 0.46499404
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

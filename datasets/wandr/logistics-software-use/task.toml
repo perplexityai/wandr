@@ -11,20 +11,23 @@ required_file_paths = [
     "results_logistics_software_use.jsonl",
     "results_logistics_software_use.named_adoption.jsonl",
 ]
+wandr_task = "logistics_software_use"
+member_keys = ["software_product"]
+url-nonreuse = 0.83536511
+url-nonreuse-label = "high"
+domain-dispersion = 0.34121263
+domain-dispersion-label = "low"
+discovery = 0.13636364
+discovery-label = "low"
+enrichment = 0.89513889
+enrichment-label = "high"
+extraction = 0.52815131
+extraction-label = "medium"
 difficulty = 0.66477273
 difficulty-label = "high"
-wandr_task = "logistics_software_use"
 
 verticals = ["general", "community", "e-com", "tech"]
 topology = "composite"
-width = 1012.11375558
-width-label = "xlarge"
-depth = 0.14747583
-depth-label = "medium"
-extraction = 0.38190933
-extraction-label = "low"
-dispersion = 0.34121263
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

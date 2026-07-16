@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bi_analytics_ai_capability_provenance.jsonl",
 ]
-difficulty = 0.336
-difficulty-label = "low"
 wandr_task = "bi_analytics_ai_capability_provenance"
+member_keys = ["capability"]
+url-nonreuse = 0.87154235
+url-nonreuse-label = "high"
+domain-dispersion = 0.73596202
+domain-dispersion-label = "high"
+discovery = 0.36133333
+discovery-label = "medium"
+enrichment = 0.48013776
+enrichment-label = "medium"
+extraction = 0.55350178
+extraction-label = "medium"
+difficulty = 0.33600000
+difficulty-label = "low"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 331.18980891
-width-label = "medium"
-depth = 0.49014127
-depth-label = "high"
-extraction = 0.49099863
-extraction-label = "medium"
-dispersion = 0.73596202
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

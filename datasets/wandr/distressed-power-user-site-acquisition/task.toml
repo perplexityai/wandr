@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_distressed_power_user_site_acquisition.jsonl",
 ]
+wandr_task = "distressed_power_user_site_acquisition"
+member_keys = ["site_opportunity"]
+url-nonreuse = 0.44350115
+url-nonreuse-label = "low"
+domain-dispersion = 0.80318703
+domain-dispersion-label = "high"
+discovery = 0.05000000
+discovery-label = "low"
+enrichment = 0.24460531
+enrichment-label = "low"
+extraction = 0.41163361
+extraction-label = "low"
 difficulty = 0.09166667
 difficulty-label = "low"
-wandr_task = "distressed_power_user_site_acquisition"
 
 verticals = ["general", "e-com"]
 topology = "composite"
-width = 97.4514309
-width-label = "small"
-depth = 0.09413009
-depth-label = "low"
-extraction = 0.36897024
-extraction-label = "low"
-dispersion = 0.80318703
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -11,20 +11,23 @@ required_file_paths = [
     "results_hcmc_sugarcane_providers.jsonl",
     "results_hcmc_sugarcane_providers.provider_capability.jsonl",
 ]
+wandr_task = "hcmc_sugarcane_providers"
+member_keys = ["provider"]
+url-nonreuse = 0.31071467
+url-nonreuse-label = "low"
+domain-dispersion = 0.75374547
+domain-dispersion-label = "high"
+discovery = 0.16800000
+discovery-label = "low"
+enrichment = 0.37077043
+enrichment-label = "low"
+extraction = 0.56471222
+extraction-label = "medium"
 difficulty = 0.28666667
 difficulty-label = "low"
-wandr_task = "hcmc_sugarcane_providers"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 57.31611886
-width-label = "small"
-depth = 0.12704596
-depth-label = "medium"
-extraction = 0.49685547
-extraction-label = "medium"
-dispersion = 0.75374547
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

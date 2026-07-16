@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_construction_3d_printing_deployments.jsonl",
 ]
-difficulty = 0.275
-difficulty-label = "low"
 wandr_task = "construction_3d_printing_deployments"
+member_keys = ["project_deployment"]
+url-nonreuse = 0.92565292
+url-nonreuse-label = "high"
+domain-dispersion = 0.49131620
+domain-dispersion-label = "medium"
+discovery = 0.05200000
+discovery-label = "low"
+enrichment = 0.49209332
+enrichment-label = "medium"
+extraction = 0.55867203
+extraction-label = "medium"
+difficulty = 0.27500000
+difficulty-label = "low"
 
 verticals = ["general", "events"]
 topology = "flat"
-width = 640.33914394
-width-label = "large"
-depth = 0.04237786
-depth-label = "low"
-extraction = 0.4541086
-extraction-label = "medium"
-dispersion = 0.4913162
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

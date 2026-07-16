@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_healthy_building_firms.jsonl",
 ]
+wandr_task = "healthy_building_firms"
+member_keys = ["firm_or_practice"]
+url-nonreuse = 0.45616829
+url-nonreuse-label = "low"
+domain-dispersion = 0.69097913
+domain-dispersion-label = "high"
+discovery = 0.32619048
+discovery-label = "medium"
+enrichment = 0.42219594
+enrichment-label = "low"
+extraction = 0.55830349
+extraction-label = "medium"
 difficulty = 0.51190476
 difficulty-label = "medium"
-wandr_task = "healthy_building_firms"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 560.85719793
-width-label = "large"
-depth = 0.07475637
-depth-label = "low"
-extraction = 0.48057484
-extraction-label = "medium"
-dispersion = 0.69097913
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

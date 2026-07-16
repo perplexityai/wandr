@@ -11,20 +11,23 @@ required_file_paths = [
     "results_australia_education_agents.jsonl",
     "results_australia_education_agents.education_agencies_eligibility.jsonl",
 ]
+wandr_task = "australia_education_agents"
+member_keys = ["country_agency"]
+url-nonreuse = 0.58289734
+url-nonreuse-label = "medium"
+domain-dispersion = 0.53462437
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.88385417
+enrichment-label = "high"
+extraction = 0.84229900
+extraction-label = "high"
 difficulty = 0.81119792
 difficulty-label = "high"
-wandr_task = "australia_education_agents"
 
 verticals = ["general"]
 topology = "composite"
-width = 349.72203396
-width-label = "medium"
-depth = 2.59718208
-depth-label = "xhigh"
-extraction = 0.78330442
-extraction-label = "high"
-dispersion = 0.53462437
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

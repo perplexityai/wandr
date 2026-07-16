@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_collaboration_signals.jsonl",
 ]
+wandr_task = "ai_collaboration_signals"
+member_keys = ["company_product"]
+url-nonreuse = 0.44992032
+url-nonreuse-label = "low"
+domain-dispersion = 0.70445888
+domain-dispersion-label = "high"
+discovery = 0.28666667
+discovery-label = "medium"
+enrichment = 0.21321087
+enrichment-label = "low"
+extraction = 0.42877701
+extraction-label = "low"
 difficulty = 0.24791667
 difficulty-label = "low"
-wandr_task = "ai_collaboration_signals"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 841.87936145
-width-label = "large"
-depth = 0.02350033
-depth-label = "low"
-extraction = 0.35436238
-extraction-label = "low"
-dispersion = 0.70445888
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

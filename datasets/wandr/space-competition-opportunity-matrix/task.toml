@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_space_competition_opportunity_matrix.jsonl",
 ]
+wandr_task = "space_competition_opportunity_matrix"
+member_keys = ["opportunity"]
+url-nonreuse = 0.27427342
+url-nonreuse-label = "low"
+domain-dispersion = 0.43476697
+domain-dispersion-label = "medium"
+discovery = 0.04166667
+discovery-label = "low"
+enrichment = 0.27025966
+enrichment-label = "low"
+extraction = 0.59050808
+extraction-label = "medium"
 difficulty = 0.28819444
 difficulty-label = "low"
-wandr_task = "space_competition_opportunity_matrix"
 
 verticals = ["legal"]
 topology = "composite"
-width = 79.90986186
-width-label = "small"
-depth = 0.05089884
-depth-label = "low"
-extraction = 0.57400417
-extraction-label = "high"
-dispersion = 0.43476697
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

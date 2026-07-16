@@ -11,20 +11,23 @@ required_file_paths = [
     "results_math_conjectures_resolved.jsonl",
     "results_math_conjectures_resolved.pop_science_coverage.jsonl",
 ]
+wandr_task = "math_conjectures_resolved"
+member_keys = ["conjecture"]
+url-nonreuse = 0.97473056
+url-nonreuse-label = "high"
+domain-dispersion = 0.44836351
+domain-dispersion-label = "medium"
+discovery = 0.07777778
+discovery-label = "low"
+enrichment = 0.74814439
+enrichment-label = "high"
+extraction = 0.68888889
+extraction-label = "high"
 difficulty = 0.48333333
 difficulty-label = "medium"
-wandr_task = "math_conjectures_resolved"
 
 verticals = ["events", "academic"]
 topology = "composite"
-width = 70.83051578
-width-label = "small"
-depth = 1.84875328
-depth-label = "xhigh"
-extraction = 0.50716581
-extraction-label = "medium"
-dispersion = 0.44836351
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

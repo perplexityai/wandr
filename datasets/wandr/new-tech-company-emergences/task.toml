@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_new_tech_company_emergences.jsonl",
 ]
-difficulty = 0.5625
-difficulty-label = "medium"
 wandr_task = "new_tech_company_emergences"
+member_keys = ["company"]
+url-nonreuse = 0.72461154
+url-nonreuse-label = "medium"
+domain-dispersion = 0.65508085
+domain-dispersion-label = "high"
+discovery = 0.12083333
+discovery-label = "low"
+enrichment = 0.64518489
+enrichment-label = "high"
+extraction = 0.65040166
+extraction-label = "high"
+difficulty = 0.56250000
+difficulty-label = "medium"
 
 verticals = ["general", "events"]
 topology = "flat"
-width = 78.97188976
-width-label = "small"
-depth = 0.22796573
-depth-label = "medium"
-extraction = 0.58678556
-extraction-label = "high"
-dispersion = 0.65508085
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

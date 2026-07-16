@@ -12,20 +12,23 @@ required_file_paths = [
     "results_israeli_us_presence.israeli_origin.jsonl",
     "results_israeli_us_presence.venture_backing.jsonl",
 ]
-difficulty = 0.8125
-difficulty-label = "high"
 wandr_task = "israeli_us_presence"
+member_keys = ["area_company"]
+url-nonreuse = 0.38180075
+url-nonreuse-label = "low"
+domain-dispersion = 0.54786540
+domain-dispersion-label = "medium"
+discovery = 0.45000000
+discovery-label = "high"
+enrichment = 0.72217498
+enrichment-label = "high"
+extraction = 0.61054945
+extraction-label = "medium"
+difficulty = 0.81250000
+difficulty-label = "high"
 
 verticals = ["general", "events"]
 topology = "composite"
-width = 588.83961539
-width-label = "large"
-depth = 0.163261
-depth-label = "medium"
-extraction = 0.42780278
-extraction-label = "medium"
-dispersion = 0.5478654
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

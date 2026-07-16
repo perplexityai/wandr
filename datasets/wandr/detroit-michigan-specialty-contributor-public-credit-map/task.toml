@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_detroit_michigan_specialty_contributor_public_credit_map.jsonl",
 ]
+wandr_task = "detroit_michigan_specialty_contributor_public_credit_map"
+member_keys = ["specialty_contributor"]
+url-nonreuse = 0.43984791
+url-nonreuse-label = "low"
+domain-dispersion = 0.62564454
+domain-dispersion-label = "high"
+discovery = 0.49166667
+discovery-label = "high"
+enrichment = 0.46965055
+enrichment-label = "low"
+extraction = 0.33639152
+extraction-label = "low"
 difficulty = 0.68958333
 difficulty-label = "high"
-wandr_task = "detroit_michigan_specialty_contributor_public_credit_map"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 225.03348103
-width-label = "medium"
-depth = 0.09939492
-depth-label = "low"
-extraction = 0.36688418
-extraction-label = "low"
-dispersion = 0.62564454
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

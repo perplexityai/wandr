@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_montreal_metal_fabricators.jsonl",
 ]
+wandr_task = "montreal_metal_fabricators"
+member_keys = ["operator_site"]
+url-nonreuse = 0.72625366
+url-nonreuse-label = "medium"
+domain-dispersion = 0.67824838
+domain-dispersion-label = "high"
+discovery = 0.21006944
+discovery-label = "medium"
+enrichment = 0.58299577
+enrichment-label = "medium"
+extraction = 0.55979544
+extraction-label = "medium"
 difficulty = 0.53385417
 difficulty-label = "medium"
-wandr_task = "montreal_metal_fabricators"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 241.0699492
-width-label = "medium"
-depth = 0.22142017
-depth-label = "medium"
-extraction = 0.52143294
-extraction-label = "medium"
-dispersion = 0.67824838
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

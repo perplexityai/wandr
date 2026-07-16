@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_canada_copacker_capabilities.jsonl",
 ]
-difficulty = 0.675
-difficulty-label = "high"
 wandr_task = "canada_copacker_capabilities"
+member_keys = ["operator_or_facility"]
+url-nonreuse = 0.48925618
+url-nonreuse-label = "medium"
+domain-dispersion = 0.61425539
+domain-dispersion-label = "medium"
+discovery = 0.29166667
+discovery-label = "medium"
+enrichment = 0.66610276
+enrichment-label = "high"
+extraction = 0.67347321
+extraction-label = "high"
+difficulty = 0.67500000
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 127.42715782
-width-label = "small"
-depth = 0.24743568
-depth-label = "medium"
-extraction = 0.64440189
-extraction-label = "high"
-dispersion = 0.61425539
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

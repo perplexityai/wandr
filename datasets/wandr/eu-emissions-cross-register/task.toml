@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_eu_emissions_cross_register.jsonl",
 ]
+wandr_task = "eu_emissions_cross_register"
+member_keys = ["release_event"]
+url-nonreuse = 0.50754225
+url-nonreuse-label = "medium"
+domain-dispersion = 0.09243642
+domain-dispersion-label = "low"
+discovery = 0.18888889
+discovery-label = "low"
+enrichment = 0.49652778
+enrichment-label = "medium"
+extraction = 0.50442412
+extraction-label = "medium"
 difficulty = 0.11111111
 difficulty-label = "low"
-wandr_task = "eu_emissions_cross_register"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 291.47462788
-width-label = "medium"
-depth = 0.14286329
-depth-label = "medium"
-extraction = 0.31276074
-extraction-label = "low"
-dispersion = 0.09243642
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

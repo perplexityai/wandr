@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_pdac_multiomics_registry.jsonl",
 ]
+wandr_task = "pdac_multiomics_registry"
+member_keys = ["resource"]
+url-nonreuse = 0.99296765
+url-nonreuse-label = "high"
+domain-dispersion = 0.05009837
+domain-dispersion-label = "low"
+discovery = 0.35777778
+discovery-label = "medium"
+enrichment = 0.77234035
+enrichment-label = "high"
+extraction = 0.82014369
+extraction-label = "high"
 difficulty = 0.80833333
 difficulty-label = "high"
-wandr_task = "pdac_multiomics_registry"
 
 verticals = ["academic"]
 topology = "flat"
-width = 63.49102335
-width-label = "small"
-depth = 0.75919677
-depth-label = "high"
-extraction = 0.66708913
-extraction-label = "high"
-dispersion = 0.05009837
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

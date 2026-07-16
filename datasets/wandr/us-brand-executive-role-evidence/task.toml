@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_brand_executive_role_evidence.jsonl",
 ]
+wandr_task = "us_brand_executive_role_evidence"
+member_keys = ["executive"]
+url-nonreuse = 0.90540627
+url-nonreuse-label = "high"
+domain-dispersion = 0.81401066
+domain-dispersion-label = "high"
+discovery = 0.73958333
+discovery-label = "high"
+enrichment = 0.39284405
+enrichment-label = "low"
+extraction = 0.47807763
+extraction-label = "low"
 difficulty = 0.80113636
 difficulty-label = "high"
-wandr_task = "us_brand_executive_role_evidence"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 489.29071789
-width-label = "large"
-depth = 0.24382711
-depth-label = "medium"
-extraction = 0.40131626
-extraction-label = "medium"
-dispersion = 0.81401066
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

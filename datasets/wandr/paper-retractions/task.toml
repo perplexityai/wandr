@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_paper_retractions.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "paper_retractions"
+member_keys = ["paper"]
+url-nonreuse = 0.99761289
+url-nonreuse-label = "high"
+domain-dispersion = 0.01447932
+domain-dispersion-label = "low"
+discovery = 0.53172414
+discovery-label = "high"
+enrichment = 0.50495192
+enrichment-label = "medium"
+extraction = 0.52201058
+extraction-label = "medium"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["academic"]
 topology = "flat"
-width = 66.09743786
-width-label = "small"
-depth = 0.12378162
-depth-label = "medium"
-extraction = 0.37379278
-extraction-label = "low"
-dispersion = 0.01447932
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

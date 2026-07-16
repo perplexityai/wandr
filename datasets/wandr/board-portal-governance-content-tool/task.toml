@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_board_portal_governance_content_tool.jsonl",
 ]
-difficulty = 0.82875
-difficulty-label = "high"
 wandr_task = "board_portal_governance_content_tool"
+member_keys = ["content_artifact"]
+url-nonreuse = 0.92153660
+url-nonreuse-label = "high"
+domain-dispersion = 0.69735022
+domain-dispersion-label = "high"
+discovery = 0.50625000
+discovery-label = "high"
+enrichment = 0.80472128
+enrichment-label = "high"
+extraction = 0.94870629
+extraction-label = "high"
+difficulty = 0.82875000
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 556.73665305
-width-label = "large"
-depth = 0.7337574
-depth-label = "high"
-extraction = 0.91496511
-extraction-label = "high"
-dispersion = 0.69735022
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

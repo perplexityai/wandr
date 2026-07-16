@@ -11,20 +11,23 @@ required_file_paths = [
     "results_rental_property_bookkeeping_provider_evidence.jsonl",
     "results_rental_property_bookkeeping_provider_evidence.provider_commitments.jsonl",
 ]
+wandr_task = "rental_property_bookkeeping_provider_evidence"
+member_keys = ["provider"]
+url-nonreuse = 0.36673545
+url-nonreuse-label = "low"
+domain-dispersion = 0.95509983
+domain-dispersion-label = "high"
+discovery = 0.81502058
+discovery-label = "high"
+enrichment = 0.26959600
+enrichment-label = "low"
+extraction = 0.61338471
+extraction-label = "medium"
 difficulty = 0.41358025
 difficulty-label = "medium"
-wandr_task = "rental_property_bookkeeping_provider_evidence"
 
 verticals = ["general"]
 topology = "composite"
-width = 2840.57172727
-width-label = "xlarge"
-depth = 0.02678063
-depth-label = "low"
-extraction = 0.37628796
-extraction-label = "low"
-dispersion = 0.95509983
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

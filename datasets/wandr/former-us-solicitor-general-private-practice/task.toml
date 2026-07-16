@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_former_us_solicitor_general_private_practice.jsonl",
 ]
+wandr_task = "former_us_solicitor_general_private_practice"
+member_keys = ["person"]
+url-nonreuse = 0.59441049
+url-nonreuse-label = "medium"
+domain-dispersion = 0.52741916
+domain-dispersion-label = "medium"
+discovery = 0.22000000
+discovery-label = "medium"
+enrichment = 0.34985267
+enrichment-label = "low"
+extraction = 0.38144346
+extraction-label = "low"
 difficulty = 0.22444444
 difficulty-label = "low"
-wandr_task = "former_us_solicitor_general_private_practice"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 262.80405082
-width-label = "medium"
-depth = 0.1135856
-depth-label = "medium"
-extraction = 0.2934596
-extraction-label = "low"
-dispersion = 0.52741916
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

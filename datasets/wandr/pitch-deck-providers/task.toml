@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_pitch_deck_providers.jsonl",
 ]
-difficulty = 0.660625
-difficulty-label = "high"
 wandr_task = "pitch_deck_providers"
+member_keys = ["provider"]
+url-nonreuse = 0.42614514
+url-nonreuse-label = "low"
+domain-dispersion = 0.83781904
+domain-dispersion-label = "high"
+discovery = 0.20666667
+discovery-label = "medium"
+enrichment = 0.78020117
+enrichment-label = "high"
+extraction = 0.53679505
+extraction-label = "medium"
+difficulty = 0.66062500
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 907.80404534
-width-label = "large"
-depth = 0.12591798
-depth-label = "medium"
-extraction = 0.50696
-extraction-label = "medium"
-dispersion = 0.83781904
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

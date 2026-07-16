@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_onboarding_gamification.jsonl",
 ]
+wandr_task = "onboarding_gamification"
+member_keys = ["product"]
+url-nonreuse = 0.58954685
+url-nonreuse-label = "medium"
+domain-dispersion = 0.85506605
+domain-dispersion-label = "high"
+discovery = 0.14642857
+discovery-label = "low"
+enrichment = 0.65615567
+enrichment-label = "high"
+extraction = 0.60059330
+extraction-label = "medium"
 difficulty = 0.61785714
 difficulty-label = "medium"
-wandr_task = "onboarding_gamification"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 340.74131461
-width-label = "medium"
-depth = 0.14089195
-depth-label = "medium"
-extraction = 0.53271956
-extraction-label = "high"
-dispersion = 0.85506605
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

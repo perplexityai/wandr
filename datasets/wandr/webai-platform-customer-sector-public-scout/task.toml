@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_webai_platform_customer_sector_public_scout.jsonl",
 ]
-difficulty = 0.3075
-difficulty-label = "low"
 wandr_task = "webai_platform_customer_sector_public_scout"
+member_keys = ["company"]
+url-nonreuse = 0.81077432
+url-nonreuse-label = "high"
+domain-dispersion = 0.44436685
+domain-dispersion-label = "medium"
+discovery = 0.67777778
+discovery-label = "high"
+enrichment = 0.47117063
+enrichment-label = "low"
+extraction = 0.42712782
+extraction-label = "low"
+difficulty = 0.30750000
+difficulty-label = "low"
 
 verticals = ["events", "tech"]
 topology = "hierarchical"
-width = 2294.23484499
-width-label = "xlarge"
-depth = 0.08350313
-depth-label = "low"
-extraction = 0.23829766
-extraction-label = "low"
-dispersion = 0.44436685
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

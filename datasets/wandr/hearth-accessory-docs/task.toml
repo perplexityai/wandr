@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_hearth_accessory_docs.jsonl",
 ]
-difficulty = 0.4875
-difficulty-label = "medium"
 wandr_task = "hearth_accessory_docs"
+member_keys = ["brand_sku"]
+url-nonreuse = 0.63777286
+url-nonreuse-label = "medium"
+domain-dispersion = 0.43996050
+domain-dispersion-label = "medium"
+discovery = 0.15000000
+discovery-label = "low"
+enrichment = 0.59564772
+enrichment-label = "medium"
+extraction = 0.53039948
+extraction-label = "medium"
+difficulty = 0.48750000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 180.67141142
-width-label = "medium"
-depth = 0.2270334
-depth-label = "medium"
-extraction = 0.4686026
-extraction-label = "medium"
-dispersion = 0.4399605
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

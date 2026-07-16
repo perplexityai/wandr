@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_alaska_food_producers.jsonl",
 ]
+wandr_task = "alaska_food_producers"
+member_keys = ["producer"]
+url-nonreuse = 0.68556368
+url-nonreuse-label = "medium"
+domain-dispersion = 0.26247494
+domain-dispersion-label = "low"
+discovery = 0.43530864
+discovery-label = "high"
+enrichment = 0.67645065
+enrichment-label = "high"
+extraction = 0.55400847
+extraction-label = "medium"
 difficulty = 0.56740741
 difficulty-label = "medium"
-wandr_task = "alaska_food_producers"
 
 verticals = ["general", "legal", "e-com"]
 topology = "hierarchical"
-width = 1077.70100649
-width-label = "xlarge"
-depth = 0.14965517
-depth-label = "medium"
-extraction = 0.49556651
-extraction-label = "medium"
-dispersion = 0.26247494
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

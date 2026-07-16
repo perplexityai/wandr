@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_nurse_pathway_programs.jsonl",
 ]
+wandr_task = "nurse_pathway_programs"
+member_keys = ["support_program"]
+url-nonreuse = 0.82936873
+url-nonreuse-label = "high"
+domain-dispersion = 0.92118339
+domain-dispersion-label = "high"
+discovery = 0.47361111
+discovery-label = "high"
+enrichment = 0.43113854
+enrichment-label = "low"
+extraction = 0.53547995
+extraction-label = "medium"
 difficulty = 0.38541667
 difficulty-label = "low"
-wandr_task = "nurse_pathway_programs"
 
 verticals = ["general", "health"]
 topology = "hierarchical"
-width = 323.00545664
-width-label = "medium"
-depth = 0.44228994
-depth-label = "high"
-extraction = 0.47161331
-extraction-label = "medium"
-dispersion = 0.92118339
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

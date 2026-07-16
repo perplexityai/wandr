@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_reddit_workflow_tool_capability_provenance_atlas.jsonl",
 ]
+wandr_task = "reddit_workflow_tool_capability_provenance_atlas"
+member_keys = ["product"]
+url-nonreuse = 0.43454657
+url-nonreuse-label = "low"
+domain-dispersion = 0.71581584
+domain-dispersion-label = "high"
+discovery = 0.48333333
+discovery-label = "high"
+enrichment = 0.42332393
+enrichment-label = "low"
+extraction = 0.44203779
+extraction-label = "low"
 difficulty = 0.40222222
 difficulty-label = "low"
-wandr_task = "reddit_workflow_tool_capability_provenance_atlas"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 470.74028043
-width-label = "large"
-depth = 0.05369871
-depth-label = "low"
-extraction = 0.38691484
-extraction-label = "medium"
-dispersion = 0.71581584
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

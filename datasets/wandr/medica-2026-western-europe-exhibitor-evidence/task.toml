@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_medica_2026_western_europe_exhibitor_evidence.jsonl",
 ]
-difficulty = 0.4875
-difficulty-label = "medium"
 wandr_task = "medica_2026_western_europe_exhibitor_evidence"
+member_keys = ["company"]
+url-nonreuse = 0.85994410
+url-nonreuse-label = "high"
+domain-dispersion = 0.30239556
+domain-dispersion-label = "low"
+discovery = 0.31636364
+discovery-label = "medium"
+enrichment = 0.60080808
+enrichment-label = "medium"
+extraction = 0.59850040
+extraction-label = "medium"
+difficulty = 0.48750000
+difficulty-label = "medium"
 
 verticals = ["general", "health"]
 topology = "hierarchical"
-width = 679.84409149
-width-label = "large"
-depth = 0.39967583
-depth-label = "medium"
-extraction = 0.63565287
-extraction-label = "high"
-dispersion = 0.30239556
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

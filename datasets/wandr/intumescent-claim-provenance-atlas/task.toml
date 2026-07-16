@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_intumescent_claim_provenance_atlas.jsonl",
 ]
+wandr_task = "intumescent_claim_provenance_atlas"
+member_keys = ["product_or_system"]
+url-nonreuse = 0.28509485
+url-nonreuse-label = "low"
+domain-dispersion = 0.31968207
+domain-dispersion-label = "low"
+discovery = 0.24333333
+discovery-label = "medium"
+enrichment = 0.38382836
+enrichment-label = "low"
+extraction = 0.53798197
+extraction-label = "medium"
 difficulty = 0.31388889
 difficulty-label = "low"
-wandr_task = "intumescent_claim_provenance_atlas"
 
 verticals = ["patents", "e-com"]
 topology = "hierarchical"
-width = 247.5776911
-width-label = "medium"
-depth = 0.28065426
-depth-label = "medium"
-extraction = 0.45547907
-extraction-label = "medium"
-dispersion = 0.31968207
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

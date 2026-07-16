@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_container_shipping_providers.jsonl",
 ]
-difficulty = 0.796875
-difficulty-label = "high"
 wandr_task = "container_shipping_providers"
+member_keys = ["stage_provider"]
+url-nonreuse = 0.33064646
+url-nonreuse-label = "low"
+domain-dispersion = 0.76464022
+domain-dispersion-label = "high"
+discovery = 0.71822917
+discovery-label = "high"
+enrichment = 0.37976613
+enrichment-label = "low"
+extraction = 0.30320264
+extraction-label = "low"
+difficulty = 0.79687500
+difficulty-label = "high"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 246.82926558
-width-label = "medium"
-depth = 0.09315002
-depth-label = "low"
-extraction = 0.24810277
-extraction-label = "low"
-dispersion = 0.76464022
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

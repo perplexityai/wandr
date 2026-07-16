@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_automotive_ai_sales_workflows.jsonl",
 ]
+wandr_task = "automotive_ai_sales_workflows"
+member_keys = ["vendor_workflow"]
+url-nonreuse = 0.75408195
+url-nonreuse-label = "high"
+domain-dispersion = 0.59211533
+domain-dispersion-label = "medium"
+discovery = 0.21777778
+discovery-label = "medium"
+enrichment = 0.48222636
+enrichment-label = "medium"
+extraction = 0.50872367
+extraction-label = "medium"
 difficulty = 0.38666667
 difficulty-label = "low"
-wandr_task = "automotive_ai_sales_workflows"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 982.6630785
-width-label = "large"
-depth = 0.0465043
-depth-label = "low"
-extraction = 0.47472645
-extraction-label = "medium"
-dispersion = 0.59211533
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

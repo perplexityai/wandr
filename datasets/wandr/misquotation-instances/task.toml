@@ -10,20 +10,23 @@ keywords = ["wandr", "quotes", "misquotation", "misattribution", "retrieval", "c
 required_file_paths = [
     "results_misquotation_instances.jsonl",
 ]
-difficulty = 0.90875
-difficulty-label = "high"
 wandr_task = "misquotation_instances"
+member_keys = ["quote"]
+url-nonreuse = 0.86792723
+url-nonreuse-label = "high"
+domain-dispersion = 0.41817884
+domain-dispersion-label = "low"
+discovery = 0.79375000
+discovery-label = "high"
+enrichment = 0.38094970
+enrichment-label = "low"
+extraction = 0.23318716
+extraction-label = "low"
+difficulty = 0.90875000
+difficulty-label = "high"
 
 verticals = ["wikis"]
 topology = "hierarchical"
-width = 3231.44389835
-width-label = "xlarge"
-depth = 1.38739055
-depth-label = "xhigh"
-extraction = 0.18714999
-extraction-label = "low"
-dispersion = 0.41817884
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

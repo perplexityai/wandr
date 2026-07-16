@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_b8_open_storage_site_scouting.jsonl",
 ]
+wandr_task = "uk_b8_open_storage_site_scouting"
+member_keys = ["opportunity_area"]
+url-nonreuse = 0.59609285
+url-nonreuse-label = "medium"
+domain-dispersion = 0.42370257
+domain-dispersion-label = "medium"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.48114286
+enrichment-label = "medium"
+extraction = 0.44803292
+extraction-label = "low"
 difficulty = 0.03714286
 difficulty-label = "low"
-wandr_task = "uk_b8_open_storage_site_scouting"
 
 verticals = ["general", "legal", "e-com"]
 topology = "composite"
-width = 193.55052979
-width-label = "medium"
-depth = 0.09987649
-depth-label = "low"
-extraction = 0.31323863
-extraction-label = "low"
-dispersion = 0.42370257
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

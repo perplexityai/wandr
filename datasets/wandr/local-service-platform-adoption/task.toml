@@ -12,20 +12,23 @@ required_file_paths = [
     "results_local_service_platform_adoption.platform_features.jsonl",
     "results_local_service_platform_adoption.business_presence.jsonl",
 ]
+wandr_task = "local_service_platform_adoption"
+member_keys = ["customer_business"]
+url-nonreuse = 0.81499971
+url-nonreuse-label = "high"
+domain-dispersion = 0.55056804
+domain-dispersion-label = "medium"
+discovery = 0.34722222
+discovery-label = "medium"
+enrichment = 0.62240803
+enrichment-label = "medium"
+extraction = 0.83318794
+extraction-label = "high"
 difficulty = 0.55277778
 difficulty-label = "medium"
-wandr_task = "local_service_platform_adoption"
 
 verticals = ["general"]
 topology = "composite"
-width = 1155.22916887
-width-label = "xlarge"
-depth = 0.1240654
-depth-label = "medium"
-extraction = 0.72938172
-extraction-label = "high"
-dispersion = 0.55056804
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

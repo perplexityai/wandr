@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_neurovascular_open_payments.jsonl",
 ]
-difficulty = 0.2625
-difficulty-label = "low"
 wandr_task = "neurovascular_open_payments"
+member_keys = ["publication_author"]
+url-nonreuse = 0.76281045
+url-nonreuse-label = "high"
+domain-dispersion = 0.02338020
+domain-dispersion-label = "low"
+discovery = 0.45694444
+discovery-label = "high"
+enrichment = 0.59797009
+enrichment-label = "medium"
+extraction = 0.54686132
+extraction-label = "medium"
+difficulty = 0.26250000
+difficulty-label = "low"
 
 verticals = ["legal", "academic"]
 topology = "hierarchical"
-width = 754.31630071
-width-label = "large"
-depth = 0.21629051
-depth-label = "medium"
-extraction = 0.21732243
-extraction-label = "low"
-dispersion = 0.0233802
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

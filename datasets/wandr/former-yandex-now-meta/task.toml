@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_former_yandex_now_meta.jsonl",
 ]
-difficulty = 0.1475
-difficulty-label = "low"
 wandr_task = "former_yandex_now_meta"
+member_keys = ["person"]
+url-nonreuse = 1.00000000
+url-nonreuse-label = "high"
+domain-dispersion = 0.02116854
+domain-dispersion-label = "low"
+discovery = 0.65833333
+discovery-label = "high"
+enrichment = 0.43998064
+enrichment-label = "low"
+extraction = 0.66768251
+extraction-label = "high"
+difficulty = 0.14750000
+difficulty-label = "low"
 
 verticals = ["people"]
 topology = "flat"
-width = 0.00000009
-width-label = "tiny"
-depth = 0.08173934
-depth-label = "low"
-extraction = 0.31459358
-extraction-label = "low"
-dispersion = 0.02116854
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

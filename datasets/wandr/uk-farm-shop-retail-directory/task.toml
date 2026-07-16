@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_farm_shop_retail_directory.jsonl",
 ]
+wandr_task = "uk_farm_shop_retail_directory"
+member_keys = ["farm_shop"]
+url-nonreuse = 0.57727845
+url-nonreuse-label = "medium"
+domain-dispersion = 0.44286103
+domain-dispersion-label = "medium"
+discovery = 0.00166667
+discovery-label = "low"
+enrichment = 0.74747475
+enrichment-label = "high"
+extraction = 0.30800000
+extraction-label = "low"
 difficulty = 0.66666667
 difficulty-label = "high"
-wandr_task = "uk_farm_shop_retail_directory"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 364.82614918
-width-label = "medium"
-depth = 0.0427968
-depth-label = "low"
-extraction = 0.19470161
-extraction-label = "low"
-dispersion = 0.44286103
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_brand_leadership.jsonl",
 ]
+wandr_task = "us_brand_leadership"
+member_keys = ["brand_leader"]
+url-nonreuse = 0.85873661
+url-nonreuse-label = "high"
+domain-dispersion = 0.66011035
+domain-dispersion-label = "high"
+discovery = 0.49045139
+discovery-label = "high"
+enrichment = 0.53244491
+enrichment-label = "medium"
+extraction = 0.57821028
+extraction-label = "medium"
 difficulty = 0.68229167
 difficulty-label = "high"
-wandr_task = "us_brand_leadership"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 238.91646636
-width-label = "medium"
-depth = 0.29412235
-depth-label = "medium"
-extraction = 0.58269779
-extraction-label = "high"
-dispersion = 0.66011035
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

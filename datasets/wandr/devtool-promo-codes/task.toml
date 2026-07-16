@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_devtool_promo_codes.jsonl",
 ]
-difficulty = 0.775
-difficulty-label = "high"
 wandr_task = "devtool_promo_codes"
+member_keys = ["vendor_code"]
+url-nonreuse = 0.58251797
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60933918
+domain-dispersion-label = "medium"
+discovery = 0.20277778
+discovery-label = "medium"
+enrichment = 0.84114622
+enrichment-label = "high"
+extraction = 0.42047930
+extraction-label = "low"
+difficulty = 0.77500000
+difficulty-label = "high"
 
 verticals = ["general", "e-com"]
 topology = "flat"
-width = 49.48337834
-width-label = "tiny"
-depth = 0.72031833
-depth-label = "high"
-extraction = 0.46803724
-extraction-label = "medium"
-dispersion = 0.60933918
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

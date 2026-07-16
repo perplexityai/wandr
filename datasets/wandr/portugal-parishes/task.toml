@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_portugal_parishes.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "portugal_parishes"
+member_keys = ["parish_municipality"]
+url-nonreuse = 0.99606233
+url-nonreuse-label = "high"
+domain-dispersion = 0.02152805
+domain-dispersion-label = "low"
+discovery = 0.46850000
+discovery-label = "high"
+enrichment = 0.54159725
+enrichment-label = "medium"
+extraction = 0.33494208
+extraction-label = "low"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["wikis"]
 topology = "flat"
-width = 690.79120029
-width-label = "large"
-depth = 0.01696874
-depth-label = "low"
-extraction = 0.07314755
-extraction-label = "low"
-dispersion = 0.02152805
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

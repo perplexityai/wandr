@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_cloud_ai_service_launches_by_provider.jsonl",
 ]
-difficulty = 0.15
-difficulty-label = "low"
 wandr_task = "cloud_ai_service_launches_by_provider"
+member_keys = ["provider_service"]
+url-nonreuse = 0.71964633
+url-nonreuse-label = "medium"
+domain-dispersion = 0.74761759
+domain-dispersion-label = "high"
+discovery = 0.11666667
+discovery-label = "low"
+enrichment = 0.24957627
+enrichment-label = "low"
+extraction = 0.57178552
+extraction-label = "medium"
+difficulty = 0.15000000
+difficulty-label = "low"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 54.01395211
-width-label = "small"
-depth = 0.13796456
-depth-label = "medium"
-extraction = 0.50399623
-extraction-label = "medium"
-dispersion = 0.74761759
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

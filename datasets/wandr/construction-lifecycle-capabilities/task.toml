@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_construction_lifecycle_capabilities.jsonl",
 ]
+wandr_task = "construction_lifecycle_capabilities"
+member_keys = ["product_capability_signal"]
+url-nonreuse = 0.81321797
+url-nonreuse-label = "high"
+domain-dispersion = 0.75209846
+domain-dispersion-label = "high"
+discovery = 0.19111111
+discovery-label = "low"
+enrichment = 0.44463693
+enrichment-label = "low"
+extraction = 0.64678990
+extraction-label = "high"
 difficulty = 0.45972222
 difficulty-label = "medium"
-wandr_task = "construction_lifecycle_capabilities"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 536.93330753
-width-label = "large"
-depth = 0.18522843
-depth-label = "medium"
-extraction = 0.58026028
-extraction-label = "high"
-dispersion = 0.75209846
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

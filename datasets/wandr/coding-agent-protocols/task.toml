@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_coding_agent_protocols.jsonl",
 ]
-difficulty = 0.3203125
-difficulty-label = "low"
 wandr_task = "coding_agent_protocols"
+member_keys = ["implementation"]
+url-nonreuse = 0.32980981
+url-nonreuse-label = "low"
+domain-dispersion = 0.43395853
+domain-dispersion-label = "medium"
+discovery = 0.00833333
+discovery-label = "low"
+enrichment = 0.36920290
+enrichment-label = "low"
+extraction = 0.46499992
+extraction-label = "low"
+difficulty = 0.32031250
+difficulty-label = "low"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 428.35919241
-width-label = "medium"
-depth = 0.09768823
-depth-label = "low"
-extraction = 0.45123082
-extraction-label = "medium"
-dispersion = 0.43395853
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

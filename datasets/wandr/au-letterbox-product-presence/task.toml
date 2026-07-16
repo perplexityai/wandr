@@ -11,20 +11,23 @@ required_file_paths = [
     "results_au_letterbox_product_presence.jsonl",
     "results_au_letterbox_product_presence.brand_public_trace.jsonl",
 ]
-difficulty = 0.74375
-difficulty-label = "high"
 wandr_task = "au_letterbox_product_presence"
+member_keys = ["brand_model"]
+url-nonreuse = 0.65591905
+url-nonreuse-label = "medium"
+domain-dispersion = 0.45992961
+domain-dispersion-label = "medium"
+discovery = 0.12222222
+discovery-label = "low"
+enrichment = 0.78915446
+enrichment-label = "high"
+extraction = 0.82606827
+extraction-label = "high"
+difficulty = 0.74375000
+difficulty-label = "high"
 
 verticals = ["general", "community", "e-com"]
 topology = "composite"
-width = 128.00140212
-width-label = "small"
-depth = 0.21037628
-depth-label = "medium"
-extraction = 0.77810117
-extraction-label = "high"
-dispersion = 0.45992961
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

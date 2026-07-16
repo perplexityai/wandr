@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_us_pfas_projects.jsonl",
 ]
+wandr_task = "us_pfas_projects"
+member_keys = ["pfas_response_unit"]
+url-nonreuse = 0.21226135
+url-nonreuse-label = "low"
+domain-dispersion = 0.70616198
+domain-dispersion-label = "high"
+discovery = 0.46800000
+discovery-label = "high"
+enrichment = 0.68997933
+enrichment-label = "high"
+extraction = 0.59513360
+extraction-label = "medium"
 difficulty = 0.35333333
 difficulty-label = "low"
-wandr_task = "us_pfas_projects"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 544.68663659
-width-label = "large"
-depth = 0.46363309
-depth-label = "high"
-extraction = 0.41585899
-extraction-label = "medium"
-dispersion = 0.70616198
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

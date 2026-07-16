@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_business_restraint_decision_event_provenance.jsonl",
 ]
+wandr_task = "business_restraint_decision_event_provenance"
+member_keys = ["company_decision"]
+url-nonreuse = 0.95349039
+url-nonreuse-label = "high"
+domain-dispersion = 0.56656440
+domain-dispersion-label = "medium"
+discovery = 0.57000000
+discovery-label = "high"
+enrichment = 0.30900979
+enrichment-label = "low"
+extraction = 0.54726581
+extraction-label = "medium"
 difficulty = 0.32166667
 difficulty-label = "low"
-wandr_task = "business_restraint_decision_event_provenance"
 
 verticals = ["events"]
 topology = "hierarchical"
-width = 336.02668097
-width-label = "medium"
-depth = 0.7198413
-depth-label = "high"
-extraction = 0.35738576
-extraction-label = "low"
-dispersion = 0.5665644
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_music_publishing_admin_cwr_provider_public_capability_source_table.jsonl",
 ]
-difficulty = 0.52
-difficulty-label = "medium"
 wandr_task = "music_publishing_admin_cwr_provider_public_capability_source_table"
+member_keys = ["provider_product"]
+url-nonreuse = 0.40554161
+url-nonreuse-label = "low"
+domain-dispersion = 0.76322738
+domain-dispersion-label = "high"
+discovery = 0.44888889
+discovery-label = "high"
+enrichment = 0.34862109
+enrichment-label = "low"
+extraction = 0.46394529
+extraction-label = "low"
+difficulty = 0.52000000
+difficulty-label = "medium"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 194.31374144
-width-label = "medium"
-depth = 0.10782995
-depth-label = "medium"
-extraction = 0.39720604
-extraction-label = "medium"
-dispersion = 0.76322738
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

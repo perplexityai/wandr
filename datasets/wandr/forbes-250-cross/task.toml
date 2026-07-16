@@ -11,20 +11,23 @@ required_file_paths = [
     "results_forbes_250_cross.jsonl",
     "results_forbes_250_cross.person_true_claims.jsonl",
 ]
+wandr_task = "forbes_250_cross"
+member_keys = ["person"]
+url-nonreuse = 0.36685419
+url-nonreuse-label = "low"
+domain-dispersion = 0.66670510
+domain-dispersion-label = "high"
+discovery = 0.05714286
+discovery-label = "low"
+enrichment = 0.79057143
+enrichment-label = "high"
+extraction = 0.56489309
+extraction-label = "medium"
 difficulty = 0.73571429
 difficulty-label = "high"
-wandr_task = "forbes_250_cross"
 
 verticals = ["general"]
 topology = "composite"
-width = 245.06604944
-width-label = "medium"
-depth = 0.15650678
-depth-label = "medium"
-extraction = 0.52209791
-extraction-label = "medium"
-dispersion = 0.6667051
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

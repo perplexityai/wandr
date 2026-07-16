@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_aerospace_authorized_distribution_reciprocity.jsonl",
 ]
+wandr_task = "aerospace_authorized_distribution_reciprocity"
+member_keys = ["distributor", "oem"]
+url-nonreuse = 0.34198258
+url-nonreuse-label = "low"
+domain-dispersion = 0.80297377
+domain-dispersion-label = "high"
+discovery = 0.91500000
+discovery-label = "high"
+enrichment = 0.48735450
+enrichment-label = "medium"
+extraction = 0.30687951
+extraction-label = "low"
 difficulty = 0.90083333
 difficulty-label = "high"
-wandr_task = "aerospace_authorized_distribution_reciprocity"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 532.97723646
-width-label = "large"
-depth = 0.23226331
-depth-label = "medium"
-extraction = 0.24024991
-extraction-label = "low"
-dispersion = 0.80297377
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

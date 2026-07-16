@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_low_code_workflow_company_public_source_locator_table.jsonl",
 ]
-difficulty = 0.2125
-difficulty-label = "low"
 wandr_task = "low_code_workflow_company_public_source_locator_table"
+member_keys = ["company_project"]
+url-nonreuse = 0.98117814
+url-nonreuse-label = "high"
+domain-dispersion = 0.38902411
+domain-dispersion-label = "low"
+discovery = 0.11666667
+discovery-label = "low"
+enrichment = 0.30622222
+enrichment-label = "low"
+extraction = 0.60175205
+extraction-label = "medium"
+difficulty = 0.21250000
+difficulty-label = "low"
 
 verticals = ["general", "e-com", "tech"]
 topology = "hierarchical"
-width = 821.53921039
-width-label = "large"
-depth = 0.04130869
-depth-label = "low"
-extraction = 0.52200912
-extraction-label = "medium"
-dispersion = 0.38902411
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

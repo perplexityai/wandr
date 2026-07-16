@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_michelin_demotions.jsonl",
 ]
+wandr_task = "michelin_demotions"
+member_keys = ["restaurant_city"]
+url-nonreuse = 0.16926735
+url-nonreuse-label = "low"
+domain-dispersion = 0.94683983
+domain-dispersion-label = "high"
+discovery = 0.00617284
+discovery-label = "low"
+enrichment = 0.48765432
+enrichment-label = "medium"
+extraction = 0.49075586
+extraction-label = "medium"
 difficulty = 0.43518519
 difficulty-label = "medium"
-wandr_task = "michelin_demotions"
 
 verticals = ["events"]
 topology = "flat"
-width = 15.18619528
-width-label = "tiny"
-depth = 0.12128887
-depth-label = "medium"
-extraction = 0.43606553
-extraction-label = "medium"
-dispersion = 0.94683983
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

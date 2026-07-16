@@ -11,20 +11,23 @@ required_file_paths = [
     "results_merchant_kyb_onboarding_source_provenance.jsonl",
     "results_merchant_kyb_onboarding_source_provenance.admission_gate.jsonl",
 ]
+wandr_task = "merchant_kyb_onboarding_source_provenance"
+member_keys = ["vendor_platform"]
+url-nonreuse = 0.69384433
+url-nonreuse-label = "medium"
+domain-dispersion = 0.70258552
+domain-dispersion-label = "high"
+discovery = 0.22444444
+discovery-label = "medium"
+enrichment = 0.47042565
+enrichment-label = "low"
+extraction = 0.61579834
+extraction-label = "medium"
 difficulty = 0.41111111
 difficulty-label = "medium"
-wandr_task = "merchant_kyb_onboarding_source_provenance"
 
 verticals = ["general", "tech"]
 topology = "composite"
-width = 409.59708388
-width-label = "medium"
-depth = 0.14006701
-depth-label = "medium"
-extraction = 0.52708643
-extraction-label = "medium"
-dispersion = 0.70258552
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

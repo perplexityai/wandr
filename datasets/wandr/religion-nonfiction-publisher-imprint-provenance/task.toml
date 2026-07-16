@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_religion_nonfiction_publisher_imprint_provenance.jsonl",
 ]
+wandr_task = "religion_nonfiction_publisher_imprint_provenance"
+member_keys = ["publisher_or_imprint"]
+url-nonreuse = 0.80865820
+url-nonreuse-label = "high"
+domain-dispersion = 0.52052131
+domain-dispersion-label = "medium"
+discovery = 0.13611111
+discovery-label = "low"
+enrichment = 0.51874650
+enrichment-label = "medium"
+extraction = 0.56787932
+extraction-label = "medium"
 difficulty = 0.49444444
 difficulty-label = "medium"
-wandr_task = "religion_nonfiction_publisher_imprint_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 225.54466181
-width-label = "medium"
-depth = 0.54652757
-depth-label = "high"
-extraction = 0.46877814
-extraction-label = "medium"
-dispersion = 0.52052131
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

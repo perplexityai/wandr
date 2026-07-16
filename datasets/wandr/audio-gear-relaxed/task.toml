@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_audio_gear_relaxed.jsonl",
 ]
+wandr_task = "audio_gear_relaxed"
+member_keys = ["product"]
+url-nonreuse = 0.95326338
+url-nonreuse-label = "high"
+domain-dispersion = 0.41551042
+domain-dispersion-label = "low"
+discovery = 0.49666667
+discovery-label = "high"
+enrichment = 0.54130832
+enrichment-label = "medium"
+extraction = 0.49318421
+extraction-label = "medium"
 difficulty = 0.48666667
 difficulty-label = "medium"
-wandr_task = "audio_gear_relaxed"
 
 verticals = ["general"]
 topology = "composite"
-width = 336.51106003
-width-label = "medium"
-depth = 0.6459313
-depth-label = "high"
-extraction = 0.35930392
-extraction-label = "low"
-dispersion = 0.41551042
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

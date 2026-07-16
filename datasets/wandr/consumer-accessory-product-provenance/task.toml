@@ -12,20 +12,23 @@ required_file_paths = [
     "results_consumer_accessory_product_provenance.retail_prices.jsonl",
     "results_consumer_accessory_product_provenance.dated_signals.jsonl",
 ]
-difficulty = 0.7375
-difficulty-label = "high"
 wandr_task = "consumer_accessory_product_provenance"
+member_keys = ["brand_product"]
+url-nonreuse = 0.94376874
+url-nonreuse-label = "high"
+domain-dispersion = 0.30700444
+domain-dispersion-label = "low"
+discovery = 0.41750000
+discovery-label = "medium"
+enrichment = 0.83734904
+enrichment-label = "high"
+extraction = 0.72137043
+extraction-label = "high"
+difficulty = 0.73750000
+difficulty-label = "high"
 
 verticals = ["events", "e-com"]
 topology = "composite"
-width = 386.14985267
-width-label = "medium"
-depth = 0.88039998
-depth-label = "high"
-extraction = 0.63859723
-extraction-label = "high"
-dispersion = 0.30700444
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

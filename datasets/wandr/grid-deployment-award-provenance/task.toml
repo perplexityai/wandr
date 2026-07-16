@@ -11,20 +11,23 @@ required_file_paths = [
     "results_grid_deployment_award_provenance.jsonl",
     "results_grid_deployment_award_provenance.project_evidence_facets.jsonl",
 ]
-difficulty = 0.86875
-difficulty-label = "high"
 wandr_task = "grid_deployment_award_provenance"
+member_keys = ["grid_deployment_project"]
+url-nonreuse = 0.32820376
+url-nonreuse-label = "low"
+domain-dispersion = 0.62976521
+domain-dispersion-label = "high"
+discovery = 0.05416667
+discovery-label = "low"
+enrichment = 0.88988222
+enrichment-label = "high"
+extraction = 0.89488017
+extraction-label = "high"
+difficulty = 0.86875000
+difficulty-label = "high"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 139.9124708
-width-label = "small"
-depth = 1.811144
-depth-label = "xhigh"
-extraction = 0.85181204
-extraction-label = "high"
-dispersion = 0.62976521
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

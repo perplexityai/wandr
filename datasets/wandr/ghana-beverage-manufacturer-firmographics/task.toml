@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ghana_beverage_manufacturer_firmographics.jsonl",
 ]
+wandr_task = "ghana_beverage_manufacturer_firmographics"
+member_keys = ["manufacturer"]
+url-nonreuse = 0.56688121
+url-nonreuse-label = "medium"
+domain-dispersion = 0.56024552
+domain-dispersion-label = "medium"
+discovery = 0.40000000
+discovery-label = "medium"
+enrichment = 0.47849045
+enrichment-label = "medium"
+extraction = 0.71817405
+extraction-label = "high"
 difficulty = 0.57555556
 difficulty-label = "medium"
-wandr_task = "ghana_beverage_manufacturer_firmographics"
 
 verticals = ["general"]
 topology = "flat"
-width = 254.23219349
-width-label = "medium"
-depth = 0.10023476
-depth-label = "medium"
-extraction = 0.69030898
-extraction-label = "high"
-dispersion = 0.56024552
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

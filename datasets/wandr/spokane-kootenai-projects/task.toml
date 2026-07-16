@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_spokane_kootenai_projects.jsonl",
 ]
+wandr_task = "spokane_kootenai_projects"
+member_keys = ["canonical_project"]
+url-nonreuse = 0.36925358
+url-nonreuse-label = "low"
+domain-dispersion = 0.50835256
+domain-dispersion-label = "medium"
+discovery = 0.33531746
+discovery-label = "medium"
+enrichment = 0.74131974
+enrichment-label = "high"
+extraction = 0.61107865
+extraction-label = "medium"
 difficulty = 0.85515873
 difficulty-label = "high"
-wandr_task = "spokane_kootenai_projects"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 205.08444568
-width-label = "medium"
-depth = 0.40407572
-depth-label = "high"
-extraction = 0.64492497
-extraction-label = "high"
-dispersion = 0.50835256
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

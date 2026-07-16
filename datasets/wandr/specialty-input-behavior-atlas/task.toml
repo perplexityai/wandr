@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_specialty_input_behavior_atlas.jsonl",
 ]
+wandr_task = "specialty_input_behavior_atlas"
+member_keys = ["component_or_control"]
+url-nonreuse = 0.22295917
+url-nonreuse-label = "low"
+domain-dispersion = 0.35395951
+domain-dispersion-label = "low"
+discovery = 0.51111111
+discovery-label = "high"
+enrichment = 0.49548042
+enrichment-label = "medium"
+extraction = 0.34378307
+extraction-label = "low"
 difficulty = 0.68484848
 difficulty-label = "high"
-wandr_task = "specialty_input_behavior_atlas"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 637.16754094
-width-label = "large"
-depth = 0.07833033
-depth-label = "low"
-extraction = 0.31450868
-extraction-label = "low"
-dispersion = 0.35395951
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

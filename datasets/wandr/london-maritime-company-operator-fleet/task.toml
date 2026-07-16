@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_london_maritime_company_operator_fleet.jsonl",
 ]
+wandr_task = "london_maritime_company_operator_fleet"
+member_keys = ["company"]
+url-nonreuse = 0.26105752
+url-nonreuse-label = "low"
+domain-dispersion = 0.58739250
+domain-dispersion-label = "medium"
+discovery = 0.41666667
+discovery-label = "medium"
+enrichment = 0.19019465
+enrichment-label = "low"
+extraction = 0.42712372
+extraction-label = "low"
 difficulty = 0.14444444
 difficulty-label = "low"
-wandr_task = "london_maritime_company_operator_fleet"
 
 verticals = ["general", "wikis"]
 topology = "hierarchical"
-width = 228.04819348
-width-label = "medium"
-depth = 0.05436421
-depth-label = "low"
-extraction = 0.34118143
-extraction-label = "low"
-dispersion = 0.5873925
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

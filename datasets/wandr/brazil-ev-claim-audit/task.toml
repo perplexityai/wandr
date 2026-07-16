@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_brazil_ev_claim_audit.jsonl",
 ]
+wandr_task = "brazil_ev_claim_audit"
+member_keys = ["canonical_claim"]
+url-nonreuse = 0.12479890
+url-nonreuse-label = "low"
+domain-dispersion = 0.55304763
+domain-dispersion-label = "medium"
+discovery = 0.92969697
+discovery-label = "high"
+enrichment = 0.38217384
+enrichment-label = "low"
+extraction = 0.74284104
+extraction-label = "high"
 difficulty = 0.90672727
 difficulty-label = "high"
-wandr_task = "brazil_ev_claim_audit"
 
 verticals = ["events", "legal", "e-com"]
 topology = "hierarchical"
-width = 809.54198292
-width-label = "large"
-depth = 0.04065842
-depth-label = "low"
-extraction = 0.70362985
-extraction-label = "high"
-dispersion = 0.55304763
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mid_atlantic_data_center_service_provider_evidence.jsonl",
 ]
-difficulty = 0.4625
-difficulty-label = "medium"
 wandr_task = "mid_atlantic_data_center_service_provider_evidence"
+member_keys = ["provider"]
+url-nonreuse = 0.75043303
+url-nonreuse-label = "high"
+domain-dispersion = 0.62883781
+domain-dispersion-label = "high"
+discovery = 0.27000000
+discovery-label = "medium"
+enrichment = 0.54256432
+enrichment-label = "medium"
+extraction = 0.49692089
+extraction-label = "medium"
+difficulty = 0.46250000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 601.41982307
-width-label = "large"
-depth = 0.81552536
-depth-label = "high"
-extraction = 0.42884711
-extraction-label = "medium"
-dispersion = 0.62883781
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_industrial_gas_consumption_plants.jsonl",
 ]
+wandr_task = "industrial_gas_consumption_plants"
+member_keys = ["industrial_facility"]
+url-nonreuse = 0.51987119
+url-nonreuse-label = "medium"
+domain-dispersion = 0.16514508
+domain-dispersion-label = "low"
+discovery = 0.05666667
+discovery-label = "low"
+enrichment = 0.70169192
+enrichment-label = "high"
+extraction = 0.74167548
+extraction-label = "high"
 difficulty = 0.43055556
 difficulty-label = "medium"
-wandr_task = "industrial_gas_consumption_plants"
 
 verticals = ["legal"]
 topology = "flat"
-width = 181.69123427
-width-label = "medium"
-depth = 0.2860136
-depth-label = "medium"
-extraction = 0.48832398
-extraction-label = "medium"
-dispersion = 0.16514508
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

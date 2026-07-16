@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_property_software_provenance.jsonl",
 ]
+wandr_task = "property_software_provenance"
+member_keys = ["product"]
+url-nonreuse = 0.31288268
+url-nonreuse-label = "low"
+domain-dispersion = 0.71684524
+domain-dispersion-label = "high"
+discovery = 0.15000000
+discovery-label = "low"
+enrichment = 0.51248439
+enrichment-label = "medium"
+extraction = 0.49301059
+extraction-label = "medium"
 difficulty = 0.34571429
 difficulty-label = "low"
-wandr_task = "property_software_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 260.94896459
-width-label = "medium"
-depth = 0.06833939
-depth-label = "low"
-extraction = 0.463539
-extraction-label = "medium"
-dispersion = 0.71684524
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

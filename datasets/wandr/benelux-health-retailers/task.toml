@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_benelux_health_retailers.jsonl",
 ]
+wandr_task = "benelux_health_retailers"
+member_keys = ["retail_event"]
+url-nonreuse = 0.92685897
+url-nonreuse-label = "high"
+domain-dispersion = 0.65946281
+domain-dispersion-label = "high"
+discovery = 0.15833333
+discovery-label = "low"
+enrichment = 0.76959910
+enrichment-label = "high"
+extraction = 0.53331933
+extraction-label = "medium"
 difficulty = 0.79861111
 difficulty-label = "high"
-wandr_task = "benelux_health_retailers"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 53.18694689
-width-label = "small"
-depth = 2.40405273
-depth-label = "xhigh"
-extraction = 0.5444209
-extraction-label = "high"
-dispersion = 0.65946281
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

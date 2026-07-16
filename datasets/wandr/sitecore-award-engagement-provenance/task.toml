@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_sitecore_award_engagement_provenance.jsonl",
 ]
+wandr_task = "sitecore_award_engagement_provenance"
+member_keys = ["award_engagement"]
+url-nonreuse = 0.25270665
+url-nonreuse-label = "low"
+domain-dispersion = 0.41746270
+domain-dispersion-label = "low"
+discovery = 0.23111111
+discovery-label = "medium"
+enrichment = 0.43075755
+enrichment-label = "low"
+extraction = 0.34934777
+extraction-label = "low"
 difficulty = 0.39666667
 difficulty-label = "low"
-wandr_task = "sitecore_award_engagement_provenance"
 
 verticals = ["events", "tech"]
 topology = "hierarchical"
-width = 77.83767537
-width-label = "small"
-depth = 0.27401769
-depth-label = "medium"
-extraction = 0.3141568
-extraction-label = "low"
-dispersion = 0.4174627
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

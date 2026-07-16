@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_packaging_change_provenance_atlas.jsonl",
 ]
+wandr_task = "packaging_change_provenance_atlas"
+member_keys = ["packaging_change"]
+url-nonreuse = 0.74668647
+url-nonreuse-label = "medium"
+domain-dispersion = 0.72908364
+domain-dispersion-label = "high"
+discovery = 0.71515152
+discovery-label = "high"
+enrichment = 0.52163925
+enrichment-label = "medium"
+extraction = 0.51308819
+extraction-label = "medium"
 difficulty = 0.84090909
 difficulty-label = "high"
-wandr_task = "packaging_change_provenance_atlas"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 474.90838625
-width-label = "large"
-depth = 0.71893307
-depth-label = "high"
-extraction = 0.47222587
-extraction-label = "medium"
-dispersion = 0.72908364
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

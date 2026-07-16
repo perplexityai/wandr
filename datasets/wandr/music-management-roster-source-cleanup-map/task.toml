@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_music_management_roster_source_cleanup_map.jsonl",
 ]
+wandr_task = "music_management_roster_source_cleanup_map"
+member_keys = ["management_company", "artist"]
+url-nonreuse = 0.74367265
+url-nonreuse-label = "medium"
+domain-dispersion = 0.83858137
+domain-dispersion-label = "high"
+discovery = 0.78095238
+discovery-label = "high"
+enrichment = 0.31539252
+enrichment-label = "low"
+extraction = 0.33276480
+extraction-label = "low"
 difficulty = 0.56190476
 difficulty-label = "medium"
-wandr_task = "music_management_roster_source_cleanup_map"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 635.94798975
-width-label = "large"
-depth = 0.38725909
-depth-label = "medium"
-extraction = 0.21536881
-extraction-label = "low"
-dispersion = 0.83858137
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

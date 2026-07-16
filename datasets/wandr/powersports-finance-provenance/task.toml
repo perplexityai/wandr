@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_powersports_finance_provenance.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "powersports_finance_provenance"
+member_keys = ["organization"]
+url-nonreuse = 0.37971388
+url-nonreuse-label = "low"
+domain-dispersion = 0.95634530
+domain-dispersion-label = "high"
+discovery = 0.37298851
+discovery-label = "medium"
+enrichment = 0.29586547
+enrichment-label = "low"
+extraction = 0.32604858
+extraction-label = "low"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 563.18813857
-width-label = "large"
-depth = 0.08682509
-depth-label = "low"
-extraction = 0.22899205
-extraction-label = "low"
-dispersion = 0.9563453
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

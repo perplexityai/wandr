@@ -11,20 +11,23 @@ required_file_paths = [
     "results_member_portal_capabilities.jsonl",
     "results_member_portal_capabilities.member_portal_deployments.jsonl",
 ]
+wandr_task = "member_portal_capabilities"
+member_keys = ["platform"]
+url-nonreuse = 0.97329744
+url-nonreuse-label = "high"
+domain-dispersion = 0.57446381
+domain-dispersion-label = "medium"
+discovery = 0.38769231
+discovery-label = "medium"
+enrichment = 0.83709854
+enrichment-label = "high"
+extraction = 0.74505979
+extraction-label = "high"
 difficulty = 0.85192308
 difficulty-label = "high"
-wandr_task = "member_portal_capabilities"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 593.55028091
-width-label = "large"
-depth = 3.25463473
-depth-label = "xhigh"
-extraction = 0.77942662
-extraction-label = "high"
-dispersion = 0.57446381
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

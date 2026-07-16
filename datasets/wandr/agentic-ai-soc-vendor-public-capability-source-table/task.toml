@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_agentic_ai_soc_vendor_public_capability_source_table.jsonl",
 ]
+wandr_task = "agentic_ai_soc_vendor_public_capability_source_table"
+member_keys = ["vendor_or_company"]
+url-nonreuse = 0.66404792
+url-nonreuse-label = "medium"
+domain-dispersion = 0.60725800
+domain-dispersion-label = "medium"
+discovery = 0.04000000
+discovery-label = "low"
+enrichment = 0.53424766
+enrichment-label = "medium"
+extraction = 0.51227734
+extraction-label = "medium"
 difficulty = 0.36176471
 difficulty-label = "low"
-wandr_task = "agentic_ai_soc_vendor_public_capability_source_table"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 465.44727501
-width-label = "large"
-depth = 0.07457374
-depth-label = "low"
-extraction = 0.43045504
-extraction-label = "medium"
-dispersion = 0.607258
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

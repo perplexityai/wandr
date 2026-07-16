@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_industrial_tanks.jsonl",
 ]
+wandr_task = "industrial_tanks"
+member_keys = ["manufacturer_product"]
+url-nonreuse = 0.30193013
+url-nonreuse-label = "low"
+domain-dispersion = 0.56098209
+domain-dispersion-label = "medium"
+discovery = 0.25555556
+discovery-label = "medium"
+enrichment = 0.60494879
+enrichment-label = "medium"
+extraction = 0.48769628
+extraction-label = "medium"
 difficulty = 0.59027778
 difficulty-label = "medium"
-wandr_task = "industrial_tanks"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 261.07699173
-width-label = "medium"
-depth = 0.12209623
-depth-label = "medium"
-extraction = 0.46920257
-extraction-label = "medium"
-dispersion = 0.56098209
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

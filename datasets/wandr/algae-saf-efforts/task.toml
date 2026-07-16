@@ -11,20 +11,23 @@ required_file_paths = [
     "results_algae_saf_efforts.jsonl",
     "results_algae_saf_efforts.external_confirmation.jsonl",
 ]
-difficulty = 0.885
-difficulty-label = "high"
 wandr_task = "algae_saf_efforts"
+member_keys = ["project_owned_algal_aviation_effort"]
+url-nonreuse = 0.62004525
+url-nonreuse-label = "medium"
+domain-dispersion = 0.63352424
+domain-dispersion-label = "high"
+discovery = 0.67444444
+discovery-label = "high"
+enrichment = 0.63577477
+enrichment-label = "high"
+extraction = 0.75481740
+extraction-label = "high"
+difficulty = 0.88500000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "composite"
-width = 623.74361105
-width-label = "large"
-depth = 0.57440972
-depth-label = "high"
-extraction = 0.64107728
-extraction-label = "high"
-dispersion = 0.63352424
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

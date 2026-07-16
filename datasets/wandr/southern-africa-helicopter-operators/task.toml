@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_southern_africa_helicopter_operators.jsonl",
 ]
+wandr_task = "southern_africa_helicopter_operators"
+member_keys = ["operator"]
+url-nonreuse = 0.62119151
+url-nonreuse-label = "medium"
+domain-dispersion = 0.61503038
+domain-dispersion-label = "medium"
+discovery = 0.44545455
+discovery-label = "high"
+enrichment = 0.54097476
+enrichment-label = "medium"
+extraction = 0.45882648
+extraction-label = "low"
 difficulty = 0.69431818
 difficulty-label = "high"
-wandr_task = "southern_africa_helicopter_operators"
 
 verticals = ["general", "events", "legal", "wikis"]
 topology = "hierarchical"
-width = 608.00168664
-width-label = "large"
-depth = 0.96195537
-depth-label = "high"
-extraction = 0.45842179
-extraction-label = "medium"
-dispersion = 0.61503038
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -11,20 +11,23 @@ required_file_paths = [
     "results_airline_pss_relationships.jsonl",
     "results_airline_pss_relationships.independent_confirmation.jsonl",
 ]
+wandr_task = "airline_pss_relationships"
+member_keys = ["airline_platform"]
+url-nonreuse = 0.89865806
+url-nonreuse-label = "high"
+domain-dispersion = 0.41404428
+domain-dispersion-label = "low"
+discovery = 0.62261905
+discovery-label = "high"
+enrichment = 0.72190976
+enrichment-label = "high"
+extraction = 0.31017385
+extraction-label = "low"
 difficulty = 0.84821429
 difficulty-label = "high"
-wandr_task = "airline_pss_relationships"
 
 verticals = ["general", "events"]
 topology = "composite"
-width = 886.50404516
-width-label = "large"
-depth = 0.45232156
-depth-label = "high"
-extraction = 0.28667584
-extraction-label = "low"
-dispersion = 0.41404428
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

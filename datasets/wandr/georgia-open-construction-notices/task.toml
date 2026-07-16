@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_georgia_open_construction_notices.jsonl",
 ]
-difficulty = 0.325
-difficulty-label = "low"
 wandr_task = "georgia_open_construction_notices"
+member_keys = ["solicitation"]
+url-nonreuse = 0.96900000
+url-nonreuse-label = "high"
+domain-dispersion = 0.55406208
+domain-dispersion-label = "medium"
+discovery = 0.45000000
+discovery-label = "high"
+enrichment = 0.54861111
+enrichment-label = "medium"
+extraction = 0.58333333
+extraction-label = "medium"
+difficulty = 0.32500000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 13.57561319
-width-label = "tiny"
-depth = 2.25389364
-depth-label = "xhigh"
-extraction = 0.51049448
-extraction-label = "medium"
-dispersion = 0.55406208
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

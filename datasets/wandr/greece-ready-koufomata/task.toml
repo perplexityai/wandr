@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_greece_ready_koufomata.jsonl",
 ]
+wandr_task = "greece_ready_koufomata"
+member_keys = ["supplier_product"]
+url-nonreuse = 0.34778573
+url-nonreuse-label = "low"
+domain-dispersion = 0.88273638
+domain-dispersion-label = "high"
+discovery = 0.61805556
+discovery-label = "high"
+enrichment = 0.35727666
+enrichment-label = "low"
+extraction = 0.44792403
+extraction-label = "low"
 difficulty = 0.43611111
 difficulty-label = "medium"
-wandr_task = "greece_ready_koufomata"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 297.04861581
-width-label = "medium"
-depth = 0.22173829
-depth-label = "medium"
-extraction = 0.4076274
-extraction-label = "medium"
-dispersion = 0.88273638
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

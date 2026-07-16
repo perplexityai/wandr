@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_financial_institution_ai_outcome_evidence.jsonl",
 ]
+wandr_task = "financial_institution_ai_outcome_evidence"
+member_keys = ["institution_initiative"]
+url-nonreuse = 0.60038965
+url-nonreuse-label = "medium"
+domain-dispersion = 0.54849950
+domain-dispersion-label = "medium"
+discovery = 0.45952381
+discovery-label = "high"
+enrichment = 0.40689825
+enrichment-label = "low"
+extraction = 0.41347043
+extraction-label = "low"
 difficulty = 0.45357143
 difficulty-label = "medium"
-wandr_task = "financial_institution_ai_outcome_evidence"
 
 verticals = ["general", "events", "finance"]
 topology = "hierarchical"
-width = 345.07064905
-width-label = "medium"
-depth = 0.23055399
-depth-label = "medium"
-extraction = 0.32400615
-extraction-label = "low"
-dispersion = 0.5484995
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

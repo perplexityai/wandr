@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_cosmetic_manufacturers.jsonl",
 ]
+wandr_task = "cosmetic_manufacturers"
+member_keys = ["manufacturer"]
+url-nonreuse = 0.81015943
+url-nonreuse-label = "high"
+domain-dispersion = 0.54116000
+domain-dispersion-label = "medium"
+discovery = 0.31600000
+discovery-label = "medium"
+enrichment = 0.60323077
+enrichment-label = "medium"
+extraction = 0.59102860
+extraction-label = "medium"
 difficulty = 0.57083333
 difficulty-label = "medium"
-wandr_task = "cosmetic_manufacturers"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1001.52059755
-width-label = "xlarge"
-depth = 0.14322914
-depth-label = "medium"
-extraction = 0.48773329
-extraction-label = "medium"
-dispersion = 0.54116
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

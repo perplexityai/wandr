@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_swedish_invoice_finance.jsonl",
 ]
-difficulty = 0.25625
-difficulty-label = "low"
 wandr_task = "swedish_invoice_finance"
+member_keys = ["provider_service"]
+url-nonreuse = 0.86973737
+url-nonreuse-label = "high"
+domain-dispersion = 0.54419770
+domain-dispersion-label = "medium"
+discovery = 0.50555556
+discovery-label = "high"
+enrichment = 0.44193106
+enrichment-label = "low"
+extraction = 0.38714573
+extraction-label = "low"
+difficulty = 0.25625000
+difficulty-label = "low"
 
 verticals = ["legal", "finance"]
 topology = "flat"
-width = 314.92254361
-width-label = "medium"
-depth = 0.12564888
-depth-label = "medium"
-extraction = 0.3501724
-extraction-label = "low"
-dispersion = 0.5441977
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

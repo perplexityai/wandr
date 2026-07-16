@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_prize_contingency_insurance.jsonl",
 ]
-difficulty = 0.4025
-difficulty-label = "medium"
 wandr_task = "prize_contingency_insurance"
+member_keys = ["entity"]
+url-nonreuse = 0.31782113
+url-nonreuse-label = "low"
+domain-dispersion = 0.86669511
+domain-dispersion-label = "high"
+discovery = 0.10666667
+discovery-label = "low"
+enrichment = 0.64592593
+enrichment-label = "high"
+extraction = 0.60582710
+extraction-label = "medium"
+difficulty = 0.40250000
+difficulty-label = "medium"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 255.80262748
-width-label = "medium"
-depth = 0.08424919
-depth-label = "low"
-extraction = 0.40842264
-extraction-label = "medium"
-dispersion = 0.86669511
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

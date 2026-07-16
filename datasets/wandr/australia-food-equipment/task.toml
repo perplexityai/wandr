@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_australia_food_equipment.jsonl",
 ]
-difficulty = 0.87375
-difficulty-label = "high"
 wandr_task = "australia_food_equipment"
+member_keys = ["equipment_application"]
+url-nonreuse = 0.71759209
+url-nonreuse-label = "medium"
+domain-dispersion = 0.36516680
+domain-dispersion-label = "low"
+discovery = 0.68500000
+discovery-label = "high"
+enrichment = 0.51806357
+enrichment-label = "medium"
+extraction = 0.45118758
+extraction-label = "low"
+difficulty = 0.87375000
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "flat"
-width = 590.36717396
-width-label = "large"
-depth = 0.28173666
-depth-label = "medium"
-extraction = 0.46675128
-extraction-label = "medium"
-dispersion = 0.3651668
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

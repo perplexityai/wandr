@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_local_ai_offers.jsonl",
 ]
-difficulty = 0.42
-difficulty-label = "medium"
 wandr_task = "local_ai_offers"
+member_keys = ["provider_package"]
+url-nonreuse = 0.67994947
+url-nonreuse-label = "medium"
+domain-dispersion = 0.77045650
+domain-dispersion-label = "high"
+discovery = 0.14000000
+discovery-label = "low"
+enrichment = 0.38140985
+enrichment-label = "low"
+extraction = 0.61725036
+extraction-label = "high"
+difficulty = 0.42000000
+difficulty-label = "medium"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 405.28515986
-width-label = "medium"
-depth = 0.07577434
-depth-label = "low"
-extraction = 0.58536824
-extraction-label = "high"
-dispersion = 0.7704565
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

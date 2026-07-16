@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_import_vendor_public_evidence_atlas.jsonl",
 ]
+wandr_task = "data_import_vendor_public_evidence_atlas"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.85532835
+url-nonreuse-label = "high"
+domain-dispersion = 0.35922796
+domain-dispersion-label = "low"
+discovery = 0.39047619
+discovery-label = "medium"
+enrichment = 0.59343842
+enrichment-label = "medium"
+extraction = 0.60335418
+extraction-label = "medium"
 difficulty = 0.41142857
 difficulty-label = "medium"
-wandr_task = "data_import_vendor_public_evidence_atlas"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 1203.29665587
-width-label = "xlarge"
-depth = 0.0993763
-depth-label = "low"
-extraction = 0.45901074
-extraction-label = "medium"
-dispersion = 0.35922796
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_work_visa_rule_changes.jsonl",
 ]
-difficulty = 0.75
-difficulty-label = "high"
 wandr_task = "work_visa_rule_changes"
+member_keys = ["rule_change_event"]
+url-nonreuse = 0.57896775
+url-nonreuse-label = "medium"
+domain-dispersion = 0.31487072
+domain-dispersion-label = "low"
+discovery = 0.10555556
+discovery-label = "low"
+enrichment = 0.70093227
+enrichment-label = "high"
+extraction = 0.63589591
+extraction-label = "high"
+difficulty = 0.75000000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 118.94372343
-width-label = "small"
-depth = 1.04404783
-depth-label = "xhigh"
-extraction = 0.64967127
-extraction-label = "high"
-dispersion = 0.31487072
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

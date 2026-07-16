@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_roof_estimator_deployments.jsonl",
 ]
+wandr_task = "roof_estimator_deployments"
+member_keys = ["contractor_deployment"]
+url-nonreuse = 1.00000000
+url-nonreuse-label = "high"
+domain-dispersion = 0.84304631
+domain-dispersion-label = "high"
+discovery = 0.57361111
+discovery-label = "high"
+enrichment = 0.55241895
+enrichment-label = "medium"
+extraction = 0.59554224
+extraction-label = "medium"
 difficulty = 0.84166667
 difficulty-label = "high"
-wandr_task = "roof_estimator_deployments"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 0.00000007
-width-label = "tiny"
-depth = 0.34992324
-depth-label = "medium"
-extraction = 0.53011789
-extraction-label = "high"
-dispersion = 0.84304631
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

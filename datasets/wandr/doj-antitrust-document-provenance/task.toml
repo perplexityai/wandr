@@ -11,20 +11,23 @@ required_file_paths = [
     "results_doj_antitrust_document_provenance.jsonl",
     "results_doj_antitrust_document_provenance.case_context.jsonl",
 ]
-difficulty = 0.925
-difficulty-label = "high"
 wandr_task = "doj_antitrust_document_provenance"
+member_keys = ["case_document"]
+url-nonreuse = 0.82496608
+url-nonreuse-label = "high"
+domain-dispersion = 0.07114586
+domain-dispersion-label = "low"
+discovery = 0.42388889
+discovery-label = "high"
+enrichment = 0.90938304
+enrichment-label = "high"
+extraction = 0.71875000
+extraction-label = "high"
+difficulty = 0.92500000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "composite"
-width = 610.91752117
-width-label = "large"
-depth = 0.46926158
-depth-label = "high"
-extraction = 0.76085071
-extraction-label = "high"
-dispersion = 0.07114586
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

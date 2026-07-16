@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mineral_recycling_facilities.jsonl",
 ]
+wandr_task = "mineral_recycling_facilities"
+member_keys = ["operator_facility_asset"]
+url-nonreuse = 0.92117741
+url-nonreuse-label = "high"
+domain-dispersion = 0.93011839
+domain-dispersion-label = "high"
+discovery = 0.10925926
+discovery-label = "low"
+enrichment = 0.71597417
+enrichment-label = "high"
+extraction = 0.82271124
+extraction-label = "high"
 difficulty = 0.52222222
 difficulty-label = "medium"
-wandr_task = "mineral_recycling_facilities"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 75.29229545
-width-label = "small"
-depth = 0.45372369
-depth-label = "high"
-extraction = 0.68271881
-extraction-label = "high"
-dispersion = 0.93011839
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

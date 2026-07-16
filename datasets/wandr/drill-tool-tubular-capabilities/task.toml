@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_drill_tool_tubular_capabilities.jsonl",
 ]
-difficulty = 0.745
-difficulty-label = "high"
 wandr_task = "drill_tool_tubular_capabilities"
+member_keys = ["company"]
+url-nonreuse = 0.46985414
+url-nonreuse-label = "low"
+domain-dispersion = 0.84320263
+domain-dispersion-label = "high"
+discovery = 0.63550000
+discovery-label = "high"
+enrichment = 0.44109365
+enrichment-label = "low"
+extraction = 0.49431169
+extraction-label = "medium"
+difficulty = 0.74500000
+difficulty-label = "high"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 2520.4014222
-width-label = "xlarge"
-depth = 0.0777404
-depth-label = "low"
-extraction = 0.45246374
-extraction-label = "medium"
-dispersion = 0.84320263
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_muscat_engineering_consultancies.jsonl",
 ]
+wandr_task = "muscat_engineering_consultancies"
+member_keys = ["firm"]
+url-nonreuse = 0.18786588
+url-nonreuse-label = "low"
+domain-dispersion = 0.56941673
+domain-dispersion-label = "medium"
+discovery = 0.60333333
+discovery-label = "high"
+enrichment = 0.64720131
+enrichment-label = "high"
+extraction = 0.52621575
+extraction-label = "medium"
 difficulty = 0.72222222
 difficulty-label = "high"
-wandr_task = "muscat_engineering_consultancies"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 484.32155094
-width-label = "large"
-depth = 0.350295
-depth-label = "medium"
-extraction = 0.41378473
-extraction-label = "medium"
-dispersion = 0.56941673
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

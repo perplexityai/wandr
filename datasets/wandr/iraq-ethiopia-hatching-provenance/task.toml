@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_iraq_ethiopia_hatching_provenance.jsonl",
 ]
+wandr_task = "iraq_ethiopia_hatching_provenance"
+member_keys = ["organization_or_facility"]
+url-nonreuse = 0.26480919
+url-nonreuse-label = "low"
+domain-dispersion = 0.80575948
+domain-dispersion-label = "high"
+discovery = 0.22333333
+discovery-label = "medium"
+enrichment = 0.54840927
+enrichment-label = "medium"
+extraction = 0.60271558
+extraction-label = "medium"
 difficulty = 0.55333333
 difficulty-label = "medium"
-wandr_task = "iraq_ethiopia_hatching_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 81.28629517
-width-label = "small"
-depth = 0.33411688
-depth-label = "medium"
-extraction = 0.57077124
-extraction-label = "high"
-dispersion = 0.80575948
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

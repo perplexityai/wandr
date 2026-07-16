@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_protein_cookie_labels.jsonl",
 ]
+wandr_task = "protein_cookie_labels"
+member_keys = ["brand_product"]
+url-nonreuse = 0.87938889
+url-nonreuse-label = "high"
+domain-dispersion = 0.29208199
+domain-dispersion-label = "low"
+discovery = 0.20740741
+discovery-label = "medium"
+enrichment = 0.65949776
+enrichment-label = "high"
+extraction = 0.51393459
+extraction-label = "medium"
 difficulty = 0.65925926
 difficulty-label = "high"
-wandr_task = "protein_cookie_labels"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 146.92555718
-width-label = "small"
-depth = 0.33540618
-depth-label = "medium"
-extraction = 0.45299
-extraction-label = "medium"
-dispersion = 0.29208199
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

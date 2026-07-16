@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_greece_bike_share_procurement_events.jsonl",
 ]
+wandr_task = "greece_bike_share_procurement_events"
+member_keys = ["procurement_case"]
+url-nonreuse = 0.79474756
+url-nonreuse-label = "high"
+domain-dispersion = 0.66844288
+domain-dispersion-label = "high"
+discovery = 0.42962963
+discovery-label = "high"
+enrichment = 0.84871456
+enrichment-label = "high"
+extraction = 0.50273780
+extraction-label = "medium"
 difficulty = 0.77407407
 difficulty-label = "high"
-wandr_task = "greece_bike_share_procurement_events"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 156.43222935
-width-label = "medium"
-depth = 1.45967034
-depth-label = "xhigh"
-extraction = 0.49878869
-extraction-label = "medium"
-dispersion = 0.66844288
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

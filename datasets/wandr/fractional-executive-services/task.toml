@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fractional_executive_services.jsonl",
 ]
+wandr_task = "fractional_executive_services"
+member_keys = ["provider_function"]
+url-nonreuse = 0.35292384
+url-nonreuse-label = "low"
+domain-dispersion = 0.87188943
+domain-dispersion-label = "high"
+discovery = 0.59197531
+discovery-label = "high"
+enrichment = 0.61048916
+enrichment-label = "medium"
+extraction = 0.85370895
+extraction-label = "high"
 difficulty = 0.77901235
 difficulty-label = "high"
-wandr_task = "fractional_executive_services"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 777.63848189
-width-label = "large"
-depth = 0.11697678
-depth-label = "medium"
-extraction = 0.8120283
-extraction-label = "high"
-dispersion = 0.87188943
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

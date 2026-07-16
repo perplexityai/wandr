@@ -11,20 +11,23 @@ required_file_paths = [
     "results_ai_humanizer_public_claim_provenance.jsonl",
     "results_ai_humanizer_public_claim_provenance.vendor_tool_qualification.jsonl",
 ]
+wandr_task = "ai_humanizer_public_claim_provenance"
+member_keys = ["tool"]
+url-nonreuse = 0.67480751
+url-nonreuse-label = "medium"
+domain-dispersion = 0.57482720
+domain-dispersion-label = "medium"
+discovery = 0.14857143
+discovery-label = "low"
+enrichment = 0.62951261
+enrichment-label = "medium"
+extraction = 0.82091127
+extraction-label = "high"
 difficulty = 0.65571429
 difficulty-label = "high"
-wandr_task = "ai_humanizer_public_claim_provenance"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 658.43655621
-width-label = "large"
-depth = 0.10459559
-depth-label = "medium"
-extraction = 0.79412862
-extraction-label = "high"
-dispersion = 0.5748272
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

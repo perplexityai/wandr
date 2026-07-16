@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_commerce_integrator_evidence.jsonl",
 ]
-difficulty = 0.2685
-difficulty-label = "low"
 wandr_task = "commerce_integrator_evidence"
+member_keys = ["agency"]
+url-nonreuse = 0.51415142
+url-nonreuse-label = "medium"
+domain-dispersion = 0.43408408
+domain-dispersion-label = "medium"
+discovery = 0.31120000
+discovery-label = "medium"
+enrichment = 0.48771111
+enrichment-label = "medium"
+extraction = 0.59084606
+extraction-label = "medium"
+difficulty = 0.26850000
+difficulty-label = "low"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 1381.72739371
-width-label = "xlarge"
-depth = 0.37495002
-depth-label = "medium"
-extraction = 0.33628531
-extraction-label = "low"
-dispersion = 0.43408408
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

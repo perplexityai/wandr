@@ -11,20 +11,23 @@ required_file_paths = [
     "results_ai_capacity_opportunities.jsonl",
     "results_ai_capacity_opportunities.organization_ai_capacity_sources.jsonl",
 ]
-difficulty = 0.76875
-difficulty-label = "high"
 wandr_task = "ai_capacity_opportunities"
+member_keys = ["opportunity"]
+url-nonreuse = 0.75551243
+url-nonreuse-label = "high"
+domain-dispersion = 0.58759743
+domain-dispersion-label = "medium"
+discovery = 0.51458333
+discovery-label = "high"
+enrichment = 0.53119965
+enrichment-label = "medium"
+extraction = 0.82171587
+extraction-label = "high"
+difficulty = 0.76875000
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "composite"
-width = 321.99464187
-width-label = "medium"
-depth = 0.09861151
-depth-label = "low"
-extraction = 0.78503271
-extraction-label = "high"
-dispersion = 0.58759743
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fiba_u20_women_sources.jsonl",
 ]
+wandr_task = "fiba_u20_women_sources"
+member_keys = ["event_team"]
+url-nonreuse = 0.48050467
+url-nonreuse-label = "low"
+domain-dispersion = 0.26325728
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.33666667
+enrichment-label = "low"
+extraction = 0.53331322
+extraction-label = "medium"
 difficulty = 0.16666667
 difficulty-label = "low"
-wandr_task = "fiba_u20_women_sources"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 103.88554499
-width-label = "small"
-depth = 0.06335768
-depth-label = "low"
-extraction = 0.41193534
-extraction-label = "medium"
-dispersion = 0.26325728
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

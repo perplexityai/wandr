@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_latam_fiscal_workflows.jsonl",
 ]
+wandr_task = "latam_fiscal_workflows"
+member_keys = ["registry_legal_entity", "commercial_identity"]
+url-nonreuse = 0.46150056
+url-nonreuse-label = "low"
+domain-dispersion = 0.78380772
+domain-dispersion-label = "high"
+discovery = 0.20555556
+discovery-label = "medium"
+enrichment = 0.75781343
+enrichment-label = "high"
+extraction = 0.16894410
+extraction-label = "low"
 difficulty = 0.75925926
 difficulty-label = "high"
-wandr_task = "latam_fiscal_workflows"
 
 verticals = ["general", "legal", "tech"]
 topology = "hierarchical"
-width = 88.32078106
-width-label = "small"
-depth = 0.80020569
-depth-label = "high"
-extraction = 0.21746943
-extraction-label = "low"
-dispersion = 0.78380772
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

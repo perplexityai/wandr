@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_tn_colleges.jsonl",
 ]
-difficulty = 0.095
-difficulty-label = "low"
 wandr_task = "tn_colleges"
+member_keys = ["college_district"]
+url-nonreuse = 0.99998970
+url-nonreuse-label = "high"
+domain-dispersion = 0.02267261
+domain-dispersion-label = "low"
+discovery = 0.35555556
+discovery-label = "medium"
+enrichment = 0.65939946
+enrichment-label = "high"
+extraction = 0.57761679
+extraction-label = "medium"
+difficulty = 0.09500000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "flat"
-width = 0.40196612
-width-label = "tiny"
-depth = 0.03575826
-depth-label = "low"
-extraction = 0.24922962
-extraction-label = "low"
-dispersion = 0.02267261
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

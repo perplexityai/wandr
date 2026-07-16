@@ -11,20 +11,23 @@ required_file_paths = [
     "results_german_medtech_services.jsonl",
     "results_german_medtech_services.germany_presence.jsonl",
 ]
+wandr_task = "german_medtech_services"
+member_keys = ["firm"]
+url-nonreuse = 0.41345034
+url-nonreuse-label = "low"
+domain-dispersion = 0.74399198
+domain-dispersion-label = "high"
+discovery = 0.43222222
+discovery-label = "high"
+enrichment = 0.64880075
+enrichment-label = "high"
+extraction = 0.70600375
+extraction-label = "high"
 difficulty = 0.69888889
 difficulty-label = "high"
-wandr_task = "german_medtech_services"
 
 verticals = ["health"]
 topology = "composite"
-width = 632.00556254
-width-label = "large"
-depth = 0.08948026
-depth-label = "low"
-extraction = 0.51644331
-extraction-label = "medium"
-dispersion = 0.74399198
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

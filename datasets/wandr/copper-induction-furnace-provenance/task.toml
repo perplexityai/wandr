@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_copper_induction_furnace_provenance.jsonl",
 ]
-difficulty = 0.39375
-difficulty-label = "low"
 wandr_task = "copper_induction_furnace_provenance"
+member_keys = ["furnace_offering"]
+url-nonreuse = 0.63637854
+url-nonreuse-label = "medium"
+domain-dispersion = 0.67679230
+domain-dispersion-label = "high"
+discovery = 0.41250000
+discovery-label = "medium"
+enrichment = 0.37058388
+enrichment-label = "low"
+extraction = 0.70132850
+extraction-label = "high"
+difficulty = 0.39375000
+difficulty-label = "low"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 161.02514926
-width-label = "medium"
-depth = 0.21702034
-depth-label = "medium"
-extraction = 0.61467821
-extraction-label = "high"
-dispersion = 0.6767923
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

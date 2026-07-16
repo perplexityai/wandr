@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_software_kpis.jsonl",
 ]
-difficulty = 0.084375
-difficulty-label = "low"
 wandr_task = "software_kpis"
+member_keys = ["software_company"]
+url-nonreuse = 0.49090478
+url-nonreuse-label = "medium"
+domain-dispersion = 0.08918033
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.47750000
+enrichment-label = "low"
+extraction = 0.13334713
+extraction-label = "low"
+difficulty = 0.08437500
+difficulty-label = "low"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 150.50891056
-width-label = "medium"
-depth = 0.14757977
-depth-label = "medium"
-extraction = 0.10817874
-extraction-label = "low"
-dispersion = 0.08918033
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_startup_support_program_public_profile_evidence.jsonl",
 ]
+wandr_task = "startup_support_program_public_profile_evidence"
+member_keys = ["program"]
+url-nonreuse = 0.83562547
+url-nonreuse-label = "high"
+domain-dispersion = 0.67894694
+domain-dispersion-label = "high"
+discovery = 0.33611111
+discovery-label = "medium"
+enrichment = 0.51330088
+enrichment-label = "medium"
+extraction = 0.47885874
+extraction-label = "low"
 difficulty = 0.33333333
 difficulty-label = "low"
-wandr_task = "startup_support_program_public_profile_evidence"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1001.93187085
-width-label = "xlarge"
-depth = 0.19666007
-depth-label = "medium"
-extraction = 0.36437019
-extraction-label = "low"
-dispersion = 0.67894694
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

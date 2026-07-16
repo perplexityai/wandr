@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_programmatic_publisher_ad_stack_signal_atlas.jsonl",
 ]
-difficulty = 0.61
-difficulty-label = "medium"
 wandr_task = "programmatic_publisher_ad_stack_signal_atlas"
+member_keys = ["publisher_domain"]
+url-nonreuse = 0.51678308
+url-nonreuse-label = "medium"
+domain-dispersion = 0.49585024
+domain-dispersion-label = "medium"
+discovery = 0.31500000
+discovery-label = "medium"
+enrichment = 0.66916667
+enrichment-label = "high"
+extraction = 0.38706477
+extraction-label = "low"
+difficulty = 0.61000000
+difficulty-label = "medium"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 763.94659821
-width-label = "large"
-depth = 0.09671241
-depth-label = "low"
-extraction = 0.37448047
-extraction-label = "low"
-dispersion = 0.49585024
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_center_heat_offtake_relationships.jsonl",
 ]
+wandr_task = "data_center_heat_offtake_relationships"
+member_keys = ["heat_offtake_relationship"]
+url-nonreuse = 0.69302264
+url-nonreuse-label = "medium"
+domain-dispersion = 0.77585125
+domain-dispersion-label = "high"
+discovery = 0.70333333
+discovery-label = "high"
+enrichment = 0.46396761
+enrichment-label = "low"
+extraction = 0.35748952
+extraction-label = "low"
 difficulty = 0.76166667
 difficulty-label = "high"
-wandr_task = "data_center_heat_offtake_relationships"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 409.35142434
-width-label = "medium"
-depth = 0.28247543
-depth-label = "medium"
-extraction = 0.34408198
-extraction-label = "low"
-dispersion = 0.77585125
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

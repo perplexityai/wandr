@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_pediatric_daf_grant_foundations.jsonl",
 ]
+wandr_task = "pediatric_daf_grant_foundations"
+member_keys = ["org"]
+url-nonreuse = 0.77675441
+url-nonreuse-label = "high"
+domain-dispersion = 0.59055868
+domain-dispersion-label = "medium"
+discovery = 0.13333333
+discovery-label = "low"
+enrichment = 0.60098765
+enrichment-label = "medium"
+extraction = 0.63484933
+extraction-label = "high"
 difficulty = 0.62777778
 difficulty-label = "medium"
-wandr_task = "pediatric_daf_grant_foundations"
 
 verticals = ["general", "health"]
 topology = "flat"
-width = 92.56643644
-width-label = "small"
-depth = 0.31079725
-depth-label = "medium"
-extraction = 0.62689111
-extraction-label = "high"
-dispersion = 0.59055868
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

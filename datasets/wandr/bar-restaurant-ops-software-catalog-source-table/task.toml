@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_bar_restaurant_ops_software_catalog_source_table.jsonl",
 ]
+wandr_task = "bar_restaurant_ops_software_catalog_source_table"
+member_keys = ["vendor_or_source"]
+url-nonreuse = 0.68846020
+url-nonreuse-label = "medium"
+domain-dispersion = 0.78543843
+domain-dispersion-label = "high"
+discovery = 0.43888889
+discovery-label = "high"
+enrichment = 0.41876355
+enrichment-label = "low"
+extraction = 0.73602144
+extraction-label = "high"
 difficulty = 0.64166667
 difficulty-label = "medium"
-wandr_task = "bar_restaurant_ops_software_catalog_source_table"
 
 verticals = ["legal", "e-com", "tech"]
 topology = "hierarchical"
-width = 613.02500531
-width-label = "large"
-depth = 0.11387102
-depth-label = "medium"
-extraction = 0.79918476
-extraction-label = "high"
-dispersion = 0.78543843
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

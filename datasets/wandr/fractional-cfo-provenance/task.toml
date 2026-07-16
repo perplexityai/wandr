@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fractional_cfo_provenance.jsonl",
 ]
-difficulty = 0.13125
-difficulty-label = "low"
 wandr_task = "fractional_cfo_provenance"
+member_keys = ["provider"]
+url-nonreuse = 0.27514061
+url-nonreuse-label = "low"
+domain-dispersion = 0.86869316
+domain-dispersion-label = "high"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.53500000
+enrichment-label = "medium"
+extraction = 0.59906764
+extraction-label = "medium"
+difficulty = 0.13125000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 697.10872304
-width-label = "large"
-depth = 0.02737249
-depth-label = "low"
-extraction = 0.34935932
-extraction-label = "low"
-dispersion = 0.86869316
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

@@ -11,20 +11,23 @@ required_file_paths = [
     "results_email_security_claim_corroboration.jsonl",
     "results_email_security_claim_corroboration.commercial_availability.jsonl",
 ]
-difficulty = 0.875
-difficulty-label = "high"
 wandr_task = "email_security_claim_corroboration"
+member_keys = ["vendor_product"]
+url-nonreuse = 0.32385338
+url-nonreuse-label = "low"
+domain-dispersion = 0.55854075
+domain-dispersion-label = "medium"
+discovery = 0.24400000
+discovery-label = "medium"
+enrichment = 0.82133333
+enrichment-label = "high"
+extraction = 0.77081742
+extraction-label = "high"
+difficulty = 0.87500000
+difficulty-label = "high"
 
 verticals = ["e-com", "tech"]
 topology = "composite"
-width = 362.10217502
-width-label = "medium"
-depth = 0.28924155
-depth-label = "medium"
-extraction = 0.7357946
-extraction-label = "high"
-dispersion = 0.55854075
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

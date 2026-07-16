@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ea_public_register_document_states.jsonl",
 ]
+wandr_task = "ea_public_register_document_states"
+member_keys = ["permission_record"]
+url-nonreuse = 0.50262759
+url-nonreuse-label = "medium"
+domain-dispersion = 0.02309002
+domain-dispersion-label = "low"
+discovery = 0.19000000
+discovery-label = "low"
+enrichment = 0.40333333
+enrichment-label = "low"
+extraction = 0.54154940
+extraction-label = "medium"
 difficulty = 0.17083333
 difficulty-label = "low"
-wandr_task = "ea_public_register_document_states"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 107.54697203
-width-label = "small"
-depth = 0.03108143
-depth-label = "low"
-extraction = 0.44738646
-extraction-label = "medium"
-dispersion = 0.02309002
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

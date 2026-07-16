@@ -12,20 +12,23 @@ required_file_paths = [
     "results_bali_laundry_suppliers.supplier_product_range.jsonl",
     "results_bali_laundry_suppliers.supplier_price_signal.jsonl",
 ]
-difficulty = 0.5
-difficulty-label = "medium"
 wandr_task = "bali_laundry_suppliers"
+member_keys = ["supplier"]
+url-nonreuse = 0.52175187
+url-nonreuse-label = "medium"
+domain-dispersion = 0.41849757
+domain-dispersion-label = "low"
+discovery = 0.28888889
+discovery-label = "medium"
+enrichment = 0.55654642
+enrichment-label = "medium"
+extraction = 0.59000934
+extraction-label = "medium"
+difficulty = 0.50000000
+difficulty-label = "medium"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 77.19231644
-width-label = "small"
-depth = 0.61338441
-depth-label = "high"
-extraction = 0.44761728
-extraction-label = "medium"
-dispersion = 0.41849757
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uk_fca_regulated_adviser_profile_corroboration.jsonl",
 ]
+wandr_task = "uk_fca_regulated_adviser_profile_corroboration"
+member_keys = ["adviser"]
+url-nonreuse = 0.71642850
+url-nonreuse-label = "medium"
+domain-dispersion = 0.50062725
+domain-dispersion-label = "medium"
+discovery = 0.77256944
+discovery-label = "high"
+enrichment = 0.69289227
+enrichment-label = "high"
+extraction = 0.73005978
+extraction-label = "high"
 difficulty = 0.57291667
 difficulty-label = "medium"
-wandr_task = "uk_fca_regulated_adviser_profile_corroboration"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 239.8765056
-width-label = "medium"
-depth = 0.48380525
-depth-label = "high"
-extraction = 0.80925239
-extraction-label = "high"
-dispersion = 0.50062725
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

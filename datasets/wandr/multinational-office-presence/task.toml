@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_multinational_office_presence.jsonl",
 ]
-difficulty = 0.6385
-difficulty-label = "medium"
 wandr_task = "multinational_office_presence"
+member_keys = ["company"]
+url-nonreuse = 0.60877037
+url-nonreuse-label = "medium"
+domain-dispersion = 0.26239066
+domain-dispersion-label = "low"
+discovery = 0.70000000
+discovery-label = "high"
+enrichment = 0.56766600
+enrichment-label = "medium"
+extraction = 0.22408381
+extraction-label = "low"
+difficulty = 0.63850000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 1578.87054786
-width-label = "xlarge"
-depth = 0.09788254
-depth-label = "low"
-extraction = 0.23148592
-extraction-label = "low"
-dispersion = 0.26239066
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

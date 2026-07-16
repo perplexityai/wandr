@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_australian_potato_export_evidence.jsonl",
 ]
+wandr_task = "australian_potato_export_evidence"
+member_keys = ["corridor_product_pair"]
+url-nonreuse = 0.55489120
+url-nonreuse-label = "medium"
+domain-dispersion = 0.27284127
+domain-dispersion-label = "low"
+discovery = 0.38666667
+discovery-label = "medium"
+enrichment = 0.65333630
+enrichment-label = "high"
+extraction = 0.56836081
+extraction-label = "medium"
 difficulty = 0.82333333
 difficulty-label = "high"
-wandr_task = "australian_potato_export_evidence"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 152.40202521
-width-label = "medium"
-depth = 0.66449493
-depth-label = "high"
-extraction = 0.56012933
-extraction-label = "high"
-dispersion = 0.27284127
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

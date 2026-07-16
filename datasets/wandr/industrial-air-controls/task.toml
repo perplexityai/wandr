@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_industrial_air_controls.jsonl",
 ]
-difficulty = 0.1525
-difficulty-label = "low"
 wandr_task = "industrial_air_controls"
+member_keys = ["control_instance"]
+url-nonreuse = 0.73330838
+url-nonreuse-label = "medium"
+domain-dispersion = 0.33891355
+domain-dispersion-label = "low"
+discovery = 0.44833333
+discovery-label = "high"
+enrichment = 0.21777657
+enrichment-label = "low"
+extraction = 0.62054971
+extraction-label = "high"
+difficulty = 0.15250000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "flat"
-width = 254.47358905
-width-label = "medium"
-depth = 0.14403135
-depth-label = "medium"
-extraction = 0.50424208
-extraction-label = "medium"
-dispersion = 0.33891355
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

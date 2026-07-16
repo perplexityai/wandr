@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_india_marketplace_seller_terms.jsonl",
 ]
-difficulty = 0.6675
-difficulty-label = "high"
 wandr_task = "india_marketplace_seller_terms"
+member_keys = ["marketplace"]
+url-nonreuse = 0.62971995
+url-nonreuse-label = "medium"
+domain-dispersion = 0.62246162
+domain-dispersion-label = "high"
+discovery = 0.49111111
+discovery-label = "high"
+enrichment = 0.56125974
+enrichment-label = "medium"
+extraction = 0.68131928
+extraction-label = "high"
+difficulty = 0.66750000
+difficulty-label = "high"
 
 verticals = ["e-com"]
 topology = "hierarchical"
-width = 887.38824771
-width-label = "large"
-depth = 0.43419973
-depth-label = "high"
-extraction = 0.63032369
-extraction-label = "high"
-dispersion = 0.62246162
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

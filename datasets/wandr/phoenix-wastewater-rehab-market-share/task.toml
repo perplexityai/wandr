@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_phoenix_wastewater_rehab_market_share.jsonl",
 ]
+wandr_task = "phoenix_wastewater_rehab_market_share"
+member_keys = ["firm_contract"]
+url-nonreuse = 0.63929668
+url-nonreuse-label = "medium"
+domain-dispersion = 0.13040451
+domain-dispersion-label = "low"
+discovery = 0.38817204
+discovery-label = "medium"
+enrichment = 0.54007721
+enrichment-label = "medium"
+extraction = 0.49839308
+extraction-label = "medium"
 difficulty = 0.20322581
 difficulty-label = "low"
-wandr_task = "phoenix_wastewater_rehab_market_share"
 
 verticals = ["legal"]
 topology = "flat"
-width = 173.92262136
-width-label = "medium"
-depth = 0.10969675
-depth-label = "medium"
-extraction = 0.36711558
-extraction-label = "low"
-dispersion = 0.13040451
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

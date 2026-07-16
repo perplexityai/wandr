@@ -11,20 +11,23 @@ required_file_paths = [
     "results_campania_farm_capital_evidence.jsonl",
     "results_campania_farm_capital_evidence.capital_evidence.jsonl",
 ]
-difficulty = 0.28
-difficulty-label = "low"
 wandr_task = "campania_farm_capital_evidence"
+member_keys = ["educational_farm"]
+url-nonreuse = 0.83400453
+url-nonreuse-label = "high"
+domain-dispersion = 0.14719192
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.76000000
+enrichment-label = "high"
+extraction = 0.84090909
+extraction-label = "high"
+difficulty = 0.28000000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "composite"
-width = 176.80333542
-width-label = "medium"
-depth = 0.3421122
-depth-label = "medium"
-extraction = 0.4749866
-extraction-label = "medium"
-dispersion = 0.14719192
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

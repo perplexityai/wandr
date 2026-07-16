@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_cee_heat_operator_regulation.jsonl",
 ]
+wandr_task = "cee_heat_operator_regulation"
+member_keys = ["heat_operator"]
+url-nonreuse = 0.33246638
+url-nonreuse-label = "low"
+domain-dispersion = 0.28249077
+domain-dispersion-label = "low"
+discovery = 0.03703704
+discovery-label = "low"
+enrichment = 0.63761801
+enrichment-label = "high"
+extraction = 0.61605714
+extraction-label = "high"
 difficulty = 0.40740741
 difficulty-label = "medium"
-wandr_task = "cee_heat_operator_regulation"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 66.92514647
-width-label = "small"
-depth = 0.47068915
-depth-label = "high"
-extraction = 0.55592395
-extraction-label = "high"
-dispersion = 0.28249077
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

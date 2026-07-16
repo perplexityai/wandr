@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_camera_module_sources.jsonl",
 ]
-difficulty = 0.702
-difficulty-label = "high"
 wandr_task = "camera_module_sources"
+member_keys = ["supplier_or_brand_module_or_part"]
+url-nonreuse = 0.26191015
+url-nonreuse-label = "low"
+domain-dispersion = 0.49276523
+domain-dispersion-label = "medium"
+discovery = 0.36666667
+discovery-label = "medium"
+enrichment = 0.65930813
+enrichment-label = "high"
+extraction = 0.69272683
+extraction-label = "high"
+difficulty = 0.70200000
+difficulty-label = "high"
 
 verticals = ["e-com", "tech"]
 topology = "hierarchical"
-width = 336.32595444
-width-label = "medium"
-depth = 0.09641678
-depth-label = "low"
-extraction = 0.61002891
-extraction-label = "high"
-dispersion = 0.49276523
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

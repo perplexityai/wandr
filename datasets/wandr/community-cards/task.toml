@@ -11,20 +11,23 @@ required_file_paths = [
     "results_community_cards.jsonl",
     "results_community_cards.merchant_presence.jsonl",
 ]
+wandr_task = "community_cards"
+member_keys = ["program"]
+url-nonreuse = 0.52415361
+url-nonreuse-label = "medium"
+domain-dispersion = 0.55086443
+domain-dispersion-label = "medium"
+discovery = 0.24776119
+discovery-label = "medium"
+enrichment = 0.85894138
+enrichment-label = "high"
+extraction = 0.78092398
+extraction-label = "high"
 difficulty = 0.71641791
 difficulty-label = "high"
-wandr_task = "community_cards"
 
 verticals = ["general", "e-com"]
 topology = "composite"
-width = 1856.95762047
-width-label = "xlarge"
-depth = 0.07504381
-depth-label = "low"
-extraction = 0.82991588
-extraction-label = "high"
-dispersion = 0.55086443
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

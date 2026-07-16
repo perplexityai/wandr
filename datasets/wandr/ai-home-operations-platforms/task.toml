@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_ai_home_operations_platforms.jsonl",
 ]
-difficulty = 0.64375
-difficulty-label = "medium"
 wandr_task = "ai_home_operations_platforms"
+member_keys = ["platform"]
+url-nonreuse = 0.46320730
+url-nonreuse-label = "low"
+domain-dispersion = 0.54611797
+domain-dispersion-label = "medium"
+discovery = 0.18750000
+discovery-label = "low"
+enrichment = 0.68225417
+enrichment-label = "high"
+extraction = 0.61746649
+extraction-label = "high"
+difficulty = 0.64375000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 752.17421186
-width-label = "large"
-depth = 0.05571141
-depth-label = "low"
-extraction = 0.55172168
-extraction-label = "high"
-dispersion = 0.54611797
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_home_depot_supplier_links.jsonl",
 ]
+wandr_task = "home_depot_supplier_links"
+member_keys = ["supplier_or_brand"]
+url-nonreuse = 0.22944232
+url-nonreuse-label = "low"
+domain-dispersion = 0.43321060
+domain-dispersion-label = "medium"
+discovery = 0.00312500
+discovery-label = "low"
+enrichment = 0.63902822
+enrichment-label = "high"
+extraction = 0.41776732
+extraction-label = "low"
 difficulty = 0.56458333
 difficulty-label = "medium"
-wandr_task = "home_depot_supplier_links"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 282.95403207
-width-label = "medium"
-depth = 0.03987424
-depth-label = "low"
-extraction = 0.35294934
-extraction-label = "low"
-dispersion = 0.4332106
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

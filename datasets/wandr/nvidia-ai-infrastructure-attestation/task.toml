@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_nvidia_ai_infrastructure_attestation.jsonl",
 ]
-difficulty = 0.4775
-difficulty-label = "medium"
 wandr_task = "nvidia_ai_infrastructure_attestation"
+member_keys = ["company"]
+url-nonreuse = 0.67974759
+url-nonreuse-label = "medium"
+domain-dispersion = 0.70991698
+domain-dispersion-label = "high"
+discovery = 0.25000000
+discovery-label = "medium"
+enrichment = 0.44154855
+enrichment-label = "low"
+extraction = 0.29983098
+extraction-label = "low"
+difficulty = 0.47750000
+difficulty-label = "medium"
 
 verticals = ["general", "tech"]
 topology = "hierarchical"
-width = 246.51053405
-width-label = "medium"
-depth = 0.15709049
-depth-label = "medium"
-extraction = 0.2681945
-extraction-label = "low"
-dispersion = 0.70991698
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

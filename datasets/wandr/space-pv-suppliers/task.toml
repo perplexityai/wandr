@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_space_pv_suppliers.jsonl",
 ]
+wandr_task = "space_pv_suppliers"
+member_keys = ["supplier_role"]
+url-nonreuse = 0.80521212
+url-nonreuse-label = "high"
+domain-dispersion = 0.68296986
+domain-dispersion-label = "high"
+discovery = 0.54000000
+discovery-label = "high"
+enrichment = 0.49514449
+enrichment-label = "medium"
+extraction = 0.58630095
+extraction-label = "medium"
 difficulty = 0.49777778
 difficulty-label = "medium"
-wandr_task = "space_pv_suppliers"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 299.21442587
-width-label = "medium"
-depth = 0.21511298
-depth-label = "medium"
-extraction = 0.5237078
-extraction-label = "medium"
-dispersion = 0.68296986
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

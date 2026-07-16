@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_nsw_heavy_vehicle_access.jsonl",
 ]
+wandr_task = "nsw_heavy_vehicle_access"
+member_keys = ["instrument_or_event"]
+url-nonreuse = 0.59962573
+url-nonreuse-label = "medium"
+domain-dispersion = 0.06488157
+domain-dispersion-label = "low"
+discovery = 0.89240741
+discovery-label = "high"
+enrichment = 0.80242878
+enrichment-label = "high"
+extraction = 0.51086957
+extraction-label = "medium"
 difficulty = 0.97944444
 difficulty-label = "high"
-wandr_task = "nsw_heavy_vehicle_access"
 
 verticals = ["legal"]
 topology = "flat"
-width = 1380.4109979
-width-label = "xlarge"
-depth = 0.3491285
-depth-label = "medium"
-extraction = 0.55734905
-extraction-label = "high"
-dispersion = 0.06488157
-dispersion-label = "concentrated"
 
 [verifier]
 timeout_sec = 28800.0

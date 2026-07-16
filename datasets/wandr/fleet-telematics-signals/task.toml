@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fleet_telematics_signals.jsonl",
 ]
-difficulty = 0.73
-difficulty-label = "high"
 wandr_task = "fleet_telematics_signals"
+member_keys = ["platform"]
+url-nonreuse = 0.48490770
+url-nonreuse-label = "medium"
+domain-dispersion = 0.48965974
+domain-dispersion-label = "medium"
+discovery = 0.28400000
+discovery-label = "medium"
+enrichment = 0.82910084
+enrichment-label = "high"
+extraction = 0.79936508
+extraction-label = "high"
+difficulty = 0.73000000
+difficulty-label = "high"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 897.40832445
-width-label = "large"
-depth = 0.29598606
-depth-label = "medium"
-extraction = 0.60952568
-extraction-label = "high"
-dispersion = 0.48965974
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

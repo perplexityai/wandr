@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_mortgage_calculator_surfaces.jsonl",
 ]
+wandr_task = "mortgage_calculator_surfaces"
+member_keys = ["calculator_surface"]
+url-nonreuse = 0.96094955
+url-nonreuse-label = "high"
+domain-dispersion = 0.56662967
+domain-dispersion-label = "medium"
+discovery = 0.15641026
+discovery-label = "low"
+enrichment = 0.37250290
+enrichment-label = "low"
+extraction = 0.56706339
+extraction-label = "medium"
 difficulty = 0.20769231
 difficulty-label = "low"
-wandr_task = "mortgage_calculator_surfaces"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 97.89721475
-width-label = "small"
-depth = 0.25896259
-depth-label = "medium"
-extraction = 0.50452288
-extraction-label = "medium"
-dispersion = 0.56662967
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

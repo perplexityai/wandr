@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_japan_auto_tech_speaker_sales_leads.jsonl",
 ]
-difficulty = 0
-difficulty-label = "low"
 wandr_task = "japan_auto_tech_speaker_sales_leads"
+member_keys = ["speaker_organization"]
+url-nonreuse = 0.07522108
+url-nonreuse-label = "low"
+domain-dispersion = 0.22839804
+domain-dispersion-label = "low"
+discovery = 0.23900000
+discovery-label = "medium"
+enrichment = 0.69905425
+enrichment-label = "high"
+extraction = 0.38219178
+extraction-label = "low"
+difficulty = 0.00000000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "flat"
-width = 34.14148959
-width-label = "tiny"
-depth = 0.14801888
-depth-label = "medium"
-extraction = 0.09788383
-extraction-label = "low"
-dispersion = 0.22839804
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_resolved_prediction_markets.jsonl",
 ]
-difficulty = 0.1075
-difficulty-label = "low"
 wandr_task = "resolved_prediction_markets"
+member_keys = ["platform_market"]
+url-nonreuse = 0.52073947
+url-nonreuse-label = "medium"
+domain-dispersion = 0.11040398
+domain-dispersion-label = "low"
+discovery = 0.18000000
+discovery-label = "low"
+enrichment = 0.32800000
+enrichment-label = "low"
+extraction = 0.25794270
+extraction-label = "low"
+difficulty = 0.10750000
+difficulty-label = "low"
 
 verticals = ["finance", "wikis"]
 topology = "composite"
-width = 206.84907676
-width-label = "medium"
-depth = 0.31953485
-depth-label = "medium"
-extraction = 0.15568233
-extraction-label = "low"
-dispersion = 0.11040398
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

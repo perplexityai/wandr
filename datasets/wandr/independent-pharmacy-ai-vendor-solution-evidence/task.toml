@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_independent_pharmacy_ai_vendor_solution_evidence.jsonl",
 ]
-difficulty = 0.803125
-difficulty-label = "high"
 wandr_task = "independent_pharmacy_ai_vendor_solution_evidence"
+member_keys = ["vendor_solution"]
+url-nonreuse = 0.58256923
+url-nonreuse-label = "medium"
+domain-dispersion = 0.44867653
+domain-dispersion-label = "medium"
+discovery = 0.64722222
+discovery-label = "high"
+enrichment = 0.70173927
+enrichment-label = "high"
+extraction = 0.58992917
+extraction-label = "medium"
+difficulty = 0.80312500
+difficulty-label = "high"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 426.87078636
-width-label = "medium"
-depth = 0.41179729
-depth-label = "high"
-extraction = 0.44374711
-extraction-label = "medium"
-dispersion = 0.44867653
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

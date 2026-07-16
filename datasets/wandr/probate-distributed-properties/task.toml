@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_probate_distributed_properties.jsonl",
 ]
+wandr_task = "probate_distributed_properties"
+member_keys = ["county_property"]
+url-nonreuse = 0.62732192
+url-nonreuse-label = "medium"
+domain-dispersion = 0.21031566
+domain-dispersion-label = "low"
+discovery = 0.42083333
+discovery-label = "medium"
+enrichment = 0.77839506
+enrichment-label = "high"
+extraction = 0.58744945
+extraction-label = "medium"
 difficulty = 0.56666667
 difficulty-label = "medium"
-wandr_task = "probate_distributed_properties"
 
 verticals = ["legal", "e-com"]
 topology = "hierarchical"
-width = 124.97150204
-width-label = "small"
-depth = 0.68167789
-depth-label = "high"
-extraction = 0.63103474
-extraction-label = "high"
-dispersion = 0.21031566
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

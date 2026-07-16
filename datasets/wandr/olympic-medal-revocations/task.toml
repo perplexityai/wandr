@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_olympic_medal_revocations.jsonl",
 ]
-difficulty = 0.265625
-difficulty-label = "low"
 wandr_task = "olympic_medal_revocations"
+member_keys = ["athlete_event_games"]
+url-nonreuse = 0.50961157
+url-nonreuse-label = "medium"
+domain-dispersion = 0.15417483
+domain-dispersion-label = "low"
+discovery = 0.00000000
+discovery-label = "low"
+enrichment = 0.34062500
+enrichment-label = "low"
+extraction = 0.73279696
+extraction-label = "high"
+difficulty = 0.26562500
+difficulty-label = "low"
 
 verticals = ["wikis"]
 topology = "flat"
-width = 154.9349882
-width-label = "medium"
-depth = 0.10069198
-depth-label = "medium"
-extraction = 0.62868892
-extraction-label = "high"
-dispersion = 0.15417483
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_dach_courier_provenance.jsonl",
 ]
+wandr_task = "dach_courier_provenance"
+member_keys = ["courier_brand"]
+url-nonreuse = 0.22477582
+url-nonreuse-label = "low"
+domain-dispersion = 0.79314810
+domain-dispersion-label = "high"
+discovery = 0.52857143
+discovery-label = "high"
+enrichment = 0.54352316
+enrichment-label = "medium"
+extraction = 0.49971187
+extraction-label = "medium"
 difficulty = 0.79047619
 difficulty-label = "high"
-wandr_task = "dach_courier_provenance"
 
 verticals = ["general", "legal"]
 topology = "hierarchical"
-width = 237.33708666
-width-label = "medium"
-depth = 0.40029147
-depth-label = "high"
-extraction = 0.38683871
-extraction-label = "low"
-dispersion = 0.7931481
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

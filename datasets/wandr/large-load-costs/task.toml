@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_large_load_costs.jsonl",
 ]
-difficulty = 0.716
-difficulty-label = "high"
 wandr_task = "large_load_costs"
+member_keys = ["official_instrument"]
+url-nonreuse = 0.80640115
+url-nonreuse-label = "high"
+domain-dispersion = 0.57705310
+domain-dispersion-label = "medium"
+discovery = 0.58800000
+discovery-label = "high"
+enrichment = 0.62514999
+enrichment-label = "medium"
+extraction = 0.80965368
+extraction-label = "high"
+difficulty = 0.71600000
+difficulty-label = "high"
 
 verticals = ["legal"]
 topology = "flat"
-width = 324.43682192
-width-label = "medium"
-depth = 0.21517886
-depth-label = "medium"
-extraction = 0.74857764
-extraction-label = "high"
-dispersion = 0.5770531
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

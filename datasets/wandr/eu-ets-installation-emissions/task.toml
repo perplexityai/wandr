@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_eu_ets_installation_emissions.jsonl",
 ]
-difficulty = 0.4
-difficulty-label = "low"
 wandr_task = "eu_ets_installation_emissions"
+member_keys = ["country_entity_year"]
+url-nonreuse = 0.02848749
+url-nonreuse-label = "low"
+domain-dispersion = 1.00000000
+domain-dispersion-label = "high"
+discovery = 0.53600000
+discovery-label = "high"
+enrichment = 0.00000000
+enrichment-label = "low"
+extraction = 0.50000000
+extraction-label = "medium"
+difficulty = 0.40000000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 7.43495002
-width-label = "tiny"
-depth = 0.58389614
-depth-label = "high"
-extraction = 0.26030226
-extraction-label = "low"
-dispersion = 1
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

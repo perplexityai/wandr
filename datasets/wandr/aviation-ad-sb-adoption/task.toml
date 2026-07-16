@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_aviation_ad_sb_adoption.jsonl",
 ]
-difficulty = 0.1875
-difficulty-label = "low"
 wandr_task = "aviation_ad_sb_adoption"
+member_keys = ["aircraft_model", "ad_number", "manufacturer_sb"]
+url-nonreuse = 0.64257812
+url-nonreuse-label = "medium"
+domain-dispersion = 0.10480183
+domain-dispersion-label = "low"
+discovery = 0.61458333
+discovery-label = "high"
+enrichment = 0.14062500
+enrichment-label = "low"
+extraction = 0.51002388
+extraction-label = "medium"
+difficulty = 0.18750000
+difficulty-label = "low"
 
 verticals = ["legal"]
 topology = "hierarchical"
-width = 22.51044918
-width-label = "tiny"
-depth = 1.24039965
-depth-label = "xhigh"
-extraction = 0.2866741
-extraction-label = "low"
-dispersion = 0.10480183
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_university_application_fees.jsonl",
 ]
-difficulty = 0.375
-difficulty-label = "low"
 wandr_task = "university_application_fees"
+member_keys = ["university"]
+url-nonreuse = 0.98626761
+url-nonreuse-label = "high"
+domain-dispersion = 0.99285417
+domain-dispersion-label = "high"
+discovery = 0.23472222
+discovery-label = "medium"
+enrichment = 0.37591393
+enrichment-label = "low"
+extraction = 0.52193926
+extraction-label = "medium"
+difficulty = 0.37500000
+difficulty-label = "low"
 
 verticals = ["general"]
 topology = "flat"
-width = 50.05103939
-width-label = "small"
-depth = 0.31329139
-depth-label = "medium"
-extraction = 0.50481546
-extraction-label = "medium"
-dispersion = 0.99285417
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

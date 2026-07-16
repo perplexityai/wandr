@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_diligence_workflow_profiles.jsonl",
 ]
+wandr_task = "diligence_workflow_profiles"
+member_keys = ["company"]
+url-nonreuse = 0.96008733
+url-nonreuse-label = "high"
+domain-dispersion = 0.50470528
+domain-dispersion-label = "medium"
+discovery = 0.42142857
+discovery-label = "medium"
+enrichment = 0.65157528
+enrichment-label = "high"
+extraction = 0.44071134
+extraction-label = "low"
 difficulty = 0.32857143
 difficulty-label = "low"
-wandr_task = "diligence_workflow_profiles"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 804.76179432
-width-label = "large"
-depth = 0.24223466
-depth-label = "medium"
-extraction = 0.21972701
-extraction-label = "low"
-dispersion = 0.50470528
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

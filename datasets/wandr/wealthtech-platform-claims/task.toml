@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_wealthtech_platform_claims.jsonl",
 ]
+wandr_task = "wealthtech_platform_claims"
+member_keys = ["platform"]
+url-nonreuse = 0.61641544
+url-nonreuse-label = "medium"
+domain-dispersion = 0.57262530
+domain-dispersion-label = "medium"
+discovery = 0.21041667
+discovery-label = "medium"
+enrichment = 0.56940789
+enrichment-label = "medium"
+extraction = 0.61548246
+extraction-label = "medium"
 difficulty = 0.41666667
 difficulty-label = "medium"
-wandr_task = "wealthtech_platform_claims"
 
 verticals = ["events", "legal", "finance"]
 topology = "hierarchical"
-width = 1593.42888525
-width-label = "xlarge"
-depth = 0.04332818
-depth-label = "low"
-extraction = 0.46676806
-extraction-label = "medium"
-dispersion = 0.5726253
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

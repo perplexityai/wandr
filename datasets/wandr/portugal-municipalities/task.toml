@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_portugal_municipalities.jsonl",
 ]
+wandr_task = "portugal_municipalities"
+member_keys = ["municipality_district"]
+url-nonreuse = 1.00000000
+url-nonreuse-label = "high"
+domain-dispersion = 0.21404056
+domain-dispersion-label = "low"
+discovery = 0.41720779
+discovery-label = "medium"
+enrichment = 0.36928425
+enrichment-label = "low"
+extraction = 0.32364439
+extraction-label = "low"
 difficulty = 0.30844156
 difficulty-label = "low"
-wandr_task = "portugal_municipalities"
 
 verticals = ["wikis"]
 topology = "flat"
-width = 0.00000013
-width-label = "tiny"
-depth = 0.19106419
-depth-label = "medium"
-extraction = 0.23386291
-extraction-label = "low"
-dispersion = 0.21404056
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

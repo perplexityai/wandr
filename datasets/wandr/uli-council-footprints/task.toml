@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_uli_council_footprints.jsonl",
 ]
+wandr_task = "uli_council_footprints"
+member_keys = ["uli_council"]
+url-nonreuse = 0.51478398
+url-nonreuse-label = "medium"
+domain-dispersion = 0.26384957
+domain-dispersion-label = "low"
+discovery = 0.60952381
+discovery-label = "high"
+enrichment = 0.67738095
+enrichment-label = "high"
+extraction = 0.38886838
+extraction-label = "low"
 difficulty = 0.62962963
 difficulty-label = "medium"
-wandr_task = "uli_council_footprints"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 440.89600714
-width-label = "medium"
-depth = 0.33596238
-depth-label = "medium"
-extraction = 0.32366281
-extraction-label = "low"
-dispersion = 0.26384957
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

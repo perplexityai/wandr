@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_africa_fertilizer_associations.jsonl",
 ]
+wandr_task = "africa_fertilizer_associations"
+member_keys = ["association"]
+url-nonreuse = 0.29671649
+url-nonreuse-label = "low"
+domain-dispersion = 0.71550738
+domain-dispersion-label = "high"
+discovery = 0.33333333
+discovery-label = "medium"
+enrichment = 0.61754787
+enrichment-label = "medium"
+extraction = 0.69090125
+extraction-label = "high"
 difficulty = 0.66190476
 difficulty-label = "high"
-wandr_task = "africa_fertilizer_associations"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 135.35579786
-width-label = "small"
-depth = 0.69523595
-depth-label = "high"
-extraction = 0.68609028
-extraction-label = "high"
-dispersion = 0.71550738
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

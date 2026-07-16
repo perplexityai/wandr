@@ -11,20 +11,23 @@ required_file_paths = [
     "results_canada_bottle_packaging.jsonl",
     "results_canada_bottle_packaging.canada_service.jsonl",
 ]
+wandr_task = "canada_bottle_packaging"
+member_keys = ["supplier_product"]
+url-nonreuse = 0.24662513
+url-nonreuse-label = "low"
+domain-dispersion = 0.26575375
+domain-dispersion-label = "low"
+discovery = 0.57555556
+discovery-label = "high"
+enrichment = 0.83105415
+enrichment-label = "high"
+extraction = 0.89497510
+extraction-label = "high"
 difficulty = 0.88950617
 difficulty-label = "high"
-wandr_task = "canada_bottle_packaging"
 
 verticals = ["e-com"]
 topology = "composite"
-width = 1078.12526156
-width-label = "xlarge"
-depth = 0.70693652
-depth-label = "high"
-extraction = 0.86004544
-extraction-label = "high"
-dispersion = 0.26575375
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

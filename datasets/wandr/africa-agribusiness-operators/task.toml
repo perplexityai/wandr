@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_africa_agribusiness_operators.jsonl",
 ]
+wandr_task = "africa_agribusiness_operators"
+member_keys = ["operator"]
+url-nonreuse = 0.50892071
+url-nonreuse-label = "medium"
+domain-dispersion = 0.61115382
+domain-dispersion-label = "medium"
+discovery = 0.09600000
+discovery-label = "low"
+enrichment = 0.33835897
+enrichment-label = "low"
+extraction = 0.70223739
+extraction-label = "high"
 difficulty = 0.41333333
 difficulty-label = "medium"
-wandr_task = "africa_agribusiness_operators"
 
 verticals = ["finance"]
 topology = "hierarchical"
-width = 142.98883094
-width-label = "small"
-depth = 0.37502585
-depth-label = "medium"
-extraction = 0.6701443
-extraction-label = "high"
-dispersion = 0.61115382
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

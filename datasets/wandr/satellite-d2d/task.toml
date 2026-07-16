@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_satellite_d2d.jsonl",
 ]
-difficulty = 0.4875
-difficulty-label = "medium"
 wandr_task = "satellite_d2d"
+member_keys = ["organization_role"]
+url-nonreuse = 0.44992882
+url-nonreuse-label = "low"
+domain-dispersion = 0.78573401
+domain-dispersion-label = "high"
+discovery = 0.34333333
+discovery-label = "medium"
+enrichment = 0.32635335
+enrichment-label = "low"
+extraction = 0.78489605
+extraction-label = "high"
+difficulty = 0.48750000
+difficulty-label = "medium"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 299.67472407
-width-label = "medium"
-depth = 0.17800232
-depth-label = "medium"
-extraction = 0.73588762
-extraction-label = "high"
-dispersion = 0.78573401
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

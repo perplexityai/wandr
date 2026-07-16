@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_digital_agency_terms.jsonl",
 ]
-difficulty = 0.526
-difficulty-label = "medium"
 wandr_task = "digital_agency_terms"
+member_keys = ["agency"]
+url-nonreuse = 0.85295592
+url-nonreuse-label = "high"
+domain-dispersion = 0.39184717
+domain-dispersion-label = "low"
+discovery = 0.41066667
+discovery-label = "medium"
+enrichment = 0.61229412
+enrichment-label = "medium"
+extraction = 0.52695279
+extraction-label = "medium"
+difficulty = 0.52600000
+difficulty-label = "medium"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 798.48817431
-width-label = "large"
-depth = 0.10412087
-depth-label = "medium"
-extraction = 0.37032149
-extraction-label = "low"
-dispersion = 0.39184717
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_au_qs_service_corroboration.jsonl",
 ]
+wandr_task = "au_qs_service_corroboration"
+member_keys = ["firm_listing"]
+url-nonreuse = 0.39809214
+url-nonreuse-label = "low"
+domain-dispersion = 0.52953644
+domain-dispersion-label = "medium"
+discovery = 0.25370370
+discovery-label = "medium"
+enrichment = 0.66203961
+enrichment-label = "high"
+extraction = 0.53632081
+extraction-label = "medium"
 difficulty = 0.64444444
 difficulty-label = "high"
-wandr_task = "au_qs_service_corroboration"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 146.092918
-width-label = "small"
-depth = 0.13932373
-depth-label = "medium"
-extraction = 0.53944618
-extraction-label = "high"
-dispersion = 0.52953644
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

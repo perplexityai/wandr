@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_prd_packaging_suppliers.jsonl",
 ]
+wandr_task = "prd_packaging_suppliers"
+member_keys = ["supplier"]
+url-nonreuse = 0.92437161
+url-nonreuse-label = "high"
+domain-dispersion = 0.74912016
+domain-dispersion-label = "high"
+discovery = 0.15625000
+discovery-label = "low"
+enrichment = 0.61629387
+enrichment-label = "medium"
+extraction = 0.63302553
+extraction-label = "high"
 difficulty = 0.63020833
 difficulty-label = "medium"
-wandr_task = "prd_packaging_suppliers"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 81.37402937
-width-label = "small"
-depth = 0.63416717
-depth-label = "high"
-extraction = 0.64099166
-extraction-label = "high"
-dispersion = 0.74912016
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

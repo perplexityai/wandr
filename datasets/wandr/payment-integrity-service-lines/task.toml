@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_payment_integrity_service_lines.jsonl",
 ]
-difficulty = 0.44
-difficulty-label = "medium"
 wandr_task = "payment_integrity_service_lines"
+member_keys = ["vendor_capability"]
+url-nonreuse = 0.64357707
+url-nonreuse-label = "medium"
+domain-dispersion = 0.42527989
+domain-dispersion-label = "medium"
+discovery = 0.26333333
+discovery-label = "medium"
+enrichment = 0.22059154
+enrichment-label = "low"
+extraction = 0.54981180
+extraction-label = "medium"
+difficulty = 0.44000000
+difficulty-label = "medium"
 
 verticals = ["health"]
 topology = "composite"
-width = 100.6543367
-width-label = "small"
-depth = 0.14159658
-depth-label = "medium"
-extraction = 0.51634111
-extraction-label = "medium"
-dispersion = 0.42527989
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

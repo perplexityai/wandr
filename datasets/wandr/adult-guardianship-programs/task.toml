@@ -11,20 +11,23 @@ required_file_paths = [
     "results_adult_guardianship_programs.jsonl",
     "results_adult_guardianship_programs.adult_guardianship_legislation.jsonl",
 ]
+wandr_task = "adult_guardianship_programs"
+member_keys = ["jurisdiction_guardian_arrangement"]
+url-nonreuse = 0.28260676
+url-nonreuse-label = "low"
+domain-dispersion = 0.52714896
+domain-dispersion-label = "medium"
+discovery = 0.16000000
+discovery-label = "low"
+enrichment = 0.75699236
+enrichment-label = "high"
+extraction = 0.38046554
+extraction-label = "low"
 difficulty = 0.56866667
 difficulty-label = "medium"
-wandr_task = "adult_guardianship_programs"
 
 verticals = ["legal"]
 topology = "composite"
-width = 605.88891505
-width-label = "large"
-depth = 0.31683812
-depth-label = "medium"
-extraction = 0.33819374
-extraction-label = "low"
-dispersion = 0.52714896
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_precast_decking_capability_provenance.jsonl",
 ]
+wandr_task = "precast_decking_capability_provenance"
+member_keys = ["producer"]
+url-nonreuse = 0.79886204
+url-nonreuse-label = "high"
+domain-dispersion = 0.53567501
+domain-dispersion-label = "medium"
+discovery = 0.51944444
+discovery-label = "high"
+enrichment = 0.43732247
+enrichment-label = "low"
+extraction = 0.28771546
+extraction-label = "low"
 difficulty = 0.69166667
 difficulty-label = "high"
-wandr_task = "precast_decking_capability_provenance"
 
 verticals = ["general"]
 topology = "hierarchical"
-width = 225.84459716
-width-label = "medium"
-depth = 0.39020767
-depth-label = "medium"
-extraction = 0.24929489
-extraction-label = "low"
-dispersion = 0.53567501
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

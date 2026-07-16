@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_compact_cea_systems.jsonl",
 ]
+wandr_task = "compact_cea_systems"
+member_keys = ["company_system"]
+url-nonreuse = 0.96433496
+url-nonreuse-label = "high"
+domain-dispersion = 0.94101479
+domain-dispersion-label = "high"
+discovery = 0.04313725
+discovery-label = "low"
+enrichment = 0.41946509
+enrichment-label = "low"
+extraction = 0.59576838
+extraction-label = "medium"
 difficulty = 0.25294118
 difficulty-label = "low"
-wandr_task = "compact_cea_systems"
 
 verticals = ["general", "e-com"]
 topology = "hierarchical"
-width = 49.62942784
-width-label = "tiny"
-depth = 0.15551852
-depth-label = "medium"
-extraction = 0.49755337
-extraction-label = "medium"
-dispersion = 0.94101479
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

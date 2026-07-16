@@ -11,20 +11,23 @@ required_file_paths = [
     "results_french_environmental_credential_provenance.jsonl",
     "results_french_environmental_credential_provenance.credential_verification.jsonl",
 ]
+wandr_task = "french_environmental_credential_provenance"
+member_keys = ["firm_siren"]
+url-nonreuse = 0.32454879
+url-nonreuse-label = "low"
+domain-dispersion = 0.22218401
+domain-dispersion-label = "low"
+discovery = 0.33958333
+discovery-label = "medium"
+enrichment = 0.76313317
+enrichment-label = "high"
+extraction = 0.67157111
+extraction-label = "high"
 difficulty = 0.68958333
 difficulty-label = "high"
-wandr_task = "french_environmental_credential_provenance"
 
 verticals = ["general", "legal"]
 topology = "composite"
-width = 315.88443188
-width-label = "medium"
-depth = 0.57888827
-depth-label = "high"
-extraction = 0.51345083
-extraction-label = "medium"
-dispersion = 0.22218401
-dispersion-label = "low"
 
 [verifier]
 timeout_sec = 28800.0

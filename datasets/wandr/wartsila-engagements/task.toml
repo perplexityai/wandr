@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_wartsila_engagements.jsonl",
 ]
-difficulty = 0.865
-difficulty-label = "high"
 wandr_task = "wartsila_engagements"
+member_keys = ["engagement_claim"]
+url-nonreuse = 0.76563557
+url-nonreuse-label = "high"
+domain-dispersion = 0.75304273
+domain-dispersion-label = "high"
+discovery = 0.47833333
+discovery-label = "high"
+enrichment = 0.71427341
+enrichment-label = "high"
+extraction = 0.88117966
+extraction-label = "high"
+difficulty = 0.86500000
+difficulty-label = "high"
 
 verticals = ["general", "events"]
 topology = "hierarchical"
-width = 250.83304945
-width-label = "medium"
-depth = 0.30416741
-depth-label = "medium"
-extraction = 0.85883974
-extraction-label = "high"
-dispersion = 0.75304273
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0

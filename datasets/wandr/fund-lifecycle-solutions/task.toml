@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_fund_lifecycle_solutions.jsonl",
 ]
+wandr_task = "fund_lifecycle_solutions"
+member_keys = ["firm"]
+url-nonreuse = 0.52421915
+url-nonreuse-label = "medium"
+domain-dispersion = 0.67486559
+domain-dispersion-label = "high"
+discovery = 0.14285714
+discovery-label = "low"
+enrichment = 0.41428571
+enrichment-label = "low"
+extraction = 0.53133951
+extraction-label = "medium"
 difficulty = 0.32738095
 difficulty-label = "low"
-wandr_task = "fund_lifecycle_solutions"
 
 verticals = ["legal", "finance"]
 topology = "hierarchical"
-width = 331.18138061
-width-label = "medium"
-depth = 0.03439562
-depth-label = "low"
-extraction = 0.4695643
-extraction-label = "medium"
-dispersion = 0.67486559
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

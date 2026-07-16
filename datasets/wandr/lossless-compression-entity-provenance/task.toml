@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_lossless_compression_entity_provenance.jsonl",
 ]
-difficulty = 0.85
-difficulty-label = "high"
 wandr_task = "lossless_compression_entity_provenance"
+member_keys = ["compression_entity_product"]
+url-nonreuse = 0.64801869
+url-nonreuse-label = "medium"
+domain-dispersion = 0.68459445
+domain-dispersion-label = "high"
+discovery = 0.82361111
+discovery-label = "high"
+enrichment = 0.24956830
+enrichment-label = "low"
+extraction = 0.52817987
+extraction-label = "medium"
+difficulty = 0.85000000
+difficulty-label = "high"
 
 verticals = ["tech"]
 topology = "hierarchical"
-width = 491.35691274
-width-label = "large"
-depth = 0.11024074
-depth-label = "medium"
-extraction = 0.48357629
-extraction-label = "medium"
-dispersion = 0.68459445
-dispersion-label = "medium"
 
 [verifier]
 timeout_sec = 28800.0

@@ -10,20 +10,23 @@ keywords = ["wandr", "research", "retrieval", "citation"]
 required_file_paths = [
     "results_data_center_power_disclosures.jsonl",
 ]
-difficulty = 0.84375
-difficulty-label = "high"
 wandr_task = "data_center_power_disclosures"
+member_keys = ["operator"]
+url-nonreuse = 0.42207561
+url-nonreuse-label = "low"
+domain-dispersion = 0.77500299
+domain-dispersion-label = "high"
+discovery = 0.05833333
+discovery-label = "low"
+enrichment = 0.85200815
+enrichment-label = "high"
+extraction = 0.74818411
+extraction-label = "high"
+difficulty = 0.84375000
+difficulty-label = "high"
 
 verticals = ["general", "legal", "finance"]
 topology = "hierarchical"
-width = 283.82347661
-width-label = "medium"
-depth = 0.21122957
-depth-label = "medium"
-extraction = 0.62211179
-extraction-label = "high"
-dispersion = 0.77500299
-dispersion-label = "high"
 
 [verifier]
 timeout_sec = 28800.0
