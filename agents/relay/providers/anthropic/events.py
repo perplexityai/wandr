@@ -165,7 +165,12 @@ def is_retryable_anthropic_stream_error(error: BaseException) -> bool:
     status_code = getattr(error, "status_code", None)
     if isinstance(status_code, int):
         return status_code in {408, 409, 429} or status_code >= 500
-    return type(error).__name__ in {"APIConnectionError", "APIStatusError"}
+    return type(error).__name__ in {
+        "APIConnectionError",
+        "APIStatusError",
+        "APITimeoutError",
+        "TimeoutError",
+    }
 
 
 def is_anthropic_session_complete(
