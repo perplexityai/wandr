@@ -35,7 +35,7 @@ Current implementation is split into four independent layers:
 Clone the repository and install the locked workspace:
 
 ```bash
-git clone https://github.com/ppl-ai/wandr.git
+git clone https://github.com/perplexityai/wandr.git
 cd wandr
 uv --no-config sync --locked
 ```
@@ -215,6 +215,16 @@ Adapter details live in [`adapters/wandr/README.md`](adapters/wandr/README.md).
 Relay details live in [`agents/relay/README.md`](agents/relay/README.md).
 Task-source details live in
 [`reference/wandr_tasks/README.md`](reference/wandr_tasks/README.md).
+
+## Hugging Face Dataset Export
+
+The dataset-only Hugging Face release tooling lives in
+[`tools/hf_release/`](tools/hf_release/). It creates deterministic JSONL splits
+and rights-screened, text-only source bundles from a pinned repository snapshot;
+it does not run benchmark tasks or paid evaluation. The publishing helper is
+private-only, verifies every manifest size and hash before upload, and checks
+repository visibility before and after upload. See the release-tool README for
+generation, verification, and staging commands.
 
 ## Data And Third-Party Sources
 
