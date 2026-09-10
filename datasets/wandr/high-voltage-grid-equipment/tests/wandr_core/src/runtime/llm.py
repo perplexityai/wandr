@@ -33,33 +33,35 @@ async def llm_completion(
     No try/except — errors propagate to the caller's @aexcepts.
     No retry — OpenAI SDK max_retries handles transport.
     """
-    messages = [
-        {"role": "system", "content": request.system},
-        {"role": "user", "content": request.prompt},
-    ]
+    params = dict(request.params)
+    reasoning_effort = params.pop("reasoning_effort", None)
+    if reasoning_effort is not None:
+        params["reasoning"] = {"effort": reasoning_effort}
 
     if request.response_format is not None:
-        response = await client.beta.chat.completions.parse(
+        response = await client.responses.parse(
             model=request.model,
-            messages=messages,
-            response_format=request.response_format,
-            max_completion_tokens=request.max_completion_tokens,
-            **request.params,
+            instructions=request.system,
+            input=request.prompt,
+            text_format=request.response_format,
+            max_output_tokens=request.max_completion_tokens,
+            **params,
         )
-        parsed = response.choices[0].message.parsed
+        parsed = response.output_parsed
         result = parsed.model_dump() if parsed else None
     else:
-        response = await client.chat.completions.create(
+        response = await client.responses.create(
             model=request.model,
-            messages=messages,
-            max_completion_tokens=request.max_completion_tokens,
-            **request.params,
+            instructions=request.system,
+            input=request.prompt,
+            max_output_tokens=request.max_completion_tokens,
+            **params,
         )
-        result = (response.choices[0].message.content or "").strip()
+        result = response.output_text.strip()
 
     token_usage = response.usage
     consumption: Consumption = {
-        "input_tokens": token_usage.prompt_tokens if token_usage else None,
-        "output_tokens": token_usage.completion_tokens if token_usage else None,
+        "input_tokens": token_usage.input_tokens if token_usage else None,
+        "output_tokens": token_usage.output_tokens if token_usage else None,
     }
     return result, consumption
