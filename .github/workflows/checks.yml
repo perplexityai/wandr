@@ -22,6 +22,8 @@ jobs:
           enable-cache: true
       - run: uv --no-config lock --check
       - run: uv --no-config run --locked python scripts/validate_configs.py
+      - name: Test Relay usage parsing
+        run: uv --no-config run --locked python -m unittest discover -s agents/relay/tests -v
 
   lint:
     runs-on: ubuntu-latest

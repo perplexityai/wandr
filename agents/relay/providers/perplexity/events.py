@@ -54,7 +54,9 @@ def perplexity_usage(response: Mapping[str, Any]) -> dict[str, Any]:
     input_tokens = int(usage.get("input_tokens") or 0)
     output_tokens = int(usage.get("output_tokens") or 0)
     input_details = _dict(usage.get("input_tokens_details"))
-    cache_read_input_tokens = int(input_details.get("cached_tokens") or 0)
+    cache_read_input_tokens = int(
+        input_details.get("cache_read_input_tokens", input_details.get("cached_tokens")) or 0
+    )
     result: dict[str, Any] = {
         USAGE_INPUT_TOKENS: input_tokens,
         USAGE_TOTAL_INPUT_TOKENS: input_tokens,
