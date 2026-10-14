@@ -19,6 +19,7 @@ class PerplexityUsageTests(unittest.TestCase):
             ("legacy", {"cached_tokens": 800}, 800),
             ("modern_precedence", {"cache_read_input_tokens": 800, "cached_tokens": 300}, 800),
             ("explicit_zero", {"cache_read_input_tokens": 0, "cached_tokens": 800}, 0),
+            ("null_modern", {"cache_read_input_tokens": None, "cached_tokens": 800}, 800),
             ("empty_details", {}, 0),
             ("null_details", None, 0),
         ]
