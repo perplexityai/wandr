@@ -22,7 +22,7 @@ The excerpts collectively make the answer evident. *Every* task-required claim /
 
 ## `container_shipping_providers`
 
-For each of the 4 operational stages of US-import containerized shipping listed below, find 80+ (stage, provider) pairs across them, supplying a stage-appropriate authority source (1+ URL per pair) evidencing each provider's operational role in its stage.
+For each of the four operational stages of US-import containerized shipping listed below, find 80+ (stage, provider) pairs in total across them, supplying a stage-appropriate authority source (1+ URL per pair) evidencing each provider's operational role in its stage.
 
 The stages in scope are:
 - `pickup` — the freight forwarder / NVOCC / ocean transportation intermediary (OTI) arranging export-side cargo consolidation and pickup for US-import containerized shipments
