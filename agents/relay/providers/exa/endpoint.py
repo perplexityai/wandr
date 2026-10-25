@@ -199,15 +199,6 @@ class ExaAgentEndpoint:
                 output_text = _exa_output_text(final_state)
                 files = _exa_output_files(final_state, output_text)
                 terminal_error = _terminal_error(run_id, final_state)
-                raise_if_terminal_without_delivery(terminal_error, files)
-                emit_terminal_delivery_available(
-                    observer=observer,
-                    endpoint="exa",
-                    response_id=run_id,
-                    original_status=final_state.get("status"),
-                    terminal_error=terminal_error,
-                    files=files,
-                )
                 usage = _exa_usage(final_state)
                 cost_usd = _exa_cost_usd(final_state)
                 emit_event(
@@ -223,6 +214,15 @@ class ExaAgentEndpoint:
                         status=final_state.get("status"),
                     ),
                     **usage,
+                )
+                raise_if_terminal_without_delivery(terminal_error, files)
+                emit_terminal_delivery_available(
+                    observer=observer,
+                    endpoint="exa",
+                    response_id=run_id,
+                    original_status=final_state.get("status"),
+                    terminal_error=terminal_error,
+                    files=files,
                 )
                 return EndpointResult(
                     text=output_text,
@@ -483,6 +483,10 @@ def _effort_from_model(model_name: str) -> str:
         return "xhigh"
     if normalized in {"auto", "agent-auto", "exa-agent-auto"}:
         return "auto"
+    if normalized in {"minimal", "agent-minimal", "exa-agent-minimal"}:
+        return "minimal"
+    if normalized in {"ultra", "agent-ultra", "exa-agent-ultra"}:
+        return "ultra"
     return "high"
 
 
