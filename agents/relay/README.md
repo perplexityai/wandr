@@ -130,3 +130,10 @@ Each Harbor trial records Relay artifacts under its `agent/` directory:
 
 Observability never substitutes for delivery. A successful run must still
 materialize every required file into the workspace.
+
+## Shutdown
+
+Importing `relay.lifecycle` installs SIGINT and SIGTERM handlers that cancel
+every active remote endpoint run before deferring to the previous handler.
+Set `RELAY_SIGNAL_HANDLERS=0` when Relay is embedded in a process that owns its
+own shutdown, such as a worker that drains in-flight runs on SIGTERM.
