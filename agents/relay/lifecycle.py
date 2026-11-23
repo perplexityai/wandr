@@ -11,6 +11,9 @@ from typing import Any
 from relay.core import RelayObserver, emit_event, log_fields
 
 CANCEL_TIMEOUT_SEC = 10.0
+# Set to "0" when relay is embedded in a process that owns its own shutdown,
+# such as a worker that drains in-flight runs on SIGTERM.
+SIGNAL_HANDLERS_ENV = "RELAY_SIGNAL_HANDLERS"
 
 
 @dataclass(frozen=True)
@@ -139,7 +142,8 @@ def _handle_signal(signum: int, frame: FrameType | None) -> None:
     raise SystemExit(128 + signum)
 
 
-def _install_signal_handlers() -> None:
+def install_signal_handlers() -> None:
+    """Cancel active endpoint runs on SIGINT/SIGTERM, then defer to the previous handler."""
     if threading.current_thread() is not threading.main_thread():
         return
     for signal_name in (signal.SIGINT, signal.SIGTERM):
@@ -151,4 +155,5 @@ def _install_signal_handlers() -> None:
 
 
 atexit.register(_cancel_at_exit)
-_install_signal_handlers()
+if os.environ.get(SIGNAL_HANDLERS_ENV) != "0":
+    install_signal_handlers()
