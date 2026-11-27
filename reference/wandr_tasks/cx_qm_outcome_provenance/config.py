@@ -131,7 +131,7 @@ CONFIG = TaskConfig(
             },
         ),
         dedup=DedupConfig(
-            model="gpt-5.4",
+            model="gpt-6-luna",
             keys={
                 "vendor": _VENDOR_DEDUP,
                 "outcome_context": DedupKeyConfig(
@@ -196,7 +196,7 @@ CONFIG = TaskConfig(
                     },
                 ),
                 dedup=DedupConfig(
-                    model="gpt-5.4",
+                    model="gpt-6-luna",
                     keys={
                         "vendor": _VENDOR_DEDUP,
                         "partial_source": DedupKeyConfig(

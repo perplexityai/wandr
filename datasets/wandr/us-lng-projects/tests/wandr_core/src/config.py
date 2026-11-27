@@ -326,7 +326,7 @@ class DedupKeyConfig(EvalComponentKeyConfig):
 class EvalComponentConfig(Generic[T]):
     """Configuration for one eval pipeline stage."""
 
-    model: str = "gpt-5.4"
+    model: str = "gpt-6-luna"
     prompt_section_template: str | None = None
     prompt_macro: str = ""
     prompt: str = ""

@@ -126,7 +126,7 @@ CONFIG = TaskConfig(
             },
         ),
         dedup=DedupConfig(
-            model="gpt-5.4",
+            model="gpt-6-luna",
             keys={
                 "ticker_company": DedupKeyConfig(
                     prompt_section_template=(

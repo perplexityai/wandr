@@ -57,7 +57,7 @@ CONFIG = TaskConfig(
                   "url": CanonKeyConfig(norm=url_norm, llm=False)},
         ),
         dedup=DedupConfig(
-            model="gpt-5.4",
+            model="gpt-6-luna",
             keys={"company": DedupKeyConfig(
                       prompt_section_template=(HERE / "prompts" / "dedup_company_section_template.md.jinja").read_text()),
                   "month": DedupKeyConfig(llm=False),
